@@ -1,3 +1,104 @@
+commit 803cc22d3e175a79bf90ef2b2a3554e972da2509
+Author: Ole Aamot <oka@oka.no>
+Date:   Wed Apr 26 21:55:46 2017 +0200
+
+    Initial commit of GNOME Internet Radio Locator for GTK+ 3.0
+
+ AUTHORS                                            |     1 +
+ BROADCAST                                          |    36 +
+ COPYING                                            |   674 +
+ ChangeLog                                          |    17 +
+ DEBIAN                                             |     4 +
+ HACKING                                            |    24 +
+ INSTALL                                            |   370 +
+ Makefile.am                                        |    47 +
+ Makefile.in                                        |   907 +
+ NEWS                                               |     0
+ THANKS                                             |     1 +
+ TODO                                               |    11 +
+ autogen.sh                                         |    25 +
+ compile                                            |   347 +
+ config.rpath                                       |   690 +
+ configure                                          | 19431 +++++++++++++++++++
+ configure.ac                                       |   128 +
+ data/Makefile.am                                   |    40 +
+ data/Makefile.in                                   |   782 +
+ data/gnome-internet-radio-locator.appdata.xml.in   |    26 +
+ data/gnome-internet-radio-locator.desktop.in       |    18 +
+ data/gnome-internet-radio-locator.desktop.in.in    |    18 +
+ data/icons/1024x1024/Makefile.am                   |     7 +
+ data/icons/1024x1024/Makefile.in                   |   548 +
+ .../apps/gnome-internet-radio-locator.png          |   Bin 0 -> 105392 bytes
+ data/icons/16x16/Makefile.am                       |     9 +
+ data/icons/16x16/Makefile.in                       |   549 +
+ .../16x16/apps/gnome-internet-radio-locator.png    |   Bin 0 -> 729 bytes
+ data/icons/22x22/Makefile.am                       |     9 +
+ data/icons/22x22/Makefile.in                       |   549 +
+ .../22x22/apps/gnome-internet-radio-locator.png    |   Bin 0 -> 1083 bytes
+ data/icons/24x24/Makefile.am                       |     7 +
+ data/icons/24x24/Makefile.in                       |   548 +
+ .../24x24/apps/gnome-internet-radio-locator.png    |   Bin 0 -> 1162 bytes
+ data/icons/256x256/Makefile.am                     |     7 +
+ data/icons/256x256/Makefile.in                     |   548 +
+ .../256x256/apps/gnome-internet-radio-locator.png  |   Bin 0 -> 18799 bytes
+ data/icons/32x32/Makefile.am                       |     9 +
+ data/icons/32x32/Makefile.in                       |   549 +
+ .../32x32/apps/gnome-internet-radio-locator.png    |   Bin 0 -> 1614 bytes
+ data/icons/48x48/Makefile.am                       |     9 +
+ data/icons/48x48/Makefile.in                       |   549 +
+ .../48x48/apps/gnome-internet-radio-locator.png    |   Bin 0 -> 2606 bytes
+ data/icons/512x512/Makefile.am                     |     7 +
+ data/icons/512x512/Makefile.in                     |   548 +
+ .../512x512/apps/gnome-internet-radio-locator.png  |   Bin 0 -> 44028 bytes
+ data/icons/Makefile.am                             |    16 +
+ data/icons/Makefile.in                             |   684 +
+ gnome-internet-radio-locator.spec.in               |    76 +
+ gtk-doc.m4                                         |    88 +
+ help/Makefile.am                                   |     6 +
+ help/Makefile.in                                   |   491 +
+ m4/ChangeLog                                       |    11 +
+ m4/libtool.m4                                      |  8372 ++++++++
+ m4/ltoptions.m4                                    |   437 +
+ m4/ltsugar.m4                                      |   124 +
+ m4/ltversion.m4                                    |    23 +
+ m4/lt~obsolete.m4                                  |    99 +
+ man/Makefile.am                                    |     3 +
+ man/Makefile.in                                    |   567 +
+ man/gnome-internet-radio-locator.1                 |    32 +
+ po/LINGUAS                                         |     3 +
+ po/POTFILES.in                                     |    10 +
+ po/POTFILES.skip                                   |     4 +
+ po/nb.po                                           |    20 +
+ src/Makefile.am                                    |    40 +
+ src/Makefile.in                                    |   928 +
+ src/gnome-internet-radio-locator-0.1.dtd           |    23 +
+ src/gnome-internet-radio-locator-gui.c             |   510 +
+ src/gnome-internet-radio-locator-gui.h             |    20 +
+ src/gnome-internet-radio-locator-listener.c        |     0
+ src/gnome-internet-radio-locator-listener.h        |    62 +
+ src/gnome-internet-radio-locator-player-kb.h       |    35 +
+ src/gnome-internet-radio-locator-player-renderer.h |    49 +
+ src/gnome-internet-radio-locator-player-resource.h |     7 +
+ src/gnome-internet-radio-locator-player.c          |   809 +
+ src/gnome-internet-radio-locator-player.h          |    54 +
+ src/gnome-internet-radio-locator-program.c         |     0
+ src/gnome-internet-radio-locator-program.h         |    76 +
+ src/gnome-internet-radio-locator-runners.c         |     0
+ src/gnome-internet-radio-locator-runners.h         |    54 +
+ src/gnome-internet-radio-locator-station.c         |   645 +
+ src/gnome-internet-radio-locator-station.h         |    88 +
+ src/gnome-internet-radio-locator-stations-map.c    |     0
+ src/gnome-internet-radio-locator-stations-map.h    |   110 +
+ src/gnome-internet-radio-locator-streams.c         |     0
+ src/gnome-internet-radio-locator-streams.h         |    71 +
+ src/gnome-internet-radio-locator-tz.c              |   511 +
+ src/gnome-internet-radio-locator-tz.h              |   118 +
+ src/gnome-internet-radio-locator.c                 |   387 +
+ src/gnome-internet-radio-locator.h                 |   161 +
+ src/gnome-internet-radio-locator.xml               |   900 +
+ src/gnome-internet-radio-locator.xsl               |    54 +
+ 93 files changed, 44827 insertions(+)
+
 commit b8a2fe5251faa812adfb4e15ad33bcd49e56380a
 Author: Ole Aamot <oka@oka.no>
 Date:   Wed Apr 26 18:25:23 2017 +0200
