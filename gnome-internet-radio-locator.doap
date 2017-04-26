@@ -1,0 +1,22 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+  <name xml:lang="en">GNOME Internet Radio Locator</name>
+  <shortdesc xml:lang="en">Locate Internet Radio Stations</shortdesc>
+  <description>GNOME Internet Radio Locator allows users to easily find live radio programs on radio broadcasters on the Internet.  This software is developed on the GNOME 3 platform and requires GStreamer 1.0 to be installed for playback.  Enjoy Internet Radio.</description>
+  <homepage rdf:resource="https://wiki.gnome.org/Apps/GNOMEInternetRadioLocator" />
+  <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/gnome-internet-radio-locator-list" />
+  <download-page rdf:resource="http://download.gnome.org/sources/gnome-internet-radio-locator/" />
+  <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=gnome-internet-radio-locator" />
+  <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
+  <programming-language>C</programming-language>
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Ole Aamot</foaf:name>
+      <foaf:mbox rdf:resource="mailto:oka@oka.no" />
+      <gnome:userid>ole</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+</Project>
