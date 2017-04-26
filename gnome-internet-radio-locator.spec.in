@@ -1,0 +1,76 @@
+Name:           @PACKAGE@
+Version:        @VERSION@
+Release:        1%{?dist}
+Summary:        GNOME Internet Radio Locator program
+License:        GPLv2+
+URL:            http://people.gnome.org/~ole/gnome-internet-radio-locator
+Group:          Applications/Internet
+Source:         http://people.gnome.org/~ole/%{name}/%{name}-%{version}.tar.xz
+
+BuildRequires:  gtk3-devel
+BuildRequires:  pango
+BuildRequires:  libchamplain-gtk
+BuildRequires:  libxml2-devel
+BuildRequires:  intltool
+BuildRequires:  itstool
+BuildRequires:  libappstream-glib
+BuildRequires:  desktop-file-utils
+BuildRequires:  gstreamer-devel
+BuildRequires:  gstreamer1-plugins-bad-free-devel
+BuildRequires:  gstreamer1-plugins-base-devel
+Requires:       gstreamer1 >= 1.8.3
+Requires:       gstreamer1-plugins-ugly >= 1.8.3
+
+%description
+GNOME Internet Radio Locator is a Free Software program that allows
+you to easily locate radio programs by broadcasters on the Internet
+with the help of a map.
+
+GNOME Internet Radio Locator is developed on the GNOME 3 platform and
+it requires gstreamer 1.0 for playback.
+
+Enjoy Internet Radio.
+
+%prep
+%setup -q
+
+%build
+%configure --with-recording --disable-silent-rules
+
+%install
+%make_install
+%find_lang %{name} --with-man
+
+%check
+appstream-util validate-relax --nonet %{buildroot}/%{_datadir}/appdata/%{name}.appdata.xml
+desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
+
+%post
+/bin/touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :
+/usr/bin/update-desktop-database &> /dev/null || :
+
+%postun
+if [ $1 -eq 0 ] ; then
+    /bin/touch --no-create %{_datadir}/icons/hicolor &>/dev/null
+    /usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
+fi
+/usr/bin/update-desktop-database &> /dev/null || :
+
+%posttrans
+/usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
+
+%files -f %{name}.lang
+%doc AUTHORS DEBIAN NEWS README TODO ChangeLog
+%license COPYING
+%{_bindir}/gnome-internet-radio-locator
+%{_bindir}/%{name}
+%{_datadir}/%{name}/
+%{_datadir}/appdata/%{name}.appdata.xml
+%{_datadir}/applications/%{name}.desktop
+%{_datadir}/icons/hicolor/*/apps/%{name}.png
+%{_mandir}/man1/%{name}.1*
+%{_datadir}/help/*/%{name}
+
+%changelog
+* Wed Apr 26 2017 Ole Aamot - 0.1.0-1.fc25
+- GNOME Internet Radio Locator 0.1.0 build on Fedora Linux 25

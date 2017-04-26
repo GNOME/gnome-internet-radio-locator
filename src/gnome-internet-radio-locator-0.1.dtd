@@ -1,0 +1,23 @@
+<!ATTLIST frequency uri CDATA #REQUIRED >
+<!ELEMENT description ( #PCDATA ) >
+<!ATTLIST description lang CDATA #REQUIRED >
+<!ELEMENT frequency ( #PCDATA ) >
+<!ELEMENT email ( #PCDATA ) >
+<!ELEMENT location ( lat | lon | href)* >
+<!ELEMENT gnome_internet_radio_locator ( station+ ) >
+<!ATTLIST gnome_internet_radio_locator version NMTOKEN #REQUIRED >
+<!ELEMENT station ( frequency | location | description | stream)* >
+<!ATTLIST station band CDATA #REQUIRED >
+<!ATTLIST station icon CDATA #REQUIRED >
+<!ATTLIST station id NMTOKEN #REQUIRED >
+<!ATTLIST station lang CDATA #REQUIRED >
+<!ATTLIST station name CDATA #REQUIRED >
+<!ATTLIST station rank CDATA #REQUIRED >
+<!ATTLIST station type CDATA #REQUIRED >
+<!ELEMENT stream EMPTY >
+<!ATTLIST stream bitrate NMTOKEN #REQUIRED >
+<!ATTLIST stream channels NMTOKEN #IMPLIED >
+<!ATTLIST stream codec CDATA #REQUIRED >
+<!ATTLIST stream mime CDATA #REQUIRED >
+<!ATTLIST stream samplerate NMTOKEN #REQUIRED >
+<!ATTLIST stream uri CDATA #REQUIRED >

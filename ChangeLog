@@ -1,0 +1,17 @@
+commit b8a2fe5251faa812adfb4e15ad33bcd49e56380a
+Author: Ole Aamot <oka@oka.no>
+Date:   Wed Apr 26 18:25:23 2017 +0200
+
+    Add DOAP
+
+ gnome-internet-radio-locator.doap | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+
+commit 1ad0bbbaca967dc9ba32744845572a7d53522ec6
+Author: Ole Aamot <oka@oka.no>
+Date:   Wed Apr 26 18:22:19 2017 +0200
+
+    New repository for GNOME Internet Radio Locator
+
+ README | 1 +
+ 1 file changed, 1 insertion(+)

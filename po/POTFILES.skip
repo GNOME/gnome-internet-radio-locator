@@ -1,0 +1,4 @@
+# List of source files that should *not* be translated.
+# Please keep this file sorted alphabetically.
+data/gnome-internet-radio-locator.desktop.in
+sub/data/gnome-internet-radio-locator.desktop.in

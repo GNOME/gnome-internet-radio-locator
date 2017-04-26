@@ -1,0 +1,10 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+[encoding: UTF-8]
+data/gnome-internet-radio-locator.appdata.xml.in
+data/gnome-internet-radio-locator.desktop.in
+data/gnome-internet-radio-locator.desktop.in.in
+src/gnome-internet-radio-locator-gui.c
+src/gnome-internet-radio-locator-listener.c
+src/gnome-internet-radio-locator-station.c
+src/gnome-internet-radio-locator.c
