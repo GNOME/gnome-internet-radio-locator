@@ -1,4 +1,12 @@
 =============
+Version 0.2.0
+=============
+
+Station (src/gnome-internet-radio-locator.c)
+
+	* Change default radio station to WNYC
+
+=============
 Version 0.1.2
 =============
 

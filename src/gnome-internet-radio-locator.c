@@ -74,7 +74,7 @@ static void
 listen_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
   player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new
 				      (NULL));
-  gnome_internet_radio_locator_player_new(player, "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk");
+  gnome_internet_radio_locator_player_new(player, "http://fm939.wnyc.org/wnycfm");
   gst_player_play(player);
   return;
 }
@@ -223,7 +223,7 @@ static void
 gnome_internet_radio_locator_window_cb (GtkApplication *app,
 		gpointer user_data)
 {
-  GtkWidget *widget, *grid, *toolbar, *new, *search, *listen, *stop, *prev, *stations, *next, *station, *program, *quit;
+  GtkWidget *widget, *grid, *toolbar, *new, *search, *input, *listen, *stop, *prev, *stations, *next, *station, *program, *quit;
 	
 	window = gtk_application_window_new (app);
 	widget = gtk_champlain_embed_new();
@@ -243,16 +243,22 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(search), "Search Internet Radio Station");
 	g_signal_connect(search, "clicked", G_CALLBACK (search_station), GTK_WINDOW (window));
 #endif
+	input = gtk_entry_new();
+	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_WIDGET(input), 2);
+	gtk_widget_show (GTK_WIDGET(input));
+	gtk_tool_item_set_tooltip_text (GTK_WIDGET(input), "WNYC");
+	g_signal_connect(input, "clicked", G_CALLBACK (listen_station), GTK_WINDOW (window));
+		
 	listen = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Listen");
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(listen), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(listen), 2);
+	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(listen), 3);
 	gtk_widget_show (GTK_WIDGET(listen));
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(listen), "Listen Internet Radio Station");
 	g_signal_connect(listen, "clicked", G_CALLBACK (listen_station), GTK_WINDOW (window));
 
 	stop = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Stop");
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(stop), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(stop), 3);
+	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(stop), 4);
 	gtk_widget_show (GTK_WIDGET(stop));
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(stop), "Stop Internet Radio Station");
 	g_signal_connect(stop, "clicked", G_CALLBACK (stop_station), GTK_WINDOW (window));
@@ -260,42 +266,42 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 #if 0
 	prev = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Prev");
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(prev), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(prev), 4);
+	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(prev), 5);
 	gtk_widget_show (GTK_WIDGET(prev));
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(prev), "Prev Internet Radio Station");
 	g_signal_connect(prev, "clicked", G_CALLBACK (prev_station), GTK_WINDOW (window));
 
 	stations = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Stations");
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(stations), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(stations), 5);
+	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(stations), 6);
 	gtk_widget_show (GTK_WIDGET(stations));
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(stations), "Stations");
 	g_signal_connect(stations, "clicked", G_CALLBACK (stations_all), GTK_WINDOW (window));
 
 	next = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Next");
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(next), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(next), 6);
+	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(next), 7);
 	gtk_widget_show (GTK_WIDGET(next));
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(next), "Next Internet Radio Station");
 	g_signal_connect(next, "clicked", G_CALLBACK (next_station), GTK_WINDOW (window));
 	
 	station = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "About Station");
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(station), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(station), 7);
+	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(station), 8);
 	gtk_widget_show (GTK_WIDGET(station));
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(station), "About Station");
 	g_signal_connect(station, "clicked", G_CALLBACK (about_station_cb), GTK_WINDOW (window));
 
 	program = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "About Program");
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(program), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(program), 8);
+	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(program), 9);
 	gtk_widget_show (GTK_WIDGET(program));
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(program), "About Program");
 	g_signal_connect(program, "clicked", G_CALLBACK (about_program_cb), GTK_WINDOW (window));
 #endif
 	quit = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Exit");
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(quit), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(quit), 9);
+	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(quit), 10);
 	gtk_widget_show (GTK_WIDGET(quit));
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(quit), "Exit Program");
 	g_signal_connect(quit, "clicked", G_CALLBACK (quit_program), GTK_WINDOW (window));

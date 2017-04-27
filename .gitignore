@@ -29,6 +29,8 @@
 /config.sub
 /configure
 /configure.lineno
+/data/Makefile.in
+/data/icons/Makefile.in
 /depcomp
 /gtk-doc.make
 /install-sh
