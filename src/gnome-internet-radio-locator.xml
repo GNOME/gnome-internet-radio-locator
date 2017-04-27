@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="gnome_internet_radio_locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome_internet_radio_locator-0.1.dtd">
-<gnome_internet_radio_locator version="9.9.6">
+<gnome_internet_radio_locator version="0.1.0">
   <station band="ONLINE" id="3rdrock" lang="en" name="NASA's Third Rock Radio" rank="1.0" type="gov">
     <frequency uri="https://www.nasa.gov/feature/third-rock-radio">ONLINE</frequency>
     <location>Space</location>
