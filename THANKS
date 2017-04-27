@@ -1,3 +1,6 @@
-Petter Reinholdtsen, USIT, University of Oslo, Norway
-Tarjei S. Tjønn, USIT, University of Oslo, Norway
-Hans Petter Jansson, Copyleft Software, Oslo, Norway
+Petter Reinholdtsen (Debian packaging)
+Tarjei S. Tjønn (Debian packaging)
+Hans Petter Jansson (Autoconf/Makefile.am help)
+Sebastian Dröge (Original gst-player source)
+Tim-Philipp Müller (Original gst-player source)
+Brijesh Singh (Original gst-player source)
