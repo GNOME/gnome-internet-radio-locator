@@ -1,3 +1,58 @@
+commit fdb917718a206998ae9381d8610b38d9277ce757
+Author: Ole Aamot <oka@oka.no>
+Date:   Thu Apr 27 14:58:34 2017 +0200
+
+    Cleanup autoconf mess.
+
+ Makefile.in                      |   907 --
+ THANKS                           |     1 +
+ config.rpath                     |   690 --
+ configure                        | 19431 -------------------------------------
+ data/Makefile.in                 |     1 +
+ data/icons/1024x1024/Makefile.in |   548 --
+ data/icons/16x16/Makefile.in     |   549 --
+ data/icons/22x22/Makefile.in     |   549 --
+ data/icons/24x24/Makefile.in     |   548 --
+ data/icons/256x256/Makefile.in   |   548 --
+ data/icons/32x32/Makefile.in     |   549 --
+ data/icons/48x48/Makefile.in     |   549 --
+ data/icons/512x512/Makefile.in   |   548 --
+ data/icons/Makefile.in           |     1 +
+ help/Makefile.in                 |   491 -
+ m4/libtool.m4                    |  8372 ----------------
+ man/Makefile.in                  |   567 --
+ src/Makefile.in                  |   928 --
+ 18 files changed, 3 insertions(+), 35774 deletions(-)
+
+commit 2b86588871320d9529c55065464ea34f2d344363
+Author: Ole Aamot <oka@oka.no>
+Date:   Thu Apr 27 13:50:03 2017 +0200
+
+    Update PO file and remove old cruft.
+
+ po/nb.po                               | 10 ++++------
+ src/gnome-internet-radio-locator-gui.c |  8 ++++----
+ 2 files changed, 8 insertions(+), 10 deletions(-)
+
+commit ec9d17cdd8b7b85d3d48bfe0c627588e123f4e9b
+Author: Ole Aamot <oka@oka.no>
+Date:   Thu Apr 27 11:52:29 2017 +0200
+
+    Update version
+
+ src/gnome-internet-radio-locator.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 7e4b66c7a08054ecd434e19f192eadd5f77931c1
+Author: Ole Aamot <oka@oka.no>
+Date:   Wed Apr 26 22:29:44 2017 +0200
+
+    Add Tarjei S. Tjønn in THANKS
+
+ ChangeLog | 101 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ THANKS    |   1 +
+ 2 files changed, 102 insertions(+)
+
 commit 803cc22d3e175a79bf90ef2b2a3554e972da2509
 Author: Ole Aamot <oka@oka.no>
 Date:   Wed Apr 26 21:55:46 2017 +0200
