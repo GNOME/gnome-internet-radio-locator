@@ -1,3 +1,13 @@
+commit 6d0e2408e51559f1083698e5ae6c70cf4c8de827
+Author: Ole Aamot <oka@oka.no>
+Date:   Thu Apr 27 15:00:16 2017 +0200
+
+    Readd config.rpath
+
+ ChangeLog    |  55 +++++
+ config.rpath | 690 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 745 insertions(+)
+
 commit fdb917718a206998ae9381d8610b38d9277ce757
 Author: Ole Aamot <oka@oka.no>
 Date:   Thu Apr 27 14:58:34 2017 +0200
