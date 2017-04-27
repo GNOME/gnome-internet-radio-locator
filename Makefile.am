@@ -2,7 +2,7 @@ SUBDIRS = data help man src po
 
 datadir = @datadir@
 
-EXTRA_DIST = config.rpath m4/ChangeLog  \
+EXTRA_DIST = m4/ChangeLog  \
 	AUTHORS \
 	ChangeLog \
 	BROADCAST \
