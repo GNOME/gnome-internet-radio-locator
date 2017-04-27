@@ -1,4 +1,16 @@
 =============
+Version 0.1.2
+=============
+
+Credits (THANKS)
+
+	* Thank people for original code and assistance with GTK+ 3.0 port
+
+Package (gnome-internet-radio-locator.spec.in)
+
+	* Update RPM spec for 0.1.2
+
+=============
 Version 0.1.1
 =============
 
