@@ -1,16 +1,14 @@
-# Norwegian bokmål translation of eog.
-# Copyright (C) 1999-2004, 2005 Free Software Foundation, Inc.
+# Norwegian bokmål translation of gnome-internet-radio-locator
+# Copyright (C) 2017  Ole Aamot Software
 #
-# Kjartan Maraas <kmaraas@gnome.org>, 1999-2013.
-# Terance Edward Sola <terance@lyse.net>, 2005.
-# Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
+# Ole Aamot <ole@src.gnome.org>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-26 21:24+0100\n"
 "PO-Revision-Date: 2017-04-26 21:24+0100\n"
-"Last-Translator: Ole Aamot <ole@gnome.org>\n"
+"Last-Translator: Ole Aamot <ole@src.gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"

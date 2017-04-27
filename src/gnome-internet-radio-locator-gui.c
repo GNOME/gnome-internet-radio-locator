@@ -62,17 +62,17 @@ GtkWidget *create_stations_selector(char *selected_station_uri,
 
 	/* The Stations dialog */
 	stations_selector = gtk_dialog_new_with_buttons("Select a station", GTK_WINDOW(gnome_internet_radio_locator_app), 0,	/* flags */
-							GTK_STOCK_CLOSE,
+							NULL,
 							GTK_RESPONSE_ACCEPT,
 							NULL);
 	/* gtk_container_set_border_width */
 	/*     (GTK_CONTAINER(GTK_DIALOG(stations_selector)->vbox), 6); */
 
-	align = gtk_alignment_new(0.5, 0.5, 0, 0);
+	/* align = gtk_alignment_new(0.5, 0.5, 0, 0); */
 	/* gtk_container_add(GTK_CONTAINER */
 	/* 		  (GTK_DIALOG(stations_selector)->vbox), align); */
-	gtk_container_set_border_width(GTK_CONTAINER(align), 6);
-	gtk_widget_show(align);
+	/* gtk_container_set_border_width(GTK_CONTAINER(align), 6); */
+	/* gtk_widget_show(align); */
 
 	menu = gtk_menu_new();
 	gtk_widget_show(menu);
