@@ -1,0 +1,112 @@
+# Croatian translation for gnome-internet-radio-locator.
+# Copyright (C) 2017 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-internet-radio-locator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-internet-radio-locator master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"internet-radio-locator&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-04-30 18:29+0000\n"
+"PO-Revision-Date: 2017-04-30 22:51+0200\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
+msgid ""
+"GNOME Internet Radio Locator allows users to easily find and listen to live "
+"radio programs on radio broadcasters on the Internet."
+msgstr ""
+"GNOME Internet Radio Lokator omogućuje korisnicima da s lakoćom pronađu i "
+"slušaju radio programe za stanice koje emitiraju putem interneta."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
+msgid ""
+"GNOME Internet Radio Locator is developed for the GNOME desktop and requires "
+"gstreamer 1.0 to be installed for playback of supported radio stations."
+msgstr ""
+"GNOME Internet Radio Lokator  je razvijen za GNOME radnu površinu i "
+"zahtijeva gstreamer 1.0 za reprodukciju podržanih radio stanica."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
+msgid ""
+"Enjoy listening to and recording from supported Internet Radio stations in "
+"GNOME Internet Radio Locator."
+msgstr ""
+"Uživajte u slušanju i snimanju s podržanih internetskih rado stanica u GNOME "
+"Internet Radio Lokatoru."
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
+msgid "Internet Radio Locator"
+msgstr "Internet Radio Lokator"
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:2
+msgid "Locate Internet Radio Stations"
+msgstr "Locirajte internetske radio stanice"
+
+#. Extra keywords that can be used to search for gnome-internet-radio-locator in GNOME Shell and Unity
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
+msgid "Live;Radio;Program;Station;Locator;"
+msgstr "Uživo;Radio;Program;Stanica;Lokator;"
+
+#. printf("Archiving program at %s\n", archive);
+#: ../src/gnome-internet-radio-locator-station.c:121
+#, c-format
+msgid "Recording from %s in %s to %s"
+msgstr "Snimaj s %s u %s na %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:139
+#, c-format
+msgid ""
+"An error happened trying to play %s\n"
+"Either the file doesn't exist, or you don't have a player for it."
+msgstr ""
+"Dogodila se greška pri pokušaju reprodukcije %s\n"
+"Ili datoteka ne postoji, ili nemate prikladni reproduktor."
+
+#: ../src/gnome-internet-radio-locator-station.c:145
+#, c-format
+msgid ""
+"An error happened trying to record %s\n"
+"Either the file doesn't exist, or you don't have a recorder for it."
+msgstr ""
+"Dogodila se greška pri pokušaju snimanja %s\n"
+"Ili datoteka ne postoji, ili nemate prikladni snimač."
+
+#: ../src/gnome-internet-radio-locator-station.c:176
+#: ../src/gnome-internet-radio-locator-station.c:196
+#: ../src/gnome-internet-radio-locator-station.c:313
+#: ../src/gnome-internet-radio-locator-station.c:336
+#, c-format
+msgid "Failed to run %s (%i)\n"
+msgstr "Neuspješno pokretanje %s (%i)\n"
+
+#: ../src/gnome-internet-radio-locator-station.c:223
+#: ../src/gnome-internet-radio-locator-station.c:360
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Status code: %i\n"
+"Details: %s"
+msgstr ""
+"Neuspješno otvaranje URL-a: '%s'\n"
+"Kôd stanja: %i\n"
+"Pojedinosti: %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:241
+#: ../src/gnome-internet-radio-locator-station.c:255
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Details: %s"
+msgstr ""
+"Neuspješno otvaranje URL-a: '%s'\n"
+"Pojedinosti: %s"
