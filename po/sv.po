@@ -1,0 +1,111 @@
+# Swedish translation for gnome-internet-radio-locator.
+# Copyright © 2017 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-internet-radio-locator package.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-internet-radio-locator master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"internet-radio-locator&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-04-30 18:29+0000\n"
+"PO-Revision-Date: 2017-04-30 23:44+0200\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
+msgid ""
+"GNOME Internet Radio Locator allows users to easily find and listen to live "
+"radio programs on radio broadcasters on the Internet."
+msgstr ""
+"GNOME:s internetradioletare låter användare lätt hitta och lyssna på "
+"direktsända radioprogram från radiosändningar på internet."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
+msgid ""
+"GNOME Internet Radio Locator is developed for the GNOME desktop and requires "
+"gstreamer 1.0 to be installed for playback of supported radio stations."
+msgstr ""
+"GNOME:s internetradioletare utvecklas för GNOME-skrivbordet och kräver att "
+"gstreamer 1.0 finns installerat för uppspelning av radiostationer som stöds."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
+msgid ""
+"Enjoy listening to and recording from supported Internet Radio stations in "
+"GNOME Internet Radio Locator."
+msgstr ""
+"Njut av att lyssna och spela in från internetradiostationer som stöds i "
+"GNOME:s internetradioletare."
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
+msgid "Internet Radio Locator"
+msgstr "Internetradioletare"
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:2
+msgid "Locate Internet Radio Stations"
+msgstr "Leta rätt på internetradiostationer"
+
+#. Extra keywords that can be used to search for gnome-internet-radio-locator in GNOME Shell and Unity
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
+msgid "Live;Radio;Program;Station;Locator;"
+msgstr "Live;Direktsänt;Radio;Program;Station;Locator;Letare;"
+
+#. printf("Archiving program at %s\n", archive);
+#: ../src/gnome-internet-radio-locator-station.c:121
+#, c-format
+msgid "Recording from %s in %s to %s"
+msgstr "Spelar in från %s i %s till %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:139
+#, c-format
+msgid ""
+"An error happened trying to play %s\n"
+"Either the file doesn't exist, or you don't have a player for it."
+msgstr ""
+"Ett fel uppstod vid uppspelning av %s\n"
+"Antingen existerar inte filen, eller så har du ingen spelare för den."
+
+#: ../src/gnome-internet-radio-locator-station.c:145
+#, c-format
+msgid ""
+"An error happened trying to record %s\n"
+"Either the file doesn't exist, or you don't have a recorder for it."
+msgstr ""
+"Ett fel uppstod vid inspelning av %s\n"
+"Antingen existerar inte filen, eller så har du ingen inspelare för den."
+
+#: ../src/gnome-internet-radio-locator-station.c:176
+#: ../src/gnome-internet-radio-locator-station.c:196
+#: ../src/gnome-internet-radio-locator-station.c:313
+#: ../src/gnome-internet-radio-locator-station.c:336
+#, c-format
+msgid "Failed to run %s (%i)\n"
+msgstr "Kunde inte köra %s (%i)\n"
+
+#: ../src/gnome-internet-radio-locator-station.c:223
+#: ../src/gnome-internet-radio-locator-station.c:360
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Status code: %i\n"
+"Details: %s"
+msgstr ""
+"Kunde inte öppna URL: ”%s”\n"
+"Statuskod: %i\n"
+"Detaljer: %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:241
+#: ../src/gnome-internet-radio-locator-station.c:255
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Details: %s"
+msgstr ""
+"Kunde inte öppna URL: ”%s”\n"
+"Detaljer: %s"
