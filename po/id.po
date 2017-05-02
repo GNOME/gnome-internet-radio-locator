@@ -1,0 +1,111 @@
+# Indonesian translation for gnome-internet-radio-locator.
+# Copyright (C) 2017 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-internet-radio-locator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-internet-radio-locator master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"internet-radio-locator&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-04-30 21:56+0000\n"
+"PO-Revision-Date: 2017-05-02 11:59+0700\n"
+"Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
+msgid ""
+"GNOME Internet Radio Locator allows users to easily find and listen to live "
+"radio programs on radio broadcasters on the Internet."
+msgstr ""
+"GNOME Internet Radio Locator memungkinkan pengguna dengan mudah untuk "
+"menemukan dan mendengarkan program radio langsung di radio penyiaran di "
+"Internet."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
+msgid ""
+"GNOME Internet Radio Locator is developed for the GNOME desktop and requires "
+"gstreamer 1.0 to be installed for playback of supported radio stations."
+msgstr ""
+"GNOME Internet Radio Locator dikembangkan untuk destop GNOME dan membutuhkan "
+"gstreamer 1.0 untuk dipasang untuk pemutaran stasiun radio yang didukung."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
+msgid ""
+"Enjoy listening to and recording from supported Internet Radio stations in "
+"GNOME Internet Radio Locator."
+msgstr ""
+"Nikmati mendengarkan dan merekam dari stasiun Radio Internet yang didukung "
+"di GNOME Internet Radio Locator."
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
+msgid "Internet Radio Locator"
+msgstr "Internet Radio Locator"
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:2
+msgid "Locate Internet Radio Stations"
+msgstr "Cari Stasiun Radio Internet"
+
+#. Extra keywords that can be used to search for gnome-internet-radio-locator in GNOME Shell and Unity
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
+msgid "Live;Radio;Program;Station;Locator;"
+msgstr "Langsung;Radio;Program;Stasiun;Locator;"
+
+#. printf("Archiving program at %s\n", archive);
+#: ../src/gnome-internet-radio-locator-station.c:121
+#, c-format
+msgid "Recording from %s in %s to %s"
+msgstr "Merekam dari %s di %s sampai %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:139
+#, c-format
+msgid ""
+"An error happened trying to play %s\n"
+"Either the file doesn't exist, or you don't have a player for it."
+msgstr ""
+"Terjadi kesalahan saat mencoba memutar %s\n"
+"Entah berkas itu tidak ada, atau Anda tidak memiliki pemutar untuk itu."
+
+#: ../src/gnome-internet-radio-locator-station.c:145
+#, c-format
+msgid ""
+"An error happened trying to record %s\n"
+"Either the file doesn't exist, or you don't have a recorder for it."
+msgstr ""
+"Terjadi kesalahan saat mencoba merekam %s\n"
+"Entah berkas itu tidak ada, atau Anda tidak memiliki perekam untuk itu."
+
+#: ../src/gnome-internet-radio-locator-station.c:176
+#: ../src/gnome-internet-radio-locator-station.c:196
+#: ../src/gnome-internet-radio-locator-station.c:313
+#: ../src/gnome-internet-radio-locator-station.c:336
+#, c-format
+msgid "Failed to run %s (%i)\n"
+msgstr "Gagal menjalankan %s (%i)\n"
+
+#: ../src/gnome-internet-radio-locator-station.c:223
+#: ../src/gnome-internet-radio-locator-station.c:360
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Status code: %i\n"
+"Details: %s"
+msgstr ""
+"Gagal membuka URL: '%s'\n"
+"Kode status: %i\n"
+"Rincian: %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:241
+#: ../src/gnome-internet-radio-locator-station.c:255
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Details: %s"
+msgstr ""
+"Gagal membuka URL: '%s'\n"
+"Rincian: %s"
