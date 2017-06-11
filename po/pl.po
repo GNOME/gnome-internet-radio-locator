@@ -1,0 +1,109 @@
+# Polish translation for gnome-internet-radio-locator.
+# Copyright © 2014-2017 the gnome-internet-radio-locator authors.
+# This file is distributed under the same license as the gnome-internet-radio-locator package.
+# Piotr Drąg <piotrdrag@gmail.com>, 2014-2017.
+# Aviary.pl <community-poland@mozilla.org>, 2014-2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-internet-radio-locator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-11 15:35+0200\n"
+"PO-Revision-Date: 2017-06-11 15:37+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
+msgid ""
+"GNOME Internet Radio Locator allows users to easily find and listen to live "
+"radio programs on radio broadcasters on the Internet."
+msgstr ""
+"GIRL umożliwia łatwe wyszukiwanie i słuchanie internetowych stacji radiowych."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
+msgid ""
+"GNOME Internet Radio Locator is developed for the GNOME desktop and requires "
+"gstreamer 1.0 to be installed for playback of supported radio stations."
+msgstr ""
+"Program GIRL został zaprojektowany dla środowiska GNOME i wymaga "
+"zainstalowania biblioteki GStreamer 1.0 do odtwarzania obsługiwanych stacji "
+"radiowych."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
+msgid ""
+"Enjoy listening to and recording from supported Internet Radio stations in "
+"GNOME Internet Radio Locator."
+msgstr "Ciesz się radiem internetowym w programie GIRL."
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
+msgid "Internet Radio Locator"
+msgstr "Internetowe stacje radiowe"
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:2
+msgid "Locate Internet Radio Stations"
+msgstr "Wyszukiwanie internetowych stacji radiowych"
+
+#. Extra keywords that can be used to search for gnome-internet-radio-locator in GNOME Shell and Unity
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
+msgid "Live;Radio;Program;Station;Locator;"
+msgstr "Na żywo;Live;Radio;Program;Stacja;Wyszukiwanie;Znajdź;"
+
+#. printf("Archiving program at %s\n", archive);
+#: ../src/gnome-internet-radio-locator-station.c:121
+#, c-format
+msgid "Recording from %s in %s to %s"
+msgstr "Nagrywanie z %s w %s do %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:139
+#, c-format
+msgid ""
+"An error happened trying to play %s\n"
+"Either the file doesn't exist, or you don't have a player for it."
+msgstr ""
+"Wystąpił błąd podczas próby odtworzenia %s\n"
+"Plik nie istnieje lub nie ma dla niego odtwarzacza."
+
+#: ../src/gnome-internet-radio-locator-station.c:145
+#, c-format
+msgid ""
+"An error happened trying to record %s\n"
+"Either the file doesn't exist, or you don't have a recorder for it."
+msgstr ""
+"Wystąpił błąd podczas próby nagrania %s\n"
+"Plik nie istnieje lub nie ma dla niego programu nagrywającego."
+
+#: ../src/gnome-internet-radio-locator-station.c:176
+#: ../src/gnome-internet-radio-locator-station.c:196
+#: ../src/gnome-internet-radio-locator-station.c:313
+#: ../src/gnome-internet-radio-locator-station.c:336
+#, c-format
+msgid "Failed to run %s (%i)\n"
+msgstr "Wykonanie %s się nie powiodło (%i)\n"
+
+#: ../src/gnome-internet-radio-locator-station.c:223
+#: ../src/gnome-internet-radio-locator-station.c:360
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Status code: %i\n"
+"Details: %s"
+msgstr ""
+"Otwarcie adresu URL się nie powiodło: „%s”\n"
+"Kod stanu: %i\n"
+"Szczegóły: %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:241
+#: ../src/gnome-internet-radio-locator-station.c:255
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Details: %s"
+msgstr ""
+"Otwarcie adresu URL się nie powiodło: „%s”\n"
+"Szczegóły: %s"
