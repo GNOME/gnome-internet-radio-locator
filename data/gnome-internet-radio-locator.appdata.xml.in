@@ -11,11 +11,13 @@
       Internet.
     </_p>
     <_p>
-      GNOME Internet Radio Locator is developed for the GNOME desktop and requires gstreamer 1.0
-      to be installed for playback of supported radio stations.
+      GNOME Internet Radio Locator is developed for the GNOME desktop
+      and requires gstreamer 1.0 to be installed for playback of
+      supported radio stations.
     </_p>
     <_p>
-      Enjoy listening to and recording from supported Internet Radio stations in GNOME Internet Radio Locator.
+      Enjoy listening to and recording from supported Internet Radio
+      stations in GNOME Internet Radio Locator.
     </_p>
   </description>
   <url type="homepage">https://wiki.gnome.org/Apps/GNOMEInternetRadioLocator</url>
