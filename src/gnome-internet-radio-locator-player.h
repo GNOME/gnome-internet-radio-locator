@@ -51,4 +51,8 @@ void gnome_internet_radio_locator_player_quit (GstPlayer *player);
 
 void gnome_internet_radio_locator_player_pause (GstPlayer *player);
 
+void gnome_internet_radio_locator_player_stop (GstPlayer *player);
+
+static gdouble get_volume (GtkWidget *widget, GstPlay *play);
+
 #endif /* GNOME_INTERNET_RADIO_LOCATOR_PLAYER_H */

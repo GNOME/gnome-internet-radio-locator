@@ -449,7 +449,7 @@ gnome_internet_radio_locator_station_parser(GNOMEInternetRadioLocatorStationInfo
 
 			GNOMEInternetRadioLocatorStreamInfo *stream = g_new0(GNOMEInternetRadioLocatorStreamInfo, 1);
 
-			gnome_internet_radio_locator->stream_count++;
+			/* gnome_internet_radio_locator->stream_count++; */
 
 			station->stream = stream;
 
@@ -497,8 +497,7 @@ gnome_internet_radio_locator_station_parser(GNOMEInternetRadioLocatorStationInfo
 		/* if... "stream" */
 		sub = sub->next;
 	}
-
-	gnome_internet_radio_locator->station_count++;
+	/* gnome_internet_radio_locator->station_count++; */
 	return;
 }
 
@@ -593,9 +592,9 @@ gint gnome_internet_radio_locator_station_update (GNOMEInternetRadioLocatorStati
 	GNOMEInternetRadioLocatorStationInfo *stationinfo;
 	/* GList *gnome_internet_radio_locator_local_stations = NULL; */
 	gchar *local_station_uri, *local_station_name, *local_station_location, *local_station_band, *local_station_description, *local_station_website;
-	gchar *stations = g_strconcat(g_get_home_dir(), "/.gnome_internet_radio_locator/gnome_internet_radio_locator.xml", NULL);
+	gchar *stations = g_strconcat(g_get_home_dir(), "/.gnome-internet-radio-locator/gnome-internet-radio-locator.xml", NULL);
 
-	gboolean local_gnome_internet_radio_locator_file = g_file_test (".gnome_internet_radio_locator/gnome_internet_radio_locator.xml", G_FILE_TEST_EXISTS);
+	gboolean local_gnome_internet_radio_locator_file = g_file_test (".gnome-internet-radio-locator/gnome-internet-radio-locator.xml", G_FILE_TEST_EXISTS);
 
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("local_gnome_internet_radio_locator_file = %i\n", local_gnome_internet_radio_locator_file);
 

@@ -39,6 +39,7 @@
 GST_DEBUG_CATEGORY (play_debug);
 #define GST_CAT_DEFAULT play_debug
 
+extern GstPlay *player;
 static gboolean play_next (GstPlay * play);
 static gboolean play_prev (GstPlay * play);
 static void play_reset (GstPlay * play);
@@ -424,6 +425,15 @@ play_set_relative_volume (GstPlay * play, gdouble volume_step)
 
   g_print ("Volume: %.0f%%                  \n", volume * 100);
 }
+
+static gdouble
+get_volume (GtkWidget *widget, GstPlay *play)
+{
+	gdouble volume;
+	g_object_get (player, "volume", &volume, NULL);
+	return volume;
+}
+
 
 static gchar *
 play_uri_get_display_name (GstPlayer * player, const gchar * uri)

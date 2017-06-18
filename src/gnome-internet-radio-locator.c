@@ -30,7 +30,17 @@
 
 #include "gnome-internet-radio-locator.h"
 #include "gnome-internet-radio-locator-gui.h"
+#include "gnome-internet-radio-locator-markers.h"
 #include "gnome-internet-radio-locator-player.h"
+
+#define N_COLS 2
+#define COL_ID 0
+#define COL_NAME 1
+
+static ChamplainPathLayer *path_layer;
+static ChamplainPathLayer *path;
+static gboolean destroying = FALSE;
+
 
 static ChamplainView *champlain_view;
 GApplication *app;
@@ -57,6 +67,254 @@ GtkWidget *gnome_internet_radio_locator_app;
 GstPlayer *player;
 
 extern struct GNOMEInternetRadioLocatorMedia *media;
+
+
+/*
+ * Terminate the main loop.
+ */
+static void
+on_destroy (GtkWidget *widget, gpointer data)
+{
+	destroying = TRUE;
+	gtk_main_quit ();
+}
+
+
+static void
+toggle_layer (GtkToggleButton *widget,
+	      ClutterActor *layer)
+{
+	if (gtk_toggle_button_get_active (widget))
+	{
+		champlain_path_layer_set_visible (path_layer, TRUE);
+		champlain_path_layer_set_visible (path, TRUE);
+		champlain_marker_layer_animate_in_all_markers (CHAMPLAIN_MARKER_LAYER (layer));
+	}
+	else
+	{
+		champlain_path_layer_set_visible (path_layer, FALSE);
+		champlain_path_layer_set_visible (path, FALSE);
+		champlain_marker_layer_animate_out_all_markers (CHAMPLAIN_MARKER_LAYER (layer));
+	}
+}
+
+static gboolean
+mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *view)
+{
+	gdouble lat, lon;
+
+	lon = champlain_view_x_to_longitude (view, event->x);
+	lat = champlain_view_y_to_latitude (view, event->y);
+	g_print ("Mouse click at: %f  %f\n", lat, lon);
+
+	return TRUE;
+}
+
+
+static void
+map_source_changed (GtkWidget *widget,
+		    ChamplainView *view)
+{
+	gchar *id;
+	ChamplainMapSource *source;
+	GtkTreeIter iter;
+	GtkTreeModel *model;
+
+	if (!gtk_combo_box_get_active_iter (GTK_COMBO_BOX (widget), &iter))
+		return;
+
+	model = gtk_combo_box_get_model (GTK_COMBO_BOX (widget));
+
+	gtk_tree_model_get (model, &iter, COL_ID, &id, -1);
+
+	ChamplainMapSourceFactory *factory = champlain_map_source_factory_dup_default ();
+	source = champlain_map_source_factory_create_cached_source (factory, id);
+	g_object_set (G_OBJECT (view), "map-source", source, NULL);
+	g_object_unref (factory);
+}
+
+static void
+zoom_changed (GtkSpinButton *spinbutton,
+	      ChamplainView *view)
+{
+	gint zoom = gtk_spin_button_get_value_as_int (spinbutton);
+
+	g_object_set (G_OBJECT (view), "zoom-level", zoom, NULL);
+}
+
+static void
+volume_changed (GtkSpinButton *spinbutton)
+{
+	gint volume = gtk_spin_button_get_value_as_int (spinbutton);
+
+	g_object_set (G_OBJECT (player), "volume", volume, NULL);
+}
+
+static void
+map_zoom_changed (ChamplainView *view,
+		  GParamSpec *gobject,
+		  GtkSpinButton *spinbutton)
+{
+	gint zoom;
+
+	g_object_get (G_OBJECT (view), "zoom-level", &zoom, NULL);
+	gtk_spin_button_set_value (spinbutton, zoom);
+}
+
+
+static void
+view_state_changed (ChamplainView *view,
+		    GParamSpec *gobject,
+		    GtkImage *image)
+{
+	ChamplainState state;
+
+	if (destroying)
+		return;
+
+	g_object_get (G_OBJECT (view), "state", &state, NULL);
+	if (state == CHAMPLAIN_STATE_LOADING)
+	{
+		gtk_image_set_from_icon_name (image, "edit-find", GTK_ICON_SIZE_BUTTON);
+	}
+	else
+	{
+		gtk_image_clear (image);
+	}
+}
+
+
+static void
+zoom_in (GtkWidget *widget,
+	 ChamplainView *view)
+{
+	champlain_view_zoom_in (view);
+}
+
+
+static void
+zoom_out (GtkWidget *widget,
+	  ChamplainView *view)
+{
+	champlain_view_zoom_out (view);
+}
+
+
+static void
+toggle_wrap (GtkWidget *widget,
+	     ChamplainView *view)
+{
+	gboolean wrap;
+
+	wrap = champlain_view_get_horizontal_wrap (view);
+	champlain_view_set_horizontal_wrap (view, !wrap);
+}
+
+static void
+build_combo_box (GtkComboBox *box)
+{
+	ChamplainMapSourceFactory *factory;
+	GSList *sources, *iter;
+	GtkTreeStore *store;
+	GtkTreeIter parent;
+	GtkCellRenderer *cell;
+
+	store = gtk_tree_store_new (N_COLS, G_TYPE_STRING, /* id */
+				    G_TYPE_STRING, /* name */
+				    -1);
+
+	factory = champlain_map_source_factory_dup_default ();
+	sources = champlain_map_source_factory_get_registered (factory);
+
+	iter = sources;
+	while (iter != NULL)
+	{
+		ChamplainMapSourceDesc *desc = CHAMPLAIN_MAP_SOURCE_DESC (iter->data);
+		const gchar *id = champlain_map_source_desc_get_id (desc);
+		const gchar *name = champlain_map_source_desc_get_name (desc);
+
+		gtk_tree_store_append (store, &parent, NULL);
+		gtk_tree_store_set (store, &parent, COL_ID, id,
+				    COL_NAME, name, -1);
+
+		iter = g_slist_next (iter);
+	}
+
+	g_slist_free (sources);
+	g_object_unref (factory);
+
+	gtk_combo_box_set_model (box, GTK_TREE_MODEL (store));
+
+	cell = gtk_cell_renderer_text_new ();
+	gtk_cell_layout_pack_start (GTK_CELL_LAYOUT (box), cell, FALSE);
+	gtk_cell_layout_set_attributes (GTK_CELL_LAYOUT (box), cell,
+					"text", COL_NAME, NULL);
+
+}
+
+
+static void
+append_point (ChamplainPathLayer *layer, gdouble lon, gdouble lat)
+{
+	ChamplainCoordinate *coord;
+
+	coord = champlain_coordinate_new_full (lon, lat);
+	champlain_path_layer_add_node (layer, CHAMPLAIN_LOCATION (coord));
+}
+
+static void
+add_clicked (GtkButton     *button,
+	     ChamplainView *view)
+{
+	GtkWidget *window, *dialog, *vbox, *combo;
+	GtkResponseType response;
+
+	window = g_object_get_data (G_OBJECT (view), "window");
+	dialog = gtk_dialog_new_with_buttons ("Add secondary map source",
+					      GTK_WINDOW (window),
+					      GTK_DIALOG_MODAL,
+					      "Add",
+					      GTK_RESPONSE_OK,
+					      "Cancel",
+					      GTK_RESPONSE_CANCEL,
+					      NULL);
+
+	combo = gtk_combo_box_new ();
+	build_combo_box (GTK_COMBO_BOX (combo));
+	gtk_combo_box_set_active (GTK_COMBO_BOX (combo), 0);
+
+	vbox = gtk_dialog_get_content_area (GTK_DIALOG (dialog));
+	gtk_container_add (GTK_CONTAINER (vbox), combo);
+
+	gtk_widget_show_all (dialog);
+
+	response = gtk_dialog_run (GTK_DIALOG (dialog));
+
+	if (response == GTK_RESPONSE_OK)
+	{
+		GtkTreeModel *model;
+		GtkTreeIter iter;
+		ChamplainMapSource *source;
+		ChamplainMapSourceFactory *factory;
+		char *id;
+
+		if (!gtk_combo_box_get_active_iter (GTK_COMBO_BOX (combo), &iter))
+			return;
+
+		model = gtk_combo_box_get_model (GTK_COMBO_BOX (combo));
+
+		gtk_tree_model_get (model, &iter, COL_ID, &id, -1);
+
+		factory = champlain_map_source_factory_dup_default ();
+		source = champlain_map_source_factory_create_memcached_source (factory, id);
+
+		champlain_view_add_overlay_source (view, source, 0.6 * 255);
+		g_object_unref (factory);
+		g_free (id);
+	}
+
+	gtk_widget_destroy (dialog);
+}
 
 static void
 new_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
@@ -122,9 +380,12 @@ about_program_cb(GSimpleAction *simple, GVariant *parameter, gpointer user_data)
 
 static void
 quit_program(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
-  gnome_internet_radio_locator_player_stop(player);
-  g_application_quit(app);
+  /* gnome_internet_radio_locator_player_stop(player); */
+  /* g_application_quit(app); */
+  gst_player_stop(player);
+  g_object_unref (player);
   gst_deinit();
+  gtk_main_quit ();
   return;
 }
 
@@ -179,7 +440,7 @@ void on_new_station_changed(GtkWidget * a, gpointer user_data)
 
 void on_stations_selector_changed(GtkWidget * a, gpointer user_data)
 {
-	GNOMEInternetRadioLocatorStationInfo *station;
+	GNOMEInternetRadioLocatorStationInfo *station = NULL;
 
 	if (gnome_internet_radio_locator->selected_station_uri != NULL)
 		g_free(gnome_internet_radio_locator->selected_station_uri);
@@ -228,6 +489,7 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 	window = gtk_application_window_new (app);
 	widget = gtk_champlain_embed_new();
 	toolbar = gtk_toolbar_new();
+	input = gtk_entry_new();
 #if 0
 	new = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "New");
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(new), TRUE);
@@ -243,25 +505,6 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(search), "Search Internet Radio Station");
 	g_signal_connect(search, "clicked", G_CALLBACK (search_station), GTK_WINDOW (window));
 #endif
-	input = gtk_entry_new();
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_WIDGET(input), 2);
-	gtk_widget_show (GTK_WIDGET(input));
-	gtk_tool_item_set_tooltip_text (GTK_WIDGET(input), "WNYC");
-	g_signal_connect(input, "clicked", G_CALLBACK (listen_station), GTK_WINDOW (window));
-		
-	listen = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Listen");
-	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(listen), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(listen), 3);
-	gtk_widget_show (GTK_WIDGET(listen));
-	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(listen), "Listen Internet Radio Station");
-	g_signal_connect(listen, "clicked", G_CALLBACK (listen_station), GTK_WINDOW (window));
-
-	stop = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Stop");
-	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(stop), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(stop), 4);
-	gtk_widget_show (GTK_WIDGET(stop));
-	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(stop), "Stop Internet Radio Station");
-	g_signal_connect(stop, "clicked", G_CALLBACK (stop_station), GTK_WINDOW (window));
 
 #if 0
 	prev = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Prev");
@@ -299,13 +542,7 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(program), "About Program");
 	g_signal_connect(program, "clicked", G_CALLBACK (about_program_cb), GTK_WINDOW (window));
 #endif
-	quit = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Exit");
-	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(quit), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(quit), 10);
-	gtk_widget_show (GTK_WIDGET(quit));
-	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(quit), "Exit Program");
-	g_signal_connect(quit, "clicked", G_CALLBACK (quit_program), GTK_WINDOW (window));
-
+#if 0
 	grid = gtk_grid_new();
 	gtk_grid_attach (GTK_GRID(grid), GTK_WIDGET(toolbar), 0, 0, 1, 1);
 	gtk_grid_attach (GTK_GRID(grid), GTK_WIDGET(widget), 0, 1, 1, 1);
@@ -313,6 +550,7 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
         gtk_widget_set_size_request(GTK_WIDGET(widget), 1440, 720);
 	gtk_container_add (GTK_CONTAINER(window), GTK_WIDGET(grid));
 	g_signal_connect (window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
+#endif
 	gtk_window_set_title (GTK_WINDOW(window), "GNOME Internet Radio Locator");
 	gtk_window_set_default_size (GTK_WINDOW(window), 1440, 720);
 
@@ -332,7 +570,7 @@ void on_new_station_clicked(GtkWidget *a,
 			    gpointer user_data)
 {
 	GtkWidget *station;
-	GNOMEInternetRadioLocatorStationInfo *stationinfo;
+	GNOMEInternetRadioLocatorStationInfo *stationinfo = NULL;
 	/* GList *l = g_list_first(gnome_internet_radio_locator_stations); */
 
 	/* stationinfo = l->data; */
@@ -369,16 +607,304 @@ void on_new_station_clicked(GtkWidget *a,
 
 }
 
+#if 0
+static gboolean
+on_location_matches(GtkEntryCompletion *widget,
+		    GtkTreeModel *model,
+		    GtkTreeIter *iter,
+		    gpointer user_data)
+{
+	GValue value = {0, };
+
+	gtk_tree_model_get_value(model, iter, STATION_LOCATION, &value);
+	gnome_internet_radio_locator->selected_station_location = g_strdup(g_value_get_string(&value));
+	g_value_unset(&value);
+
+	/* appbar_send_msg(_("Found location %s"), */
+	/* 		gnome_internet_radio_locator->selected_station_location); */
+	/* gnome_internet_radio_locator_helper_run(gnome_internet_radio_locator->selected_station_uri, */
+	/* 		gnome_internet_radio_locator->selected_station_name, */
+	/* 		GNOME_INTERNET_RADIO_LOCATOR_STREAM_SHOUTCAST, */
+	/* 		GNOME_INTERNET_RADIO_LOCATOR_STREAM_PLAYER); */
+	return FALSE;
+}
+#endif
+
+static gboolean
+on_search_matches(GtkEntryCompletion *widget,
+		  GtkTreeModel *model,
+		  GtkTreeIter *iter,
+		  gpointer user_data)
+{
+	GValue value = {0, };
+	gtk_tree_model_get_value(model, iter, STATION_URI, &value);
+	gnome_internet_radio_locator_player_stop(player);
+	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
+	gnome_internet_radio_locator_player_new(player, g_value_get_string(&value));
+	gst_player_play(player);
+	return FALSE;
+}
+
 int
 main (int argc,
       char **argv)
 {
-	int status;
+	GtkWidget *window;
+	GtkWidget *widget, *vbox, *bbox, *button, *viewport, *image, *input;
+	GtkEntryCompletion *completion;
+	ChamplainView *view;
+	ChamplainMarkerLayer *layer;
+	ClutterActor *scale;
+	ChamplainLicense *license_actor;
+	gchar *world_station_xml_filename, *local_station_xml_file;
+	GtkListStore *model;
+	GtkTreeIter iter;
+	GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
 
 	if (gtk_clutter_init (&argc, &argv) != CLUTTER_INIT_SUCCESS)
 		return 1;
 
+	window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+
+	/* give the window a 10px wide border */
+	gtk_container_set_border_width (GTK_CONTAINER (window), 10);
+
+	/* give it the title */
+	gtk_window_set_title (GTK_WINDOW (window), "GNOME Internet Radio Locator");
+
+	/* Connect the destroy event of the window with our on_destroy function
+	 * When the window is about to be destroyed we get a notificaiton and
+	 * stop the main GTK loop
+	 */
+	g_signal_connect (G_OBJECT (window), "destroy", G_CALLBACK (on_destroy),
+			  NULL);
+
+	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 10);
+
+	widget = gtk_champlain_embed_new ();
+	view = gtk_champlain_embed_get_view (GTK_CHAMPLAIN_EMBED (widget));
+	clutter_actor_set_reactive (CLUTTER_ACTOR (view), TRUE);
+	g_signal_connect (view, "button-release-event", G_CALLBACK (mouse_click_cb), view);
+
+
+	g_object_set (G_OBJECT (view),
+		      "kinetic-mode", TRUE,
+		      "zoom-level", 5,
+		      NULL);
+
+	g_object_set_data (G_OBJECT (view), "window", window);
+
+	scale = champlain_scale_new ();
+	champlain_scale_connect_view (CHAMPLAIN_SCALE (scale), view);
+
+	/* align to the bottom left */
+	clutter_actor_set_x_expand (scale, TRUE);
+	clutter_actor_set_y_expand (scale, TRUE);
+	clutter_actor_set_x_align (scale, CLUTTER_ACTOR_ALIGN_START);
+
+	clutter_actor_set_y_align (scale, CLUTTER_ACTOR_ALIGN_END);
+	clutter_actor_add_child (CLUTTER_ACTOR (view), scale);
+
+	license_actor = champlain_view_get_license_actor (view);
+	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
+
+	champlain_view_center_on (CHAMPLAIN_VIEW (view), 45.466, -73.75);
+
+	layer = create_marker_layer (view, &path);
+	champlain_view_add_layer (view, CHAMPLAIN_LAYER (path));
+	champlain_view_add_layer (view, CHAMPLAIN_LAYER (layer));
+
+	path_layer = champlain_path_layer_new ();
+	/* Cheap approx of Highway 10 */
+	append_point (path_layer, 45.4095, -73.3197);
+	append_point (path_layer, 45.4104, -73.2846);
+	append_point (path_layer, 45.4178, -73.2239);
+	append_point (path_layer, 45.4176, -73.2181);
+	append_point (path_layer, 45.4151, -73.2126);
+	append_point (path_layer, 45.4016, -73.1926);
+	append_point (path_layer, 45.3994, -73.1877);
+	append_point (path_layer, 45.4000, -73.1815);
+	append_point (path_layer, 45.4151, -73.1218);
+	champlain_view_add_layer (view, CHAMPLAIN_LAYER (path_layer));
+
+	gtk_widget_set_size_request (widget, 640, 481);
+
+	bbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 10);
+
+#if 0
+	button = gtk_button_new();
+	image = gtk_image_new_from_icon_name("new", GTK_ICON_SIZE_BUTTON);
+	gtk_button_set_image (GTK_BUTTON (button), image);
+	gtk_button_set_label (GTK_BUTTON (button), "New");
+	g_signal_connect(button, "clicked", G_CALLBACK(on_new_station_clicked), view);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+#endif
+
+	button = gtk_button_new();
+	image = gtk_image_new_from_icon_name("media-playback-start", GTK_ICON_SIZE_BUTTON);
+	gtk_button_set_image (GTK_BUTTON (button), image);
+	gtk_button_set_label (GTK_BUTTON (button), "Listen");
+	g_signal_connect(button, "clicked", G_CALLBACK (listen_station), view);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+
+	GStatBuf stats;
+
+	memset(&stats, 0, sizeof(stats));
+
+	input = gtk_entry_new();
+
+	completion = gtk_entry_completion_new();
+	gtk_entry_completion_set_text_column(completion, STATION_NAME);
+	gtk_entry_completion_set_text_column(completion, STATION_LOCATION);
+	gtk_entry_set_completion(GTK_ENTRY(input), completion);
+	g_signal_connect(G_OBJECT(completion), "match-selected",
+			 G_CALLBACK(on_search_matches), NULL);
+	model = gtk_list_store_new(11, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING);
+	world_station_xml_filename = g_strconcat(GNOME_INTERNET_RADIO_LOCATOR_DATADIR, "/gnome-internet-radio-locator.xml", NULL);
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("world_station_xml_filename = %s\n",
+	    world_station_xml_filename);
+
+	if (world_station_xml_filename == NULL) {
+		g_warning(("Failed to open %s.  Please install it.\n"),
+			  world_station_xml_filename);
+	}
+
+	local_station_xml_file =
+	    g_strconcat(g_get_home_dir(), "/.gnome-internet-radio-locator/gnome-internet-radio-locator.xml", NULL);
+
+	if (!g_stat(local_station_xml_file, &stats)) {
+		localstation = gnome_internet_radio_locator_station_load_from_file(NULL, local_station_xml_file);
+	} else {
+		localstation = NULL;
+	}
+
+	if (localstation == NULL) {
+		printf("Failed to open %s.\n", local_station_xml_file);
+	}
+
+/*   g_free (local_station_xml_file); */
+
+	stationinfo = gnome_internet_radio_locator_station_load_from_file(localstation, world_station_xml_filename);
+
+	gnome_internet_radio_locator_stations = NULL;
+
+	while (stationinfo != NULL) {
+
+		gtk_list_store_append(model, &iter);
+		gtk_list_store_set(model,
+				   &iter,
+				   STATION_NAME,
+				   stationinfo->name,
+				   STATION_LOCATION,
+				   stationinfo->location,
+				   STATION_URI,
+				   stationinfo->stream->uri,
+				   STATION_DESCRIPTION,
+				   stationinfo->description,
+				   STATION_FREQUENCY,
+				   stationinfo->frequency,
+				   STATION_BAND,
+				   stationinfo->band,
+				   STATION_TYPE,
+				   stationinfo->type,
+				   STATION_RANK,
+				   stationinfo->rank,
+				   STATION_BITRATE,
+				   stationinfo->bitrate,
+				   STATION_SAMPLERATE,
+				   stationinfo->samplerate,
+				   STATION_ID,
+				   stationinfo->id,
+				   -1);
+
+		stationinfo = stationinfo->next;
+	}
+
+	gtk_entry_completion_set_model(completion, GTK_TREE_MODEL(model));
+
+	gtk_widget_show(input);
+
+	gtk_container_add (GTK_CONTAINER (bbox), input);
+
+	button = gtk_button_new();
+	image = gtk_image_new_from_icon_name("media-playback-stop", GTK_ICON_SIZE_BUTTON);
+	gtk_button_set_image (GTK_BUTTON (button), image);
+	gtk_button_set_label (GTK_BUTTON (button), "Stop");
+	g_signal_connect(button, "clicked", G_CALLBACK (stop_station), view);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+	button = gtk_button_new ();
+	image = gtk_image_new_from_icon_name ("zoom-in", GTK_ICON_SIZE_BUTTON);
+	gtk_button_set_image (GTK_BUTTON (button), image);
+	gtk_button_set_label (GTK_BUTTON (button), "Zoom In");
+	g_signal_connect (button, "clicked", G_CALLBACK (zoom_in), view);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+	button = gtk_spin_button_new_with_range (0, 20, 1);
+	gtk_spin_button_set_value (GTK_SPIN_BUTTON (button),
+				   champlain_view_get_zoom_level (view));
+	g_signal_connect (button, "changed", G_CALLBACK (zoom_changed), view);
+	g_signal_connect (view, "notify::zoom-level", G_CALLBACK (map_zoom_changed),
+			  button);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+
+	button = gtk_button_new ();
+	image = gtk_image_new_from_icon_name ("zoom-out", GTK_ICON_SIZE_BUTTON);
+	gtk_button_set_image (GTK_BUTTON (button), image);
+	gtk_button_set_label (GTK_BUTTON (button), "Zoom Out");
+	g_signal_connect (button, "clicked", G_CALLBACK (zoom_out), view);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+
+#if 0
+	button = gtk_toggle_button_new_with_label ("Markers");
+	gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (button), TRUE);
+	g_signal_connect (button, "toggled", G_CALLBACK (toggle_layer), layer);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+#endif
+	/* button = gtk_combo_box_new (); */
+	/* build_combo_box (GTK_COMBO_BOX (button)); */
+	/* gtk_combo_box_set_active (GTK_COMBO_BOX (button), 0); */
+	/* g_signal_connect (button, "changed", G_CALLBACK (map_source_changed), view); */
+	/* gtk_container_add (GTK_CONTAINER (bbox), button); */
+
+#if 0
+	button = gtk_button_new ();
+	image = gtk_image_new_from_icon_name ("list-add", GTK_ICON_SIZE_BUTTON);
+	gtk_button_set_image (GTK_BUTTON (button), image);
+
+	g_signal_connect (button, "clicked", G_CALLBACK (add_clicked), view);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+#endif
+	button = gtk_button_new();
+	image = gtk_image_new_from_icon_name("stop", GTK_ICON_SIZE_BUTTON);
+	gtk_button_set_image (GTK_BUTTON (button), image);
+	gtk_button_set_label (GTK_BUTTON (button), "Exit");
+	g_signal_connect(button, "clicked", G_CALLBACK(quit_program), view);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+
+	button = gtk_image_new ();
+	gtk_widget_set_size_request (button, 22, -1);
+	g_signal_connect (view, "notify::state", G_CALLBACK (view_state_changed),
+			  button);
+	gtk_box_pack_end (GTK_BOX (bbox), button, FALSE, FALSE, 0);
+
+	viewport = gtk_frame_new (NULL);
+	gtk_container_add (GTK_CONTAINER (viewport), widget);
+
+	gtk_box_pack_start (GTK_BOX (vbox), bbox, FALSE, FALSE, 0);
+	gtk_container_add (GTK_CONTAINER (vbox), viewport);
+
+	/* and insert it into the main window  */
+	gtk_container_add (GTK_CONTAINER (window), vbox);
+
+	/* make sure that everything, window and label, are visible */
+	gtk_widget_show_all (window);
+
 	gst_init(&argc, &argv);
+
+	/* start the main loop */
+	gtk_main ();
+
+	return 0;
+#if 0
 	
 	app = gtk_application_new ("org.gnome.gnome-internet-radio-locator", G_APPLICATION_FLAGS_NONE);
 
@@ -389,5 +915,6 @@ main (int argc,
 	g_object_unref (app);
 
 	return status;
+#endif
 }
 

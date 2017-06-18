@@ -11,6 +11,7 @@ bin_PROGRAMS = gnome-internet-radio-locator
 gnome_internet_radio_locator_SOURCES = \
 	       gnome-internet-radio-locator-gui.c \
 	       gnome-internet-radio-locator-listener.c \
+	       gnome-internet-radio-locator-markers.c \
                gnome-internet-radio-locator-player.c \
                gnome-internet-radio-locator-program.c \
 	       gnome-internet-radio-locator-runners.c \
