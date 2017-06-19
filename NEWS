@@ -1,4 +1,23 @@
 =============
+Version 0.3.0
+=============
+
+GUI
+
+	* src/Makefile.am: Add gnome-internet-radio-locator-markers.c
+	* src/gnome-internet-radio-locator-markers.c: Add marker code
+	* src/gnome-internet-radio-locator-markers.h: Add marker code
+	* src/gnome-internet-radio-locator-player.c: Parse local XML
+	* src/gnome-internet-radio-locator.c: Add GNOME Maps layer code
+	* src/gnome-internet-radio-locator.xml: Add new stations
+
+Stations
+
+	* Add Burst Radio (burstradio.org.uk)
+	* Add WFUV (wfuv.org)
+	* Add Radio Free Brooklyn (radiofreebrooklyn.com)
+
+=============
 Version 0.2.0
 =============
 

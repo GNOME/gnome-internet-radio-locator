@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="gnome_internet_radio_locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome_internet_radio_locator-0.1.dtd">
-<gnome_internet_radio_locator version="0.1.0">
+<gnome_internet_radio_locator version="0.3.0">
+  <station band="ONLINE" id="burstradio" lang="en" name="Burst Radio" rank="1.0" type="edu">
+    <frequency uri="http://www.burstradio.org.uk/"></frequency>
+    <location>Bristol, United Kingdom</location>
+    <description lang="en">
+      Welcome to Burst, Bristol University’s student radio station. We broadcast from our studio in the student’s union 24 hours a day during term times.
+
+      The great thing about Burst is that we are completely run by students. Every aspect of the station uses student volunteers, passionate about the media and having a good time! We are proud to represent every corner of life at the University of Bristol – no matter your level of technical knowledge, music interests or skills, there is something for everyone at Burst!
+    </description>
+    <stream mime="audio/mpeg" uri="http://s.burstradio.org.uk:8000/;" codec="MPEG ADTS, layer III, v1" samplerate="44100 Hz" channels="JntStereo" bitrate="128 kbps" />
+    <uri>http://www.burstradio.org.uk/</uri>
+  </station>
+  <station band="90.7FM" id="wfuv" lang="en" name="WFUV" rank="1.0" type="edu">
+    <frequency uri="http://www.wfuv.org/">Bronx, New York City, NY</frequency>
+    <location>Bronx, New York City, NY</location>
+    <description lang="en">
+      WFUV (90.7 FM, wfuv.org), New York’s source for music discovery, has been a noncommercial, member-supported public media service of Fordham University for more than 65 years. WFUV has received national recognition for its unique weekday format of adult album alternative music, award-winning local news and sports, and a diverse weekend lineup.
+    </description>
+    <stream mime="audio/mpeg" uri="http://wfuv-onair.streamguys.org/onair-hi" codec="MPEG ADTS, layer III, v1" samplerate="44100 Hz" channels="JntStereo" bitrate="128 kbps" />
+  </station>
+  <station band="ONLINE" id="radiofreebrooklyn" lang="en" name="Radio Free Brooklyn" rank="1.0" type="edu">
+    <frequency uri="https://radiofreebrooklyn.com/">Brooklyn, New York City, NY</frequency>
+    <location>Brooklyn, New York City, NY</location>
+    <description lang="en">
+      Radio Free Brooklyn is a 501(c)3 nonprofit organization whose mission is to give a global voice to local artists, residents, community organizers and other non-profit institutions by providing a commercial-free freeform Internet Radio platform.
+
+      We are a non-commercial community freeform Internet radio station, streaming original content by the artists and residents of NYC’s most populous borough 24-hours a day, 7 days a week.
+    </description>
+    <stream mime="audio/mpeg" uri="http://192.111.140.6:9300/stream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="JntStereo" bitrate="192 kbps" />
+  </station>
   <station band="ONLINE" id="3rdrock" lang="en" name="NASA's Third Rock Radio" rank="1.0" type="gov">
     <frequency uri="https://www.nasa.gov/feature/third-rock-radio">ONLINE</frequency>
     <location>Space</location>
@@ -574,16 +603,6 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://radio.elte.hu:8000/eper24" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="22050 Hz" channels="Mono" bitrate="24 kbps" />
     <uri>http://eper.elte.hu/</uri>
   </station>
-  <!-- Non-streamable as of 2016/07/07
-  <station band="ONLINE" id="burstradio" lang="en" name="Burst Radio" rank="1.0" type="edu">
-    <frequency uri="http://www.burstradio.co.uk/"></frequency>
-    <location>Brighton, United Kingdom</location>
-    <description lang="en">Burst aims to capture the essential essence of student life at Brighton University; distil it and broadcast this elixir to you.</description>
-    <stream mime="audio/mpeg" uri="http://burst.brighton.ac.uk:8000/burst.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="22050 Hz" channels="Mono" bitrate="24 kbps" />
-    <stream mime="audio/mpeg" uri="http://burst.brighton.ac.uk:8000/burst.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <uri>http://www.burstradio.co.uk/</uri>
-  </station>
-  -->
   <station band="ONLINE" id="fusefm" lang="en" name="Fuse FM" rank="1.0" type="edu">
     <frequency uri="http://fusefm.co.uk/"></frequency>
     <location>Manchester, United Kingdom</location>
