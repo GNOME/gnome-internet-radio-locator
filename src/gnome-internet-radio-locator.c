@@ -382,11 +382,11 @@ static void
 quit_program(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
   /* gnome_internet_radio_locator_player_stop(player); */
   /* g_application_quit(app); */
-  gst_player_stop(player);
-  g_object_unref (player);
-  gst_deinit();
-  gtk_main_quit ();
-  return;
+	gst_player_stop(player);
+	g_object_unref (player);
+	gst_deinit();
+	gtk_main_quit ();
+	return;
 }
 
 void on_new_station_changed(GtkWidget * a, gpointer user_data)

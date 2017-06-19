@@ -658,13 +658,13 @@ keyboard_cb (const gchar * key_input, gpointer user_data)
 void
 gnome_internet_radio_locator_player_new (GstPlayer * player, const gchar * next_uri)
 {
-  gst_player_set_uri(player, next_uri);
+	gst_player_set_uri(player, next_uri);
 }
 
 void
 gnome_internet_radio_locator_player_stop (GstPlayer *player)
 {
-  gst_player_stop(player);
+	gst_player_stop(player);
 }
 
 void
@@ -672,7 +672,7 @@ gnome_internet_radio_locator_player_pause (GstPlayer *player)
 {
   /* FIXME: Unable to quit after pause is called for the first time. */
 #if 0
-  gst_player_pause(player);
+	gst_player_pause(player);
 #endif
 }
 

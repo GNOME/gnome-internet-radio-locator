@@ -18,8 +18,8 @@
 
 #include <champlain/champlain.h>
 
-#ifndef MARKERS_H
-#define MARKERS_H
+#ifndef GNOME_INTERNET_RADIO_LOCATOR_MARKERS_H
+#define GNOME_INTERNET_RADIO_LOCATOR_MARKERS_H 1
 
 ChamplainMarkerLayer *create_marker_layer (ChamplainView *view, ChamplainPathLayer **path);
 
