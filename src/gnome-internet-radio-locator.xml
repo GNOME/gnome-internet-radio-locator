@@ -2,6 +2,20 @@
 <?xml-stylesheet type="text/xsl" href="gnome_internet_radio_locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome_internet_radio_locator-0.1.dtd">
 <gnome_internet_radio_locator version="0.3.0">
+  <station band="88.1FM" id="hpr" lang="en" name="Hawaii Public Radio" rank="1.0" type="org">
+    <frequency uri="http://www.hawaiipublicradio.org/">FM 88.1 &amp; FM 88.5 in Honololulu</frequency>
+    <frequency uri="http://www.hawaiipublicradio.org/">FM 89.1 in Hilo</frequency>
+    <frequency uri="http://www.hawaiipublicradio.org/">FM 90.7 in Wailuku</frequency>
+    <frequency uri="http://www.hawaiipublicradio.org/">FM 94.9 Waimea</frequency>
+    <frequency uri="http://www.hawaiipublicradio.org/">FM 95.7 Waimea &amp; Kailua-Kona</frequency>
+    <frequency uri="http://www.hawaiipublicradio.org/">FM 89.9 Moloa'a (Kaua'i)</frequency>
+    <location>Honolulu, HI</location>
+    <description lang="en">
+      Hawaii Public Radio, is a network of six non-commercial, listener-supported stations serving the state of Hawaii. It is the statewide member of National Public Radio.
+    </description>
+    <stream mime="audio/mpeg" uri="http://khpr-ice.streamguys1.com:80/khpr2" codec="MPEG-1 Layer 3 (MP3)" samplerate="24000 Hz" channels="Mono" bitrate="24 kbps" />
+    <uri>http://www.hawaiipublicradio.org/</uri>
+  </station>
   <station band="ONLINE" id="burstradio" lang="en" name="Burst Radio" rank="1.0" type="edu">
     <frequency uri="http://www.burstradio.org.uk/"></frequency>
     <location>Bristol, United Kingdom</location>
@@ -313,7 +327,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   -->
   <station band="90.3FM" id="ktuh" lang="en" name="KTUH FM" rank="1.0" type="edu">
     <frequency uri="http://ktuh.org/">ONLINE in Honolulu, HI</frequency>
-    <location>Honolulu, Hawaii</location>
+    <location>Honolulu, HI</location>
     <description lang="en">
       KTUH is a student-run noncommercial radio station broadcasting from the University of Hawai’i at Manoa. We’ve been serving the community since 1969 with a variety of programs that include public announcements, equipment for community events, and a practical chance to learn about radio broadcasting. KTUH was granted a license to the Board of Regents as a non-commercial educational FM Station by the Federal Communications Commission (FCC) on June 28, 1985. Maintaining a staff in excess of 70 volunteers annually, KTUH operates 24 hours a day, year-round.
     </description>

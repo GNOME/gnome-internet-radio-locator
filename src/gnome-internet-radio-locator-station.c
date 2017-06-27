@@ -442,7 +442,7 @@ gnome_internet_radio_locator_station_parser(GNOMEInternetRadioLocatorStationInfo
 			    xmlNodeListGetString(doc, sub->xmlChildrenNode,
 						 1);
 			GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("station->uri = %s\n", station->uri);
-			/* fprintf(stdout, "%s (%s)\n%s\n\n", station->name, station->location, station->uri); */
+			/* fprintf(stdout, "<a href=\"%s\">%s (%s)</a>\n\n", station->uri, station->name, station->location); */
 		}
 
 		if ((!xmlStrcmp(sub->name, (const xmlChar *) "stream"))) {

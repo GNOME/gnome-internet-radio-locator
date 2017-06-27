@@ -332,7 +332,11 @@ static void
 listen_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
   player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new
 				      (NULL));
-  gnome_internet_radio_locator_player_new(player, "http://fm939.wnyc.org/wnycfm");
+  if (strcmp(gnome_internet_radio_locator->selected_station_uri, NULL) == 0) {
+	  gnome_internet_radio_locator_player_new(player, "http://fm939.wnyc.org/wnycfm");
+  } else {
+	  gnome_internet_radio_locator_player_new(player, gnome_internet_radio_locator->selected_station_uri);
+  }
   gst_player_play(player);
   return;
 }
@@ -640,6 +644,7 @@ on_search_matches(GtkEntryCompletion *widget,
 	gtk_tree_model_get_value(model, iter, STATION_URI, &value);
 	gnome_internet_radio_locator_player_stop(player);
 	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
+	/* g_object_set_data(G_OBJECT(widget), "station_uri", g_value_get_string(&value)); */
 	gnome_internet_radio_locator_player_new(player, g_value_get_string(&value));
 	gst_player_play(player);
 	return FALSE;
