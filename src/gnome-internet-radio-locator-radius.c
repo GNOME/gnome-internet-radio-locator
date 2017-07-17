@@ -23,7 +23,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <geoclue/geoclue-geocode.h>
 
 #define foreach(item, array) \
 	for(int keep = 1, \
