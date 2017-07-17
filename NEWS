@@ -1,4 +1,37 @@
 =============
+Version 0.5.0
+=============
+
+Artwork
+
+	* data/icons/16x16/apps/gnome-internet-radio-locator.png: New Icon
+	* data/icons/22x22/apps/gnome-internet-radio-locator.png: New Icon
+	* data/icons/24x24/apps/gnome-internet-radio-locator.png: New Icon
+	* data/icons/32x32/apps/gnome-internet-radio-locator.png: New Icon
+	* data/icons/48x48/apps/gnome-internet-radio-locator.png: New Icon
+	* data/icons/256x256/apps/gnome-internet-radio-locator.png: New Icon
+	* data/icons/512x512/apps/gnome-internet-radio-locator.png: New Icon
+	* data/icons/1024x1024/apps/gnome-internet-radio-locator.png: New Icon
+	* data/screenshot.png: New screenshot
+
+GUI
+
+	* src/gnome-internet-radio-locator-gui.c: New Station GUI
+	* src/gnome-internet-radio-locator-markers.c: Marker callback
+	* src/gnome-internet-radio-locator-station.c: New XML parsing
+
+License
+
+	* COPYING: Enforcing GNU General Public License version 3
+	* src/gnome-internet-radio-locator-station.c: GPL version 3
+	* src/gnome-internet-radio-locator-tz.c: GPL version 3
+	* src/gnome-internet-radio-locator.c: GPL version 3
+	
+Translations
+
+	* Marek Černocký (cs)
+
+=============
 Version 0.4.0
 =============
 

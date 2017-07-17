@@ -16,8 +16,42 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
+#include <gtk/gtk.h>
 #include <champlain/champlain.h>
+#include "gnome-internet-radio-locator.h"
 #include "gnome-internet-radio-locator-markers.h"
+
+extern GtkWidget *input;
+extern GtkEntryCompletion *completion;
+
+typedef struct
+{
+	ChamplainView *view;
+	ChamplainMarker *marker;
+} LocationCallbackData;
+
+static gboolean
+location_callback (LocationCallbackData *data)
+{
+	/* champlain_view_center_on (data->view, lat, lon); */
+	/* champlain_location_set_location (CHAMPLAIN_LOCATION (data->marker), lat, lon); */
+	g_print("%s\n", __FUNCTION__);
+	return TRUE;
+}
+
+void
+marker_function (ChamplainMarker *self,
+		 gdouble          dx,
+		 gdouble          dy,
+		 ClutterEvent    *event,
+		 gpointer         user_data)
+{
+	gchar *station;
+	station = (gchar *)champlain_label_get_text (CHAMPLAIN_LABEL (self));
+	gtk_entry_set_text(GTK_ENTRY(input),(gchar *)station);
+	return;
+}
+
 
 ChamplainMarkerLayer *
 create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **path)
@@ -26,10 +60,16 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   ChamplainMarkerLayer *layer;
   ClutterActor *layer_actor;
   ClutterColor orange = { 0xf3, 0x94, 0x07, 0xbb };
+  LocationCallbackData callback_data;
 
   *path = champlain_path_layer_new ();
   layer = champlain_marker_layer_new_full (CHAMPLAIN_SELECTION_SINGLE);
   layer_actor = CLUTTER_ACTOR (layer);
+
+  /* Create callback that updates the map periodically */
+  /* callback_data.view = CHAMPLAIN_VIEW (view); */
+  /* callback_data.marker = CHAMPLAIN_MARKER (layer); */
+  /* g_timeout_add (1000, (GSourceFunc) location_callback, &callback_data); */
 
 #if 0
   marker = champlain_label_new_with_text ("Norway\n<span size=\"xx-small\">Oslo</span>",
@@ -38,35 +78,32 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_alignment (CHAMPLAIN_LABEL (marker), PANGO_ALIGN_RIGHT);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &orange);
 
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),
-      59.9264569, 10.7960955);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),  37.873093, -122.303769);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker));
 #endif
   
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "New York");
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 40.77, -73.98);
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Berkeley, CA");
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.873093, -122.303769);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker));
-
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
+		 
 #if 0
   marker = champlain_label_new_from_file ("icons/emblem-important.png", NULL);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 47.130885,
-      -70.764141);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.873093, -122.303769);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker));
 
   marker = champlain_point_new ();
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 45.130885,
-      -65.764141);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.873093, -122.303769);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker));
 
   marker = champlain_label_new_from_file ("icons/emblem-favorite.png", NULL);
   champlain_label_set_draw_background (CHAMPLAIN_LABEL (marker), FALSE);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 45.41484,
-      -71.918907);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.873093, -122.303769);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker));
 #endif

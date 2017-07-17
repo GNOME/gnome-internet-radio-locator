@@ -6,9 +6,9 @@
  *
  * Author: Ole Aamot <oka@oka.no>
  *
- * This program is free software; you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -17,8 +17,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include <config.h>
@@ -39,6 +38,15 @@
 #include "gnome-internet-radio-locator-station.h"
 
 extern GNOMEInternetRadioLocatorData *gnome_internet_radio_locator;
+extern GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
+
+extern gchar *world_station_xml_filename, *local_station_xml_file;
+
+extern GStatBuf stats;
+
+extern GtkEntryCompletion *completion;
+GtkListStore *model = NULL;
+GtkTreeIter iter;
 
 void gnome_internet_radio_locator_helper_run(gchar *url, gchar *name, GNOMEInternetRadioLocatorStreamType type, GNOMEInternetRadioLocatorHelperType helper)
 {
@@ -600,7 +608,7 @@ gint gnome_internet_radio_locator_station_update (GNOMEInternetRadioLocatorStati
 
 	if (local_gnome_internet_radio_locator_file == 0) {
 
-		gchar *local_gnome_internet_radio_locator_directory = g_strconcat(g_get_home_dir(), "/.gnome_internet_radio_locator", NULL);
+		gchar *local_gnome_internet_radio_locator_directory = g_strconcat(g_get_home_dir(), "/.gnome-internet-radio-locator", NULL);
 		g_mkdir_with_parents (local_gnome_internet_radio_locator_directory, 0700);
 		
 	}
@@ -618,7 +626,7 @@ gint gnome_internet_radio_locator_station_update (GNOMEInternetRadioLocatorStati
 	new_station->stream->uri = g_strdup(station_uri);
 	new_station->uri = g_strdup(station_website);
 	fp = g_fopen(stations, "w+");
-	g_fprintf(fp, "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE gnome_internet_radio_locator SYSTEM 'gnome_internet_radio_locator-9.1.dtd'>\n<gnome_internet_radio_locator version='9.1'>\n");
+	g_fprintf(fp, "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE gnome_internet_radio_locator SYSTEM 'gnome_internet_radio_locator-0.1.dtd'>\n<gnome_internet_radio_locator version='%s'>\n", VERSION);
 	// stationinfo-> = l->data;
 	while (stationinfo != NULL) {
 		local_station_uri = g_strdup(stationinfo->stream->uri);
@@ -636,9 +644,74 @@ gint gnome_internet_radio_locator_station_update (GNOMEInternetRadioLocatorStati
 	g_fprintf(fp, "</gnome_internet_radio_locator>\n");
 	fclose(fp);
 	gnome_internet_radio_locator_stations = g_list_append(gnome_internet_radio_locator_stations, (GNOMEInternetRadioLocatorStationInfo *)new_station);
+
 	g_free(stations);
 	g_free(new_station);
 	g_free(stationinfo);
+
+	model = gtk_list_store_new(11, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING);
+
+	world_station_xml_filename = g_strconcat(GNOME_INTERNET_RADIO_LOCATOR_DATADIR, "/gnome-internet-radio-locator.xml", NULL);
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("world_station_xml_filename = %s\n",
+	    world_station_xml_filename);
+
+	if (world_station_xml_filename == NULL) {
+		g_warning(("Failed to open %s.  Please install it.\n"),
+			  world_station_xml_filename);
+	}
+
+	local_station_xml_file =
+	    g_strconcat(g_get_home_dir(), "/.gnome-internet-radio-locator/gnome-internet-radio-locator.xml", NULL);
+
+	if (!g_stat(local_station_xml_file, &stats)) {
+		localstation = gnome_internet_radio_locator_station_load_from_file(NULL, local_station_xml_file);
+	} else {
+		localstation = NULL;
+	}
+
+	if (localstation == NULL) {
+		printf("Failed to open %s.\n", local_station_xml_file);
+	}
+
+/*   g_free (local_station_xml_file); */
+
+	stationinfo = gnome_internet_radio_locator_station_load_from_file(localstation, world_station_xml_filename);
+
+	gnome_internet_radio_locator_stations = NULL;
+
+	while (stationinfo != NULL) {
+
+		gtk_list_store_append(model, &iter);
+		gtk_list_store_set(model,
+				   &iter,
+				   STATION_NAME,
+				   stationinfo->name,
+				   STATION_LOCATION,
+				   stationinfo->location,
+				   STATION_URI,
+				   stationinfo->stream->uri,
+				   STATION_DESCRIPTION,
+				   stationinfo->description,
+				   STATION_FREQUENCY,
+				   stationinfo->frequency,
+				   STATION_BAND,
+				   stationinfo->band,
+				   STATION_TYPE,
+				   stationinfo->type,
+				   STATION_RANK,
+				   stationinfo->rank,
+				   STATION_BITRATE,
+				   stationinfo->bitrate,
+				   STATION_SAMPLERATE,
+				   stationinfo->samplerate,
+				   STATION_ID,
+				   stationinfo->id,
+				   -1);
+
+		stationinfo = stationinfo->next;
+	}
+
+	gtk_entry_completion_set_model(completion, GTK_TREE_MODEL(model));
 
 	return (0);
 }

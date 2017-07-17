@@ -23,13 +23,13 @@ Requires:       gstreamer1-plugins-ugly >= 1.8.3
 
 %description
 GNOME Internet Radio Locator is a Free Software program that allows
-you to easily locate radio programs by broadcasters on the Internet
-with the help of a map.
+you to easily locate Free Internet Radio stations by broadcasters on
+the Internet with the help of a map.
 
 GNOME Internet Radio Locator is developed on the GNOME 3 platform and
 it requires gstreamer 1.0 for playback.
 
-Enjoy Internet Radio.
+Enjoy Free Internet Radio.
 
 %prep
 %setup -q
@@ -72,6 +72,9 @@ fi
 %{_datadir}/help/*/%{name}
 
 %changelog
+* Sun Jul 09 2017 Ole Aamot - 0.5.0-1.fc25
+- gnome-internet-radio-locator 0.5.0 build on Fedora Linux 25
+
 * Tue Jun 27 2017 Ole Aamot - 0.4.0-1.fc25
 - gnome-internet-radio-locator 0.4.0 build on Fedora Linux 25
 

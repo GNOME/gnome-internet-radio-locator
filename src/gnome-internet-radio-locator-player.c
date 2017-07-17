@@ -40,10 +40,12 @@ GST_DEBUG_CATEGORY (play_debug);
 #define GST_CAT_DEFAULT play_debug
 
 extern GstPlay *player;
+#if 0
 static gboolean play_next (GstPlay * play);
 static gboolean play_prev (GstPlay * play);
 static void play_reset (GstPlay * play);
 static void play_set_relative_volume (GstPlay * play, gdouble volume_step);
+#endif
 
 void
 gnome_internet_radio_locator_player_main(gchar *streamuri, gchar *name)
@@ -69,6 +71,7 @@ gnome_internet_radio_locator_player_main(gchar *streamuri, gchar *name)
 	exit (0);
 }
 
+#if 0
 static void
 end_of_stream_cb (GstPlayer * player, GstPlay * play)
 {
@@ -79,7 +82,8 @@ end_of_stream_cb (GstPlayer * player, GstPlay * play)
     g_main_loop_quit (play->loop);
   }
 }
-
+#endif
+#if 0
 static void
 error_cb (GstPlayer * player, GError * err, GstPlay * play)
 {
@@ -94,7 +98,7 @@ error_cb (GstPlayer * player, GError * err, GstPlay * play)
     g_main_loop_quit (play->loop);
   }
 }
-
+#endif
 static void
 position_updated_cb (GstPlayer * player, GstClockTime pos, GstPlay * play)
 {
@@ -358,6 +362,7 @@ media_info_cb (GstPlayer * player, GstPlayerMediaInfo * info, GstPlay * play)
   }
 }
 
+#if 0
 static GstPlay *
 play_new (gchar ** uris, gdouble initial_volume)
 {
@@ -405,7 +410,7 @@ play_free (GstPlay * play)
   g_strfreev (play->uris);
   g_free (play);
 }
-
+#endif
 /* reset for new file/stream */
 static void
 play_reset (GstPlay * play)
@@ -434,7 +439,7 @@ get_volume (GtkWidget *widget, GstPlay *play)
 	return volume;
 }
 
-
+#if 0
 static gchar *
 play_uri_get_display_name (GstPlayer * player, const gchar * uri)
 {
@@ -468,6 +473,7 @@ play_uri (GstPlayer *player, const gchar * next_uri)
 }
 
 /* returns FALSE if we have reached the end of the playlist */
+#if 0
 static gboolean
 play_next (GstPlay * play)
 {
@@ -654,6 +660,8 @@ keyboard_cb (const gchar * key_input, gpointer user_data)
       break;
   }
 }
+#endif
+#endif
 
 void
 gnome_internet_radio_locator_player_new (GstPlayer * player, const gchar * next_uri)
@@ -664,7 +672,9 @@ gnome_internet_radio_locator_player_new (GstPlayer * player, const gchar * next_
 void
 gnome_internet_radio_locator_player_stop (GstPlayer *player)
 {
-	gst_player_stop(player);
+	if (player != NULL) {
+		gst_player_stop(GST_PLAYER(player));
+	}
 }
 
 void

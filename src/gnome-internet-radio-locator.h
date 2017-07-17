@@ -91,7 +91,12 @@ void about_app(GtkWidget *, gpointer user_data);
 void about_listener(GtkWidget *, gpointer user_data);
 void about_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data);
 void about_program(GSimpleAction *simple, GVariant *parameter, gpointer user_data);
-  
+
+gboolean on_search_matches(GtkEntryCompletion *widget,
+			   GtkTreeModel *model,
+			   GtkTreeIter *iter,
+			   gpointer user_data);
+
 struct _GNOMEInternetRadioLocatorData {
 	GtkImage *pixmap;
 	GtkProgressBar *progress;

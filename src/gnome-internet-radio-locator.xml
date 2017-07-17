@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="0.4.0">
+<gnome_internet_radio_locator version="0.5.0">
   <station band="88.1FM" id="hpr" lang="en" name="Hawaii Public Radio" rank="1.0" type="org">
-    <frequency uri="http://www.hawaiipublicradio.org/">FM 88.1 &amp; FM 88.5 in Honololulu</frequency>
+    <frequency uri="http://www.hawaiipublicradio.org/">FM 88.1 &amp; FM 88.5 in Honolulu</frequency>
     <frequency uri="http://www.hawaiipublicradio.org/">FM 89.1 in Hilo</frequency>
     <frequency uri="http://www.hawaiipublicradio.org/">FM 90.7 in Wailuku</frequency>
     <frequency uri="http://www.hawaiipublicradio.org/">FM 94.9 Waimea</frequency>

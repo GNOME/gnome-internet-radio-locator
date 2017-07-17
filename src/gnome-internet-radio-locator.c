@@ -6,9 +6,9 @@
  *
  * Author: Ole Aamot <oka@oka.no>
  *
- * This program is free software; you can redistribute it and/or modify
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
+ * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
  * This program is distributed in the hope that it will be useful,
@@ -17,11 +17,11 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include <gtk/gtk.h>
+#include <gst/player/player.h>
 #include <champlain/champlain.h>
 #include <champlain-gtk/champlain-gtk.h>
 #include <clutter-gtk/clutter-gtk.h>
@@ -32,6 +32,7 @@
 #include "gnome-internet-radio-locator-gui.h"
 #include "gnome-internet-radio-locator-markers.h"
 #include "gnome-internet-radio-locator-player.h"
+#include "gnome-internet-radio-locator-radius.h"
 
 #define N_COLS 2
 #define COL_ID 0
@@ -41,12 +42,15 @@ static ChamplainPathLayer *path_layer;
 static ChamplainPathLayer *path;
 static gboolean destroying = FALSE;
 
-
 static ChamplainView *champlain_view;
 GApplication *app;
 GtkWidget *search_selector;
 GtkWidget *window;
 GNOMEInternetRadioLocatorData *gnome_internet_radio_locator;
+
+GtkWidget *input;
+
+GtkEntryCompletion *completion;
 
 GList *gnome_internet_radio_locator_archivers;
 GList *gnome_internet_radio_locator_listeners;
@@ -66,8 +70,13 @@ gchar *list_item_data_key ="list_item_data";
 GtkWidget *gnome_internet_radio_locator_app;
 GstPlayer *player;
 
+gchar *world_station_xml_filename, *local_station_xml_file;
+
+extern GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
+
 extern struct GNOMEInternetRadioLocatorMedia *media;
 
+GStatBuf stats;
 
 /*
  * Terminate the main loop.
@@ -102,11 +111,16 @@ static gboolean
 mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *view)
 {
 	gdouble lat, lon;
-
+	/* GeocodeNominatim *nom; */
+	/* GeocodeForward *fwd; */
+	/* GList *list; */
+	/* GError **err; */
 	lon = champlain_view_x_to_longitude (view, event->x);
 	lat = champlain_view_y_to_latitude (view, event->y);
-	g_print ("Mouse click at: %f  %f\n", lat, lon);
-
+	/* fwd = geocode_forward_new_for_string ("Oslo, Norway"); */
+	/* list = geocode_forward_search (fwd, err); */
+	/* gnome_internet_radio_locator_radius (lat, lon, 100); */
+	g_print ("Mouse click at: %f %f\n", lat, lon);
 	return TRUE;
 }
 
@@ -402,8 +416,7 @@ void on_new_station_changed(GtkWidget * a, gpointer user_data)
 	/* if (gnome_internet_radio_locator->selected_station_uri != NULL) */
 	/* 	g_free(gnome_internet_radio_locator->selected_station_uri); */
 
-	gnome_internet_radio_locator->selected_station_uri =
-	    g_strdup(g_object_get_data(G_OBJECT(a), "station_uri"));
+	gchar *selected_station_uri = g_strdup(g_object_get_data(G_OBJECT(a), "station_uri"));
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_changed: %s\n", gnome_internet_radio_locator->selected_station_uri);
 
 	gnome_internet_radio_locator->selected_station_name =
@@ -429,17 +442,15 @@ void on_new_station_changed(GtkWidget * a, gpointer user_data)
 	/* appbar_send_msg(_("Selected the radio station %s in %s: %s"), */
 	/* 		gnome_internet_radio_locator->selected_station_name, */
 	/* 		gnome_internet_radio_locator->selected_station_location, */
-	/* 		gnome_internet_radio_locator->selected_station_uri, */
+	/* 		selected_station_uri, */
 	/* 		gnome_internet_radio_locator->selected_station_band); */
-
-	gnome_internet_radio_locator_station_update(stationinfo, gnome_internet_radio_locator->selected_station_band, gnome_internet_radio_locator->selected_station_description, gnome_internet_radio_locator->selected_station_name,
-			  gnome_internet_radio_locator->selected_station_location,
-			  gnome_internet_radio_locator->selected_station_uri, gnome_internet_radio_locator->selected_station_website);
-
-	/* gnome_internet_radio_locator_helper_run(gnome_internet_radio_locator->selected_streams_uri, */
-	/* 		gnome_internet_radio_locator->selected_streams_mime, */
-	/* 		GNOME_INTERNET_RADIO_LOCATOR_STREAM_SHOUTCAST, */
-	/* 	        GNOME_INTERNET_RADIO_LOCATOR_STREAM_PLAYER); */
+	gnome_internet_radio_locator_station_update(stationinfo,
+						    gnome_internet_radio_locator->selected_station_band,
+						    gnome_internet_radio_locator->selected_station_description,
+						    gnome_internet_radio_locator->selected_station_name,
+						    gnome_internet_radio_locator->selected_station_location,
+						    gnome_internet_radio_locator->selected_station_uri,
+						    gnome_internet_radio_locator->selected_station_website);
 }
 
 void on_stations_selector_changed(GtkWidget * a, gpointer user_data)
@@ -476,32 +487,26 @@ void on_stations_selector_changed(GtkWidget * a, gpointer user_data)
 	/* appbar_send_msg(_("Selected the radio station %s in %s: %s"), */
 	/* 		gnome_internet_radio_locator->selected_station_name, */
 	/* 		gnome_internet_radio_locator->selected_station_location, */
-	/* 		gnome_internet_radio_locator->selected_station_uri, */
+	/* 		selected_station_uri, */
 	/* 		gnome_internet_radio_locator->selected_station_band); */
 
-	station->name = g_strdup(g_object_get_data(G_OBJECT(a), "station_name"));
+	gnome_internet_radio_locator->selected_station_name = g_strdup(g_object_get_data(G_OBJECT(a), "station_name"));
 	/* gnome_internet_radio_locator_history = g_list_add(GLIST(gnome_internet_radio_locator_history), (GNOMEInternetRadioLocatorStationInfo *)station); */
-	/* gnome_internet_radio_locator_helper_main(gnome_internet_radio_locator->selected_station_uri); */
+	/* gnome_internet_radio_locator_helper_main(selected_station_uri); */
 }
 
 static void
 gnome_internet_radio_locator_window_cb (GtkApplication *app,
 		gpointer user_data)
 {
-  GtkWidget *widget, *grid, *toolbar, *new, *search, *input, *listen, *stop, *prev, *stations, *next, *station, *program, *quit;
+  GtkWidget *widget, *grid, *toolbar, *new, *search, *listen, *stop, *prev, *stations, *next, *station, *program, *quit;
 	
 	window = gtk_application_window_new (app);
 	widget = gtk_champlain_embed_new();
 	toolbar = gtk_toolbar_new();
 	input = gtk_entry_new();
-#if 0
-	new = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "New");
-	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(new), TRUE);
-	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(new), 0);
-	gtk_widget_show (GTK_WIDGET(new));
-	gtk_tool_item_set_tooltip_text (GTK_TOOL_ITEM(new), "New Station");
-	g_signal_connect(new, "clicked", G_CALLBACK (on_new_station_clicked), GTK_WINDOW (window));
 
+#if 0
 	search = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), "Search");
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(search), TRUE);
 	gtk_toolbar_insert (GTK_TOOLBAR (toolbar), GTK_TOOL_ITEM(search), 1);
@@ -561,7 +566,7 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 	gnome_internet_radio_locator_app = create_gnome_internet_radio_locator_app();
 	gtk_widget_show(gnome_internet_radio_locator_app);
 
-	/* stations_selector = create_stations_selector(gnome_internet_radio_locator->selected_station_uri, "gnome_internet_radio_locator.xml"); */
+	/* stations_selector = create_stations_selector(selected_station_uri, "gnome_internet_radio_locator.xml"); */
 
 	/* g_object_add_weak_pointer(G_OBJECT(stations_selector), */
 	/* 			  (void **) &(stations_selector)); */
@@ -576,31 +581,31 @@ void on_new_station_clicked(GtkWidget *a,
 	GtkWidget *station;
 	GNOMEInternetRadioLocatorStationInfo *stationinfo = NULL;
 	/* GList *l = g_list_first(gnome_internet_radio_locator_stations); */
-
+	gchar *selected_station_uri, *selected_station_band, *selected_station_description, *selected_station_name, *selected_station_location, *selected_station_website;
 	/* stationinfo = l->data; */
 	gint result;
 	// appbar_send_msg(_("New radio station"));
-	/* station = create_new_station_selector(); */
+	station = create_new_station_selector();
 	result = gtk_dialog_run (GTK_DIALOG(station));
 	switch (result)  {
 	case GTK_RESPONSE_ACCEPT:
-
 		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("Squeak!\n\n");
-		gnome_internet_radio_locator->selected_station_uri = g_strdup(g_object_get_data(G_OBJECT(station), "station_uri"));
-		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", gnome_internet_radio_locator->selected_station_uri);
-		gnome_internet_radio_locator->selected_station_description = g_strdup(g_object_get_data(G_OBJECT(station), "station_description"));
-		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", gnome_internet_radio_locator->selected_station_description);
-		gnome_internet_radio_locator->selected_station_band = g_strdup(g_object_get_data(G_OBJECT(station), "station_band"));
-		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", gnome_internet_radio_locator->selected_station_band);
-		gnome_internet_radio_locator->selected_station_website = g_strdup(g_object_get_data(G_OBJECT(station), "station_website"));
-		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", gnome_internet_radio_locator->selected_station_website);
-		gnome_internet_radio_locator->selected_station_name = g_strdup(g_object_get_data(G_OBJECT(station), "station_name"));
-		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n",
-			       gnome_internet_radio_locator->selected_station_name);
-		gnome_internet_radio_locator->selected_station_location = g_strdup(g_object_get_data(G_OBJECT(station), "station_location"));
-		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n",
-			       gnome_internet_radio_locator->selected_station_location);
-		gnome_internet_radio_locator_station_update (stationinfo, gnome_internet_radio_locator->selected_station_band, gnome_internet_radio_locator->selected_station_description, gnome_internet_radio_locator->selected_station_name, gnome_internet_radio_locator->selected_station_location, gnome_internet_radio_locator->selected_station_uri, gnome_internet_radio_locator->selected_station_website);
+
+		selected_station_uri = g_strdup(g_object_get_data(G_OBJECT(station), "station_uri"));
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_uri);
+
+		selected_station_description = g_strdup(g_object_get_data(G_OBJECT(station), "station_description"));
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_description);
+		selected_station_band = g_strdup(g_object_get_data(G_OBJECT(station), "station_band"));
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_band);
+		selected_station_website = g_strdup(g_object_get_data(G_OBJECT(station), "station_website"));
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_website);
+		selected_station_name = g_strdup(g_object_get_data(G_OBJECT(station), "station_name"));
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_name);
+		selected_station_location = g_strdup(g_object_get_data(G_OBJECT(station), "station_location"));
+
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_location);
+		gnome_internet_radio_locator_station_update (stationinfo, selected_station_band, selected_station_description, selected_station_name, selected_station_location, selected_station_uri, selected_station_website);
 		break;
 	default:
 		g_print ("Nothing\n\n");
@@ -608,7 +613,6 @@ void on_new_station_clicked(GtkWidget *a,
 	}
 	gtk_widget_destroy(station);
 	/* gtk_widget_show(station); */
-
 }
 
 #if 0
@@ -626,7 +630,7 @@ on_location_matches(GtkEntryCompletion *widget,
 
 	/* appbar_send_msg(_("Found location %s"), */
 	/* 		gnome_internet_radio_locator->selected_station_location); */
-	/* gnome_internet_radio_locator_helper_run(gnome_internet_radio_locator->selected_station_uri, */
+	/* gnome_internet_radio_locator_helper_run(selected_station_uri, */
 	/* 		gnome_internet_radio_locator->selected_station_name, */
 	/* 		GNOME_INTERNET_RADIO_LOCATOR_STREAM_SHOUTCAST, */
 	/* 		GNOME_INTERNET_RADIO_LOCATOR_STREAM_PLAYER); */
@@ -634,7 +638,7 @@ on_location_matches(GtkEntryCompletion *widget,
 }
 #endif
 
-static gboolean
+gboolean
 on_search_matches(GtkEntryCompletion *widget,
 		  GtkTreeModel *model,
 		  GtkTreeIter *iter,
@@ -655,13 +659,11 @@ main (int argc,
       char **argv)
 {
 	GtkWidget *window;
-	GtkWidget *widget, *vbox, *bbox, *button, *viewport, *image, *input;
-	GtkEntryCompletion *completion;
+	GtkWidget *widget, *vbox, *bbox, *button, *viewport, *image;
 	ChamplainView *view;
 	ChamplainMarkerLayer *layer;
 	ClutterActor *scale;
 	ChamplainLicense *license_actor;
-	gchar *world_station_xml_filename, *local_station_xml_file;
 	GtkListStore *model;
 	GtkTreeIter iter;
 	GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
@@ -713,7 +715,7 @@ main (int argc,
 	license_actor = champlain_view_get_license_actor (view);
 	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
 
-	champlain_view_center_on (CHAMPLAIN_VIEW (view), 45.466, -73.75);
+	champlain_view_center_on (CHAMPLAIN_VIEW (view), 37.873093, -122.303769);
 
 	layer = create_marker_layer (view, &path);
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (path));
@@ -748,11 +750,18 @@ main (int argc,
 	button = gtk_button_new();
 	image = gtk_image_new_from_icon_name("media-playback-start", GTK_ICON_SIZE_BUTTON);
 	gtk_button_set_image (GTK_BUTTON (button), image);
+	gtk_button_set_label (GTK_BUTTON (button), "New");
+	g_signal_connect(button, "clicked", G_CALLBACK (on_new_station_clicked), view);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+
+#if 0
+	button = gtk_button_new();
+	image = gtk_image_new_from_icon_name("media-playback-start", GTK_ICON_SIZE_BUTTON);
+	gtk_button_set_image (GTK_BUTTON (button), image);
 	gtk_button_set_label (GTK_BUTTON (button), "Listen");
 	g_signal_connect(button, "clicked", G_CALLBACK (listen_station), view);
 	gtk_container_add (GTK_CONTAINER (bbox), button);
-
-	GStatBuf stats;
+#endif
 
 	memset(&stats, 0, sizeof(stats));
 

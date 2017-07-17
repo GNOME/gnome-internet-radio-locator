@@ -1,7 +1,11 @@
-GNOME Internet Radio Locator allows the user to easily locate and
-listen to Internet radio stations such as WNYC over the Internet.
+GNOME Internet Radio Locator is a Free Software program that allows
+you to easily locate Free Internet Radio stations by broadcasters on
+the Internet with the help of a map.
 
-Enjoy Internet Radio.
+GNOME Internet Radio Locator is developed on the GNOME 3 platform and
+it requires gstreamer 1.0 for playback.
+
+Enjoy Free Internet Radio.
 
 Cheers,
-Ole Aamot <ole@src.gnome.org>
+Ole Aamot <ole@gnome.org>

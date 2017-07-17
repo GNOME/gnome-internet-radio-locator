@@ -1,4 +1,5 @@
 GNOME Internet Radio Locator runs on Debian GNU/Linux (http://www.debian.org/)
 
-If you are packaging GNOME Internet Radio Locator for Debian GNU/Linux and/or
-other GNU/Linux distributions, please coordinate this with ole@src.gnome.org.
+If you are packaging GNOME Internet Radio Locator for Debian GNU/Linux
+and/or other GNU/Linux distributions, please coordinate this with
+ole@gnome.org.

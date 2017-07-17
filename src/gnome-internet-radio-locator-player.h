@@ -41,7 +41,7 @@ typedef struct
   GMainLoop *loop;
 } GstPlay;
 
-static void play_uri (GstPlayer * player, const gchar * next_uri);
+void play_uri (GstPlayer *player, const gchar * next_uri);
 
 void gnome_internet_radio_locator_player_new (GstPlayer * player, const gchar * next_uri);
 

@@ -1,6 +1,6 @@
 GNOME Internet Radio Locator is currently available as a GNOME 3
 desktop program with source code released under GNU General Public
-License version 2.
+License version 3.
 
 The initial work on this program began in March 2017.
 
@@ -16,9 +16,9 @@ patches and adding new Internet radio stations in
 
 Any contribution is welcome and always credited in AUTHORS and THANKS.
 
-To enable debugging messages, modifiy the CC compilation definition
+To enable debugging messages, modify the CC compilation definition
 flag from -DGNOME_INTERNET_RADIO_LOCATOR_DEBUG=1 to
 -DGNOME_INTERNET_RADIO_LOCATOR_DEBUG=0 in src/Makefile.am
 
-Enjoy Internet radio,
-Ole Aamot <ole@src.gnome.org>
+Enjoy Free Internet radio,
+Ole Aamot <ole@gnome.org>
