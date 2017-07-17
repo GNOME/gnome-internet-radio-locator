@@ -1,4 +1,13 @@
 =============
+Version 0.5.1
+=============
+
+Build
+
+	* src/gnome-internet-radio-locator-radius.c: Remove geoclue dependency
+	* gnome-internet-radio-locator.spec.in: Bump version
+
+=============
 Version 0.5.0
 =============
 
