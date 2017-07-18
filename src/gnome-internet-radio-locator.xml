@@ -969,13 +969,4 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <stream mime="audio/mpeg" uri="http://fm939.wnyc.org/wnycfm" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Mono" bitrate="32 kbps" />
     <uri>http://www.wnyc.org/</uri>
   </station>
-  <station band="ONLINE" id="parolesfm" lang="fr" name="paroles.fm" rank="1.0" type="edu">
-    <frequency uri="http://parolesfm.ice.infomaniak.ch/parolesfm-128.mp3">ONLINE in Bevaix, Switzerland</frequency>
-    <location>Bevaix, Switzerland</location>
-    <description lang="en">
-      paroles.fm is a Web radio powered by the non-profit Radio Réveil association active in Switzerland and France. This association aims to open reflection on main questions about life in a Christian perspective. It is not dependent on specific church denominations.
-    </description>
-    <stream mime="audio/mpeg" uri="http://parolesfm.ice.infomaniak.ch/parolesfm-128.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <uri>http://www.paroles.fm/liveradio.php</uri>
-  </station>
 </gnome_internet_radio_locator>
