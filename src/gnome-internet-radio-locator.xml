@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="0.5.0">
+<gnome_internet_radio_locator version="0.5.2">
+  <station band="92.4FM" id="srp1" lang="sv" name="Sveriges Radio P1" rank="1.0" type="gov">
+    <frequency uri="http://www.sverigesradio.se/p1">FM 92.4 in Stockholm</frequency>
+    <location>Stockholm, Sweden</location>
+    <description lang="sv">
+      P1 är rikskanalen som ger fördjupning. Det är den talade kanalen och kanalen för kvalificerade nyheter. Och det är definitivt P1 du ska lyssna på om det är vetenskap, dokumentärer, film, konst, teater, litteratur eller livsåskådningsfrågor som intresserar dig.
+    </description>
+    <stream mime="audio/mpeg" uri="http://http-live.sr.se/p1-mp3-192" codec="MPEG-1 Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p1-aac-192" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p1-aac-96" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p1-aac-32" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="32 kbps" />
+    <uri>http://www.sverigesradio.se/p1</uri>
+  </station>
+  <station band="96.2FM" id="srp2" lang="sv" name="Sveriges Radio P2" rank="1.0" type="gov">
+    <frequency uri="http://www.sverigesradio.se/p2">FM 96.2 in Stockholm</frequency>
+    <location>Stockholm, Sweden</location>
+    <description lang="sv">
+      P2 är den rikstäckande kanalen med ett dubbelt uppdrag: dels att sända musikprogram inom konstmusik, jazz och folkmusik. Dels att sända program på andra språk än svenska.
+    </description>
+    <stream mime="audio/mpeg" uri="http://http-live.sr.se/p2-mp3-192" codec="MPEG-1 Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p2-aac-192" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p2-aac-96" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p2-aac-32" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="32 kbps" />
+    <uri>http://www.sverigesradio.se/p2</uri>
+  </station>
+  <station band="99.3FM" id="srp3" lang="sv" name="Sveriges Radio P3" rank="1.0" type="gov">
+    <frequency uri="http://www.sverigesradio.se/p3">FM 99.3 in Stockholm</frequency>
+    <location>Stockholm, Sweden</location>
+    <description lang="sv">
+      P3 är radio för och av unga människor i Sverige. Skön, rolig och viktig radio med ett innehåll att skratta åt, reagera på, sjunga med i eller städa till.
+    </description>
+    <stream mime="audio/mpeg" uri="http://http-live.sr.se/p3-mp3-192" codec="MPEG-1 Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p3-aac-192" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p3-aac-96" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p3-aac-32" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="32 kbps" />
+    <uri>http://www.sverigesradio.se/p3</uri>
+  </station>
+  <station band="103.3FM" id="srp4stockholm" lang="sv" name="Sveriges Radio P4" rank="1.0" type="gov">
+    <frequency uri="http://www.sverigesradio.se/stockholm/">FM 103.3 in Stockholm</frequency>
+    <location>Stockholm, Sweden</location>
+    <description lang="sv">
+      P4 Stockholm är landets största lokala radiokanal. Över 300 000 personer lyssnar på kanalen en vanlig vardag.
+    </description>
+    <stream mime="audio/mpeg" uri="http://http-live.sr.se/p4stockholm-mp3-192" codec="MPEG-1 Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p4stockholm-aac-192" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p4stockholm-aac-96" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
+    <stream mime="audio/aac" uri="http://http-live.sr.se/p4stockholm-aac-32" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="32 kbps" />
+    <uri>http://www.sverigesradio.se/stockholm/</uri>
+  </station>
   <station band="88.1FM" id="hpr" lang="en" name="Hawaii Public Radio" rank="1.0" type="org">
     <frequency uri="http://www.hawaiipublicradio.org/">FM 88.1 &amp; FM 88.5 in Honolulu</frequency>
     <frequency uri="http://www.hawaiipublicradio.org/">FM 89.1 in Hilo</frequency>
@@ -209,7 +257,7 @@ Bergen Student Radio strives to be an alternative to commercial and state-run ra
     <location>Narvik, Norway</location>
     <description lang="nb">
       Narvik Studentradio is the oldest legal local radio station.
-      
+
       The station launched in December 1972, is affiliated with the
       University College of Narvik, and transmits via the FM band in
       the Narvik area as well as on the Internet.
@@ -225,7 +273,7 @@ Bergen Student Radio strives to be an alternative to commercial and state-run ra
     </description>
     <stream mime="audio/mpeg" uri="http://www.cr944.at:8000/cr944-high" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="192 kbps" />
     <uri>http://www.campusradio.at/</uri>
-  </station>    
+  </station>
   <station band="" id="radiouniversidad" lang="en" name="Radio Universidad" rank="1.0" type="edu">
     <frequency uri="http://radiou.usac.edu.gt/">92.1 FM in Guatemala City, Guatemala</frequency>
     <location>Guatemala City, Guatemala</location>
@@ -243,17 +291,17 @@ Bergen Student Radio strives to be an alternative to commercial and state-run ra
     </description>
     <stream mime="audio/mpeg" uri="http://radiostreamone.mine.nu:80" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Mono" bitrate="48 kbps" />
     <uri>http://collegeradio.se/</uri>
-  </station>        
+  </station>
   <station band="92FM" id="wumr" lang="en" name="WUMR" rank="1.0" type="edu">
     <frequency uri="http://www.memphis.edu/wumr/">92 FM in Memphis, TN</frequency>
     <location>Memphis, TN</location>
     <description lang="en">Broadcasting in stereo with 25,000 watts of power, WUMR is the only exclusive jazz outlet in the Memphis metro area. The station offers a mix of contemporary and traditional jazz, as well as a sampling of fusion, Blues, Latin, and new age Jazz. The station also serves the Mid-South community with unique educational, sports, and community service programming.
-    
+
 WUMR has been the University of Memphis broadcasting outlet since 1979, when Southwestern at Memphis (now Rhodes College) sold one of its two radio licenses to then Memphis State University. WSMS-FM 91.7, carrying the Memphis State call letters, was created as an all-jazz station. Although the call letters changed to WUMR, when Memphis State became the University of Memphis on July 1, 1994, the station, which is now known as WUMR “The Jazz Lover” U 92-FM, has stayed true to the all-jazz format during its 30-year history. WUMR is part of the College of Communication and Fine Arts’ (CCFA) Department of Communication. An element of the station’s mission is to train communication and journalism students in broadcasting.
     </description>
     <stream mime="audio/mpeg" uri="http://141.225.64.25:88/broadwave.mp3?src=1&amp;rate=1&amp;ref=" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="56 kbps" />
     <uri>http://www.memphis.edu/wumr/</uri>
-  </station>    
+  </station>
   <station band="100FM" id="radiorevolt" lang="no" name="Radio Revolt" rank="1.0" type="edu">
     <frequency uri="http://www.radiorevolt.no/">100 FM in Trondheim, Norway</frequency>
     <location>Trondheim, Norway</location>
@@ -360,7 +408,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_sorlandet_mp3_l" codec="MPEG ADTS, layer III, v1" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
     <stream mime="audio/mpeg" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_sorlandet_mp3_m" codec="MPEG ADTS, layer III, v1" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
     <stream mime="audio/aac" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_sorlandet_mp3_h" codec="MPEG ADTS, layer III, v1" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
-  </station>  
+  </station>
   <station band="ONLINE" id="nrkp2" lang="no" name="NRK P2" rank="1.0" type="gov">
     <frequency uri="http://www.nrk.no/p2/">ONLINE in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>

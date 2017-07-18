@@ -1,4 +1,16 @@
 =============
+Version 0.5.2
+=============
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add Sveriges Radio P1
+	* src/gnome-internet-radio-locator.xml: Add Sveriges Radio P2
+	* src/gnome-internet-radio-locator.xml: Add Sveriges Radio P3
+	* src/gnome-internet-radio-locator.xml: Add Sveriges Radio P4 Stockholm
+	* src/gnome-internet-radio-locator-radius.c: Add glib header
+
+=============
 Version 0.5.1
 =============
 

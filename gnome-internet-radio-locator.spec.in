@@ -72,6 +72,9 @@ fi
 %{_datadir}/help/*/%{name}
 
 %changelog
+* Tue Jul 18 2017 Ole Aamot - 0.5.2-1.fc25
+- gnome-internet-radio-locator 0.5.2 build on Fedora Linux 25
+
 * Mon Jul 17 2017 Ole Aamot - 0.5.1-1.fc25
 - gnome-internet-radio-locator 0.5.1 build on Fedora Linux 25
 
