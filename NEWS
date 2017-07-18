@@ -1,4 +1,12 @@
 =============
+Version 0.5.3
+=============
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Remove defunct station
+
+=============
 Version 0.5.2
 =============
 
