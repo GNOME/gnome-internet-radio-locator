@@ -17,12 +17,16 @@
  */
 
 #include <gtk/gtk.h>
+#include <gst/player/player.h>
 #include <champlain/champlain.h>
 #include "gnome-internet-radio-locator.h"
 #include "gnome-internet-radio-locator-markers.h"
 
 extern GtkWidget *input;
 extern GtkEntryCompletion *completion;
+extern GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
+extern gchar *world_station_xml_filename;
+extern GstPlayer *player;
 
 typedef struct
 {
@@ -49,6 +53,17 @@ marker_function (ChamplainMarker *self,
 	gchar *station;
 	station = (gchar *)champlain_label_get_text (CHAMPLAIN_LABEL (self));
 	gtk_entry_set_text(GTK_ENTRY(input),(gchar *)station);
+	gst_player_stop(player);
+	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
+	stationinfo = gnome_internet_radio_locator_station_load_from_file(localstation, world_station_xml_filename);
+	while (stationinfo != NULL) {
+		if (strcasecmp(stationinfo->location, station)==0) {
+			gst_player_stop(player);
+			gnome_internet_radio_locator_player_new(player, stationinfo->stream->uri);
+			gst_player_play(player);
+		}
+		stationinfo = stationinfo->next;
+	}
 	return;
 }
 
@@ -87,9 +102,16 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Berkeley, CA");
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.873093, -122.303769);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
-  champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
-		 
+
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Washington, DC");
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 38.8949549, -77.0366456);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
+
 #if 0
   marker = champlain_label_new_from_file ("icons/emblem-important.png", NULL);
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.873093, -122.303769);
