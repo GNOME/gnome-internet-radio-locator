@@ -2,7 +2,7 @@ Name:           @PACKAGE@
 Version:        @VERSION@
 Release:        1%{?dist}
 Summary:        GNOME Internet Radio Locator program
-License:        GPLv2+
+License:        GPLv3+
 URL:            http://people.gnome.org/~ole/gnome-internet-radio-locator
 Group:          Applications/Internet
 Source:         http://people.gnome.org/~ole/%{name}/%{name}-%{version}.tar.xz
@@ -72,6 +72,9 @@ fi
 %{_datadir}/help/*/%{name}
 
 %changelog
+* Wed Jul 19 2017 Ole Aamot - 0.6.0-1.fc25
+- gnome-internet-radio-locator 0.6.0 build on Fedora Linux 25
+
 * Tue Jul 18 2017 Ole Aamot - 0.5.3-1.fc25
 - gnome-internet-radio-locator 0.5.3 build on Fedora Linux 25
 
