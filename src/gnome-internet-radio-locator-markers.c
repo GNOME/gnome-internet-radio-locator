@@ -16,11 +16,13 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
+#include <string.h>
 #include <gtk/gtk.h>
 #include <gst/player/player.h>
 #include <champlain/champlain.h>
 #include "gnome-internet-radio-locator.h"
 #include "gnome-internet-radio-locator-markers.h"
+#include "gnome-internet-radio-locator-player.h"
 
 extern GtkWidget *input;
 extern GtkEntryCompletion *completion;
@@ -59,7 +61,7 @@ marker_function (ChamplainMarker *self,
 	while (stationinfo != NULL) {
 		if (strcasecmp(stationinfo->location, station)==0) {
 			gst_player_stop(player);
-			gnome_internet_radio_locator_player_new(player, stationinfo->stream->uri);
+			gnome_internet_radio_locator_player_new(GST_PLAYER(player), stationinfo->stream->uri);
 			gst_player_play(player);
 		}
 		stationinfo = stationinfo->next;
