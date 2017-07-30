@@ -1,4 +1,12 @@
 =============
+Version 0.6.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add KALX and WAMU
+
+=============
 Version 0.5.3
 =============
 

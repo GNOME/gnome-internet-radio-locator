@@ -1,0 +1,26 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+            id="stop">
+
+  <info>
+    <link type="guide" xref="index#main" group="#first"/>
+    <revision pkgversion="0.7" date="2017-07-30" status="candidate"/>
+    <credit type="author copyright">
+      <name>Ole Aamot</name>
+      <email>ole@src.gnome.org</email>
+    </credit>
+    
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>    
+    <desc>GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio stations around the world.</desc>
+  </info>
+
+  <title>Stop playback of Internet Radio Station</title>
+
+  <p>It is possible to stop playback of the currently selected radio station.</p>
+  
+  <title>
+    <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-stop.png" />
+    Stop playback of current radio station
+  </title>
+  
+</page>

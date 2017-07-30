@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="0.6.0">
+<gnome_internet_radio_locator version="0.6.1">
   <station band="92.4FM" id="srp1" lang="sv" name="Sveriges Radio P1" rank="1.0" type="gov">
     <frequency uri="http://www.sverigesradio.se/p1">FM 92.4 in Stockholm</frequency>
     <location>Stockholm, Sweden</location>

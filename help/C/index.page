@@ -1,0 +1,60 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:its="http://www.w3.org/2005/11/its"
+      xmlns:e="http://projectmallard.org/experimental/"
+      type="guide" style="2column task"
+      id="index">
+
+  <info>
+    <desc>GNOME Internet Radio Locator for GNOME 3</desc>
+    <title type="link">GNOME Internet Radio Locator for GNOME 3</title>
+    <title type="text">GNOME Internet Radio Locator for GNOME 3</title>
+
+    <revision pkgversion="0.7" date="2017-07-30" status="candidate"/>
+    <credit type="author copyright">
+      <name>Ole Aamot</name>
+      <email>ole@src.gnome.org</email>
+      <years>2017</years>
+    </credit>
+
+   <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude" /> 
+
+    <desc>GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio stations around the world.</desc>
+	
+  </info>
+
+  <p>Welcome to the <app>GNOME Internet Radio Locator for GNOME
+  3</app> help guide.  For a quick introduction into the features of
+  the <app>GNOME Internet Radio Locator for GNOME 3</app>, visit the
+  <link xref="intro">Introduction</link> page.</p>
+
+  <p>Other help topics are grouped together into sections below.
+  Enjoy locating free, non-profit, independent Internet radio stations
+  with the <app>GNOME Internet Radio Locator for GNOME 3</app>!</p>
+
+  <section id="new" style="2column">
+    <title>New</title>
+    <p>Add <link xref="new">New</link> radio station by location.</p>
+  </section>
+
+  <section id="search" style="2column">
+    <title>Search</title>
+    <p><link xref="search">Search</link> for free, non-profit, independent
+    radio stations by location.</p>
+  </section>
+
+  <section id="zoom" style="2column">
+    <title>Zoom In/Out of Internet Radio Station Map</title>
+    <p><link xref="zoom">Zoom In/Out</link> of the free radio station map.</p>
+  </section>
+
+  <section id="stop" style="2column">
+    <title>Stop Station Playback</title>
+    <p><link xref="stop">Stop playback of the selected radio station</link>.</p>
+  </section>
+
+  <section id="exit" style="2column">
+    <title>Exit</title>
+    <p>Exit the program.</p>
+  </section>
+  
+</page>

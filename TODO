@@ -1,4 +1,16 @@
-TODO for GNOME Internet Radio Locator
+TODO for GNOME Internet Radio Locator for GNOME 3
+
+==========
+2017-07-30
+==========
+
+Documentation
+
+* Add English user documentation in help/en_US/
+
+Stations
+
+* Implement Denmark's Radio (dr.dk)
 
 ==========
 2017-04-26

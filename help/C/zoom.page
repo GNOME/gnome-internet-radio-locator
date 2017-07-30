@@ -1,0 +1,26 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      type="topic"
+            id="zoom">
+
+  <info>
+    <link type="guide" xref="index#main" group="#first"/>
+    <revision pkgversion="0.7" date="2017-07-30" status="candidate"/>
+    <credit type="author copyright">
+      <name>Ole Aamot</name>
+      <email>ole@src.gnome.org</email>
+    </credit>
+    
+    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>    
+    <desc>Search for Internet radio stations by location.</desc>
+  </info>
+
+  <title>Zoom Internet Radio Station Map</title>
+
+  <p>It is possible to zoom the map with Internet radio stations.</p>
+  
+  <title>
+    <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-zoom.png" />
+    Zoom playback of current radio station
+  </title>
+  
+</page>
