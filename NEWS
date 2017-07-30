@@ -1,4 +1,38 @@
 =============
+Version 0.6.1
+=============
+
+Documentation
+
+	* NEWS
+	* TODO
+	* help/C/C.css
+	* help/C/exit.page
+	* help/C/fdl-appendix.xml
+	* help/C/gnome-help.sct
+	* help/C/index.page
+	* help/C/intro.page
+	* help/C/jquery.js
+	* help/C/jquery.syntax.core.js
+	* help/C/jquery.syntax.js
+	* help/C/jquery.syntax.layout.yelp.js
+	* help/C/legal.xml
+	* help/C/media/gnome-internet-radio-locator-exit.png
+	* help/C/media/gnome-internet-radio-locator-main.png
+	* help/C/media/gnome-internet-radio-locator-new.png
+	* help/C/media/gnome-internet-radio-locator-search.png
+	* help/C/media/gnome-internet-radio-locator-stop.png
+	* help/C/media/gnome-internet-radio-locator-zoom.png
+	* help/C/new.page
+	* help/C/search.page
+	* help/C/stop.page
+	* help/C/version.xml.in
+	* help/C/yelp.js
+	* help/C/zoom.page
+	* help/Makefile.am
+	* src/gnome-internet-radio-locator.xml
+
+=============
 Version 0.6.0
 =============
 
