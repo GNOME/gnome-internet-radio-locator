@@ -1,0 +1,340 @@
+# German translation for gnome-internet-radio-locator.
+# Copyright (C) 2017 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-internet-radio-locator package.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-internet-radio-locator master\n"
+"POT-Creation-Date: 2017-07-30 14:43+0000\n"
+"PO-Revision-Date: 2017-08-01 23:44+0200\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
+"X-Generator: Poedit 2.0.3\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Mario Blättermann <mario.blaettermann@gmail.com>, 2017."
+
+#. (itstool) path: info/desc
+#: C/index.page:8
+msgid "GNOME Internet Radio Locator for GNOME 3"
+msgstr "GNOME Internet-Radio-Ortung für GNOME 3"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "link"
+msgid "GNOME Internet Radio Locator for GNOME 3"
+msgstr "GNOME Internet-Radio-Ortung für GNOME 3"
+
+#. (itstool) path: info/title
+#: C/index.page:10
+msgctxt "text"
+msgid "GNOME Internet Radio Locator for GNOME 3"
+msgstr "GNOME Internet-Radio-Ortung für GNOME 3"
+
+#. (itstool) path: credit/name
+#: C/index.page:14 C/intro.page:9 C/new.page:7 C/stop.page:9 C/zoom.page:9
+#: C/search.page:9 C/exit.page:9
+msgid "Ole Aamot"
+msgstr "Ole Aamot"
+
+#. (itstool) path: credit/years
+#: C/index.page:16
+msgid "2017"
+msgstr "2017"
+
+#. (itstool) path: info/desc
+#: C/index.page:21 C/intro.page:15 C/new.page:11 C/stop.page:14
+#: C/search.page:14 C/exit.page:14
+msgid ""
+"GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio "
+"stations around the world."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/index.page:25
+msgid ""
+"Welcome to the <app>GNOME Internet Radio Locator for GNOME 3</app> help "
+"guide. For a quick introduction into the features of the <app>GNOME Internet "
+"Radio Locator for GNOME 3</app>, visit the <link xref=\"intro"
+"\">Introduction</link> page."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/index.page:30
+msgid ""
+"Other help topics are grouped together into sections below. Enjoy locating "
+"free, non-profit, independent Internet radio stations with the <app>GNOME "
+"Internet Radio Locator for GNOME 3</app>!"
+msgstr ""
+
+#. (itstool) path: section/title
+#. (itstool) path: page/title
+#: C/index.page:35 C/new.page:13
+msgid "New"
+msgstr "Neu"
+
+#. (itstool) path: section/p
+#: C/index.page:36
+msgid "Add <link xref=\"new\">New</link> radio station by location."
+msgstr ""
+
+#. (itstool) path: section/title
+#: C/index.page:40
+msgid "Search"
+msgstr "Suchen"
+
+#. (itstool) path: section/p
+#: C/index.page:41
+msgid ""
+"<link xref=\"search\">Search</link> for free, non-profit, independent radio "
+"stations by location."
+msgstr ""
+
+#. (itstool) path: section/title
+#: C/index.page:46
+msgid "Zoom In/Out of Internet Radio Station Map"
+msgstr ""
+
+#. (itstool) path: section/p
+#: C/index.page:47
+msgid "<link xref=\"zoom\">Zoom In/Out</link> of the free radio station map."
+msgstr ""
+
+#. (itstool) path: section/title
+#: C/index.page:51
+#, fuzzy
+msgid "Stop Station Playback"
+msgstr "Tastenkürzel um die Wiedergabe anzuhalten."
+
+#. (itstool) path: section/p
+#: C/index.page:52
+msgid "<link xref=\"stop\">Stop playback of the selected radio station</link>."
+msgstr ""
+
+#. (itstool) path: section/title
+#. (itstool) path: page/title
+#: C/index.page:56 C/exit.page:17
+msgid "Exit"
+msgstr "Beenden"
+
+#. (itstool) path: section/p
+#: C/index.page:57
+msgid "Exit the program."
+msgstr "Das Programm beenden."
+
+#. (itstool) path: page/title
+#: C/intro.page:19
+msgid "Intro"
+msgstr "Intro"
+
+#. (itstool) path: page/p
+#: C/intro.page:23
+msgid ""
+"<app>GNOME Internet Radio Locator for GNOME 3</app> is a free program for "
+"listening to free, independent, non-profit radio stations from around the "
+"world by streaming over the Internet."
+msgstr ""
+
+#. (itstool) path: title/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/intro.page:28
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-main.png' "
+"md5='de30e361c54241d27a1fca75abdafa47'"
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/intro.page:27
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"media/gnome-internet-radio-"
+"locator-main.png\"/> GNOME Internet Radio Locator for GNOME 3"
+msgstr ""
+
+#. (itstool) path: p/link
+#: C/legal.xml:3
+msgid "http://creativecommons.org/licenses/by-sa/3.0/"
+msgstr "http://creativecommons.org/licenses/by-sa/3.0/"
+
+#. (itstool) path: license/p
+#: C/legal.xml:3
+msgid ""
+"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 "
+"Unported License. To view a copy of this license, visit <_:link-1/> or send "
+"a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, "
+"California, 94041, USA."
+msgstr ""
+"Dieses Werk steht unter einer Creative Commons Attribution-ShareAlike 3.0 "
+"Unported-Lizenz. Besuchen Sie <_:link-1/>, um eine Kopie der Lizenz "
+"einzusehen, oder senden Sie einen Brief an: Creative Commons, 444 Castro "
+"Street, Suite 900, Mountain View, California, 94041, USA."
+
+#. (itstool) path: page/p
+#: C/new.page:14
+msgid ""
+"It is possible to add new, personal Internet radio stations in <app>GNOME "
+"Internet Radio Locator for GNOME 3</app> with the \"New\" button."
+msgstr ""
+
+#. (itstool) path: title/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/new.page:18
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-new.png' "
+"md5='44635b8e41e3ed926594454d0b563181'"
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/new.page:17
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"media/gnome-internet-radio-"
+"locator-new.png\"/> New radio station window"
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/stop.page:17
+msgid "Stop playback of Internet Radio Station"
+msgstr "Wiedergabe des ausgewählten Internet-Radiosenders beenden"
+
+#. (itstool) path: page/p
+#: C/stop.page:19
+msgid ""
+"It is possible to stop playback of the currently selected radio station."
+msgstr ""
+"Es ist möglich, die Wiedergabe des aktuell ausgewählten Internet-"
+"Radiosenders zu beenden."
+
+#. (itstool) path: title/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/stop.page:22
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-stop.png' "
+"md5='1eb0256269b211b90a9c23cc351832fd'"
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/stop.page:21
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"media/gnome-internet-radio-"
+"locator-stop.png\"/> Stop playback of current radio station"
+msgstr ""
+
+#. (itstool) path: info/desc
+#: C/zoom.page:14
+#, fuzzy
+msgid "Search for Internet radio stations by location."
+msgstr "Internet-Radiosender durchsuchen"
+
+#. (itstool) path: page/title
+#: C/zoom.page:17
+#, fuzzy
+msgid "Zoom Internet Radio Station Map"
+msgstr "Adresse des Internet-Radiosenders:"
+
+#. (itstool) path: page/p
+#: C/zoom.page:19
+msgid "It is possible to zoom the map with Internet radio stations."
+msgstr ""
+
+#. (itstool) path: title/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/zoom.page:22
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-zoom.png' "
+"md5='e0da0d565697a2dd4440e3e104e48b01'"
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/zoom.page:21
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"media/gnome-internet-radio-"
+"locator-zoom.png\"/> Zoom playback of current radio station"
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/search.page:17
+msgid "Search by location"
+msgstr "Nach Ort suchen"
+
+#. (itstool) path: page/p
+#: C/search.page:19
+msgid ""
+"It is possible to search for supported radio stations based on the location "
+"of the station in <app>GNOME Internet Radio Locator for GNOME 3</app>."
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/search.page:21
+msgid ""
+"Type a city name for a supported Free Radio station in a query field and hit "
+"<key>ENTER</key>."
+msgstr ""
+
+#. (itstool) path: title/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/search.page:25
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-search.png' "
+"md5='938f6db389ea4b220c4f690e2e6a7b54'"
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/search.page:24
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"media/gnome-internet-radio-"
+"locator-search.png\"/> Search entry field for search radio station by "
+"location"
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/exit.page:19
+msgid ""
+"It is possible to exit the <app>GNOME Internet Radio Locator for GNOME 3</"
+"app> with the \"Exit\" button."
+msgstr ""
+
+#. (itstool) path: title/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/exit.page:23
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-exit.png' "
+"md5='6764a256ab4ca47f3d11f3d065ffa603'"
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/exit.page:22
+msgid ""
+"<media type=\"image\" mime=\"image/png\" src=\"media/gnome-internet-radio-"
+"locator-exit.png\"/> GNOME Internet Radio Locator"
+msgstr ""
