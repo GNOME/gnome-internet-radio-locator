@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.59)
-AC_INIT(gnome-internet-radio-locator,0.6.1)
+AC_INIT(gnome-internet-radio-locator,0.6.2)
 AM_INIT_AUTOMAKE([-Wno-portability 1.11 no-dist-gzip dist-xz tar-ustar subdir-objects])
 AM_MAINTAINER_MODE
 AC_CONFIG_SRCDIR([src/gnome-internet-radio-locator.c])
@@ -79,6 +79,22 @@ GNOME_INTERNET_RADIO_LOCATOR_PKG_DEPS="gtk+-3.0 glib-2.0 gobject-2.0 pangoft2 ch
 
 GTK_DOC_CHECK([1.16], [--flavour no-tmpl])
 
+#YELP_HELP_INIT
+
+#GNOMEDOC=`which yelp-build`
+#if test -z $GNOMEDOC; then
+#   echo "*** The tools to build the documentation are not found,"
+#   echo "    please intall the yelp-tool package ***"
+#   exit 1
+#fi
+
+#AC_ARG_ENABLE([user_help],
+#	AS_HELP_STRING([--disable-user-help],[Disable the user help to speed the build (default: enabled)]),
+#	[enable_user_help=$enableval],
+#	[enable_user_help=yes])
+
+#AM_CONDITIONAL(ENABLE_USER_HELP, test x"$enable_user_help" = "xyes")
+
 # Checks for header files.
 AC_HEADER_STDC
 AC_CHECK_HEADERS([stdlib.h string.h unistd.h])
@@ -105,7 +121,7 @@ AC_SUBST(GNOME_INTERNET_RADIO_LOCATOR_CFLAGS)
 AC_SUBST(GNOME_INTERNET_RADIO_LOCATOR_PKG_DEPS)
 
 dnl Enable yelp-tools
-YELP_HELP_INIT
+# YELP_HELP_INIT
 
 AC_OUTPUT([
 Makefile

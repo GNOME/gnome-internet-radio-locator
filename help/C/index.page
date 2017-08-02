@@ -5,10 +5,9 @@
       id="index">
 
   <info>
-    <desc>GNOME Internet Radio Locator for GNOME 3</desc>
     <title type="link">GNOME Internet Radio Locator for GNOME 3</title>
     <title type="text">GNOME Internet Radio Locator for GNOME 3</title>
-
+    <desc>GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio stations around the world.</desc>
     <revision pkgversion="0.7" date="2017-07-30" status="candidate"/>
     <credit type="author copyright">
       <name>Ole Aamot</name>
@@ -17,10 +16,13 @@
     </credit>
 
    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude" /> 
-
-    <desc>GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio stations around the world.</desc>
 	
   </info>
+
+   <title>
+    <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-icon.png" its:translate="no" />
+    GNOME Internet Radio Locator for GNOME 3
+  </title>
 
   <p>Welcome to the <app>GNOME Internet Radio Locator for GNOME
   3</app> help guide.  For a quick introduction into the features of
@@ -54,7 +56,7 @@
 
   <section id="exit" style="2column">
     <title>Exit</title>
-    <p>Exit the program.</p>
+    <p><link xref="exit">Exit the program</link>.</p>
   </section>
   
 </page>

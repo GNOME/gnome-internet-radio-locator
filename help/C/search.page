@@ -20,10 +20,91 @@
 
   <p>Type a city name for a supported Free Radio station in a query field and
   hit <key>ENTER</key>.</p>
+
+  <p>Supported city names are:</p>
+
+  <list>
+    <item><p><code>Adelaide, Australia</code></p></item>
+    <item><p><code>Auckland, New Zealand</code></p></item>
+    <item><p><code>Austin, TX</code></p></item>
+    <item><p><code>Ayr, Scotland</code></p></item>
+    <item><p><code>Bergen, Norway</code></p></item>
+    <item><p><code>Berkeley, CA</code></p></item>
+    <item><p><code>Bern, Switzerland</code></p></item>
+    <item><p><code>Boston, MA</code></p></item>
+    <item><p><code>Bristol, United Kingdom</code></p></item>
+    <item><p><code>Brno, Czech Republic</code></p></item>
+    <item><p><code>Bronx, New York City, NY</code></p></item>
+    <item><p><code>Brooklyn, New York City, NY</code></p></item>
+    <item><p><code>Bruxelles, Belgium</code></p></item>
+    <item><p><code>Budapest, Hungary</code></p></item>
+    <item><p><code>Buenos Aires, Argentina</code></p></item>
+    <item><p><code>Calgary, Canada</code></p></item>
+    <item><p><code>Cambridge, United Kingdom</code></p></item>
+    <item><p><code>Cape Town, South Africa</code></p></item>
+    <item><p><code>Centralia, DC</code></p></item>
+    <item><p><code>Chapel Hill, NC</code></p></item>
+    <item><p><code>Chicago, IL</code></p></item>
+    <item><p><code>Cleveland, OH</code></p></item>
+    <item><p><code>Coimbra, Portugal</code></p></item>
+    <item><p><code>Copenhagen, Denmark</code></p></item>
+    <item><p><code>Cornwall, United Kingdom</code></p></item>
+    <item><p><code>Dublin, Ireland</code></p></item>
+    <item><p><code>Gent, Belgium</code></p></item>
+    <item><p><code>Guatemala City, Guatemala</code></p></item>
+    <item><p><code>Hammond, LA</code></p></item>
+    <item><p><code>Honolulu, HI</code></p></item>
+    <item><p><code>Houston, TX</code></p></item>
+    <item><p><code>Kingston, Canada</code></p></item>
+    <item><p><code>Kristiansand, Norway</code></p></item>
+    <item><p><code>Leeds, United Kingdom</code></p></item>
+    <item><p><code>London, United Kingdom</code></p></item>
+    <item><p><code>Long Island, NY</code></p></item>
+    <item><p><code>Los Angeles, CA</code></p></item>
+    <item><p><code>Lund, Sweden</code></p></item>
+    <item><p><code>Manchester, United Kingdom</code></p></item>
+    <item><p><code>Memphis, TN</code></p></item>
+    <item><p><code>México City, México</code></p></item>
+    <item><p><code>Minneapolis, MN</code></p></item>
+    <item><p><code>Narvik, Norway</code></p></item>
+    <item><p><code>Nashville, TN</code></p></item>
+    <item><p><code>Newcastle, Australia</code></p></item>
+    <item><p><code>New Orleans, LA</code></p></item>
+    <item><p><code>New York City, NY</code></p></item>
+    <item><p><code>Nicosia, Cyprus</code></p></item>
+    <item><p><code>Nottingham, United Kingdom</code></p></item>
+    <item><p><code>Oslo, Norway</code></p></item>
+    <item><p><code>Oswego, NY</code></p></item>
+    <item><p><code>Ottawa, Canada</code></p></item>
+    <item><p><code>Oxford, United Kingdom</code></p></item>
+    <item><p><code>Palo Alto, CA</code></p></item>
+    <item><p><code>Paris, France</code></p></item>
+    <item><p><code>Phoenix, AZ</code></p></item>
+    <item><p><code>Pisa, Italy</code></p></item>
+    <item><p><code>Pittsburgh, PA</code></p></item>
+    <item><p><code>Portland, OR</code></p></item>
+    <item><p><code>Reykjavik, Iceland</code></p></item>
+    <item><p><code>Rochester, MI</code></p></item>
+    <item><p><code>Salford, United Kingdom</code></p></item>
+    <item><p><code>San Marcos, TX</code></p></item>
+    <item><p><code>Santiago, Chile</code></p></item>
+    <item><p><code>São Paulo, Brazil</code></p></item>
+    <item><p><code>Seattle, WA</code></p></item>
+    <item><p><code>Space</code></p></item>
+    <item><p><code>Stockholm, Sweden</code></p></item>
+    <item><p><code>St. Pölten, Austria</code></p></item>
+    <item><p><code>Sydney, Nova Scotia, Canada</code></p></item>
+    <item><p><code>Toronto, Canada</code></p></item>
+    <item><p><code>Trondheim, Norway</code></p></item>
+    <item><p><code>Tuscaloosa, AL</code></p></item>
+    <item><p><code>Washington, DC</code></p></item>
+    <item><p><code>Waterloo, Canada</code></p></item>
+    <item><p><code>York, United Kingdom</code></p></item>
+    <item><p><code>Zürich, Switzerland</code></p></item>
+  </list>
   
   <title>
     <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-search.png" />
-    Search entry field for search radio station by location
   </title>
   
 </page>

@@ -9,7 +9,7 @@ Source:         http://people.gnome.org/~ole/%{name}/%{name}-%{version}.tar.xz
 
 BuildRequires:  gtk3-devel
 BuildRequires:  pango
-BuildRequires:  libchamplain-gtk
+BuildRequires:  libchamplain-devel
 BuildRequires:  libxml2-devel
 BuildRequires:  intltool
 BuildRequires:  itstool
@@ -69,9 +69,15 @@ fi
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_mandir}/man1/%{name}.1*
-%{_datadir}/help/*/%{name}
+# %{_datadir}/help/*/%{name}
 
 %changelog
+* Wed Aug 02 2017 Ole Aamot - 0.6.2-1.fc26
+- gnome-internet-radio-locator 0.6.2 build on Fedora Linux 26
+
+* Tue Aug 01 2017 Ole Aamot - 0.6.1-1.fc26
+- gnome-internet-radio-locator 0.6.1 build on Fedora Linux 26
+
 * Wed Jul 19 2017 Ole Aamot - 0.6.0-1.fc25
 - gnome-internet-radio-locator 0.6.0 build on Fedora Linux 25
 
