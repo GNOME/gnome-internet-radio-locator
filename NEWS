@@ -1,4 +1,32 @@
 =============
+Version 0.6.2
+=============
+
+Autotools
+
+	* configure.ac
+	* help/Makefile.am
+
+Build
+
+	* gnome-internet-radio-locator.spec.in
+
+Documentation
+
+	* help/C/C.css: Update CSS
+	* help/C/exit.page: Update page
+	* help/C/index.page: Update page
+	* help/C/intro.page: Update page
+	* help/C/media/gnome-internet-radio-locator-icon.png: Update graphics
+	* help/C/media/gnome-internet-radio-locator-main.png: Update graphics
+	* help/C/new.page: Update page
+	* help/C/search.page: Update page
+	* help/C/stop.page: Update page
+	* help/C/yelp.js: Update Yelp
+	* help/C/zoom.page: Update page
+	* help/de/de.po: Initial German doc translation
+
+=============
 Version 0.6.1
 =============
 
