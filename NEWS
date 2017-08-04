@@ -1,4 +1,21 @@
 =============
+Version 0.7.0
+=============
+
+Credits
+
+	* AUTHORS: Add Claude Paroz (French translation)
+	* THANKS: Add Claude Paroz (French translation)
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add DR Nyheder, P1, P2, P3
+
+Translations
+
+	* Claude Paroz (sv)
+
+=============
 Version 0.6.2
 =============
 
