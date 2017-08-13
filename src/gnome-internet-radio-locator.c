@@ -127,7 +127,7 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 	place = geocode_reverse_resolve (reverse, error);
 	name = geocode_place_get_town (place);
 	gtk_entry_set_text(GTK_ENTRY(input),(gchar *)name);
-	g_print ("Mouse click at: %f %f (%s)\n", lat, lon, name);
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("Mouse click at: %f %f (%s)\n", lat, lon, name);
 	return TRUE;
 }
 
