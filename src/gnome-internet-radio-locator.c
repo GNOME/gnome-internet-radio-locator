@@ -25,6 +25,7 @@
 #include <champlain/champlain.h>
 #include <champlain-gtk/champlain-gtk.h>
 #include <clutter-gtk/clutter-gtk.h>
+#include <geocode-glib/geocode-glib.h>
 #include <glib/gstdio.h>
 #include <string.h>
 
@@ -110,17 +111,23 @@ toggle_layer (GtkToggleButton *widget,
 static gboolean
 mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *view)
 {
+	GError **error;
 	gdouble lat, lon;
-	/* GeocodeNominatim *nom; */
+	GeocodePlace *place;
+	GeocodeLocation *location;
+	GeocodeReverse *reverse;
+	const char *name;
 	/* GeocodeForward *fwd; */
 	/* GList *list; */
 	/* GError **err; */
 	lon = champlain_view_x_to_longitude (view, event->x);
 	lat = champlain_view_y_to_latitude (view, event->y);
-	/* fwd = geocode_forward_new_for_string ("Oslo, Norway"); */
-	/* list = geocode_forward_search (fwd, err); */
-	/* gnome_internet_radio_locator_radius (lat, lon, 100); */
-	g_print ("Mouse click at: %f %f\n", lat, lon);
+	location = geocode_location_new (lat, lon, GEOCODE_LOCATION_ACCURACY_CITY);
+	reverse = geocode_reverse_new_for_location (location);
+	place = geocode_reverse_resolve (reverse, error);
+	name = geocode_place_get_town (place);
+	gtk_entry_set_text(GTK_ENTRY(input),(gchar *)name);
+	g_print ("Mouse click at: %f %f (%s)\n", lat, lon, name);
 	return TRUE;
 }
 

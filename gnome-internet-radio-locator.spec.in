@@ -15,11 +15,13 @@ BuildRequires:  intltool
 BuildRequires:  itstool
 BuildRequires:  libappstream-glib
 BuildRequires:  desktop-file-utils
+BuildRequires:  geocode-glib-devel
 BuildRequires:  gstreamer-devel
 BuildRequires:  gstreamer1-plugins-bad-free-devel
 BuildRequires:  gstreamer1-plugins-base-devel
 Requires:       gstreamer1 >= 1.8.3
-Requires:       gstreamer1-plugins-ugly >= 1.8.3
+Requires:       gstreamer1-plugins-ugly-free >= 1.8.3
+Requires:       geocode-glib >= 3.20.1
 
 %description
 GNOME Internet Radio Locator is a Free Software program that allows
@@ -47,14 +49,12 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 
 %post
 /bin/touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :
-/usr/bin/update-desktop-database &> /dev/null || :
 
 %postun
 if [ $1 -eq 0 ] ; then
     /bin/touch --no-create %{_datadir}/icons/hicolor &>/dev/null
     /usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 fi
-/usr/bin/update-desktop-database &> /dev/null || :
 
 %posttrans
 /usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
@@ -69,50 +69,52 @@ fi
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_mandir}/man1/%{name}.1*
-# %{_datadir}/help/*/%{name}
 
 %changelog
-* Fri Aug 04 2017 Ole Aamot - 0.7.0-1.fc26
+* Sat Aug 12 2017 Ole Aamot <ole@gnome.org> - 0.8.0-1
+- gnome-internet-radio-locator 0.8.0 build on Fedora Linux 26
+
+* Fri Aug 04 2017 Ole Aamot <ole@gnome.org> - 0.7.0-1
 - gnome-internet-radio-locator 0.7.0 build on Fedora Linux 26
 
-* Wed Aug 02 2017 Ole Aamot - 0.6.2-1.fc26
+* Wed Aug 02 2017 Ole Aamot <ole@gnome.org> - 0.6.2-1
 - gnome-internet-radio-locator 0.6.2 build on Fedora Linux 26
 
-* Tue Aug 01 2017 Ole Aamot - 0.6.1-1.fc26
+* Tue Aug 01 2017 Ole Aamot <ole@gnome.org> - 0.6.1-1
 - gnome-internet-radio-locator 0.6.1 build on Fedora Linux 26
 
-* Wed Jul 19 2017 Ole Aamot - 0.6.0-1.fc25
+* Wed Jul 19 2017 Ole Aamot <ole@gnome.org> - 0.6.0-1
 - gnome-internet-radio-locator 0.6.0 build on Fedora Linux 25
 
-* Tue Jul 18 2017 Ole Aamot - 0.5.3-1.fc25
+* Tue Jul 18 2017 Ole Aamot <ole@gnome.org> - 0.5.3-1
 - gnome-internet-radio-locator 0.5.3 build on Fedora Linux 25
 
-* Tue Jul 18 2017 Ole Aamot - 0.5.2-1.fc25
+* Tue Jul 18 2017 Ole Aamot <ole@gnome.org> - 0.5.2-1
 - gnome-internet-radio-locator 0.5.2 build on Fedora Linux 25
 
-* Mon Jul 17 2017 Ole Aamot - 0.5.1-1.fc25
+* Mon Jul 17 2017 Ole Aamot <ole@gnome.org> - 0.5.1-1
 - gnome-internet-radio-locator 0.5.1 build on Fedora Linux 25
 
-* Sun Jul 09 2017 Ole Aamot - 0.5.0-1.fc25
+* Sun Jul 09 2017 Ole Aamot <ole@gnome.org> - 0.5.0-1
 - gnome-internet-radio-locator 0.5.0 build on Fedora Linux 25
 
-* Tue Jun 27 2017 Ole Aamot - 0.4.0-1.fc25
+* Tue Jun 27 2017 Ole Aamot <ole@gnome.org> - 0.4.0-1
 - gnome-internet-radio-locator 0.4.0 build on Fedora Linux 25
 
-* Sun Jun 18 2017 Ole Aamot - 0.3.0-1.fc25
+* Sun Jun 18 2017 Ole Aamot <ole@gnome.org> - 0.3.0-1
 - gnome-internet-radio-locator 0.3.0 build on Fedora Linux 25
 
-* Sat Jun 17 2017 Ole Aamot - 0.2.1-1.fc25
+* Sat Jun 17 2017 Ole Aamot <ole@gnome.org> - 0.2.1-1
 - gnome-internet-radio-locator 0.2.1 build on Fedora Linux 25
 
-* Fri Jun 16 2017 Ole Aamot - 0.2.0-1.fc25
+* Fri Jun 16 2017 Ole Aamot <ole@gnome.org> - 0.2.0-1
 - gnome-internet-radio-locator 0.2.0 build on Fedora Linux 25
 
-* Thu Apr 27 2017 Ole Aamot - 0.1.2-1.fc25
+* Thu Apr 27 2017 Ole Aamot <ole@gnome.org> - 0.1.2-1
 - gnome-internet-radio-locator 0.1.2 build on Fedora Linux 25
 
-* Thu Apr 27 2017 Ole Aamot - 0.1.1-1.fc25
+* Thu Apr 27 2017 Ole Aamot <ole@gnome.org> - 0.1.1-1
 - gnome-internet-radio-locator 0.1.1 build on Fedora Linux 25
 
-* Wed Apr 26 2017 Ole Aamot - 0.1.0-1.fc25
+* Wed Apr 26 2017 Ole Aamot <ole@gnome.org> - 0.1.0-1
 - gnome-internet-radio-locator 0.1.0 build on Fedora Linux 25

@@ -1,4 +1,12 @@
 =============
+Version 0.8.0
+=============
+
+GUI
+	* configure.ac: Require geocode-glib-1.0
+	* src/gnome-internet-radio-locator.c: Reverse geocode with city accuracy
+
+=============
 Version 0.7.0
 =============
 
