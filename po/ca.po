@@ -1,0 +1,111 @@
+# Catalan translation for gnome-internet-radio-locator.
+# Copyright (C) 2017 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-internet-radio-locator package.
+# Pere Orga <pere@orga.cat>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-internet-radio-locator master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"internet-radio-locator&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-07-17 14:53+0000\n"
+"PO-Revision-Date: 2017-07-08 19:19+0200\n"
+"Last-Translator: Pere Orga <pere@orga.cat>\n"
+"Language-Team: Catalan <gnome@llistes.softcatala.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
+msgid ""
+"GNOME Internet Radio Locator allows users to easily find and listen to live "
+"radio programs on radio broadcasters on the Internet."
+msgstr ""
+"El Localitzador de ràdio d'Internet del GNOME us permet cercar i escoltar "
+"programes de ràdio en viu a Internet."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
+msgid ""
+"GNOME Internet Radio Locator is developed for the GNOME desktop and requires "
+"gstreamer 1.0 to be installed for playback of supported radio stations."
+msgstr ""
+"El Localitzador de ràdio d'Internet del GNOME s'ha desenvolupat per a "
+"l'escriptori GNOME i requereix la instal·lació de gstreamer 1.0 per a la "
+"reproducció d'emissores de ràdio."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
+msgid ""
+"Enjoy listening to and recording from supported Internet Radio stations in "
+"GNOME Internet Radio Locator."
+msgstr ""
+"Passeu-ho bé escoltant i enregistrant emissores de ràdio d'Internet al "
+"Localitzador de ràdio d'Internet del GNOME."
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
+msgid "Internet Radio Locator"
+msgstr "Localitzador de ràdio d'Internet"
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:2
+msgid "Locate Internet Radio Stations"
+msgstr "Ubica emissores de ràdio d'Internet"
+
+#. Extra keywords that can be used to search for gnome-internet-radio-locator in GNOME Shell and Unity
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
+msgid "Live;Radio;Program;Station;Locator;"
+msgstr "En viu;Ràdio;Programa;Emissora;Localitzador;"
+
+#. printf("Archiving program at %s\n", archive);
+#: ../src/gnome-internet-radio-locator-station.c:129
+#, c-format
+msgid "Recording from %s in %s to %s"
+msgstr "S'està enregistrant de %s en %s a %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:147
+#, c-format
+msgid ""
+"An error happened trying to play %s\n"
+"Either the file doesn't exist, or you don't have a player for it."
+msgstr ""
+"S'ha produït un error en intentar reproduir %s\n"
+"O el fitxer no existeix, o no teniu un reproductor per ell."
+
+#: ../src/gnome-internet-radio-locator-station.c:153
+#, c-format
+msgid ""
+"An error happened trying to record %s\n"
+"Either the file doesn't exist, or you don't have a recorder for it."
+msgstr ""
+"S'ha produït un error en intentar enregistrar %s\n"
+"O el fitxer no existeix, o no teniu un enregistrador per ell."
+
+#: ../src/gnome-internet-radio-locator-station.c:184
+#: ../src/gnome-internet-radio-locator-station.c:204
+#: ../src/gnome-internet-radio-locator-station.c:321
+#: ../src/gnome-internet-radio-locator-station.c:344
+#, c-format
+msgid "Failed to run %s (%i)\n"
+msgstr "No s'ha pogut executar %s (%i)\n"
+
+#: ../src/gnome-internet-radio-locator-station.c:231
+#: ../src/gnome-internet-radio-locator-station.c:368
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Status code: %i\n"
+"Details: %s"
+msgstr ""
+"No s'ha pogut obrir l'URL: «%s»\n"
+"Codi d'estat: %i\n"
+"Detalls: %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:249
+#: ../src/gnome-internet-radio-locator-station.c:263
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Details: %s"
+msgstr ""
+"No s'ha pogut obrir l'URL: «%s»\n"
+"Detalls: %s"
