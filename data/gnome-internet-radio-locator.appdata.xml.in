@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
   <id type="desktop">gnome-internet-radio-locator.desktop</id>
-  <name>GNOME Internet Radio Locator</name>
-  <summary>Listen to and record from Internet radio</summary>
+  <_name>GNOME Internet Radio Locator</_name>
+  <_summary>Listen to and record from Internet radio</_summary>
   <licence>CC0</licence>
   <description>
     <_p>
