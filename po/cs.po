@@ -25,7 +25,7 @@ msgstr "Vyhledávání internetových rádií GNOME"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
 msgid "Listen to and record from Internet radio"
-msgstr "Poslouchejte a nahrávejte z internetových rádií"
+msgstr "Poslouchejte a nahrávejte si internetová rádia"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
 msgid ""
