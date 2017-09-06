@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
 msgid "GNOME Internet Radio Locator"
-msgstr "Vyhledávání internetových rádií GNOME"
+msgstr "Vyhledávání internetových rádií pro GNOME"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
 msgid "Listen to and record from Internet radio"
@@ -32,7 +32,7 @@ msgid ""
 "GNOME Internet Radio Locator allows users to easily find and listen to live "
 "radio programs on radio broadcasters on the Internet."
 msgstr ""
-"Vyhledávání internetových rádií GNOME umožňuje uživatelům jednoduchým "
+"Vyhledávání internetových rádií pro GNOME umožňuje uživatelům jednoduchým "
 "způsobem najít a poslouchat program stanic vysílaných přes Internet."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
@@ -49,7 +49,7 @@ msgid ""
 "GNOME Internet Radio Locator."
 msgstr ""
 "Užívejte si poslech a nahrávání podporovaných stanic z Vyhledávání "
-"internetových rádií GNOME."
+"internetových rádií pro GNOME."
 
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
 msgid "Internet Radio Locator"

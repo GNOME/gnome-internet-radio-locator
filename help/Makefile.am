@@ -20,7 +20,7 @@
 #	search.page \
 #	exit.page
 
-HELP_LINGUAS = de
+HELP_LINGUAS = cs de
 
 #endif
 
