@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="0.7.0">
+<gnome_internet_radio_locator version="0.9.0">
+  <station band="ONLINE" id="radionorwegian" lang="en" name="Radio Norwegian" rank="1.0" type="org">
+    <frequency uri="http://www.radionorwegian.com/">ONLINE in Oslo, Norway</frequency>
+    <location>Oslo, Norway</location>
+    <description lang="en">
+      Free Radio broadcast supported by the GNOME Foundation.
+    </description>
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/128.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/112.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="112 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/96.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/80.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="80 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/64.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="64 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/56.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.radionorwegian.com/</uri>
+  </station>
   <station band="ONLINE" id="drnyheder" lang="da" name="Danmarks Radio Nyheder" rank="1.0" type="gov">
     <frequency uri="http://www.dr.dk/nyheder">FM 93.3 in Aalborg</frequency>
     <location>Copenhagen, Denmark</location>
