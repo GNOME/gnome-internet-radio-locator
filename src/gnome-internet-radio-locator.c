@@ -115,20 +115,26 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 {
 	GError **error;
 	gdouble lat, lon;
-	GeocodePlace *place;
-	GeocodeLocation *location;
-	GeocodeReverse *reverse;
-	const char *name;
+	GeocodePlace *place_city, *place_country;
+	GeocodeLocation *location_city;
+	GeocodeLocation *location_country;
+	GeocodeReverse *reverse_city, *reverse_country;
+	const char *name, *name_city, *name_country;
 	/* GeocodeForward *fwd; */
 	/* GList *list; */
 	/* GError **err; */
 	lon = champlain_view_x_to_longitude (view, event->x);
 	lat = champlain_view_y_to_latitude (view, event->y);
-	location = geocode_location_new (lat, lon, GEOCODE_LOCATION_ACCURACY_CITY);
-	reverse = geocode_reverse_new_for_location (location);
-	place = geocode_reverse_resolve (reverse, error);
-	name = geocode_place_get_town (place);
+	location_city = geocode_location_new (lat, lon, GEOCODE_LOCATION_ACCURACY_CITY);
+	location_country = geocode_location_new (lat, lon, GEOCODE_LOCATION_ACCURACY_COUNTRY);
+	reverse_city = geocode_reverse_new_for_location (location_city);
+	reverse_country = geocode_reverse_new_for_location (location_country);
+	place_city = geocode_reverse_resolve (reverse_city, error);
+	place_country = geocode_reverse_resolve (reverse_country, error);
+	name_city = geocode_place_get_town (place_city);
+	name_country = geocode_place_get_country (place_country);
 	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+	name = g_strconcat(name_city, ", ", name_country, NULL);
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), (gchar *)name);
 	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), lat, lon);
 	if (g_strcmp0(name, NULL)) {
