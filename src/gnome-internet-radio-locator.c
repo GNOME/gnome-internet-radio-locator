@@ -70,6 +70,8 @@ gchar *list_item_data_key ="list_item_data";
 
 GtkWidget *gnome_internet_radio_locator_app;
 GstPlayer *player;
+ChamplainMarkerLayer *layer;
+ClutterActor *marker;
 
 gchar *world_station_xml_filename, *local_station_xml_file;
 
@@ -113,7 +115,6 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 {
 	GError **error;
 	gdouble lat, lon;
-	ChamplainMarker *marker;
 	GeocodePlace *place;
 	GeocodeLocation *location;
 	GeocodeReverse *reverse;
@@ -127,8 +128,11 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 	reverse = geocode_reverse_new_for_location (location);
 	place = geocode_reverse_resolve (reverse, error);
 	name = geocode_place_get_town (place);
+	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), (gchar *)name);
-	// gtk_entry_set_text(GTK_ENTRY(input),(gchar *)name);
+	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), lat, lon);
+	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+	gtk_entry_set_text(GTK_ENTRY(input),(gchar *)name);
 	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("Mouse click at: %f %f (%s)\n", lat, lon, name);
 	return TRUE;
@@ -671,7 +675,6 @@ main (int argc,
 	GtkWidget *window;
 	GtkWidget *widget, *vbox, *bbox, *button, *viewport, *image;
 	ChamplainView *view;
-	ChamplainMarkerLayer *layer;
 	ClutterActor *scale;
 	ChamplainLicense *license_actor;
 	GtkListStore *model;

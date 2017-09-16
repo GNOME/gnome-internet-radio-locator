@@ -29,6 +29,7 @@ extern GtkEntryCompletion *completion;
 extern GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
 extern gchar *world_station_xml_filename;
 extern GstPlayer *player;
+extern ChamplainMarkerLayer *layer;
 
 typedef struct
 {
@@ -74,7 +75,6 @@ ChamplainMarkerLayer *
 create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **path)
 {
   ClutterActor *marker;
-  ChamplainMarkerLayer *layer;
   ClutterActor *layer_actor;
   ClutterColor orange = { 0xf3, 0x94, 0x07, 0xbb };
   LocationCallbackData callback_data;
