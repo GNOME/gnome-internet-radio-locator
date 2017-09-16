@@ -2,6 +2,11 @@
 Version 0.9.0
 =============
 
+GUI
+
+	* src/gnome-internet-radio-locator.c: Create popup markers on click-to-play locations
+	* src/gnome-internet-radio-locator-markers.[ch]: Add reverse lookup with click-to-play
+
 Stations
 
 	* Radio Norwegian (Oslo, Norway)
