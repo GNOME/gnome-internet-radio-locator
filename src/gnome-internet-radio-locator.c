@@ -131,9 +131,11 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), (gchar *)name);
 	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), lat, lon);
-	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
-	gtk_entry_set_text(GTK_ENTRY(input),(gchar *)name);
-	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
+	if (g_strcmp0(name, NULL)) {
+		champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+		gtk_entry_set_text(GTK_ENTRY(input),(gchar *)name);
+		g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
+	}
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("Mouse click at: %f %f (%s)\n", lat, lon, name);
 	return TRUE;
 }
