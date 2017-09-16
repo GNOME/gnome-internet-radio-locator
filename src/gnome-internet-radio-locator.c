@@ -133,6 +133,9 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 	place_country = geocode_reverse_resolve (reverse_country, error);
 	name_city = geocode_place_get_town (place_city);
 	name_country = geocode_place_get_country (place_country);
+	if (!g_strcmp0(name_country, "United States of America")) {
+		name_country = geocode_place_get_state (place_country);
+	}
 	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
 	name = g_strconcat(name_city, ", ", name_country, NULL);
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), (gchar *)name);

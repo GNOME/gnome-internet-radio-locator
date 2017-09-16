@@ -71,6 +71,9 @@ fi
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Sat Sep 16 2017 Ole Aamot <ole@gnome.org> - 1.0.0-1
+- gnome-internet-radio-locator 1.0.0 build on Fedora Linux 26
+
 * Sat Sep 02 2017 Ole Aamot <ole@gnome.org> - 0.9.0-1
 - gnome-internet-radio-locator 0.9.0 build on Fedora Linux 26
 

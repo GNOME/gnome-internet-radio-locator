@@ -1,4 +1,13 @@
 =============
+Version 1.0.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Check for U.S. states
+	* src/gnome-internet-radio-locator.xml: Add locality of U.S. states
+
+=============
 Version 0.9.0
 =============
 

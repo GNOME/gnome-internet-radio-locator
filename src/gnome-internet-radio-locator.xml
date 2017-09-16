@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="0.9.0">
+<gnome_internet_radio_locator version="1.0.0">
   <station band="ONLINE" id="radionorwegian" lang="en" name="Radio Norwegian" rank="1.0" type="org">
     <frequency uri="http://www.radionorwegian.com/">ONLINE in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
@@ -132,7 +132,7 @@
     <frequency uri="http://www.hawaiipublicradio.org/">FM 94.9 Waimea</frequency>
     <frequency uri="http://www.hawaiipublicradio.org/">FM 95.7 Waimea &amp; Kailua-Kona</frequency>
     <frequency uri="http://www.hawaiipublicradio.org/">FM 89.9 Moloa'a (Kaua'i)</frequency>
-    <location>Honolulu, HI</location>
+    <location>Honolulu, Hawaii</location>
     <description lang="en">
       Hawaii Public Radio, is a network of six non-commercial, listener-supported stations serving the state of Hawaii. It is the statewide member of National Public Radio.
     </description>
@@ -151,16 +151,16 @@
     <uri>http://www.burstradio.org.uk/</uri>
   </station>
   <station band="90.7FM" id="wfuv" lang="en" name="WFUV" rank="1.0" type="edu">
-    <frequency uri="http://www.wfuv.org/">Bronx, New York City, NY</frequency>
-    <location>Bronx, New York City, NY</location>
+    <frequency uri="http://www.wfuv.org/">Bronx, New York</frequency>
+    <location>Bronx, New York</location>
     <description lang="en">
       WFUV (90.7 FM, wfuv.org), New York’s source for music discovery, has been a noncommercial, member-supported public media service of Fordham University for more than 65 years. WFUV has received national recognition for its unique weekday format of adult album alternative music, award-winning local news and sports, and a diverse weekend lineup.
     </description>
     <stream mime="audio/mpeg" uri="http://wfuv-onair.streamguys.org/onair-hi" codec="MPEG ADTS, layer III, v1" samplerate="44100 Hz" channels="JntStereo" bitrate="128 kbps" />
   </station>
   <station band="ONLINE" id="radiofreebrooklyn" lang="en" name="Radio Free Brooklyn" rank="1.0" type="edu">
-    <frequency uri="https://radiofreebrooklyn.com/">Brooklyn, New York City, NY</frequency>
-    <location>Brooklyn, New York City, NY</location>
+    <frequency uri="https://radiofreebrooklyn.com/">Brooklyn, New York</frequency>
+    <location>Brooklyn, New York</location>
     <description lang="en">
       Radio Free Brooklyn is a 501(c)3 nonprofit organization whose mission is to give a global voice to local artists, residents, community organizers and other non-profit institutions by providing a commercial-free freeform Internet Radio platform.
 
@@ -179,7 +179,7 @@
   </station>
   <station band="89.9FM" id="ktsw" lang="en" name="KTSW" rank="1.0" type="edu">
     <frequency uri="http://ktsw.txstate.edu/">89.9FM in Austin, Texas</frequency>
-    <location>San Marcos, TX</location>
+    <location>San Marcos, Texas</location>
     <description lang="en">
       KTSW 89.9 is the official radio station of Texas State
       University, broadcasting to San Marcos and the Interstate 35
@@ -193,8 +193,8 @@
     <stream mime="audio/mpeg" uri="http://ktswlive.txstate.edu:8002/listen" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="95 kbps" />
   </station>
   <station band="91.3FM" id="kced" lang="en" name="KCED - Centralia College's Radio" rank="1.0" type="edu">
-    <frequency uri="http://www.centralia.edu/kced/">91.3FM in Centralia, DC</frequency>
-    <location>Centralia, DC</location>
+    <frequency uri="http://www.centralia.edu/kced/">91.3FM in Centralia, District of Columbia</frequency>
+    <location>Centralia, District of Columbia</location>
     <description lang="en">
       KCED (91.3 FM) is a radio station broadcasting on an Alternative format.
       Licensed to Centralia, Washington, the station serves the Centralia-Chehalis area.
@@ -242,10 +242,10 @@ In fact we even split our adverts, and many of our local news and travel bulleti
     <uri>http://www.ciut.fm/</uri>
   </station>
   <station band="ONLINE" id="kslu" lang="en" name="KSLU" rank="1.0" type="edu">
-    <frequency uri="http://www2.southeastern.edu/kslu/">90.9 FM in Hammond, LA</frequency>
-    <location>Hammond, LA</location>
+    <frequency uri="http://www2.southeastern.edu/kslu/">90.9 FM in Hammond, Louisiana</frequency>
+    <location>Hammond, Louisiana</location>
     <description lang="en">
-      KSLU is a 3000 watt CPB-qualified non-commercial educational radio station owned and operated by Southeastern Louisiana University in Hammond, LA. The radio station's city-grade signal reaches a 10 mile radius and is often heard from Denham Springs to Covington to Kentwood. Many of the announcers are communication students at Southeastern training for careers in the broadcast industry. KSLU strives to serve both the Southeastern and surrounding communities.
+      KSLU is a 3000 watt CPB-qualified non-commercial educational radio station owned and operated by Southeastern Louisiana University in Hammond, Louisiana. The radio station's city-grade signal reaches a 10 mile radius and is often heard from Denham Springs to Covington to Kentwood. Many of the announcers are communication students at Southeastern training for careers in the broadcast industry. KSLU strives to serve both the Southeastern and surrounding communities.
     </description>
     <stream mime="audio/mpeg" uri="http://147.174.55.27:7998/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Mono" bitrate="64 kbps" />
     <stream mime="audio/mpeg" uri="http://147.174.55.27:8000/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Mono" bitrate="48 kbps" />
@@ -253,8 +253,8 @@ In fact we even split our adverts, and many of our local news and travel bulleti
     <uri>http://www2.southeastern.edu/kslu/</uri>
   </station>
   <station band="RadioK" id="radiok" lang="en" name="Radio K" rank="1.0" type="edu">
-    <frequency>88.1 FM in Minneapolis, MN</frequency>
-    <location>Minneapolis, MN</location>
+    <frequency>88.1 FM in Minneapolis, Minnesota</frequency>
+    <location>Minneapolis, Minnesota</location>
     <description lang="en">
       Radio K - KUOM is the award-winning student-run radio station of the University of Minnesota, playing an eclectic variety of independent music both old and new. Radio K educates students, breaks ground in musical programming, and provides cutting-edge cultural coverage through our specialty shows and Real College Podcast.
       The independent music heard every day on Radio K is made possible through the support of listeners like you. Additional support comes from the students of the University of Minnesota, the College of Continuing Education, the Minnesota Arts and Cultural Heritage Fund, and the State of Minnesota.
@@ -368,8 +368,8 @@ Bergen Student Radio strives to be an alternative to commercial and state-run ra
     <uri>http://collegeradio.se/</uri>
   </station>
   <station band="92FM" id="wumr" lang="en" name="WUMR" rank="1.0" type="edu">
-    <frequency uri="http://www.memphis.edu/wumr/">92 FM in Memphis, TN</frequency>
-    <location>Memphis, TN</location>
+    <frequency uri="http://www.memphis.edu/wumr/">92 FM in Memphis, Tennessee</frequency>
+    <location>Memphis, Tennessee</location>
     <description lang="en">Broadcasting in stereo with 25,000 watts of power, WUMR is the only exclusive jazz outlet in the Memphis metro area. The station offers a mix of contemporary and traditional jazz, as well as a sampling of fusion, Blues, Latin, and new age Jazz. The station also serves the Mid-South community with unique educational, sports, and community service programming.
 
 WUMR has been the University of Memphis broadcasting outlet since 1979, when Southwestern at Memphis (now Rhodes College) sold one of its two radio licenses to then Memphis State University. WSMS-FM 91.7, carrying the Memphis State call letters, was created as an all-jazz station. Although the call letters changed to WUMR, when Memphis State became the University of Memphis on July 1, 1994, the station, which is now known as WUMR “The Jazz Lover” U 92-FM, has stayed true to the all-jazz format during its 30-year history. WUMR is part of the College of Communication and Fine Arts’ (CCFA) Department of Communication. An element of the station’s mission is to train communication and journalism students in broadcasting.
@@ -449,8 +449,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   </station>
   -->
   <station band="90.3FM" id="ktuh" lang="en" name="KTUH FM" rank="1.0" type="edu">
-    <frequency uri="http://ktuh.org/">ONLINE in Honolulu, HI</frequency>
-    <location>Honolulu, HI</location>
+    <frequency uri="http://ktuh.org/">ONLINE in Honolulu, Hawaii</frequency>
+    <location>Honolulu, Hawaii</location>
     <description lang="en">
       KTUH is a student-run noncommercial radio station broadcasting from the University of Hawai’i at Manoa. We’ve been serving the community since 1969 with a variety of programs that include public announcements, equipment for community events, and a practical chance to learn about radio broadcasting. KTUH was granted a license to the Board of Regents as a non-commercial educational FM Station by the Federal Communications Commission (FCC) on June 28, 1985. Maintaining a staff in excess of 70 volunteers annually, KTUH operates 24 hours a day, year-round.
     </description>
@@ -588,8 +588,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://radiorakel.no/</uri>
   </station>
   <station band="1560AM" id="kxsc" lang="en" name="KXSC" rank="1.0" type="edu">
-    <frequency uri="http://kxsc.org/">1560 AM in Los Angeles, CA</frequency>
-    <location>Los Angeles, CA</location>
+    <frequency uri="http://kxsc.org/">1560 AM in Los Angeles, California</frequency>
+    <location>Los Angeles, California</location>
     <description lang="en">KXSC Radio (formerly KSCR) is the 100% student-run radio station of the University of Southern California; we are volunteer, non-profit, donation funded and we provide the USC community with original radio programming 24 hours a day.
     KXSC traces its roots to the original KUSC, which was operated by students starting in 1946. KUSC transitioned to classical programming and moved off-campus in the mid-1970s, but students still demanded a broadcast voice. So on April 2, 1975, a dozen students gathered in a converted production studio to start KSCR, a radio station run by and for students.
 <!--    KXSC has undergone yet another revolution with our new home in the Ronald Tutor Campus Center, but our approach to radio is still the same: All-student run music, sports and news broadcasts that encourage diversity and a student-centric approach.-->
@@ -598,8 +598,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.kxsc.org/</uri>
   </station>
   <station band="92.1FM" id="wpts" lang="en" name="WPTS" rank="1.0" type="edu">
-    <frequency uri="http://wptsradio.org/">92.1 FM in Pittsburgh, PA</frequency>
-    <location>Pittsburgh, PA</location>
+    <frequency uri="http://wptsradio.org/">92.1 FM in Pittsburgh, Pennsylvania</frequency>
+    <location>Pittsburgh, Pennsylvania</location>
     <description lang="en">
       WPTS is an educational, non-commercial FM station owned by the University of Pittsburgh and operated by its students.  Located at a frequency of 92.1 in the commercial band of the FM dial, we have a radiating power of 17 Watts, and an effective radiated output of 17 Watts.  Our transmitted is located atop the Cathedral of Learning, 530 feet above the ground.  This greatly enhances our broadcast radius, which averages about 30 miles.
     </description>
@@ -610,8 +610,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   </station>
   <!-- Non-streamable per 2016/07/07
   <station band="1330AM" id="wtbu" lang="en" name="WTBU" rank="1.0" type="edu">
-    <frequency uri="http://www.wtburadio.org/">89.3 FM in Boston, MA</frequency>
-    <location>Boston, MA</location>
+    <frequency uri="http://www.wtburadio.org/">89.3 FM in Boston, Massachusetts</frequency>
+    <location>Boston, Massachusetts</location>
     <description lang="en">
       WTBU is BU's student-run, volunteer radio station which broadcasts live 20 hours a day.  Our station is primarily available through our webcast, but you can also listen to us on 89.3 FM/640 AM if you're in Boston, or on BU's cable channel 6 if you live on campus.
     </description>
@@ -619,8 +619,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   </station>
   -->
   <station band="1330AM" id="kasc" lang="en" name="Arizona State University" rank="1.0" type="edu">
-    <frequency uri="http://www.blazeradioonline.com/">1330 AM in Phoenix, AZ</frequency>
-    <location>Phoenix, AZ</location>
+    <frequency uri="http://www.blazeradioonline.com/">1330 AM in Phoenix, Arizona</frequency>
+    <location>Phoenix, Arizona</location>
     <description lang="en">
       KASC (The Blaze) is an AM radio station serving all four campuses of the ASU community.  The student-run college radio station broadcasts at 1330 AM 24 hours a day during the school year and is operated by students under the supervision of a Cronkite School faculty adviser.
     </description>
@@ -645,8 +645,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   </station>
   <!-- Non-streamable as of 2016/07/07
   <station band="ONLINE" id="wvau" lang="en" name="WVAU" rank="1.0" type="edu">
-    <frequency uri="http://www.wvau.org/">Online in Washington, DC</frequency>
-    <location>Washington, DC</location>
+    <frequency uri="http://www.wvau.org/">Online in Washington, District of Columbia</frequency>
+    <location>Washington, District of Columbia</location>
     <description lang="en">WVAU is American University's student radio station. We broadcast online 24/7 from the Mary Graydon Center in Washington, D.C.
 </description>
     <stream mime="audio/mpeg" uri="http://ice8.securenetsystems.net/WVAU" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
@@ -654,8 +654,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   </station>
   -->
   <station band="88.5FM" id="kcsn" name="KCSN" rank="1.0" type="edu">
-    <frequency uri="http://www.kcsn.org/">88.5 FM in Los Angeles, CA</frequency>
-    <location>Los Angeles, CA</location>
+    <frequency uri="http://www.kcsn.org/">88.5 FM in Los Angeles, California</frequency>
+    <location>Los Angeles, California</location>
     <description lang="en">KCSN is commercial free, public radio that relies heavily on donor contributions.</description>
     <stream mime="audio/mpeg" uri="http://130.166.82.184:8000/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <stream mime="audio/mpeg" uri="http://130.166.82.184:8002/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="64 kbps" />
@@ -663,45 +663,45 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.kcsn.org/</uri>
   </station>
   <station band="91.7FM" id="kvrx" name="KVRX" rank="1.0" type="edu">
-    <frequency uri="http://www.kvrx.org/">91.7 FM in Austin, TX</frequency>
-    <location>Austin, TX</location>
+    <frequency uri="http://www.kvrx.org/">91.7 FM in Austin, Texas</frequency>
+    <location>Austin, Texas</location>
     <description lang="en">KVRX is the student-run radio station at the University of Texas in Austin. We solemnly swear to play "none of the hits, all of the time" to bring you the best music that you didn't know you loved, or remind you of your favorite songs that you won't hear anywhere else. We share our frequency, 91.7FM, with KOOP radio, another great community station, and we're on the air from 7PM to 9AM on weekdays and from 10PM to 9AM on weekends.</description>
     <stream mime="audio/mpeg" uri="http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.kvrx.org/</uri>
   </station>
   <station band="ONLINE" id="ksub" name="KSUB" rank="1.0" type="edu">
-    <frequency uri="http://www.ksubseattle.org/">Online in Seattle, WA</frequency>
-    <location>Seattle, WA</location>
+    <frequency uri="http://www.ksubseattle.org/">Online in Seattle, Washington</frequency>
+    <location>Seattle, Washington</location>
     <description lang="en">We are one of the last college radio stations in the Seattle area actually run by students. Our DJ's are current students and beloved alumni (and even some faculty), and because we are non-commercial, we are free from mainstream radio constraints. Each individual DJ has near complete control of what he or she plays on the air, giving KSUB a rich musical diversity.</description>
     <stream mime="audio/mpeg" uri="http://lin1.san.fast-serv.com:6014" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.ksubseattle.org/</uri>
   </station>
   <station band="ONLINE" id="wrvu" name="WRVU" rank="1.0" type="edu">
-    <frequency uri="http://wrvu.org/">Online in Nashville, TN</frequency>
-    <location>Nashville, TN</location>
+    <frequency uri="http://wrvu.org/">Online in Nashville, Tennessee</frequency>
+    <location>Nashville, Tennessee</location>
     <description lang="en">WRVU is a free-format college radio station committed to providing Vanderbilt University and the surrounding community with the best in new, non-mainstream music. WRVU is student-run and focuses on teaching Vanderbilt students the ins and outs of radio broadcasting, playing music you can’t hear anywhere else.</description>
     <stream mime="audio/mpeg" uri="http://129.59.202.68:8200/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://wrvu.org/</uri>
   </station>
   <station band="88.5FM" id="whpk" name="WHPK" rank="1.0" type="edu">
-    <frequency uri="http://www.whpk.org/">88.5 FM in Chicago, IL</frequency>
-    <location>Chicago, IL</location>
+    <frequency uri="http://www.whpk.org/">88.5 FM in Chicago, Illinois</frequency>
+    <location>Chicago, Illinois</location>
     <description lang="en">WHPK a non-profit community radio station of the University of Chicago, broadcasting to Hyde Park and the South Side of Chicago for over 50 years.</description>
     <stream mime="audio/mpeg" uri="http://www.whpk.org:8000/mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://whpk.org/</uri>
   </station>
   <!-- Non-streamable as of 2016/10/01
   <station band="88.9FM" id="wnyo" name="WNYO" rank="1.0" type="edu">
-    <frequency uri="http://www.wnyo889.org/">88.9 FM in Oswego, NY</frequency>
-    <location>Oswego, NY</location>
+    <frequency uri="http://www.wnyo889.org/">88.9 FM in Oswego, New York</frequency>
+    <location>Oswego, New York</location>
     <description lang="en">WNYO is an FCC regulated student ran radio station at SUNY Oswego. It is located on the SUNY Oswego campus, inside The Point in the Marano Campus Center. WNYO is also recognized on campus as a student organization. The radio station produces multiple concert events each year through the Indie Series, Artswego and Lifestyles. The sports department at WNYO broadcasts live campus athletics including home and away games.</description>
     <stream mime="audio/ogg" uri="http://wnyo-stream-01.oswego.edu:8000/stream.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="32 kbps" />
     <uri>http://www.wnyo889.org/</uri>
     </station>
   -->
   <station band="90.1FM" id="wusb" name="WUSB" rank="1.0" type="edu">
-    <frequency uri="http://www.wusb.fm/">90.1 FM in Long Island, NY</frequency>
-    <location>Long Island, NY</location>
+    <frequency uri="http://www.wusb.fm/">90.1 FM in Long Island, New York</frequency>
+    <location>Long Island, New York</location>
     <description lang="en">WUSB is a 3,600 watt non-commercial station located on the campus of Stony Brook University. Since 1977, we have served the campus and Long Island listening communities with a diverse broadcast mix of music, news, public affairs, drama and sports programming.<!-- Our 24 hour a day schedule is made possible by a volunteer staff efforts of over 160 Stony Brook students, faculty, staff, alumni and community residents. Behind-the-scenes as well as on-air work, combined with a variety of nationally syndicated radio programs integrated into the schedule, creates the 168 hours per week of innovative and high-quality programming.--></description>
     <stream mime="audio/mpeg" uri="http://stream.wusb.stonybrook.edu:8080/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="32 kbps" />
     <stream mime="audio/mpeg" uri="http://stream.wusb.stonybrook.edu:8090/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
@@ -709,14 +709,14 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   </station>
   <station band="ONLINE" id="coog" name="COOG" rank="1.0" type="edu">
     <frequency uri="http://coogradio.uh.edu/"></frequency>
-    <location>Houston, TX</location>
+    <location>Houston, Texas</location>
     <description lang="en">Coog Radio is an online radio station operated and staffed by students from the University of Houston. Co-founders Conner Clifton, Markley Rogers, and Matt Womack came up with the idea in 2010, but it wasn’t until fall 2011 that the idea finally came to fruition. Coog Radio not only provides a creative outlet for fellow students to express themselves over the air, but also introduces them to the world of broadcasting.</description>
     <stream mime="audio/mpeg" uri="http://coogradio.uh.edu:8000/coogradio" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://coogradio.uh.edu/</uri>
   </station>
   <station band="90.7FM" id="wvua" name="WVUA-FM" rank="1.0" type="edu">
     <frequency uri="http://wvuafm.ua.edu/"></frequency>
-    <location>Tuscaloosa, AL</location>
+    <location>Tuscaloosa, Alabama</location>
     <description lang="en">WVUA-FM is the University’s only student operated radio station. Its history dates back to 1940 when the Department of Radio Arts began operation of an AM carrier-current station (the signal was transmitted to dormitories and other buildings on campus through electrical wiring).<!-- The station was known as BRN (the Bama Radio Network). In 1947, the signal was extended and the station became known as WABP. The station was operated as a commercial venture at 570 on the AM dial. During the 1950’s and 1960’s, as more students moved off campus, the station’s listenership dwindled.--></description>
     <stream mime="audio/mpeg" uri="http://ice8.securenetsystems.net/WVUA" codec="MPEG-4 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="30 kbps" />
     <uri>http://wvuafm.ua.edu/</uri>
@@ -758,8 +758,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://cjsw.com/</uri>
   </station>
   <station band="ONLINE" id="caper" lang="en" name="Caper Radio" rank="1.0" type="edu">
-    <frequency uri="http://caperradio.ca/">Pending FM license in Sydney, Nova Scotia, Canada</frequency>
-    <location>Sydney, Nova Scotia, Canada</location>
+    <frequency uri="http://caperradio.ca/">Pending FM license in Sydney, Canada</frequency>
+    <location>Sydney, Canada</location>
     <description lang="en">Caper Radio Incorporated is CBU's campus radio station!
     Located in the Students' Union building we are equipped with an ever-growing music collection of over 6000 CDs on a digital library. We offer some of the best independent music in Canada. Caper Radio is also a prime resource for information on events taking place both on and off campus.
 <!--    Being involved with Caper Radio, Inc. helps students gain new skills (in communication, as well as working with the equipment), build confidence, and make new friends. Taking part in shaping the university community, and building valuable job skills – It's a lot of fun too!-->
@@ -768,22 +768,22 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://caperradio.ca/</uri>
   </station>
   <station band="88.3FM" id="wxou" lang="en" name="WXOU" rank="1.0" type="edu">
-    <frequency uri="http://wxou.org/">88.3 FM in Rochester, MI</frequency>
-    <location>Rochester, MI</location>
+    <frequency uri="http://wxou.org/">88.3 FM in Rochester, Michigan</frequency>
+    <location>Rochester, Michigan</location>
     <description lang="en">WXOU is a non-profit, student operated, freeform community radio station. Currently we are broadcasting with 110 watts of power from the campus of Oakland University. WE offer diverse programming such as, music, sports, news and student produced programs.<!-- Our goal is to supply the community with a service that provides both an educational experience to those involved with the radio station, while also providing information and entertainment o the rest of the community outside of Oakland’s campus.--></description>
     <stream mime="audio/mpeg" uri="http://wxou.oakland.edu:8000/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="22050 Hz" channels="Mono" bitrate="24 kbps" />
   </station>
   <station band="88.5FM" id="wamu" lang="en" name="WAMU" rank="1.0" type="edu">
-    <frequency uri="http://wamu.org/">88.5 FM in Washington, DC</frequency>
-    <location>Washington, DC</location>
+    <frequency uri="http://wamu.org/">88.5 FM in Washington, District of Columbia</frequency>
+    <location>Washington, District of Columbia</location>
     <description lang="en">WAMU 88.5 is the leading public radio station for NPR news and information in the greater Washington, D.C., area. WAMU 88.5 is licensed to American University.</description>
     <stream mime="audio/mpeg" uri="http://wamu-1.streamguys.com/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Mono" bitrate="48 kbps" />
     <uri>http://wamu.org/</uri>
   </station>
   <!-- Non-streamable as of 2016/07/07
   <station band="1580AM" id="kdup" lang="en" name="KDUP" rank="1.0" type="edu">
-    <frequency uri="http://kdup.up.edu/">1580 AM in Portland, OR</frequency>
-    <location>Portland, OR</location>
+    <frequency uri="http://kdup.up.edu/">1580 AM in Portland, Oregon</frequency>
+    <location>Portland, Oregon</location>
     <description lang="en">University of Portland's radio station</description>
     <stream mime="audio/ogg" uri="http://icecast.up.edu:8000/mystream.ogg.m3u" codec="Ogg Vorbis" samplerate="32000 Hz" channels="Stereo" bitrate="192 kbps" />
     <uri>http://kdup.up.edu/</uri>
@@ -889,8 +889,8 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <uri>http://www.radiocampusparis.org/</uri>
   </station>
   <station band="89.3FM" id="wcsb" lang="en" name="WCSB" rank="1.0" type="edu">
-    <frequency uri="http://wcsb.org/">89.3 FM in Cleveland, OH</frequency>
-    <location>Cleveland, OH</location>
+    <frequency uri="http://wcsb.org/">89.3 FM in Cleveland, Ohio</frequency>
+    <location>Cleveland, Ohio</location>
     <description lang="en">A student-operated radio station at Cleveland State University, broadcasting from northeast Ohio.</description>
     <stream mime="audio/mpeg" uri="http://198.154.112.233:8367/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://wcsb.org/</uri>
@@ -928,8 +928,8 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <uri>http://www.radiounam.unam.mx/</uri>
   </station>
   <station band="89.3FM" id="wxyc" lang="en" name="WXYC" rank="1.0" type="edu">
-    <frequency uri="http://www.wxyc.org/">89.3 FM in Chapel Hill, NC</frequency>
-    <location>Chapel Hill, NC</location>
+    <frequency uri="http://www.wxyc.org/">89.3 FM in Chapel Hill, North Carolina</frequency>
+    <location>Chapel Hill, North Carolina</location>
     <description lang="en">WXYC went on the air on March 17, 1977 with Joni Mitchell's "You Turn Me on I'm a Radio."
 
       WXYC was preceded by WCAR, a carrier current station that reached dorms on the UNC-Chapel Hill campus through electrical wiring. The station's alumni include top 40 radio host Rick Dees.
@@ -950,8 +950,8 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <uri>http://www.wxyc.org/</uri>
   </station>
   <station band="90.7FM" id="kalx" lang="en" name="KALX" rank="1.0" type="edu">
-    <frequency uri="http://kalx.berkeley.edu/">90.7 FM in Berkeley, CA</frequency>
-    <location>Berkeley, CA</location>
+    <frequency uri="http://kalx.berkeley.edu/">90.7 FM in Berkeley, California</frequency>
+    <location>Berkeley, California</location>
     <description lang="en">KALX 90.7 FM broadcasts freeform radio 24 hours a day to a large portion of the San Francisco Bay Area. You can catch all stripes of underground music accented with news, sports and alternative informational programming.
 <!--
       KALX has a wonderfully dedicated staff of student and community volunteers who are willing to explore with and educate their listeners. KALX is regular folks doing wild, unpredictable, extraordinary radio. All of our programs are homespun, we don't depend on satellite feeds. Rather we create programs from, and for our community (a community that includes both the University of California, Berkeley student population AND the surrounding area).
@@ -962,8 +962,8 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <uri>http://kalx.berkeley.edu/</uri>
   </station>
   <station band="95.3FM" id="whrb" lang="en" name="WHRB" rank="1.0" type="edu">
-    <frequency uri="http://www.whrb.org/">95.3 FM in Boston, MA</frequency>
-    <location>Boston, MA</location>
+    <frequency uri="http://www.whrb.org/">95.3 FM in Boston, Massachusetts</frequency>
+    <location>Boston, Massachusetts</location>
     <description lang="en">For seventy years, 95.3FM has been Boston's first source for exciting, entertaining, and enlightening music broadcasts. Harvard Radio's daily broadcast of Classical music, Jazz, and underground Rock explore a great repertoire of music left largely untouched by other commercial stations.</description>
     <stream mime="audio/mpeg" uri="http://hrbinc-hi.streamguys.net:80/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
     <uri>http://www.whrb.org/</uri>
@@ -976,15 +976,15 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <uri>http://radionova.no/</uri>
   </station>
   <station band="89.9FM" id="wwno" lang="en" name="WWNO" rank="1.0" type="edu">
-    <frequency uri="http://wwno.org/">89.9 FM in New Orleans, LA</frequency>
-    <location>New Orleans, LA</location>
+    <frequency uri="http://wwno.org/">89.9 FM in New Orleans, Louisiana</frequency>
+    <location>New Orleans, Louisiana</location>
     <description lang="en">WWNO is the NPR member station for New Orleans and the 13 parishes of southeast Louisiana, broadcasting on 89.9 FM — and on KTLN 90.5 FM in the Houma-Thibodaux area — as a public service of the University of New Orleans.</description>
     <stream mime="audio/mpeg" uri="http://pubint.ic.llnwd.net/stream/pubint_wwno_128" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://wwno.org/</uri>
   </station>
   <station band="99.1FM" id="ktru" lang="en" name="KTRU" rank="1.0" type="edu">
-    <frequency uri="http://ktru.org/">99.1 FM in Houston, TX</frequency>
-    <location>Houston, TX</location>
+    <frequency uri="http://ktru.org/">99.1 FM in Houston, Texas</frequency>
+    <location>Houston, Texas</location>
     <description lang="en">KTRU Houston is Rice University's student-run radio station.</description>
     <stream mime="audio/mpeg" uri="http://128.42.201.27:80" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://ktru.org/</uri>
@@ -1004,15 +1004,15 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <uri>http://www.nrk.no/alltid_nyheter</uri>
   </station>
   <station band="89.9FM" id="wkcr" lang="en" name="WKCR" rank="1.0" type="edu">
-    <frequency>89.9 FM in New York, NY</frequency>
-    <location>New York City, NY</location>
+    <frequency>89.9 FM in New York, New York</frequency>
+    <location>New York City, New York</location>
     <description lang="en">WKCR-FM, Columbia University’s non-commercial student-run radio station, is dedicated to presenting a spectrum of alternative programming—traditional and art music, spoken arts, and original journalism. Granted its FCC license in 1941, WKCR is both steeped in tradition and committed to innovation. In the New York area, the station can be heard at 89.9 megacycles in FM; worldwide, it streams online.</description>
     <stream mime="audio/mpeg" uri="http://wkcr.streamguys1.com:80/live" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
     <uri>http://www.studentaffairs.columbia.edu/wkcr/</uri>
   </station>
   <station band="90.1FM" id="kzsu" lang="en" name="KZSU" rank="1.0" type="edu">
-    <frequency>90.1 FM in Stanford, CA</frequency>
-    <location>Palo Alto, CA</location>
+    <frequency>90.1 FM in Stanford, California</frequency>
+    <location>Palo Alto, California</location>
     <description lang="en">KZSU is Stanford University's FM radio station, broadcasting across the Bay Area on 90.1 FM and across the world at kzsulive.stanford.edu. We exist to serve the Stanford community with quality radio broadcasts, including music, sports, news, and public affairs programming.
 <!--
       The station is owned by the Board of Trustees of Stanford University and is governed by a Board of Directors appointed by the President. We got our FM license in 1964, and upgraded from 10 to 500 watts in 1978. Before 1964, KZSU broadcast as an AM carrier current station (through the University's power supply) on 880 kHz, starting in 1947 as a part of the Department of Communication.
@@ -1022,22 +1022,22 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <uri>http://kzsulive.stanford.edu/</uri>
   </station>
   <station band="90.9FM" id="kexp" lang="en" name="KEXP" rank="1.0" type="edu">
-    <frequency>90.9 FM in Seattle, WA</frequency>
-    <location>Seattle, WA</location>
+    <frequency>90.9 FM in Seattle, Washington</frequency>
+    <location>Seattle, Washington</location>
     <description lang="en">KEXP is a service of the University of Washington, who holds the station’s FCC license. As a 501(c)3 non-profit arts organization, KEXP relies on investments from individual, foundation, business, and government supporters.</description>
     <stream mime="audio/mpeg" uri="http://live-mp3-128.kexp.org:80/kexp128.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://kexp.org/</uri>
   </station>
   <station band="88.1FM" id="wmbr" lang="en" name="WMBR" rank="1.0" type="edu">
-    <frequency>88.1 FM in Cambridge, MA</frequency>
-    <location>Boston, MA</location>
+    <frequency>88.1 FM in Cambridge, Massachusetts</frequency>
+    <location>Boston, Massachusetts</location>
     <description lang="en">WMBR is the MIT campus radio station. We broadcast on 88.1 FM between 20 and 24 hours per day, 365 days a year. We transmit at 720 watts, effective radiated power from the top of the Eastgate Building in Kendall Square in Cambridge, Massachusetts. Our programming includes a wide range of music shows, public affairs programs and eclectic audio entertainment.</description>
     <stream mime="audio/mpeg" uri="http://wmbr.org:8000/hi" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://wmbr.org/</uri>
   </station>
   <station band="93.9FM" id="wnyc" lang="en" name="WNYC" rank="1.0" type="org">
-    <frequency uri="http://www.wnyc.org/">93.9 FM in New York City, NY</frequency>
-    <location>New York City, NY</location>
+    <frequency uri="http://www.wnyc.org/">93.9 FM in New York City, New York</frequency>
+    <location>New York City, New York</location>
     <description lang="en">
       WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, broadcasting the finest programs from NPR, American Public Media, Public Radio International and the BBC World Service, as well as a wide range of award-winning local programming.
     </description>

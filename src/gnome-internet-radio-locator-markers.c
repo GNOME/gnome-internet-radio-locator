@@ -101,7 +101,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 #endif
   
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Berkeley, CA");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Berkeley, California");
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.873093, -122.303769);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -115,7 +115,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
 
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Washington, DC");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Washington, District of Columbia");
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 38.8949549, -77.0366456);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
