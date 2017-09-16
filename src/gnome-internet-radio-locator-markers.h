@@ -23,4 +23,6 @@
 
 ChamplainMarkerLayer *create_marker_layer (ChamplainView *view, ChamplainPathLayer **path);
 
+void marker_function (ChamplainMarker *self, gdouble dx, gdouble dy, ClutterEvent *event, gpointer user_data);
+
 #endif

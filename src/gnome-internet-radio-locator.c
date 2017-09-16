@@ -113,6 +113,7 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 {
 	GError **error;
 	gdouble lat, lon;
+	ChamplainMarker *marker;
 	GeocodePlace *place;
 	GeocodeLocation *location;
 	GeocodeReverse *reverse;
@@ -126,7 +127,9 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 	reverse = geocode_reverse_new_for_location (location);
 	place = geocode_reverse_resolve (reverse, error);
 	name = geocode_place_get_town (place);
-	gtk_entry_set_text(GTK_ENTRY(input),(gchar *)name);
+	champlain_label_set_text (CHAMPLAIN_LABEL (marker), (gchar *)name);
+	// gtk_entry_set_text(GTK_ENTRY(input),(gchar *)name);
+	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("Mouse click at: %f %f (%s)\n", lat, lon, name);
 	return TRUE;
 }
