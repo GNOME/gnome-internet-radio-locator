@@ -2,20 +2,6 @@
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
 <gnome_internet_radio_locator version="1.0.0">
-  <station band="ONLINE" id="radionorwegian" lang="en" name="Radio Norwegian" rank="1.0" type="org">
-    <frequency uri="http://www.radionorwegian.com/">ONLINE in Oslo, Norway</frequency>
-    <location>Oslo, Norway</location>
-    <description lang="en">
-      Free Radio broadcast supported by the GNOME Foundation.
-    </description>
-    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/128.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/112.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="112 kbps" />
-    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/96.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
-    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/80.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="80 kbps" />
-    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/64.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="64 kbps" />
-    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/56.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="56 kbps" />
-    <uri>http://www.radionorwegian.com/</uri>
-  </station>
   <station band="ONLINE" id="drnyheder" lang="da" name="Danmarks Radio Nyheder" rank="1.0" type="gov">
     <frequency uri="http://www.dr.dk/nyheder">FM 93.3 in Aalborg</frequency>
     <location>Copenhagen, Denmark</location>
@@ -1043,5 +1029,30 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     </description>
     <stream mime="audio/mpeg" uri="http://fm939.wnyc.org/wnycfm" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Mono" bitrate="32 kbps" />
     <uri>http://www.wnyc.org/</uri>
+  </station>
+  <station band="ONLINE" id="echo" lang="ru" name="Эхо Москвы" rank="1.0" type="com">
+    <frequency uri="http://echo.msk.ru/">ONLINE in Moscow, Russia</frequency>
+    <location>Moscow, Russia</location>
+    <description lang="en">
+      Echo of Moscow is a Russian radio station based in Moscow,
+      broadcasting in many Russian cities, some of the former-Soviet
+      republics, and via the Internet.  It is owned by Gazprom-Media.
+    </description>
+    <stream mime="audio/mpeg" uri="http://81.19.85.197/echo.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="154 kbps" />
+    <uri>http://echo.msk.ru/</uri>
+  </station>
+  <station band="ONLINE" id="radionorwegian" lang="en" name="Radio Norwegian" rank="1.0" type="org">
+    <frequency uri="http://www.radionorwegian.com/">ONLINE in Oslo, Norway</frequency>
+    <location>Oslo, Norway</location>
+    <description lang="en">
+      Free Radio broadcast supported by the GNOME Foundation.
+    </description>
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/128.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/112.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="112 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/96.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/80.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="80 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/64.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="64 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/56.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.radionorwegian.com/</uri>
   </station>
 </gnome_internet_radio_locator>

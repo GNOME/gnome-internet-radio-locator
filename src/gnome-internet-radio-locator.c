@@ -720,7 +720,7 @@ main (int argc,
 
 	g_object_set (G_OBJECT (view),
 		      "kinetic-mode", TRUE,
-		      "zoom-level", 5,
+		      "zoom-level", 9,
 		      NULL);
 
 	g_object_set_data (G_OBJECT (view), "window", window);

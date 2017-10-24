@@ -1,4 +1,24 @@
 =============
+Version 1.0.1
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Moscow, Russia
+	* src/gnome-internet-radio-locator-markers.c: Add Palo Alto, California
+	* src/gnome-internet-radio-locator-markers.c: Add San Francisco, California
+	* src/gnome-internet-radio-locator.c: Update zoom-level to 9
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add Echo of Moscow (Эхо Москвы)
+
+Translations
+
+	* Mario Blättermann (de)
+	* Matej Urbančič (sl)
+
+=============
 Version 1.0.0
 =============
 
