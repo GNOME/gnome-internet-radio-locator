@@ -1,14 +1,16 @@
-# Norwegian bokmål translation of gnome-internet-radio-locator
-# Copyright (C) 2017  Ole Aamot Software
+# Norwegian bokmål translation of eog.
+# Copyright (C) 1999-2004, 2005 Free Software Foundation, Inc.
 #
-# Ole Aamot <ole@src.gnome.org>, 2017
+# Kjartan Maraas <kmaraas@gnome.org>, 1999-2017.
+# Terance Edward Sola <terance@lyse.net>, 2005.
+# Torstein Adolf Winterseth <kvikende@fsfe.org>, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-internet-radio-locator 0.1.0\n"
+"Project-Id-Version: girl 0.10.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-26 21:24+0100\n"
-"PO-Revision-Date: 2017-04-26 21:24+0100\n"
-"Last-Translator: Ole Aamot <ole@src.gnome.org>\n"
+"POT-Creation-Date: 2017-11-12 15:34+0100\n"
+"PO-Revision-Date: 2017-11-12 15:37+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
@@ -16,3 +18,406 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: ../data/girl.appdata.xml.in.h:1 ../src/girl-gui.c:1243
+msgid "GNOME Internet Radio Locator"
+msgstr "GNOME Internett Radio Locator"
+
+#: ../data/girl.appdata.xml.in.h:2
+msgid "Listen to and record from Internet radio"
+msgstr "Hør på og ta opp radio på internett"
+
+#: ../data/girl.appdata.xml.in.h:3
+msgid ""
+"GNOME Internet Radio Locator (GIRL) allows users to easily find and listen "
+"to live radio programs on radio broadcasters on the Internet."
+msgstr ""
+
+#: ../data/girl.appdata.xml.in.h:4
+msgid ""
+"GIRL is developed for the GNOME desktop and requires gstreamer 1.0 to be "
+"installed for playback of supported radio stations."
+msgstr ""
+
+#: ../data/girl.appdata.xml.in.h:5
+msgid ""
+"Enjoy listening to and recording from supported Internet Radio stations in "
+"GIRL."
+msgstr ""
+
+#: ../data/girl.desktop.in.in.h:1
+msgid "Internet Radio Locator"
+msgstr "Internett radiosøker"
+
+#: ../data/girl.desktop.in.in.h:2 ../src/girl.c:693
+msgid "Locate Internet Radio Stations"
+msgstr "Finn radiostasjoner på internett"
+
+#. Extra keywords that can be used to search for girl in GNOME Shell and Unity
+#: ../data/girl.desktop.in.in.h:4
+msgid "Live;Radio;Program;Station;Locator;"
+msgstr ""
+
+#: ../src/girl-gui.c:59
+msgid "New"
+msgstr "Ny"
+
+#: ../src/girl-gui.c:59
+msgid "Add a new radio station"
+msgstr "Legg til en ny radiostasjon"
+
+#: ../src/girl-gui.c:62
+msgid "Search"
+msgstr "Søk"
+
+#: ../src/girl-gui.c:62
+msgid "Search by location for radio stations"
+msgstr ""
+
+#: ../src/girl-gui.c:66
+msgid "Listen"
+msgstr "Lytt"
+
+#: ../src/girl-gui.c:66
+msgid "Listen to selected radio station"
+msgstr "Lytt til valgt radiostasjon"
+
+#: ../src/girl-gui.c:70
+msgid "Record"
+msgstr "Ta opp"
+
+#: ../src/girl-gui.c:70
+msgid "Record selected radio station"
+msgstr "Ta opp valgt radiostasjon"
+
+#: ../src/girl-gui.c:74
+msgid "Stop"
+msgstr "Stopp"
+
+#: ../src/girl-gui.c:74
+msgid "Stop recording selected radio station"
+msgstr ""
+
+#: ../src/girl-gui.c:78
+msgid "Previous"
+msgstr "Forrige"
+
+#: ../src/girl-gui.c:79
+msgid "Go back to the previous radio station"
+msgstr ""
+
+#: ../src/girl-gui.c:81
+msgid "Stations"
+msgstr "Stasjoner"
+
+#: ../src/girl-gui.c:81
+msgid "Internet Radio Stations"
+msgstr ""
+
+#: ../src/girl-gui.c:84
+msgid "Next"
+msgstr "Neste"
+
+#: ../src/girl-gui.c:84
+msgid "Proceed to the next radio station"
+msgstr ""
+
+#: ../src/girl-gui.c:87
+msgid "Station"
+msgstr "Stasjon"
+
+#: ../src/girl-gui.c:88
+msgid "About the current Station"
+msgstr ""
+
+#: ../src/girl-gui.c:91
+msgid "Program"
+msgstr "Program"
+
+#: ../src/girl-gui.c:92
+msgid "About the GNOME Internet Radio Locator"
+msgstr ""
+
+#: ../src/girl-gui.c:96
+msgid "Exit"
+msgstr "Avslutt"
+
+#: ../src/girl-gui.c:97
+msgid "Quit the GNOME Internet Radio Locator"
+msgstr ""
+
+#: ../src/girl-gui.c:206
+#, c-format
+msgid "Playing %s"
+msgstr "Spiller av %s"
+
+#. The Listeners dialog
+#: ../src/girl-gui.c:232
+msgid "Select a listener"
+msgstr ""
+
+#: ../src/girl-gui.c:259
+#, c-format
+msgid "Failed to open %s.  Please install it.\n"
+msgstr ""
+
+#: ../src/girl-gui.c:269 ../src/girl-gui.c:777 ../src/girl-gui.c:1118
+#, c-format
+msgid "Failed to open %s\n"
+msgstr "Klarte ikke å åpne %s\n"
+
+#. The Programs dialog
+#: ../src/girl-gui.c:370
+msgid "Select a program"
+msgstr "Velg et program"
+
+#: ../src/girl-gui.c:401 ../src/girl-gui.c:411 ../src/girl-gui.c:594
+#: ../src/girl-gui.c:763 ../src/girl-gui.c:961 ../src/girl-gui.c:1103
+#, c-format
+msgid "Failed to open %s.\n"
+msgstr ""
+
+#: ../src/girl-gui.c:515
+#, c-format
+msgid "Your search by location resulted in the radio station %s in %s: %s"
+msgstr ""
+
+#. The Stations dialog
+#: ../src/girl-gui.c:552
+msgid "Search by location"
+msgstr "Søk etter lokasjon"
+
+#. The Stations dialog
+#: ../src/girl-gui.c:732
+msgid "Select a station"
+msgstr "Velg en stasjon"
+
+#: ../src/girl-gui.c:873
+#, c-format
+msgid "Found location %s"
+msgstr ""
+
+#. The Stations dialog
+#: ../src/girl-gui.c:908
+msgid "New radio station"
+msgstr "Ny radiostasjon"
+
+#. The Streams dialog
+#: ../src/girl-gui.c:1074
+msgid "Select a stream"
+msgstr "Velg en strøm"
+
+#: ../src/girl-gui.c:1205
+#, c-format
+msgid "Selection cleared!\n"
+msgstr ""
+
+#: ../src/girl-gui.c:1241
+msgid "GIRL"
+msgstr "GIRL"
+
+#: ../src/girl-gui.c:1255
+msgid "Couldn't create pixmap"
+msgstr ""
+
+#: ../src/girl-gui.c:1272
+msgid ""
+"Search by location from \"Search\" or select a radio station from \"Stations"
+"\".  Click \"Listen\" to listen to, or \"Record\" to record from the station."
+msgstr ""
+
+#: ../src/girl-gui.c:1274
+msgid ""
+"Select a radio station from \"Stations\" and click \"Listen\" to listen to "
+"the station."
+msgstr ""
+
+#. printf("Archiving program at %s\n", archive);
+#: ../src/girl-station.c:243
+#, c-format
+msgid "Recording from %s in %s to %s"
+msgstr ""
+
+#: ../src/girl-station.c:261
+#, c-format
+msgid ""
+"An error happened trying to play %s\n"
+"Either the file doesn't exist, or you don't have a player for it."
+msgstr ""
+
+#: ../src/girl-station.c:267
+#, c-format
+msgid ""
+"An error happened trying to record %s\n"
+"Either the file doesn't exist, or you don't have a recorder for it."
+msgstr ""
+
+#: ../src/girl-station.c:298 ../src/girl-station.c:318
+#: ../src/girl-station.c:435 ../src/girl-station.c:458
+#, c-format
+msgid "Failed to run %s (%i)\n"
+msgstr ""
+
+#: ../src/girl-station.c:345 ../src/girl-station.c:482
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Status code: %i\n"
+"Details: %s"
+msgstr ""
+
+#: ../src/girl-station.c:363 ../src/girl-station.c:377
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Details: %s"
+msgstr ""
+
+#: ../src/girl.c:76
+msgid "GNOME VFS initialization failed!\n"
+msgstr ""
+
+#: ../src/girl.c:130
+#, c-format
+msgid "%i station"
+msgid_plural "%i stations"
+msgstr[0] "%i stasjon"
+msgstr[1] "%i stasjoner"
+
+#: ../src/girl.c:131
+#, c-format
+msgid "and %i stream found"
+msgid_plural "and %i streams found"
+msgstr[0] "og %i strøm funnet"
+msgstr[1] "og %i strømmer funnet"
+
+#: ../src/girl.c:133
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#: ../src/girl.c:201
+#, c-format
+msgid "Selected the previous radio station: %s in %s: %s"
+msgstr ""
+
+#: ../src/girl.c:265
+#, c-format
+msgid "Selected the next radio station %s in %s: %s"
+msgstr ""
+
+#: ../src/girl.c:368
+#, c-format
+msgid "Selected %s in %s: %s (%f)"
+msgstr ""
+
+#: ../src/girl.c:416
+#, c-format
+msgid "Selected %s in %s: %s"
+msgstr ""
+
+#: ../src/girl.c:465 ../src/girl.c:513
+#, c-format
+msgid "Selected the radio station %s in %s: %s"
+msgstr ""
+
+#: ../src/girl.c:563
+#, c-format
+msgid "Selected %s [%s] [%s] [%s]"
+msgstr ""
+
+#: ../src/girl.c:661
+msgid ""
+"Marek Černocký <marek@manet.cz> (Czech translation)\n"
+"Rafael Fontenelle <rafaelff@gnome.org> (Brazilian Portuguese translation)\n"
+"Miroslav Nikolić <miroslavnikolic@rocketmail.com> (Serbian translation)\n"
+"Wolfgang Stöggl <c72578@yahoo.de> (German translation)\n"
+"Piotr Drąg <piotrdrag@gmail.com> (Polish translation)\n"
+"Muhammet Kara <muhammetk@gmail.com> (Turkish translation)\n"
+"Balázs Úr <urbalazs@gmail.com> (Hungarian translation)\n"
+"Andika Triwidada <andika@gmail.com> (Indonesian translation)\n"
+"Daniel Mustieles <daniel.mustieles@gmail.com> (Spanish translation)\n"
+"Matej Urbančič <mateju@svn.gnome.org> (Slovenian translation)\n"
+"Γιάννης Κουτσούκος <giankoyt@gmail.com> (Greek translation)\n"
+"Efstathios Iosifidis <iosifidis@opensuse.org> (Greek translation)\n"
+"Samir Ribić <megaribi@epn.ba> (Bosnian translation)\n"
+"Enrico Nicoletto <liverig@gmail.com> (Brazilian Portuguese translation)\n"
+"Sveinn í Felli <sv1@fellsnet.is> (Icelandic translation)\n"
+"Josef Andersson <josef.andersson@gmail.com> (Swedish translation)\n"
+"Pedro Albuquerque <palbuquerque73@gmail.com> (Portuguese translation)\n"
+"Mario Blättermann <mario.blaettermann@gmail.com> (German translation)\n"
+"Necdet Yücel <necdetyucel@gmail.com> (Turkish translation)\n"
+"Andy Daniel Cruz Campos <god_of_war_2@hotmail.com> (Spanish translation)\n"
+"Mирослав Николић <miroslavnikolic@rocketmail.com> (Serbian translation)\n"
+"Balázs Meskó <meskobalazs@gmail.com> (Hungarian translation)\n"
+"Laudivan Freire de Almeida <laudivan@riseup.net> (Brazilian Portuguese "
+"translation)\n"
+"Bernd Homuth <dev@hmt.im> (German translation)\n"
+"Paul Feuvraux and Claude Paroz <claude@2xlibre.net> (French translation)\n"
+"Anders Jonsson <anders.jonsson@norsjovallen.se> (Swedish translation)\n"
+msgstr ""
+
+#: ../src/girl.c:694
+msgid "Copyright (C) 2014-2017  Ole Aamot Software"
+msgstr ""
+
+#: ../src/girl.c:695
+msgid "Mario Blättermann <mario.blaettermann@gmail.com> (German translation)"
+msgstr ""
+
+#: ../src/girl.c:695
+msgid "Marek Černocký <marek@manet.cz> (Czech translation)"
+msgstr ""
+
+#: ../src/girl.c:695
+msgid "Daniel Mustieles <daniel.mustieles@gmail.com> (Spanish translation)"
+msgstr ""
+
+#: ../src/girl.c:695
+msgid "Josef Andersson <josef.andersson@fripost.org> (Swedish translation)"
+msgstr ""
+
+#: ../src/girl.c:704
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version.\n"
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details.\n"
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA."
+msgstr ""
+
+#: ../src/girl.c:710
+#, c-format
+msgid "Unable to load GIRL logo: %s\n"
+msgstr ""
+
+#: ../src/girl.c:868
+msgid "Search radio station by location"
+msgstr ""
+
+#: ../src/girl.c:874
+#, c-format
+msgid "Listening to the radio station %s in %s: %s "
+msgstr ""
+
+#. g_spawn_close_pid( girl->record_pid);
+#: ../src/girl.c:933
+#, c-format
+msgid "Finished saving recording from the radio station %s in %s from %s to %s"
+msgstr ""
+
+#. g_spawn_close_pid( girl->player_pid);
+#: ../src/girl.c:954
+#, c-format
+msgid "Stopped playing the radio station %s in %s."
+msgstr ""
+
+#: ../src/girl.c:998
+#, c-format
+msgid "Archiving %s"
+msgstr "Arkiverer %s"
