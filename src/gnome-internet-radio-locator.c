@@ -371,7 +371,7 @@ static void
 listen_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
   player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new
 				      (NULL));
-  if (strcmp(gnome_internet_radio_locator->selected_station_uri, NULL) == 0) {
+  if (!g_strcmp0(gnome_internet_radio_locator->selected_station_uri, NULL)) {
 	  gnome_internet_radio_locator_player_new(player, "http://fm939.wnyc.org/wnycfm");
   } else {
 	  gnome_internet_radio_locator_player_new(player, gnome_internet_radio_locator->selected_station_uri);
@@ -438,31 +438,30 @@ void on_new_station_changed(GtkWidget * a, gpointer user_data)
 	/* GList *l = g_list_first(gnome_internet_radio_locator_stations); */
 	/* stationinfo = l->data; */
 
-	/* if (gnome_internet_radio_locator->selected_station_uri != NULL) */
-	/* 	g_free(gnome_internet_radio_locator->selected_station_uri); */
-
-	gchar *selected_station_uri = g_strdup(g_object_get_data(G_OBJECT(a), "station_uri"));
-	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_changed: %s\n", gnome_internet_radio_locator->selected_station_uri);
-
-	gnome_internet_radio_locator->selected_station_name =
-	    g_strdup(g_object_get_data(G_OBJECT(a), "station_name"));
-	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_changed: %s\n",
-	    gnome_internet_radio_locator->selected_station_name);
-
-	gnome_internet_radio_locator->selected_station_location =
-	    g_strdup(g_object_get_data(G_OBJECT(a), "station_location"));
-	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_changed: %s\n",
-	    gnome_internet_radio_locator->selected_station_location);
-
 	gnome_internet_radio_locator->selected_station_band =
 	    g_strdup(g_object_get_data(G_OBJECT(a), "station_band"));
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_changed: %s\n",
 	    gnome_internet_radio_locator->selected_station_band);
-
 	gnome_internet_radio_locator->selected_station_description =
 	    g_strdup(g_object_get_data(G_OBJECT(a), "station_description"));
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_changed: %s\n",
 	    gnome_internet_radio_locator->selected_station_description);
+	gnome_internet_radio_locator->selected_station_location =
+	    g_strdup(g_object_get_data(G_OBJECT(a), "station_location"));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_changed: %s\n",
+	    gnome_internet_radio_locator->selected_station_location);
+	gnome_internet_radio_locator->selected_station_name =
+	    g_strdup(g_object_get_data(G_OBJECT(a), "station_name"));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_changed: %s\n",
+	    gnome_internet_radio_locator->selected_station_name);
+	gnome_internet_radio_locator->selected_station_uri =
+	    g_strdup(g_object_get_data(G_OBJECT(a), "station_uri"));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_changed: %s\n",
+	    gnome_internet_radio_locator->selected_station_uri);
+	gnome_internet_radio_locator->selected_station_website =
+	    g_strdup(g_object_get_data(G_OBJECT(a), "station_website"));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_changed: %s\n",
+					       gnome_internet_radio_locator->selected_station_website);
 
 	/* appbar_send_msg(_("Selected the radio station %s in %s: %s"), */
 	/* 		gnome_internet_radio_locator->selected_station_name, */
@@ -482,8 +481,8 @@ void on_stations_selector_changed(GtkWidget * a, gpointer user_data)
 {
 	GNOMEInternetRadioLocatorStationInfo *station = NULL;
 
-	if (gnome_internet_radio_locator->selected_station_uri != NULL)
-		g_free(gnome_internet_radio_locator->selected_station_uri);
+	/* if (gnome_internet_radio_locator->selected_station_uri != NULL) */
+	/* 	g_free(gnome_internet_radio_locator->selected_station_uri); */
 
 	gnome_internet_radio_locator->selected_station_uri = g_strdup(g_object_get_data(G_OBJECT(a), "station_uri"));
 
@@ -615,21 +614,18 @@ void on_new_station_clicked(GtkWidget *a,
 	switch (result)  {
 	case GTK_RESPONSE_ACCEPT:
 		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("Squeak!\n\n");
-
-		selected_station_uri = g_strdup(g_object_get_data(G_OBJECT(station), "station_uri"));
-		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_uri);
-
-		selected_station_description = g_strdup(g_object_get_data(G_OBJECT(station), "station_description"));
-		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_description);
 		selected_station_band = g_strdup(g_object_get_data(G_OBJECT(station), "station_band"));
 		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_band);
-		selected_station_website = g_strdup(g_object_get_data(G_OBJECT(station), "station_website"));
-		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_website);
+		selected_station_description = g_strdup(g_object_get_data(G_OBJECT(station), "station_description"));
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_description);
+		selected_station_location = g_strdup(g_object_get_data(G_OBJECT(station), "station_location"));
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_location);
 		selected_station_name = g_strdup(g_object_get_data(G_OBJECT(station), "station_name"));
 		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_name);
-		selected_station_location = g_strdup(g_object_get_data(G_OBJECT(station), "station_location"));
-
-		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_location);
+		selected_station_uri = g_strdup(g_object_get_data(G_OBJECT(station), "station_uri"));
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_uri);
+		selected_station_website = g_strdup(g_object_get_data(G_OBJECT(station), "station_website"));
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("on_new_station_select_changed: %s\n", selected_station_website);
 		gnome_internet_radio_locator_station_update (stationinfo, selected_station_band, selected_station_description, selected_station_name, selected_station_location, selected_station_uri, selected_station_website);
 		break;
 	default:
