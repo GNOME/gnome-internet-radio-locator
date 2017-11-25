@@ -1,4 +1,26 @@
 =============
+Version 1.0.2
+=============
+
+Credits
+
+	* AUTHORS: Add Kjartan Maraas (Norwegian Bokmål translation)
+	* THANKS: Add Kjartan Maraas (Norwegian Bokmål translation)
+
+GUI
+
+	* src/gnome-internet-radio-locator.c: Fix New Station XML routine
+	* src/gnome-internet-radio-locator-markers.c: Add more continents
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Fix minor station typos
+
+Translations
+
+	* Kjartan Maraas (nb)
+
+=============
 Version 1.0.1
 =============
 

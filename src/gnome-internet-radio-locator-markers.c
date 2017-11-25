@@ -122,6 +122,27 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
 
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Cape Town, South Africa");
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),-33.928992,18.417396);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
+
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Newcastle, Australia");
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),-32.9272881,151.7812534);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
+
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "London, United Kingdom");
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),51.5073219,-0.1276474);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
+
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Palo Alto, California");
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.442156,-122.1634472);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
