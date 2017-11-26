@@ -26,10 +26,7 @@
 #include <locale.h>
 #include <sys/stat.h>
 
-#ifdef HAVE_CONFIG_H
 #include <config.h>
-#endif
-
 #include <gtk/gtk.h>
 #include <gtk/gtkcombobox.h>
 #include <glib/gstdio.h>

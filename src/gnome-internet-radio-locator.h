@@ -24,6 +24,7 @@
 #ifndef GNOME_INTERNET_RADIO_LOCATOR_H
 #define GNOME_INTERNET_RADIO_LOCATOR_H 1
 
+#include <config.h>
 #include <glib.h>
 
 typedef enum {
