@@ -7,6 +7,7 @@ EXTRA_DIST = m4/ChangeLog  \
 	ChangeLog \
 	BROADCAST \
 	DEBIAN \
+	EFF \
 	HACKING \
 	Makefile \
 	NEWS \
