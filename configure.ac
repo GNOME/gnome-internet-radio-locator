@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.59)
-AC_INIT(gnome-internet-radio-locator,1.0.2)
+AC_INIT(gnome-internet-radio-locator,1.0.3)
 AM_INIT_AUTOMAKE([-Wno-portability 1.11 no-dist-gzip dist-xz tar-ustar subdir-objects])
 AM_MAINTAINER_MODE
 AC_CONFIG_SRCDIR([src/gnome-internet-radio-locator.c])
@@ -64,19 +64,21 @@ AC_SUBST([HAVE_GNOME_INTERNET_RADIO_LOCATOR_RECORD])
 AC_CHECK_LIB(m, pow, [], [], [])
 
 PKG_CHECK_MODULES(GNOME_INTERNET_RADIO_LOCATOR,
-		  gtk+-3.0 >= 3.0 \
+		  champlain-gtk-0.12 >= 0.12.10 \
+		  geocode-glib-1.0 >= 3.20 \
 		  glib-2.0 >= 2.38.0 \
 		  gobject-2.0 >= 2.38.0 \
-		  pangoft2 >= 0.28 \
-		  champlain-gtk-0.12 >= 0.12.10 \
-		  libxml-2.0 >= 2.0 \
-		  geocode-glib-1.0 >= 3.20 \
-		  gstreamer-tag-1.0 >= 1.0 \
 		  gstreamer-1.0 >= 1.0 \
+		  gsettings-desktop-schemas >= 2.91.92 \
 		  gstreamer-player-1.0 >= 1.0 \
-		  gstreamer-video-1.0)
+		  gstreamer-tag-1.0 >= 1.0 \
+		  gstreamer-video-1.0 \
+		  gtk+-3.0 >= 3.0 \
+		  libsoup-2.4 >= 0.29.1 \
+		  libxml-2.0 >= 2.0 \
+		  pangoft2 >= 0.28)
 
-GNOME_INTERNET_RADIO_LOCATOR_PKG_DEPS="geocode-glib-1.0 gtk+-3.0 glib-2.0 gobject-2.0 pangoft2 champlain-gtk-0.12 libxml-2.0, gstreamer-1.0 gstreamer-player-1.0 gstreamer-video-1.0"
+GNOME_INTERNET_RADIO_LOCATOR_PKG_DEPS="champlain-gtk-0.12 geocode-glib-1.0 glib-2.0 gobject-2.0 gstreamer-1.0 gstreamer-player-1.0 gstreamer-video-1.0 gtk+-3.0 libxml-2.0 pangoft2"
 
 GTK_DOC_CHECK([1.16], [--flavour no-tmpl])
 
@@ -124,10 +126,17 @@ AC_SUBST(GNOME_INTERNET_RADIO_LOCATOR_PKG_DEPS)
 dnl Enable yelp-tools
 # YELP_HELP_INIT
 
+# *********
+# GSettings
+# *********
+
+GLIB_GSETTINGS
+
 AC_OUTPUT([
 Makefile
 data/Makefile
 data/gnome-internet-radio-locator.desktop
+data/org.gnome.gnome-internet-radio-locator.gschema.xml
 data/icons/Makefile
 data/icons/16x16/Makefile
 data/icons/22x22/Makefile

@@ -2,6 +2,15 @@
 Version 1.0.3
 =============
 
+Configuration
+
+	* configure.ac: Add dependency on libsoup and gsettings-desktop-schemas
+	* data/org.gnome.gnome-internet-radio-locator.gschema.xml: Add gschema
+	* data/Makefile.am: Add gsettings
+	* src/gnome-internet-radio-locator-gui.c: Add initial work on gsettings
+	* src/gnome-internet-radio-locator-keys.c: Add gsetting keys
+	* src/gnome-internet-radio-locator-keys.h: Add gsetting keys
+
 Credits
 
 	* AUTHORS: Add Nathan Follens (Dutch translation)
@@ -11,6 +20,7 @@ Credits
 
 Translations
 
+	* Daniel Mustieles (es)
 	* Nathan Follens (nl)
 
 =============

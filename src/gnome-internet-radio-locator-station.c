@@ -2,7 +2,7 @@
  *
  * GNOME Internet Radio Locator
  *
- * Copyright (C) 2014, 2015, 2016, 2017  Ole Aamot Software
+ * Copyright (C) 2014, 2015, 2016, 2017, 2018  Ole Aamot Software
  *
  * Author: Ole Aamot <oka@oka.no>
  *

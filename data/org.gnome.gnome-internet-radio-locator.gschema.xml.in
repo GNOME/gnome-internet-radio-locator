@@ -1,0 +1,12 @@
+<schemalist>
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.gnome.gnome-internet-radio-locator" path="/org/gnome/gnome-internet-radio-locator/">
+    <child name="ui" schema="org.gnome.gnome-internet-radio-locator.ui"/>
+  </schema>
+  <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.gnome.gnome-internet-radio-locator.ui" path="/org/gnome/gnome-internet-radio-locator/ui/">
+    <key name="station" type="s">
+      <default>'San Francisco, California'</default>
+      <summary>Default station</summary>
+      <description>Default Internet Radio station.</description>
+    </key>
+  </schema>
+</schemalist>

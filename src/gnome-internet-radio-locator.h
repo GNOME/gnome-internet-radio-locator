@@ -101,6 +101,7 @@ gboolean on_search_matches(GtkEntryCompletion *widget,
 struct _GNOMEInternetRadioLocatorData {
 	GtkImage *pixmap;
 	GtkProgressBar *progress;
+	GSettings *settings;
 	GtkAboutDialog *window;
 	GtkStatusbar *statusbar;
 	GtkWidget *player_window;
@@ -127,7 +128,7 @@ struct _GNOMEInternetRadioLocatorData {
 	gchar *selected_station_name;
 	gchar *selected_station_location;
 	gchar *selected_station_band;
-	gchar *selected_station_description;
+        gchar *selected_station_description;
 	gchar *selected_station_website;
 	gint selected_bitrate;
 	GNOMEInternetRadioLocatorStreamsInfo *selected_streams;

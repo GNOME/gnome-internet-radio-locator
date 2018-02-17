@@ -2,7 +2,7 @@
  *
  * GNOME Internet Radio Locator
  *
- * Copyright (C) 2014, 2015, 2016, 2017  Ole Aamot Software
+ * Copyright (C) 2014, 2015, 2016, 2017, 2018  Ole Aamot Software
  *
  * Author: Ole Aamot <oka@oka.no>
  *
@@ -30,8 +30,10 @@
 #include <gtk/gtk.h>
 #include <gtk/gtkcombobox.h>
 #include <glib/gstdio.h>
+#include <gio/gio.h>
 #include "gnome-internet-radio-locator.h"
 #include "gnome-internet-radio-locator-gui.h"
+#include "gnome-internet-radio-locator-keys.h"
 #include "gnome-internet-radio-locator-program.h"
 #include "gnome-internet-radio-locator-station.h"
 #include "gnome-internet-radio-locator-streams.h"
@@ -377,14 +379,24 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 
 	GtkWidget *appbar;
 	GtkWidget *progress;
+	gsize length;
+	const gchar *selected_station, *selected_station_uri, *selected_station_name, *selected_station_location, *selected_station_description;
 	
 	GNOMEInternetRadioLocatorData *gnome_internet_radio_locator_data = g_new0(GNOMEInternetRadioLocatorData, 1);
 	char *pmf;
-
 	gtk_window_set_title(GTK_WINDOW(gnome_internet_radio_locator_app), "GNOME Internet Radio Locator");
-
 	gnome_internet_radio_locator = gnome_internet_radio_locator_data;
-
+	gnome_internet_radio_locator_data->settings = g_settings_new(GNOME_INTERNET_RADIO_LOCATOR_UI);
+	selected_station_uri = g_variant_get_string(g_settings_get_value (gnome_internet_radio_locator_data->settings, "selected_station_uri"), &length);
+	selected_station = g_variant_get_string(g_settings_get_value(gnome_internet_radio_locator_data->settings, "station"), &length);
+	g_print ("XYZ STATION = %s\n", selected_station);
+	/* gnome_internet_radio_locator->selected_station_uri = selected_station_uri; */
+	selected_station_name = g_variant_get_string(g_settings_get_value (gnome_internet_radio_locator_data->settings, "selected_station_name"), &length);
+	/* gnome_internet_radio_locator->selected_station_name = selected_station_name; */
+	selected_station_location = g_variant_get_string(g_settings_get_value (gnome_internet_radio_locator_data->settings, "selected_station_location"), &length);
+	/* gnome_internet_radio_locator->selected_station_location = selected_station_location; */
+	selected_station_description = g_variant_get_string(g_settings_get_value (gnome_internet_radio_locator_data->settings, "selected_station_description"), &length);
+	/* gnome_internet_radio_locator->selected_station_description = selected_station_description; */
 #if GNOME_INTERNET_RADIO_LOCATOR_CFG_GNOME_CONFIG
 	gnome_config_push_prefix("/gnome-internet-radio-locator/General/");
 

@@ -99,10 +99,16 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker));
 #endif
-  
+
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Berkeley, California");
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.873093, -122.303769);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Dublin, Ireland");
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 53.3497645,-6.2602732);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
@@ -117,6 +123,13 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Oslo, Norway");
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker),59.9132694,10.7391112);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
+
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), "Reykjavik, Iceland");
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 64.145981,-21.9422367);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
@@ -180,7 +193,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker));
 #endif
-  
+
   champlain_marker_layer_set_all_markers_draggable (layer);
 
   clutter_actor_show (layer_actor);

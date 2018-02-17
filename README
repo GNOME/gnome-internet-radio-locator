@@ -2,8 +2,33 @@ GNOME Internet Radio Locator is a Free Software program that allows
 you to easily locate Free Internet Radio stations by broadcasters on
 the Internet with the help of a map.
 
-GNOME Internet Radio Locator is developed on the GNOME 3 platform and
-it requires gstreamer 1.0 for playback.
+GNOME Internet Radio Locator is developed on the GNOME 3 platform with
+GNOME Maps, libchamplain and geocode-lib and it requires gstreamer 1.0
+for audio playback.
+
+You can view all the stations in src/gnome-internet-radio-locator.xml
+and enter city names in the GUI search input field in order to locate
+radio stations in the city using the text search with auto-completion.
+
+To launch the program, you can click on Activies in GNOME 3 and enter
+
+   gnome-internet-radio-locator
+
+in the Search field or launch
+
+   gnome-internet-radio-locator
+
+from gnome-terminal.
+
+You can download pre-compiled binaries for Debian GNU/Linux i386,
+Fedora Core x86_64 and Ubuntu Linux amd64 from the web site at
+
+   https://people.gnome.org/~ole/gnome-internet-radio-locator/
+
+You can download the latest release from the official GNOME site:
+
+   ftp://ftp.gnome.org/pub/GNOME/sources/gnome-internet-radio-locator/
+   https://download.gnome.org/sources/gnome-internet-radio-locator/
 
 Enjoy Free Internet Radio.
 

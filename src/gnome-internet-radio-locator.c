@@ -2,7 +2,7 @@
  *
  * GNOME Internet Radio Locator
  *
- * Copyright (C) 2014, 2015, 2016, 2017  Ole Aamot Software
+ * Copyright (C) 2014, 2015, 2016, 2017, 2018  Ole Aamot Software
  *
  * Author: Ole Aamot <oka@oka.no>
  *
@@ -81,6 +81,8 @@ extern struct GNOMEInternetRadioLocatorMedia *media;
 
 GStatBuf stats;
 
+ChamplainView *view;
+
 /*
  * Terminate the main loop.
  */
@@ -119,12 +121,14 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 	GeocodeLocation *location_city;
 	GeocodeLocation *location_country;
 	GeocodeReverse *reverse_city, *reverse_country;
+
 	const char *name, *name_city, *name_country;
 	/* GeocodeForward *fwd; */
 	/* GList *list; */
 	/* GError **err; */
 	lon = champlain_view_x_to_longitude (view, event->x);
 	lat = champlain_view_y_to_latitude (view, event->y);
+	/* champlain_view_center_on (CHAMPLAIN_VIEW (view), lat, lon); */
 	location_city = geocode_location_new (lat, lon, GEOCODE_LOCATION_ACCURACY_CITY);
 	location_country = geocode_location_new (lat, lon, GEOCODE_LOCATION_ACCURACY_COUNTRY);
 	reverse_city = geocode_reverse_new_for_location (location_city);
@@ -644,7 +648,6 @@ on_location_matches(GtkEntryCompletion *widget,
 		    gpointer user_data)
 {
 	GValue value = {0, };
-
 	gtk_tree_model_get_value(model, iter, STATION_LOCATION, &value);
 	gnome_internet_radio_locator->selected_station_location = g_strdup(g_value_get_string(&value));
 	g_value_unset(&value);
@@ -665,8 +668,71 @@ on_search_matches(GtkEntryCompletion *widget,
 		  GtkTreeIter *iter,
 		  gpointer user_data)
 {
+	GeocodeNominatim *geocode_nominatim;
+	GeocodePlace *place;
+	GeocodeLocation *geocode_location;
+
+	GeocodePlace *place_city, *place_country;
+	GeocodeLocation *location_city;
+	GeocodeLocation *location_country;
+	GeocodeReverse *reverse_city, *reverse_country;
+
+	glong lat, lon;
+	GValue city = {0, };
 	GValue value = {0, };
+	GValue station_name = {0, };
+	gchar *location;
+	gchar *town;
+	gchar *country;
+	gchar *state;
+	GError **err;
+
+	gtk_tree_model_get_value(model, iter, STATION_LOCATION, &city);
 	gtk_tree_model_get_value(model, iter, STATION_URI, &value);
+	gtk_tree_model_get_value(model, iter, STATION_NAME, &station_name);
+	g_print ("on_search_matches: %s\n", (gchar *)g_value_get_string(&city));
+	location = (gchar *)g_value_get_string(&city);
+	town = strtok(location, ", ");
+	country = strtok(NULL, " ");
+/* Handle U.S. states
+	geocode_place_set_country (place, "United States of America");
+	country = geocode_place_get_state (country);
+*/
+	place = geocode_place_new((gchar *)g_value_get_string(&station_name), GEOCODE_PLACE_TYPE_MISCELLANEOUS);
+
+	g_print ("geocode_place_new:town: %s\n", geocode_place_get_town(place));
+	g_print ("geocode_place_new:country: %s\n", geocode_place_get_country(place));
+
+	geocode_place_set_town (place, town);
+	geocode_place_set_country(place, country);
+
+	geocode_nominatim = geocode_nominatim_new ("https://nominatim.gnome.org/", "ole@gnome.org");
+
+	g_print ("geocode_place_get_town: %s\n", geocode_place_get_town(place));
+	g_print ("geocode_place_get_country: %s\n", geocode_place_get_country(place));
+	/* g_print ("%s\n", geocode_nominatim_get_city(geocode_nominatim)); */
+
+	reverse_city = geocode_reverse_new_for_location(geocode_location);
+	place = geocode_reverse_resolve(reverse_city, err);
+
+	geocode_location = geocode_place_get_location(place);
+	g_print ("%f7.3\n", geocode_location_get_latitude(geocode_location));
+	lat = geocode_location_get_latitude(geocode_location);
+	lon = geocode_location_get_longitude(geocode_location);
+	g_print ("lat: %ld\n", lat);
+	g_print ("lon: %ld\n", lon);
+
+/*
+	location_city = geocode_location_new (lat, lon, GEOCODE_LOCATION_ACCURACY_CITY);
+	location_country = geocode_location_new (lat, lon, GEOCODE_LOCATION_ACCURACY_COUNTRY);
+	reverse_city = geocode_reverse_new_for_location (location_city);
+	reverse_country = geocode_reverse_new_for_location (location_country);
+	place_city = geocode_reverse_resolve (reverse_city, error);
+	place_country = geocode_reverse_resolve (reverse_country, error);
+	name_city = geocode_place_get_town (place_city);
+	name_country = geocode_place_get_country (place_country);
+*/
+	champlain_view_center_on (CHAMPLAIN_VIEW (view),lat,lon);
 	gnome_internet_radio_locator_player_stop(player);
 	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
 	/* g_object_set_data(G_OBJECT(widget), "station_uri", g_value_get_string(&value)); */
@@ -681,24 +747,18 @@ main (int argc,
 {
 	GtkWidget *window;
 	GtkWidget *widget, *vbox, *bbox, *button, *viewport, *image;
-	ChamplainView *view;
 	ClutterActor *scale;
 	ChamplainLicense *license_actor;
 	GtkListStore *model;
 	GtkTreeIter iter;
 	GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
-
 	if (gtk_clutter_init (&argc, &argv) != CLUTTER_INIT_SUCCESS)
 		return 1;
-
 	window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-
 	/* give the window a 10px wide border */
 	gtk_container_set_border_width (GTK_CONTAINER (window), 10);
-
 	/* give it the title */
 	gtk_window_set_title (GTK_WINDOW (window), "GNOME Internet Radio Locator");
-
 	/* Connect the destroy event of the window with our on_destroy function
 	 * When the window is about to be destroyed we get a notificaiton and
 	 * stop the main GTK loop
@@ -734,9 +794,7 @@ main (int argc,
 
 	license_actor = champlain_view_get_license_actor (view);
 	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
-
 	champlain_view_center_on (CHAMPLAIN_VIEW (view), 37.873093, -122.303769);
-
 	layer = create_marker_layer (view, &path);
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (path));
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (layer));
