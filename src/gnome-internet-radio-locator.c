@@ -690,37 +690,37 @@ on_search_matches(GtkEntryCompletion *widget,
 	gtk_tree_model_get_value(model, iter, STATION_LOCATION, &city);
 	gtk_tree_model_get_value(model, iter, STATION_URI, &value);
 	gtk_tree_model_get_value(model, iter, STATION_NAME, &station_name);
-	g_print ("on_search_matches: %s\n", (gchar *)g_value_get_string(&city));
-	location = (gchar *)g_value_get_string(&city);
-	town = strtok(location, ", ");
-	country = strtok(NULL, " ");
-/* Handle U.S. states
-	geocode_place_set_country (place, "United States of America");
-	country = geocode_place_get_state (country);
-*/
-	place = geocode_place_new((gchar *)g_value_get_string(&station_name), GEOCODE_PLACE_TYPE_MISCELLANEOUS);
+/* 	g_print ("on_search_matches: %s\n", (gchar *)g_value_get_string(&city)); */
+/* 	location = (gchar *)g_value_get_string(&city); */
+/* 	town = strtok(location, ", "); */
+/* 	country = strtok(NULL, " "); */
+/* /\* Handle U.S. states */
+/* 	geocode_place_set_country (place, "United States of America"); */
+/* 	country = geocode_place_get_state (country); */
+/* *\/ */
+/* 	place = geocode_place_new((gchar *)g_value_get_string(&station_name), GEOCODE_PLACE_TYPE_MISCELLANEOUS); */
 
-	g_print ("geocode_place_new:town: %s\n", geocode_place_get_town(place));
-	g_print ("geocode_place_new:country: %s\n", geocode_place_get_country(place));
+/* 	g_print ("geocode_place_new:town: %s\n", geocode_place_get_town(place)); */
+/* 	g_print ("geocode_place_new:country: %s\n", geocode_place_get_country(place)); */
 
-	geocode_place_set_town (place, town);
-	geocode_place_set_country(place, country);
+/* 	geocode_place_set_town (place, town); */
+/* 	geocode_place_set_country(place, country); */
 
-	geocode_nominatim = geocode_nominatim_new ("https://nominatim.gnome.org/", "ole@gnome.org");
+/* 	geocode_nominatim = geocode_nominatim_new ("https://nominatim.gnome.org/", "ole@gnome.org"); */
 
-	g_print ("geocode_place_get_town: %s\n", geocode_place_get_town(place));
-	g_print ("geocode_place_get_country: %s\n", geocode_place_get_country(place));
-	/* g_print ("%s\n", geocode_nominatim_get_city(geocode_nominatim)); */
+/* 	g_print ("geocode_place_get_town: %s\n", geocode_place_get_town(place)); */
+/* 	g_print ("geocode_place_get_country: %s\n", geocode_place_get_country(place)); */
+/* 	/\* g_print ("%s\n", geocode_nominatim_get_city(geocode_nominatim)); *\/ */
 
-	reverse_city = geocode_reverse_new_for_location(geocode_location);
-	place = geocode_reverse_resolve(reverse_city, err);
+/* 	reverse_city = geocode_reverse_new_for_location(geocode_location); */
+/* 	place = geocode_reverse_resolve(reverse_city, err); */
 
-	geocode_location = geocode_place_get_location(place);
-	g_print ("%f7.3\n", geocode_location_get_latitude(geocode_location));
-	lat = geocode_location_get_latitude(geocode_location);
-	lon = geocode_location_get_longitude(geocode_location);
-	g_print ("lat: %ld\n", lat);
-	g_print ("lon: %ld\n", lon);
+/* 	geocode_location = geocode_place_get_location(place); */
+/* 	g_print ("%f7.3\n", geocode_location_get_latitude(geocode_location)); */
+/* 	lat = geocode_location_get_latitude(geocode_location); */
+/* 	lon = geocode_location_get_longitude(geocode_location); */
+/* 	g_print ("lat: %ld\n", lat); */
+/* 	g_print ("lon: %ld\n", lon); */
 
 /*
 	location_city = geocode_location_new (lat, lon, GEOCODE_LOCATION_ACCURACY_CITY);
@@ -732,7 +732,7 @@ on_search_matches(GtkEntryCompletion *widget,
 	name_city = geocode_place_get_town (place_city);
 	name_country = geocode_place_get_country (place_country);
 */
-	champlain_view_center_on (CHAMPLAIN_VIEW (view),lat,lon);
+	/* champlain_view_center_on (CHAMPLAIN_VIEW (view),lat,lon); */
 	gnome_internet_radio_locator_player_stop(player);
 	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
 	/* g_object_set_data(G_OBJECT(widget), "station_uri", g_value_get_string(&value)); */
