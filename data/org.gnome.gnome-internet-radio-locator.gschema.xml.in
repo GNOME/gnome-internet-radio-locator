@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
   <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.gnome.gnome-internet-radio-locator" path="/org/gnome/gnome-internet-radio-locator/">
     <child name="ui" schema="org.gnome.gnome-internet-radio-locator.ui"/>
