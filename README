@@ -10,7 +10,7 @@ You can view all the stations in src/gnome-internet-radio-locator.xml
 and enter city names in the GUI search input field in order to locate
 radio stations in the city using the text search with auto-completion.
 
-To launch the program, you can click on Activies in GNOME 3 and enter
+To launch the program, you can click on Activities in GNOME 3 and enter
 
    gnome-internet-radio-locator
 
