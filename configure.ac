@@ -40,6 +40,28 @@ PKG_PROG_PKG_CONFIG
 
 # Checks for libraries.
 
+help_msg="no (not requested)"
+try_help=:
+gnome_internet_radio_locator_help=false
+
+AC_ARG_WITH([help],AS_HELP_STRING([--with-help],[Support GNOME Internet Radio Locator Help]), [
+     AC_MSG_CHECKING([for help])
+     if test x$withval = xno; then
+           try_help=false
+	   help_msg = "no (not requested)"
+	   AC_DEFINE([ENABLE_USER_HELP],0,[help missing])
+	   gnome_internet_radio_locator_help=false
+     else
+	   AC_DEFINE([ENABLE_USER_HELP],1,[support help])
+	   help_msg="yes (with help support)"
+	   gnome_internet_radio_locator_help=true
+     fi
+     AC_MSG_RESULT([$help_msg])
+])
+
+AM_CONDITIONAL([ENABLE_USER_HELP], [$gnome_internet_radio_locator_help])
+AC_SUBST([ENABLE_USER_HELP])
+
 record_msg="no (not requested)"
 try_record=:
 gnome_internet_radio_locator_record=false
@@ -81,21 +103,7 @@ GNOME_INTERNET_RADIO_LOCATOR_PKG_DEPS="champlain-gtk-0.12 geocode-glib-1.0 glib-
 
 GTK_DOC_CHECK([1.16], [--flavour no-tmpl])
 
-#YELP_HELP_INIT
-
-#GNOMEDOC=`which yelp-build`
-#if test -z $GNOMEDOC; then
-#   echo "*** The tools to build the documentation are not found,"
-#   echo "    please intall the yelp-tool package ***"
-#   exit 1
-#fi
-
-#AC_ARG_ENABLE([user_help],
-#	AS_HELP_STRING([--disable-user-help],[Disable the user help to speed the build (default: enabled)]),
-#	[enable_user_help=$enableval],
-#	[enable_user_help=yes])
-
-#AM_CONDITIONAL(ENABLE_USER_HELP, test x"$enable_user_help" = "xyes")
+YELP_HELP_INIT
 
 # Checks for header files.
 AC_HEADER_STDC
