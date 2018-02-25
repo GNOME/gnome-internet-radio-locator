@@ -1,15 +1,15 @@
 # Polish translation for gnome-internet-radio-locator.
-# Copyright © 2014-2017 the gnome-internet-radio-locator authors.
+# Copyright © 2014-2018 the gnome-internet-radio-locator authors.
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
-# Piotr Drąg <piotrdrag@gmail.com>, 2014-2017.
-# Aviary.pl <community-poland@mozilla.org>, 2014-2017.
+# Piotr Drąg <piotrdrag@gmail.com>, 2014-2018.
+# Aviary.pl <community-poland@mozilla.org>, 2014-2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-21 00:10+0200\n"
-"PO-Revision-Date: 2017-08-21 00:11+0200\n"
+"POT-Creation-Date: 2018-02-25 17:27+0100\n"
+"PO-Revision-Date: 2018-02-25 17:28+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -61,6 +61,14 @@ msgstr "Wyszukiwanie internetowych stacji radiowych"
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "Na żywo;Live;Radio;Program;Stacja;Wyszukiwanie;Znajdź;"
+
+#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:1
+msgid "Default station"
+msgstr "Domyślna stacja"
+
+#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:2
+msgid "Default Internet Radio station."
+msgstr "Domyślna internetowa stacja radiowa."
 
 #. printf("Archiving program at %s\n", archive);
 #: ../src/gnome-internet-radio-locator-station.c:129
