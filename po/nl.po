@@ -1,23 +1,23 @@
 # Dutch translation for gnome-internet-radio-locator.
 # Copyright (C) 2017 gnome-internet-radio-locator's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
-# Nathan Follens <nthn@unseen.is>, 2017.
+# Nathan Follens <nthn@unseen.is>, 2017-2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"internet-radio-locator&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-06 12:06+0000\n"
-"PO-Revision-Date: 2017-09-12 00:21+0200\n"
-"Last-Translator: Nathan Follens <nthn@unseen.is>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
+"locator/issues\n"
+"POT-Creation-Date: 2018-02-25 17:10+0000\n"
+"PO-Revision-Date: 2018-02-26 19:49+0100\n"
+"Last-Translator: Justin van Steijn <jvs@fsfe.org>\n"
 "Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
 msgid "GNOME Internet Radio Locator"
@@ -32,15 +32,15 @@ msgid ""
 "GNOME Internet Radio Locator allows users to easily find and listen to live "
 "radio programs on radio broadcasters on the Internet."
 msgstr ""
-"Gnome Internetradiozoeker laat gebruikers toe eenvoudig live "
-"radioprogramma's te zoeken en beluisteren van radiozenders op het internet."
+"Met Gnome Internetradiozoeker kunnen gebruikers eenvoudig live "
+"radioprogramma’s zoeken en beluisteren van radiozenders op het internet."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
 msgid ""
 "GNOME Internet Radio Locator is developed for the GNOME desktop and requires "
 "gstreamer 1.0 to be installed for playback of supported radio stations."
 msgstr ""
-"Gnome Internetradiozoeker werd ontwikkeld voor the Gnome-bureaublad en "
+"Gnome Internetradiozoeker werd ontwikkeld voor het Gnome-bureaublad en "
 "vereist GStreamer 1.0 voor afspelen van ondersteunde radiozenders."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:5
@@ -63,6 +63,14 @@ msgstr "Internetradiozenders zoeken"
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "Live;Radio;Program;Station;Locator;Programma;Zender;Locatie;Zoeker;"
+
+#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:1
+msgid "Default station"
+msgstr "Standaardzender"
+
+#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:2
+msgid "Default Internet Radio station."
+msgstr "Standaardinternetradiozender."
 
 #. printf("Archiving program at %s\n", archive);
 #: ../src/gnome-internet-radio-locator-station.c:129
