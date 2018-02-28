@@ -1,15 +1,15 @@
 # Brazilian Portuguese translation for gnome-internet-radio-locator.
-# Copyright (C) 2017 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# Copyright (C) 2018 gnome-internet-radio-locator's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
 # Enrico Nicoletto <liverig@gmail.com>, 2017.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2017.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2017-2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"internet-radio-locator&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-08-19 15:15+0000\n"
-"PO-Revision-Date: 2017-09-04 04:14-0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
+"locator/issues\n"
+"POT-Creation-Date: 2018-02-24 19:48+0000\n"
+"PO-Revision-Date: 2018-02-28 18:33-0200\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -21,7 +21,6 @@ msgstr ""
 "X-Project-Style: gnome\n"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
-#| msgid "Internet Radio Locator"
 msgid "GNOME Internet Radio Locator"
 msgstr "Localizador de rádio da Internet do GNOME"
 
@@ -67,6 +66,15 @@ msgstr "Encontre estações de rádio na Internet"
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "Ao vivo;Vivo;Rádio;Radio;Programa;Estação;Sintonizador;Localizador;"
+
+#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:1
+msgid "Default station"
+msgstr "Estação padrão"
+
+#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:2
+#| msgid "Locate Internet Radio Stations"
+msgid "Default Internet Radio station."
+msgstr "Estação padrão de rádio na Internet."
 
 #. printf("Archiving program at %s\n", archive);
 #: ../src/gnome-internet-radio-locator-station.c:129
