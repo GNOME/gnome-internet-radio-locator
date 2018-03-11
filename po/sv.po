@@ -1,15 +1,15 @@
 # Swedish translation for gnome-internet-radio-locator.
-# Copyright © 2017 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# Copyright © 2017, 2018 gnome-internet-radio-locator's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"internet-radio-locator&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-08-19 15:15+0000\n"
-"PO-Revision-Date: 2017-08-20 23:05+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
+"locator/issues\n"
+"POT-Creation-Date: 2018-02-24 19:48+0000\n"
+"PO-Revision-Date: 2018-03-11 19:07+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
 msgid "GNOME Internet Radio Locator"
@@ -63,6 +63,14 @@ msgstr "Leta rätt på internetradiostationer"
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "Live;Direktsänt;Radio;Program;Station;Locator;Letare;"
+
+#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:1
+msgid "Default station"
+msgstr "Standardstation"
+
+#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:2
+msgid "Default Internet Radio station."
+msgstr "Standardstation för internetradio."
 
 #. printf("Archiving program at %s\n", archive);
 #: ../src/gnome-internet-radio-locator-station.c:129
