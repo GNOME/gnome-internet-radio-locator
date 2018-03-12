@@ -6,10 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"internet-radio-locator&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-08-19 15:15+0000\n"
-"PO-Revision-Date: 2017-08-21 16:02+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
+"locator/issues\n"
+"POT-Creation-Date: 2018-02-24 19:48+0000\n"
+"PO-Revision-Date: 2018-03-12 01:11+0100\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 1.8.7.1\n"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
 msgid "GNOME Internet Radio Locator"
@@ -64,6 +64,14 @@ msgstr "Locirajte internetske radio stanice"
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "Uživo;Radio;Program;Stanica;Lokator;"
+
+#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:1
+msgid "Default station"
+msgstr "Zadana stanica"
+
+#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:2
+msgid "Default Internet Radio station."
+msgstr "Zadana internetska radio stanica."
 
 #. printf("Archiving program at %s\n", archive);
 #: ../src/gnome-internet-radio-locator-station.c:129
