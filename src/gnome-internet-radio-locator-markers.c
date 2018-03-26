@@ -213,7 +213,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-  station = g_strdup("Seattle, Washington\n<span size=\"xx-small\">KEXP</span>");
+  station = g_strdup("Seattle, Washington\n<span size=\"xx-small\">KSUB</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 47.6038321,-122.3300624);
