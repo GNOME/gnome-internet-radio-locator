@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
   <id type="desktop">gnome-internet-radio-locator.desktop</id>
-  <_name>GNOME Internet Radio Locator</_name>
-  <_summary>Listen to and record from Internet radio</_summary>
+  <_name>GNOME Internet Radio Locator for GNOME 3</_name>
+  <_summary>Locate and listen to Free Internet Radio stations</_summary>
   <licence>CC0</licence>
   <description>
     <_p>
-      GNOME Internet Radio Locator allows users to easily find and
-      listen to live radio programs on radio broadcasters on the
-      Internet.
+      GNOME Internet Radio Locator for GNOME 3 is a Free Software program
+      that allows you to easily locate and listen to Free Internet Radio
+      stations by broadcasters on the Internet with the help of a map.
     </_p>
     <_p>
-      GNOME Internet Radio Locator is developed for the GNOME desktop
-      and requires gstreamer 1.0 to be installed for playback of
-      supported radio stations.
+      GNOME Internet Radio Locator for GNOME 3 is developed for the GNOME
+      3 desktop and requires gstreamer 1.0 to be installed for listening
+      to Free Internet Radio stations.
     </_p>
     <_p>
-      Enjoy listening to and recording from supported Internet Radio
-      stations in GNOME Internet Radio Locator.
+      Enjoy listening to Free Internet Radio stations in GNOME Internet
+      Radio Locator for GNOME 3.
     </_p>
   </description>
-  <url type="homepage">https://wiki.gnome.org/Apps/GNOMEInternetRadioLocator</url>
+  <url type="homepage">https://wiki.gnome.org/Apps/InternetRadioLocator</url>
   <screenshots>
     <screenshot type="default">https://gitlab.gnome.org/GNOME/gnome-internet-radio-locator/raw/master/data/screenshot.png</screenshot>
   </screenshots>

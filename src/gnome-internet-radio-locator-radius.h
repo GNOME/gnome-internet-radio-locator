@@ -1,6 +1,6 @@
 /* $Id$
  *
- * GNOME Internet Radio Locator
+ * GNOME Internet Radio Locator for GNOME 3
  *
  * Copyright (C) 2017, 2018  Ole Aamot Software
  *

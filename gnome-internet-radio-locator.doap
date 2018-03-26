@@ -3,13 +3,13 @@
          xmlns:foaf="http://xmlns.com/foaf/0.1/"
          xmlns:gnome="http://api.gnome.org/doap-extensions#"
          xmlns="http://usefulinc.com/ns/doap#">
-  <name xml:lang="en">GNOME Internet Radio Locator</name>
-  <shortdesc xml:lang="en">Locate Internet Radio Stations</shortdesc>
-  <description>GNOME Internet Radio Locator is a Free Software program that allows you to easily locate Free Internet Radio stations by broadcasters on the Internet with the help of a map.  GNOME Internet Radio Locator is developed on the GNOME 3 platform and it requires gstreamer 1.0 for playback.  Enjoy Free Internet Radio.</description>
+  <name xml:lang="en">GNOME Internet Radio Locator for GNOME 3</name>
+  <shortdesc xml:lang="en">Locate Free Internet Radio Stations</shortdesc>
+  <description>GNOME Internet Radio Locator for GNOME 3 is a Free Software program that allows you to easily locate Free Internet Radio stations by broadcasters on the Internet with the help of a map.  GNOME Internet Radio Locator for GNOME 3 is developed on the GNOME 3 platform and it requires gstreamer 1.0 for playback.  Enjoy Free Internet Radio.</description>
   <homepage rdf:resource="https://wiki.gnome.org/Apps/InternetRadioLocator" />
   <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/gnome-internet-radio-locator-list" />
   <download-page rdf:resource="http://download.gnome.org/sources/gnome-internet-radio-locator/" />
-  <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=gnome-internet-radio-locator" />
+  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/gnome-internet-radio-locator/issues" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
   <programming-language>C</programming-language>
   <maintainer>
