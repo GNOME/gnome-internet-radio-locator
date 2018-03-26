@@ -513,7 +513,7 @@ GNOMEInternetRadioLocatorStationInfo *gnome_internet_radio_locator_station_load_
 					     gpointer data)
 {
 	GNOMEInternetRadioLocatorStationInfo *gstation;
-	gstation = gnome_internet_radio_locator_station_load_from_file (head, "http://gnome-internet-radio-locator.src.ole.org/gnome_internet_radio_locator.xml");
+	gstation = gnome_internet_radio_locator_station_load_from_file (head, "https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome_internet_radio_locator.xml");
 	return gstation;
 }
 

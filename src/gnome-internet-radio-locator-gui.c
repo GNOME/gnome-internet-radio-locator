@@ -30,6 +30,7 @@
 #include <gtk/gtk.h>
 #include <gtk/gtkcombobox.h>
 #include <glib/gstdio.h>
+#include <glib/gi18n.h>
 #include <gio/gio.h>
 #include "gnome-internet-radio-locator.h"
 #include "gnome-internet-radio-locator-gui.h"
@@ -88,14 +89,14 @@ GtkWidget *create_stations_selector(char *selected_station_uri,
 	/* 						       FALSE, */
 	/* 						       NULL); */
 
-	/* world_station_xml_filename = g_strdup("http://gnome-internet-radio-locator.src.ole.org/gnome-internet-radio-locator.xml"); */
+	/* world_station_xml_filename = g_strdup("https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xml"); */
 
 	world_station_xml_filename = g_strconcat(GNOME_INTERNET_RADIO_LOCATOR_DATADIR, "/gnome-internet-radio-locator.xml", NULL);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("world_station_xml_filename = %s\n",
 	    world_station_xml_filename);
 
 	if (world_station_xml_filename == NULL) {
-		g_warning("Failed to open %s.\n",
+		g_warning(_("Failed to open %s\n"),
 			  world_station_xml_filename);
 	}
 
@@ -109,7 +110,7 @@ GtkWidget *create_stations_selector(char *selected_station_uri,
 	}
 
 	if (localstation == NULL) {
-		g_warning("Failed to open %s\n", local_station_xml_file);
+		g_warning(_("Failed to open %s\n"), local_station_xml_file);
 	}
 
 /*   g_free (local_station_xml_file); */
@@ -260,10 +261,10 @@ GtkWidget *create_new_station_selector(gchar *location) {
 	memset(&stats, 0, sizeof(stats));
 
 	/* The Stations dialog */
-	station_selector = gtk_dialog_new_with_buttons("New Internet Radio Station",
+	station_selector = gtk_dialog_new_with_buttons(_("New Internet Radio Station"),
 						       GTK_WINDOW(gnome_internet_radio_locator_app),
 						       0,
-						       ("_Save"),
+						       (_("_Save")),
 						       GTK_RESPONSE_ACCEPT,
 						       NULL);
 	content_area = gtk_dialog_get_content_area (GTK_DIALOG (station_selector));
@@ -285,16 +286,16 @@ GtkWidget *create_new_station_selector(gchar *location) {
 	websiteentry = gtk_entry_new();
 	descriptionentry = gtk_entry_new();
 
-	gtk_entry_set_text(GTK_ENTRY(nameentry), "Station name");
-	gtk_entry_set_text(GTK_ENTRY(bandentry), "Bandwidth");
+	gtk_entry_set_text(GTK_ENTRY(nameentry), _("Station name"));
+	gtk_entry_set_text(GTK_ENTRY(bandentry), _("Bandwidth"));
 	if (!g_strcmp0(gtk_entry_get_text(GTK_ENTRY(input)),"")) {
-		gtk_entry_set_text(GTK_ENTRY(locationentry), "City name");
+		gtk_entry_set_text(GTK_ENTRY(locationentry), _("City name"));
 	} else {
 		gtk_entry_set_text(GTK_ENTRY(locationentry), (gpointer)gtk_entry_get_text(GTK_ENTRY(input)));
 	}
-	gtk_entry_set_text(GTK_ENTRY(urientry), "http://uri-to-stream/");
-	gtk_entry_set_text(GTK_ENTRY(descriptionentry), "Description");
-	gtk_entry_set_text(GTK_ENTRY(websiteentry), "http://uri-to-website/");
+	gtk_entry_set_text(GTK_ENTRY(urientry), _("http://uri-to-stream/"));
+	gtk_entry_set_text(GTK_ENTRY(descriptionentry), _("Description"));
+	gtk_entry_set_text(GTK_ENTRY(websiteentry), _("http://uri-to-website/"));
 	completion = gtk_entry_completion_new();
 	gtk_entry_completion_set_text_column(completion, STATION_LOCATION);
 	gtk_entry_set_completion(GTK_ENTRY(locationentry), completion);
@@ -307,7 +308,7 @@ GtkWidget *create_new_station_selector(gchar *location) {
 	    world_station_xml_filename);
 
 	if (world_station_xml_filename == NULL) {
-		g_warning(("Failed to open %s.  Please install it.\n"),
+		g_warning((_("Failed to open %s.  Please install it.\n")),
 			  world_station_xml_filename);
 	}
 
@@ -321,7 +322,7 @@ GtkWidget *create_new_station_selector(gchar *location) {
 	}
 
 	if (localstation == NULL) {
-		g_warning("Failed to open %s.\n", local_station_xml_file);
+		g_warning(_("Failed to open %s\n"), local_station_xml_file);
 	}
 
 	stationinfo = gnome_internet_radio_locator_station_load_from_file(localstation,
@@ -455,19 +456,19 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	       gnome_internet_radio_locator->selected_station_description);
 
 	if (strcmp(gnome_internet_radio_locator->selected_station_uri,"")==0) {
-		gnome_internet_radio_locator->selected_station_uri = g_strdup("http://fm939.wnyc.org/wnycfm");
+		gnome_internet_radio_locator->selected_station_uri = g_strdup(_("http://fm939.wnyc.org/wnycfm"));
 	}
 	if (strcmp(gnome_internet_radio_locator->selected_station_name,"")==0) {
-		gnome_internet_radio_locator->selected_station_name = g_strdup("WNYC");
+		gnome_internet_radio_locator->selected_station_name = g_strdup(_("WNYC"));
 	}
 	if (strcmp(gnome_internet_radio_locator->selected_station_location,"")==0) {
-		gnome_internet_radio_locator->selected_station_location = g_strdup("New York City, NY");
+		gnome_internet_radio_locator->selected_station_location = g_strdup(_("New York City, NY"));
 	}
 	if (strcmp(gnome_internet_radio_locator->selected_station_band,"")==0) {
-		gnome_internet_radio_locator->selected_station_band = g_strdup("ONLINE");
+		gnome_internet_radio_locator->selected_station_band = g_strdup(_("ONLINE"));
 	}
 	if (strcmp(gnome_internet_radio_locator->selected_station_description,"")==0) {
-		gnome_internet_radio_locator->selected_station_description = g_strdup("WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, broadcasting the finest programs from NPR, American Public Media, Public Radio International and the BBC World Service, as well as a wide range of award-winning local programming.");
+		gnome_internet_radio_locator->selected_station_description = g_strdup(_("WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, broadcasting the finest programs from NPR, American Public Media, Public Radio International and the BBC World Service, as well as a wide range of award-winning local programming."));
 	}
 
 	gnome_internet_radio_locator->selected_streams_uri =
