@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="1.0.4">
+<gnome_internet_radio_locator version="1.0.5">
   <station band="ONLINE" id="drnyheder" lang="da" name="Danmarks Radio Nyheder" rank="1.0" type="gov">
     <frequency uri="http://www.dr.dk/nyheder">FM 93.3 in Aalborg</frequency>
     <location>Copenhagen, Denmark</location>
@@ -947,13 +947,15 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <stream mime="audio/mpeg" uri="http://icecast.media.berkeley.edu:8000/kalx-128.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://kalx.berkeley.edu/</uri>
   </station>
+  <!-- Non-streamable as of 2018/03/26
   <station band="95.3FM" id="whrb" lang="en" name="WHRB" rank="1.0" type="edu">
     <frequency uri="http://www.whrb.org/">95.3 FM in Boston, Massachusetts</frequency>
     <location>Boston, Massachusetts</location>
     <description lang="en">For seventy years, 95.3FM has been Boston's first source for exciting, entertaining, and enlightening music broadcasts. Harvard Radio's daily broadcast of Classical music, Jazz, and underground Rock explore a great repertoire of music left largely untouched by other commercial stations.</description>
     <stream mime="audio/mpeg" uri="http://hrbinc-hi.streamguys.net:80/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
     <uri>http://www.whrb.org/</uri>
-  </station>
+    </station>
+  -->
   <station band="99.3FM" id="nova" lang="nb" name="Radio NOVA" rank="1.0" type="edu">
     <frequency uri="http://radionova.no/">99.3 FM in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
@@ -998,7 +1000,7 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
   </station>
   <station band="90.1FM" id="kzsu" lang="en" name="KZSU" rank="1.0" type="edu">
     <frequency>90.1 FM in Stanford, California</frequency>
-    <location>Palo Alto, California</location>
+    <location>Stanford, California</location>
     <description lang="en">KZSU is Stanford University's FM radio station, broadcasting across the Bay Area on 90.1 FM and across the world at kzsulive.stanford.edu. We exist to serve the Stanford community with quality radio broadcasts, including music, sports, news, and public affairs programming.
 <!--
       The station is owned by the Board of Trustees of Stanford University and is governed by a Board of Directors appointed by the President. We got our FM license in 1964, and upgraded from 10 to 500 watts in 1978. Before 1964, KZSU broadcast as an AM carrier current station (through the University's power supply) on 880 kHz, starting in 1947 as a part of the Department of Communication.

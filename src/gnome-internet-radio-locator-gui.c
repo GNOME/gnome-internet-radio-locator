@@ -1,10 +1,10 @@
 /* $Id$
  *
- * GNOME Internet Radio Locator
+ * GNOME Internet Radio Locator for GNOME 3
  *
  * Copyright (C) 2014, 2015, 2016, 2017, 2018  Ole Aamot Software
  *
- * Author: Ole Aamot <oka@oka.no>
+ * Author: Ole Aamot <ole@gnome.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -41,6 +41,8 @@
 
 extern GtkWidget *gnome_internet_radio_locator_app;
 extern GtkWidget *search_selector;
+extern GtkWidget *input;
+
 GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
 
 GtkWidget *create_stations_selector(char *selected_station_uri,
@@ -86,7 +88,7 @@ GtkWidget *create_stations_selector(char *selected_station_uri,
 	/* 						       FALSE, */
 	/* 						       NULL); */
 
-	/* world_station_xml_filename = g_strdup("http://gnome-internet-radio-locator.src.oka.no/gnome-internet-radio-locator.xml"); */
+	/* world_station_xml_filename = g_strdup("http://gnome-internet-radio-locator.src.ole.org/gnome-internet-radio-locator.xml"); */
 
 	world_station_xml_filename = g_strconcat(GNOME_INTERNET_RADIO_LOCATOR_DATADIR, "/gnome-internet-radio-locator.xml", NULL);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("world_station_xml_filename = %s\n",
@@ -225,14 +227,14 @@ save_cb (GtkWidget *widget, gpointer data) {
 	websiteentry = g_object_get_data(G_OBJECT(widget), "station_website");
 	descriptionentry = g_object_get_data(G_OBJECT(widget), "station_description");
 
-	g_print("%s\n", nameentry);
-	g_print("%s\n", locationentry);
-	g_print("%s\n", urientry);
-	g_print("%s\n", websiteentry);
-	g_print("%s\n", descriptionentry);
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", nameentry);
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", locationentry);
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", urientry);
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", websiteentry);
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", descriptionentry);
 }
 
-GtkWidget *create_new_station_selector(void) {
+GtkWidget *create_new_station_selector(gchar *location) {
 
 	GtkWidget *station_selector, *content_area;
 	GtkWidget *align;
@@ -285,7 +287,11 @@ GtkWidget *create_new_station_selector(void) {
 
 	gtk_entry_set_text(GTK_ENTRY(nameentry), "Station name");
 	gtk_entry_set_text(GTK_ENTRY(bandentry), "Bandwidth");
-	gtk_entry_set_text(GTK_ENTRY(locationentry), "City name");
+	if (!g_strcmp0(gtk_entry_get_text(GTK_ENTRY(input)),"")) {
+		gtk_entry_set_text(GTK_ENTRY(locationentry), "City name");
+	} else {
+		gtk_entry_set_text(GTK_ENTRY(locationentry), (gpointer)gtk_entry_get_text(GTK_ENTRY(input)));
+	}
 	gtk_entry_set_text(GTK_ENTRY(urientry), "http://uri-to-stream/");
 	gtk_entry_set_text(GTK_ENTRY(descriptionentry), "Description");
 	gtk_entry_set_text(GTK_ENTRY(websiteentry), "http://uri-to-website/");
@@ -342,13 +348,16 @@ GtkWidget *create_new_station_selector(void) {
 			    (gpointer) gtk_entry_get_text(GTK_ENTRY(bandentry)));
 	  g_object_set_data(G_OBJECT(station_selector), "station_location",
 			    (gpointer) gtk_entry_get_text(GTK_ENTRY(locationentry)));
+	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("LOCATIONENTRY: %s\n", (gpointer) gtk_entry_get_text(GTK_ENTRY(locationentry)));
 	  g_object_set_data(G_OBJECT(station_selector), "station_uri",
 			    (gpointer) gtk_entry_get_text(GTK_ENTRY(urientry)));
+	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("URIENTRY: %s\n", (gpointer) gtk_entry_get_text(GTK_ENTRY(urientry)));
 	  g_object_set_data(G_OBJECT(station_selector), "station_description",
 			    (gpointer) gtk_entry_get_text(GTK_ENTRY(descriptionentry)));
 	  g_object_set_data(G_OBJECT(station_selector), "station_website",
 			    (gpointer) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
-	  
+	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("WEBSITEENTRY: %s\n", (gpointer) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
+
 #if 0 /* FIXME: Add input fields */
 	  g_object_set_data(G_OBJECT(station_selector), "station_description",
 			    (gpointer) station_description);
@@ -384,12 +393,12 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	
 	GNOMEInternetRadioLocatorData *gnome_internet_radio_locator_data = g_new0(GNOMEInternetRadioLocatorData, 1);
 	char *pmf;
-	gtk_window_set_title(GTK_WINDOW(gnome_internet_radio_locator_app), "GNOME Internet Radio Locator");
+	gtk_window_set_title(GTK_WINDOW(gnome_internet_radio_locator_app), "GNOME Internet Radio Locator for GNOME 3");
 	gnome_internet_radio_locator = gnome_internet_radio_locator_data;
 	gnome_internet_radio_locator_data->settings = g_settings_new(GNOME_INTERNET_RADIO_LOCATOR_UI);
 	selected_station_uri = g_variant_get_string(g_settings_get_value (gnome_internet_radio_locator_data->settings, "selected_station_uri"), &length);
 	selected_station = g_variant_get_string(g_settings_get_value(gnome_internet_radio_locator_data->settings, "station"), &length);
-	g_print ("XYZ STATION = %s\n", selected_station);
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("SELECTED STATION = %s\n", selected_station);
 	/* gnome_internet_radio_locator->selected_station_uri = selected_station_uri; */
 	selected_station_name = g_variant_get_string(g_settings_get_value (gnome_internet_radio_locator_data->settings, "selected_station_name"), &length);
 	/* gnome_internet_radio_locator->selected_station_name = selected_station_name; */

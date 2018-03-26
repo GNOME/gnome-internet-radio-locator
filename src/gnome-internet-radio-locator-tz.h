@@ -1,11 +1,11 @@
 /* -*- Mode: C; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*- */
 /* $Id$
  *
- * GNOME Internet Radio Locator
+ * GNOME Internet Radio Locator for GNOME 3
  *
  * Copyright (C) 2015  Ole Aamot Software
  *
- * Author: Ole Aamot <oka@oka.no>
+ * Author: Ole Aamot <ole@gnome.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

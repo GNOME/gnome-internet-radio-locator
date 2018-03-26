@@ -1,10 +1,10 @@
 /* $Id$
  *
- * GNOME Internet Radio Locator
+ * GNOME Internet Radio Locator for GNOME 3
  *
  * Copyright (C) 2014, 2015, 2017, 2018  Ole Aamot Software
  *
- * Author: Ole Aamot <oka@oka.no>
+ * Author: Ole Aamot <ole@gnome.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

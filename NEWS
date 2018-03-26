@@ -1,4 +1,46 @@
 =============
+Version 1.0.5
+=============
+
+Credits
+
+	* AUTHORS: Add Justin van Steijn (Dutch translation)
+	* AUTHORS: Add Rafael Fontenelle (Brazilian Portuguese translation)
+	* AUTHORS: Add Tim Sabsch (German translation)
+	* THANKS: Add Justin van Steijn (Dutch translation)
+	* THANKS: Add Rafael Fontenelle (Brazilian Portuguese translation)
+	* THANKS: Add Tim Sabsch (German translation)
+
+Documentation
+
+	* Marek Černocký (help/cs)
+	* Mario Blättermann (help/de)
+	* Piotr Drąg (help/pl)
+
+GUI
+
+	* src/gnome-internet-radio-locator-gui.c: Add debugging and set location
+	* src/gnome-internet-radio-locator-gui.h: Add location function parameter
+	* src/gnome-internet-radio-locator-markers.c: Add KEXP, WKCR, WHPK, WMBR
+	* src/gnome-internet-radio-locator.c: Add user_data function parameter
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Locate KZSU (Stanford, California)
+
+Translations
+
+	* Anders Jonsson (sv)
+	* Balázs Úr (hu)
+	* Goran Vidović (hr)
+	* Justin van Steijn (nl)
+	* Kukuh Syafaat (id)
+	* Marek Cernocky (cz)
+	* Piotr Drąg (pl)
+	* Rafael Fontenelle (pt_BR)
+	* Tim Sabsch (de)
+
+=============
 Version 1.0.4
 =============
 

@@ -1,10 +1,10 @@
-/* $id$
+/* $Id$
  *
- * GNOME Internet Radio Locator
+ * GNOME Internet Radio Locator for GNOME 3
  *
  * Copyright (C) 2014, 2015, 2016, 2017, 2018  Ole Aamot Software
  *
- * Author: Ole Aamot <oka@oka.no>
+ * Author: Ole Aamot <ole@gnome.org>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -588,7 +588,7 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 	gtk_container_add (GTK_CONTAINER(window), GTK_WIDGET(grid));
 	g_signal_connect (window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 #endif
-	gtk_window_set_title (GTK_WINDOW(window), "GNOME Internet Radio Locator");
+	gtk_window_set_title (GTK_WINDOW(window), "GNOME Internet Radio Locator for GNOME 3");
 	gtk_window_set_default_size (GTK_WINDOW(window), 1440, 720);
 
 	gnome_internet_radio_locator_app = create_gnome_internet_radio_locator_app();
@@ -613,7 +613,7 @@ void on_new_station_clicked(GtkWidget *a,
 	/* stationinfo = l->data; */
 	gint result;
 	// appbar_send_msg(_("New radio station"));
-	station = create_new_station_selector();
+	station = create_new_station_selector(user_data);
 	result = gtk_dialog_run (GTK_DIALOG(station));
 	switch (result)  {
 	case GTK_RESPONSE_ACCEPT:
@@ -758,7 +758,7 @@ main (int argc,
 	/* give the window a 10px wide border */
 	gtk_container_set_border_width (GTK_CONTAINER (window), 10);
 	/* give it the title */
-	gtk_window_set_title (GTK_WINDOW (window), "GNOME Internet Radio Locator");
+	gtk_window_set_title (GTK_WINDOW (window), "GNOME Internet Radio Locator for GNOME 3");
 	/* Connect the destroy event of the window with our on_destroy function
 	 * When the window is about to be destroyed we get a notificaiton and
 	 * stop the main GTK loop
@@ -783,7 +783,8 @@ main (int argc,
 
 	scale = champlain_scale_new ();
 	champlain_scale_connect_view (CHAMPLAIN_SCALE (scale), view);
-
+	/* champlain_view_ensure_visible(G_OBJECT (view), NULL, TRUE); */
+	/* champlain_view_set_keep_center_on_resize(G_OBJECT (view), TRUE); */
 	/* align to the bottom left */
 	clutter_actor_set_x_expand (scale, TRUE);
 	clutter_actor_set_y_expand (scale, TRUE);

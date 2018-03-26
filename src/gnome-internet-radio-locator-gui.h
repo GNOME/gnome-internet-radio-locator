@@ -13,7 +13,7 @@ GtkWidget *create_streams_selector(char *selected_streams_uri,
 				   char *filename);
 GtkWidget *create_search_selector(void);
 
-GtkWidget *create_new_station_selector(void);
+GtkWidget *create_new_station_selector(char *location);
 
 GtkWidget *create_gnome_internet_radio_locator_app(void);
 
