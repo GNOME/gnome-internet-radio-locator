@@ -374,15 +374,16 @@ search_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
 
 static void
 listen_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
-  player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new
-				      (NULL));
-  if (!g_strcmp0(gnome_internet_radio_locator->selected_station_uri, NULL)) {
-	  gnome_internet_radio_locator_player_new(player, _("http://fm939.wnyc.org/wnycfm"));
-  } else {
-	  gnome_internet_radio_locator_player_new(player, gnome_internet_radio_locator->selected_station_uri);
-  }
-  gst_player_play(player);
-  return;
+	gnome_internet_radio_locator_player_stop(player);
+	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
+	/* g_object_set_data(G_OBJECT(widget), "station_uri", g_value_get_string(&value)); */
+	if (!g_strcmp0(gnome_internet_radio_locator->selected_station_uri, NULL)) {
+		gnome_internet_radio_locator_player_new(player, _("http://fm939.wnyc.org/wnycfm"));
+	} else {
+		gnome_internet_radio_locator_player_new(player, gnome_internet_radio_locator->selected_station_uri);
+	}
+	gst_player_play(player);
+	return;
 }
 
 static void
@@ -834,15 +835,6 @@ main (int argc,
 	g_signal_connect(button, "clicked", G_CALLBACK (on_new_station_clicked), view);
 	gtk_container_add (GTK_CONTAINER (bbox), button);
 
-#if 0
-	button = gtk_button_new();
-	image = gtk_image_new_from_icon_name("media-playback-start", GTK_ICON_SIZE_BUTTON);
-	gtk_button_set_image (GTK_BUTTON (button), image);
-	gtk_button_set_label (GTK_BUTTON (button), "Listen");
-	g_signal_connect(button, "clicked", G_CALLBACK (listen_station), view);
-	gtk_container_add (GTK_CONTAINER (bbox), button);
-#endif
-
 	memset(&stats, 0, sizeof(stats));
 
 	input = gtk_entry_new();
@@ -919,6 +911,15 @@ main (int argc,
 	gtk_widget_show(input);
 
 	gtk_container_add (GTK_CONTAINER (bbox), input);
+
+#if 0
+	button = gtk_button_new();
+	image = gtk_image_new_from_icon_name("media-playback-start", GTK_ICON_SIZE_BUTTON);
+	gtk_button_set_image (GTK_BUTTON (button), image);
+	gtk_button_set_label (GTK_BUTTON (button), "Listen");
+	g_signal_connect(button, "clicked", G_CALLBACK (listen_station), view);
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+#endif
 
 	button = gtk_button_new();
 	image = gtk_image_new_from_icon_name("media-playback-stop", GTK_ICON_SIZE_BUTTON);
