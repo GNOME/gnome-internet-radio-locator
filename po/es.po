@@ -387,8 +387,8 @@ msgstr ""
 #~ "Foundation, Inc, 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 "
 #~ "EE.UU."
 
-#~ msgid "Unable to load GIRL logo: %s\n"
-#~ msgstr "No se pudo cargar el logotipo de GIRL: %s\n"
+#~ msgid "Unable to load GNOME Internet Radio Locator logo: %s\n"
+#~ msgstr "No se pudo cargar el logotipo de GNOME Internet Radio Locator: %s\n"
 
 #~ msgid "Search radio station by location"
 #~ msgstr "Buscar emisora por ubicación"
@@ -437,5 +437,5 @@ msgstr ""
 #~ msgid "About Station"
 #~ msgstr "Acerca de la emisora"
 
-#~ msgid "See yelp://girl"
-#~ msgstr "Consulte yelp://girl"
+#~ msgid "See yelp://gnome-internet-radio-locator"
+#~ msgstr "Consulte yelp://gnome-internet-radio-locator"

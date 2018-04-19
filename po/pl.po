@@ -36,7 +36,7 @@ msgid ""
 "allows you to easily locate and listen to Free Internet Radio stations by "
 "broadcasters on the Internet with the help of a map."
 msgstr ""
-"GIRL dla GNOME 3 to wolny program umożliwiający łatwe wyszukiwanie "
+"GNOME Internet Radio Locator dla GNOME 3 to wolny program umożliwiający łatwe wyszukiwanie "
 "i słuchanie wolnych internetowych stacji radiowych za pomocą mapy."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
@@ -45,7 +45,7 @@ msgid ""
 "desktop and requires gstreamer 1.0 to be installed for listening to Free "
 "Internet Radio stations."
 msgstr ""
-"Program GIRL został zaprojektowany dla środowiska GNOME 3 i wymaga "
+"Program GNOME Internet Radio Locator został zaprojektowany dla środowiska GNOME 3 i wymaga "
 "zainstalowania biblioteki GStreamer 1.0 do słuchania wolnych internetowych "
 "stacji radiowych."
 
@@ -54,7 +54,7 @@ msgid ""
 "Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
 "Locator for GNOME 3."
 msgstr ""
-"Ciesz się wolnymi internetowymi stacjami radiowymi w programie GIRL dla "
+"Ciesz się wolnymi internetowymi stacjami radiowymi w programie GNOME Internet Radio Locator dla "
 "GNOME 3."
 
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
