@@ -1,4 +1,19 @@
 =============
+Version 1.0.9
+=============
+
+Build
+
+	* INSTALL: Update installation instruction
+	* gtk-doc.m4: Fix build
+	* src/Makefile.am: Fix build
+
+Translations
+
+	* po/es.po: Update software package title
+	* po/pl.po: Update software package title
+
+=============
 Version 1.0.8
 =============
 
