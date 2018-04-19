@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: girl master\n"
+"Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "internet-radio-locator&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2017-08-19 15:15+0000\n"
@@ -225,8 +225,8 @@ msgstr ""
 #~ msgid "Selection cleared!\n"
 #~ msgstr "Selección eliminada\n"
 
-#~ msgid "GIRL"
-#~ msgstr "GIRL"
+#~ msgid "GNOME Internet Radio Locator for GNOME 3"
+#~ msgstr "GNOME Internet Radio Locator for GNOME 3"
 
 #~ msgid "Couldn't create pixmap"
 #~ msgstr "No se pudo crear el mapa de píxeles"
