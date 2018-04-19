@@ -31,9 +31,6 @@ msgid "Locate and listen to Free Internet Radio stations"
 msgstr "Vyhledávejte si a poslouchejte stanice internetových rádií"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
-#| msgid ""
-#| "GNOME Internet Radio Locator allows users to easily find and listen to "
-#| "live radio programs on radio broadcasters on the Internet."
 msgid ""
 "GNOME Internet Radio Locator for GNOME 3 is a Free Software program that "
 "allows you to easily locate and listen to Free Internet Radio stations by "
@@ -208,21 +205,18 @@ msgstr ""
 
 #: ../src/gnome-internet-radio-locator.c:365
 #, c-format
-#| msgid "Locate Internet Radio Stations"
 msgid "New Internet Radio Station\n"
 msgstr "Nová stanice internetového rádia\n"
 
 #: ../src/gnome-internet-radio-locator.c:371
 #, c-format
-#| msgid "Locate Internet Radio Stations"
 msgid "Search Internet Radio Station\n"
-msgstr "Vyhledat stanici internetového rádia"
+msgstr "Vyhledat stanici internetového rádia\n"
 
 #: ../src/gnome-internet-radio-locator.c:405
 #, c-format
-#| msgid "Locate Internet Radio Stations"
 msgid "Previous Internet Radio Station\n"
-msgstr "Předchozí stanice internetového rádia"
+msgstr "Předchozí stanice internetového rádia\n"
 
 #: ../src/gnome-internet-radio-locator.c:539
 msgid "Search"
@@ -237,7 +231,6 @@ msgid "Prev"
 msgstr "Předchozí"
 
 #: ../src/gnome-internet-radio-locator.c:552
-#| msgid "Locate Internet Radio Stations"
 msgid "Prev Internet Radio Station"
 msgstr "Předchozí stanice internetového rádia"
 
@@ -251,13 +244,11 @@ msgid "Next"
 msgstr "Následující"
 
 #: ../src/gnome-internet-radio-locator.c:566
-#| msgid "Locate Internet Radio Stations"
 msgid "Next Internet Radio Station"
 msgstr "Následující stanice internetového rádia"
 
 #: ../src/gnome-internet-radio-locator.c:569
 #: ../src/gnome-internet-radio-locator.c:573
-#| msgid "Default station"
 msgid "About Station"
 msgstr "O stanici"
 
