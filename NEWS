@@ -1,4 +1,23 @@
 =============
+Version 1.1.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Honolulu, Hawaii
+	* src/gnome-internet-radio-locator-markers.c: Add Paris, France
+	* src/gnome-internet-radio-locator.c: Set default center Greenwich
+	* src/gnome-internet-radio-locator.c: Set zoom-level 4
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add NRK Sport (Oslo, Norway)
+
+Translations
+
+	* po/cs.po: Updated Czech translation (Marek Cernocky)
+
+=============
 Version 1.0.9
 =============
 

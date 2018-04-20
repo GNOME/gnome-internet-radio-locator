@@ -166,6 +166,15 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
 #endif
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Honolulu, Hawaii\n<span size=\"xx-small\">Hawaii Public Radio</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),21.304547,-157.8556764);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
   station = g_strdup("London, United Kingdom\n<span size=\"xx-small\">Imperial College Radio</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
@@ -195,10 +204,19 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
 
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-  station = g_strdup("Oslo, Norway\n<span size=\"xx-small\">NRK P1</span>");
+  station = g_strdup("Oslo, Norway\n<span size=\"xx-small\">NRK Sport</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker),59.9132694,10.7391112);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Paris, France\n<span size=\"xx-small\">Radio Campus Paris</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),48.8566101,2.3514992);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */

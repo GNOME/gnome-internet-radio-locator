@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="1.0.8">
+<gnome_internet_radio_locator version="1.1.0">
   <station band="ONLINE" id="drnyheder" lang="da" name="Danmarks Radio Nyheder" rank="1.0" type="gov">
     <frequency uri="http://www.dr.dk/nyheder">FM 93.3 in Aalborg</frequency>
     <location>Copenhagen, Denmark</location>
@@ -442,6 +442,15 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     </description>
     <stream mime="audio/mpeg" uri="http://stream.ktuh.org:8000/stream-mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://ktuh.org/</uri>
+  </station>
+  <station band="ONLINE" id="nrksport" lang="no" name="NRK Sport" rank="1.0" type="gov">
+    <frequency uri="http://www.nrksport.no/">ONLINE in Oslo, Norway</frequency>
+    <location>Oslo, Norway</location>
+    <description lang="en">
+      NRK Sport is a brand name for sports produced by the sports department of Norwegian Broadcasting Corporation (NRK). The brand name is used on most national sports broadcasts on television, radio and new media.  NRK Sport is produced both in Norway and other countries.
+    </description>
+    <stream mime="audio/aac" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_sport_aac_h" codec="AAC, v4 LC" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://nrksport.no/</uri>
   </station>
   <station band="ONLINE" id="nrkp1" lang="no" name="NRK P1" rank="1.0" type="gov">
     <frequency uri="http://www.nrk.no/p1/">ONLINE in Oslo, Norway</frequency>
@@ -1032,6 +1041,7 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <stream mime="audio/mpeg" uri="http://fm939.wnyc.org/wnycfm" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Mono" bitrate="32 kbps" />
     <uri>http://www.wnyc.org/</uri>
   </station>
+  <!-- Non-streamable as of 2018/04/20
   <station band="ONLINE" id="echo" lang="ru" name="Эхо Москвы" rank="1.0" type="com">
     <frequency uri="http://echo.msk.ru/">ONLINE in Moscow, Russia</frequency>
     <location>Moscow, Russia</location>
@@ -1042,7 +1052,8 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     </description>
     <stream mime="audio/mpeg" uri="http://81.19.85.197/echo.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="154 kbps" />
     <uri>http://echo.msk.ru/</uri>
-  </station>
+    </station>
+  -->
   <station band="ONLINE" id="somafmdefcon" lang="en" name="SomaFM DEF CON" rank="1.0" type="com">
     <frequency uri="http://www.somafm.com/">ONLINE in San Francisco, California</frequency>
     <location>San Francisco, California</location>
