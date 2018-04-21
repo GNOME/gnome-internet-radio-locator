@@ -37,7 +37,7 @@ Enjoy Free Internet Radio.
 %setup -q
 
 %build
-%configure --with-recording --disable-silent-rules
+%configure --with-recording --disable-silent-rules --disable-schemas
 
 %install
 %make_install
@@ -62,15 +62,20 @@ fi
 %files -f %{name}.lang
 %doc AUTHORS DEBIAN NEWS README TODO ChangeLog
 %license COPYING
-%{_bindir}/gnome-internet-radio-locator
 %{_bindir}/%{name}
+%{_bindir}/gnome-internet-radio-locator
 %{_datadir}/%{name}/
 %{_datadir}/appdata/%{name}.appdata.xml
 %{_datadir}/applications/%{name}.desktop
+%{_datadir}/glib-2.0/schemas/org.gnome.%{name}.enums.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.%{name}.gschema.xml
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Sat Apr 21 2018 Ole Aamot <ole@gnome.org> - 1.1.0-1
+- gnome-internet-radio-locator 1.1.0 build on Fedora Linux 27
+
 * Sat Nov 25 2017 Ole Aamot <ole@gnome.org> - 1.0.2-1
 - gnome-internet-radio-locator 1.0.2 build on Fedora Linux 26
 
