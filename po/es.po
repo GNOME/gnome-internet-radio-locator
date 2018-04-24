@@ -1,24 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2015, 2016, 2017.
 # Rodrigo <rodhos92@gmail.com>, 2018.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2015, 2016, 2017, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2018-04-20 01:03+0000\n"
-"PO-Revision-Date: 2018-04-21 12:09+0200\n"
-"Last-Translator: Rodrigo <rodhos92@gmail.com>\n"
-"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
+"POT-Creation-Date: 2018-04-22 16:59+0000\n"
+"PO-Revision-Date: 2018-04-24 08:59+0200\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Gtranslator 2.91.6\n"
 
 #. give it the title
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
@@ -39,8 +39,8 @@ msgid ""
 msgstr ""
 "El buscador de emisoras de radio en Internet de GNOME para GNOME 3 es un "
 "programa de software libre que permite a los usuarios buscar y escuchar "
-"emisoras de radio en Internet fácilmente y de forma gratuita con la ayuda "
-"de un mapa."
+"emisoras de radio en Internet fácilmente y de forma gratuita con la ayuda de "
+"un mapa."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
 msgid ""
@@ -108,41 +108,41 @@ msgstr "Ancho de banda"
 
 #: ../src/gnome-internet-radio-locator-gui.c:292
 msgid "City name"
-msgstr ""
+msgstr "Nombre de la ciudad"
 
 #: ../src/gnome-internet-radio-locator-gui.c:296
 msgid "http://uri-to-stream/"
-msgstr ""
+msgstr "http://uri-del-flujo/"
 
 #: ../src/gnome-internet-radio-locator-gui.c:297
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../src/gnome-internet-radio-locator-gui.c:298
 msgid "http://uri-to-website/"
-msgstr ""
+msgstr "http://uri-del-sitio-web/"
 
 #: ../src/gnome-internet-radio-locator-gui.c:311
 #, c-format
 msgid "Failed to open %s.  Please install it.\n"
-msgstr "Falló al abrir %s. Instálelo.\n"
+msgstr "No se pudo abrir %s. Instálelo.\n"
 
 #: ../src/gnome-internet-radio-locator-gui.c:459
 #: ../src/gnome-internet-radio-locator.c:381
 msgid "http://fm939.wnyc.org/wnycfm"
-msgstr ""
+msgstr "http://fm939.wnyc.org/wnycfm"
 
 #: ../src/gnome-internet-radio-locator-gui.c:462
 msgid "WNYC"
-msgstr ""
+msgstr "WNYC"
 
 #: ../src/gnome-internet-radio-locator-gui.c:465
 msgid "New York City, NY"
-msgstr ""
+msgstr "Nueva York, NY"
 
 #: ../src/gnome-internet-radio-locator-gui.c:468
 msgid "ONLINE"
-msgstr ""
+msgstr "CONECTADO"
 
 #: ../src/gnome-internet-radio-locator-gui.c:471
 msgid ""
@@ -151,6 +151,10 @@ msgid ""
 "Radio International and the BBC World Service, as well as a wide range of "
 "award-winning local programming."
 msgstr ""
+"WNYC 93.9 FM y AM 820 son las principales emisoras de radio públicas de "
+"Nueva York, emitiendo programas de la mejor calidad como NPR, American "
+"Public Media, Public Radio International y el BBC World Service, así como un "
+"rango amplio de programación local galardonada."
 
 #. printf("Archiving program at %s\n", archive);
 #: ../src/gnome-internet-radio-locator-station.c:129
@@ -182,7 +186,7 @@ msgstr ""
 #: ../src/gnome-internet-radio-locator-station.c:344
 #, c-format
 msgid "Failed to run %s (%i)\n"
-msgstr "Falló al ejecutar %s (%i)\n"
+msgstr "No se pudo ejecutar %s (%i)\n"
 
 #: ../src/gnome-internet-radio-locator-station.c:231
 #: ../src/gnome-internet-radio-locator-station.c:368
@@ -192,7 +196,7 @@ msgid ""
 "Status code: %i\n"
 "Details: %s"
 msgstr ""
-"Falló al abrir el URL: «%s»\n"
+"No se pudo abrir el URL: «%s»\n"
 "Código de estado: %i\n"
 "Detalles: %s"
 
@@ -203,7 +207,7 @@ msgid ""
 "Failed to open URL: '%s'\n"
 "Details: %s"
 msgstr ""
-"Falló al abrir el URL: «%s»\n"
+"No se pudo abrir el URL: «%s»\n"
 "Detalles: %s"
 
 #: ../src/gnome-internet-radio-locator.c:365
