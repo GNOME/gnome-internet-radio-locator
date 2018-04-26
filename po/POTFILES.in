@@ -3,7 +3,6 @@
 [encoding: UTF-8]
 data/gnome-internet-radio-locator.appdata.xml.in
 data/gnome-internet-radio-locator.desktop.in.in
-[type: gettext/gsettings]data/org.gnome.gnome-internet-radio-locator.gschema.xml.in
 src/gnome-internet-radio-locator-gui.c
 src/gnome-internet-radio-locator-listener.c
 src/gnome-internet-radio-locator-station.c

@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.59)
-AC_INIT(gnome-internet-radio-locator,1.1.0)
+AC_INIT(gnome-internet-radio-locator,1.1.1)
 AM_INIT_AUTOMAKE([-Wno-portability 1.11 no-dist-gzip dist-xz tar-ustar subdir-objects])
 AM_MAINTAINER_MODE
 AC_CONFIG_SRCDIR([src/gnome-internet-radio-locator.c])
@@ -91,7 +91,6 @@ PKG_CHECK_MODULES(GNOME_INTERNET_RADIO_LOCATOR,
 		  glib-2.0 >= 2.38.0 \
 		  gobject-2.0 >= 2.38.0 \
 		  gstreamer-1.0 >= 1.0 \
-		  gsettings-desktop-schemas >= 2.91.92 \
 		  gstreamer-player-1.0 >= 1.0 \
 		  gstreamer-tag-1.0 >= 1.0 \
 		  gstreamer-video-1.0 \
@@ -133,17 +132,10 @@ AC_SUBST(GNOME_INTERNET_RADIO_LOCATOR_PKG_DEPS)
 dnl Enable yelp-tools
 # YELP_HELP_INIT
 
-# *********
-# GSettings
-# *********
-
-GLIB_GSETTINGS
-
 AC_OUTPUT([
 Makefile
 data/Makefile
 data/gnome-internet-radio-locator.desktop
-data/org.gnome.gnome-internet-radio-locator.gschema.xml
 data/icons/Makefile
 data/icons/16x16/Makefile
 data/icons/22x22/Makefile
