@@ -1,24 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Rodrigo <rodhos92@gmail.com>, 2018.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2015, 2016, 2017, 2018.
+# Rodrigo <rodhos92@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2018-04-22 16:59+0000\n"
-"PO-Revision-Date: 2018-04-24 08:59+0200\n"
-"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: es <gnome-es-list@gnome.org>\n"
+"POT-Creation-Date: 2018-04-24 07:05+0000\n"
+"PO-Revision-Date: 2018-04-26 09:47+0200\n"
+"Last-Translator: Rodrigo <rodhos92@gmail.com>\n"
+"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #. give it the title
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
@@ -211,44 +211,41 @@ msgstr ""
 "Detalles: %s"
 
 #: ../src/gnome-internet-radio-locator.c:365
-#, fuzzy, c-format
+#, c-format
 #| msgid "Internet Radio Stations"
 msgid "New Internet Radio Station\n"
-msgstr "Emisoras de radio de Internet"
+msgstr "Emisora de radio en Internet nueva\n"
 
 #: ../src/gnome-internet-radio-locator.c:371
-#, fuzzy, c-format
+#, c-format
 #| msgid "Internet Radio Stations"
 msgid "Search Internet Radio Station\n"
-msgstr "Emisoras de radio de Internet"
+msgstr "Buscar emisora de radio en Internet\n"
 
 #: ../src/gnome-internet-radio-locator.c:406
-#, fuzzy, c-format
+#, c-format
 #| msgid "Internet Radio Stations"
 msgid "Previous Internet Radio Station\n"
-msgstr "Emisoras de radio de Internet"
+msgstr "Emisora de radio en Internet anterior\n"
 
 #: ../src/gnome-internet-radio-locator.c:540
 msgid "Search"
 msgstr "Buscar"
 
 #: ../src/gnome-internet-radio-locator.c:544
-#, fuzzy
 #| msgid "Internet Radio Stations"
 msgid "Search Internet Radio Station"
-msgstr "Emisoras de radio de Internet"
+msgstr "Buscar emisora de radio en Internet"
 
 #: ../src/gnome-internet-radio-locator.c:549
-#, fuzzy
 #| msgid "Previous"
 msgid "Prev"
-msgstr "Anterior"
+msgstr "Ant."
 
 #: ../src/gnome-internet-radio-locator.c:553
-#, fuzzy
 #| msgid "Internet Radio Stations"
 msgid "Prev Internet Radio Station"
-msgstr "Emisoras de radio de Internet"
+msgstr "Emisora de radio en Internet ant."
 
 #: ../src/gnome-internet-radio-locator.c:556
 #: ../src/gnome-internet-radio-locator.c:560
@@ -260,10 +257,9 @@ msgid "Next"
 msgstr "Siguiente"
 
 #: ../src/gnome-internet-radio-locator.c:567
-#, fuzzy
 #| msgid "Internet Radio Stations"
 msgid "Next Internet Radio Station"
-msgstr "Emisoras de radio de Internet"
+msgstr "Emisora de radio en Internet siguiente"
 
 #: ../src/gnome-internet-radio-locator.c:570
 #: ../src/gnome-internet-radio-locator.c:574
@@ -272,10 +268,9 @@ msgstr "Acerca de la emisora"
 
 #: ../src/gnome-internet-radio-locator.c:577
 #: ../src/gnome-internet-radio-locator.c:581
-#, fuzzy
 #| msgid "Program"
 msgid "About Program"
-msgstr "Programa"
+msgstr "Acerca del programa"
 
 #: ../src/gnome-internet-radio-locator.c:638
 #, c-format
@@ -283,6 +278,8 @@ msgid ""
 "Nothing\n"
 "\n"
 msgstr ""
+"Nada\n"
+"\n"
 
 #: ../src/gnome-internet-radio-locator.c:926
 msgid "Stop"
@@ -290,15 +287,15 @@ msgstr "Detener"
 
 #: ../src/gnome-internet-radio-locator.c:932
 msgid "Zoom In"
-msgstr ""
+msgstr "Acercar"
 
 #: ../src/gnome-internet-radio-locator.c:946
 msgid "Zoom Out"
-msgstr ""
+msgstr "Alejar"
 
 #: ../src/gnome-internet-radio-locator.c:951
 msgid "Markers"
-msgstr ""
+msgstr "Marcadores"
 
 #: ../src/gnome-internet-radio-locator.c:973
 msgid "Exit"
