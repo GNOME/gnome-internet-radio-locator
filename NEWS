@@ -1,4 +1,15 @@
 =============
+Version 1.1.2
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Guatemala City, Guatemala
+	* src/gnome-internet-radio-locator-markers.c: Add Los Angeles, California
+	* src/gnome-internet-radio-locator-markers.c: Add México City, México
+	* src/gnome-internet-radio-locator-markers.c: Add Phoenix, Arizona
+
+=============
 Version 1.1.1
 =============
 
