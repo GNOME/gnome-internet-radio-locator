@@ -3,9 +3,8 @@ Version:        @VERSION@
 Release:        1%{?dist}
 Summary:        GNOME Internet Radio Locator for GNOME 3
 License:        GPLv3+
-URL:            http://people.gnome.org/~ole/gnome-internet-radio-locator
-Group:          Applications/Internet
-Source:         http://people.gnome.org/~ole/%{name}/%{name}-%{version}.tar.xz
+URL:            https://people.gnome.org/~ole/%{name}
+Source:         %{url}/%{name}-%{version}.tar.xz
 
 BuildRequires:  gtk3-devel
 BuildRequires:  pango
@@ -71,6 +70,9 @@ fi
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Fri Apr 27 2018 Ole Aamot <ole@gnome.org> - 1.1.2-2
+- gnome-internet-radio-locator 1.1.2 build on Fedora Linux 28
+
 * Sun Apr 22 2018 Ole Aamot <ole@gnome.org> - 1.1.1-1
 - gnome-internet-radio-locator 1.1.1 build on Fedora Linux 27
 
