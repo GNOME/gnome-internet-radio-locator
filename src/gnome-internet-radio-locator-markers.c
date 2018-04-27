@@ -154,17 +154,15 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
 #endif
-#if 0 /* Non-streamable as of 2018/03/26 */
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-  station = g_strdup("Moscow, Russia\n<span size=\"xx-small\">Echo of Moscow</span>");
+  station = g_strdup("Guatemala City, Guatemala\n<span size=\"xx-small\">Radio Universidad</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 55.4792046, 37.3273304);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),14.6417889,-90.5132239);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
-#endif
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
   station = g_strdup("Honolulu, Hawaii\n<span size=\"xx-small\">Hawaii Public Radio</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
@@ -193,6 +191,35 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Los Angeles, California\n<span size=\"xx-small\">KXSC</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),34.1430079,-118.14176172581);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("México City, México\n<span size=\"xx-small\">Radio UNAM</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),19.647012,-101.22900565);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+#if 0 /* Non-streamable as of 2018/03/26 */
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Moscow, Russia\n<span size=\"xx-small\">Echo of Moscow</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 55.4792046, 37.3273304);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+#endif
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
   station = g_strdup("Newcastle, Australia\n<span size=\"xx-small\">2NURFM</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
@@ -201,7 +228,6 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
-
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
   station = g_strdup("New York City, New York\n<span size=\"xx-small\">WKCR</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
@@ -211,7 +237,6 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
-
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
   station = g_strdup("Oslo, Norway\n<span size=\"xx-small\">NRK Sport</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
@@ -226,6 +251,15 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker),48.8566101,2.3514992);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Phoenix, Arizona\n<span size=\"xx-small\">KASC</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),33.4485866,-112.0773456);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
