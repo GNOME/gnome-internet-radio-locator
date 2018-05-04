@@ -16,7 +16,7 @@ dnf install gstreamer1-plugins-base-devel
 dnf install gstreamer1 gstreamer-devel 
 dnf install geocode-glib
 dnf install gsettings-desktop-schemas-devel
-dnf install gtk-doc rpmbuild
+dnf install gtk-doc rpm-build
 ./autogen.sh && make distcheck && mkdir -p $HOME/rpmbuild/SOURCES/ && mkdir -p $HOME/rpmbuild/SPECS/
 cp *.tar.xz $HOME/rpmbuild/SOURCES/ && cp gnome-internet-radio-locator.spec $HOME/rpmbuild/SPECS/
 rpmbuild -ba $HOME/rpmbuild/SPECS/gnome-internet-radio-locator.spec
