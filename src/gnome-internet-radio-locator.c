@@ -670,7 +670,7 @@ on_search_matches(GtkEntryCompletion *widget,
 		  GtkTreeIter *iter,
 		  gpointer user_data)
 {
-	GeocodeNominatim *geocode_nominatim;
+	/* GeocodeNominatim *geocode_nominatim; */
 	GeocodePlace *place;
 	GeocodeLocation *geocode_location;
 
