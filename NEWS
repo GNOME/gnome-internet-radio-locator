@@ -1,4 +1,16 @@
 =============
+Version 1.1.3
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Set colors for clutter labels
+
+Translations
+
+	* po/de.po: Updated German translation (Mario Blättermann)
+
+=============
 Version 1.1.2
 =============
 
