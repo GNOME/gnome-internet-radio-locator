@@ -111,6 +111,28 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker));
 #endif
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Ayr, Scotland\n<span size=\"small\">UWS Radio</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
+  champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 55.4594119, -4.6326702);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Bergen, Norway\n<span size=\"small\">SRIB</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
+  champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 60.3943034, 5.3258117);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
   station = g_strdup("Berkeley, California\n<span size=\"small\">KALX</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
@@ -127,7 +149,29 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 42.3604823,-71.0595678);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 42.3604823, -71.0595678);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Bruxelles, Belgium\n<span size=\"small\">Radio Campus</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
+  champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 50.84404145, 4.36720169448285);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Cambridge, United Kingdom\n<span size=\"small\">Cam FM</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
+  champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 52.2033051, 0.124862);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -138,7 +182,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),-33.928992,18.417396);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), -33.928992, 18.417396);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -161,7 +205,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 53.3497645,-6.2602732);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 53.3497645, -6.2602732);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
@@ -172,7 +216,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),14.6417889,-90.5132239);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 14.6417889, -90.5132239);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -183,7 +227,18 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),21.304547,-157.8556764);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 21.304547, -157.8556764);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Kristiansand, Norway\n<span size=\"small\">NRK Sørlandet</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
+  champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 58.14615, 7.9957333);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -194,7 +249,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),29.7589382,-95.3676974);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 29.7589382, -95.3676974);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -205,7 +260,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),51.5073219,-0.1276474);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 51.5073219, -0.1276474);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -216,7 +271,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),34.1430079,-118.14176172581);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 34.1430079, -118.14176172581);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -227,7 +282,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),19.647012,-101.22900565);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 19.647012, -101.22900565);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -251,7 +306,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),-32.9272881,151.7812534);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), -32.9272881, 151.7812534);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -273,7 +328,18 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),59.9132694,10.7391112);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 59.9132694, 10.7391112);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Oxford, United Kingdom\n<span size=\"small\">Oxide Radio</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
+  champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 51.7520131, -1.2578499);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -284,7 +350,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),48.8566101,2.3514992);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 48.8566101, 2.3514992);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -295,7 +361,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker),33.4485866,-112.0773456);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 33.4485866, -112.0773456);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -306,7 +372,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.7792808,-122.4192363);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.7792808, -122.4192363);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -317,7 +383,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 47.6038321,-122.3300624);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 47.6038321, -122.3300624);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -328,7 +394,18 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.4248398,-122.1677058);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 37.4248398, -122.1677058);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("Trondheim, Norway\n<span size=\"small\">Radio Revolt</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
+  champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 63.4305658, 10.3951929);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */

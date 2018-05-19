@@ -394,13 +394,13 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://universitetsradioen.dk</uri>
   </station>
   <station band="87.7FM" id="uwsradio" lang="en" name="UWSRadio" rank="1.0" type="edu">
-    <frequency uri="http://uwsradio.uws.ac.uk">87.7 FM in Ayr, Dublin</frequency>
+    <frequency uri="http://www.uwsradio.scot/">87.7 FM in Ayr, Scotland</frequency>
     <location>Ayr, Scotland</location>
     <description>
-      UWS Radio is the student radio station on the Ayr campus of The University of the West of Scotland.
+      UWS Radio (formally UCA) is the student radio station on the Ayr campus of The University of the West of Scotland.
     </description>
     <stream mime="audio/mpeg" uri="http://icecast.commedia.org.uk:8000/ucaradio.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <uri>http://uwsradio.uws.ac.uk</uri>
+    <uri>http://www.uwsradio.scot/</uri>
   </station>
   <station band="99.1FM" id="radioaf" lang="sv" name="Radio AF" rank="1.0" type="edu">
     <frequency uri="http://www.radioaf.se/">99.1 FM in Lund, Sweden</frequency>
@@ -899,12 +899,11 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <uri>http://pulselse.co.uk/</uri>
   </station>
   -->
-  <!-- Non-streamable per 2016/07/07
   <station band="107.9FM" id="oxide" lang="en" name="Oxford Student Radio" rank="1.0" type="edu">
-    <frequency uri="http://oxideradio.co.uk/">107.9 FM in Oxford, United Kingdom</frequency>
+    <frequency uri="https://www.oxideradio.live/">107.9 FM in Oxford, United Kingdom</frequency>
     <location>Oxford, United Kingdom</location>
     <description lang="en">Oxide Radio is a student radio station run by members of Oxford University in Oxford, England.</description>
-    <stream mime="audio/mpeg" uri="http://sirius.shoutca.st:9008/stream.m3u" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/mpeg" uri="http://109.74.196.76/proxy/oxideradio?mp=/stream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://oxideradio.co.uk/</uri>
   </station>
   -->

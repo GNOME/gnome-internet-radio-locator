@@ -1,4 +1,19 @@
 =============
+Version 1.2.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Ayr, Scotland
+	* src/gnome-internet-radio-locator-markers.c: Bergen, Norway
+	* src/gnome-internet-radio-locator-markers.c: Bruxelles, Belgium
+	* src/gnome-internet-radio-locator-markers.c: Cambridge, United Kingdom
+	* src/gnome-internet-radio-locator-markers.c: Kristiansand, Norway
+	* src/gnome-internet-radio-locator-markers.c: Oxford, United Kingdom
+	* src/gnome-internet-radio-locator-markers.c: Trondheim, Norway
+	* src/gnome-internet-radio-locator.c: Royal Observatory Greenwich
+
+=============
 Version 1.1.3
 =============
 
