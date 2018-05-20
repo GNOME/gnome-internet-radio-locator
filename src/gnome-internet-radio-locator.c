@@ -777,7 +777,7 @@ main (int argc,
 
 	g_object_set (G_OBJECT (view),
 		      "kinetic-mode", TRUE,
-		      "zoom-level", 4,
+		      "zoom-level", 3,
 		      NULL);
 
 	g_object_set_data (G_OBJECT (view), "window", window);
@@ -796,7 +796,7 @@ main (int argc,
 
 	license_actor = champlain_view_get_license_actor (view);
 	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
-	champlain_view_center_on (CHAMPLAIN_VIEW (view), 51.47736225, -0.000845336047094045);
+	champlain_view_center_on (CHAMPLAIN_VIEW (view), 40.7306458, -73.9866136);
 	layer = create_marker_layer (view, &path);
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (path));
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (layer));
