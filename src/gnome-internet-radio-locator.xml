@@ -364,12 +364,13 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.memphis.edu/wumr/</uri>
   </station>
   <station band="100FM" id="radiorevolt" lang="no" name="Radio Revolt" rank="1.0" type="edu">
-    <frequency uri="http://www.radiorevolt.no/">100 FM in Trondheim, Norway</frequency>
+    <frequency uri="https://www.radiorevolt.no/">100 FM in Trondheim, Norway</frequency>
     <location>Trondheim, Norway</location>
     <description lang="en">
       Radio Revolt (formerly known as Studentradion i Trondheim), is the student radio in Trondheim, Norway. It airs 55 hours a week on 100 and 106,2 FM, and 24 hours a day on the internet. It employs about 80 students on a voluntary basis. The radio is a part of the Student Society in Trondheim, and is so a part of the running of the house.
     </description>
-    <stream mime="audio/mpeg" uri="http://streamer.radiorevolt.no:8000/revolt" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/aac" uri="http://streamer.radiorevolt.no:8000/revolt.aac" codec="AAC, v4 LC" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/ogg" uri="http://streamer.radiorevolt.no:8000/revolt.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.radiorevolt.no/</uri>
   </station>
   <!-- Non-streamable as of 2016/07/07
@@ -875,6 +876,30 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <description lang="en">Radio Campus est née en 1980 sur le campus de l’Université Libre de Bruxelles. Avec une cinquantaine d’émissions, elle rassemble plus de 150 animateurs, techniciens et collaborateurs autour de valeurs partagées : une libre expression assumée et constructive, un attachement immodéré au tissu social bruxellois et un amour sans borne pour la diversité musicale et culturelle.</description>
     <stream mime="audio/ogg" uri="http://streamer.radiocampus.be:8000/stream_hi.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="192 kbps" />
     <uri>http://www.radiocampus.be/</uri>
+  </station>
+  <station band="93.5FM" id="franceculture" lang="fr" name="France Culture" rank="1.0" type="public">
+    <frequency uri="http://www.franceculture.fr/">93.5 FM in Paris, France</frequency>
+    <location>Paris, France</location>
+    <description lang="en">France Culture is a French public radio channel and part of Radio France. Its programming encompasses a wide variety of features on historical, philosophical, sociopolitical, and scientific themes (including debates, discussions, and documentaries), as well as literary readings, radio plays, and experimental productions. The channel is broadcast nationwide on FM and is also available online.</description>
+    <stream mime="audio/mpeg" uri="http://direct.franceculture.fr/live/franceculture-midfi.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="64 kbps" />
+    <stream mime="audio/mpeg" uri="http://direct.franceculture.fr/live/franceculture-lofi.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="32 kbps" />
+    <uri>http://www.franceculture.fr/</uri>
+  </station>
+  <station band="105.5FM" id="franceinfo" lang="fr" name="France Info" rank="1.0" type="public">
+    <frequency uri="http://www.franceinfo.fr/">105.5 FM in Paris, France</frequency>
+    <location>Paris, France</location>
+    <description lang="en">France Info is a radio network operated by the French public service radio broadcaster Radio France. It provides continuous live news and information. Broadcasting on FM (as well as being streamed on the internet), France Info is receivable across France and audible too in the border regions of neighbouring countries, including southern parts of the United Kingdom, especially the southeastern coastal region of England.</description>
+    <stream mime="audio/mpeg" uri="http://direct.franceinfo.fr/live/franceinfo-midfi.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="64 kbps" />
+    <stream mime="audio/mpeg" uri="http://direct.franceinfo.fr/live/franceinfo-lofi.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="32 kbps" />
+    <uri>http://www.franceinfo.fr/</uri>
+  </station>
+  <station band="87.8FM" id="franceinter" lang="fr" name="France Inter" rank="1.0" type="public">
+    <frequency uri="http://www.franceinter.fr/">87.8 FM in Paris, France</frequency>
+    <location>Paris, France</location>
+    <description lang="en">France Inter is a major French public radio channel and part of Radio France. It is a "generalist" station, aiming to provide a wide national audience with a full service of news and spoken-word programming, both serious and entertaining, liberally punctuated with an eclectic mix of music. France Inter broadcasts on FM transmitters across France, and via the internet.</description>
+    <stream mime="audio/mpeg" uri="http://direct.franceinter.fr/live/franceinter-midfi.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="64 kbps" />
+    <stream mime="audio/mpeg" uri="http://direct.franceinter.fr/live/franceinter-lofi.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="32 kbps" />
+    <uri>http://www.franceinter.fr/</uri>
   </station>
   <station band="93.9FM" id="radiocampusparis" lang="fr" name="Radio Campus Paris" rank="1.0" type="edu">
     <frequency uri="http://www.radiocampusparis.org/">93.9 FM in Paris, France</frequency>

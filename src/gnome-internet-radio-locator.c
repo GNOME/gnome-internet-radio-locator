@@ -34,7 +34,6 @@
 #include "gnome-internet-radio-locator-gui.h"
 #include "gnome-internet-radio-locator-markers.h"
 #include "gnome-internet-radio-locator-player.h"
-#include "gnome-internet-radio-locator-radius.h"
 
 #define N_COLS 2
 #define COL_ID 0
@@ -796,7 +795,7 @@ main (int argc,
 
 	license_actor = champlain_view_get_license_actor (view);
 	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
-	champlain_view_center_on (CHAMPLAIN_VIEW (view), 40.7306458, -73.9866136);
+	champlain_view_center_on (CHAMPLAIN_VIEW (view), 48.8582602, 2.29449905431968);
 	layer = create_marker_layer (view, &path);
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (path));
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (layer));
