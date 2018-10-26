@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2018-02-24 19:48+0000\n"
-"PO-Revision-Date: 2018-03-11 17:07+0700\n"
-"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"POT-Creation-Date: 2018-03-26 22:32+0000\n"
+"PO-Revision-Date: 2018-04-09 13:51+0700\n"
+"Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -18,38 +18,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
 
+#. give it the title
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
-msgid "GNOME Internet Radio Locator"
-msgstr "GNOME Internet Radio Locator"
+#: ../src/gnome-internet-radio-locator.c:592
+#: ../src/gnome-internet-radio-locator.c:762
+msgid "GNOME Internet Radio Locator for GNOME 3"
+msgstr "GNOME Internet Radio Locator untuk GNOME 3"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
-msgid "Listen to and record from Internet radio"
-msgstr "Dengar dan rekam dari radio internet"
+msgid "Locate and listen to Free Internet Radio stations"
+msgstr "Cari dan dengarkan Stasiun Radio Internet Gratis"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
 msgid ""
-"GNOME Internet Radio Locator allows users to easily find and listen to live "
-"radio programs on radio broadcasters on the Internet."
+"GNOME Internet Radio Locator for GNOME 3 is a Free Software program that "
+"allows you to easily locate and listen to Free Internet Radio stations by "
+"broadcasters on the Internet with the help of a map."
 msgstr ""
-"GNOME Internet Radio Locator memungkinkan pengguna dengan mudah untuk "
-"menemukan dan mendengarkan program radio langsung di radio penyiaran di "
-"Internet."
+"GNOME Internet Radio Locator untuk GNOME 3 adalah program Perangkat Lunak "
+"Bebas yang memungkinkan Anda dengan mudah menemukan dan mendengarkan stasiun "
+"Radio Internet Gratis oleh penyiar di Internet dengan bantuan peta."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
 msgid ""
-"GNOME Internet Radio Locator is developed for the GNOME desktop and requires "
-"gstreamer 1.0 to be installed for playback of supported radio stations."
+"GNOME Internet Radio Locator for GNOME 3 is developed for the GNOME 3 "
+"desktop and requires gstreamer 1.0 to be installed for listening to Free "
+"Internet Radio stations."
 msgstr ""
-"GNOME Internet Radio Locator dikembangkan untuk destop GNOME dan membutuhkan "
-"gstreamer 1.0 untuk dipasang untuk pemutaran stasiun radio yang didukung."
+"GNOME Internet Radio Locator untuk GNOME 3 dikembangkan untuk destop GNOME 3 "
+"dan membutuhkan gstreamer 1.0 untuk dipasang untuk mendengarkan stasiun "
+"Radio Internet Gratis."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:5
 msgid ""
-"Enjoy listening to and recording from supported Internet Radio stations in "
-"GNOME Internet Radio Locator."
+"Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
+"Locator for GNOME 3."
 msgstr ""
-"Nikmati mendengarkan dan merekam dari stasiun Radio Internet yang didukung "
-"di GNOME Internet Radio Locator."
+"Nikmati mendengarkan stasiun Radio Internet Gratis di GNOME Internet Radio "
+"Locator untuk GNOME 3."
 
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
 msgid "Internet Radio Locator"
@@ -71,6 +77,81 @@ msgstr "Stasiun bawaan"
 #: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:2
 msgid "Default Internet Radio station."
 msgstr "Stasiun Radio Internet bawaan"
+
+#: ../src/gnome-internet-radio-locator-gui.c:99
+#: ../src/gnome-internet-radio-locator-gui.c:113
+#: ../src/gnome-internet-radio-locator-gui.c:325
+#: ../src/gnome-internet-radio-locator.c:876
+#, c-format
+msgid "Failed to open %s\n"
+msgstr "Gagal membuka %s\n"
+
+#. The Stations dialog
+#: ../src/gnome-internet-radio-locator-gui.c:264
+msgid "New Internet Radio Station"
+msgstr "Stasiun Radio Internet Baru"
+
+#: ../src/gnome-internet-radio-locator-gui.c:267
+msgid "_Save"
+msgstr "_Simpan"
+
+#: ../src/gnome-internet-radio-locator-gui.c:289
+msgid "Station name"
+msgstr "Nama stasiun"
+
+#: ../src/gnome-internet-radio-locator-gui.c:290
+msgid "Bandwidth"
+msgstr "Lebar Pita"
+
+#: ../src/gnome-internet-radio-locator-gui.c:292
+msgid "City name"
+msgstr "Nama kota"
+
+#: ../src/gnome-internet-radio-locator-gui.c:296
+msgid "http://uri-to-stream/"
+msgstr "http://uri-untuk-stream/"
+
+#: ../src/gnome-internet-radio-locator-gui.c:297
+msgid "Description"
+msgstr "Deskripsi"
+
+#: ../src/gnome-internet-radio-locator-gui.c:298
+msgid "http://uri-to-website/"
+msgstr "http://uri-ke-situsweb/"
+
+#: ../src/gnome-internet-radio-locator-gui.c:311
+#, c-format
+msgid "Failed to open %s.  Please install it.\n"
+msgstr "Gagal membuka %s. Silakan pasang.\n"
+
+#: ../src/gnome-internet-radio-locator-gui.c:459
+#: ../src/gnome-internet-radio-locator.c:380
+msgid "http://fm939.wnyc.org/wnycfm"
+msgstr "http://fm939.wnyc.org/wnycfm"
+
+#: ../src/gnome-internet-radio-locator-gui.c:462
+msgid "WNYC"
+msgstr "WNYC"
+
+#: ../src/gnome-internet-radio-locator-gui.c:465
+msgid "New York City, NY"
+msgstr "Kota New York, NY"
+
+#: ../src/gnome-internet-radio-locator-gui.c:468
+msgid "ONLINE"
+msgstr "DARING"
+
+#: ../src/gnome-internet-radio-locator-gui.c:471
+msgid ""
+"WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, "
+"broadcasting the finest programs from NPR, American Public Media, Public "
+"Radio International and the BBC World Service, as well as a wide range of "
+"award-winning local programming."
+msgstr ""
+"WNYC 93,9 FM dan AM 820 adalah stasiun radio publik utama New York, "
+"menyiarkan program terbaik dari NPR, Media Publik Amerika, Radio Publik "
+"Internasional dan BBC World Service, serta berbagai program lokal pemenang "
+"penghargaan."
 
 #. printf("Archiving program at %s\n", archive);
 #: ../src/gnome-internet-radio-locator-station.c:129
@@ -125,3 +206,89 @@ msgid ""
 msgstr ""
 "Gagal membuka URL: '%s'\n"
 "Rincian: %s"
+
+#: ../src/gnome-internet-radio-locator.c:365
+#, c-format
+msgid "New Internet Radio Station\n"
+msgstr "Stasiun Radio Internet Baru\n"
+
+#: ../src/gnome-internet-radio-locator.c:371
+#, c-format
+msgid "Search Internet Radio Station\n"
+msgstr "Cari Stasiun Radio Internet\n"
+
+#: ../src/gnome-internet-radio-locator.c:405
+#, c-format
+msgid "Previous Internet Radio Station\n"
+msgstr "Stasiun Radio Internet Sebelumnya\n"
+
+#: ../src/gnome-internet-radio-locator.c:539
+msgid "Search"
+msgstr "Cari"
+
+#: ../src/gnome-internet-radio-locator.c:543
+msgid "Search Internet Radio Station"
+msgstr "Cari Stasiun Radio Internet"
+
+#: ../src/gnome-internet-radio-locator.c:548
+msgid "Prev"
+msgstr "Sebelumnya"
+
+#: ../src/gnome-internet-radio-locator.c:552
+msgid "Prev Internet Radio Station"
+msgstr "Stasiun Radio Internet Sebelumnya"
+
+#: ../src/gnome-internet-radio-locator.c:555
+#: ../src/gnome-internet-radio-locator.c:559
+msgid "Stations"
+msgstr "Stasiun"
+
+#: ../src/gnome-internet-radio-locator.c:562
+msgid "Next"
+msgstr "Selanjutnya"
+
+#: ../src/gnome-internet-radio-locator.c:566
+msgid "Next Internet Radio Station"
+msgstr "Stasiun Radio Internet Selanjutnya"
+
+#: ../src/gnome-internet-radio-locator.c:569
+#: ../src/gnome-internet-radio-locator.c:573
+msgid "About Station"
+msgstr "Tentang Stasiun"
+
+#: ../src/gnome-internet-radio-locator.c:576
+#: ../src/gnome-internet-radio-locator.c:580
+msgid "About Program"
+msgstr "Tentang Program"
+
+#: ../src/gnome-internet-radio-locator.c:637
+#, c-format
+msgid ""
+"Nothing\n"
+"\n"
+msgstr ""
+"Nihil\n"
+"\n"
+
+#: ../src/gnome-internet-radio-locator.c:926
+msgid "Stop"
+msgstr "Berhenti"
+
+#: ../src/gnome-internet-radio-locator.c:932
+msgid "Zoom In"
+msgstr "Perbesar"
+
+#: ../src/gnome-internet-radio-locator.c:946
+msgid "Zoom Out"
+msgstr "Perkecil"
+
+#: ../src/gnome-internet-radio-locator.c:951
+msgid "Markers"
+msgstr "Penanda"
+
+#: ../src/gnome-internet-radio-locator.c:973
+msgid "Exit"
+msgstr "Keluar"
+
+#~ msgid "Listen to and record from Internet radio"
+#~ msgstr "Dengar dan rekam dari radio internet"
