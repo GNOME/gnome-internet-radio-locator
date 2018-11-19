@@ -46,7 +46,7 @@ Enjoy Free Internet Radio.
 appstream-util validate-relax --nonet %{buildroot}/%{_metainfodir}/%{name}.appdata.xml
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 %files -f %{name}.lang
-%doc AUTHORS DEBIAN NEWS README TODO ChangeLog
+%doc AUTHORS NEWS README TODO ChangeLog
 %license COPYING
 %{_bindir}/%{name}
 %{_bindir}/gnome-internet-radio-locator
