@@ -1,4 +1,25 @@
 =============
+Version 1.5.0
+=============
+
+Autotools
+
+	* configure.ac: Add dependency on gstreamer-plugins-bad-1.0 codecs
+	* configure.ac: Add dependency on gstreamer-plugins-base-1.0 codecs
+	* configure.ac: Add dependency on gstreamer-plugins-good-1.0 codecs
+
+Build
+	* gnome-internet-radio-locator.spec.in: #1517451 (Red Hat Bugzilla)
+
+Translations
+
+	* po/ca.po: Updated Catalan translation (Pere Orga)
+	* po/de.po: Updated German translation (Mario Blättermann)
+	* po/fr.po: Updated French translation (Claude Paroz)
+	* po/hr.po: Updated Croatian translation (Goran Vidović)
+	* po/id.po: Updated Indonesian translation (Kukuh Syafaat)
+
+=============
 Version 1.4.0
 =============
 
