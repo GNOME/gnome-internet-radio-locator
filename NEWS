@@ -1,4 +1,28 @@
 =============
+Version 1.6.0
+=============
+
+Appdata
+
+	* data/Makefile.am: Install appdata in /usr/share/metainfo (#1517451)
+
+Autotools
+
+	* configure.ac: Remove dependency on gstreamer-plugins-good-1.0 codec
+
+Build
+	* gnome-internet-radio-locator.spec.in: #1517451 (Red Hat Bugzilla)
+
+Documentation
+
+	* help/sv/sv.po: New Swedish help translation (Isak Ostlund)
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Copenhagen, Denmark
+	* src/gnome-internet-radio-locator-markers.c: Add Stockholm, Sweden
+
+=============
 Version 1.5.0
 =============
 

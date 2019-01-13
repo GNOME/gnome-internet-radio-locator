@@ -43,7 +43,7 @@ Enjoy Free Internet Radio.
 %find_lang %{name} --with-man
 
 %check
-appstream-util validate-relax --nonet %{buildroot}/%{_metainfodir}/%{name}.appdata.xml
+appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{name}.appdata.xml
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 %files -f %{name}.lang
 %doc AUTHORS NEWS README TODO ChangeLog
@@ -57,6 +57,9 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Sun Jan 13 2019 Ole Aamot <ole@gnome.org> - 1.6.0-0
+- gnome-internet-radio-locator 1.6.0 build on Fedora Linux 29
+
 * Fri Dec 28 2018 Ole Aamot <ole@gnome.org> - 1.5.0-0
 - gnome-internet-radio-locator 1.5.0 build on Fedora Linux 29
 
