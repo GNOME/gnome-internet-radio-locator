@@ -1,4 +1,16 @@
 =============
+Version 1.8.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add marker for Warsaw
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add Radio Aktywne (Warsaw)
+
+=============
 Version 1.7.0
 =============
 
@@ -15,6 +27,7 @@ Documentation
 	* BROADCAST: Remove "for GNOME 3"
 	* DEBIAN: Add i386 package url
 	* FEDORA: Add x86_64 package url
+	* GNU: Add dates for Apple's binary block and GNU offer
 	* HACKING: Remove "for GNOME 3"
 	* NEWS: Remove "for GNOME 3"
 	* README: Remove "for GNOME 3"

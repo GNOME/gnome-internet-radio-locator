@@ -8,6 +8,7 @@ EXTRA_DIST = m4/ChangeLog  \
 	BROADCAST \
 	DEBIAN \
 	EFF \
+	GNU \
 	FEDORA \
 	HACKING \
 	Makefile \

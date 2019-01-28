@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="1.7.0">
+<gnome_internet_radio_locator version="1.8.0">
+  <station band="ONLINE" id="radioaktywne" lang="pl" name="Radio Aktywne" rank="1.0" type="edu">
+    <frequency uri="https://radioaktywne.pl/">ONLINE in Warsaw</frequency>
+    <location>Warsaw, Poland</location>
+    <description lang="en">
+      The first Internet radio of Warsaw University of Technology students and the first academic radio in Warsaw.  It was founded in October 2004.
+
+      Though the radio is connected with Warsaw University of Technology, its journalists include students of all Warsaw universities.
+
+For its listeners, the radio broadcasts various original programmes and a daily information and cultural programme “Aktywacja”.
+
+Each day the team of journalists prepares latest news for students, academic and cultural information and interesting facts, and invites guests.
+    </description>
+    <stream mime="audio/mpeg" uri="http://listen.radioaktywne.pl:8000/qa" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="255 kbps" />
+    <stream mime="audio/mpeg" uri="http://listen.radioaktywne.pl:8000/ramp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
+    <stream mime="audio/mpeg" uri="http://listen.radioaktywne.pl:8000/ramp3koncert" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
+    <stream mime="audio/ogg" uri="http://listen.radioaktywne.pl:8000/raogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
+    <uri>http://radioaktywne.pl/</uri>
+  </station>
   <station band="ONLINE" id="drnyheder" lang="da" name="Danmarks Radio Nyheder" rank="1.0" type="gov">
     <frequency uri="http://www.dr.dk/nyheder">FM 93.3 in Aalborg</frequency>
     <location>Copenhagen, Denmark</location>
