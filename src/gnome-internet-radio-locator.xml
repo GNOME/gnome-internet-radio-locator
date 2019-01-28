@@ -2,6 +2,16 @@
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
 <gnome_internet_radio_locator version="1.8.0">
+  <station band="98.4FM" id="radiomoreeni" lang="fi" name="Radio Moreeni" rank="1.0" type="edu">
+    <frequency uri="https://radio.uta.fi/">FM 98.4 in Tampere</frequency>
+    <location>Tampere, Finland</location>
+    <description lang="en">
+      Already over 20 years Radio Moreeni has been an essential part of Tampere, as naturally as the Pispala Ridge or the Näsinneula Tower are.
+
+      Moreeni is a part of the local cultural life, the university and the everyday life of the people who populate the city of Tampere.
+    </description>
+    <stream mime="audio/mpeg" uri="http://moreenistream1.uta.fi:8080/moreeni.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="127 kbps" />
+  </station>
   <station band="ONLINE" id="radioaktywne" lang="pl" name="Radio Aktywne" rank="1.0" type="edu">
     <frequency uri="https://radioaktywne.pl/">ONLINE in Warsaw</frequency>
     <location>Warsaw, Poland</location>
@@ -391,7 +401,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/ogg" uri="http://streamer.radiorevolt.no:8000/revolt.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.radiorevolt.no/</uri>
   </station>
-  <!-- Non-streamable as of 2016/07/07
+  <!-- Appears to be down as of 2016/07/07
   <station band="107.8FM" id="dcufm" lang="en" name="DCUfm" rank="1.0" type="edu">
     <frequency uri="http://www.dcufm.com/">107.8 FM in Dublin, Ireland</frequency>
     <location>Dublin, Ireland</location>
@@ -430,7 +440,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://live.radioaf.se:8000/;stream/1" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.radioaf.se/</uri>
   </station>
-  <!-- Non-streamable as of 2016/07/07
+  <!-- Appears to be down as of 2016/07/07
   <station band="ONLINE" id="ruv" lang="is" name="RÚV" rank="1.0" type="gov">
     <frequency uri="http://ruv.is/">ONLINE in Reykjavik, Iceland</frequency>
     <location>Reykjavik, Iceland</location>
@@ -441,7 +451,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.ruv.is/</uri>
   </station>
   -->
-  <!-- Non-streamable as of 2016/07/07
+  <!-- Appears to be down as of 2016/07/07
   <station band="ONLINE" id="RadioEco" lang="it" name="Radio Eco" rank="1.0" type="edu">
     <frequency uri="http://ktuh.org/">ONLINE in Pisa, Italy</frequency>
     <location>Pisa, Italy</location>
@@ -622,7 +632,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://audio.wpts.pitt.edu:8000/wpts_live_96s.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
     <stream mime="audio/mpeg" uri="http://audio.wpts.pitt.edu:8000/wpts_live_48s.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="48 kbps" />
   </station>
-  <!-- Non-streamable per 2016/07/07
+  <!-- Appears to be down  per 2016/07/07
   <station band="1330AM" id="wtbu" lang="en" name="WTBU" rank="1.0" type="edu">
     <frequency uri="http://www.wtburadio.org/">89.3 FM in Boston, Massachusetts</frequency>
     <location>Boston, Massachusetts</location>
@@ -657,7 +667,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://energybern.ice.infomaniak.ch/energybern-high.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.energy.ch/bern/</uri>
   </station>
-  <!-- Non-streamable as of 2016/07/07
+  <!-- Appears to be down as of 2016/07/07
   <station band="ONLINE" id="wvau" lang="en" name="WVAU" rank="1.0" type="edu">
     <frequency uri="http://www.wvau.org/">Online in Washington, District of Columbia</frequency>
     <location>Washington, District of Columbia</location>
@@ -704,7 +714,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://www.whpk.org:8000/mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://whpk.org/</uri>
   </station>
-  <!-- Non-streamable as of 2016/10/01
+  <!-- Appears to be down as of 2016/10/01
   <station band="88.9FM" id="wnyo" name="WNYO" rank="1.0" type="edu">
     <frequency uri="http://www.wnyo889.org/">88.9 FM in Oswego, New York</frequency>
     <location>Oswego, New York</location>
@@ -794,7 +804,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://wamu-1.streamguys.com/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Mono" bitrate="48 kbps" />
     <uri>http://wamu.org/</uri>
   </station>
-  <!-- Non-streamable as of 2016/07/07
+  <!-- Appears to be down as of 2016/07/07
   <station band="1580AM" id="kdup" lang="en" name="KDUP" rank="1.0" type="edu">
     <frequency uri="http://kdup.up.edu/">1580 AM in Portland, Oregon</frequency>
     <location>Portland, Oregon</location>
@@ -842,7 +852,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/ogg" uri="http://relay.radio.ethz.ch:80/sender.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.radioradius.ch/</uri>
   </station>
-  <!-- Non-streamable as of 2016/07/07
+  <!-- Appears to be down as of 2016/07/07
   <station band="ONLINE" id="lsrfm" lang="en" name="Leeds University Student Radio FM" rank="1.0" type="edu">
     <frequency uri="http://lsrfm.com/">Internet</frequency>
     <location>Leeds, United Kingdom</location>
@@ -858,7 +868,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://posurnl.nottingham.ac.uk:8080/urn_high.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://urn1350.net/</uri>
   </station>
-  <!-- Non-streamable as of 2016/07/07
+  <!-- Appears to be down as of 2016/07/07
   <station band="ONLINE" id="kcl" lang="en" name="King's College London Radio" rank="1.0" type="edu">
     <frequency uri="http://www.kclradio.co.uk/">Internet</frequency>
     <location>London, United Kingdom</location>
@@ -933,7 +943,7 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <stream mime="audio/mpeg" uri="http://198.154.112.233:8367/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://wcsb.org/</uri>
   </station>
-  <!-- Non-streamable as of 2016/07/07
+  <!-- Appears to be down as of 2016/07/07
   <station band="87.7FM" id="pulse" lang="en" name="Pulse LSE" rank="1.0" type="edu">
     <frequency uri="http://pulselse.co.uk/">87.7 FM in London, United Kingdom</frequency>
     <location>London, United Kingdom</location>
@@ -998,7 +1008,7 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <stream mime="audio/mpeg" uri="http://icecast.media.berkeley.edu:8000/kalx-128.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://kalx.berkeley.edu/</uri>
   </station>
-  <!-- Non-streamable as of 2018/03/26
+  <!-- Appears to be down as of 2018/03/26
   <station band="95.3FM" id="whrb" lang="en" name="WHRB" rank="1.0" type="edu">
     <frequency uri="http://www.whrb.org/">95.3 FM in Boston, Massachusetts</frequency>
     <location>Boston, Massachusetts</location>

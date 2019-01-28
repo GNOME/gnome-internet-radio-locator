@@ -4,11 +4,14 @@ Version 1.8.0
 
 GUI
 
+	* src/gnome-internet-radio-locator.c: Set default center Stockholm
+	* src/gnome-internet-radio-locator-markers.c: Add marker for Tampere
 	* src/gnome-internet-radio-locator-markers.c: Add marker for Warsaw
 
 Stations
 
 	* src/gnome-internet-radio-locator.xml: Add Radio Aktywne (Warsaw)
+	* src/gnome-internet-radio-locator.xml: Add Radio Moreeni (Tampere)
 
 =============
 Version 1.7.0
