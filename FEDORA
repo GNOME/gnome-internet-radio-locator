@@ -1,23 +1,7 @@
-You can install gnome-internet-radio-locator on Fedora 27 on x86_64 as root:
-dnf update
-dnf install gcc
-dnf install gnome-common
-dnf install gtk3-devel
-dnf install pango
-dnf install libchamplain-devel
-dnf install libxml2-devel
-dnf install intltool
-dnf install itstool
-dnf install libappstream-glib
-dnf install desktop-file-utils
-dnf install geocode-glib-devel
-dnf install gstreamer1-plugins-bad-free-devel gstreamer1-plugins-ugly-free
-dnf install gstreamer1-plugins-base-devel
-dnf install gstreamer1 gstreamer-devel 
-dnf install geocode-glib
-dnf install gsettings-desktop-schemas-devel
-dnf install gtk-doc rpm-build
-./autogen.sh && make distcheck && mkdir -p $HOME/rpmbuild/SOURCES/ && mkdir -p $HOME/rpmbuild/SPECS/
-cp *.tar.xz $HOME/rpmbuild/SOURCES/ && cp gnome-internet-radio-locator.spec $HOME/rpmbuild/SPECS/
-rpmbuild -ba $HOME/rpmbuild/SPECS/gnome-internet-radio-locator.spec
-rpm -Uvh $HOME/rpmbuild/RPMS/x86_64/gnome-internet-radio-locator*.rpm
+GNOME Internet Radio Locator compiles and runs on Fedora.
+
+See http://www.gnome.org/~ole/fedora/ for x86_64 packages.
+
+If you are packaging GNOME Internet Radio Locator for Fedora
+and/or other GNU/Linux distributions, please coordinate this
+with ole@gnome.org.

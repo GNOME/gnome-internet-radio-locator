@@ -1,8 +1,8 @@
 /* $Id$
  *
- * GNOME Internet Radio Locator for GNOME 3
+ * GNOME Internet Radio Locator
  *
- * Copyright (C) 2014, 2015, 2016, 2017, 2018  Ole Aamot Software
+ * Copyright (C) 2014-2019  Aamot Software
  *
  * Author: Ole Aamot <ole@gnome.org>
  *
@@ -394,7 +394,7 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	
 	GNOMEInternetRadioLocatorData *gnome_internet_radio_locator_data = g_new0(GNOMEInternetRadioLocatorData, 1);
 	char *pmf;
-	gtk_window_set_title(GTK_WINDOW(gnome_internet_radio_locator_app), "GNOME Internet Radio Locator for GNOME 3");
+	gtk_window_set_title(GTK_WINDOW(gnome_internet_radio_locator_app), "GNOME Internet Radio Locator");
 	gnome_internet_radio_locator = gnome_internet_radio_locator_data;
 	gnome_internet_radio_locator_data->settings = g_settings_new(GNOME_INTERNET_RADIO_LOCATOR_UI);
 	selected_station_uri = g_variant_get_string(g_settings_get_value (gnome_internet_radio_locator_data->settings, "selected_station_uri"), &length);

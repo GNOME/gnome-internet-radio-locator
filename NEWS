@@ -1,4 +1,52 @@
 =============
+Version 1.7.0
+=============
+
+Build
+
+	* gnome-internet-radio-locator.spec.in: Remove "for GNOME 3"
+
+DOAP
+
+	* gnome-internet-radio-locator.doap: Update description
+
+Documentation
+
+	* BROADCAST: Remove "for GNOME 3"
+	* DEBIAN: Add i386 package url
+	* FEDORA: Add x86_64 package url
+	* HACKING: Remove "for GNOME 3"
+	* NEWS: Remove "for GNOME 3"
+	* README: Remove "for GNOME 3"
+	* TODO: Remove "for GNOME 3"
+	* UBUNTU: Add amd64 package url
+
+GUI
+
+	* src/gnome-internet-radio-locator-gui.c: Update year and copyright holder
+	* src/gnome-internet-radio-locator-keys.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator-listener.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator-markers.c: Update marker for Moscow
+	* src/gnome-internet-radio-locator-markers.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator-player.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator-program.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator-radius.c: Update year and copyright holder
+	* src/gnome-internet-radio-locator-radius.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator-runners.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator-station.c: Update year and copyright holder
+	* src/gnome-internet-radio-locator-station.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator-stations-map.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator-streams.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator-tz.c: Update year and copyright holder
+	* src/gnome-internet-radio-locator-tz.h: Update year and copyright holder
+	* src/gnome-internet-radio-locator.c: Update year and copyright holder
+	* src/gnome-internet-radio-locator.h: Update year and copyright holder
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Update Echo Moscow (Эхо Москвы)
+
+=============
 Version 1.6.0
 =============
 

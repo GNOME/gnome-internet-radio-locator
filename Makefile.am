@@ -8,12 +8,14 @@ EXTRA_DIST = m4/ChangeLog  \
 	BROADCAST \
 	DEBIAN \
 	EFF \
+	FEDORA \
 	HACKING \
 	Makefile \
 	NEWS \
 	README \
 	THANKS \
 	TODO \
+	UBUNTU \
 	gnome-internet-radio-locator.spec.in
 
 DISTCLEANFILES =                \

@@ -1,8 +1,8 @@
 /* $Id$
  *
- * GNOME Internet Radio Locator for GNOME 3
+ * GNOME Internet Radio Locator
  *
- * Copyright (C) 2014, 2015, 2016, 2017, 2018  Ole Aamot Software
+ * Copyright (C) 2014-2019  Aamot Software
  *
  * Author: Ole Aamot <ole@gnome.org>
  *
@@ -589,7 +589,7 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 	gtk_container_add (GTK_CONTAINER(window), GTK_WIDGET(grid));
 	g_signal_connect (window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 #endif
-	gtk_window_set_title (GTK_WINDOW(window), _("GNOME Internet Radio Locator for GNOME 3"));
+	gtk_window_set_title (GTK_WINDOW(window), _("GNOME Internet Radio Locator"));
 	gtk_window_set_default_size (GTK_WINDOW(window), 1440, 720);
 
 	gnome_internet_radio_locator_app = create_gnome_internet_radio_locator_app();
@@ -759,7 +759,7 @@ main (int argc,
 	/* give the window a 10px wide border */
 	gtk_container_set_border_width (GTK_CONTAINER (window), 10);
 	/* give it the title */
-	gtk_window_set_title (GTK_WINDOW (window), _("GNOME Internet Radio Locator for GNOME 3"));
+	gtk_window_set_title (GTK_WINDOW (window), _("GNOME Internet Radio Locator"));
 	/* Connect the destroy event of the window with our on_destroy function
 	 * When the window is about to be destroyed we get a notificaiton and
 	 * stop the main GTK loop
