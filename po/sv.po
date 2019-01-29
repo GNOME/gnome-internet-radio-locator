@@ -1,7 +1,7 @@
 # Swedish translation for gnome-internet-radio-locator.
-# Copyright © 2017, 2018 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# Copyright © 2017-2019 gnome-internet-radio-locator's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
-# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2018, 2019.
 # Josef Andersson <josef.andersson@fripost.org>, 2018.
 #
 msgid ""
@@ -9,21 +9,18 @@ msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2018-03-28 17:52+0000\n"
-"PO-Revision-Date: 2018-03-31 22:32+0200\n"
-"Last-Translator: Josef Andersson <josef.andersson@fripost.org>\n"
+"POT-Creation-Date: 2019-01-28 02:12+0000\n"
+"PO-Revision-Date: 2019-01-29 18:09+0100\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.1\n"
 
-#. give it the title
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
-#: ../src/gnome-internet-radio-locator.c:593
-#: ../src/gnome-internet-radio-locator.c:763
 msgid "GNOME Internet Radio Locator for GNOME 3"
 msgstr "GNOME Internetradioletare för GNOME 3"
 
@@ -72,18 +69,10 @@ msgstr "Leta rätt på internetradiostationer"
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "Live;Direktsänt;Radio;Program;Station;Locator;Letare;"
 
-#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:1
-msgid "Default station"
-msgstr "Standardstation"
-
-#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:2
-msgid "Default Internet Radio station."
-msgstr "Standardstation för internetradio."
-
 #: ../src/gnome-internet-radio-locator-gui.c:99
 #: ../src/gnome-internet-radio-locator-gui.c:113
 #: ../src/gnome-internet-radio-locator-gui.c:325
-#: ../src/gnome-internet-radio-locator.c:868
+#: ../src/gnome-internet-radio-locator.c:866
 #, c-format
 msgid "Failed to open %s\n"
 msgstr "Misslyckades med att öppna %s\n"
@@ -127,7 +116,7 @@ msgid "Failed to open %s.  Please install it.\n"
 msgstr "Misslyckades med att öppna %s.  Vänligen installera det.\n"
 
 #: ../src/gnome-internet-radio-locator-gui.c:459
-#: ../src/gnome-internet-radio-locator.c:381
+#: ../src/gnome-internet-radio-locator.c:380
 msgid "http://fm939.wnyc.org/wnycfm"
 msgstr "http://fm939.wnyc.org/wnycfm"
 
@@ -209,61 +198,67 @@ msgstr ""
 "Kunde inte öppna URL: ”%s”\n"
 "Detaljer: %s"
 
-#: ../src/gnome-internet-radio-locator.c:365
+#: ../src/gnome-internet-radio-locator.c:364
 #, c-format
 msgid "New Internet Radio Station\n"
 msgstr "Ny internetradiostation\n"
 
-#: ../src/gnome-internet-radio-locator.c:371
+#: ../src/gnome-internet-radio-locator.c:370
 #, c-format
 msgid "Search Internet Radio Station\n"
 msgstr "Sök efter internetradiostation\n"
 
-#: ../src/gnome-internet-radio-locator.c:406
+#: ../src/gnome-internet-radio-locator.c:405
 #, c-format
 msgid "Previous Internet Radio Station\n"
 msgstr "Föregående internetradiostation\n"
 
-#: ../src/gnome-internet-radio-locator.c:540
+#: ../src/gnome-internet-radio-locator.c:539
 msgid "Search"
 msgstr "Sök"
 
-#: ../src/gnome-internet-radio-locator.c:544
+#: ../src/gnome-internet-radio-locator.c:543
 msgid "Search Internet Radio Station"
 msgstr "Sök efter internetradiostation"
 
-#: ../src/gnome-internet-radio-locator.c:549
+#: ../src/gnome-internet-radio-locator.c:548
 msgid "Prev"
 msgstr "Föregående"
 
-#: ../src/gnome-internet-radio-locator.c:553
+#: ../src/gnome-internet-radio-locator.c:552
 msgid "Prev Internet Radio Station"
 msgstr "Föregående internetradiostation"
 
-#: ../src/gnome-internet-radio-locator.c:556
-#: ../src/gnome-internet-radio-locator.c:560
+#: ../src/gnome-internet-radio-locator.c:555
+#: ../src/gnome-internet-radio-locator.c:559
 msgid "Stations"
 msgstr "Stationer"
 
-#: ../src/gnome-internet-radio-locator.c:563
+#: ../src/gnome-internet-radio-locator.c:562
 msgid "Next"
 msgstr "Nästa"
 
-#: ../src/gnome-internet-radio-locator.c:567
+#: ../src/gnome-internet-radio-locator.c:566
 msgid "Next Internet Radio Station"
 msgstr "Nästa internetradiostation"
 
-#: ../src/gnome-internet-radio-locator.c:570
-#: ../src/gnome-internet-radio-locator.c:574
+#: ../src/gnome-internet-radio-locator.c:569
+#: ../src/gnome-internet-radio-locator.c:573
 msgid "About Station"
 msgstr "Om station"
 
-#: ../src/gnome-internet-radio-locator.c:577
-#: ../src/gnome-internet-radio-locator.c:581
+#: ../src/gnome-internet-radio-locator.c:576
+#: ../src/gnome-internet-radio-locator.c:580
 msgid "About Program"
 msgstr "Om programmet"
 
-#: ../src/gnome-internet-radio-locator.c:638
+#. give it the title
+#: ../src/gnome-internet-radio-locator.c:592
+#: ../src/gnome-internet-radio-locator.c:762
+msgid "GNOME Internet Radio Locator"
+msgstr "GNOME Internetradioletare"
+
+#: ../src/gnome-internet-radio-locator.c:637
 #, c-format
 msgid ""
 "Nothing\n"
@@ -272,25 +267,31 @@ msgstr ""
 "Ingenting\n"
 "\n"
 
-#: ../src/gnome-internet-radio-locator.c:927
+#: ../src/gnome-internet-radio-locator.c:925
 msgid "Stop"
 msgstr "Stoppa"
 
-#: ../src/gnome-internet-radio-locator.c:933
+#: ../src/gnome-internet-radio-locator.c:931
 msgid "Zoom In"
 msgstr "Zooma in"
 
-#: ../src/gnome-internet-radio-locator.c:947
+#: ../src/gnome-internet-radio-locator.c:945
 msgid "Zoom Out"
 msgstr "Zooma ut"
 
-#: ../src/gnome-internet-radio-locator.c:952
+#: ../src/gnome-internet-radio-locator.c:950
 msgid "Markers"
 msgstr "Markörer"
 
-#: ../src/gnome-internet-radio-locator.c:974
+#: ../src/gnome-internet-radio-locator.c:972
 msgid "Exit"
 msgstr "Avsluta"
+
+#~ msgid "Default station"
+#~ msgstr "Standardstation"
+
+#~ msgid "Default Internet Radio station."
+#~ msgstr "Standardstation för internetradio."
 
 #~ msgid "Listen to and record from Internet radio"
 #~ msgstr "Lyssna på och spela in från internetradio"
