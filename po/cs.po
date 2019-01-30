@@ -1,15 +1,15 @@
 # Czech translation for gnome-internet-radio-locator.
 # Copyright (C) 2017 gnome-internet-radio-locator's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
-# Marek Černocký <marek@manet.cz>, 2017, 2018.
+# Marek Černocký <marek@manet.cz>, 2017, 2018, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2018-03-26 22:32+0000\n"
-"PO-Revision-Date: 2018-04-19 22:18+0200\n"
+"POT-Creation-Date: 2019-01-28 02:12+0000\n"
+"PO-Revision-Date: 2019-01-30 10:04+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -19,10 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.7\n"
 
-#. give it the title
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
-#: ../src/gnome-internet-radio-locator.c:592
-#: ../src/gnome-internet-radio-locator.c:762
 msgid "GNOME Internet Radio Locator for GNOME 3"
 msgstr "Vyhledávání internetových rádií pro GNOME 3"
 
@@ -70,18 +67,10 @@ msgstr "Vyhledávejte si stanice internetových rádií"
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "živě;živé vysílání;program;stanice;ladění;vyhledávání;"
 
-#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:1
-msgid "Default station"
-msgstr "Výchozí stanice"
-
-#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:2
-msgid "Default Internet Radio station."
-msgstr "Výchozí stanice internetového rádia."
-
 #: ../src/gnome-internet-radio-locator-gui.c:99
 #: ../src/gnome-internet-radio-locator-gui.c:113
 #: ../src/gnome-internet-radio-locator-gui.c:325
-#: ../src/gnome-internet-radio-locator.c:876
+#: ../src/gnome-internet-radio-locator.c:866
 #, c-format
 msgid "Failed to open %s\n"
 msgstr "Selhalo otevření souboru %s\n"
@@ -203,12 +192,12 @@ msgstr ""
 "Selhalo otevření adresy URL: „%s“\n"
 "Podrobnosti: %s"
 
-#: ../src/gnome-internet-radio-locator.c:365
+#: ../src/gnome-internet-radio-locator.c:364
 #, c-format
 msgid "New Internet Radio Station\n"
 msgstr "Nová stanice internetového rádia\n"
 
-#: ../src/gnome-internet-radio-locator.c:371
+#: ../src/gnome-internet-radio-locator.c:370
 #, c-format
 msgid "Search Internet Radio Station\n"
 msgstr "Vyhledat stanici internetového rádia\n"
@@ -257,6 +246,12 @@ msgstr "O stanici"
 msgid "About Program"
 msgstr "O aplikaci"
 
+#. give it the title
+#: ../src/gnome-internet-radio-locator.c:592
+#: ../src/gnome-internet-radio-locator.c:762
+msgid "GNOME Internet Radio Locator"
+msgstr "Vyhledávání internetových rádií GNOME"
+
 #: ../src/gnome-internet-radio-locator.c:637
 #, c-format
 msgid ""
@@ -266,22 +261,22 @@ msgstr ""
 "Nic\n"
 "\n"
 
-#: ../src/gnome-internet-radio-locator.c:926
+#: ../src/gnome-internet-radio-locator.c:925
 msgid "Stop"
 msgstr "Zastavit"
 
-#: ../src/gnome-internet-radio-locator.c:932
+#: ../src/gnome-internet-radio-locator.c:931
 msgid "Zoom In"
 msgstr "Přiblížit"
 
-#: ../src/gnome-internet-radio-locator.c:946
+#: ../src/gnome-internet-radio-locator.c:945
 msgid "Zoom Out"
 msgstr "Oddálit"
 
-#: ../src/gnome-internet-radio-locator.c:951
+#: ../src/gnome-internet-radio-locator.c:950
 msgid "Markers"
 msgstr "Značky"
 
-#: ../src/gnome-internet-radio-locator.c:973
+#: ../src/gnome-internet-radio-locator.c:972
 msgid "Exit"
 msgstr "Ukončit"
