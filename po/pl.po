@@ -1,15 +1,15 @@
 # Polish translation for gnome-internet-radio-locator.
-# Copyright © 2014-2018 the gnome-internet-radio-locator authors.
+# Copyright © 2014-2019 the gnome-internet-radio-locator authors.
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
-# Piotr Drąg <piotrdrag@gmail.com>, 2014-2018.
-# Aviary.pl <community-poland@mozilla.org>, 2014-2018.
+# Piotr Drąg <piotrdrag@gmail.com>, 2014-2019.
+# Aviary.pl <community-poland@mozilla.org>, 2014-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-28 19:49+0200\n"
-"PO-Revision-Date: 2018-03-28 19:50+0200\n"
+"POT-Creation-Date: 2019-01-30 17:53+0100\n"
+"PO-Revision-Date: 2019-01-30 17:54+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -19,10 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
-#. give it the title
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
-#: ../src/gnome-internet-radio-locator.c:593
-#: ../src/gnome-internet-radio-locator.c:763
 msgid "GNOME Internet Radio Locator for GNOME 3"
 msgstr "Wyszukiwanie internetowych stacji radiowych w GNOME 3"
 
@@ -36,8 +33,9 @@ msgid ""
 "allows you to easily locate and listen to Free Internet Radio stations by "
 "broadcasters on the Internet with the help of a map."
 msgstr ""
-"GNOME Internet Radio Locator dla GNOME 3 to wolny program umożliwiający łatwe wyszukiwanie "
-"i słuchanie wolnych internetowych stacji radiowych za pomocą mapy."
+"GNOME Internet Radio Locator dla GNOME 3 to wolny program umożliwiający "
+"łatwe wyszukiwanie i słuchanie wolnych internetowych stacji radiowych za "
+"pomocą mapy."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
 msgid ""
@@ -45,17 +43,17 @@ msgid ""
 "desktop and requires gstreamer 1.0 to be installed for listening to Free "
 "Internet Radio stations."
 msgstr ""
-"Program GNOME Internet Radio Locator został zaprojektowany dla środowiska GNOME 3 i wymaga "
-"zainstalowania biblioteki GStreamer 1.0 do słuchania wolnych internetowych "
-"stacji radiowych."
+"Program GNOME Internet Radio Locator został zaprojektowany dla środowiska "
+"GNOME 3 i wymaga zainstalowania biblioteki GStreamer 1.0 do słuchania "
+"wolnych internetowych stacji radiowych."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:5
 msgid ""
 "Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
 "Locator for GNOME 3."
 msgstr ""
-"Ciesz się wolnymi internetowymi stacjami radiowymi w programie GNOME Internet Radio Locator dla "
-"GNOME 3."
+"Ciesz się wolnymi internetowymi stacjami radiowymi w programie GNOME "
+"Internet Radio Locator dla GNOME 3."
 
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
 msgid "Internet Radio Locator"
@@ -70,18 +68,10 @@ msgstr "Wyszukiwanie internetowych stacji radiowych"
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "Na żywo;Live;Radio;Program;Stacja;Wyszukiwanie;Znajdź;"
 
-#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:1
-msgid "Default station"
-msgstr "Domyślna stacja"
-
-#: ../data/org.gnome.gnome-internet-radio-locator.gschema.xml.in.h:2
-msgid "Default Internet Radio station."
-msgstr "Domyślna internetowa stacja radiowa."
-
 #: ../src/gnome-internet-radio-locator-gui.c:99
 #: ../src/gnome-internet-radio-locator-gui.c:113
 #: ../src/gnome-internet-radio-locator-gui.c:325
-#: ../src/gnome-internet-radio-locator.c:868
+#: ../src/gnome-internet-radio-locator.c:866
 #, c-format
 msgid "Failed to open %s\n"
 msgstr "Otwarcie %s się nie powiodło\n"
@@ -125,7 +115,7 @@ msgid "Failed to open %s.  Please install it.\n"
 msgstr "Otwarcie %s się nie powiodło. Proszę je zainstalować.\n"
 
 #: ../src/gnome-internet-radio-locator-gui.c:459
-#: ../src/gnome-internet-radio-locator.c:381
+#: ../src/gnome-internet-radio-locator.c:380
 msgid "http://fm939.wnyc.org/wnycfm"
 msgstr "http://fm939.wnyc.org/wnycfm"
 
@@ -207,61 +197,67 @@ msgstr ""
 "Otwarcie adresu URL się nie powiodło: „%s”\n"
 "Szczegóły: %s"
 
-#: ../src/gnome-internet-radio-locator.c:365
+#: ../src/gnome-internet-radio-locator.c:364
 #, c-format
 msgid "New Internet Radio Station\n"
 msgstr "Nowa internetowa stacja radiowa\n"
 
-#: ../src/gnome-internet-radio-locator.c:371
+#: ../src/gnome-internet-radio-locator.c:370
 #, c-format
 msgid "Search Internet Radio Station\n"
 msgstr "Wyszukiwanie internetowej stacji radiowej\n"
 
-#: ../src/gnome-internet-radio-locator.c:406
+#: ../src/gnome-internet-radio-locator.c:405
 #, c-format
 msgid "Previous Internet Radio Station\n"
 msgstr "Poprzednia internetowa stacja radiowa\n"
 
-#: ../src/gnome-internet-radio-locator.c:540
+#: ../src/gnome-internet-radio-locator.c:539
 msgid "Search"
 msgstr "Wyszukaj"
 
-#: ../src/gnome-internet-radio-locator.c:544
+#: ../src/gnome-internet-radio-locator.c:543
 msgid "Search Internet Radio Station"
 msgstr "Wyszukuje internetową stację radiową"
 
-#: ../src/gnome-internet-radio-locator.c:549
+#: ../src/gnome-internet-radio-locator.c:548
 msgid "Prev"
 msgstr "Wstecz"
 
-#: ../src/gnome-internet-radio-locator.c:553
+#: ../src/gnome-internet-radio-locator.c:552
 msgid "Prev Internet Radio Station"
 msgstr "Poprzednia internetowa stacja radiowa"
 
-#: ../src/gnome-internet-radio-locator.c:556
-#: ../src/gnome-internet-radio-locator.c:560
+#: ../src/gnome-internet-radio-locator.c:555
+#: ../src/gnome-internet-radio-locator.c:559
 msgid "Stations"
 msgstr "Stacje"
 
-#: ../src/gnome-internet-radio-locator.c:563
+#: ../src/gnome-internet-radio-locator.c:562
 msgid "Next"
 msgstr "Dalej"
 
-#: ../src/gnome-internet-radio-locator.c:567
+#: ../src/gnome-internet-radio-locator.c:566
 msgid "Next Internet Radio Station"
 msgstr "Następna internetowa stacja radiowa"
 
-#: ../src/gnome-internet-radio-locator.c:570
-#: ../src/gnome-internet-radio-locator.c:574
+#: ../src/gnome-internet-radio-locator.c:569
+#: ../src/gnome-internet-radio-locator.c:573
 msgid "About Station"
 msgstr "O stacji"
 
-#: ../src/gnome-internet-radio-locator.c:577
-#: ../src/gnome-internet-radio-locator.c:581
+#: ../src/gnome-internet-radio-locator.c:576
+#: ../src/gnome-internet-radio-locator.c:580
 msgid "About Program"
 msgstr "O programie"
 
-#: ../src/gnome-internet-radio-locator.c:638
+#. give it the title
+#: ../src/gnome-internet-radio-locator.c:592
+#: ../src/gnome-internet-radio-locator.c:762
+msgid "GNOME Internet Radio Locator"
+msgstr "GNOME Internet Radio Locator"
+
+#: ../src/gnome-internet-radio-locator.c:637
 #, c-format
 msgid ""
 "Nothing\n"
@@ -270,22 +266,22 @@ msgstr ""
 "Nic\n"
 "\n"
 
-#: ../src/gnome-internet-radio-locator.c:927
+#: ../src/gnome-internet-radio-locator.c:925
 msgid "Stop"
 msgstr "Zatrzymaj"
 
-#: ../src/gnome-internet-radio-locator.c:933
+#: ../src/gnome-internet-radio-locator.c:931
 msgid "Zoom In"
 msgstr "Powiększ"
 
-#: ../src/gnome-internet-radio-locator.c:947
+#: ../src/gnome-internet-radio-locator.c:945
 msgid "Zoom Out"
 msgstr "Pomniejsz"
 
-#: ../src/gnome-internet-radio-locator.c:952
+#: ../src/gnome-internet-radio-locator.c:950
 msgid "Markers"
 msgstr "Znaczniki"
 
-#: ../src/gnome-internet-radio-locator.c:974
+#: ../src/gnome-internet-radio-locator.c:972
 msgid "Exit"
 msgstr "Zakończ"
