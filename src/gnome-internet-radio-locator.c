@@ -121,6 +121,8 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 	GeocodeLocation *location_city;
 	GeocodeLocation *location_country;
 	GeocodeReverse *reverse_city, *reverse_country;
+	ClutterColor city_color = { 0x9a, 0x9b, 0x9c, 0x9d };
+	ClutterColor text_color = { 0xff, 0xff, 0xff, 0xff };
 
 	const char *name, *name_city, *name_country;
 	/* GeocodeForward *fwd; */
@@ -143,6 +145,8 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
 	name = g_strconcat(name_city, ", ", name_country, NULL);
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), (gchar *)name);
+	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
+	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
 	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), lat, lon);
 	if (g_strcmp0(name, NULL)) {
 		champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));

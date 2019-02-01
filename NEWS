@@ -5,6 +5,7 @@ Version 1.8.0
 GUI
 
 	* src/gnome-internet-radio-locator.c: Set default center Stockholm
+	* src/gnome-internet-radio-locator.c: Set undefined city label color
 	* src/gnome-internet-radio-locator-markers.c: Add marker for Tampere
 	* src/gnome-internet-radio-locator-markers.c: Add marker for Warsaw
 
