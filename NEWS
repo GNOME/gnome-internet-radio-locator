@@ -6,6 +6,7 @@ GUI
 
 	* src/gnome-internet-radio-locator.c: Set default center Stockholm
 	* src/gnome-internet-radio-locator.c: Set undefined city label color
+	* src/gnome-internet-radio-locator-markers.c: Add marker for Cambridge
 	* src/gnome-internet-radio-locator-markers.c: Add marker for Tampere
 	* src/gnome-internet-radio-locator-markers.c: Add marker for Warsaw
 
@@ -13,6 +14,7 @@ Stations
 
 	* src/gnome-internet-radio-locator.xml: Add Radio Aktywne (Warsaw)
 	* src/gnome-internet-radio-locator.xml: Add Radio Moreeni (Tampere)
+	* src/gnome-internet-radio-locator.xml: Update WHRB (Cambridge)
 
 Translations
 
