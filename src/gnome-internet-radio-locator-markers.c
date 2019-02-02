@@ -204,7 +204,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 42.3604823, -71.0595678);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 42.3750997, -71.1056157);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
