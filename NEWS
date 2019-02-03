@@ -9,6 +9,7 @@ GUI
 	* src/gnome-internet-radio-locator.c: Set undefined city label color
 	* src/gnome-internet-radio-locator-gui.c: Add status bar for stations
 	* src/gnome-internet-radio-locator-markers.c: Add marker for Cambridge
+	* src/gnome-internet-radio-locator-markers.c: Add marker for Dublin
 	* src/gnome-internet-radio-locator-markers.c: Add marker for New Orleans
 	* src/gnome-internet-radio-locator-markers.c: Add marker for Tampere
 	* src/gnome-internet-radio-locator-markers.c: Add marker for Warsaw
@@ -20,6 +21,7 @@ Stations
 
 	* src/gnome-internet-radio-locator.xml: Add Radio Aktywne (Warsaw)
 	* src/gnome-internet-radio-locator.xml: Add Radio Moreeni (Tampere)
+	* src/gnome-internet-radio-locator.xml: Update DCUfm (Dublin)
 	* src/gnome-internet-radio-locator.xml: Update WHRB (Cambridge)
 	* src/gnome-internet-radio-locator.xml: Update WTBU (Boston)
 	* src/gnome-internet-radio-locator.xml: Update WWNO (New Orleans)

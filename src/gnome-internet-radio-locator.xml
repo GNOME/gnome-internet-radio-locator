@@ -12,8 +12,8 @@
     </description>
     <stream mime="audio/mpeg" uri="http://moreenistream1.uta.fi:8080/moreeni.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="127 kbps" />
   </station>
-  <station band="ONLINE" id="radioaktywne" lang="pl" name="Radio Aktywne" rank="1.0" type="edu">
-    <frequency uri="https://radioaktywne.pl/">ONLINE in Warsaw</frequency>
+  <station band="Online" id="radioaktywne" lang="pl" name="Radio Aktywne" rank="1.0" type="edu">
+    <frequency uri="https://radioaktywne.pl/">Online in Warsaw</frequency>
     <location>Warsaw, Poland</location>
     <description lang="en">
       The first Internet radio of Warsaw University of Technology students and the first academic radio in Warsaw.  It was founded in October 2004.
@@ -30,7 +30,7 @@ Each day the team of journalists prepares latest news for students, academic and
     <stream mime="audio/ogg" uri="http://listen.radioaktywne.pl:8000/raogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
     <uri>http://radioaktywne.pl/</uri>
   </station>
-  <station band="ONLINE" id="drnyheder" lang="da" name="Danmarks Radio Nyheder" rank="1.0" type="gov">
+  <station band="Online" id="drnyheder" lang="da" name="Danmarks Radio Nyheder" rank="1.0" type="gov">
     <frequency uri="http://www.dr.dk/nyheder">FM 93.3 in Aalborg</frequency>
     <location>Copenhagen, Denmark</location>
     <description lang="da">
@@ -40,7 +40,7 @@ Each day the team of journalists prepares latest news for students, academic and
     <stream mime="audio/mpeg" uri="http://live-icy.gss.dr.dk:80/A/A02H.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="192 kbps" />
     <uri>https://www.dr.dk/nyheder</uri>
   </station>
-  <station band="ONLINE" id="drp1" lang="da" name="Danmarks Radio P1" rank="1.0" type="gov">
+  <station band="Online" id="drp1" lang="da" name="Danmarks Radio P1" rank="1.0" type="gov">
     <frequency uri="http://www.dr.dk/radio/p1">FM 93.3 in Aalborg</frequency>
     <frequency uri="http://www.dr.dk/radio/p1">FM 93.3 in Frejlev</frequency>
     <location>Copenhagen, Denmark</location>
@@ -62,7 +62,7 @@ Each day the team of journalists prepares latest news for students, academic and
     <stream mime="audio/mpeg" uri="http://live-icy.gss.dr.dk:80/A/A03H.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="192 kbps" />
     <uri>https://www.dr.dk/radio/p1</uri>
   </station>
-  <station band="ONLINE" id="drp2" lang="da" name="Danmarks Radio P2" rank="1.0" type="gov">
+  <station band="Online" id="drp2" lang="da" name="Danmarks Radio P2" rank="1.0" type="gov">
     <frequency uri="http://www.dr.dk/radio/p2">FM 93.3 in Aalborg</frequency>
     <location>Copenhagen, Denmark</location>
     <description lang="en">
@@ -79,7 +79,7 @@ Each day the team of journalists prepares latest news for students, academic and
     <stream mime="audio/mpeg" uri="http://live-icy.gss.dr.dk:80/A/A04H.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="192 kbps" />
     <uri>https://www.dr.dk/radio/p2</uri>
   </station>
-  <station band="ONLINE" id="drp3" lang="da" name="Danmarks Radio P3" rank="1.0" type="gov">
+  <station band="Online" id="drp3" lang="da" name="Danmarks Radio P3" rank="1.0" type="gov">
     <frequency uri="http://www.dr.dk/radio/p3">FM 89.7 in Frejlev</frequency>
     <location>Copenhagen, Denmark</location>
     <description lang="en">
@@ -153,7 +153,7 @@ Each day the team of journalists prepares latest news for students, academic and
     <stream mime="audio/mpeg" uri="http://khpr-ice.streamguys1.com:80/khpr2" codec="MPEG-1 Layer 3 (MP3)" samplerate="24000 Hz" channels="Mono" bitrate="24 kbps" />
     <uri>http://www.hawaiipublicradio.org/</uri>
   </station>
-  <station band="ONLINE" id="burstradio" lang="en" name="Burst Radio" rank="1.0" type="edu">
+  <station band="Online" id="burstradio" lang="en" name="Burst Radio" rank="1.0" type="edu">
     <frequency uri="http://www.burstradio.org.uk/"></frequency>
     <location>Bristol, United Kingdom</location>
     <description lang="en">
@@ -172,7 +172,7 @@ Each day the team of journalists prepares latest news for students, academic and
     </description>
     <stream mime="audio/mpeg" uri="http://wfuv-onair.streamguys.org/onair-hi" codec="MPEG ADTS, layer III, v1" samplerate="44100 Hz" channels="JntStereo" bitrate="128 kbps" />
   </station>
-  <station band="ONLINE" id="radiofreebrooklyn" lang="en" name="Radio Free Brooklyn" rank="1.0" type="edu">
+  <station band="Online" id="radiofreebrooklyn" lang="en" name="Radio Free Brooklyn" rank="1.0" type="edu">
     <frequency uri="https://radiofreebrooklyn.com/">Brooklyn, New York</frequency>
     <location>Brooklyn, New York</location>
     <description lang="en">
@@ -182,8 +182,8 @@ Each day the team of journalists prepares latest news for students, academic and
     </description>
     <stream mime="audio/mpeg" uri="http://192.111.140.6:9300/stream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="JntStereo" bitrate="192 kbps" />
   </station>
-  <station band="ONLINE" id="3rdrock" lang="en" name="NASA's Third Rock Radio" rank="1.0" type="gov">
-    <frequency uri="https://www.nasa.gov/feature/third-rock-radio">ONLINE</frequency>
+  <station band="Online" id="3rdrock" lang="en" name="NASA's Third Rock Radio" rank="1.0" type="gov">
+    <frequency uri="https://www.nasa.gov/feature/third-rock-radio">Online</frequency>
     <location>Space</location>
     <description lang="en">
       Explore and discover new worlds of music with NASA’s Third Rock Radio. RFC Media matches “new rock discovery” with tales of NASA’s exciting, on-going mission to create one of the most talked about digital radio channels on, or off the planet. Third Rock fans worldwide share their discoveries from Music Explorers who present ”the best new rock out there – really out there!” Third Rock’s disarmingly hip, street-smart context connects and engages young adults and helps NASA deepen relationships with its next generation of avid supporters. Third Rock Radio is a recognized New Media phenomenon attracting the brightest and best, tech-savvy young adults. Third Rock’s audience is a blend of scientists, engineers, researchers, innovators and astronauts, together with students and music lovers everywhere, all of whom share a love for the new and undiscovered.
@@ -243,7 +243,7 @@ In fact we even split our adverts, and many of our local news and travel bulleti
     <stream mime="audio/mpeg" uri="http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p" codec="MPEG-4 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.bbc.co.uk/5live</uri>
   </station>
-  <station band="ONLINE" id="ciut" lang="en" name="CIUT" rank="1.0" type="edu">
+  <station band="Online" id="ciut" lang="en" name="CIUT" rank="1.0" type="edu">
     <frequency uri="http://www.ciut.fm/">89.5 FM in Toronto, Canada</frequency>
     <location>Toronto, Canada</location>
     <description lang="en">
@@ -255,7 +255,7 @@ In fact we even split our adverts, and many of our local news and travel bulleti
     <stream mime="audio/mpeg" uri="http://128.100.197.46:80/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.ciut.fm/</uri>
   </station>
-  <station band="ONLINE" id="kslu" lang="en" name="KSLU" rank="1.0" type="edu">
+  <station band="Online" id="kslu" lang="en" name="KSLU" rank="1.0" type="edu">
     <frequency uri="http://www2.southeastern.edu/kslu/">90.9 FM in Hammond, Louisiana</frequency>
     <location>Hammond, Louisiana</location>
     <description lang="en">
@@ -266,7 +266,7 @@ In fact we even split our adverts, and many of our local news and travel bulleti
     <stream mime="audio/mpeg" uri="http://147.174.55.27:8002/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Mono" bitrate="24 kbps" />
     <uri>http://www2.southeastern.edu/kslu/</uri>
   </station>
-  <station band="ONLINE" id="radiok" lang="en" name="Radio K" rank="1.0" type="edu">
+  <station band="Online" id="radiok" lang="en" name="Radio K" rank="1.0" type="edu">
     <frequency>88.1 FM in Minneapolis, Minnesota</frequency>
     <location>Minneapolis, Minnesota</location>
     <description lang="en">
@@ -277,8 +277,8 @@ In fact we even split our adverts, and many of our local news and travel bulleti
     <stream mime="audio/mpeg" uri="http://128.101.73.38:8128/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://radiok.org/</uri>
   </station>
-  <station band="ONLINE" id="blurfm" lang="es-AR" name="Blur FM" rank="1.0" type="com">
-    <frequency uri="http://www.blurfm.com/">ONLINE in Buenos Aires, Argentina</frequency>
+  <station band="Online" id="blurfm" lang="es-AR" name="Blur FM" rank="1.0" type="com">
+    <frequency uri="http://www.blurfm.com/">Online in Buenos Aires, Argentina</frequency>
     <location>Buenos Aires, Argentina</location>
     <description>
       Blur FM is an online radio station that works without advertising and with the sole purpose of promoting the artists that are broadcasted.  Music files are downloaded legally-free, or under consent of the artists, from online sources, which aim to promote independent/emerging artists.
@@ -363,7 +363,7 @@ Bergen Student Radio strives to be an alternative to commercial and state-run ra
     <stream mime="audio/mpeg" uri="http://www.cr944.at:8000/cr944-high" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="192 kbps" />
     <uri>http://www.campusradio.at/</uri>
   </station>
-  <station band="ONLINE" id="radiouniversidad" lang="en" name="Radio Universidad" rank="1.0" type="edu">
+  <station band="Online" id="radiouniversidad" lang="en" name="Radio Universidad" rank="1.0" type="edu">
     <frequency uri="http://radiou.usac.edu.gt/">92.1 FM in Guatemala City, Guatemala</frequency>
     <location>Guatemala City, Guatemala</location>
     <description lang="es">
@@ -401,7 +401,6 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/ogg" uri="http://streamer.radiorevolt.no:8000/revolt.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.radiorevolt.no/</uri>
   </station>
-  <!-- Appears to be down as of 2016/07/07
   <station band="107.8FM" id="dcufm" lang="en" name="DCUfm" rank="1.0" type="edu">
     <frequency uri="http://www.dcufm.com/">107.8 FM in Dublin, Ireland</frequency>
     <location>Dublin, Ireland</location>
@@ -441,8 +440,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.radioaf.se/</uri>
   </station>
   <!-- Appears to be down as of 2016/07/07
-  <station band="ONLINE" id="ruv" lang="is" name="RÚV" rank="1.0" type="gov">
-    <frequency uri="http://ruv.is/">ONLINE in Reykjavik, Iceland</frequency>
+  <station band="Online" id="ruv" lang="is" name="RÚV" rank="1.0" type="gov">
+    <frequency uri="http://ruv.is/">Online in Reykjavik, Iceland</frequency>
     <location>Reykjavik, Iceland</location>
     <description lang="en">
       The Icelandic National Broadcasting Service – Ríkisútvarpið, or RÚV for short - is an independent public service broadcaster, comprising television, radio and online services. The main objective of the National Broadcasting Service is to inform, educate and entertain. This triple role is reflected in its mission to provide the public with reliable news service and culture and entertainment content of the highest quality. We place particular attention on the Icelandic language, the history of the nation, cultural heritage and an active dialogue with the public.  We furthermore place special focus on quality programming for children and young people.  RÚV’s Archives are open and accessible to the public.
@@ -452,8 +451,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   </station>
   -->
   <!-- Appears to be down as of 2016/07/07
-  <station band="ONLINE" id="RadioEco" lang="it" name="Radio Eco" rank="1.0" type="edu">
-    <frequency uri="http://ktuh.org/">ONLINE in Pisa, Italy</frequency>
+  <station band="Online" id="RadioEco" lang="it" name="Radio Eco" rank="1.0" type="edu">
+    <frequency uri="http://ktuh.org/">Online in Pisa, Italy</frequency>
     <location>Pisa, Italy</location>
     <description lang="it">
       RadioEco è l’emittente radiofonica dell’Ateneo Pisano. Nasce nell’ambito dell’iniziativa del Sole-24 ore UniOnAir (una radio per ogni ateneo) all’interno della Facoltà di Economia.
@@ -464,7 +463,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   </station>
   -->
   <station band="90.3FM" id="ktuh" lang="en" name="KTUH FM" rank="1.0" type="edu">
-    <frequency uri="http://ktuh.org/">ONLINE in Honolulu, Hawaii</frequency>
+    <frequency uri="http://ktuh.org/">Online in Honolulu, Hawaii</frequency>
     <location>Honolulu, Hawaii</location>
     <description lang="en">
       KTUH is a student-run noncommercial radio station broadcasting from the University of Hawai’i at Manoa. We’ve been serving the community since 1969 with a variety of programs that include public announcements, equipment for community events, and a practical chance to learn about radio broadcasting. KTUH was granted a license to the Board of Regents as a non-commercial educational FM Station by the Federal Communications Commission (FCC) on June 28, 1985. Maintaining a staff in excess of 70 volunteers annually, KTUH operates 24 hours a day, year-round.
@@ -472,8 +471,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://stream.ktuh.org:8000/stream-mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://ktuh.org/</uri>
   </station>
-  <station band="ONLINE" id="nrksport" lang="no" name="NRK Sport" rank="1.0" type="gov">
-    <frequency uri="http://www.nrksport.no/">ONLINE in Oslo, Norway</frequency>
+  <station band="Online" id="nrksport" lang="no" name="NRK Sport" rank="1.0" type="gov">
+    <frequency uri="http://www.nrksport.no/">Online in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
     <description lang="en">
       NRK Sport is a brand name for sports produced by the sports department of Norwegian Broadcasting Corporation (NRK). The brand name is used on most national sports broadcasts on television, radio and new media.  NRK Sport is produced both in Norway and other countries.
@@ -481,8 +480,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/aac" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_sport_aac_h" codec="AAC, v4 LC" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://nrksport.no/</uri>
   </station>
-  <station band="ONLINE" id="nrkp1" lang="no" name="NRK P1" rank="1.0" type="gov">
-    <frequency uri="http://www.nrk.no/p1/">ONLINE in Oslo, Norway</frequency>
+  <station band="Online" id="nrkp1" lang="no" name="NRK P1" rank="1.0" type="gov">
+    <frequency uri="http://www.nrk.no/p1/">Online in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
     <description lang="en">
       NRK P1 is one of the nationwide radio channels operated by the Norwegian Broadcasting Corporation (NRK).
@@ -508,8 +507,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_sorlandet_mp3_m" codec="MPEG ADTS, layer III, v1" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
     <stream mime="audio/aac" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_sorlandet_mp3_h" codec="MPEG ADTS, layer III, v1" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
   </station>
-  <station band="ONLINE" id="nrkp2" lang="no" name="NRK P2" rank="1.0" type="gov">
-    <frequency uri="http://www.nrk.no/p2/">ONLINE in Oslo, Norway</frequency>
+  <station band="Online" id="nrkp2" lang="no" name="NRK P2" rank="1.0" type="gov">
+    <frequency uri="http://www.nrk.no/p2/">Online in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
     <description lang="en">
       NRK P2 is one of the nationwide radio channels operated by the Norwegian Broadcasting Corporation (NRK).
@@ -517,8 +516,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p2_aac_h" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.nrk.no/p2</uri>
   </station>
-  <station band="ONLINE" id="nrkp3" lang="no" name="NRK P3" rank="1.0" type="gov">
-    <frequency uri="http://www.nrk.no/p3/">ONLINE in Oslo, Norway</frequency>
+  <station band="Online" id="nrkp3" lang="no" name="NRK P3" rank="1.0" type="gov">
+    <frequency uri="http://www.nrk.no/p3/">Online in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
     <description lang="en">
       NRK P3 is one of the radio channels operated by the Norwegian Broadcasting Corporation (NRK).
@@ -527,8 +526,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p3_aac_h" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.nrk.no/p3</uri>
   </station>
-  <station band="ONLINE" id="nrkp13" lang="no" name="NRK P13" rank="1.0" type="gov">
-    <frequency uri="https://www.nrk.no/p13">ONLINE in Oslo, Norway</frequency>
+  <station band="Online" id="nrkp13" lang="no" name="NRK P13" rank="1.0" type="gov">
+    <frequency uri="https://www.nrk.no/p13">Online in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
     <description lang="en">
       NRK P13 is a Norwegian digital radio station, run by the Norwegian Broadcasting Corporation.
@@ -538,8 +537,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p13_aac_h" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://radio.nrk.no/direkte/p13</uri>
   </station>
-  <station band="ONLINE" id="nrkurort" lang="no" name="NRK Urørt" rank="1.0" type="gov">
-    <frequency uri="http://www.nrk.no/urort/">ONLINE in Oslo, Norway</frequency>
+  <station band="Online" id="nrkurort" lang="no" name="NRK Urørt" rank="1.0" type="gov">
+    <frequency uri="http://www.nrk.no/urort/">Online in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
     <description lang="en">
       NRK P3 Urørt is a site where independent Norwegian artists and bands can promote their music.  The Urørt editors review the music played on NRK P3 Urørt.
@@ -547,8 +546,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p3_urort_aac_h" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://urort.p3.no</uri>
   </station>
-  <station band="ONLINE" id="nrkjazz" lang="no" name="NRK Jazz" rank="1.0" type="gov">
-    <frequency uri="https://radio.nrk.no/direkte/jazz">ONLINE in Oslo, Norway</frequency>
+  <station band="Online" id="nrkjazz" lang="no" name="NRK Jazz" rank="1.0" type="gov">
+    <frequency uri="https://radio.nrk.no/direkte/jazz">Online in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
     <description lang="en">
       NRK Jazz is a Norwegian radio station operated by the Norwegian Broadcasting Corporation (NRK) that broadcasts jazz on DAB Digital Radio and the internet.
@@ -556,8 +555,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_jazz_aac_h" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>https://radio.nrk.no/direkte/jazz</uri>
   </station>
-  <station band="ONLINE" id="nrkklassisk" lang="no" name="NRK Klassisk" rank="1.0" type="gov">
-    <frequency uri="https://www.nrk.no/arkiv/artikkel/radiokanalen-nrk-klassisk-1.5318146">ONLINE in Oslo, Norway</frequency>
+  <station band="Online" id="nrkklassisk" lang="no" name="NRK Klassisk" rank="1.0" type="gov">
+    <frequency uri="https://www.nrk.no/arkiv/artikkel/radiokanalen-nrk-klassisk-1.5318146">Online in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
     <description lang="en">
       NRK Klassisk is a digital radio channel operated by the Norwegian Broadcasting Corporation (NRK) which broadcasts classical music 24 hours a day.
@@ -658,7 +657,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://192.240.102.133:7703/stream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://soundfm.ca/</uri>
   </station>
-  <station band="ONLINE" id="nrj-bern" lang="en" name="Radio NRJ Bern" rank="1.0" type="edu">
+  <station band="Online" id="nrj-bern" lang="en" name="Radio NRJ Bern" rank="1.0" type="edu">
     <frequency uri="http://www.energy.ch/bern/">Internet</frequency>
     <location>Bern, Switzerland</location>
     <description lang="en">Student webradio in Zürich.</description>
@@ -666,7 +665,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.energy.ch/bern/</uri>
   </station>
   <!-- Appears to be down as of 2016/07/07
-  <station band="ONLINE" id="wvau" lang="en" name="WVAU" rank="1.0" type="edu">
+  <station band="Online" id="wvau" lang="en" name="WVAU" rank="1.0" type="edu">
     <frequency uri="http://www.wvau.org/">Online in Washington, District of Columbia</frequency>
     <location>Washington, District of Columbia</location>
     <description lang="en">WVAU is American University's student radio station. We broadcast online 24/7 from the Mary Graydon Center in Washington, D.C.
@@ -691,14 +690,14 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://tstv-stream.tsm.utexas.edu:8000/kvrx_livestream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.kvrx.org/</uri>
   </station>
-  <station band="ONLINE" id="ksub" name="KSUB" rank="1.0" type="edu">
+  <station band="Online" id="ksub" name="KSUB" rank="1.0" type="edu">
     <frequency uri="http://www.ksubseattle.org/">Online in Seattle, Washington</frequency>
     <location>Seattle, Washington</location>
     <description lang="en">We are one of the last college radio stations in the Seattle area actually run by students. Our DJ's are current students and beloved alumni (and even some faculty), and because we are non-commercial, we are free from mainstream radio constraints. Each individual DJ has near complete control of what he or she plays on the air, giving KSUB a rich musical diversity.</description>
     <stream mime="audio/mpeg" uri="http://lin1.san.fast-serv.com:6014" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.ksubseattle.org/</uri>
   </station>
-  <station band="ONLINE" id="wrvu" name="WRVU" rank="1.0" type="edu">
+  <station band="Online" id="wrvu" name="WRVU" rank="1.0" type="edu">
     <frequency uri="http://wrvu.org/">Online in Nashville, Tennessee</frequency>
     <location>Nashville, Tennessee</location>
     <description lang="en">WRVU is a free-format college radio station committed to providing Vanderbilt University and the surrounding community with the best in new, non-mainstream music. WRVU is student-run and focuses on teaching Vanderbilt students the ins and outs of radio broadcasting, playing music you can’t hear anywhere else.</description>
@@ -729,7 +728,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://stream.wusb.stonybrook.edu:8090/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.wusb.fm/</uri>
   </station>
-  <station band="ONLINE" id="coog" name="COOG" rank="1.0" type="edu">
+  <station band="Online" id="coog" name="COOG" rank="1.0" type="edu">
     <frequency uri="http://coogradio.uh.edu/"></frequency>
     <location>Houston, Texas</location>
     <description lang="en">Coog Radio is an online radio station operated and staffed by students from the University of Houston. Co-founders Conner Clifton, Markley Rogers, and Matt Womack came up with the idea in 2010, but it wasn’t until fall 2011 that the idea finally came to fruition. Coog Radio not only provides a creative outlet for fellow students to express themselves over the air, but also introduces them to the world of broadcasting.</description>
@@ -762,7 +761,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://radio.elte.hu:8000/eper24" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="22050 Hz" channels="Mono" bitrate="24 kbps" />
     <uri>http://eper.elte.hu/</uri>
   </station>
-  <station band="ONLINE" id="fusefm" lang="en" name="Fuse FM" rank="1.0" type="edu">
+  <station band="Online" id="fusefm" lang="en" name="Fuse FM" rank="1.0" type="edu">
     <frequency uri="http://fusefm.co.uk/"></frequency>
     <location>Manchester, United Kingdom</location>
     <description lang="en">Fuse FM is Manchester University's student radio station. We first went on air back in 2001, and 13 years later we now broadcast from a brand new, professional quality studio from within the Students' Union. We broadcast online throughout the academic year and you can listen to live shows and podcasts on our website. We love our new home, but we need your help to sound great on air. <!--If you want to get in on the action, you'd be more than welcome! We are constantly on the look out for new talent, so if you fancy yourself as a music journalist, producer, DJ, news reader, or think you have what it takes to host your own show, Fuse FM is certainly the place for you! Not only is Fuse FM a fun organisation to be part of, but we can help you if you are interested in getting into the radio industry. Past Fuse FM members have gone on to find work at the BBC and commercial radio stations.--></description>
@@ -779,7 +778,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://stream.cjsw.com:80/cjsw.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://cjsw.com/</uri>
   </station>
-  <station band="ONLINE" id="caper" lang="en" name="Caper Radio" rank="1.0" type="edu">
+  <station band="Online" id="caper" lang="en" name="Caper Radio" rank="1.0" type="edu">
     <frequency uri="http://caperradio.ca/">Pending FM license in Sydney, Canada</frequency>
     <location>Sydney, Canada</location>
     <description lang="en">Caper Radio Incorporated is CBU's campus radio station!
@@ -834,7 +833,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://stream.radio.adelaide.edu.au:8000/radadl-128.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>https://radio.adelaide.edu.au/</uri>
   </station>
-  <station band="ONLINE" id="radior" lang="cs" name="Radio R" rank="1.0" type="edu">
+  <station band="Online" id="radior" lang="cs" name="Radio R" rank="1.0" type="edu">
     <frequency uri="http://radior.cz">Internet</frequency>
     <location>Brno, Czech Republic</location>
     <description lang="en">Masaryk University’s student radio.</description>
@@ -843,7 +842,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/ogg" uri="http://radior.video.muni.cz:8000/FSS_ogg-q8.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
     <uri>http://www.radior.cz/</uri>
   </station>
-  <station band="ONLINE" id="radius" lang="de" name="Radio Radius" rank="1.0" type="edu">
+  <station band="Online" id="radius" lang="de" name="Radio Radius" rank="1.0" type="edu">
     <frequency uri="http://radioradius.ch/">Internet</frequency>
     <location>Zürich, Switzerland</location>
     <description lang="en">Student webradio in Zürich.</description>
@@ -851,7 +850,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.radioradius.ch/</uri>
   </station>
   <!-- Appears to be down as of 2016/07/07
-  <station band="ONLINE" id="lsrfm" lang="en" name="Leeds University Student Radio FM" rank="1.0" type="edu">
+  <station band="Online" id="lsrfm" lang="en" name="Leeds University Student Radio FM" rank="1.0" type="edu">
     <frequency uri="http://lsrfm.com/">Internet</frequency>
     <location>Leeds, United Kingdom</location>
     <description lang="en"></description>
@@ -867,7 +866,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://urn1350.net/</uri>
   </station>
   <!-- Appears to be down as of 2016/07/07
-  <station band="ONLINE" id="kcl" lang="en" name="King's College London Radio" rank="1.0" type="edu">
+  <station band="Online" id="kcl" lang="en" name="King's College London Radio" rank="1.0" type="edu">
     <frequency uri="http://www.kclradio.co.uk/">Internet</frequency>
     <location>London, United Kingdom</location>
     <description lang="en">KCL Radio is King’s College London’s award winning, student radio station, which first broadcast live last year. Our studio is currently located on the basement floor of the Chesham Building (although there are plans to relocate to a new studio in Tutu’s on the 4th floor of the Macadam Building during 2015)./description>
@@ -875,7 +874,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.kclradio.co.uk/</uri>
   </station>
   -->
-  <station band="ONLINE" id="icradio" lang="en" name="Imperial College Radio" rank="1.0" type="edu">
+  <station band="Online" id="icradio" lang="en" name="Imperial College Radio" rank="1.0" type="edu">
     <frequency uri="http://icradio.com/">1134 AM in Wye, Kent, United Kingdom</frequency>
     <location>London, United Kingdom</location>
     <description lang="en">IC Radio is among the oldest student radio stations in the country. Started in 1976, broadcasting on a home built AM transmitter around halls, we now broadcast all over the globe from icradio.com.<!-- Absolutely anyone is welcome to try their hand at presenting or producing a show; whatever your music taste. We also love a good speech based program, so anyone will feel at home in IC Radio. As well as being able to broadcast, we are lucky enough to have a brand new, fully equipped recording studio which we use to record bands and musicians.-->
@@ -1090,8 +1089,8 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <stream mime="audio/mpeg" uri="http://fm939.wnyc.org/wnycfm" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Mono" bitrate="32 kbps" />
     <uri>http://www.wnyc.org/</uri>
   </station>
-  <station band="ONLINE" id="echo" lang="ru" name="Эхо Москвы" rank="1.0" type="com">
-    <frequency uri="http://echo.msk.ru/">ONLINE in Moscow, Russia</frequency>
+  <station band="Online" id="echo" lang="ru" name="Эхо Москвы" rank="1.0" type="com">
+    <frequency uri="http://echo.msk.ru/">Online in Moscow, Russia</frequency>
     <location>Moscow, Russia</location>
     <description lang="en">
       Echo of Moscow is a Russian radio station based in Moscow,
@@ -1101,8 +1100,8 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <stream mime="audio/mpeg" uri="http://ice912.echo.msk.ru:9120/24.aac" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="22 kbps" />
     <uri>http://echo.msk.ru/</uri>
   </station>
-  <station band="ONLINE" id="somafmdefcon" lang="en" name="SomaFM DEF CON" rank="1.0" type="com">
-    <frequency uri="http://www.somafm.com/">ONLINE in San Francisco, California</frequency>
+  <station band="Online" id="somafmdefcon" lang="en" name="SomaFM DEF CON" rank="1.0" type="com">
+    <frequency uri="http://www.somafm.com/">Online in San Francisco, California</frequency>
     <location>San Francisco, California</location>
     <description lang="en">
       Music for Hacking. The DEF CON Year-Round Channel.

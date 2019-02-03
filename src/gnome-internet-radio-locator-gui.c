@@ -474,7 +474,7 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 		gnome_internet_radio_locator->selected_station_location = g_strdup(_("New York City, NY"));
 	}
 	if (strcmp(gnome_internet_radio_locator->selected_station_band,"")==0) {
-		gnome_internet_radio_locator->selected_station_band = g_strdup(_("ONLINE"));
+		gnome_internet_radio_locator->selected_station_band = g_strdup(_("Online"));
 	}
 	if (strcmp(gnome_internet_radio_locator->selected_station_description,"")==0) {
 		gnome_internet_radio_locator->selected_station_description = g_strdup(_("WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, broadcasting the finest programs from NPR, American Public Media, Public Radio International and the BBC World Service, as well as a wide range of award-winning local programming."));

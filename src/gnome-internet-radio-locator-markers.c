@@ -269,9 +269,8 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
-#if 0 /* Non-streamble as of 2018/03/26 */
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-  station = g_strdup("Dublin, Ireland\n<span size=\"small\">UWS Radio</span>");
+  station = g_strdup("Dublin, Ireland\n<span size=\"small\">DCUfm</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
@@ -280,7 +279,6 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
-#endif
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
   station = g_strdup("Guatemala City, Guatemala\n<span size=\"small\">Radio Universidad</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
