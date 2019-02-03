@@ -1076,7 +1076,7 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
   </station>
   <station band="88.1FM" id="wmbr" lang="en" name="WMBR" rank="1.0" type="edu">
     <frequency>88.1 FM in Cambridge, Massachusetts</frequency>
-    <location>Cambridge, Massachusetts</location>
+    <location>WMBR-FM, Cambridge, Massachusetts</location>
     <description lang="en">WMBR is the MIT campus radio station. We broadcast on 88.1 FM between 20 and 24 hours per day, 365 days a year. We transmit at 720 watts, effective radiated power from the top of the Eastgate Building in Kendall Square in Cambridge, Massachusetts. Our programming includes a wide range of music shows, public affairs programs and eclectic audio entertainment.</description>
     <stream mime="audio/mpeg" uri="http://wmbr.org:8000/hi" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://wmbr.org/</uri>
