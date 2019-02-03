@@ -410,7 +410,10 @@ listen_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
 
 static void
 stop_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
+  guint context_id;
   gnome_internet_radio_locator_player_stop(player);
+  context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
+  gtk_statusbar_pop (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id));
   return;
 }
 
@@ -710,7 +713,7 @@ on_search_matches(GtkEntryCompletion *widget,
 	gchar *country;
 	gchar *state;
 	GError **err;
-	gint context_id;
+	guint context_id;
 
 	gtk_tree_model_get_value(model, iter, STATION_LOCATION, &city);
 	gtk_tree_model_get_value(model, iter, STATION_URI, &value);
@@ -767,11 +770,12 @@ on_search_matches(GtkEntryCompletion *widget,
 	        if (strcasecmp(stationinfo->stream->uri, g_value_get_string(&value))==0) {
 			gchar *statusmsg = g_strconcat(stationinfo->name, " in ", stationinfo->location, " (", stationinfo->band, ", ", g_strdup_printf("%li", stationinfo->stream->samplerate), " Hz, ", g_strdup_printf("%li", stationinfo->stream->bitrate), " kbps)", NULL);
 			context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
+			gtk_statusbar_pop (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id));
 			gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), statusmsg);
-			gst_player_play(player);
 		}
 		stationinfo = stationinfo->next;
 	}
+	gst_player_play(player);
 	return FALSE;
 }
 
@@ -850,23 +854,13 @@ main (int argc,
 
 	bbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 10);
 
-#if 0
-	button = gtk_button_new();
-	image = gtk_image_new_from_icon_name("new", GTK_ICON_SIZE_BUTTON);
-	gtk_button_set_image (GTK_BUTTON (button), image);
-	gtk_button_set_label (GTK_BUTTON (button), "New");
-	g_signal_connect(button, "clicked", G_CALLBACK(on_new_station_clicked), view);
-	gtk_container_add (GTK_CONTAINER (bbox), button);
-#endif
-
-#if 0
 	button = gtk_button_new();
 	image = gtk_image_new_from_icon_name("media-playback-start", GTK_ICON_SIZE_BUTTON);
 	gtk_button_set_image (GTK_BUTTON (button), image);
 	gtk_button_set_label (GTK_BUTTON (button), "New");
 	g_signal_connect(button, "clicked", G_CALLBACK (on_new_station_clicked), view);
 	gtk_container_add (GTK_CONTAINER (bbox), button);
-#endif
+
 	memset(&stats, 0, sizeof(stats));
 
 	input = gtk_entry_new();

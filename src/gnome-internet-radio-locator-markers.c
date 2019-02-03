@@ -80,8 +80,7 @@ marker_function (ChamplainMarker *self,
 {
         gchar *station, *station_link;
 	gchar *markup;
-	gint context_id;
-
+	guint context_id;
 	station = (gchar *)champlain_label_get_text (CHAMPLAIN_LABEL (self));
 	station_link = strtok(station, "\n");
 	gtk_entry_set_text(GTK_ENTRY(input),(gchar *)station_link);
@@ -91,14 +90,14 @@ marker_function (ChamplainMarker *self,
 	while (stationinfo != NULL) {
 	         if (strcasecmp(stationinfo->location, station_link)==0) {
 		        gchar *statusmsg = g_strconcat(stationinfo->name, " in ", stationinfo->location, " (", stationinfo->band, ", ", g_strdup_printf("%li", stationinfo->stream->samplerate), " Hz, ", g_strdup_printf("%li", stationinfo->stream->bitrate), " kbps)", NULL);
-			gst_player_stop(player);
 			gnome_internet_radio_locator_player_new(GST_PLAYER(player), stationinfo->stream->uri);
 			context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
+			gtk_statusbar_pop (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id));
 			gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), statusmsg);
-			gst_player_play(player);
 		}
 		stationinfo = stationinfo->next;
 	}
+	gst_player_play(player);
 	if (user_data != NULL) {
 		champlain_label_set_text (CHAMPLAIN_LABEL (self), user_data);
 	}

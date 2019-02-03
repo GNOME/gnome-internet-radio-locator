@@ -16,10 +16,6 @@ appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 # gsettingsconvertdir = $(datadir)/GConf/gsettings
 # gsettingsconvert_DATA = eog.convert
 
-# uidir = $(pkgdatadir)
-# ui_DATA = \
-# 	eog-toolbar.xml
-
 # pkgconfigdir = $(libdir)/pkgconfig
 # pkgconfig_DATA = gnome-internet-radio-locator.pc
 
