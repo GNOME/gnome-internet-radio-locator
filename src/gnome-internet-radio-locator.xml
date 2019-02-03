@@ -631,14 +631,6 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://audio.wpts.pitt.edu:8000/wpts_live_96s.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
     <stream mime="audio/mpeg" uri="http://audio.wpts.pitt.edu:8000/wpts_live_48s.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="48 kbps" />
   </station>
-  <station band="1330AM" id="wtbu" lang="en" name="WTBU" rank="1.0" type="edu">
-    <frequency uri="http://www.wtburadio.org/">89.3 FM in Boston, Massachusetts</frequency>
-    <location>Boston, Massachusetts</location>
-    <description lang="en">
-      WTBU is BU's student-run, volunteer radio station which broadcasts live 20 hours a day.  Our station is primarily available through our webcast, but you can also listen to us on 89.3 FM/640 AM if you're in Boston, or on BU's cable channel 6 if you live on campus.
-    </description>
-    <stream mime="audio/mpeg" uri="http://wtbu.bu.edu:1800/listen" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="191 kbps" />
-  </station>
   <station band="1330AM" id="kasc" lang="en" name="Arizona State University" rank="1.0" type="edu">
     <frequency uri="http://www.blazeradioonline.com/">1330 AM in Phoenix, Arizona</frequency>
     <location>Phoenix, Arizona</location>
@@ -1004,6 +996,12 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <stream mime="audio/ogg" uri="http://icecast.media.berkeley.edu:8000/kalx-128.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <stream mime="audio/mpeg" uri="http://icecast.media.berkeley.edu:8000/kalx-128.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://kalx.berkeley.edu/</uri>
+  </station>
+  <station band="1330AM" id="wtbu" lang="en" name="WTBU" rank="1.0" type="edu">
+    <frequency uri="http://www.wtburadio.org/">89.3 FM in Boston, Massachusetts</frequency>
+    <location>Boston, Massachusetts</location>
+    <description lang="en">WTBU is BU's student-run, volunteer radio station which broadcasts live 20 hours a day.  Our station is primarily available through our webcast, but you can also listen to us on 89.3 FM/640 AM if you're in Boston, or on BU's cable channel 6 if you live on campus.</description>
+    <stream mime="audio/mpeg" uri="http://wtbu.bu.edu:1800/listen" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="191 kbps" />
   </station>
   <station band="95.3FM" id="whrb" lang="en" name="WHRB" rank="1.0" type="edu">
     <frequency uri="http://www.whrb.org/">95.3 FM in Cambridge, Massachusetts</frequency>

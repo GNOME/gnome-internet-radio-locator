@@ -313,18 +313,18 @@ GtkWidget *create_new_station_selector(gchar *location) {
 	}
 	stationinfo = gnome_internet_radio_locator_station_load_from_file(localstation,
 									  world_station_xml_filename);
-	gtk_widget_show(nameentry);
-	gtk_widget_show(locationentry);
-	gtk_widget_show(urientry);
-	gtk_widget_show(bandentry);
-	gtk_widget_show(descriptionentry);
-	gtk_widget_show(websiteentry);
 	gtk_container_add(GTK_CONTAINER(content_area), nameentry);
 	gtk_container_add(GTK_CONTAINER(content_area), bandentry);
 	gtk_container_add(GTK_CONTAINER(content_area), locationentry);
 	gtk_container_add(GTK_CONTAINER(content_area), urientry);
 	gtk_container_add(GTK_CONTAINER(content_area), descriptionentry);
 	gtk_container_add(GTK_CONTAINER(content_area), websiteentry);
+	gtk_widget_show(nameentry);
+	gtk_widget_show(bandentry);
+	gtk_widget_show(locationentry);
+	gtk_widget_show(urientry);
+	gtk_widget_show(descriptionentry);
+	gtk_widget_show(websiteentry);
 	/* g_signal_connect(G_OBJECT(station_selector), GTK_RESPONSE_ACCEPT, */
 	/* 		 G_CALLBACK(on_new_station_selector_changed), */
 	/* 		 NULL); */
