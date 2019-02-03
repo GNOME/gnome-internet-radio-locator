@@ -769,7 +769,7 @@ on_search_matches(GtkEntryCompletion *widget,
 	stationinfo = gnome_internet_radio_locator_station_load_from_file(localstation, world_station_xml_filename);
 	while (stationinfo != NULL) {
 	        if (strcasecmp(stationinfo->stream->uri, g_value_get_string(&value))==0) {
-			gchar *statusmsg = g_strconcat(stationinfo->name, " in ", stationinfo->location, " (", stationinfo->band, ", ", g_strdup_printf("%li", stationinfo->stream->samplerate), " Hz, ", g_strdup_printf("%li", stationinfo->stream->bitrate), " kbps)", NULL);
+			gchar *statusmsg = g_strconcat(stationinfo->name, " (", stationinfo->uri, ") in ", stationinfo->location, " (", stationinfo->band, ", ", g_strdup_printf("%li", stationinfo->stream->samplerate), " Hz, ", g_strdup_printf("%li", stationinfo->stream->bitrate), " kbps)", NULL);
 			context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
 			gtk_statusbar_pop (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id));
 			gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), statusmsg);
