@@ -115,7 +115,7 @@ void gnome_internet_radio_locator_helper_run(gchar *url, gchar *name, GNOMEInter
 								      GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
 								      GTK_STOCK_SAVE, GTK_RESPONSE_ACCEPT,
 								      NULL);
-				default_filename = g_strconcat(gnome_internet_radio_locator->selected_station_name, " - Broadcast Recording - ", outstr, ".mp3", NULL);  
+				default_filename = g_strconcat(gnome_internet_radio_locator->selected_station_name, " - Broadcast Recording - ", outstr, ".mp3", NULL);
 				gtk_file_chooser_set_current_name (GTK_FILE_CHOOSER (dialog), default_filename);
 				if (gtk_dialog_run (GTK_DIALOG (dialog)) == GTK_RESPONSE_ACCEPT)
 				{
@@ -335,7 +335,7 @@ void gnome_internet_radio_locator_helper_run(gchar *url, gchar *name, GNOMEInter
 		/* Install timeout fnction that will move the progress bar */
 		gnome_internet_radio_locator->timeout_id = g_timeout_add(100,(GSourceFunc)cb_timeout,gnome_internet_radio_locator);
 /* #endif */
-#if 0 
+#if 0
 		ret = g_spawn_async_with_pipes( NULL, /* command */ argv, NULL,
 						G_SPAWN_DO_NOT_REAP_CHILD|G_SPAWN_DEFAULT, NULL,
 						NULL, &gnome_internet_radio_locator->record_pid, NULL, &out, &error, NULL );

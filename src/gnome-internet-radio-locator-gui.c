@@ -53,19 +53,13 @@ GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
 GtkWidget *create_stations_selector(char *selected_station_uri,
 				    char *filename)
 {
-
 	GtkWidget *stations_selector;
 	GtkWidget *align, *menu, *drop_down, *item;
-
 	gchar *station_uri, *station_name, *station_location, *station_band, *station_description, *station_website;
 	gchar *label, *world_station_xml_filename, *local_station_xml_file;
-
 	int i = 0, selection = -1;
-
 	GStatBuf stats;
-
 	memset(&stats, 0, sizeof(stats));
-
 	/* The Stations dialog */
 	/* stations_selector = gtk_dialog_new_with_buttons("Select a station", */
 	/* 						GTK_WINDOW(gnome_internet_radio_locator_app), */
@@ -81,12 +75,9 @@ GtkWidget *create_stations_selector(char *selected_station_uri,
 	/* 		  (GTK_DIALOG(stations_selector)->vbox), align); */
 	/* gtk_container_set_border_width(GTK_CONTAINER(align), 6); */
 	/* gtk_widget_show(align); */
-
 	menu = gtk_menu_new();
 	gtk_widget_show(menu);
-
 	/* creating the menu items */
-
 	/* world_station_xml_filename = gnome_program_locate_file(NULL, */
 	/* 						       GNOME_FILE_DOMAIN_APP_DATADIR, */
 	/* 						       "gnome-internet-radio-locator/gnome-internet-radio-locator.xml", */
@@ -94,16 +85,13 @@ GtkWidget *create_stations_selector(char *selected_station_uri,
 	/* 						       NULL); */
 
 	/* world_station_xml_filename = g_strdup("https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xml"); */
-
 	world_station_xml_filename = g_strconcat(GNOME_INTERNET_RADIO_LOCATOR_DATADIR, "/gnome-internet-radio-locator.xml", NULL);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("world_station_xml_filename = %s\n",
 	    world_station_xml_filename);
-
 	if (world_station_xml_filename == NULL) {
 		g_warning(_("Failed to open %s\n"),
 			  world_station_xml_filename);
 	}
-
 	local_station_xml_file =
 	    g_strconcat(g_get_home_dir(), "/.gnome-internet-radio-locator/gnome-internet-radio-locator.xml", NULL);
 
@@ -112,19 +100,14 @@ GtkWidget *create_stations_selector(char *selected_station_uri,
 	} else {
 		localstation = NULL;
 	}
-
 	if (localstation == NULL) {
 		g_warning(_("Failed to open %s\n"), local_station_xml_file);
 	}
-
 /*   g_free (local_station_xml_file); */
-
 	stationinfo =
 	    gnome_internet_radio_locator_station_load_from_file(localstation,
 					world_station_xml_filename);
-
 	gnome_internet_radio_locator_stations = NULL;
-
 	while (stationinfo != NULL) {
 
 		label =
@@ -311,96 +294,85 @@ GtkWidget *create_new_station_selector(gchar *location) {
 	g_signal_connect(G_OBJECT(completion), "match-selected",
 			 G_CALLBACK(on_location_matches), NULL);
 	location_model = gtk_list_store_new(2, G_TYPE_STRING, G_TYPE_STRING);
-
 	world_station_xml_filename = g_strconcat(GNOME_INTERNET_RADIO_LOCATOR_DATADIR, "/gnome-internet-radio-locator.xml", NULL);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("world_station_xml_filename = %s\n",
 	    world_station_xml_filename);
-
 	if (world_station_xml_filename == NULL) {
 		g_warning((_("Failed to open %s.  Please install it.\n")),
 			  world_station_xml_filename);
 	}
-
 	local_station_xml_file =
 	    g_strconcat(g_get_home_dir(), "/.gnome_internet_radio_locator/gnome_internet_radio_locator.xml", NULL);
-
 	if (!g_stat(local_station_xml_file, &stats)) {
 		localstation = gnome_internet_radio_locator_station_load_from_file(NULL, local_station_xml_file);
 	} else {
 		localstation = NULL;
 	}
-
 	if (localstation == NULL) {
 		g_warning(_("Failed to open %s\n"), local_station_xml_file);
 	}
-
 	stationinfo = gnome_internet_radio_locator_station_load_from_file(localstation,
 									  world_station_xml_filename);
-
-	  gtk_widget_show(nameentry);
-	  gtk_widget_show(locationentry);
-	  gtk_widget_show(urientry);
-	  gtk_widget_show(bandentry);
-	  gtk_widget_show(descriptionentry);
-	  gtk_widget_show(websiteentry);
-	  gtk_container_add(GTK_CONTAINER(content_area), nameentry);
-	  gtk_container_add(GTK_CONTAINER(content_area), bandentry);
-	  gtk_container_add(GTK_CONTAINER(content_area), locationentry);
-	  gtk_container_add(GTK_CONTAINER(content_area), urientry);
-	  gtk_container_add(GTK_CONTAINER(content_area), descriptionentry);
-	  gtk_container_add(GTK_CONTAINER(content_area), websiteentry);
-	  /* g_signal_connect(G_OBJECT(station_selector), GTK_RESPONSE_ACCEPT, */
-	  /* 		 G_CALLBACK(on_new_station_selector_changed), */
-	  /* 		 NULL); */
-	  g_object_set_data(G_OBJECT(station_selector), "station_name",
-			    (gchar *) gtk_entry_get_text(GTK_ENTRY(nameentry)));
-	  g_object_set_data(G_OBJECT(station_selector), "station_band",
-			    (gchar *) gtk_entry_get_text(GTK_ENTRY(bandentry)));
-	  g_object_set_data(G_OBJECT(station_selector), "station_location",
-			    (gchar *) gtk_entry_get_text(GTK_ENTRY(locationentry)));
-	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("LOCATIONENTRY: %s\n", (gchar *) gtk_entry_get_text(GTK_ENTRY(locationentry)));
-	  g_object_set_data(G_OBJECT(station_selector), "station_uri",
-			    (gchar *) gtk_entry_get_text(GTK_ENTRY(urientry)));
-	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("URIENTRY: %s\n", (gchar *) gtk_entry_get_text(GTK_ENTRY(urientry)));
-	  g_object_set_data(G_OBJECT(station_selector), "station_description",
-			    (gchar *) gtk_entry_get_text(GTK_ENTRY(descriptionentry)));
-	  g_object_set_data(G_OBJECT(station_selector), "station_website",
-			    (gchar *) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
-	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("WEBSITEENTRY: %s\n", (ghar *) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
-
+	gtk_widget_show(nameentry);
+	gtk_widget_show(locationentry);
+	gtk_widget_show(urientry);
+	gtk_widget_show(bandentry);
+	gtk_widget_show(descriptionentry);
+	gtk_widget_show(websiteentry);
+	gtk_container_add(GTK_CONTAINER(content_area), nameentry);
+	gtk_container_add(GTK_CONTAINER(content_area), bandentry);
+	gtk_container_add(GTK_CONTAINER(content_area), locationentry);
+	gtk_container_add(GTK_CONTAINER(content_area), urientry);
+	gtk_container_add(GTK_CONTAINER(content_area), descriptionentry);
+	gtk_container_add(GTK_CONTAINER(content_area), websiteentry);
+	/* g_signal_connect(G_OBJECT(station_selector), GTK_RESPONSE_ACCEPT, */
+	/* 		 G_CALLBACK(on_new_station_selector_changed), */
+	/* 		 NULL); */
+	g_object_set_data(G_OBJECT(station_selector), "station_name",
+			  (gchar *) gtk_entry_get_text(GTK_ENTRY(nameentry)));
+	g_object_set_data(G_OBJECT(station_selector), "station_band",
+			  (gchar *) gtk_entry_get_text(GTK_ENTRY(bandentry)));
+	g_object_set_data(G_OBJECT(station_selector), "station_location",
+			  (gchar *) gtk_entry_get_text(GTK_ENTRY(locationentry)));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("LOCATIONENTRY: %s\n", (gchar *) gtk_entry_get_text(GTK_ENTRY(locationentry)));
+	g_object_set_data(G_OBJECT(station_selector), "station_uri",
+			  (gchar *) gtk_entry_get_text(GTK_ENTRY(urientry)));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("URIENTRY: %s\n", (gchar *) gtk_entry_get_text(GTK_ENTRY(urientry)));
+	g_object_set_data(G_OBJECT(station_selector), "station_description",
+			  (gchar *) gtk_entry_get_text(GTK_ENTRY(descriptionentry)));
+	g_object_set_data(G_OBJECT(station_selector), "station_website",
+			  (gchar *) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("WEBSITEENTRY: %s\n", (ghar *) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
 #if 0 /* FIXME: Add input fields */
-	  g_object_set_data(G_OBJECT(station_selector), "station_description",
-			    (gchar *) station_description);
-	  g_object_set_data(G_OBJECT(station_selector), "station_website",
-			    (gchar *) station_website);
+	g_object_set_data(G_OBJECT(station_selector), "station_description",
+			  (gchar *) station_description);
+	g_object_set_data(G_OBJECT(station_selector), "station_website",
+			  (gchar *) station_website);
 #endif
-	  // gtk_widget_show(station_selector);
-	  // g_free(label);
-	  g_signal_connect(G_OBJECT(station_selector), "response",
-			   G_CALLBACK(gtk_widget_hide),
-			   (gpointer) station_selector);
-	  g_signal_connect(G_OBJECT(station_selector), "delete-event",
-			   G_CALLBACK(gtk_widget_hide),
-			   (gpointer) station_selector);
-	  /* tz_db_free (db); */
-	  /* g_free (pixmap_dir); */
-	  /* g_free (filename); */
-	  /* g_free (path); */
-	  return station_selector;
+	// gtk_widget_show(station_selector);
+	// g_free(label);
+	g_signal_connect(G_OBJECT(station_selector), "response",
+			 G_CALLBACK(gtk_widget_hide),
+			 (gpointer) station_selector);
+	g_signal_connect(G_OBJECT(station_selector), "delete-event",
+			 G_CALLBACK(gtk_widget_hide),
+			 (gpointer) station_selector);
+	/* tz_db_free (db); */
+	/* g_free (pixmap_dir); */
+	/* g_free (filename); */
+	/* g_free (path); */
+	return station_selector;
 }
 
 GtkWidget *create_gnome_internet_radio_locator_app(void)
 {
 	GtkWidget *gnome_internet_radio_locator_app;
 	GtkWidget *vbox1;
-
 	GtkWidget *gnome_internet_radio_locator_pixmap;
-
 	GtkWidget *appbar;
 	GtkWidget *progress;
 	gsize length;
 	const gchar *selected_station, *selected_station_uri, *selected_station_name, *selected_station_location, *selected_station_description;
-	
 	GNOMEInternetRadioLocatorData *gnome_internet_radio_locator_data = g_new0(GNOMEInternetRadioLocatorData, 1);
 	char *pmf;
 	gtk_window_set_title(GTK_WINDOW(gnome_internet_radio_locator_app), "GNOME Internet Radio Locator");
@@ -418,7 +390,6 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	/* gnome_internet_radio_locator->selected_station_description = selected_station_description; */
 #if GNOME_INTERNET_RADIO_LOCATOR_CFG_GNOME_CONFIG
 	gnome_config_push_prefix("/gnome-internet-radio-locator/General/");
-
 	gnome_internet_radio_locator->selected_listener_uri =
 	    gnome_config_get_string("selected_listener_uri=");
 	gnome_internet_radio_locator->selected_listener_name =
@@ -427,7 +398,6 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	    gnome_config_get_string("selected_listener_location=");
 	gnome_internet_radio_locator->selected_listener_description =
 	    gnome_config_get_string("selected_listener_description=");
-
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("gnome_internet_radio_locator->selected_listener_uri: %s\n",
 	       gnome_internet_radio_locator->selected_listener_uri);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("gnome_internet_radio_locator->selected_listener_name: %s\n",
@@ -438,7 +408,6 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	       gnome_internet_radio_locator->selected_listener_band);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("gnome_internet_radio_locator->selected_listener_description: %s\n",
 	       gnome_internet_radio_locator->selected_listener_description);
-
 	gnome_internet_radio_locator->selected_station_uri =
 	    gnome_config_get_string("selected_station_uri=");
 	gnome_internet_radio_locator->selected_station_name =
@@ -447,14 +416,12 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	    gnome_config_get_string("selected_station_location=");
 	gnome_internet_radio_locator->selected_station_description =
 	    gnome_config_get_string("selected_station_description=");
-
 	gnome_internet_radio_locator->selected_station_name =
 	    gnome_config_get_string("selected_station_name=");
 	gnome_internet_radio_locator->selected_station_location =
 	    gnome_config_get_string("selected_station_location=");
 	gnome_internet_radio_locator->selected_station_description =
 	    gnome_config_get_string("selected_station_description=");
-
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("gnome_internet_radio_locator->selected_station_uri: %s\n",
 	       gnome_internet_radio_locator->selected_station_uri);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("gnome_internet_radio_locator->selected_station_name: %s\n",
@@ -463,7 +430,6 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	       gnome_internet_radio_locator->selected_station_location);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("gnome_internet_radio_locator->selected_station_description: %s\n",
 	       gnome_internet_radio_locator->selected_station_description);
-
 	if (strcmp(gnome_internet_radio_locator->selected_station_uri,"")==0) {
 		gnome_internet_radio_locator->selected_station_uri = g_strdup(_("http://fm939.wnyc.org/wnycfm"));
 	}
@@ -479,7 +445,6 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	if (strcmp(gnome_internet_radio_locator->selected_station_description,"")==0) {
 		gnome_internet_radio_locator->selected_station_description = g_strdup(_("WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, broadcasting the finest programs from NPR, American Public Media, Public Radio International and the BBC World Service, as well as a wide range of award-winning local programming."));
 	}
-
 	gnome_internet_radio_locator->selected_streams_uri =
 		gnome_config_get_string("selected_streams_uri=");
 	gnome_internet_radio_locator->selected_streams_mime =
@@ -492,7 +457,6 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	    gnome_config_get_string("selected_streams_samplerate=");
 	gnome_internet_radio_locator->selected_streams_channels =
 		(Gnome_Internet_Radio_LocatorChannels)gnome_config_get_string("selected_streams_channels=");
-
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("gnome_internet_radio_locator->selected_streams_uri: %s\n",
 	       gnome_internet_radio_locator->selected_streams_uri);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("gnome_internet_radio_locator->selected_streams_mime: %s\n",
@@ -505,9 +469,7 @@ GtkWidget *create_gnome_internet_radio_locator_app(void)
 	       gnome_internet_radio_locator->selected_streams_samplerate);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("gnome_internet_radio_locator->selected_channels: %0x\n",
 	       gnome_internet_radio_locator->selected_streams_channels);
-
 	gnome_config_pop_prefix();
 #endif
-
 	return gnome_internet_radio_locator_app;
 }

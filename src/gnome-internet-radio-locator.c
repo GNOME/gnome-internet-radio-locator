@@ -410,47 +410,47 @@ listen_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
 
 static void
 stop_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
-  guint context_id;
-  gnome_internet_radio_locator_player_stop(player);
-  context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
-  gtk_statusbar_pop (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id));
-  gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), "Search by city or drag/click on the zoomable map to listen to a radio broadcast");  
-  return;
+	guint context_id;
+	gnome_internet_radio_locator_player_stop(player);
+	context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
+	gtk_statusbar_pop (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id));
+	gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), "Search by city or drag/click on the zoomable map to listen to a radio broadcast");
+	return;
 }
 
 static void
 pause_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
   /* FIXME: Removing Pause.  Can't quit after gst_player_pause is called. */
 #if 0
-  gnome_internet_radio_locator_player_pause(player);
+	gnome_internet_radio_locator_player_pause(player);
 #endif
-  return;
+	return;
 }
 
 static void
 prev_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
 	g_print(_("Previous Internet Radio Station\n"));
-  return;
+	return;
 }
 
 static void
 stations_all(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
-  return;
+	return;
 }
 
 static void
 next_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
-  return;
+	return;
 }
 
 static void
 about_station_cb(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
-  return;
+	return;
 }
 
 static void
 about_program_cb(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
-  return;
+	return;
 }
 
 static void
@@ -555,7 +555,7 @@ static void
 gnome_internet_radio_locator_window_cb (GtkApplication *app,
 		gpointer user_data)
 {
-  GtkWidget *widget, *grid, *toolbar, *new, *search, *listen, *stop, *prev, *stations, *next, *station, *program, *quit;
+	GtkWidget *widget, *grid, *toolbar, *new, *search, *listen, *stop, *prev, *stations, *next, *station, *program, *quit;
 	
 	window = gtk_application_window_new (app);
 	widget = gtk_champlain_embed_new();
@@ -1044,4 +1044,3 @@ main (int argc,
 	return status;
 #endif
 }
-
