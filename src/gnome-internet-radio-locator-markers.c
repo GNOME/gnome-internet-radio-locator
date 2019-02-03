@@ -46,6 +46,7 @@
 #include "gnome-internet-radio-locator-markers.h"
 #include "gnome-internet-radio-locator-player.h"
 
+extern GtkWidget *statusbar;
 extern GtkWidget *input;
 extern GtkEntryCompletion *completion;
 extern GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
@@ -79,6 +80,8 @@ marker_function (ChamplainMarker *self,
 {
         gchar *station, *station_link;
 	gchar *markup;
+	gint context_id;
+
 	station = (gchar *)champlain_label_get_text (CHAMPLAIN_LABEL (self));
 	station_link = strtok(station, "\n");
 	gtk_entry_set_text(GTK_ENTRY(input),(gchar *)station_link);
@@ -86,9 +89,12 @@ marker_function (ChamplainMarker *self,
 	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
 	stationinfo = gnome_internet_radio_locator_station_load_from_file(localstation, world_station_xml_filename);
 	while (stationinfo != NULL) {
-		if (strcasecmp(stationinfo->location, station_link)==0) {
+	         if (strcasecmp(stationinfo->location, station_link)==0) {
+		        gchar *statusmsg = g_strconcat(stationinfo->name, " in ", stationinfo->location, " (", stationinfo->band, ", ", g_strdup_printf("%li", stationinfo->stream->samplerate), " Hz, ", g_strdup_printf("%li", stationinfo->stream->bitrate), " kbps)", NULL);
 			gst_player_stop(player);
 			gnome_internet_radio_locator_player_new(GST_PLAYER(player), stationinfo->stream->uri);
+			context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
+			gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), statusmsg);
 			gst_player_play(player);
 		}
 		stationinfo = stationinfo->next;
@@ -166,7 +172,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-  station = g_strdup("Boston, Massachusetts\n<span size=\"small\">WTBU</span>");
+  station = g_strdup("WTBU, Boston, Massachusetts\n<span size=\"small\">http://www.wtburadio.org/</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
@@ -199,18 +205,18 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-  station = g_strdup("Cambridge, Massachusetts\n<span size=\"small\">WHRB</span>");
+  station = g_strdup("WHRB-FM, Cambridge, Massachusetts\n<span size=\"small\">http://www.whrb.org/</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 42.3750997, -71.1056157);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 42.3723191, -71.1186638);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
   g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
   marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-  station = g_strdup("WMBR-FM, Cambridge, Massachusetts\n<span size=\"small\">WHRB</span>");
+  station = g_strdup("WMBR-FM, Cambridge, Massachusetts\n<span size=\"small\">http://www.wmbr.org/</span>");
   champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
   champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
@@ -383,6 +389,17 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
   champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
   champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
   champlain_location_set_location (CHAMPLAIN_LOCATION (marker), -32.9272881, 151.7812534);
+  champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+  champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+  /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+  g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+  marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+  station = g_strdup("New Orleans, Louisiana\n<span size=\"small\">WWNO</span>");
+  champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+  champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+  champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_color);
+  champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+  champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 29.9499323, -90.0701156);
   champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
   champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
   /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */

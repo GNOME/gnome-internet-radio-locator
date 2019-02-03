@@ -29,12 +29,14 @@
 #include <config.h>
 #include <gtk/gtk.h>
 #include <gtk/gtkcombobox.h>
+#include <gst/player/player.h>
 #include <glib/gstdio.h>
 #include <glib/gi18n.h>
 #include <gio/gio.h>
 #include "gnome-internet-radio-locator.h"
 #include "gnome-internet-radio-locator-gui.h"
 #include "gnome-internet-radio-locator-keys.h"
+#include "gnome-internet-radio-locator-player.h"
 #include "gnome-internet-radio-locator-program.h"
 #include "gnome-internet-radio-locator-station.h"
 #include "gnome-internet-radio-locator-streams.h"
@@ -43,6 +45,8 @@
 extern GtkWidget *gnome_internet_radio_locator_app;
 extern GtkWidget *search_selector;
 extern GtkWidget *input;
+extern GtkWidget *statusbar;
+extern GstPlayer *player;
 
 GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
 
@@ -219,15 +223,20 @@ void
 save_cb (GtkWidget *widget, gpointer data) {
 
 	/* g_print("%s\n", data); */
-
-	char *nameentry, *locationentry, *urientry, *websiteentry, *descriptionentry;
-
+        gint context_id;
+        char *nameentry, *locationentry, *urientry, *websiteentry, *descriptionentry, *statusmsg;
 	nameentry = g_object_get_data(G_OBJECT(widget), "station_name");
 	locationentry = g_object_get_data(G_OBJECT(widget), "station_location");
 	urientry = g_object_get_data(G_OBJECT(widget), "station_uri");
 	websiteentry = g_object_get_data(G_OBJECT(widget), "station_website");
 	descriptionentry = g_object_get_data(G_OBJECT(widget), "station_description");
-
+	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
+	gnome_internet_radio_locator_player_new(GST_PLAYER(player), urientry);
+	context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
+	statusmsg = g_strconcat("Added ", nameentry, " in ", locationentry, NULL);
+	gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), statusmsg);
+	gst_player_stop(player);
+	gst_player_play(player);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", nameentry);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", locationentry);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", urientry);
@@ -269,7 +278,7 @@ GtkWidget *create_new_station_selector(gchar *location) {
 						       NULL);
 	content_area = gtk_dialog_get_content_area (GTK_DIALOG (station_selector));
 
-	g_signal_connect(G_OBJECT(station_selector), "response", G_CALLBACK(save_cb), NULL);
+	g_signal_connect(G_OBJECT(station_selector), "response", G_CALLBACK(save_cb), G_OBJECT(station_selector));
 	/* gtk_container_set_border_width */
 	/* 	(GTK_CONTAINER(GTK_DIALOG(station_selector)->vbox), 6);  */
 
@@ -344,26 +353,26 @@ GtkWidget *create_new_station_selector(gchar *location) {
 	  /* 		 G_CALLBACK(on_new_station_selector_changed), */
 	  /* 		 NULL); */
 	  g_object_set_data(G_OBJECT(station_selector), "station_name",
-			    (gpointer) gtk_entry_get_text(GTK_ENTRY(nameentry)));
+			    (gchar *) gtk_entry_get_text(GTK_ENTRY(nameentry)));
 	  g_object_set_data(G_OBJECT(station_selector), "station_band",
-			    (gpointer) gtk_entry_get_text(GTK_ENTRY(bandentry)));
+			    (gchar *) gtk_entry_get_text(GTK_ENTRY(bandentry)));
 	  g_object_set_data(G_OBJECT(station_selector), "station_location",
-			    (gpointer) gtk_entry_get_text(GTK_ENTRY(locationentry)));
-	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("LOCATIONENTRY: %s\n", (gpointer) gtk_entry_get_text(GTK_ENTRY(locationentry)));
+			    (gchar *) gtk_entry_get_text(GTK_ENTRY(locationentry)));
+	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("LOCATIONENTRY: %s\n", (gchar *) gtk_entry_get_text(GTK_ENTRY(locationentry)));
 	  g_object_set_data(G_OBJECT(station_selector), "station_uri",
-			    (gpointer) gtk_entry_get_text(GTK_ENTRY(urientry)));
-	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("URIENTRY: %s\n", (gpointer) gtk_entry_get_text(GTK_ENTRY(urientry)));
+			    (gchar *) gtk_entry_get_text(GTK_ENTRY(urientry)));
+	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("URIENTRY: %s\n", (gchar *) gtk_entry_get_text(GTK_ENTRY(urientry)));
 	  g_object_set_data(G_OBJECT(station_selector), "station_description",
-			    (gpointer) gtk_entry_get_text(GTK_ENTRY(descriptionentry)));
+			    (gchar *) gtk_entry_get_text(GTK_ENTRY(descriptionentry)));
 	  g_object_set_data(G_OBJECT(station_selector), "station_website",
-			    (gpointer) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
-	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("WEBSITEENTRY: %s\n", (gpointer) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
+			    (gchar *) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
+	  GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("WEBSITEENTRY: %s\n", (ghar *) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
 
 #if 0 /* FIXME: Add input fields */
 	  g_object_set_data(G_OBJECT(station_selector), "station_description",
-			    (gpointer) station_description);
+			    (gchar *) station_description);
 	  g_object_set_data(G_OBJECT(station_selector), "station_website",
-			    (gpointer) station_website);
+			    (gchar *) station_website);
 #endif
 	  // gtk_widget_show(station_selector);
 	  // g_free(label);

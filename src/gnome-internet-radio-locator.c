@@ -47,6 +47,7 @@ static ChamplainView *champlain_view;
 GApplication *app;
 GtkWidget *search_selector;
 GtkWidget *window;
+GtkWidget *statusbar;
 GNOMEInternetRadioLocatorData *gnome_internet_radio_locator;
 
 GtkWidget *input;
@@ -82,6 +83,24 @@ extern struct GNOMEInternetRadioLocatorMedia *media;
 GStatBuf stats;
 
 ChamplainView *view;
+
+gchar *
+str_channels (GNOMEInternetRadioLocatorChannels type) {
+  gchar *channels;
+  if (type == GNOME_INTERNET_RADIO_LOCATOR_CHANNELS_MONO) {
+    channels = g_strdup("Mono");
+  }
+  if (type == GNOME_INTERNET_RADIO_LOCATOR_CHANNELS_STEREO) {
+    channels = g_strdup("Stereo");
+  }
+  if (type == GNOME_INTERNET_RADIO_LOCATOR_CHANNELS_5_1) {
+    channels = g_strdup("Surround");
+  }
+  if (type == GNOME_INTERNET_RADIO_LOCATOR_CHANNELS_NONE) {
+    channels = g_strdup("None");
+  }
+  return channels;
+}
 
 /*
  * Terminate the main loop.
@@ -589,13 +608,13 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 	gtk_grid_attach (GTK_GRID(grid), GTK_WIDGET(toolbar), 0, 0, 1, 1);
 	gtk_grid_attach (GTK_GRID(grid), GTK_WIDGET(widget), 0, 1, 1, 1);
         champlain_view = gtk_champlain_embed_get_view (GTK_CHAMPLAIN_EMBED(widget));
-        gtk_widget_set_size_request(GTK_WIDGET(widget), 1440, 720);
+        gtk_widget_set_size_request(GTK_WIDGET(widget), 740, 580);
 	gtk_container_add (GTK_CONTAINER(window), GTK_WIDGET(grid));
 	g_signal_connect (window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 #endif
 	gtk_window_set_title (GTK_WINDOW(window), _("GNOME Internet Radio Locator"));
-	gtk_window_set_default_size (GTK_WINDOW(window), 1440, 720);
-
+	gtk_window_set_default_size (GTK_WINDOW(window), 740, 580);
+	gtk_window_maximize (GTK_WINDOW (window));
 	gnome_internet_radio_locator_app = create_gnome_internet_radio_locator_app();
 	gtk_widget_show(gnome_internet_radio_locator_app);
 
@@ -691,6 +710,7 @@ on_search_matches(GtkEntryCompletion *widget,
 	gchar *country;
 	gchar *state;
 	GError **err;
+	gint context_id;
 
 	gtk_tree_model_get_value(model, iter, STATION_LOCATION, &city);
 	gtk_tree_model_get_value(model, iter, STATION_URI, &value);
@@ -742,7 +762,16 @@ on_search_matches(GtkEntryCompletion *widget,
 	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
 	/* g_object_set_data(G_OBJECT(widget), "station_uri", g_value_get_string(&value)); */
 	gnome_internet_radio_locator_player_new(player, g_value_get_string(&value));
-	gst_player_play(player);
+	stationinfo = gnome_internet_radio_locator_station_load_from_file(localstation, world_station_xml_filename);
+	while (stationinfo != NULL) {
+	        if (strcasecmp(stationinfo->stream->uri, g_value_get_string(&value))==0) {
+			gchar *statusmsg = g_strconcat(stationinfo->name, " in ", stationinfo->location, " (", stationinfo->band, ", ", g_strdup_printf("%li", stationinfo->stream->samplerate), " Hz, ", g_strdup_printf("%li", stationinfo->stream->bitrate), " kbps)", NULL);
+			context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
+			gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), statusmsg);
+			gst_player_play(player);
+		}
+		stationinfo = stationinfo->next;
+	}
 	return FALSE;
 }
 
@@ -780,7 +809,7 @@ main (int argc,
 
 	g_object_set (G_OBJECT (view),
 		      "kinetic-mode", TRUE,
-		      "zoom-level", 4,
+		      "zoom-level", 3,
 		      NULL);
 
 	g_object_set_data (G_OBJECT (view), "window", window);
@@ -799,7 +828,7 @@ main (int argc,
 
 	license_actor = champlain_view_get_license_actor (view);
 	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
-	champlain_view_center_on (CHAMPLAIN_VIEW (view), 59.3251172, 18.0710935);
+	champlain_view_center_on (CHAMPLAIN_VIEW (view), 29.9499323, -90.0701156);
 	layer = create_marker_layer (view, &path);
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (path));
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (layer));
@@ -817,7 +846,7 @@ main (int argc,
 	append_point (path_layer, 45.4151, -73.1218);
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (path_layer));
 
-	gtk_widget_set_size_request (widget, 640, 481);
+	gtk_widget_set_size_request (widget, 640, 520);
 
 	bbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 10);
 
@@ -830,13 +859,14 @@ main (int argc,
 	gtk_container_add (GTK_CONTAINER (bbox), button);
 #endif
 
+#if 0
 	button = gtk_button_new();
 	image = gtk_image_new_from_icon_name("media-playback-start", GTK_ICON_SIZE_BUTTON);
 	gtk_button_set_image (GTK_BUTTON (button), image);
 	gtk_button_set_label (GTK_BUTTON (button), "New");
 	g_signal_connect(button, "clicked", G_CALLBACK (on_new_station_clicked), view);
 	gtk_container_add (GTK_CONTAINER (bbox), button);
-
+#endif
 	memset(&stats, 0, sizeof(stats));
 
 	input = gtk_entry_new();
@@ -982,11 +1012,12 @@ main (int argc,
 	g_signal_connect (view, "notify::state", G_CALLBACK (view_state_changed),
 			  button);
 	gtk_box_pack_end (GTK_BOX (bbox), button, FALSE, FALSE, 0);
-
 	viewport = gtk_frame_new (NULL);
 	gtk_container_add (GTK_CONTAINER (viewport), widget);
-
 	gtk_box_pack_start (GTK_BOX (vbox), bbox, FALSE, FALSE, 0);
+	statusbar = gtk_statusbar_new ();
+	gtk_box_pack_end (GTK_BOX (vbox), statusbar, TRUE, TRUE, 0);
+	gtk_widget_show (statusbar);
 	gtk_container_add (GTK_CONTAINER (vbox), viewport);
 
 	/* and insert it into the main window  */

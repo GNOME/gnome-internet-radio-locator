@@ -363,7 +363,7 @@ Bergen Student Radio strives to be an alternative to commercial and state-run ra
     <stream mime="audio/mpeg" uri="http://www.cr944.at:8000/cr944-high" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="192 kbps" />
     <uri>http://www.campusradio.at/</uri>
   </station>
-  <station band="" id="radiouniversidad" lang="en" name="Radio Universidad" rank="1.0" type="edu">
+  <station band="ONLINE" id="radiouniversidad" lang="en" name="Radio Universidad" rank="1.0" type="edu">
     <frequency uri="http://radiou.usac.edu.gt/">92.1 FM in Guatemala City, Guatemala</frequency>
     <location>Guatemala City, Guatemala</location>
     <description lang="es">
@@ -1008,7 +1008,7 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
   </station>
   <station band="95.3FM" id="whrb" lang="en" name="WHRB" rank="1.0" type="edu">
     <frequency uri="http://www.whrb.org/">95.3 FM in Cambridge, Massachusetts</frequency>
-    <location>Cambridge, Massachusetts</location>
+    <location>WHRB-FM, Cambridge, Massachusetts</location>
     <description lang="en">For seventy years, 95.3FM has been Boston's first source for exciting, entertaining, and enlightening music broadcasts. Harvard Radio's daily broadcast of Classical music, Jazz, and underground Rock explore a great repertoire of music left largely untouched by other commercial stations.</description>
     <stream mime="audio/mpeg" uri="http://stream.whrb.org:8000/whrb-mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="95 kbps" />
     <stream mime="audio/mpeg" uri="http://stream.whrb.org:8000/whrb-he-aac" codec="MPEG-4 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="62 kbps" />
@@ -1025,7 +1025,7 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <frequency uri="http://wwno.org/">89.9 FM in New Orleans, Louisiana</frequency>
     <location>New Orleans, Louisiana</location>
     <description lang="en">WWNO is the NPR member station for New Orleans and the 13 parishes of southeast Louisiana, broadcasting on 89.9 FM — and on KTLN 90.5 FM in the Houma-Thibodaux area — as a public service of the University of New Orleans.</description>
-    <stream mime="audio/mpeg" uri="http://pubint.ic.llnwd.net/stream/pubint_wwno_128" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/mpeg" uri="https://tektite.streamguys1.com:5145/wwnolive" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="126 kbps" />
     <uri>http://wwno.org/</uri>
   </station>
   <station band="99.1FM" id="ktru" lang="en" name="KTRU" rank="1.0" type="edu">

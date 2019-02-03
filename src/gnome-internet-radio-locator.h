@@ -62,6 +62,8 @@ typedef enum {
 #define GNOME_INTERNET_RADIO_LOCATOR_PLAYER_TRUE 1
 #define GNOME_INTERNET_RADIO_LOCATOR_PLAYER_FALSE 0
 
+gchar *str_channels (GNOMEInternetRadioLocatorChannels type);
+
 void show_error(gchar * msg);
 void statusbar_send_msg(const char *a, ...);
 
