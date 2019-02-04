@@ -4,7 +4,7 @@ Version 1.8.0
 
 GUI
 
-	* src/gnome-internet-radio-locator.c: Add status bar for stations
+	* src/gnome-internet-radio-locator.c: Add status bar for station
 	* src/gnome-internet-radio-locator.c: Set default center Stockholm
 	* src/gnome-internet-radio-locator.c: Set undefined city label color
 	* src/gnome-internet-radio-locator-gui.c: Add status bar for stations
@@ -15,7 +15,7 @@ GUI
 	* src/gnome-internet-radio-locator-markers.c: Add marker for Warsaw
 	* src/gnome-internet-radio-locator-markers.c: Add marker for WHRB-FM
 	* src/gnome-internet-radio-locator-markers.c: Add marker for WMBR-FM
-	* src/gnome-internet-radio-locator-markers.c: Add status bar for stations
+	* src/gnome-internet-radio-locator-markers.c: Add status bar for station
 
 Stations
 

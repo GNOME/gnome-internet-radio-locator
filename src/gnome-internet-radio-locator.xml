@@ -20,9 +20,9 @@
 
       Though the radio is connected with Warsaw University of Technology, its journalists include students of all Warsaw universities.
 
-For its listeners, the radio broadcasts various original programmes and a daily information and cultural programme “Aktywacja”.
+      For its listeners, the radio broadcasts various original programmes and a daily information and cultural programme “Aktywacja”.
 
-Each day the team of journalists prepares latest news for students, academic and cultural information and interesting facts, and invites guests.
+      Each day the team of journalists prepares latest news for students, academic and cultural information and interesting facts, and invites guests.
     </description>
     <stream mime="audio/mpeg" uri="http://listen.radioaktywne.pl:8000/qa" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="255 kbps" />
     <stream mime="audio/mpeg" uri="http://listen.radioaktywne.pl:8000/ramp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
@@ -1002,6 +1002,7 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <location>Boston, Massachusetts</location>
     <description lang="en">WTBU is BU's student-run, volunteer radio station which broadcasts live 20 hours a day.  Our station is primarily available through our webcast, but you can also listen to us on 89.3 FM/640 AM if you're in Boston, or on BU's cable channel 6 if you live on campus.</description>
     <stream mime="audio/mpeg" uri="http://wtbu.bu.edu:1800/listen" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="191 kbps" />
+    <uri>http://sites.bu.edu/wtbu/</uri>
   </station>
   <station band="95.3FM" id="whrb" lang="en" name="WHRB" rank="1.0" type="edu">
     <frequency uri="http://www.whrb.org/">95.3 FM in Cambridge, Massachusetts</frequency>
