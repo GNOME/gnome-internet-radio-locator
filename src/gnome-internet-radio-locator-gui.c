@@ -342,7 +342,7 @@ GtkWidget *create_new_station_selector(gchar *location) {
 			  (gchar *) gtk_entry_get_text(GTK_ENTRY(descriptionentry)));
 	g_object_set_data(G_OBJECT(station_selector), "station_website",
 			  (gchar *) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
-	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("WEBSITEENTRY: %s\n", (ghar *) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("WEBSITEENTRY: %s\n", (gchar *) gtk_entry_get_text(GTK_ENTRY(websiteentry)));
 #if 0 /* FIXME: Add input fields */
 	g_object_set_data(G_OBJECT(station_selector), "station_description",
 			  (gchar *) station_description);
