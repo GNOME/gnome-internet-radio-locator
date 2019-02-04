@@ -3,6 +3,7 @@ SUBDIRS = data help man src po
 datadir = @datadir@
 
 EXTRA_DIST = m4/ChangeLog  \
+	AMFM \
 	AUTHORS \
 	ChangeLog \
 	BROADCAST \
