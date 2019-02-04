@@ -11,6 +11,7 @@
       Moreeni is a part of the local cultural life, the university and the everyday life of the people who populate the city of Tampere.
     </description>
     <stream mime="audio/mpeg" uri="http://moreenistream1.uta.fi:8080/moreeni.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="127 kbps" />
+    <uri>https://radio.uta.fi/</uri>
   </station>
   <station band="Online" id="radioaktywne" lang="pl" name="Radio Aktywne" rank="1.0" type="edu">
     <frequency uri="https://radioaktywne.pl/">Online in Warsaw</frequency>
