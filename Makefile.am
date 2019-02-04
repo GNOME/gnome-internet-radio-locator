@@ -17,7 +17,8 @@ EXTRA_DIST = m4/ChangeLog  \
 	THANKS \
 	TODO \
 	UBUNTU \
-	gnome-internet-radio-locator.spec.in
+        gnome-internet-radio-locator.spec \
+        gnome-internet-radio-locator.spec.in
 
 DISTCLEANFILES =                \
         intltool-extract        \
