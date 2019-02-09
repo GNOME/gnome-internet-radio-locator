@@ -1,4 +1,21 @@
 =============
+Version 1.9.0
+=============
+
+Documentation
+
+	* AMFM: Add information on AM/FM versus Internet broadcasts
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add map marker for Pisa
+
+Translations
+
+	* Fabio Tomat (fru)
+	* Balázs Úr (hu)
+
+=============
 Version 1.8.0
 =============
 

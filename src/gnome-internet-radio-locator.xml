@@ -451,9 +451,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.ruv.is/</uri>
   </station>
   -->
-  <!-- Appears to be down as of 2016/07/07
   <station band="Online" id="RadioEco" lang="it" name="Radio Eco" rank="1.0" type="edu">
-    <frequency uri="http://ktuh.org/">Online in Pisa, Italy</frequency>
+    <frequency uri="http://www.radioeco.it/">Online in Pisa, Italy</frequency>
     <location>Pisa, Italy</location>
     <description lang="it">
       RadioEco è l’emittente radiofonica dell’Ateneo Pisano. Nasce nell’ambito dell’iniziativa del Sole-24 ore UniOnAir (una radio per ogni ateneo) all’interno della Facoltà di Economia.
@@ -462,7 +461,6 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://listen.radioeco.it:8000/outdoor.ogg" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
     <uri>http://radioeco.it/</uri>
   </station>
-  -->
   <station band="90.3FM" id="ktuh" lang="en" name="KTUH FM" rank="1.0" type="edu">
     <frequency uri="http://ktuh.org/">Online in Honolulu, Hawaii</frequency>
     <location>Honolulu, Hawaii</location>
