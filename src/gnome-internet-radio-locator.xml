@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="1.8.0">
+<gnome_internet_radio_locator version="1.9.0">
   <station band="98.4FM" id="radiomoreeni" lang="fi" name="Radio Moreeni" rank="1.0" type="edu">
     <frequency uri="https://radio.uta.fi/">FM 98.4 in Tampere</frequency>
     <location>Tampere, Finland</location>
