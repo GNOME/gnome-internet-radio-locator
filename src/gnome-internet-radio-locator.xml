@@ -1029,7 +1029,7 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <frequency uri="http://ktru.org/">99.1 FM in Houston, Texas</frequency>
     <location>Houston, Texas</location>
     <description lang="en">KTRU Houston is Rice University's student-run radio station.</description>
-    <stream mime="audio/mpeg" uri="http://128.42.201.27:80" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/mpeg" uri="http://128.42.128.26:80/live" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://ktru.org/</uri>
   </station>
   <station band="93.20FM" id="bbcworldservice" lang="en" name="BBC World Service" rank="1.0" type="gov">
