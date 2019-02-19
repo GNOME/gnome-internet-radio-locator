@@ -992,8 +992,8 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
       KALX has a wonderfully dedicated staff of student and community volunteers who are willing to explore with and educate their listeners. KALX is regular folks doing wild, unpredictable, extraordinary radio. All of our programs are homespun, we don't depend on satellite feeds. Rather we create programs from, and for our community (a community that includes both the University of California, Berkeley student population AND the surrounding area).
 
       As part of our mission to educate, every KALX DJ is encouraged to play a variety of musical styles and types. Rather than segregating music into limited boxes, this philosophy is an attempt to entertain the listener while broadening their musical experience. A pretty fun way to be educated, don't ya think!--></description>
-    <stream mime="audio/ogg" uri="http://icecast.media.berkeley.edu:8000/kalx-128.ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <stream mime="audio/mpeg" uri="http://icecast.media.berkeley.edu:8000/kalx-128.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/aac" uri="http://stream.kalx.berkeley.edu:8000/kalx-128.aac" codec="MPEG-4 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/mpeg" uri="http://stream.kalx.berkeley.edu:8000/kalx-128.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://kalx.berkeley.edu/</uri>
   </station>
   <station band="1330AM" id="wtbu" lang="en" name="WTBU" rank="1.0" type="edu">
