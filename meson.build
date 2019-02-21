@@ -1,6 +1,6 @@
 project('gnome-internet-radio-locator', 'c',
   version : '2.0.0',
-  meson_version: '>= 0.49.1',
+  meson_version: '>= 0.49.2',
   license : 'GPL')
 add_project_arguments('-DDEBUG=0', language : 'c')
 glib_dep = dependency('glib-2.0')
