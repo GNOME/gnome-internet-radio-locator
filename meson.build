@@ -1,5 +1,5 @@
 project('gnome-internet-radio-locator', 'c',
-  version : '1.9.0',
+  version : '2.0.0',
   meson_version: '>= 0.49.1',
   license : 'GPL')
 add_project_arguments('-DDEBUG=0', language : 'c')
