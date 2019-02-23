@@ -2,6 +2,13 @@
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
 <gnome_internet_radio_locator version="2.0.0">
+  <station band="90.9FM" id="WBUR" lang="en" name="WBUR" rank="1.0" type="org">
+    <frequency uri="http://wbur.org/">FM 90.9 in Boston</frequency>
+    <location>Boston, Massachusetts</location>
+    <description lang="en">Radio Boston</description>
+    <stream mime="audio/mpeg" uri="https://icecast-stream.wbur.org/" codec="MPEG-1 Layer 3 (MP3)" samplerate="22050 Hz" channels="Mono" bitrate="48 kbps" />
+    <uri>http://wbur.org/</uri>
+  </station>
   <station band="98.4FM" id="radiomoreeni" lang="fi" name="Radio Moreeni" rank="1.0" type="edu">
     <frequency uri="https://radio.uta.fi/">FM 98.4 in Tampere</frequency>
     <location>Tampere, Finland</location>
