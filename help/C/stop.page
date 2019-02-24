@@ -18,8 +18,6 @@
 
   <p>It is possible to stop playback of the currently selected radio station.</p>
   
-  <title>
-    <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-stop.png" />
-  </title>
+  <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-stop.png" />
   
 </page>

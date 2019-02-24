@@ -14,7 +14,5 @@
     <p>It is possible to add new, personal Internet radio stations 
     in <app>GNOME Internet Radio Locator for GNOME 3</app> with the
     "New" button.</p>
-    <title>
-      <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-new.png"/>
-    </title>
+    <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-new.png"/>
 </page>

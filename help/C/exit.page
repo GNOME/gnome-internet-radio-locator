@@ -19,8 +19,6 @@
   <p>It is possible to exit the <app>GNOME Internet Radio Locator for
   GNOME 3</app> with the "Exit" button.</p>
 
-  <title>
-    <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-exit.png" />
-  </title>
+  <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-exit.png" />
 
 </page>
