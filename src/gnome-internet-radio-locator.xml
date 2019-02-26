@@ -179,6 +179,7 @@
       WFUV (90.7 FM, wfuv.org), New York’s source for music discovery, has been a noncommercial, member-supported public media service of Fordham University for more than 65 years. WFUV has received national recognition for its unique weekday format of adult album alternative music, award-winning local news and sports, and a diverse weekend lineup.
     </description>
     <stream mime="audio/mpeg" uri="http://wfuv-onair.streamguys.org/onair-hi" codec="MPEG ADTS, layer III, v1" samplerate="44100 Hz" channels="JntStereo" bitrate="128 kbps" />
+    <uri>http://www.wfuv.org/</uri>
   </station>
   <station band="Online" id="radiofreebrooklyn" lang="en" name="Radio Free Brooklyn" rank="1.0" type="edu">
     <frequency uri="https://radiofreebrooklyn.com/">Brooklyn, New York</frequency>
@@ -189,6 +190,7 @@
       We are a non-commercial community freeform Internet radio station, streaming original content by the artists and residents of NYC’s most populous borough 24-hours a day, 7 days a week.
     </description>
     <stream mime="audio/mpeg" uri="http://192.111.140.6:9300/stream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="JntStereo" bitrate="192 kbps" />
+    <uri>https://radiofreebrooklyn.com/</uri>
   </station>
   <station band="Online" id="3rdrock" lang="en" name="NASA's Third Rock Radio" rank="1.0" type="gov">
     <frequency uri="https://www.nasa.gov/feature/third-rock-radio">Online</frequency>
@@ -198,6 +200,7 @@
     </description>
     <stream mime="audio/mpeg" uri="http://rfcmedia2.streamguys1.com/thirdrock.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="192 kbps" />
     <stream mime="audio/aac" uri="http://rfcmedia2.streamguys1.com/thirdrock.aac" codec="MPEG-4 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
+    <uri>https://www.nasa.gov/feature/third-rock-radio</uri>
   </station>
   <station band="89.9FM" id="ktsw" lang="en" name="KTSW" rank="1.0" type="edu">
     <frequency uri="http://ktsw.txstate.edu/">89.9FM in Austin, Texas</frequency>
@@ -213,6 +216,7 @@
       Bobcat Athletics and Rattler Football broadcasts.
     </description>
     <stream mime="audio/mpeg" uri="http://ktswlive.txstate.edu:8002/listen" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="95 kbps" />
+    <uri>http://ktsw.txstate.edu/</uri>
   </station>
   <station band="91.3FM" id="kced" lang="en" name="KCED - Centralia College's Radio" rank="1.0" type="edu">
     <frequency uri="http://www.centralia.edu/kced/">91.3FM in Centralia, District of Columbia</frequency>
@@ -227,6 +231,7 @@
     </description>
     <stream mime="audio/mpeg" uri="http://134.39.125.251:88/broadwavehigh.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="56 kbps" />
     <stream mime="audio/mpeg" uri="http://134.39.125.251:88/broadwavelow.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="16000 Hz" channels="Stereo" bitrate="24 kbps" />
+    <uri>http://www.centralia.edu/kced/</uri>
   </station>
   <station band="102.2FM" id="piratefm" lang="en" name="Pirate FM" rank="1.0" type="com">
     <frequency uri="http://www.piratefm.co.uk/">102.2 FM in Cornwall, United Kingdom</frequency>
@@ -237,6 +242,7 @@
 In fact we even split our adverts, and many of our local news and travel bulletins between the two areas, to enable us to super-serve the communities of the Duchy with relevant information.
     </description>
     <stream mime="audio/mpeg" uri="http://str1.sad.ukrd.com:80/pirate" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://www.piratefm.co.uk/</uri>
   </station>
   <station band="909/693 MW" id="bbcradio5live" lang="en" name="BBC Radio 5 Live" rank="1.0" type="gov">
     <frequency uri="http://www.bbc.co.uk/5live">909/693 MW in Salford, United Kingdom</frequency>
@@ -512,6 +518,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_sorlandet_mp3_l" codec="MPEG ADTS, layer III, v1" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
     <stream mime="audio/mpeg" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_sorlandet_mp3_m" codec="MPEG ADTS, layer III, v1" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
     <stream mime="audio/aac" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_sorlandet_mp3_h" codec="MPEG ADTS, layer III, v1" samplerate="48000 Hz" channels="Stereo" bitrate="192 kbps" />
+    <uri>https://www.nrk.no/sorlandet/</uri>
   </station>
   <station band="Online" id="nrkp2" lang="no" name="NRK P2" rank="1.0" type="gov">
     <frequency uri="http://www.nrk.no/p2/">Online in Oslo, Norway</frequency>
@@ -636,6 +643,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://audio.wpts.pitt.edu:8000/wpts_live_128s.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <stream mime="audio/mpeg" uri="http://audio.wpts.pitt.edu:8000/wpts_live_96s.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
     <stream mime="audio/mpeg" uri="http://audio.wpts.pitt.edu:8000/wpts_live_48s.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="48 kbps" />
+    <uri>http://wptsradio.org/</uri>
   </station>
   <station band="1330AM" id="kasc" lang="en" name="Arizona State University" rank="1.0" type="edu">
     <frequency uri="http://www.blazeradioonline.com/">1330 AM in Phoenix, Arizona</frequency>
@@ -749,6 +757,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://dolby.ury.york.ac.uk:7070/live-mobile" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="48 kbps" />
     <stream mime="audio/mpeg" uri="http://dolby.ury.york.ac.uk:7070/live-low" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
     <stream mime="audio/mpeg" uri="http://dolby.ury.york.ac.uk:7070/live-high" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="192 kbps" />
+    <uri>http://ury.org.uk/</uri>
   </station>
   <station band="97.0FM" id="eper" lang="en" name="EPER" rank="1.0" type="edu">
     <frequency uri="http://eper.elte.hu/"></frequency>
@@ -791,6 +800,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <location>Rochester, Michigan</location>
     <description lang="en">WXOU is a non-profit, student operated, freeform community radio station. Currently we are broadcasting with 110 watts of power from the campus of Oakland University. WE offer diverse programming such as, music, sports, news and student produced programs.<!-- Our goal is to supply the community with a service that provides both an educational experience to those involved with the radio station, while also providing information and entertainment o the rest of the community outside of Oakland’s campus.--></description>
     <stream mime="audio/mpeg" uri="http://wxou.oakland.edu:8000/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="22050 Hz" channels="Mono" bitrate="24 kbps" />
+    <uri>http://wxou.org/</uri>
   </station>
   <station band="88.5FM" id="wamu" lang="en" name="WAMU" rank="1.0" type="edu">
     <frequency uri="http://wamu.org/">88.5 FM in Washington, District of Columbia</frequency>
