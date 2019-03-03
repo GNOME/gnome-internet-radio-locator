@@ -9,6 +9,13 @@
     <stream mime="audio/mpeg" uri="https://icecast-stream.wbur.org/" codec="MPEG-1 Layer 3 (MP3)" samplerate="22050 Hz" channels="Mono" bitrate="48 kbps" />
     <uri>http://wbur.org/</uri>
   </station>
+  <station band="104.1FM" id="Midlar" lang="en" name="Midlar" rank="1.0" type="com">
+    <frequency uri="http://midlar.fo/">FM 104.1 in Torshavn, Færo Islands</frequency>
+    <location>Torshavn, Færo Islands</location>
+    <description lang="en">Midlar Samband</description>
+    <stream mime="audio/mpeg" uri="http://stream.midlar.fo/ras2-128" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://midlar.fo/</uri>
+  </station>
   <station band="98.4FM" id="radiomoreeni" lang="fi" name="Radio Moreeni" rank="1.0" type="edu">
     <frequency uri="https://radio.uta.fi/">FM 98.4 in Tampere</frequency>
     <location>Tampere, Finland</location>
