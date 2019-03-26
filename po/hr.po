@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2018-04-26 13:57+0000\n"
-"PO-Revision-Date: 2018-09-02 21:52+0200\n"
+"POT-Creation-Date: 2019-02-03 13:40+0000\n"
+"PO-Revision-Date: 2019-03-26 20:15+0100\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
@@ -18,12 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#. give it the title
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
-#: ../src/gnome-internet-radio-locator.c:593
-#: ../src/gnome-internet-radio-locator.c:763
 msgid "GNOME Internet Radio Locator for GNOME 3"
 msgstr "GNOME Internet radio lokator za GNOME 3"
 
@@ -71,70 +68,70 @@ msgstr "Locirajte internetske radio stanice"
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "Uživo;Radio;Program;Stanica;Lokator;"
 
-#: ../src/gnome-internet-radio-locator-gui.c:99
-#: ../src/gnome-internet-radio-locator-gui.c:113
-#: ../src/gnome-internet-radio-locator-gui.c:325
-#: ../src/gnome-internet-radio-locator.c:867
+#: ../src/gnome-internet-radio-locator-gui.c:103
+#: ../src/gnome-internet-radio-locator-gui.c:117
+#: ../src/gnome-internet-radio-locator-gui.c:334
+#: ../src/gnome-internet-radio-locator.c:896
 #, c-format
 msgid "Failed to open %s\n"
 msgstr "Neuspjelo otvaranje %s\n"
 
 #. The Stations dialog
-#: ../src/gnome-internet-radio-locator-gui.c:264
+#: ../src/gnome-internet-radio-locator-gui.c:273
 msgid "New Internet Radio Station"
 msgstr "Nova internetska radio stanica"
 
-#: ../src/gnome-internet-radio-locator-gui.c:267
+#: ../src/gnome-internet-radio-locator-gui.c:276
 msgid "_Save"
 msgstr "_Spremi"
 
-#: ../src/gnome-internet-radio-locator-gui.c:289
+#: ../src/gnome-internet-radio-locator-gui.c:298
 msgid "Station name"
 msgstr "Naziv stanice"
 
-#: ../src/gnome-internet-radio-locator-gui.c:290
+#: ../src/gnome-internet-radio-locator-gui.c:299
 msgid "Bandwidth"
 msgstr "Frekvencija"
 
-#: ../src/gnome-internet-radio-locator-gui.c:292
+#: ../src/gnome-internet-radio-locator-gui.c:301
 msgid "City name"
 msgstr "Naziv grada"
 
-#: ../src/gnome-internet-radio-locator-gui.c:296
+#: ../src/gnome-internet-radio-locator-gui.c:305
 msgid "http://uri-to-stream/"
 msgstr "http://uri-do-strujanja/"
 
-#: ../src/gnome-internet-radio-locator-gui.c:297
+#: ../src/gnome-internet-radio-locator-gui.c:306
 msgid "Description"
 msgstr "Opis"
 
-#: ../src/gnome-internet-radio-locator-gui.c:298
+#: ../src/gnome-internet-radio-locator-gui.c:307
 msgid "http://uri-to-website/"
 msgstr "http://uri-na-web-stranicu/"
 
-#: ../src/gnome-internet-radio-locator-gui.c:311
+#: ../src/gnome-internet-radio-locator-gui.c:320
 #, c-format
 msgid "Failed to open %s.  Please install it.\n"
 msgstr "Neuspjelo otvaranje %s. Instalirajte ga.\n"
 
-#: ../src/gnome-internet-radio-locator-gui.c:459
-#: ../src/gnome-internet-radio-locator.c:381
+#: ../src/gnome-internet-radio-locator-gui.c:468
+#: ../src/gnome-internet-radio-locator.c:403
 msgid "http://fm939.wnyc.org/wnycfm"
 msgstr "http://fm939.wnyc.org/wnycfm"
 
-#: ../src/gnome-internet-radio-locator-gui.c:462
+#: ../src/gnome-internet-radio-locator-gui.c:471
 msgid "WNYC"
 msgstr "WNYC"
 
-#: ../src/gnome-internet-radio-locator-gui.c:465
+#: ../src/gnome-internet-radio-locator-gui.c:474
 msgid "New York City, NY"
 msgstr "New York City, NY"
 
-#: ../src/gnome-internet-radio-locator-gui.c:468
-msgid "ONLINE"
-msgstr "DOSTUPNO"
+#: ../src/gnome-internet-radio-locator-gui.c:477
+msgid "Online"
+msgstr "Dostupan"
 
-#: ../src/gnome-internet-radio-locator-gui.c:471
+#: ../src/gnome-internet-radio-locator-gui.c:480
 msgid ""
 "WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, "
 "broadcasting the finest programs from NPR, American Public Media, Public "
@@ -199,86 +196,95 @@ msgstr ""
 "Neuspješno otvaranje URL-a: '%s'\n"
 "Pojedinosti: %s"
 
-#: ../src/gnome-internet-radio-locator.c:365
+#: ../src/gnome-internet-radio-locator.c:387
 #, c-format
 msgid "New Internet Radio Station\n"
 msgstr "Nova internetska radio stanica\n"
 
-#: ../src/gnome-internet-radio-locator.c:371
+#: ../src/gnome-internet-radio-locator.c:393
 #, c-format
 msgid "Search Internet Radio Station\n"
 msgstr "Pretraži internetsku radio stanicu\n"
 
-#: ../src/gnome-internet-radio-locator.c:406
+#: ../src/gnome-internet-radio-locator.c:432
 #, c-format
 msgid "Previous Internet Radio Station\n"
 msgstr "Prijašnja internetska radio stanica\n"
 
-#: ../src/gnome-internet-radio-locator.c:540
+#: ../src/gnome-internet-radio-locator.c:566
 msgid "Search"
 msgstr "Pretraži"
 
-#: ../src/gnome-internet-radio-locator.c:544
+#: ../src/gnome-internet-radio-locator.c:570
 msgid "Search Internet Radio Station"
 msgstr "Pretraži internetsku radio stanicu"
 
-#: ../src/gnome-internet-radio-locator.c:549
+#: ../src/gnome-internet-radio-locator.c:575
 msgid "Prev"
 msgstr "Prijašnja"
 
-#: ../src/gnome-internet-radio-locator.c:553
+#: ../src/gnome-internet-radio-locator.c:579
 msgid "Prev Internet Radio Station"
 msgstr "Prijašnja internetska radio stanica"
 
-#: ../src/gnome-internet-radio-locator.c:556
-#: ../src/gnome-internet-radio-locator.c:560
+#: ../src/gnome-internet-radio-locator.c:582
+#: ../src/gnome-internet-radio-locator.c:586
 msgid "Stations"
 msgstr "Stanice"
 
-#: ../src/gnome-internet-radio-locator.c:563
+#: ../src/gnome-internet-radio-locator.c:589
 msgid "Next"
 msgstr "Sljedeća"
 
-#: ../src/gnome-internet-radio-locator.c:567
+#: ../src/gnome-internet-radio-locator.c:593
 msgid "Next Internet Radio Station"
 msgstr "Sljedeća internetska radio stanica"
 
-#: ../src/gnome-internet-radio-locator.c:570
-#: ../src/gnome-internet-radio-locator.c:574
+#: ../src/gnome-internet-radio-locator.c:596
+#: ../src/gnome-internet-radio-locator.c:600
 msgid "About Station"
 msgstr "O stanici"
 
-#: ../src/gnome-internet-radio-locator.c:577
-#: ../src/gnome-internet-radio-locator.c:581
+#: ../src/gnome-internet-radio-locator.c:603
+#: ../src/gnome-internet-radio-locator.c:607
 msgid "About Program"
 msgstr "O programu"
 
-#: ../src/gnome-internet-radio-locator.c:638
+#. give it the title
+#: ../src/gnome-internet-radio-locator.c:619
+#: ../src/gnome-internet-radio-locator.c:801
+msgid "GNOME Internet Radio Locator"
+msgstr "GNOME Internet radio lokator"
+
+#: ../src/gnome-internet-radio-locator.c:664
 #, c-format
 msgid ""
 "Nothing\n"
 "\n"
 msgstr "Ništa\n"
 
-#: ../src/gnome-internet-radio-locator.c:926
+#: ../src/gnome-internet-radio-locator.c:955
 msgid "Stop"
 msgstr "Zaustavi"
 
-#: ../src/gnome-internet-radio-locator.c:932
+#: ../src/gnome-internet-radio-locator.c:961
 msgid "Zoom In"
 msgstr "Približi"
 
-#: ../src/gnome-internet-radio-locator.c:946
+#: ../src/gnome-internet-radio-locator.c:975
 msgid "Zoom Out"
 msgstr "Udalji"
 
-#: ../src/gnome-internet-radio-locator.c:951
+#: ../src/gnome-internet-radio-locator.c:980
 msgid "Markers"
 msgstr "Oznake"
 
-#: ../src/gnome-internet-radio-locator.c:973
+#: ../src/gnome-internet-radio-locator.c:1002
 msgid "Exit"
 msgstr "Zatvori"
+
+#~ msgid "ONLINE"
+#~ msgstr "DOSTUPNO"
 
 #~ msgid "Listen to and record from Internet radio"
 #~ msgstr "Slušajte i snimajte internetske radio stanice"
