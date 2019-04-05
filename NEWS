@@ -2,7 +2,14 @@
 Version 2.0.2
 =============
 
+Documentation
+
 	* NEWS: Fix typo
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add WBUR (Boston, Massachusetts)
+	* src/gnome-internet-radio-locator-markers.c: Add WTBU (Boston, Massachusetts)
 
 =============
 Version 2.0.1
