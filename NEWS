@@ -12,6 +12,10 @@ GUI
 	* src/gnome-internet-radio-locator-markers.c: Add WBUR (Boston, Massachusetts)
 	* src/gnome-internet-radio-locator-markers.c: Add WTBU (Boston, Massachusetts)
 
+Translations
+
+	* Rafael Fontenelle (pt_BR)
+
 =============
 Version 2.0.1
 =============
