@@ -8,6 +8,7 @@ Documentation
 
 GUI
 
+	* src/gnome-internet-radio-locator-markers.c: Add Midlar (Tórshavn, Faroe Island)
 	* src/gnome-internet-radio-locator-markers.c: Add WBUR (Boston, Massachusetts)
 	* src/gnome-internet-radio-locator-markers.c: Add WTBU (Boston, Massachusetts)
 
@@ -22,7 +23,7 @@ GUI
 Stations
 
 	* src/gnome-internet-radio-locator.xml: Add WBUR (Boston, Massachusetts)
-	* src/gnome-internet-radio-locator.xml: Add Midlar (Torshavn, Færo Islands)
+	* src/gnome-internet-radio-locator.xml: Add Midlar (Tórshavn, Faroe Islands)
 
 Translations
 
