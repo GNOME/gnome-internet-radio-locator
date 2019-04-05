@@ -1,4 +1,24 @@
 =============
+Version 2.0.1
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator.c: Add Internationalization
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add WMBUR (Boston, Massachusetts)
+	* src/gnome-internet-radio-locator.xml: Add Midlar (Torshavn, Færo Islands)
+
+Translations
+
+	* Ask Hjorth Larsen (da)
+	* Goran Vidović (hr)
+	* Kukuh Syafaat (id)
+	* Nathan Follens (nl)
+
+=============
 Version 2.0.0
 =============
 
