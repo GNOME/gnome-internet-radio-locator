@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="2.0.2">
+<gnome_internet_radio_locator version="2.0.3">
   <station band="90.9FM" id="WBUR" lang="en" name="WBUR" rank="1.0" type="org">
     <frequency uri="http://wbur.org/">FM 90.9 in Boston</frequency>
     <location>WBUR, Boston, Massachusetts</location>
