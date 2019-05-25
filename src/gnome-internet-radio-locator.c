@@ -414,7 +414,7 @@ stop_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
 	gnome_internet_radio_locator_player_stop(player);
 	context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
 	gtk_statusbar_pop (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id));
-	gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), "Search by city or drag/click on the zoomable map to listen to a radio broadcast");
+	gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), _("Search by city or drag/click on the zoomable map to listen to a radio broadcast"));
 	return;
 }
 
@@ -792,6 +792,9 @@ main (int argc,
 	GtkTreeIter iter;
 	GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
 	guint context_id;
+	bindtextdomain (GETTEXT_PACKAGE, GNOME_INTERNET_RADIO_LOCATOR_LOCALEDIR);
+	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+	textdomain (GETTEXT_PACKAGE);
 	if (gtk_clutter_init (&argc, &argv) != CLUTTER_INIT_SUCCESS)
 		return 1;
 	window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
@@ -859,7 +862,7 @@ main (int argc,
 	button = gtk_button_new();
 	image = gtk_image_new_from_icon_name("media-playback-start", GTK_ICON_SIZE_BUTTON);
 	gtk_button_set_image (GTK_BUTTON (button), image);
-	gtk_button_set_label (GTK_BUTTON (button), "New");
+	gtk_button_set_label (GTK_BUTTON (button), _("New"));
 	g_signal_connect(button, "clicked", G_CALLBACK (on_new_station_clicked), view);
 	gtk_container_add (GTK_CONTAINER (bbox), button);
 
@@ -1014,7 +1017,7 @@ main (int argc,
 	statusbar = gtk_statusbar_new ();
 	context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
 	gtk_statusbar_pop (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id));
-	gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), "Search by city or drag/click on the zoomable map to listen to a radio broadcast");
+	gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), _("Search by city or drag/click on the zoomable map to listen to a radio broadcast"));
 	gtk_box_pack_end (GTK_BOX (vbox), statusbar, FALSE, FALSE, 0);
 	gtk_widget_show (statusbar);
 	gtk_container_add (GTK_CONTAINER (vbox), viewport);

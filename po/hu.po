@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2019-02-03 13:40+0000\n"
-"PO-Revision-Date: 2019-02-05 21:29+0100\n"
-"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"POT-Creation-Date: 2019-04-05 10:01+0000\n"
+"PO-Revision-Date: 2019-04-08 08:51+0200\n"
+"Last-Translator: Meskó Balázs <mesko.balazs@fsf.hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
 msgid "GNOME Internet Radio Locator for GNOME 3"
@@ -71,70 +71,78 @@ msgstr "Internetes rádióállomások felderítése"
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "Élő;Rádió;Program;Állomás;Felderítő;"
 
-#: ../src/gnome-internet-radio-locator-gui.c:103
-#: ../src/gnome-internet-radio-locator-gui.c:117
-#: ../src/gnome-internet-radio-locator-gui.c:334
-#: ../src/gnome-internet-radio-locator.c:896
+#: ../src/gnome-internet-radio-locator-gui.c:92
+#: ../src/gnome-internet-radio-locator-gui.c:104
+#: ../src/gnome-internet-radio-locator-gui.c:312
+#: ../src/gnome-internet-radio-locator.c:899
 #, c-format
 msgid "Failed to open %s\n"
 msgstr "Nem sikerült megnyitni: %s\n"
 
+#: ../src/gnome-internet-radio-locator-gui.c:219
+msgid "Added "
+msgstr "Hozzáadva "
+
+#: ../src/gnome-internet-radio-locator-gui.c:219
+msgid " in "
+msgstr " itt: "
+
 #. The Stations dialog
-#: ../src/gnome-internet-radio-locator-gui.c:273
+#: ../src/gnome-internet-radio-locator-gui.c:256
 msgid "New Internet Radio Station"
 msgstr "Új internetes rádióállomás"
 
-#: ../src/gnome-internet-radio-locator-gui.c:276
+#: ../src/gnome-internet-radio-locator-gui.c:259
 msgid "_Save"
 msgstr "_Mentés"
 
-#: ../src/gnome-internet-radio-locator-gui.c:298
+#: ../src/gnome-internet-radio-locator-gui.c:281
 msgid "Station name"
 msgstr "Állomás neve"
 
-#: ../src/gnome-internet-radio-locator-gui.c:299
+#: ../src/gnome-internet-radio-locator-gui.c:282
 msgid "Bandwidth"
 msgstr "Sávszélesség"
 
-#: ../src/gnome-internet-radio-locator-gui.c:301
+#: ../src/gnome-internet-radio-locator-gui.c:284
 msgid "City name"
 msgstr "Város neve"
 
-#: ../src/gnome-internet-radio-locator-gui.c:305
+#: ../src/gnome-internet-radio-locator-gui.c:288
 msgid "http://uri-to-stream/"
 msgstr "http://adatfolyam-uri/"
 
-#: ../src/gnome-internet-radio-locator-gui.c:306
+#: ../src/gnome-internet-radio-locator-gui.c:289
 msgid "Description"
 msgstr "Leírás"
 
-#: ../src/gnome-internet-radio-locator-gui.c:307
+#: ../src/gnome-internet-radio-locator-gui.c:290
 msgid "http://uri-to-website/"
 msgstr "http://weboldal-uri/"
 
-#: ../src/gnome-internet-radio-locator-gui.c:320
+#: ../src/gnome-internet-radio-locator-gui.c:301
 #, c-format
 msgid "Failed to open %s.  Please install it.\n"
 msgstr "Nem sikerült megnyitni: %s. Kérjük, telepítse.\n"
 
-#: ../src/gnome-internet-radio-locator-gui.c:468
+#: ../src/gnome-internet-radio-locator-gui.c:434
 #: ../src/gnome-internet-radio-locator.c:403
 msgid "http://fm939.wnyc.org/wnycfm"
 msgstr "http://fm939.wnyc.org/wnycfm"
 
-#: ../src/gnome-internet-radio-locator-gui.c:471
+#: ../src/gnome-internet-radio-locator-gui.c:437
 msgid "WNYC"
 msgstr "WNYC"
 
-#: ../src/gnome-internet-radio-locator-gui.c:474
+#: ../src/gnome-internet-radio-locator-gui.c:440
 msgid "New York City, NY"
 msgstr "New York City, NY"
 
-#: ../src/gnome-internet-radio-locator-gui.c:477
+#: ../src/gnome-internet-radio-locator-gui.c:443
 msgid "Online"
 msgstr "Elérhető"
 
-#: ../src/gnome-internet-radio-locator-gui.c:480
+#: ../src/gnome-internet-radio-locator-gui.c:446
 msgid ""
 "WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, "
 "broadcasting the finest programs from NPR, American Public Media, Public "
@@ -210,6 +218,15 @@ msgstr "Új internetes rádióállomás\n"
 msgid "Search Internet Radio Station\n"
 msgstr "Internetes rádióállomás keresése\n"
 
+#: ../src/gnome-internet-radio-locator.c:417
+#: ../src/gnome-internet-radio-locator.c:1020
+msgid ""
+"Search by city or drag/click on the zoomable map to listen to a radio "
+"broadcast"
+msgstr ""
+"Keressen város szerint, illetve mozgassa vagy kattintson rá a nagyítható "
+"térképre a rádióadás hallgatásához"
+
 #: ../src/gnome-internet-radio-locator.c:432
 #, c-format
 msgid "Previous Internet Radio Station\n"
@@ -256,7 +273,7 @@ msgstr "A program névjegye"
 
 #. give it the title
 #: ../src/gnome-internet-radio-locator.c:619
-#: ../src/gnome-internet-radio-locator.c:801
+#: ../src/gnome-internet-radio-locator.c:804
 msgid "GNOME Internet Radio Locator"
 msgstr "GNOME Internetrádió-kereső"
 
@@ -269,23 +286,26 @@ msgstr ""
 "Semmi\n"
 "\n"
 
-#: ../src/gnome-internet-radio-locator.c:955
+#: ../src/gnome-internet-radio-locator.c:865
+msgid "New"
+msgstr "Új"
+
+#: ../src/gnome-internet-radio-locator.c:958
 msgid "Stop"
 msgstr "Leállítás"
 
-#: ../src/gnome-internet-radio-locator.c:961
+#: ../src/gnome-internet-radio-locator.c:964
 msgid "Zoom In"
 msgstr "Nagyítás"
 
-#: ../src/gnome-internet-radio-locator.c:975
+#: ../src/gnome-internet-radio-locator.c:978
 msgid "Zoom Out"
 msgstr "Kicsinyítés"
 
-#: ../src/gnome-internet-radio-locator.c:980
+#: ../src/gnome-internet-radio-locator.c:983
 msgid "Markers"
 msgstr "Jelölők"
 
-#: ../src/gnome-internet-radio-locator.c:1002
+#: ../src/gnome-internet-radio-locator.c:1005
 msgid "Exit"
 msgstr "Kilépés"
-

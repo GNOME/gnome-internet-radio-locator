@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="2.0.0">
+<gnome_internet_radio_locator version="2.0.3">
   <station band="90.9FM" id="WBUR" lang="en" name="WBUR" rank="1.0" type="org">
     <frequency uri="http://wbur.org/">FM 90.9 in Boston</frequency>
-    <location>Boston, Massachusetts</location>
+    <location>WBUR, Boston, Massachusetts</location>
     <description lang="en">Radio Boston</description>
     <stream mime="audio/mpeg" uri="https://icecast-stream.wbur.org/" codec="MPEG-1 Layer 3 (MP3)" samplerate="22050 Hz" channels="Mono" bitrate="48 kbps" />
     <uri>http://wbur.org/</uri>
   </station>
   <station band="104.1FM" id="Midlar" lang="en" name="Midlar" rank="1.0" type="com">
-    <frequency uri="http://midlar.fo/">FM 104.1 in Torshavn, Færo Islands</frequency>
-    <location>Torshavn, Færo Islands</location>
+    <frequency uri="http://midlar.fo/">FM 104.1 in Tórshavn, Faroe Islands</frequency>
+    <location>Tórshavn, Faroe Islands</location>
     <description lang="en">Midlar Samband</description>
     <stream mime="audio/mpeg" uri="http://stream.midlar.fo/ras2-128" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://midlar.fo/</uri>
@@ -1022,7 +1022,7 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
   </station>
   <station band="1330AM" id="wtbu" lang="en" name="WTBU" rank="1.0" type="edu">
     <frequency uri="http://www.wtburadio.org/">89.3 FM in Boston, Massachusetts</frequency>
-    <location>Boston, Massachusetts</location>
+    <location>WTBU, Boston, Massachusetts</location>
     <description lang="en">WTBU is BU's student-run, volunteer radio station which broadcasts live 20 hours a day.  Our station is primarily available through our webcast, but you can also listen to us on 89.3 FM/640 AM if you're in Boston, or on BU's cable channel 6 if you live on campus.</description>
     <stream mime="audio/mpeg" uri="http://wtbu.bu.edu:1800/listen" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="191 kbps" />
     <uri>http://sites.bu.edu/wtbu/</uri>

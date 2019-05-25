@@ -1,4 +1,61 @@
 =============
+Version 2.0.4
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Fancy Colors
+
+=============
+Version 2.0.3
+=============
+
+Translations
+
+	* Daniel Mustieles (es)
+	* Balázs Meskó (hu)
+	* Kukuh Syafaat (id)
+	* Piotr Drąg (pl)
+
+=============
+Version 2.0.2
+=============
+
+Documentation
+
+	* NEWS: Fix typo
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Midlar (Tórshavn, Faroe Island)
+	* src/gnome-internet-radio-locator-markers.c: Add WBUR (Boston, Massachusetts)
+	* src/gnome-internet-radio-locator-markers.c: Add WTBU (Boston, Massachusetts)
+
+Translations
+
+	* Rafael Fontenelle (pt_BR)
+
+=============
+Version 2.0.1
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator.c: Add Internationalization
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add WBUR (Boston, Massachusetts)
+	* src/gnome-internet-radio-locator.xml: Add Midlar (Tórshavn, Faroe Islands)
+
+Translations
+
+	* Ask Hjorth Larsen (da)
+	* Goran Vidović (hr)
+	* Kukuh Syafaat (id)
+	* Nathan Follens (nl)
+
+=============
 Version 2.0.0
 =============
 
