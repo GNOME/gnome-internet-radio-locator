@@ -216,7 +216,7 @@ save_cb (GtkWidget *widget, gpointer data) {
 	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
 	gnome_internet_radio_locator_player_new(GST_PLAYER(player), urientry);
 	context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
-	statusmsg = g_strconcat(_("Added "), nameentry, _(" in "), locationentry, NULL);
+	statusmsg = negttext ("Added %s in %s .", "Added %s in %s .", nameentry, locationentry);
 	gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), statusmsg);
 	gst_player_stop(player);
 	gst_player_play(player);
