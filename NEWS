@@ -1,4 +1,20 @@
 =============
+Version 2.0.5
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add map marker for Dubai
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add MBCFM (Dubai, Saudi Arabia)
+
+Translations
+
+	* Anders Jonsson (sv)
+
+=============
 Version 2.0.4
 =============
 

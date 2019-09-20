@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="2.0.4">
+<gnome_internet_radio_locator version="2.0.5">
   <station band="90.9FM" id="WBUR" lang="en" name="WBUR" rank="1.0" type="org">
     <frequency uri="http://wbur.org/">FM 90.9 in Boston</frequency>
     <location>WBUR, Boston, Massachusetts</location>
@@ -263,6 +263,21 @@ In fact we even split our adverts, and many of our local news and travel bulleti
     </description>
     <stream mime="audio/mpeg" uri="http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p" codec="MPEG-4 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.bbc.co.uk/5live</uri>
+  </station>
+  <station band="100.8FM" id="mbcfm" lang="ar" name="Middle East Broadcasting Center FM" rank="1.0" type="gov">
+    <frequency uri="http://www.mbc.net/">100.8 FM – الجوف:88.00FM – الجبيل:102.2FM – النماص:103.2FM – عرعر:100.9FM – الطائف:103.3FM – الباحة:101.5FM – الخفجى:91.4FM – الزلفي:101FM – حفرالباطن:100.9FM – الهفوف:102.2FM – ينبع:100.9FM – تبوك:97.4FM – نجران:102.9FM – أبها:102.3FM – القصيم:102FM – حائل:103FM – المدينة المنورة:103FM – جده:103FM – الدمام:101.9FM – الرياض:102FM</frequency>
+    <location>Dubai, Saudi Arabia</location>
+    <description lang="ar">
+      ابة عربية رائدة تقديم الترفيه والتسلية المناسبة للأسرة العربية، وتهتم بالفن والرياضة. وتتابع أحدث أخبار النجوم في التمثيل والغناء وكرة القدم ومختلف الألعاب.
+    وتتناول بالعرض والتحليل والنقد كافة الأحداث والأعمال على الساحة الفنية والرياضية. وتتابع وتعرض البرامج والمسلسلات والأفلام التي تعرض على القنوات الفضائية لمجموعة MBC وهي
+    MBC1, MBC 2, MBC3, MBC4, MBC Action, MBC Max, MBC Drama, MBC Masr, MBC Masr2, MBC Bollywood, Panorama FM, MBC FM, MBC Drama+
+    وتقدم للشباب والفتيات من خلال موقع أكشنها أحدث الأخبار الخفيفة والمنوعة في العلوم والتكنولوجيا والصحة والجمال والسيارات. وتقدم للأطفال والفتية المواد التي تناسبهم في قالب جذاب. كما تركز على الجوانب الإيجابية في المجتمع العربي من خلال بوابة MBC الأمل
+    </description>
+    <description lang="en">
+      The Middle East Broadcasting Center (MBC) Group is the first private free-to-air satellite broadcasting company in the Arab World. It was launched in London in 1991 and later moved to its headquarters in Dubai in 2002. MBC Group provides multiple channels of information, interaction and entertainment. MBC Group includes 11 television channels: MBC1 (general family entertainment via terrestrial), MBC2 and MBC MAX (24-hour movies), MBC3 (children’s entertainment), MBC4 (entertainment for new Arab women via terrestrial), MBC Action (action series and movies via terrestrial), MBC Persia (24-hour movie channel dubbed in Persian), MBC Bollywood (24-hour Bollywood movies dubbed in Arabic), Al Arabiya (the 24-hour Arabic language news channel); Wanasah (24-hour Arabic music channel), MBC Malayalam (the 24-hour Malayalam entertainment channel), and MBC Drama coinciding with the Group’s 20th anniversary, and offers 24/7 Arabic Drama. The Group also includes two radio stations: MBC FM (Gulf music), and Panorama FM (contemporary Arabic hit music); as well as O3 productions, a specialized documentary production unit.
+    </description>
+    <stream mime="audio/aac" uri="http://mbcwanasatv-live-v4.hls.adaptive.level3.net/egress/bhandler/mbc/mbcfm4/manifest.m3u8" codec="MPEG-4 AAC" samplerate="22050 Hz" channels="Stereo" bitrate="48 kbps" />
+    <uri>http://www.mbc.net/</uri>
   </station>
   <station band="Online" id="ciut" lang="en" name="CIUT" rank="1.0" type="edu">
     <frequency uri="http://www.ciut.fm/">89.5 FM in Toronto, Canada</frequency>
