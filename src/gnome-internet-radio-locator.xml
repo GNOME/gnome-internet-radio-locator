@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="2.0.5">
+<gnome_internet_radio_locator version="2.0.6">
   <station band="90.9FM" id="WBUR" lang="en" name="WBUR" rank="1.0" type="org">
     <frequency uri="http://wbur.org/">FM 90.9 in Boston</frequency>
     <location>WBUR, Boston, Massachusetts</location>
@@ -609,7 +609,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
 
       From the underground beats of hip hop, to the euphoric tones of house and the classic tunes of rock,  and everything else in between, UCT Radio embodies what it truly means to be a music lover. The station captures a diverse audience of university students, staffers and even the wider Cape Town community.
     </description>
-    <stream mime="audio/mpeg" uri="http://listenlive-c2p1.ndstream.net:8130/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Mono" bitrate="48 kbps" />
+    <stream mime="audio/mpeg" uri="http://edge.iono.fm/xice/uctradio_live_medium.aac" codec="MPEG-4 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="61 kbps" />
     <uri>http://www.radio.uct.ac.za/</uri>
   </station>
   <station band="101.9FM" id="cfrc" lang="en" name="CFRC" rank="1.0" type="edu">
