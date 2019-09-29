@@ -2,6 +2,13 @@
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
 <gnome_internet_radio_locator version="2.0.7">
+  <station band="1431AM" id="1431am" lang="gr" name="1431AM" rank="1.0" type="edu">
+    <frequency uri="https://www.1431am.org/">AM 1431 in Thessaloniki, Greece</frequency>
+    <location>Thessaloniki, Greece</location>
+    <description lang="gr">1431 AM</description>
+    <stream mime="audio/ogg" uri="http://1431am.org:8000/1431ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="160 kbps" />
+    <uri>https://www.1431am.org/</uri>
+  </station>
   <station band="90.7FM" id="radiobrume" lang="fr" name="Radio Brume" rank="1.0" type="edu">
     <frequency uri="http://www.radiobrume.fr/">FM 90.7 in Lyon, France</frequency>
     <location>Lyon, France</location>

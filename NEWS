@@ -2,9 +2,14 @@
 Version 2.0.7
 =============
 
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add map marker for Thessaloniki
+
 Stations
 
 	* src/gnome-internet-radio-locator.xml: Add Radio Brume (Lyon, France)
+	* src/gnome-internet-radio-locator.xml: Add 1431 AM (Thessaloniki, Greece)
 
 =============
 Version 2.0.6
