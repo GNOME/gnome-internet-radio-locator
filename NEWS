@@ -1,4 +1,16 @@
 =============
+Version 2.0.8
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Bern, Switzerland
+
+Translations
+
+	* Marek Černocký (cs)
+
+=============
 Version 2.0.7
 =============
 
