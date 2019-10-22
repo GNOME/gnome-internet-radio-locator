@@ -1,4 +1,16 @@
 =============
+Version 2.1.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Aalborg, Denmark
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add ANR (Aalborg, Denmark)
+
+=============
 Version 2.0.9
 =============
 
