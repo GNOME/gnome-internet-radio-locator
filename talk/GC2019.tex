@@ -68,7 +68,7 @@ Live playback support implemented GStreamer is available in GNOME Radio.
 GNOME Internet Radio Locator (gnome-internet-radio-locator) is a Free
 Software program that allows computer users to easily locate and
 listen to radio programs on broadcasters on the Internet such as BBC,
-KEXP and WMBR, as well as NASA's Third Rock Station and 107 other
+KEXP and WMBR, as well as NASA's Third Rock Station and 113 other
 Internet Radio stations broadcasting from many universities around the
 world.
 
@@ -105,10 +105,10 @@ and\\ \url{https://download.gnome.org/sources/gnome-internet-radio-locator/}
 \begin{list1}
 \item 2019
   \begin{list2}
-  \item gnome-internet-radio-locator version 2.0.7 was released on September 29th
+  \item gnome-internet-radio-locator version 2.1.1 was released on October 24
     \begin{list3}
     \item Fancy City Color Markers   
-    \item 111 Internet Radio Stations from 85 Major World Cities
+    \item 117 Internet Radio Stations from 90 Major World Cities
     \item Graphical Map Markers
     \item Textual City Search
     \end{list3}
@@ -188,10 +188,10 @@ The fourth talk is available from \url{http://www.gnome.org/~ole/GUADEC2019.pdf}
 \item Free Speech
 \end{list1}
 
-\slide{Features in gnome-internet-radio-locator version 2.0.7}
+\slide{Features in gnome-internet-radio-locator version 2.1.1}
 
 \begin{list1}
-\item 111 non-profit and independent radio stations are supported.
+\item 117 non-profit, commercial and independent radio stations are supported.
 \item 16 language translations (see gnome-internet-radio-locator/AUTHORS and gnome-internet-radio-locator/THANKS).
 \item Radio station search by physical location, but just city names.
 \item Click-to-play map feature for 108 cities.
@@ -201,16 +201,19 @@ The fourth talk is available from \url{http://www.gnome.org/~ole/GUADEC2019.pdf}
 
 \slide{Supported Internet Radio Station Cities}
 
-The following major cities are supported in gnome-internet-radio-locator 2.0.7:
+The following major cities are supported in gnome-internet-radio-locator 2.1.1:
 
 \begin{list1}
   \begin{list2}
+  \item Aalborg, Denmark
   \item Adelaide, Australia
+  \item Alta, Norway
   \item Auckland, New Zealand
   \item Austin, Texas
   \item Ayr, Scotland
   \item Bergen, Norway
   \item Berkeley, California
+  \item Berlin, Germany
   \item Bern, Switzerland
   \item Bristol, United Kingdom
   \item Brno, Czech Republic
@@ -236,6 +239,7 @@ The following major cities are supported in gnome-internet-radio-locator 2.0.7:
   \item Hammond, Louisiana
   \item Honolulu, Hawaii
   \item Houston, Texas
+  \item Kárášjohka, Norway
   \item Kingston, Canada
   \item Kristiansand, Norway
   \item Leeds, United Kingdom
@@ -255,6 +259,7 @@ The following major cities are supported in gnome-internet-radio-locator 2.0.7:
   \item New Orleans, Louisiana
   \item New York City, New York
   \item Nicosia, Cyprus
+  \item Nordkapp, Norway
   \item Nottingham, United Kingdom
   \item Oslo, Norway
   \item Oswego, New York
@@ -303,7 +308,7 @@ See
 
 The radio stations stream live audio with several different audio codecs supported by the GStreamer program, see \url{https://gstreamer.freedesktop.org/}
 
-The audio codecs in GStreamer among the supported 111 radio stations are:
+The audio codecs in GStreamer among the supported 117 radio stations are:
 
 \begin{list1}
   \item gstreamer-plugins-bad-1.0
@@ -359,15 +364,15 @@ The audio codecs in GStreamer among the supported 111 radio stations are:
 \end{verbatim}
 \end{tiny}
 
-\slide{Example of gnome-internet-radio-locator 2.0.7 XML data}
+\slide{Example of gnome-internet-radio-locator 2.1.1 XML data}
 
 \begin{tiny}
 \begin{verbatim}
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl"
   href="https://www.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
-<!DOCTYPE gnome_internet-radio-locator SYSTEM "gnome-internet-radio-locator-2.1.dtd">
-<gnome_internet_radio_locator version="2.0.7">
+<!DOCTYPE gnome_internet-radio-locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
+<gnome_internet_radio_locator version="2.1.1">
   <station band="88.1FM" id="wmbr" lang="en" name="WMBR" rank="1.0" type="edu">
     <frequency>88.1 FM in Cambridge, Massachusetts</frequency>
     <location>WMBR-FM, Cambridge, Massachusetts</location>
@@ -397,7 +402,7 @@ The audio codecs in GStreamer among the supported 111 radio stations are:
 
   \colorbox{white}{\includegraphics[width=0.6\hsize]{../data/screenshot.png}}
 
-  {\blueem Screenshot of gnome-internet-radio-locator 2.0.7}
+  {\blueem Screenshot of gnome-internet-radio-locator 2.1.1}
 
 \end{center}
 
@@ -476,21 +481,21 @@ The audio codecs in GStreamer among the supported 111 radio stations are:
 \slide{Questions?}
 
 \begin{list1}
-\item gnome-internet-radio-locator 2.0.7 is available here and now.
+\item gnome-internet-radio-locator 2.1.1 is available here and now.
   \begin{list2}
-  \item \begin{tiny}\url{http://download.gnome.org/sources/gnome-internet-radio-locator/2.0/gnome-internet-radio-locator-2.0.7.tar.xz}\end{tiny}
+  \item \begin{tiny}\url{http://download.gnome.org/sources/gnome-internet-radio-locator/2.1/gnome-internet-radio-locator-2.1.1.tar.xz}\end{tiny}
   \end{list2}
-\item Debian 9 stable package
+\item Debian 10 stable package
   \begin{list2}
-  \item \begin{tiny}\url{https://www.gnome.org/~ole/debian/gnome-internet-radio-locator_2.0.7-1_i386.deb}\end{tiny}
+  \item \begin{tiny}\url{https://www.gnome.org/~ole/debian/gnome-internet-radio-locator_2.1.1-1_i386.deb}\end{tiny}
   \end{list2}
-\item Fedora 31 RPM
+\item Fedora 30 RPM
   \begin{list2}
-  \item \begin{tiny}\url{https://www.gnome.org/~ole/fedora/RPMS/x86_64/gtk-internet-radio-locator-2.0.7-1.fc30.x86_64.rpm}\end{tiny}
+  \item \begin{tiny}\url{https://www.gnome.org/~ole/fedora/RPMS/x86_64/gnome-internet-radio-locator-2.1.1-1.fc30.x86_64.rpm}\end{tiny}
   \end{list2}
-\item Ubuntu 19.04 package
+\item Ubuntu 19.10 package
   \begin{list2}
-  \item \begin{tiny}\url{https://www.gnome.org/~ole/ubuntu/gnome-internet-radio-locator_2.0.7-1_amd64.deb}\end{tiny}
+  \item \begin{tiny}\url{https://www.gnome.org/~ole/ubuntu/gnome-internet-radio-locator_2.1.1-1_amd64.deb}\end{tiny}
   \end{list2}
 \item Source repository
   \begin{list2}
