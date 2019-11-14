@@ -1,4 +1,16 @@
 =============
+Version 2.1.2
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Vålerenga, Norway
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add Klanen Webradio (Vålerenga, Norway)
+
+=============
 Version 2.1.1
 =============
 
