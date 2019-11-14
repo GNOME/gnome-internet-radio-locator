@@ -117,6 +117,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	ClutterColor city_d_color = { 0x34, 0x65, 0xa4, 0xbb };
 	ClutterColor city_e_color = { 0x75, 0x50, 0x7b, 0xbb };
 	ClutterColor city_f_color = { 0xcc, 0x00, 0x00, 0xbb };
+	ClutterColor city_g_color = { 0x00, 0x00, 0xff, 0xbb };
 	ClutterColor text_color = { 0xff, 0xff, 0xff, 0xff };
 	LocationCallbackData callback_data;
 	gchar *station = NULL;
@@ -693,6 +694,21 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
 	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
 	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+        station = g_strdup("Vålerenga, Norway\n<span size=\"small\">Klanens Webradio\n\nSilence in respect of the victims of\n"
+"Nazi occupation of Norway between 1940-1945\n"
+"Nazi attack in Oslo and Utøya on July 22, 2011\n"
+"Nazi attack in Bærum August 10, 2019\n"
+"Give peace a chance and keep fighting racism!</span>");
+        champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+        champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+        champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_g_color);
+        champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+        champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 59.9073438, 10.7846849);
+        champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+        champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+        /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+        g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+        marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
 	station = g_strdup("Warsaw, Poland\n<span size=\"small\">Radio Aktywne</span>");
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
 	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
