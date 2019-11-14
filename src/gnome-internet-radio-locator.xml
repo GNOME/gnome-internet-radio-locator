@@ -6,7 +6,7 @@
     <frequency uri="http://www.klanen.no/">Online in Vålerenga, Norway</frequency>
     <location>Vålerenga, Norway</location>
     <description lang="no">Klanens Webradio (KWR) kommenterer kamper med Vålerenga.  Utenom kamper spilles det Vålerengarelatert musikk.  Stort sett sendes getligakamper og oddsenligakamper.  NM-kamper og toppseriekamper sendes også ofte.  I Oddsenligaen kommenterer vi også på streamen til DittOslo.</description>
-    <stream mime="audio/mpeg" uri="http://service1.klanen.no:8800/listen.pls" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" bitrate="127 kbps" />
+    <stream mime="audio/mpeg" uri="http://service1.klanen.no:8800/;" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" bitrate="127 kbps" />
     <uri>http://www.klanen.no/</uri>
   </station>
   <station band="92.2FM" id="anr" lang="dk" name="ANR" rank="1.0" type="com">
