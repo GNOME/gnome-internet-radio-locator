@@ -694,11 +694,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
 	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
 	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-        station = g_strdup("Vålerenga, Norway\n<span size=\"small\">Klanens Webradio\n\nSilence in respect of the victims of\n"
-"Nazi occupation of Norway between 1940-1945\n"
-"Nazi attack in Oslo and Utøya on July 22, 2011\n"
-"Nazi attack in Bærum August 10, 2019\n"
-"Give peace a chance and keep fighting racism!</span>");
+        station = g_strdup("Vålerenga, Norway\n<span size=\"small\">Klanens Webradio\n</span>");
         champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
         champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
         champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_g_color);
