@@ -4,16 +4,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: 2019-01-28 22:51+0000\n"
-"PO-Revision-Date: 2019-01-29 08:38+0100\n"
+"POT-Creation-Date: 2019-11-14 04:14+0000\n"
+"PO-Revision-Date: 2019-11-21 12:34+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: es <gnome-es-list@gnome.org>\n"
+"Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.31.0\n"
+"X-Generator: Gtranslator 3.34.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -24,13 +24,13 @@ msgstr "Daniel Mustieles <daniel.mustieles@gmail.com>, 2019"
 #: C/index.page:8
 msgctxt "link"
 msgid "GNOME Internet Radio Locator for GNOME 3"
-msgstr ""
+msgstr "Buscador de emisoras de radio en Internet de GNOME para GNOME 3"
 
 #. (itstool) path: info/title
 #: C/index.page:9
 msgctxt "text"
 msgid "GNOME Internet Radio Locator for GNOME 3"
-msgstr ""
+msgstr "Buscador de emisoras de radio en Internet de GNOME para GNOME 3"
 
 #. (itstool) path: info/desc
 #: C/index.page:10 C/intro.page:15 C/new.page:11 C/stop.page:14
@@ -39,6 +39,8 @@ msgid ""
 "GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio "
 "stations around the world."
 msgstr ""
+"Buscador de emisoras de radio en Internet de GNOME para GNOME 3 le permite "
+"sintonizar por Internet emisoras de radio de todo el mundo."
 
 #. (itstool) path: credit/name
 #: C/index.page:13 C/intro.page:9 C/new.page:7 C/stop.page:9 C/zoom.page:9
@@ -55,6 +57,7 @@ msgstr "2017"
 #: C/index.page:22
 msgid "<_:media-1/> GNOME Internet Radio Locator for GNOME 3"
 msgstr ""
+"<_:media-1/> Buscador de emisoras de radio en Internet de GNOME para GNOME 3"
 
 #. (itstool) path: page/p
 #: C/index.page:27
@@ -64,6 +67,10 @@ msgid ""
 "Radio Locator for GNOME 3</app>, visit the <link xref=\"intro"
 "\">Introduction</link> page."
 msgstr ""
+"Le damos la bienvenida al manual del <app>Buscador de emisoras de radio en "
+"Internet de GNOME para GNOME 3</app>. Paar ver una rápida introducción al "
+"<app>Buscador de emisoras de radio en Internet de GNOME para GNOME 3</app>, "
+"visite la página de <link xref=\"intro\">Introducción</link>."
 
 #. (itstool) path: page/p
 #: C/index.page:32
@@ -72,6 +79,10 @@ msgid ""
 "free, non-profit, independent Internet radio stations with the <app>GNOME "
 "Internet Radio Locator for GNOME 3</app>!"
 msgstr ""
+"Otros temas se agrupan juntos en las siguientes secciones. Disfrute buscando "
+"emisoras de radio libres, independientes y sin ánimo de lucro por Internet "
+"con el <app>Buscador de emisoras de radio en Internet de GNOME para GNOME 3</"
+"app>."
 
 #. (itstool) path: section/title
 #. (itstool) path: page/title
@@ -82,7 +93,7 @@ msgstr "Nueva"
 #. (itstool) path: section/p
 #: C/index.page:38
 msgid "Add <link xref=\"new\">New</link> radio station by location."
-msgstr ""
+msgstr "Añadir una emisora <link xref=\"new\">Nueva</link> por ubicación."
 
 #. (itstool) path: section/title
 #: C/index.page:42
@@ -95,26 +106,32 @@ msgid ""
 "<link xref=\"search\">Search</link> for free, non-profit, independent radio "
 "stations by location."
 msgstr ""
+"<link xref=\"search\">Buscar</link> emisoras de radio libres, independientes "
+"y sin ánimo de lucropor ubicación."
 
 #. (itstool) path: section/title
 #: C/index.page:48
 msgid "Zoom In/Out of Internet Radio Station Map"
-msgstr ""
+msgstr "Ampliar/reducir el mapa de emisoras de Internet"
 
 #. (itstool) path: section/p
 #: C/index.page:49
 msgid "<link xref=\"zoom\">Zoom In/Out</link> of the free radio station map."
 msgstr ""
+"<link xref=\"zoom\">Ampliar/reducir</link> el mapa de emisoras de radio "
+"libres."
 
 #. (itstool) path: section/title
 #: C/index.page:53
 msgid "Stop Station Playback"
-msgstr ""
+msgstr "Detener la reproducción de una emisora"
 
 #. (itstool) path: section/p
 #: C/index.page:54
 msgid "<link xref=\"stop\">Stop playback of the selected radio station</link>."
 msgstr ""
+"<link xref=\"stop\">Detener la reproducción de la emisora de radio "
+"seleccionada</link>."
 
 #. (itstool) path: section/title
 #. (itstool) path: page/title
@@ -139,13 +156,20 @@ msgid ""
 "listening to free, independent, non-profit radio stations from around the "
 "world by streaming over the Internet."
 msgstr ""
+"<app>Buscador de emisoras de radio en Internet de GNOME para GNOME 3</app> "
+"es un programa libre para escuchar emisoras de radio libres, independientes "
+"y sin ánimo de lucro de todo el mundo que emitan en directo por Internet."
 
-#. (itstool) path: title/media
+#. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/intro.page:26
+#: C/intro.page:25
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='media/gnome-internet-radio-locator-main.png' "
+#| "md5='__failed__'"
 msgctxt "_"
 msgid ""
 "external ref='media/gnome-internet-radio-locator-main.png' "
@@ -160,13 +184,19 @@ msgid ""
 "It is possible to add new, personal Internet radio stations in <app>GNOME "
 "Internet Radio Locator for GNOME 3</app> with the \"New\" button."
 msgstr ""
+"Se pueden añadir nuevas emisoras de radio de Internet personalizadas en el "
+"<app>Buscador de emisoras de radio en Internet de GNOME para GNOME 3</app> "
+"con el botón \"Nueva\"."
 
-#. (itstool) path: title/media
+#. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/new.page:18
+#: C/new.page:17
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='media/gnome-internet-radio-locator-new.png' md5='__failed__'"
 msgctxt "_"
 msgid ""
 "external ref='media/gnome-internet-radio-locator-new.png' "
@@ -177,21 +207,24 @@ msgstr ""
 
 #. (itstool) path: page/title
 #: C/stop.page:17
+#| msgid "Zoom In/Out of Internet Radio Station Map"
 msgid "Stop playback of Internet Radio Station"
-msgstr ""
+msgstr "Detener la reproducción de una emisora de Internet"
 
 #. (itstool) path: page/p
 #: C/stop.page:19
+#| msgid ""
+#| "<link xref=\"stop\">Stop playback of the selected radio station</link>."
 msgid ""
 "It is possible to stop playback of the currently selected radio station."
-msgstr ""
+msgstr "Se puede detener la reproducción de la emisora de radio seleccionada."
 
-#. (itstool) path: title/media
+#. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/stop.page:22
+#: C/stop.page:21
 msgctxt "_"
 msgid ""
 "external ref='media/gnome-internet-radio-locator-stop.png' "
@@ -202,25 +235,30 @@ msgstr ""
 
 #. (itstool) path: info/desc
 #: C/zoom.page:14
+#| msgid ""
+#| "<link xref=\"search\">Search</link> for free, non-profit, independent "
+#| "radio stations by location."
 msgid "Search for Internet radio stations by location."
-msgstr ""
+msgstr "Buscar emisoras de radio por Internet por ubicación."
 
 #. (itstool) path: page/title
 #: C/zoom.page:17
+#| msgid "Zoom In/Out of Internet Radio Station Map"
 msgid "Zoom Internet Radio Station Map"
-msgstr ""
+msgstr "Ampliar o reducir el mapa de emisoras de Internet"
 
 #. (itstool) path: page/p
 #: C/zoom.page:19
 msgid "It is possible to zoom the map with Internet radio stations."
 msgstr ""
+"Es posible ampliar o reducir el mapa de emisoras de radio por Internet."
 
-#. (itstool) path: title/media
+#. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/zoom.page:22
+#: C/zoom.page:21
 msgctxt "_"
 msgid ""
 "external ref='media/gnome-internet-radio-locator-zoom.png' "
@@ -240,6 +278,9 @@ msgid ""
 "It is possible to search for supported radio stations based on the location "
 "of the station in <app>GNOME Internet Radio Locator for GNOME 3</app>."
 msgstr ""
+"Se pueden buscar emisoras de radio soportadas basándose en la ubicación de "
+"la emisora en el <app>Buscador de emisoras de radio en Internet de GNOME "
+"para GNOME 3</app>."
 
 #. (itstool) path: page/p
 #: C/search.page:21
@@ -247,6 +288,8 @@ msgid ""
 "Type a city name for a supported Free Radio station in a query field and hit "
 "<key>ENTER</key>."
 msgstr ""
+"Escriba en nombre de una ciudad en el campo de búsqueda para buscar una "
+"emisora libre soportada y pulse <key>Intro</key>."
 
 #. (itstool) path: page/p
 #: C/search.page:24
@@ -638,12 +681,16 @@ msgstr "<code>York, United Kingdom</code>"
 msgid "<code>Zürich, Switzerland</code>"
 msgstr "<code>Zürich, Switzerland</code>"
 
-#. (itstool) path: title/media
+#. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/search.page:107
+#: C/search.page:106
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='media/gnome-internet-radio-locator-search.png' "
+#| "md5='__failed__'"
 msgctxt "_"
 msgid ""
 "external ref='media/gnome-internet-radio-locator-search.png' "
@@ -658,13 +705,19 @@ msgid ""
 "It is possible to exit the <app>GNOME Internet Radio Locator for GNOME 3</"
 "app> with the \"Exit\" button."
 msgstr ""
+"Es posible salir del <app>Buscador de emisoras de radio en Internet de GNOME "
+"para GNOME 3</app> con el botón «Salir»."
 
-#. (itstool) path: title/media
+#. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/exit.page:23
+#: C/exit.page:22
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='media/gnome-internet-radio-locator-exit.png' "
+#| "md5='__failed__'"
 msgctxt "_"
 msgid ""
 "external ref='media/gnome-internet-radio-locator-exit.png' "
@@ -672,3 +725,17 @@ msgid ""
 msgstr ""
 "external ref='media/gnome-internet-radio-locator-exit.png' "
 "md5='6764a256ab4ca47f3d11f3d065ffa603'"
+
+#~ msgid "http://creativecommons.org/licenses/by-sa/3.0/"
+#~ msgstr "http://creativecommons.org/licenses/by-sa/3.0/"
+
+#~ msgid ""
+#~ "This work is licensed under the Creative Commons Attribution-ShareAlike "
+#~ "3.0 Unported License. To view a copy of this license, visit <_:link-1/> "
+#~ "or send a letter to Creative Commons, 444 Castro Street, Suite 900, "
+#~ "Mountain View, California, 94041, USA."
+#~ msgstr ""
+#~ "Este trabajo usa la licencia Creative Commons Compartir-igual de "
+#~ "atribución sin soporte 3.0. Para ver una copia de esta licencia, visite "
+#~ "<_:link-1/> o envíe una carta a Creative Commons, 444 Castro Street, "
+#~ "Suite 900, Mountain View, California, 94041, USA."
