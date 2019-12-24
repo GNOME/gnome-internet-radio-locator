@@ -111,13 +111,12 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	ClutterActor *marker;
 	ClutterActor *layer_actor;
 	ClutterColor city_color = { 0xf3, 0x94, 0x07, 0xbb };
-	ClutterColor city_a_color = { 0xed, 0xd4, 0x00, 0xbb };
-	ClutterColor city_b_color = { 0xf5, 0x79, 0x00, 0xbb };
-	ClutterColor city_c_color = { 0x73, 0xd2, 0x16, 0xbb };
-	ClutterColor city_d_color = { 0x34, 0x65, 0xa4, 0xbb };
-	ClutterColor city_e_color = { 0x75, 0x50, 0x7b, 0xbb };
-	ClutterColor city_f_color = { 0xcc, 0x00, 0x00, 0xbb };
-	ClutterColor city_g_color = { 0x00, 0x00, 0xff, 0xbb };
+        ClutterColor city_a_color = { 0x83, 0xa6, 0x7f, 0xbb };
+        ClutterColor city_b_color = { 0xc1, 0x66, 0x5a, 0xbb };
+        ClutterColor city_c_color = { 0x88, 0x7f, 0xa3, 0xbb };
+        ClutterColor city_d_color = { 0x34, 0x65, 0xa4, 0xbb };
+        ClutterColor city_e_color = { 0x75, 0x90, 0xae, 0xbb };
+        ClutterColor city_f_color = { 0xe0, 0xc3, 0x93, 0xbb };
 	ClutterColor text_color = { 0xff, 0xff, 0xff, 0xff };
 	LocationCallbackData callback_data;
 	gchar *station = NULL;
@@ -693,17 +692,6 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
 	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
-	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-        station = g_strdup("Vålerenga, Norway\n<span size=\"small\">Klanens Webradio\n</span>");
-        champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
-        champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
-        champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_g_color);
-        champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-        champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 59.9073438, 10.7846849);
-        champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
-        champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
-        /* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
-        g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
         marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
 	station = g_strdup("Warsaw, Poland\n<span size=\"small\">Radio Aktywne</span>");
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);

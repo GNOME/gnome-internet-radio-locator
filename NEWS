@@ -1,4 +1,16 @@
 =============
+Version 2.2.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: New Map Marker Palette
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Update KASC (Phoenix, Arizona)
+
+=============
 Version 2.1.5
 =============
 
