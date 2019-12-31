@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="2.2.0">
+<gnome_internet_radio_locator version="2.4.0">
   <station band="92.2FM" id="anr" lang="dk" name="ANR" rank="1.0" type="com">
     <frequency uri="http://www.anr.dk/">FM 87.6 in Aalborg C, Denmark</frequency>
     <frequency uri="http://www.anr.dk/">FM 88.5 in Nørlund, Denmark</frequency>
@@ -48,6 +48,13 @@
     <description lang="gr">1431 AM</description>
     <stream mime="audio/ogg" uri="http://1431am.org:8000/1431ogg" codec="Ogg Vorbis" samplerate="44100 Hz" channels="Stereo" bitrate="160 kbps" />
     <uri>https://www.1431am.org/</uri>
+  </station>
+  <station band="Online" id="bcn" lang="en" name="Barcelona City FM" rank="1.0" type="com">
+    <frequency uri="http://www.barcelonacityfm.com/">Online in Barcelona, Catalonia</frequency>
+    <location>Barcelona, Catalonia</location>
+    <description lang="en">Barcelona's first 24/7 English-speaking radio station: Barcelona City FM! A team of twenty-five presenters are making programs covering a wide spectrum of perspectives, combining the best music, humour, chat, politics, local news, what's on in Barcelona.</description>
+    <stream mime="audio/mpeg" uri="https://s2.radio.co/sd9da54aa0/listen" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="127 kbps" />
+    <uri>http://www.barcelonacityfm.com/</uri>
   </station>
   <station band="Online" id="radioeins" lang="de" name="Radio Eins" rank="1.0" type="gov">
     <frequency uri="http://www.radioeins.de/">Online in Berlin, Germany</frequency>
