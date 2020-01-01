@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="2.4.0">
+<gnome_internet_radio_locator version="2.5.0">
   <station band="92.2FM" id="anr" lang="dk" name="ANR" rank="1.0" type="com">
     <frequency uri="http://www.anr.dk/">FM 87.6 in Aalborg C, Denmark</frequency>
     <frequency uri="http://www.anr.dk/">FM 88.5 in Nørlund, Denmark</frequency>
@@ -917,6 +917,13 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://kdup.up.edu/</uri>
   </station>
   -->
+  <station band="Online" id="kpsu" lang="en" name="KPSU" rank="1.0" type="edu">
+    <frequency uri="http://www.kpsu.org/">Online in Portland, Oregon</frequency>
+    <location>Portland, Oregon</location>
+    <description lang="en">Portland State University's radio station</description>
+    <stream mime="audio/ogg" uri="http://173.255.221.48:8000/stream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
+    <uri>http://www.kpsu.org/</uri>
+  </station>
   <station band="95.0FM" id="95bfm" lang="en" name="95bFM" rank="1.0" type="edu">
     <frequency uri="http://www.95bfm.com/">95.0 FM in Auckland, New Zealand</frequency>
     <location>Auckland, New Zealand</location>

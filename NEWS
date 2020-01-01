@@ -1,4 +1,16 @@
 =============
+Version 2.5.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Portland, Oregon
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add KPSU (Portland, Oregon)
+
+=============
 Version 2.4.0
 =============
 
