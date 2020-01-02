@@ -2,6 +2,18 @@
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
 <gnome_internet_radio_locator version="2.5.0">
+  <station band="Online" id="p1_buskerud" lang="no" name="NRK P1 Buskerud" rank="1.0" type="gov">
+    <location>Buskerud, Norge</location>
+    <description lang="no">NRK P1 Buskerud</description>
+    <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p1_buskerud_aac_h" codec="MPEG-1 Layer 3 (MP3)" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/buskerud/</uri>
+  </station>
+  <station band="Online" id="p1_rogaland" lang="no" name="NRK P1 Rogaland" rank="1.0" type="gov">
+    <location>Rogaland, Norge</location>
+    <description lang="no">NRK P1 Rogaland</description>
+    <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p1_rogaland_aac_h" codec="MPEG-1 Layer 3 (MP3)" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/rogaland/</uri>
+  </station>
   <station band="92.2FM" id="anr" lang="dk" name="ANR" rank="1.0" type="com">
     <frequency uri="http://www.anr.dk/">FM 87.6 in Aalborg C, Denmark</frequency>
     <frequency uri="http://www.anr.dk/">FM 88.5 in Nørlund, Denmark</frequency>
