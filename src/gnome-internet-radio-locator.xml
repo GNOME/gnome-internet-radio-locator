@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="2.5.0">
-  <station band="Online" id="p1_buskerud" lang="no" name="NRK P1 Buskerud" rank="1.0" type="gov">
-    <location>Buskerud, Norge</location>
-    <description lang="no">NRK P1 Buskerud</description>
-    <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p1_buskerud_aac_h" codec="MPEG-1 Layer 3 (MP3)" samplerate="48000 Hz" bitrate="125 kbps" />
-    <uri>https://www.nrk.no/buskerud/</uri>
+<gnome_internet_radio_locator version="2.6.0">
+  <station band="Online" id="p1_østfold" lang="no" name="NRK P1 Østfold" rank="1.0" type="gov">
+    <location>Østfold, Norway</location>
+    <description lang="no">NRK P1 Østfold</description>
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_ostfold_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/ostfold/</uri>
+  </station>
+  <station band="Online" id="p1_hordaland" lang="no" name="NRK P1 Hordaland" rank="1.0" type="gov">
+    <location>Hordaland, Norway</location>
+    <description lang="no">NRK P1 Hordaland</description>
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_hordaland_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/hordaland/</uri>
+  </station>
+  <station band="Online" id="p1_sognogfjordane" lang="no" name="NRK P1 Sogn og Fjordane" rank="1.0" type="gov">
+    <location>Sogn og Fjordane, Norway</location>
+    <description lang="no">NRK P1 Sogn og Fjordane</description>
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_sogn_og_fjordane_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="192 kbps" />
+    <uri>https://www.nrk.no/sognogfjordane/</uri>
+  </station>
+  <station band="Online" id="p1_møreogromsdal" lang="no" name="NRK P1 Møre og Romsdal" rank="1.0" type="gov">
+    <location>Møre og Romsdal, Norway</location>
+    <description lang="no">NRK P1 Møre og Romsdal</description>
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_more_og_romsdal_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="192 kbps" />
+    <uri>https://www.nrk.no/mr/</uri>
   </station>
   <station band="Online" id="p1_rogaland" lang="no" name="NRK P1 Rogaland" rank="1.0" type="gov">
-    <location>Rogaland, Norge</location>
+    <location>Rogaland, Norway</location>
     <description lang="no">NRK P1 Rogaland</description>
-    <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p1_rogaland_aac_h" codec="MPEG-1 Layer 3 (MP3)" samplerate="48000 Hz" bitrate="125 kbps" />
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_rogaland_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
     <uri>https://www.nrk.no/rogaland/</uri>
+  </station>
+  <station band="Online" id="p1_buskerud" lang="no" name="NRK P1 Buskerud" rank="1.0" type="gov">
+    <location>Buskerud, Norway</location>
+    <description lang="no">NRK P1 Buskerud</description>
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_buskerud_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/buskerud/</uri>
   </station>
   <station band="92.2FM" id="anr" lang="dk" name="ANR" rank="1.0" type="com">
     <frequency uri="http://www.anr.dk/">FM 87.6 in Aalborg C, Denmark</frequency>
