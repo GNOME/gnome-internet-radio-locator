@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="2.6.0">
+<gnome_internet_radio_locator version="2.8.0">
   <station band="Online" id="p1_østfold" lang="no" name="NRK P1 Østfold" rank="1.0" type="gov">
     <location>Østfold, Norway</location>
     <description lang="no">NRK P1 Østfold</description>
@@ -789,14 +789,14 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://184.154.90.186:8006/stream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.blazeradioonline.com/</uri>
   </station>
-  <station band="100.3FM" id="soundfm" lang="en" name="SoundFM" rank="1.0" type="edu">
-    <frequency uri="http://soundfm.ca/">100.3 FM in Waterloo, Canada</frequency>
-    <location>Waterloo, Canada</location>
+  <station band="102.7FM" id="radiowaterloo" lang="en" name="radiowaterloo" rank="1.0" type="edu">
+    <frequency uri="http://radiowaterloo.ca/">102.7 FM in Ontario, Canada</frequency>
+    <location>Ontario, Canada</location>
     <description lang="en">
-      CKMS 100.3 FM (SoundFM) is a community radio station broadcasting independent and alternative music and culture to Waterloo Region.
+      CKMS 102.7 FM (RadioWaterloo) is a community radio station broadcasting independent and alternative music and culture to Waterloo Region.
     </description>
-    <stream mime="audio/mpeg" uri="http://192.240.102.133:7703/stream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <uri>http://soundfm.ca/</uri>
+    <stream mime="audio/mpeg" uri="http://192.240.102.133:7703/stream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="127 kbps" />
+    <uri>http://radiowaterloo.ca/</uri>
   </station>
   <station band="Online" id="nrj-bern" lang="en" name="Radio NRJ Bern" rank="1.0" type="edu">
     <frequency uri="http://www.energy.ch/bern/">Internet</frequency>
