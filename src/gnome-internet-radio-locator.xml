@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="2.8.0">
+<gnome_internet_radio_locator version="3.0.0">
+  <station band="Online" id="radionorwegian" lang="no" name="Radio Norwegian" rank="1.0" type="com">
+    <location>Norway</location>
+    <description lang="no">Radio Norwegian is a free radio station broadcasting from Norway</description>
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/128.ogg" codec="Ogg Vorbis" samplerate="48000 Hz" bitrate="128 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/112.ogg" codec="Ogg Vorbis" samplerate="48000 Hz" bitrate="112 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/96.ogg" codec="Ogg Vorbis" samplerate="48000 Hz" bitrate="96 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/80.ogg" codec="Ogg Vorbis" samplerate="48000 Hz" bitrate="80 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/64.ogg" codec="Ogg Vorbis" samplerate="48000 Hz" bitrate="64 kbps" />
+    <stream mime="audio/ogg" uri="http://stream.radionorwegian.com:8000/56.ogg" codec="Ogg Vorbis" samplerate="48000 Hz" bitrate="56 kbps" />
+    <uri>http://www.radionorwegian.com/</uri>
+  </station>
+  <station band="Online" id="p1_hedmark_og_oppland" lang="no" name="NRK P1 Hedmark og Oppland" rank="1.0" type="gov">
+    <location>Innlandet, Norway</location>
+    <description lang="no">NRK P1 Hedmark og Oppland</description>
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_hedmark_og_oppland_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/innlandet/</uri>
+  </station>
+  <station band="Online" id="p1_finnmark" lang="no" name="NRK P1 Finnmark" rank="1.0" type="gov">
+    <location>Finnmark, Norway</location>
+    <description lang="no">NRK P1 Finnmark</description>
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_finnmark_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/finnmark/</uri>
+  </station>
+  <station band="Online" id="p1_troms" lang="no" name="NRK P1 Troms" rank="1.0" type="gov">
+    <location>Troms, Norway</location>
+    <description lang="no">NRK P1 Troms</description>
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_troms_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/troms/</uri>
+  </station>
+  <station band="Online" id="p1_nordland" lang="no" name="NRK P1 Nordland" rank="1.0" type="gov">
+    <location>Nordland, Norway</location>
+    <description lang="no">NRK P1 Nordland</description>
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_nordland_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/nordland/</uri>
+  </station>
+  <station band="Online" id="p1_trøndelag" lang="no" name="NRK P1 Trøndelag" rank="1.0" type="gov">
+    <location>Trøndelag, Norway</location>
+    <description lang="no">NRK P1 Trøndelag</description>
+    <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_trondelag_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/trondelag/</uri>
+  </station>
   <station band="Online" id="p1_østfold" lang="no" name="NRK P1 Østfold" rank="1.0" type="gov">
     <location>Østfold, Norway</location>
     <description lang="no">NRK P1 Østfold</description>

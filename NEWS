@@ -1,4 +1,26 @@
 =============
+Version 3.0.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Finnmark, Norway
+	* src/gnome-internet-radio-locator-markers.c: Add Innlandet, Norway
+	* src/gnome-internet-radio-locator-markers.c: Add Nordland, Norway
+	* src/gnome-internet-radio-locator-markers.c: Add Norway
+	* src/gnome-internet-radio-locator-markers.c: Add Troms, Norway
+	* src/gnome-internet-radio-locator-markers.c: Add Trøndelag, Norway
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add NRK P1 Finnmark, Norway
+	* src/gnome-internet-radio-locator.xml: Add NRK P1 Hedmark og Oppland, Norway
+	* src/gnome-internet-radio-locator.xml: Add NRK P1 Nordland, Norway
+	* src/gnome-internet-radio-locator.xml: Add NRK P1 Troms, Norway
+	* src/gnome-internet-radio-locator.xml: Add NRK P1 Trøndelag, Norway
+	* src/gnome-internet-radio-locator.xml: Add Radio Norwegian, Norway
+
+=============
 Version 2.8.0
 =============
 
