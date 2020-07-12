@@ -682,6 +682,17 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
 	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
 	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+	station = g_strdup("Porsgrunn, Norway\n<span size=\"small\">NRK Telemark</span>");
+	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_a_color);
+	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 59.140759, 9.6562495);
+	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
 	station = g_strdup("Portland, Oregon\n<span size=\"small\">KPSU</span>");
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
 	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
@@ -809,6 +820,17 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_f_color);
 	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
 	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 62.012, -6.768);
+	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+	station = g_strdup("Tønsberg, Norway\n<span size=\"small\">NRK Vestfold</span>");
+	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_a_color);
+	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 59.3549795, 10.282049110877239);
 	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
 	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */

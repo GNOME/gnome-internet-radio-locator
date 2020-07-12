@@ -1,4 +1,27 @@
 =============
+Version 3.0.2
+=============
+
+	* AUTHORS: Add Florentina Mușat (Romanian translation), Yuri Chornoivan (Ukrainian translation)
+	* THANKS: Add Florentina Mușat (Romanian translation), Yuri Chornoivan (Ukrainian translation)
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Porsgrunn, Norway
+	* src/gnome-internet-radio-locator-markers.c: Add Tønsberg, Norway
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add NRK P1 Telemark, Norway
+	* src/gnome-internet-radio-locator.xml: Add NRK P1 Vestfold, Norway
+
+Translations
+
+	* Florentina Mușat (ro)
+	* Yuri Chornoivan (uk)
+	* Nathan Follens (nl)
+
+=============
 Version 3.0.1
 =============
 
