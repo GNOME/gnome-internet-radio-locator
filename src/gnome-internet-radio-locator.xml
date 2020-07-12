@@ -670,8 +670,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.nrk.no/p1</uri>
   </station>
   <station band="Online" id="nrkp1vestfold" lang="en" name="NRK P1 Vestfold" rank="1.0" type="gov">
-    <frequency uri="https://www.nrk.no/vestfoldogtelemark/">Online in Tønsberg, Norge</frequency>
-    <location>Tønsberg, Norge</location>
+    <frequency uri="https://www.nrk.no/vestfoldogtelemark/">Online in Tønsberg, Norway</frequency>
+    <location>Tønsberg, Norway</location>
     <description lang="nb">NRK Vestfold er NRKs distriktskontor i fylket Vestfold med distriktskontor i Tønsberg.</description>
     <stream mime="audio/aac" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_vestfold_aac_l" codec="MPEG ADTS, AAC, v4 LC" samplerate="44100 Hz" channels="Stereo" bitrate="24 kbps" />
     <stream mime="audio/mpeg" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_vestfold_mp3_l" codec="MPEG ADTS, layer III, v1" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
@@ -680,8 +680,8 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>https://www.nrk.no/vestfoldogtelemark/</uri>
   </station>
   <station band="Online" id="nrkp1telemark" lang="en" name="NRK P1 Telemark" rank="1.0" type="gov">
-    <frequency uri="https://www.nrk.no/vestfoldogtelemark/">Online in Porsgrunn, Norge</frequency>
-    <location>Porsgrunn, Norge</location>
+    <frequency uri="https://www.nrk.no/vestfoldogtelemark/">Online in Porsgrunn, Norway</frequency>
+    <location>Porsgrunn, Norway</location>
     <description lang="nb">NRK Telemark er NRKs distriktskontor i fylket Telemark med distriktskontor i Porsgrunn.</description>
     <stream mime="audio/aac" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_telemark_aac_l" codec="MPEG ADTS, AAC, v4 LC" samplerate="44100 Hz" channels="Stereo" bitrate="24 kbps" />
     <stream mime="audio/mpeg" uri="http://nrk-mms-live.telenorcdn.net:80/nrk_radio_p1_telemark_mp3_l" codec="MPEG ADTS, layer III, v1" samplerate="48000 Hz" channels="Stereo" bitrate="96 kbps" />
