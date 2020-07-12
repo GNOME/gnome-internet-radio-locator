@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2019-01-30 21:41+0000\n"
-"PO-Revision-Date: 2019-01-31 21:43+0100\n"
+"POT-Creation-Date: 2020-04-05 09:41+0000\n"
+"PO-Revision-Date: 2020-07-12 14:32+0300\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 "
-"< 20)) ? 1 : 2);;\n"
-"Last-Translator: Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>\n"
-"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);;\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
 msgid "GNOME Internet Radio Locator for GNOME 3"
@@ -35,9 +35,9 @@ msgid ""
 "broadcasters on the Internet with the help of a map."
 msgstr ""
 "Localizatorul de stații de radio pe Internet GNOME pentru GNOME 3 este un "
-"program liber ce vă permite să localizați cu ușurință cu ajutorul unei "
-"hărți și să ascultați stații libere de radio pe internet oferite de "
-"emițători prin intermediul internetului."
+"program liber ce vă permite să localizați cu ușurință cu ajutorul unei hărți "
+"și să ascultați stații libere de radio pe internet oferite de emițători prin "
+"intermediul internetului."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
 msgid ""
@@ -46,17 +46,17 @@ msgid ""
 "Internet Radio stations."
 msgstr ""
 "Localizatorul de stații de radio pe Internet GNOME pentru GNOME 3 este "
-"dezvoltat pentru desktopul GNOME 3 și necesită gstreamer 1.0 instalat "
-"pentru a asculta stații libere de radio pe internet."
+"dezvoltat pentru desktopul GNOME 3 și necesită gstreamer 1.0 instalat pentru "
+"a asculta stații libere de radio pe internet."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:5
 msgid ""
 "Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
 "Locator for GNOME 3."
 msgstr ""
-"Bucurați-vă de ascultarea stațiilor libere de radio prin internet în "
-"GNOME prin intermediul Localizatorului de stații de radio prin internet "
-"pentru GNOME 3."
+"Bucurați-vă de ascultarea stațiilor libere de radio prin internet în GNOME "
+"prin intermediul Localizatorului de stații de radio prin internet pentru "
+"GNOME 3."
 
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
 msgid "Internet Radio Locator"
@@ -71,70 +71,78 @@ msgstr "Localizează stații de radio prin Internet"
 msgid "Live;Radio;Program;Station;Locator;"
 msgstr "Live;Radio;Program;Station;Locator;Stație;Localizator;"
 
-#: ../src/gnome-internet-radio-locator-gui.c:99
-#: ../src/gnome-internet-radio-locator-gui.c:113
-#: ../src/gnome-internet-radio-locator-gui.c:325
-#: ../src/gnome-internet-radio-locator.c:866
+#: ../src/gnome-internet-radio-locator-gui.c:92
+#: ../src/gnome-internet-radio-locator-gui.c:104
+#: ../src/gnome-internet-radio-locator-gui.c:312
+#: ../src/gnome-internet-radio-locator.c:899
 #, c-format
 msgid "Failed to open %s\n"
 msgstr "Eșec la deschiderea %s\n"
 
+#: ../src/gnome-internet-radio-locator-gui.c:219
+msgid "Added "
+msgstr "Adăugat "
+
+#: ../src/gnome-internet-radio-locator-gui.c:219
+msgid " in "
+msgstr " în "
+
 #. The Stations dialog
-#: ../src/gnome-internet-radio-locator-gui.c:264
+#: ../src/gnome-internet-radio-locator-gui.c:256
 msgid "New Internet Radio Station"
 msgstr "Stație nouă de radio prin internet"
 
-#: ../src/gnome-internet-radio-locator-gui.c:267
+#: ../src/gnome-internet-radio-locator-gui.c:259
 msgid "_Save"
 msgstr "_Salvează"
 
-#: ../src/gnome-internet-radio-locator-gui.c:289
+#: ../src/gnome-internet-radio-locator-gui.c:281
 msgid "Station name"
 msgstr "Numele stației"
 
-#: ../src/gnome-internet-radio-locator-gui.c:290
+#: ../src/gnome-internet-radio-locator-gui.c:282
 msgid "Bandwidth"
 msgstr "Lățime de bandă"
 
-#: ../src/gnome-internet-radio-locator-gui.c:292
+#: ../src/gnome-internet-radio-locator-gui.c:284
 msgid "City name"
 msgstr "Numele orașului"
 
-#: ../src/gnome-internet-radio-locator-gui.c:296
+#: ../src/gnome-internet-radio-locator-gui.c:288
 msgid "http://uri-to-stream/"
 msgstr "http://uri-de-difuzat/"
 
-#: ../src/gnome-internet-radio-locator-gui.c:297
+#: ../src/gnome-internet-radio-locator-gui.c:289
 msgid "Description"
 msgstr "Descriere"
 
-#: ../src/gnome-internet-radio-locator-gui.c:298
+#: ../src/gnome-internet-radio-locator-gui.c:290
 msgid "http://uri-to-website/"
 msgstr "http://uri-către-sit-web/"
 
-#: ../src/gnome-internet-radio-locator-gui.c:311
+#: ../src/gnome-internet-radio-locator-gui.c:301
 #, c-format
 msgid "Failed to open %s.  Please install it.\n"
 msgstr "Eșec la deschiderea %s.  Instalați-l.\n"
 
-#: ../src/gnome-internet-radio-locator-gui.c:459
-#: ../src/gnome-internet-radio-locator.c:380
+#: ../src/gnome-internet-radio-locator-gui.c:434
+#: ../src/gnome-internet-radio-locator.c:403
 msgid "http://fm939.wnyc.org/wnycfm"
 msgstr "http://fm939.wnyc.org/wnycfm"
 
-#: ../src/gnome-internet-radio-locator-gui.c:462
+#: ../src/gnome-internet-radio-locator-gui.c:437
 msgid "WNYC"
 msgstr "WNYC"
 
-#: ../src/gnome-internet-radio-locator-gui.c:465
+#: ../src/gnome-internet-radio-locator-gui.c:440
 msgid "New York City, NY"
 msgstr "New York City, NY"
 
-#: ../src/gnome-internet-radio-locator-gui.c:468
-msgid "ONLINE"
-msgstr "LIVE"
+#: ../src/gnome-internet-radio-locator-gui.c:443
+msgid "Online"
+msgstr "Conectat"
 
-#: ../src/gnome-internet-radio-locator-gui.c:471
+#: ../src/gnome-internet-radio-locator-gui.c:446
 msgid ""
 "WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, "
 "broadcasting the finest programs from NPR, American Public Media, Public "
@@ -200,67 +208,76 @@ msgstr ""
 "Eșec la deschiderea URL-ului: „%s”\n"
 "Detalii: %s"
 
-#: ../src/gnome-internet-radio-locator.c:364
+#: ../src/gnome-internet-radio-locator.c:387
 #, c-format
 msgid "New Internet Radio Station\n"
 msgstr "Stație nouă de radio prin Internet\n"
 
-#: ../src/gnome-internet-radio-locator.c:370
+#: ../src/gnome-internet-radio-locator.c:393
 #, c-format
 msgid "Search Internet Radio Station\n"
 msgstr "Caută stație de radio prin Internet\n"
 
-#: ../src/gnome-internet-radio-locator.c:405
+#: ../src/gnome-internet-radio-locator.c:417
+#: ../src/gnome-internet-radio-locator.c:1020
+msgid ""
+"Search by city or drag/click on the zoomable map to listen to a radio "
+"broadcast"
+msgstr ""
+"Căutați după oraș sau trageți/apăsați clic pe harta focusabilă pentru a "
+"asculta o difuzare radio"
+
+#: ../src/gnome-internet-radio-locator.c:432
 #, c-format
 msgid "Previous Internet Radio Station\n"
 msgstr "Precedenta stație de radio prin Internet\n"
 
-#: ../src/gnome-internet-radio-locator.c:539
+#: ../src/gnome-internet-radio-locator.c:566
 msgid "Search"
 msgstr "Caută"
 
-#: ../src/gnome-internet-radio-locator.c:543
+#: ../src/gnome-internet-radio-locator.c:570
 msgid "Search Internet Radio Station"
 msgstr "Caută stație de radio prin Internet"
 
-#: ../src/gnome-internet-radio-locator.c:548
+#: ../src/gnome-internet-radio-locator.c:575
 msgid "Prev"
 msgstr "Precedenta"
 
-#: ../src/gnome-internet-radio-locator.c:552
+#: ../src/gnome-internet-radio-locator.c:579
 msgid "Prev Internet Radio Station"
 msgstr "Precedenta stație de radio prin Internet"
 
-#: ../src/gnome-internet-radio-locator.c:555
-#: ../src/gnome-internet-radio-locator.c:559
+#: ../src/gnome-internet-radio-locator.c:582
+#: ../src/gnome-internet-radio-locator.c:586
 msgid "Stations"
 msgstr "Stații"
 
-#: ../src/gnome-internet-radio-locator.c:562
+#: ../src/gnome-internet-radio-locator.c:589
 msgid "Next"
 msgstr "Următoarea"
 
-#: ../src/gnome-internet-radio-locator.c:566
+#: ../src/gnome-internet-radio-locator.c:593
 msgid "Next Internet Radio Station"
 msgstr "Următoarea stație de radio prin Internet"
 
-#: ../src/gnome-internet-radio-locator.c:569
-#: ../src/gnome-internet-radio-locator.c:573
+#: ../src/gnome-internet-radio-locator.c:596
+#: ../src/gnome-internet-radio-locator.c:600
 msgid "About Station"
 msgstr "Despre stație"
 
-#: ../src/gnome-internet-radio-locator.c:576
-#: ../src/gnome-internet-radio-locator.c:580
+#: ../src/gnome-internet-radio-locator.c:603
+#: ../src/gnome-internet-radio-locator.c:607
 msgid "About Program"
 msgstr "Despre program"
 
 #. give it the title
-#: ../src/gnome-internet-radio-locator.c:592
-#: ../src/gnome-internet-radio-locator.c:762
+#: ../src/gnome-internet-radio-locator.c:619
+#: ../src/gnome-internet-radio-locator.c:804
 msgid "GNOME Internet Radio Locator"
 msgstr "Localizator de stații radio prin Internet GNOME"
 
-#: ../src/gnome-internet-radio-locator.c:637
+#: ../src/gnome-internet-radio-locator.c:664
 #, c-format
 msgid ""
 "Nothing\n"
@@ -269,22 +286,29 @@ msgstr ""
 "Nimic\n"
 "\n"
 
-#: ../src/gnome-internet-radio-locator.c:925
+#: ../src/gnome-internet-radio-locator.c:865
+msgid "New"
+msgstr "Nou"
+
+#: ../src/gnome-internet-radio-locator.c:958
 msgid "Stop"
 msgstr "Oprește"
 
-#: ../src/gnome-internet-radio-locator.c:931
+#: ../src/gnome-internet-radio-locator.c:964
 msgid "Zoom In"
 msgstr "Apropie"
 
-#: ../src/gnome-internet-radio-locator.c:945
+#: ../src/gnome-internet-radio-locator.c:978
 msgid "Zoom Out"
 msgstr "Depărtează"
 
-#: ../src/gnome-internet-radio-locator.c:950
+#: ../src/gnome-internet-radio-locator.c:983
 msgid "Markers"
 msgstr "Marcator"
 
-#: ../src/gnome-internet-radio-locator.c:972
+#: ../src/gnome-internet-radio-locator.c:1005
 msgid "Exit"
 msgstr "Ieșire"
+
+#~ msgid "ONLINE"
+#~ msgstr "LIVE"
