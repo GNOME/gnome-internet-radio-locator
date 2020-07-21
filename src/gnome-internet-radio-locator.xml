@@ -49,6 +49,12 @@
     <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_p1_ostfold_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
     <uri>https://www.nrk.no/ostfold/</uri>
   </station>
+  <station band="Online" id="radioålesund" lang="no" name="Radio Ålesund" rank="1.0" type="com">
+    <location>Ålesund, Norway</location>
+    <description lang="no">Radio Ålesund</description>
+    <stream mime="audio/aac" uri="http://stream.jaerradiogruppen.no:8008/;" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" bitrate="191 kbps" />
+    <uri>https://www.radioaalesund.no/</uri>
+  </station>
   <station band="Online" id="p1_hordaland" lang="no" name="NRK P1 Hordaland" rank="1.0" type="gov">
     <location>Hordaland, Norway</location>
     <description lang="no">NRK P1 Hordaland</description>

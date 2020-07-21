@@ -1,4 +1,16 @@
 =============
+Version 3.0.3
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Ålesund, Norway
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add Radio Ålesund, Norway
+
+=============
 Version 3.0.2
 =============
 
