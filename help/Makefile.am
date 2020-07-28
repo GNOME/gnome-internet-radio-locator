@@ -20,7 +20,7 @@ HELP_FILES = \
 	search.page \
 	exit.page
 
-HELP_LINGUAS = cs de es pl sv
+HELP_LINGUAS = cs de es pl sv uk
 
 endif
 
