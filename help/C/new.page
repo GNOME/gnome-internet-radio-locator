@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <page xmlns="http://projectmallard.org/1.0/" type="topic" id="new" xml:lang="en-US">
   <info>
-    <link type="guide" xref="index#main" group="#first"/>
+    <link type="guide" xref="index" group="#first"/>
     <revision pkgversion="0.7" date="2017-07-30" status="candidate"/>
     <credit type="author copyright">
       <name>Ole Aamot</name>
