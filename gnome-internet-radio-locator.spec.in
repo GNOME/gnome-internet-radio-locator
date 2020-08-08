@@ -57,6 +57,12 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Sun Aug 09 2020 Ole Aamot <ole@gnome.org> - 3.0.4-1
+- gnome-internet-radio-locator 3.0.4 build on Fedora Linux 32
+
+* Thu Jul 23 2020 Ole Aamot <ole@gnome.org> - 3.0.3-1
+- gnome-internet-radio-locator 3.0.3 build on Fedora Linux 32
+
 * Sun Jul 12 2020 Ole Aamot <ole@gnome.org> - 3.0.2-1
 - gnome-internet-radio-locator 3.0.2 build on Fedora Linux 32
 
