@@ -1024,7 +1024,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <frequency uri="http://www.kpsu.org/">Online in Portland, Oregon</frequency>
     <location>Portland, Oregon</location>
     <description lang="en">Portland State University's radio station</description>
-    <stream mime="audio/ogg" uri="http://173.255.221.48:8000/stream" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
+    <stream mime="audio/ogg" uri="https://streamer.radio.co/scad0cc067/listen" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="127 kbps" />
     <uri>http://www.kpsu.org/</uri>
   </station>
   <station band="95.0FM" id="95bfm" lang="en" name="95bFM" rank="1.0" type="edu">

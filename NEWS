@@ -2,8 +2,15 @@
 Version 3.0.4
 =============
 
+Documentation
+
 	* AUTHORS: Add Andre Klapper
 	* THANKS: Add Andre Klapper
+	* help/uk/uk.po: New Ukrainian help translation (Yuri Chornoivan)
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Update KPSU (Portland, Oregon)
 
 =============
 Version 3.0.3
