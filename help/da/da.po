@@ -1,0 +1,686 @@
+# Danish translation for gnome-internet-radio-locator.
+# Copyright (C) 2020 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-internet-radio-locator package.
+# scootergrisen, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-internet-radio-locator master\n"
+"POT-Creation-Date: 2020-02-26 13:26+0000\n"
+"PO-Revision-Date: 2020-03-18 15:01+0200\n"
+"Last-Translator: scootergrisen\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "scootergrisen <>, 2020"
+
+#. (itstool) path: info/title
+#: C/index.page:8
+msgctxt "link"
+msgid "GNOME Internet Radio Locator for GNOME 3"
+msgstr "GNOME Internetradio til GNOME 3"
+
+#. (itstool) path: info/title
+#: C/index.page:9
+msgctxt "text"
+msgid "GNOME Internet Radio Locator for GNOME 3"
+msgstr "GNOME Internetradio til GNOME 3"
+
+#. (itstool) path: info/desc
+#: C/index.page:10 C/intro.page:15 C/new.page:11 C/stop.page:14
+#: C/search.page:14 C/exit.page:14
+msgid ""
+"GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio "
+"stations around the world."
+msgstr ""
+"GNOME Internetradio til GNOME 3 lader dig finde radiostationer på "
+"internettet verden over."
+
+#. (itstool) path: credit/name
+#: C/index.page:13 C/intro.page:9 C/new.page:7 C/stop.page:9 C/zoom.page:9
+#: C/search.page:9 C/exit.page:9
+msgid "Ole Aamot"
+msgstr "Ole Aamot"
+
+#. (itstool) path: credit/years
+#: C/index.page:15
+msgid "2017"
+msgstr "2017"
+
+#. (itstool) path: page/title
+#: C/index.page:22
+msgid "<_:media-1/> GNOME Internet Radio Locator for GNOME 3"
+msgstr "<_:media-1/> GNOME Internetradio til GNOME 3"
+
+#. (itstool) path: page/p
+#: C/index.page:27
+msgid ""
+"Welcome to the <app>GNOME Internet Radio Locator for GNOME 3</app> help "
+"guide. For a quick introduction into the features of the <app>GNOME Internet "
+"Radio Locator for GNOME 3</app>, visit the <link xref=\"intro"
+"\">Introduction</link> page."
+msgstr ""
+"Velkommen til hjælpevejledningen til <app>GNOME Internetradio til GNOME "
+"3</app>. For at få en hurtig introduktion til funktionerne i <app>GNOME "
+"Internetradio til GNOME 3</app> kan du besøge siden <link "
+"xref=\"intro\">Introduktion</link>."
+
+#. (itstool) path: page/p
+#: C/index.page:32
+msgid ""
+"Other help topics are grouped together into sections below. Enjoy locating "
+"free, non-profit, independent Internet radio stations with the <app>GNOME "
+"Internet Radio Locator for GNOME 3</app>!"
+msgstr ""
+"Andre hjælpeemner er grupperede i afsnittene nedenfor. Hav det sjovt med at "
+"finde gratis, nonprofit, uafhængige radiostationer på internettet med "
+"<app>GNOME Internetradio til GNOME 3</app>!"
+
+#. (itstool) path: section/title
+#. (itstool) path: page/title
+#: C/index.page:37 C/new.page:13
+msgid "New"
+msgstr "Ny"
+
+#. (itstool) path: section/p
+#: C/index.page:38
+msgid "Add <link xref=\"new\">New</link> radio station by location."
+msgstr "Tilføj <link xref=\"new\">Ny</link> radiostation efter sted."
+
+#. (itstool) path: section/title
+#: C/index.page:42
+msgid "Search"
+msgstr "Søg"
+
+#. (itstool) path: section/p
+#: C/index.page:43
+msgid ""
+"<link xref=\"search\">Search</link> for free, non-profit, independent radio "
+"stations by location."
+msgstr ""
+"<link xref=\"search\">Søg</link> efter gratis, nonprofit, uafhængige "
+"radiostationer efter sted."
+
+#. (itstool) path: section/title
+#: C/index.page:48
+msgid "Zoom In/Out of Internet Radio Station Map"
+msgstr "Zoom ind/ud på kortet over radiostationer på internettet"
+
+#. (itstool) path: section/p
+#: C/index.page:49
+msgid "<link xref=\"zoom\">Zoom In/Out</link> of the free radio station map."
+msgstr ""
+"<link xref=\"zoom\">Zoom ind/ud</link> på kortet over gratis radiostationer."
+
+#. (itstool) path: section/title
+#: C/index.page:53
+msgid "Stop Station Playback"
+msgstr "Stop afspilning af station"
+
+#. (itstool) path: section/p
+#: C/index.page:54
+msgid "<link xref=\"stop\">Stop playback of the selected radio station</link>."
+msgstr "<link xref=\"stop\">Stop afspilning af den valgte radiostation</link>."
+
+#. (itstool) path: section/title
+#. (itstool) path: page/title
+#: C/index.page:58 C/exit.page:17
+msgid "Exit"
+msgstr "Afslut"
+
+#. (itstool) path: section/p
+#: C/index.page:59
+msgid "<link xref=\"exit\">Exit the program</link>."
+msgstr "<link xref=\"exit\">Afslut programmet</link>."
+
+#. (itstool) path: page/title
+#: C/intro.page:19
+msgid "Intro"
+msgstr "Introduktion"
+
+#. (itstool) path: page/p
+#: C/intro.page:21
+msgid ""
+"<app>GNOME Internet Radio Locator for GNOME 3</app> is a free program for "
+"listening to free, independent, non-profit radio stations from around the "
+"world by streaming over the Internet."
+msgstr ""
+"<app>GNOME Internetradio til GNOME 3</app> er et frit program til at lytte "
+"til gratis, uafhængige, nonprofit radiostationer verden over ved at streame "
+"over internettet."
+
+#. (itstool) path: page/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/intro.page:25
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-main.png' "
+"md5='f4890cee67ffed7cdf717123f50298a4'"
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/new.page:14
+msgid ""
+"It is possible to add new, personal Internet radio stations in <app>GNOME "
+"Internet Radio Locator for GNOME 3</app> with the \"New\" button."
+msgstr ""
+"Det er muligt at tilføje nye, personlige radiostationer på internettet i "
+"<app>GNOME Internetradio til GNOME 3</app> med knappen “Ny”."
+
+#. (itstool) path: page/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/new.page:17
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-new.png' "
+"md5='44635b8e41e3ed926594454d0b563181'"
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/stop.page:17
+msgid "Stop playback of Internet Radio Station"
+msgstr "Stop afspilning af radiostation på internettet"
+
+#. (itstool) path: page/p
+#: C/stop.page:19
+msgid ""
+"It is possible to stop playback of the currently selected radio station."
+msgstr "Det er muligt at stoppe afspilningen af den valgte radiostation."
+
+#. (itstool) path: page/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/stop.page:21
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-stop.png' "
+"md5='1eb0256269b211b90a9c23cc351832fd'"
+msgstr ""
+
+#. (itstool) path: info/desc
+#: C/zoom.page:14
+msgid "Search for Internet radio stations by location."
+msgstr "Søg efter radiostationer på internettet efter sted."
+
+#. (itstool) path: page/title
+#: C/zoom.page:17
+msgid "Zoom Internet Radio Station Map"
+msgstr "Zoom på kortet over radiostationer på internettet"
+
+#. (itstool) path: page/p
+#: C/zoom.page:19
+msgid "It is possible to zoom the map with Internet radio stations."
+msgstr "Det er muligt at zoome på kortet over radiostationer på internettet."
+
+#. (itstool) path: page/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/zoom.page:21
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-zoom.png' "
+"md5='e0da0d565697a2dd4440e3e104e48b01'"
+msgstr ""
+
+#. (itstool) path: page/title
+#: C/search.page:17
+msgid "Search by location"
+msgstr "Søg efter sted"
+
+#. (itstool) path: page/p
+#: C/search.page:19
+msgid ""
+"It is possible to search for supported radio stations based on the location "
+"of the station in <app>GNOME Internet Radio Locator for GNOME 3</app>."
+msgstr ""
+"Det er muligt at søge efter understøttede radiostationer baseret på "
+"stationens sted i <app>GNOME Internetradio til GNOME 3</app>."
+
+#. (itstool) path: page/p
+#: C/search.page:21
+msgid ""
+"Type a city name for a supported Free Radio station in a query field and hit "
+"<key>ENTER</key>."
+msgstr ""
+"Skriv et bynavn til en understøttet gratis radiostation i et forespørgselsfelt og "
+"tryk på <key>ENTER</key>."
+
+#. (itstool) path: page/p
+#: C/search.page:24
+msgid "Supported city names are:"
+msgstr "De understøttede bynavne er:"
+
+#. (itstool) path: item/p
+#: C/search.page:27
+msgid "<code>Adelaide, Australia</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:28
+msgid "<code>Auckland, New Zealand</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:29
+msgid "<code>Austin, TX</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:30
+msgid "<code>Ayr, Scotland</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:31
+msgid "<code>Bergen, Norway</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:32
+msgid "<code>Berkeley, CA</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:33
+msgid "<code>Bern, Switzerland</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:34
+msgid "<code>Boston, MA</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:35
+msgid "<code>Bristol, United Kingdom</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:36
+msgid "<code>Brno, Czech Republic</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:37
+msgid "<code>Bronx, New York City, NY</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:38
+msgid "<code>Brooklyn, New York City, NY</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:39
+msgid "<code>Bruxelles, Belgium</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:40
+msgid "<code>Budapest, Hungary</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:41
+msgid "<code>Buenos Aires, Argentina</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:42
+msgid "<code>Calgary, Canada</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:43
+msgid "<code>Cambridge, United Kingdom</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:44
+msgid "<code>Cape Town, South Africa</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:45
+msgid "<code>Centralia, DC</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:46
+msgid "<code>Chapel Hill, NC</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:47
+msgid "<code>Chicago, IL</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:48
+msgid "<code>Cleveland, OH</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:49
+msgid "<code>Coimbra, Portugal</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:50
+msgid "<code>Copenhagen, Denmark</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:51
+msgid "<code>Cornwall, United Kingdom</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:52
+msgid "<code>Dublin, Ireland</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:53
+msgid "<code>Gent, Belgium</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:54
+msgid "<code>Guatemala City, Guatemala</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:55
+msgid "<code>Hammond, LA</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:56
+msgid "<code>Honolulu, HI</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:57
+msgid "<code>Houston, TX</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:58
+msgid "<code>Kingston, Canada</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:59
+msgid "<code>Kristiansand, Norway</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:60
+msgid "<code>Leeds, United Kingdom</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:61
+msgid "<code>London, United Kingdom</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:62
+msgid "<code>Long Island, NY</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:63
+msgid "<code>Los Angeles, CA</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:64
+msgid "<code>Lund, Sweden</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:65
+msgid "<code>Manchester, United Kingdom</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:66
+msgid "<code>Memphis, TN</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:67
+msgid "<code>México City, México</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:68
+msgid "<code>Minneapolis, MN</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:69
+msgid "<code>Narvik, Norway</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:70
+msgid "<code>Nashville, TN</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:71
+msgid "<code>Newcastle, Australia</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:72
+msgid "<code>New Orleans, LA</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:73
+msgid "<code>New York City, NY</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:74
+msgid "<code>Nicosia, Cyprus</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:75
+msgid "<code>Nottingham, United Kingdom</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:76
+msgid "<code>Oslo, Norway</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:77
+msgid "<code>Oswego, NY</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:78
+msgid "<code>Ottawa, Canada</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:79
+msgid "<code>Oxford, United Kingdom</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:80
+msgid "<code>Palo Alto, CA</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:81
+msgid "<code>Paris, France</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:82
+msgid "<code>Phoenix, AZ</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:83
+msgid "<code>Pisa, Italy</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:84
+msgid "<code>Pittsburgh, PA</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:85
+msgid "<code>Portland, OR</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:86
+msgid "<code>Reykjavik, Iceland</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:87
+msgid "<code>Rochester, MI</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:88
+msgid "<code>Salford, United Kingdom</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:89
+msgid "<code>San Marcos, TX</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:90
+msgid "<code>Santiago, Chile</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:91
+msgid "<code>São Paulo, Brazil</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:92
+msgid "<code>Seattle, WA</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:93
+msgid "<code>Space</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:94
+msgid "<code>Stockholm, Sweden</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:95
+msgid "<code>St. Pölten, Austria</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:96
+msgid "<code>Sydney, Nova Scotia, Canada</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:97
+msgid "<code>Toronto, Canada</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:98
+msgid "<code>Trondheim, Norway</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:99
+msgid "<code>Tuscaloosa, AL</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:100
+msgid "<code>Washington, DC</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:101
+msgid "<code>Waterloo, Canada</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:102
+msgid "<code>York, United Kingdom</code>"
+msgstr ""
+
+#. (itstool) path: item/p
+#: C/search.page:103
+msgid "<code>Zürich, Switzerland</code>"
+msgstr ""
+
+#. (itstool) path: page/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/search.page:106
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-search.png' "
+"md5='938f6db389ea4b220c4f690e2e6a7b54'"
+msgstr ""
+
+#. (itstool) path: page/p
+#: C/exit.page:19
+msgid ""
+"It is possible to exit the <app>GNOME Internet Radio Locator for GNOME 3</"
+"app> with the \"Exit\" button."
+msgstr ""
+"Det er muligt at afslutte <app>GNOME Internetradio til GNOME 3</app> med "
+"knappen “Afslut”."
+
+#. (itstool) path: page/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/exit.page:22
+msgctxt "_"
+msgid ""
+"external ref='media/gnome-internet-radio-locator-exit.png' "
+"md5='6764a256ab4ca47f3d11f3d065ffa603'"
+msgstr ""
