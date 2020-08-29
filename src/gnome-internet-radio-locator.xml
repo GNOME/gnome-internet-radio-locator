@@ -1011,6 +1011,13 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://wamu-1.streamguys.com/" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Mono" bitrate="48 kbps" />
     <uri>http://wamu.org/</uri>
   </station>
+  <station band="90.1FM" id="c-span" lang="en" name="C-SPAN" rank="1.0" type="org">
+    <frequency uri="http://www.c-span.org/">90.1 FM in Supreme Court, United States of America</frequency>
+    <location>Supreme Court, United States of America</location>
+    <description lang="en">C-SPAN Radio 90.1 WCSP-FM in Washington, DC offers commercial-free public affairs programming 24 hours a day. You’ll hear live coverage from Washington of important congressional hearings and key speeches from national leaders.</description>
+    <stream mime="audio/mpeg" uri="https://playerservices.streamtheworld.com/api/livestream-redirect/CSPANRADIO.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="22050 Hz" channels="Stereo" bitrate="39 kbps" />
+    <uri>http://www.c-span.org/</uri>
+  </station>
   <!-- Appears to be down as of 2016/07/07
   <station band="1580AM" id="kdup" lang="en" name="KDUP" rank="1.0" type="edu">
     <frequency uri="http://kdup.up.edu/">1580 AM in Portland, Oregon</frequency>

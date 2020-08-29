@@ -1,4 +1,20 @@
 =============
+Version 3.0.5
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add Supreme Court, Washington DC
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Add C-SPAN, Washington DC
+
+Translations
+
+	* Ask Hjorth Larsen (da)
+
+=============
 Version 3.0.4
 =============
 

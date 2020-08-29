@@ -29,6 +29,7 @@
 #include <glib/gstdio.h>
 #include <glib/gi18n.h>
 #include <string.h>
+#include <geoclue.h>
 
 #include "gnome-internet-radio-locator.h"
 #include "gnome-internet-radio-locator-gui.h"
@@ -83,6 +84,57 @@ extern struct GNOMEInternetRadioLocatorMedia *media;
 GStatBuf stats;
 
 ChamplainView *view;
+
+/* Commandline options */
+static gint timeout = 30; /* seconds */
+static GClueAccuracyLevel accuracy_level = GCLUE_ACCURACY_LEVEL_EXACT;
+static gint time_threshold;
+
+static GOptionEntry entries[] =
+{
+        { "timeout",
+          't',
+          0,
+          G_OPTION_ARG_INT,
+          &timeout,
+          N_("Exit after T seconds. Default: 30"),
+          "T" },
+        { "time-threshold",
+          'i',
+          0,
+          G_OPTION_ARG_INT,
+          &time_threshold,
+          N_("Only report location update after T seconds. "
+             "Default: 0 (report new location without any delay)"),
+          "T" },
+        { "accuracy-level",
+          'a',
+          0,
+          G_OPTION_ARG_INT,
+          &accuracy_level,
+          N_("Request accuracy level A. "
+             "Country = 1, "
+             "City = 4, "
+             "Neighborhood = 5, "
+             "Street = 6, "
+             "Exact = 8."),
+          "A" },
+        { NULL }
+};
+
+GClueSimple *simple = NULL;
+GClueClient *client = NULL;
+GMainLoop *main_loop;
+
+static gboolean
+on_location_timeout (gpointer user_data)
+{
+        g_clear_object (&client);
+        g_clear_object (&simple);
+        g_main_loop_quit (main_loop);
+
+        return FALSE;
+}
 
 gchar *
 str_channels (GNOMEInternetRadioLocatorChannels type) {
@@ -792,6 +844,11 @@ main (int argc,
 	GtkTreeIter iter;
 	GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
 	guint context_id;
+	GClueLocation *location;
+        gdouble altitude, speed, heading;
+        GVariant *timestamp;
+        GTimeVal tv = { 0 };
+        const char *desc;
 	bindtextdomain (GETTEXT_PACKAGE, GNOME_INTERNET_RADIO_LOCATOR_LOCALEDIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
@@ -837,7 +894,12 @@ main (int argc,
 
 	license_actor = champlain_view_get_license_actor (view);
 	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
+	/* FIXME: Boston, Massachusetts */
 	champlain_view_center_on (CHAMPLAIN_VIEW (view), 42.3617430, -71.0839082);
+	/* location = gclue_simple_get_location (simple); */
+	/* champlain_view_center_on (CHAMPLAIN_VIEW (view), */
+	/*  			  gclue_location_get_latitude (location), */
+	/*  			  gclue_location_get_longitude (location)); */
 	layer = create_marker_layer (view, &path);
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (path));
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (layer));
