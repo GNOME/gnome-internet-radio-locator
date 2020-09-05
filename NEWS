@@ -1,4 +1,24 @@
 =============
+Version 3.1.0
+=============
+
+Build
+
+	* meson.build: Update Meson build configuration
+	* po/meson.build: Update Meson build configuration
+	* src/meson.build: Update Meson build configuration
+
+GUI
+
+	* src/gnome-internet-radio-locator.c: Add config.h
+
+Translations
+
+	* Rafael Fontenelle (pt_BR)
+	* Yuri Chornoivan (uk)
+	* Piotr Drąg (pl)
+
+=============
 Version 3.0.5
 =============
 
