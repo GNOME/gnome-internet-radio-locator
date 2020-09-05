@@ -1,0 +1,101 @@
+\documentclass[aspectratio=43]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\title[GNOME Radio 3]{GNOME Radio 3}
+\author{Ole Aamot \texttt{ole@gnome.org}}
+\date{July 27th, 2020}
+
+\usetheme{guadec}
+
+\AtBeginSection{\frame{\sectionpage}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{GNOME Radio 3 on Debian GNU/Linux 10, Fedora Core 32 and Ubuntu 20.04}
+
+\begin{frame}[containsverbatim]
+\frametitle{GNOME Radio 3}
+\framesubtitle{Free World Broadcasts}
+
+GNOME Internet Radio Locator is Free Internet Radio Software for GNOME 3.38.
+
+The latest GNOME Internet Radio Locator 3.0.3 release (Boston) features 125
+international radio stations and 58 city map markers around the world.
+
+GNOME Radio 3 will be the successor to GNOME Internet Radio Locator built
+for GNOME 3 with Cairo, Clutter, Champlain, Maps, GStreamer, and GTK+ 4.
+\end{frame}
+
+\begin{frame}
+\frametitle{Packaging}
+
+Debian GNU/Linux, Fedora and Ubuntu software installation packages of
+GNOME Internet Radio Locator for the computer hardware architectures
+i386, x86\_64 and amd64 are now available for download and installation
+with the package management system tools rpm and dpkg.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Debian GNU/Linux 10 i386}
+
+    \begin{itemize}
+        \item sudo dpkg -i \url{https://www.gnome.org/~ole/debian/gnome-internet-radio-locator_3.0.2-1_i386.deb}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Fedora Core 32 x86\_64}
+
+    \begin{itemize}
+        \item sudo dnf install \url{http://www.gnomeradio.org/~ole/fedora/RPMS/x86\_64/gnome-internet-radio-locator-3.0.2-1.fc32.x86\_64.rpm}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Ubuntu 20.04 LTS amd64}
+
+    \begin{itemize}
+        \item sudo dpkg -i \url{http://www.gnomeradio.org/~ole/debian/gnome-internet-radio-locator\_3.0.2-1\_amd64.deb}
+    \end{itemize}
+
+\end{frame}
+
+\section{Compiling from Source}
+
+\begin{frame}
+\frametitle{Compiling GNOME Internet Radio Locator 3 from Source}
+\framesubtitle{gnome-internet-radio-locator 3.0.3}
+
+    \texttt{git clone https://gitlab.gnome.org/GNOME/gnome-internet-radio-locator\\
+cd gnome-internet-radio-locator\\
+./autogen.sh\\
+./configure\\
+make\\
+sudo make install\\
+gnome-internet-radio-locator}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Compiling GNOME Radio 3 from Source}
+\framesubtitle{gnome-radio 0.2.0}
+
+    \texttt{git clone https://gitlab.gnome.org/ole/gnome-radio\\
+cd gnome-radio\\
+./autogen.sh\\
+./configure\\
+make\\
+sudo make install\\
+gnome-radio}
+
+\end{frame}
+
+\end{document}
