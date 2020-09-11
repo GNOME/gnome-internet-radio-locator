@@ -15,10 +15,10 @@ install_data(
     install_dir: join_paths(get_option('datadir'), 'gnome-internet-radio-locator')
 )
 gnome = import('gnome')
-gnomeinternetradio_resources = gnome.compile_resources(
-  'gnome-internet-radio resources',
-  'gnome-internet-radio.gresource.xml',
+gnomeinternetradiolocator_resources = gnome.compile_resources(
+  'gnome-internet-radio-locator resources',
+  'gnome-internet-radio-locator.gresource.xml',
   source_dir: '.'
 )
 gnomeinternetradiolocator_schemas = gnome.compile_schemas()
-gnomeinternetradiolocator = executable('gnome-internet-radio-locator', gnomeinternetradio_sources, gnomeinternetradio_resources, dependencies: [glib_dep, gtk3_dep, gst_dep, champlain_gtk_dep, champlain_dep, geocode_dep, geoclue_dep, libxml_dep, m_dep], link_with: gnomeinternetradiolibrary, install: true)
+gnomeinternetradiolocator = executable('gnome-internet-radio-locator', gnomeinternetradio_sources, gnomeinternetradiolocator_resources, dependencies: [glib_dep, gtk3_dep, gst_dep, champlain_gtk_dep, champlain_dep, geocode_dep, geoclue_dep, libxml_dep, m_dep], link_with: gnomeinternetradiolibrary, install: true)

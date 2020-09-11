@@ -1,4 +1,15 @@
 =============
+Version 3.2.0
+=============
+
+Build
+	* configure.ac: Add meson.build, po/meson.build, src/meson.build
+
+Translations
+
+	* Anders Jonsson (sv)
+
+=============
 Version 3.1.0
 =============
 

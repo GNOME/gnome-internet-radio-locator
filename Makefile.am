@@ -19,7 +19,10 @@ EXTRA_DIST = m4/ChangeLog  \
 	TODO \
 	UBUNTU \
         gnome-internet-radio-locator.spec \
-        gnome-internet-radio-locator.spec.in
+        gnome-internet-radio-locator.spec.in \
+        meson.build \
+        po/meson.build \
+        src/meson.build
 
 DISTCLEANFILES =                \
         intltool-extract        \
