@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2019-07-02 15:52+0000\n"
-"PO-Revision-Date: 2020-02-21 15:07+0300\n"
+"POT-Creation-Date: 2020-08-29 13:10+0000\n"
+"PO-Revision-Date: 2020-09-20 19:00+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
-"Language-Team: Gnome Türkçe çeviri <gnome-turk@gnome.org>\n"
+"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
 msgid "GNOME Internet Radio Locator for GNOME 3"
@@ -28,7 +28,7 @@ msgstr "GNOME 3 için GNOME İnternet Radyosu Konumlayıcı"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
 msgid "Locate and listen to Free Internet Radio stations"
-msgstr "Ücretsiz İnternet Radyo istasyonlarını konumlayın ve dinleyin"
+msgstr "Ücretsiz İnternet Radyo istasyonlarını konumla ve dinle"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
 msgid ""
@@ -36,9 +36,9 @@ msgid ""
 "allows you to easily locate and listen to Free Internet Radio stations by "
 "broadcasters on the Internet with the help of a map."
 msgstr ""
-"GNOME 3 için GNOME İnternet Radyosu Konumlayıcı; radyoları harita yardımıyla kolayca "
-"bulmanızı, internette yayınlanan Radyo istasyonlarını dinlemenizi sağlayan özgür "
-"yazılımdır."
+"GNOME 3 için GNOME İnternet Radyosu Konumlayıcı; radyoları harita yardımıyla "
+"kolayca bulmanızı, internette yayınlanan Radyo istasyonlarını dinlemenizi "
+"sağlayan özgür yazılımdır."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
 msgid ""
@@ -46,17 +46,17 @@ msgid ""
 "desktop and requires gstreamer 1.0 to be installed for listening to Free "
 "Internet Radio stations."
 msgstr ""
-"GNOME 3 için GNOME İnternet Radyosu Konumlayıcı ile internet radyo istasyonlarını "
-"dinlemek için, GNOME 3 masaüstü ortamı ve GStreamer 1.0 gereklidir yüklü değilse "
-"yüklemek gerekir."
+"GNOME 3 için GNOME İnternet Radyosu Konumlayıcı ile internet radyo "
+"istasyonlarını dinlemek için, GNOME 3 masaüstü ortamı ve GStreamer 1.0 "
+"gereklidir yüklü değilse yüklemek gerekir."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:5
 msgid ""
 "Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
 "Locator for GNOME 3."
 msgstr ""
-"GNOME 3 için GNOME İnternet Radyosu Konumlayıcı ile ücretsiz radyo istasyonları dinleme "
-"keyfini çıkarın."
+"GNOME 3 için GNOME İnternet Radyosu Konumlayıcı ile ücretsiz radyo "
+"istasyonları dinleme keyfini çıkarın."
 
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
 msgid "Internet Radio Locator"
@@ -64,7 +64,7 @@ msgstr "İnternet Radyosu Konumlayıcı"
 
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:2
 msgid "Locate Internet Radio Stations"
-msgstr "İnternet Radyo İstasyonlarını Konumlayın"
+msgstr "İnternet Radyo İstasyonlarını Konumla"
 
 #. Extra keywords that can be used to search for gnome-internet-radio-locator in GNOME Shell and Unity
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
@@ -74,7 +74,7 @@ msgstr "Canlı;Radyo;Programı;İstasyon;Bulucu;Konumlayıcı;"
 #: ../src/gnome-internet-radio-locator-gui.c:92
 #: ../src/gnome-internet-radio-locator-gui.c:104
 #: ../src/gnome-internet-radio-locator-gui.c:312
-#: ../src/gnome-internet-radio-locator.c:899
+#: ../src/gnome-internet-radio-locator.c:961
 #, c-format
 msgid "Failed to open %s\n"
 msgstr "%s açılamadı\n"
@@ -127,7 +127,7 @@ msgid "Failed to open %s.  Please install it.\n"
 msgstr "%s açılamadı.  Lütfen kurun.\n"
 
 #: ../src/gnome-internet-radio-locator-gui.c:434
-#: ../src/gnome-internet-radio-locator.c:403
+#: ../src/gnome-internet-radio-locator.c:455
 msgid "http://fm939.wnyc.org/wnycfm"
 msgstr "http://fm939.wnyc.org/wnycfm"
 
@@ -168,7 +168,7 @@ msgid ""
 "Either the file doesn't exist, or you don't have a player for it."
 msgstr ""
 "%s oynatmaya çalışılırken hata oldu\n"
-"Dosya yok veya uygun oynatıcı yok."
+"Dosya veya uygun oynatıcı yok."
 
 #: ../src/gnome-internet-radio-locator-station.c:153
 #, c-format
@@ -177,7 +177,7 @@ msgid ""
 "Either the file doesn't exist, or you don't have a recorder for it."
 msgstr ""
 "%s kaydı denenirken hata oldu\n"
-"Dosya yok veya kayıt aygıtınız yok."
+"Dosya veya kayıt aygıtınız yok."
 
 #: ../src/gnome-internet-radio-locator-station.c:184
 #: ../src/gnome-internet-radio-locator-station.c:204
@@ -209,76 +209,96 @@ msgstr ""
 "URL açılamadı: '%s'\n"
 "Ayrıntılar: %s"
 
-#: ../src/gnome-internet-radio-locator.c:387
+#: ../src/gnome-internet-radio-locator.c:100
+msgid "Exit after T seconds. Default: 30"
+msgstr "T saniye sonra çık. Öntanımlı: 30"
+
+#: ../src/gnome-internet-radio-locator.c:107
+msgid ""
+"Only report location update after T seconds. Default: 0 (report new location "
+"without any delay)"
+msgstr ""
+"Yalnızca T saniye sonra konum değişimini bildir. Öntanımlı: 0 (yeni konumu "
+"gecikmeksizin bildir)"
+
+#: ../src/gnome-internet-radio-locator.c:115
+msgid ""
+"Request accuracy level A. Country = 1, City = 4, Neighborhood = 5, Street = "
+"6, Exact = 8."
+msgstr ""
+"A kesinlik düzeyi iste. Ülke = 1, Şehir = 4, Yöre = 5, Sokak = 6, Birebir = "
+"8."
+
+#: ../src/gnome-internet-radio-locator.c:439
 #, c-format
 msgid "New Internet Radio Station\n"
 msgstr "Yeni İnternet Radyo İstasyonu\n"
 
-#: ../src/gnome-internet-radio-locator.c:393
+#: ../src/gnome-internet-radio-locator.c:445
 #, c-format
 msgid "Search Internet Radio Station\n"
 msgstr "İnternet Radyo İstasyonu Ara\n"
 
-#: ../src/gnome-internet-radio-locator.c:417
-#: ../src/gnome-internet-radio-locator.c:1020
+#: ../src/gnome-internet-radio-locator.c:469
+#: ../src/gnome-internet-radio-locator.c:1082
 msgid ""
 "Search by city or drag/click on the zoomable map to listen to a radio "
 "broadcast"
 msgstr ""
-"Radyo yayınını dinlemek için şehre göre arama yapın veya yakınlaştırılabilir "
-"haritayı sürükleyin/tıklayın"
+"Radyo yayınını dinlemek için şehre göre arama yap veya yakınlaştırılabilir "
+"haritayı sürükle/tıkla"
 
-#: ../src/gnome-internet-radio-locator.c:432
+#: ../src/gnome-internet-radio-locator.c:484
 #, c-format
 msgid "Previous Internet Radio Station\n"
 msgstr "Önceki İnternet Radyo İstasyonu\n"
 
-#: ../src/gnome-internet-radio-locator.c:566
+#: ../src/gnome-internet-radio-locator.c:618
 msgid "Search"
 msgstr "Ara"
 
-#: ../src/gnome-internet-radio-locator.c:570
+#: ../src/gnome-internet-radio-locator.c:622
 msgid "Search Internet Radio Station"
 msgstr "İnternet Radyo İstasyonu Ara"
 
-#: ../src/gnome-internet-radio-locator.c:575
+#: ../src/gnome-internet-radio-locator.c:627
 msgid "Prev"
 msgstr "Önceki"
 
-#: ../src/gnome-internet-radio-locator.c:579
+#: ../src/gnome-internet-radio-locator.c:631
 msgid "Prev Internet Radio Station"
 msgstr "Önceki İnternet Radyo İstasyonu"
 
-#: ../src/gnome-internet-radio-locator.c:582
-#: ../src/gnome-internet-radio-locator.c:586
+#: ../src/gnome-internet-radio-locator.c:634
+#: ../src/gnome-internet-radio-locator.c:638
 msgid "Stations"
 msgstr "İstasyonlar"
 
-#: ../src/gnome-internet-radio-locator.c:589
+#: ../src/gnome-internet-radio-locator.c:641
 msgid "Next"
 msgstr "Sonraki"
 
-#: ../src/gnome-internet-radio-locator.c:593
+#: ../src/gnome-internet-radio-locator.c:645
 msgid "Next Internet Radio Station"
 msgstr "Sonraki İnternet Radyo İstasyonu"
 
-#: ../src/gnome-internet-radio-locator.c:596
-#: ../src/gnome-internet-radio-locator.c:600
+#: ../src/gnome-internet-radio-locator.c:648
+#: ../src/gnome-internet-radio-locator.c:652
 msgid "About Station"
 msgstr "İstasyon Hakkında"
 
-#: ../src/gnome-internet-radio-locator.c:603
-#: ../src/gnome-internet-radio-locator.c:607
+#: ../src/gnome-internet-radio-locator.c:655
+#: ../src/gnome-internet-radio-locator.c:659
 msgid "About Program"
 msgstr "Program Hakkında"
 
 #. give it the title
-#: ../src/gnome-internet-radio-locator.c:619
-#: ../src/gnome-internet-radio-locator.c:804
+#: ../src/gnome-internet-radio-locator.c:671
+#: ../src/gnome-internet-radio-locator.c:861
 msgid "GNOME Internet Radio Locator"
 msgstr "GNOME İnternet Radyosu Konumlayıcı"
 
-#: ../src/gnome-internet-radio-locator.c:664
+#: ../src/gnome-internet-radio-locator.c:716
 #, c-format
 msgid ""
 "Nothing\n"
@@ -287,29 +307,29 @@ msgstr ""
 "Yok\n"
 "\n"
 
-#: ../src/gnome-internet-radio-locator.c:865
+#: ../src/gnome-internet-radio-locator.c:927
 msgid "New"
 msgstr "Yeni"
 
-#: ../src/gnome-internet-radio-locator.c:958
+#: ../src/gnome-internet-radio-locator.c:1020
 msgid "Stop"
 msgstr "Dur"
 
-#: ../src/gnome-internet-radio-locator.c:964
+#: ../src/gnome-internet-radio-locator.c:1026
 msgid "Zoom In"
 msgstr "Yakınlaştır"
 
-#: ../src/gnome-internet-radio-locator.c:978
+#: ../src/gnome-internet-radio-locator.c:1040
 msgid "Zoom Out"
 msgstr "Uzaklaştır"
 
-#: ../src/gnome-internet-radio-locator.c:983
+#: ../src/gnome-internet-radio-locator.c:1045
 msgid "Markers"
 msgstr "İmleyiciler"
 
-#: ../src/gnome-internet-radio-locator.c:1005
+#: ../src/gnome-internet-radio-locator.c:1067
 msgid "Exit"
-msgstr "Çıkış"
+msgstr "Çık"
 
 #~ msgid "ONLINE"
 #~ msgstr "ÇEVRİMİÇİ"
