@@ -1,0 +1,329 @@
+# Slovak translation for gnome-internet-radio-locator.
+# Copyright (C) 2020 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-internet-radio-locator package.
+# Dušan Kazik <prescott66@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-internet-radio-locator master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
+"locator/issues\n"
+"POT-Creation-Date: 2020-09-20 16:02+0000\n"
+"PO-Revision-Date: 2020-09-23 10:45+0200\n"
+"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
+msgid "GNOME Internet Radio Locator for GNOME 3"
+msgstr "Lokátor internetových rádií prostredia GNOME pre GNOME 3"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
+msgid "Locate and listen to Free Internet Radio stations"
+msgstr "Umožňuje lokalizovať a počúvať stanice voľných internetových rádií"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
+msgid ""
+"GNOME Internet Radio Locator for GNOME 3 is a Free Software program that "
+"allows you to easily locate and listen to Free Internet Radio stations by "
+"broadcasters on the Internet with the help of a map."
+msgstr ""
+"Lokátor internetových rádií prostredia GNOME pre GNOME 3 je slobodný "
+"softvérový program, ktorý vám umožňuje jednoducho lokalizovať a počúvať "
+"stanice voľného internetového rádia od vysielateľov na internete pomocou "
+"mapy."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
+msgid ""
+"GNOME Internet Radio Locator for GNOME 3 is developed for the GNOME 3 "
+"desktop and requires gstreamer 1.0 to be installed for listening to Free "
+"Internet Radio stations."
+msgstr ""
+"Lokátor internetových rádií prostredia GNOME pre GNOME 3 je vyvíjaný pre "
+"pracovné prostredie GNOME 3 a vyžaduje inštaláciu nástroja gstreamer 1.0, "
+"aby ste mohli počúvať voľné stanice internetových rádií."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:5
+msgid ""
+"Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
+"Locator for GNOME 3."
+msgstr ""
+"Užite si počúvanie voľných staníc internetových rádií v aplikácii Lokátor "
+"internetových rádií prostredia GNOME pre GNOME 3."
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
+msgid "Internet Radio Locator"
+msgstr "Lokátor internetových rádií"
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:2
+msgid "Locate Internet Radio Stations"
+msgstr "Lokalizuje stanice internetových rádií"
+
+#. Extra keywords that can be used to search for gnome-internet-radio-locator in GNOME Shell and Unity
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
+msgid "Live;Radio;Program;Station;Locator;"
+msgstr "naživo;rádio;program;stanica;lokátor;"
+
+#: ../src/gnome-internet-radio-locator-gui.c:92
+#: ../src/gnome-internet-radio-locator-gui.c:104
+#: ../src/gnome-internet-radio-locator-gui.c:312
+#: ../src/gnome-internet-radio-locator.c:962
+#, c-format
+msgid "Failed to open %s\n"
+msgstr "Zlyhalo otvorenie súboru %s\n"
+
+#: ../src/gnome-internet-radio-locator-gui.c:219
+msgid "Added "
+msgstr "Pridaná "
+
+#: ../src/gnome-internet-radio-locator-gui.c:219
+msgid " in "
+msgstr " v lokalite "
+
+#. The Stations dialog
+#: ../src/gnome-internet-radio-locator-gui.c:256
+msgid "New Internet Radio Station"
+msgstr "Nová stanica internetového rádia"
+
+#: ../src/gnome-internet-radio-locator-gui.c:259
+msgid "_Save"
+msgstr "_Uložiť"
+
+#: ../src/gnome-internet-radio-locator-gui.c:281
+msgid "Station name"
+msgstr "Názov stanice"
+
+#: ../src/gnome-internet-radio-locator-gui.c:282
+msgid "Bandwidth"
+msgstr "Šírka pásma"
+
+#: ../src/gnome-internet-radio-locator-gui.c:284
+msgid "City name"
+msgstr "Názov mesta"
+
+#: ../src/gnome-internet-radio-locator-gui.c:288
+msgid "http://uri-to-stream/"
+msgstr "http://uri-prúdu/"
+
+#: ../src/gnome-internet-radio-locator-gui.c:289
+msgid "Description"
+msgstr "Popis"
+
+#: ../src/gnome-internet-radio-locator-gui.c:290
+msgid "http://uri-to-website/"
+msgstr "http://uri-webovej-stránky/"
+
+#: ../src/gnome-internet-radio-locator-gui.c:301
+#, c-format
+msgid "Failed to open %s.  Please install it.\n"
+msgstr "Zlyhalo otvorenie súboru %s. Prosím, nainštalujte ho.\n"
+
+#: ../src/gnome-internet-radio-locator-gui.c:434
+#: ../src/gnome-internet-radio-locator.c:456
+msgid "http://fm939.wnyc.org/wnycfm"
+msgstr "http://fm939.wnyc.org/wnycfm"
+
+#: ../src/gnome-internet-radio-locator-gui.c:437
+msgid "WNYC"
+msgstr "WNYC"
+
+#: ../src/gnome-internet-radio-locator-gui.c:440
+msgid "New York City, NY"
+msgstr "New York City, NY"
+
+#: ../src/gnome-internet-radio-locator-gui.c:443
+msgid "Online"
+msgstr "Pripojená"
+
+#: ../src/gnome-internet-radio-locator-gui.c:446
+msgid ""
+"WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, "
+"broadcasting the finest programs from NPR, American Public Media, Public "
+"Radio International and the BBC World Service, as well as a wide range of "
+"award-winning local programming."
+msgstr ""
+"WNYC 93,9 FM a AM 820 sú vlajkové lode verejných rádiových staníc mesta New "
+"York. Vysielajú najlepšie programy z NPR, American Public Media, Public "
+"Radio International a BBC World Service, tak ako aj široké spektrum "
+"oceňovaných miestnych programov."
+
+#. printf("Archiving program at %s\n", archive);
+#: ../src/gnome-internet-radio-locator-station.c:129
+#, c-format
+msgid "Recording from %s in %s to %s"
+msgstr "Nahráva sa zo stanice %s v lokalite %s do súboru %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:147
+#, c-format
+msgid ""
+"An error happened trying to play %s\n"
+"Either the file doesn't exist, or you don't have a player for it."
+msgstr ""
+"Vyskytla sa chyba pri pokuse o prehrávanie prúdu %s\n"
+"Buď súbor neexistuje, alebo nemáte preňho prehrávač."
+
+#: ../src/gnome-internet-radio-locator-station.c:153
+#, c-format
+msgid ""
+"An error happened trying to record %s\n"
+"Either the file doesn't exist, or you don't have a recorder for it."
+msgstr ""
+"Vyskytla sa chyba pri pokuse o nahrávanie prúdu %s\n"
+"Buď súbor neexistuje, alebo nemáte preňho nahrávač."
+
+#: ../src/gnome-internet-radio-locator-station.c:184
+#: ../src/gnome-internet-radio-locator-station.c:204
+#: ../src/gnome-internet-radio-locator-station.c:321
+#: ../src/gnome-internet-radio-locator-station.c:344
+#, c-format
+msgid "Failed to run %s (%i)\n"
+msgstr "Zlyhalo spustenie príkazu %s (%i)\n"
+
+#: ../src/gnome-internet-radio-locator-station.c:231
+#: ../src/gnome-internet-radio-locator-station.c:368
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Status code: %i\n"
+"Details: %s"
+msgstr ""
+"Zlyhalo otvorenie URL: „%s“\n"
+"Stavový kód: %i\n"
+"Podrobnosti: %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:249
+#: ../src/gnome-internet-radio-locator-station.c:263
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Details: %s"
+msgstr ""
+"Zlyhalo otvorenie URL: „%s“\n"
+"Podrobnosti: %s"
+
+#: ../src/gnome-internet-radio-locator.c:101
+msgid "Exit after T seconds. Default: 30"
+msgstr "Skončí po T sekundách. Predvolená hodnota: 30"
+
+#: ../src/gnome-internet-radio-locator.c:108
+msgid ""
+"Only report location update after T seconds. Default: 0 (report new location "
+"without any delay)"
+msgstr ""
+"Iba nahlási aktualizáciu lokality po T sekundách. Predvolená hodnota: 0 "
+"(nahlásenie novej lokality bez oneskorenia)"
+
+#: ../src/gnome-internet-radio-locator.c:116
+msgid ""
+"Request accuracy level A. Country = 1, City = 4, Neighborhood = 5, Street = "
+"6, Exact = 8."
+msgstr ""
+"Vyžiada úroveň presnosti A. Krajina = 1, Mesto = 4, Štvrť = 5, Ulica = 6, "
+"Presne = 8."
+
+#: ../src/gnome-internet-radio-locator.c:440
+#, c-format
+msgid "New Internet Radio Station\n"
+msgstr "Nová stanica internetového rádia\n"
+
+#: ../src/gnome-internet-radio-locator.c:446
+#, c-format
+msgid "Search Internet Radio Station\n"
+msgstr "Vyhľadanie stanice internetového rádia\n"
+
+#: ../src/gnome-internet-radio-locator.c:470
+#: ../src/gnome-internet-radio-locator.c:1083
+msgid ""
+"Search by city or drag/click on the zoomable map to listen to a radio "
+"broadcast"
+msgstr ""
+"Vyhľadajte podľa mesta alebo pretiahnite/kliknite na priblížiteľnú mapu pre "
+"počúvanie rádiového vysielania"
+
+#: ../src/gnome-internet-radio-locator.c:485
+#, c-format
+msgid "Previous Internet Radio Station\n"
+msgstr "Predchádzajúca stanica internetového rádia\n"
+
+#: ../src/gnome-internet-radio-locator.c:619
+msgid "Search"
+msgstr "Hľadať"
+
+#: ../src/gnome-internet-radio-locator.c:623
+msgid "Search Internet Radio Station"
+msgstr "Vyhľadá stanicu internetového rádia"
+
+#: ../src/gnome-internet-radio-locator.c:628
+msgid "Prev"
+msgstr "Predchádzajúce"
+
+#: ../src/gnome-internet-radio-locator.c:632
+msgid "Prev Internet Radio Station"
+msgstr "Predchádzajúca stanica internetového rádia"
+
+#: ../src/gnome-internet-radio-locator.c:635
+#: ../src/gnome-internet-radio-locator.c:639
+msgid "Stations"
+msgstr "Stanice"
+
+#: ../src/gnome-internet-radio-locator.c:642
+msgid "Next"
+msgstr "Nasledujúce"
+
+#: ../src/gnome-internet-radio-locator.c:646
+msgid "Next Internet Radio Station"
+msgstr "Nasledujúca stanica internetového rádia"
+
+#: ../src/gnome-internet-radio-locator.c:649
+#: ../src/gnome-internet-radio-locator.c:653
+msgid "About Station"
+msgstr "O stanici"
+
+#: ../src/gnome-internet-radio-locator.c:656
+#: ../src/gnome-internet-radio-locator.c:660
+msgid "About Program"
+msgstr "O programe"
+
+#. give it the title
+#: ../src/gnome-internet-radio-locator.c:672
+#: ../src/gnome-internet-radio-locator.c:862
+msgid "GNOME Internet Radio Locator"
+msgstr "Lokátor internetových rádií prostredia GNOME"
+
+#: ../src/gnome-internet-radio-locator.c:717
+#, c-format
+msgid ""
+"Nothing\n"
+"\n"
+msgstr ""
+"Nič\n"
+"\n"
+
+#: ../src/gnome-internet-radio-locator.c:928
+msgid "New"
+msgstr "Nová"
+
+#: ../src/gnome-internet-radio-locator.c:1021
+msgid "Stop"
+msgstr "Zastaviť"
+
+#: ../src/gnome-internet-radio-locator.c:1027
+msgid "Zoom In"
+msgstr "Priblížiť"
+
+#: ../src/gnome-internet-radio-locator.c:1041
+msgid "Zoom Out"
+msgstr "Oddialiť"
+
+#: ../src/gnome-internet-radio-locator.c:1046
+msgid "Markers"
+msgstr "Značky"
+
+#: ../src/gnome-internet-radio-locator.c:1068
+msgid "Exit"
+msgstr "Skončiť"
