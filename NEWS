@@ -1,4 +1,33 @@
 =============
+Version 3.4.0
+=============
+
+Build
+
+	* configure.ac: Update to version 3.4.0
+	* meson.build: Update to version 3.4.0
+
+Documentation
+
+	* AUTHORS: Add Dušan Kazik (Slovak translation)
+	* THANKS: Add Dušan Kazik (Slovak translation)
+
+=============
+Version 3.3.0
+=============
+
+Build
+
+	* meson.build: Update to version 3.3.0
+
+Translations
+
+	* Dušan Kazik (Add Slovak translation)
+	* Emin Tufan Çetin (Update Turkish translation)
+	* Goran Vidović (Update Croatian translation)
+	* Kukuh Syafaat (Update Indonesian translation)
+
+=============
 Version 3.2.0
 =============
 
