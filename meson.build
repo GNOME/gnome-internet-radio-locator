@@ -1,5 +1,5 @@
 project('gnome-internet-radio-locator', 'c',
-  version : '3.4.0',
+  version : '3.5.0',
   meson_version: '>= 0.49.2',
   license : 'GPL')
 prefix = get_option('prefix')
@@ -26,7 +26,7 @@ inc = include_directories('src')
 subdir('src')
 pkg_mod = import('pkgconfig')
 pkg_mod.generate(libraries : gnomeinternetradiolibrary,
-                 version : '3.4.0',
+                 version : '3.5.0',
                  name : 'libgnomeinternetradiolibrary',
                  filebase : 'gnomeinternetradiolibrary',
                  description : 'GNOME Internet Radio Library')
