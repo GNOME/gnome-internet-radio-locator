@@ -2,9 +2,13 @@
 Version 3.6.0
 =============
 
+Build
+	* meson.build: Add "subdir('po')" Meson directive (Close: Issue #24)
+
 Stations
 
-	* src/gnome-internet-radio-locator.xml: Add KUOW (Seattle, Washington)
+	* src/gnome-internet-radio-locator-markers.c: University of Washington
+	* src/gnome-internet-radio-locator.xml: Add KUOW (Univ. of Washington)
 
 =============
 Version 3.5.0

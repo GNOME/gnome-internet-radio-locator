@@ -2,7 +2,7 @@
  *
  * GNOME Internet Radio Locator
  *
- * Copyright (C) 2019  Aamot Software
+ * Copyright (C) 2019, 2020  Aamot Software
  *
  * Author: Ole Aamot <ole@gnome.org>
  *
@@ -732,6 +732,17 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_f_color);
 	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
 	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 47.6038321, -122.3300624);
+	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+	station = g_strdup("University of Washington\n<span size=\"small\">KUOW</span>");
+	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_f_color);
+	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 47.6543238,-122.30800894320257);
 	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
 	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
