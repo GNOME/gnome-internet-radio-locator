@@ -2,6 +2,12 @@
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
 <gnome_internet_radio_locator version="3.5.0">
+  <station band="94.9FM" id="kuow" lang="en" name="KUOW" rank="1.0" type="org">
+    <location>Seattle, Washington</location>
+    <description lang="en">KUOW is the Puget Sound region's #1 radio station for news.  Our independent, nonprofit newsroom produces award-winning stories, podcasts and events.</description>
+    <stream mime="audio/aac" uri="https://playerservices.streamtheworld.com/api/livestream-redirect/KUOWFM_AAC.aac" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="64 kbps" />
+    <uri>https://www.kuow.org/</uri>
+  </station>
   <station band="Online" id="radionorwegian" lang="no" name="Radio Norwegian" rank="1.0" type="com">
     <location>Norway</location>
     <description lang="no">Radio Norwegian is a free radio station broadcasting from Norway</description>
