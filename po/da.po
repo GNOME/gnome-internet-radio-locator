@@ -1,16 +1,16 @@
 # Danish translation for gnome-internet-radio-locator.
 # Copyright (C) 2019 gnome-internet-radio-locator's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
-# scootergrisen, 2019.
+# scootergrisen, 2019-2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2019-02-09 18:19+0000\n"
-"PO-Revision-Date: 2019-02-19 00:00+0200\n"
+"POT-Creation-Date: 2020-08-29 13:10+0000\n"
+"PO-Revision-Date: 2020-10-10 00:00+0200\n"
 "Last-Translator: scootergrisen\n"
-"Language-Team: Danish\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,9 +31,9 @@ msgid ""
 "allows you to easily locate and listen to Free Internet Radio stations by "
 "broadcasters on the Internet with the help of a map."
 msgstr ""
-"GNOME Internetradio til GNOME 3 er et frit softwareprogram "
-"der ved hjælp af et kort giver dig mulighed for let at finde og lytte til "
-"frie radiostationer der sender på internettet."
+"GNOME Internetradio til GNOME 3 er et frit softwareprogram der ved hjælp af "
+"et kort giver dig mulighed for let at finde og lytte til frie radiostationer "
+"der sender på internettet."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
 msgid ""
@@ -50,8 +50,7 @@ msgid ""
 "Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
 "Locator for GNOME 3."
 msgstr ""
-"Lyt til frie radiostationer på internettet i GNOME Internetradio til GNOME "
-"3."
+"Lyt til frie radiostationer på internettet i GNOME Internetradio til GNOME 3."
 
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
 msgid "Internet Radio Locator"
@@ -69,10 +68,18 @@ msgstr "Live;Radio;Program;Station;Søger;"
 #: ../src/gnome-internet-radio-locator-gui.c:92
 #: ../src/gnome-internet-radio-locator-gui.c:104
 #: ../src/gnome-internet-radio-locator-gui.c:312
-#: ../src/gnome-internet-radio-locator.c:896
+#: ../src/gnome-internet-radio-locator.c:961
 #, c-format
 msgid "Failed to open %s\n"
 msgstr "Kunne ikke åbne %s\n"
+
+#: ../src/gnome-internet-radio-locator-gui.c:219
+msgid "Added "
+msgstr "Tilføjede "
+
+#: ../src/gnome-internet-radio-locator-gui.c:219
+msgid " in "
+msgstr " i "
 
 #. The Stations dialog
 #: ../src/gnome-internet-radio-locator-gui.c:256
@@ -113,7 +120,7 @@ msgid "Failed to open %s.  Please install it.\n"
 msgstr "Kunne ikke åbne %s. Installer den venligst.\n"
 
 #: ../src/gnome-internet-radio-locator-gui.c:434
-#: ../src/gnome-internet-radio-locator.c:403
+#: ../src/gnome-internet-radio-locator.c:455
 msgid "http://fm939.wnyc.org/wnycfm"
 msgstr "http://fm939.wnyc.org/wnycfm"
 
@@ -137,9 +144,9 @@ msgid ""
 "award-winning local programming."
 msgstr ""
 "WNYC 93.9 FM og AM 820 er New Yorks flagskibe når det kommer til offentlige "
-"radiostationer. De sender de bedste programmer fra NPR, American "
-"Public Media, Public Radio International og BBC World-tjenesten, såvel som "
-"en bred vifte af prisbelønnede lokale radioprogrammer."
+"radiostationer. De sender de bedste programmer fra NPR, American Public "
+"Media, Public Radio International og BBC World-tjenesten, såvel som en bred "
+"vifte af prisbelønnede lokale radioprogrammer."
 
 #. printf("Archiving program at %s\n", archive);
 #: ../src/gnome-internet-radio-locator-station.c:129
@@ -195,67 +202,96 @@ msgstr ""
 "Kunne ikke åbne URL'en: “%s”\n"
 "Detaljer: %s"
 
-#: ../src/gnome-internet-radio-locator.c:387
+#: ../src/gnome-internet-radio-locator.c:100
+msgid "Exit after T seconds. Default: 30"
+msgstr "Afslut efter T sekunder. Standard: 30"
+
+#: ../src/gnome-internet-radio-locator.c:107
+msgid ""
+"Only report location update after T seconds. Default: 0 (report new location "
+"without any delay)"
+msgstr ""
+"Rapportér kun opdatering af placering efter T sekunder. Standard: 0 (rapportér "
+"ny placering uden forsinkelse)"
+
+#: ../src/gnome-internet-radio-locator.c:115
+msgid ""
+"Request accuracy level A. Country = 1, City = 4, Neighborhood = 5, Street = "
+"6, Exact = 8."
+msgstr ""
+"Præcisionsniveau for anmodning A. Land = 1, by = 4, område = 5, gade = 6, præcist "
+"= 8."
+
+#: ../src/gnome-internet-radio-locator.c:439
 #, c-format
 msgid "New Internet Radio Station\n"
 msgstr "Ny radiostation på internettet\n"
 
-#: ../src/gnome-internet-radio-locator.c:393
+#: ../src/gnome-internet-radio-locator.c:445
 #, c-format
 msgid "Search Internet Radio Station\n"
 msgstr "Søg efter radiostation på internettet\n"
 
-#: ../src/gnome-internet-radio-locator.c:432
+#: ../src/gnome-internet-radio-locator.c:469
+#: ../src/gnome-internet-radio-locator.c:1082
+msgid ""
+"Search by city or drag/click on the zoomable map to listen to a radio "
+"broadcast"
+msgstr ""
+"Søg efter by eller træk/klik på kortet, som der kan zoomes på, for at lytte "
+"til en radioudsendelse"
+
+#: ../src/gnome-internet-radio-locator.c:484
 #, c-format
 msgid "Previous Internet Radio Station\n"
 msgstr "Forrige radiostation på internettet\n"
 
-#: ../src/gnome-internet-radio-locator.c:566
+#: ../src/gnome-internet-radio-locator.c:618
 msgid "Search"
 msgstr "Søg"
 
-#: ../src/gnome-internet-radio-locator.c:570
+#: ../src/gnome-internet-radio-locator.c:622
 msgid "Search Internet Radio Station"
 msgstr "Søg efter radiostation på internettet"
 
-#: ../src/gnome-internet-radio-locator.c:575
+#: ../src/gnome-internet-radio-locator.c:627
 msgid "Prev"
 msgstr "Forrige"
 
-#: ../src/gnome-internet-radio-locator.c:579
+#: ../src/gnome-internet-radio-locator.c:631
 msgid "Prev Internet Radio Station"
 msgstr "Forrige radiostation på internettet"
 
-#: ../src/gnome-internet-radio-locator.c:582
-#: ../src/gnome-internet-radio-locator.c:586
+#: ../src/gnome-internet-radio-locator.c:634
+#: ../src/gnome-internet-radio-locator.c:638
 msgid "Stations"
 msgstr "Stationer"
 
-#: ../src/gnome-internet-radio-locator.c:589
+#: ../src/gnome-internet-radio-locator.c:641
 msgid "Next"
 msgstr "Næste"
 
-#: ../src/gnome-internet-radio-locator.c:593
+#: ../src/gnome-internet-radio-locator.c:645
 msgid "Next Internet Radio Station"
 msgstr "Næste radiostation på internettet"
 
-#: ../src/gnome-internet-radio-locator.c:596
-#: ../src/gnome-internet-radio-locator.c:600
+#: ../src/gnome-internet-radio-locator.c:648
+#: ../src/gnome-internet-radio-locator.c:652
 msgid "About Station"
 msgstr "Om station"
 
-#: ../src/gnome-internet-radio-locator.c:603
-#: ../src/gnome-internet-radio-locator.c:607
+#: ../src/gnome-internet-radio-locator.c:655
+#: ../src/gnome-internet-radio-locator.c:659
 msgid "About Program"
 msgstr "Om program"
 
 #. give it the title
-#: ../src/gnome-internet-radio-locator.c:619
-#: ../src/gnome-internet-radio-locator.c:801
+#: ../src/gnome-internet-radio-locator.c:671
+#: ../src/gnome-internet-radio-locator.c:861
 msgid "GNOME Internet Radio Locator"
 msgstr "GNOME Internetradio"
 
-#: ../src/gnome-internet-radio-locator.c:664
+#: ../src/gnome-internet-radio-locator.c:716
 #, c-format
 msgid ""
 "Nothing\n"
@@ -264,22 +300,26 @@ msgstr ""
 "Intet\n"
 "\n"
 
-#: ../src/gnome-internet-radio-locator.c:955
+#: ../src/gnome-internet-radio-locator.c:927
+msgid "New"
+msgstr "Ny"
+
+#: ../src/gnome-internet-radio-locator.c:1020
 msgid "Stop"
 msgstr "Stop"
 
-#: ../src/gnome-internet-radio-locator.c:961
+#: ../src/gnome-internet-radio-locator.c:1026
 msgid "Zoom In"
 msgstr "Zoom ind"
 
-#: ../src/gnome-internet-radio-locator.c:975
+#: ../src/gnome-internet-radio-locator.c:1040
 msgid "Zoom Out"
 msgstr "Zoom ud"
 
-#: ../src/gnome-internet-radio-locator.c:980
+#: ../src/gnome-internet-radio-locator.c:1045
 msgid "Markers"
 msgstr "Markører"
 
-#: ../src/gnome-internet-radio-locator.c:1002
+#: ../src/gnome-internet-radio-locator.c:1067
 msgid "Exit"
 msgstr "Afslut"
