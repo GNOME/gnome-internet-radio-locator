@@ -1,16 +1,17 @@
 # Indonesian translation for gnome-internet-radio-locator.
 # Copyright (C) 2017 gnome-internet-radio-locator's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017-2020.
+# Andika Triwidada <andika@gmail.com>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2020-08-29 13:10+0000\n"
-"PO-Revision-Date: 2020-09-12 19:15+0700\n"
-"Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
+"POT-Creation-Date: 2020-10-31 16:08+0000\n"
+"PO-Revision-Date: 2020-11-02 08:48+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -69,76 +70,74 @@ msgstr "Langsung;Radio;Program;Stasiun;Locator;"
 
 #: ../src/gnome-internet-radio-locator-gui.c:92
 #: ../src/gnome-internet-radio-locator-gui.c:104
-#: ../src/gnome-internet-radio-locator-gui.c:312
-#: ../src/gnome-internet-radio-locator.c:961
+#: ../src/gnome-internet-radio-locator-gui.c:314
+#: ../src/gnome-internet-radio-locator.c:962
 #, c-format
 msgid "Failed to open %s\n"
 msgstr "Gagal membuka %s\n"
 
-#: ../src/gnome-internet-radio-locator-gui.c:219
-msgid "Added "
-msgstr "Ditambahkan "
-
-#: ../src/gnome-internet-radio-locator-gui.c:219
-msgid " in "
-msgstr " di "
+#. Translators: first %s is station name and second %s is station location
+#: ../src/gnome-internet-radio-locator-gui.c:220
+#, c-format
+msgid "Added %s in %s"
+msgstr "Ditambahkan %s dalam %s"
 
 #. The Stations dialog
-#: ../src/gnome-internet-radio-locator-gui.c:256
+#: ../src/gnome-internet-radio-locator-gui.c:258
 msgid "New Internet Radio Station"
 msgstr "Stasiun Radio Internet Baru"
 
-#: ../src/gnome-internet-radio-locator-gui.c:259
+#: ../src/gnome-internet-radio-locator-gui.c:261
 msgid "_Save"
 msgstr "_Simpan"
 
-#: ../src/gnome-internet-radio-locator-gui.c:281
+#: ../src/gnome-internet-radio-locator-gui.c:283
 msgid "Station name"
 msgstr "Nama stasiun"
 
-#: ../src/gnome-internet-radio-locator-gui.c:282
+#: ../src/gnome-internet-radio-locator-gui.c:284
 msgid "Bandwidth"
 msgstr "Lebar Pita"
 
-#: ../src/gnome-internet-radio-locator-gui.c:284
+#: ../src/gnome-internet-radio-locator-gui.c:286
 msgid "City name"
 msgstr "Nama kota"
 
-#: ../src/gnome-internet-radio-locator-gui.c:288
+#: ../src/gnome-internet-radio-locator-gui.c:290
 msgid "http://uri-to-stream/"
 msgstr "http://uri-untuk-stream/"
 
-#: ../src/gnome-internet-radio-locator-gui.c:289
+#: ../src/gnome-internet-radio-locator-gui.c:291
 msgid "Description"
 msgstr "Deskripsi"
 
-#: ../src/gnome-internet-radio-locator-gui.c:290
+#: ../src/gnome-internet-radio-locator-gui.c:292
 msgid "http://uri-to-website/"
 msgstr "http://uri-ke-situsweb/"
 
-#: ../src/gnome-internet-radio-locator-gui.c:301
+#: ../src/gnome-internet-radio-locator-gui.c:303
 #, c-format
 msgid "Failed to open %s.  Please install it.\n"
 msgstr "Gagal membuka %s. Silakan pasang.\n"
 
-#: ../src/gnome-internet-radio-locator-gui.c:434
-#: ../src/gnome-internet-radio-locator.c:455
+#: ../src/gnome-internet-radio-locator-gui.c:436
+#: ../src/gnome-internet-radio-locator.c:456
 msgid "http://fm939.wnyc.org/wnycfm"
 msgstr "http://fm939.wnyc.org/wnycfm"
 
-#: ../src/gnome-internet-radio-locator-gui.c:437
+#: ../src/gnome-internet-radio-locator-gui.c:439
 msgid "WNYC"
 msgstr "WNYC"
 
-#: ../src/gnome-internet-radio-locator-gui.c:440
+#: ../src/gnome-internet-radio-locator-gui.c:442
 msgid "New York City, NY"
 msgstr "Kota New York, NY"
 
-#: ../src/gnome-internet-radio-locator-gui.c:443
+#: ../src/gnome-internet-radio-locator-gui.c:445
 msgid "Online"
 msgstr "Daring"
 
-#: ../src/gnome-internet-radio-locator-gui.c:446
+#: ../src/gnome-internet-radio-locator-gui.c:448
 msgid ""
 "WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, "
 "broadcasting the finest programs from NPR, American Public Media, Public "
@@ -204,11 +203,11 @@ msgstr ""
 "Gagal membuka URL: '%s'\n"
 "Rincian: %s"
 
-#: ../src/gnome-internet-radio-locator.c:100
+#: ../src/gnome-internet-radio-locator.c:101
 msgid "Exit after T seconds. Default: 30"
 msgstr "Keluar setelah T detik. Bawaan: 30"
 
-#: ../src/gnome-internet-radio-locator.c:107
+#: ../src/gnome-internet-radio-locator.c:108
 msgid ""
 "Only report location update after T seconds. Default: 0 (report new location "
 "without any delay)"
@@ -216,7 +215,7 @@ msgstr ""
 "Hanya laporkan pembaruan lokasi setelah T detik. Bawaan: 0 (laporkan lokasi "
 "baru tanpa penundaan)"
 
-#: ../src/gnome-internet-radio-locator.c:115
+#: ../src/gnome-internet-radio-locator.c:116
 msgid ""
 "Request accuracy level A. Country = 1, City = 4, Neighborhood = 5, Street = "
 "6, Exact = 8."
@@ -224,18 +223,18 @@ msgstr ""
 "Meminta tingkat akurasi A. Negara = 1, Kota = 4, Lingkungan = 5, Jalan = 6, "
 "Tepat = 8."
 
-#: ../src/gnome-internet-radio-locator.c:439
+#: ../src/gnome-internet-radio-locator.c:440
 #, c-format
 msgid "New Internet Radio Station\n"
 msgstr "Stasiun Radio Internet Baru\n"
 
-#: ../src/gnome-internet-radio-locator.c:445
+#: ../src/gnome-internet-radio-locator.c:446
 #, c-format
 msgid "Search Internet Radio Station\n"
 msgstr "Cari Stasiun Radio Internet\n"
 
-#: ../src/gnome-internet-radio-locator.c:469
-#: ../src/gnome-internet-radio-locator.c:1082
+#: ../src/gnome-internet-radio-locator.c:470
+#: ../src/gnome-internet-radio-locator.c:1083
 msgid ""
 "Search by city or drag/click on the zoomable map to listen to a radio "
 "broadcast"
@@ -243,57 +242,57 @@ msgstr ""
 "Cari berdasarkan kota atau seret/klik pada peta yang dapat diperbesar untuk "
 "mendengarkan siaran radio"
 
-#: ../src/gnome-internet-radio-locator.c:484
+#: ../src/gnome-internet-radio-locator.c:485
 #, c-format
 msgid "Previous Internet Radio Station\n"
 msgstr "Stasiun Radio Internet Sebelumnya\n"
 
-#: ../src/gnome-internet-radio-locator.c:618
+#: ../src/gnome-internet-radio-locator.c:619
 msgid "Search"
 msgstr "Cari"
 
-#: ../src/gnome-internet-radio-locator.c:622
+#: ../src/gnome-internet-radio-locator.c:623
 msgid "Search Internet Radio Station"
 msgstr "Cari Stasiun Radio Internet"
 
-#: ../src/gnome-internet-radio-locator.c:627
+#: ../src/gnome-internet-radio-locator.c:628
 msgid "Prev"
 msgstr "Sebelumnya"
 
-#: ../src/gnome-internet-radio-locator.c:631
+#: ../src/gnome-internet-radio-locator.c:632
 msgid "Prev Internet Radio Station"
 msgstr "Stasiun Radio Internet Sebelumnya"
 
-#: ../src/gnome-internet-radio-locator.c:634
-#: ../src/gnome-internet-radio-locator.c:638
+#: ../src/gnome-internet-radio-locator.c:635
+#: ../src/gnome-internet-radio-locator.c:639
 msgid "Stations"
 msgstr "Stasiun"
 
-#: ../src/gnome-internet-radio-locator.c:641
+#: ../src/gnome-internet-radio-locator.c:642
 msgid "Next"
 msgstr "Selanjutnya"
 
-#: ../src/gnome-internet-radio-locator.c:645
+#: ../src/gnome-internet-radio-locator.c:646
 msgid "Next Internet Radio Station"
 msgstr "Stasiun Radio Internet Selanjutnya"
 
-#: ../src/gnome-internet-radio-locator.c:648
-#: ../src/gnome-internet-radio-locator.c:652
+#: ../src/gnome-internet-radio-locator.c:649
+#: ../src/gnome-internet-radio-locator.c:653
 msgid "About Station"
 msgstr "Tentang Stasiun"
 
-#: ../src/gnome-internet-radio-locator.c:655
-#: ../src/gnome-internet-radio-locator.c:659
+#: ../src/gnome-internet-radio-locator.c:656
+#: ../src/gnome-internet-radio-locator.c:660
 msgid "About Program"
 msgstr "Tentang Program"
 
 #. give it the title
-#: ../src/gnome-internet-radio-locator.c:671
-#: ../src/gnome-internet-radio-locator.c:861
+#: ../src/gnome-internet-radio-locator.c:672
+#: ../src/gnome-internet-radio-locator.c:862
 msgid "GNOME Internet Radio Locator"
 msgstr "GNOME Internet Radio Locator"
 
-#: ../src/gnome-internet-radio-locator.c:716
+#: ../src/gnome-internet-radio-locator.c:717
 #, c-format
 msgid ""
 "Nothing\n"
@@ -302,38 +301,26 @@ msgstr ""
 "Nihil\n"
 "\n"
 
-#: ../src/gnome-internet-radio-locator.c:927
+#: ../src/gnome-internet-radio-locator.c:928
 msgid "New"
 msgstr "Baru"
 
-#: ../src/gnome-internet-radio-locator.c:1020
+#: ../src/gnome-internet-radio-locator.c:1021
 msgid "Stop"
 msgstr "Berhenti"
 
-#: ../src/gnome-internet-radio-locator.c:1026
+#: ../src/gnome-internet-radio-locator.c:1027
 msgid "Zoom In"
 msgstr "Perbesar"
 
-#: ../src/gnome-internet-radio-locator.c:1040
+#: ../src/gnome-internet-radio-locator.c:1041
 msgid "Zoom Out"
 msgstr "Perkecil"
 
-#: ../src/gnome-internet-radio-locator.c:1045
+#: ../src/gnome-internet-radio-locator.c:1046
 msgid "Markers"
 msgstr "Penanda"
 
-#: ../src/gnome-internet-radio-locator.c:1067
+#: ../src/gnome-internet-radio-locator.c:1068
 msgid "Exit"
 msgstr "Keluar"
-
-#~ msgid "Default station"
-#~ msgstr "Stasiun bawaan"
-
-#~ msgid "Default Internet Radio station."
-#~ msgstr "Stasiun Radio Internet bawaan"
-
-#~ msgid "ONLINE"
-#~ msgstr "DARING"
-
-#~ msgid "Listen to and record from Internet radio"
-#~ msgstr "Dengar dan rekam dari radio internet"
