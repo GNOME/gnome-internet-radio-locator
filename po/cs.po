@@ -147,7 +147,7 @@ msgstr "Masaryk University’s student radio."
 #: ../src/gnome-internet-radio-locator-station.c:129
 #, c-format
 msgid "Recording from %s in %s to %s"
-msgstr "Zaznamenává se z stanice %s v místě %s do %s"
+msgstr "Zaznamenává se z stanice %s z města %s do %s"
 
 #: ../src/gnome-internet-radio-locator-station.c:147
 #, c-format
