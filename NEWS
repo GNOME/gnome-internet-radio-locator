@@ -1,4 +1,23 @@
 =============
+Version 3.7.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Use GNOME 3.36 palette
+
+Translations
+
+	* Enrico Nicoletto (pt_BR)
+	* Stephan Woidowski (de)
+	* Marek Černocký (cs)
+	* Luna Jernberg (sv)
+	* Andika Triwidada (id)
+	* Ask Hjorth Larsen (da)
+	* Piotr Drąg (pl)
+	* Yuri Chornoivan (uk)
+
+=============
 Version 3.6.0
 =============
 

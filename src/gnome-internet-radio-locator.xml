@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="3.6.0">
+<gnome_internet_radio_locator version="3.7.0">
   <station band="94.9FM" id="kuow" lang="en" name="KUOW" rank="1.0" type="org">
     <location>University of Washington</location>
     <description lang="en">KUOW is the Puget Sound region's #1 radio station for news.  Our independent, nonprofit newsroom produces award-winning stories, podcasts and events.</description>
