@@ -1,5 +1,5 @@
 project('gnome-internet-radio-locator', 'c',
-  version : '3.7.0',
+  version : '3.8.0',
   meson_version: '>= 0.49.2',
   license : 'GPL')
 prefix = get_option('prefix')

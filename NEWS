@@ -1,4 +1,17 @@
 =============
+Version 3.8.0
+=============
+
+Stations
+
+	* src/gnome-internet-radio-locator-markers.c: Bygderadio Vest (Volda)
+	* src/gnome-internet-radio-locator.xml: Add Bygderadio Vest (Volda)
+
+Translations
+
+	* Isak Östlund (sv)
+
+=============
 Version 3.7.0
 =============
 
