@@ -27,9 +27,9 @@ from gnome-terminal.
 You can download pre-compiled binaries for Debian GNU/Linux i386,
 Fedora Core x86_64 and Ubuntu Linux amd64 from the web site at
 
-   https://www.gnome.org/~ole/debian/
-   https://www.gnome.org/~ole/fedora/
-   https://www.gnome.org/~ole/ubuntu/
+   https://people.gnome.org/~ole/debian/
+   https://people.gnome.org/~ole/fedora/
+   https://people.gnome.org/~ole/ubuntu/
 
 You can download latest source release from the official GNOME site:
 

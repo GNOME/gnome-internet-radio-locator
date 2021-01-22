@@ -3,7 +3,7 @@ Version:        @VERSION@
 Release:        1%{?dist}
 Summary:        GNOME Internet Radio Locator
 License:        GPLv3+
-URL:            https://www.gnome.org/~ole/%{name}
+URL:            https://people.gnome.org/~ole/%{name}
 Source:         %{url}/%{name}-%{version}.tar.xz
 
 BuildRequires:  gcc

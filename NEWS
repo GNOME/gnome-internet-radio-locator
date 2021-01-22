@@ -1,4 +1,21 @@
 =============
+Version 3.9.0
+=============
+
+Documentation
+
+	* DEBIAN: Add i386 package url
+	* FEDORA: Add x86_64 package url
+	* UBUNTU: Add amd64 package url
+
+Translations
+
+	* Fabio Tomat (fur)
+	* Balázs Úr (hu)
+	* Florentina Mușat (ro)
+	* Мирослав Николић (sr)
+
+=============
 Version 3.8.0
 =============
 
