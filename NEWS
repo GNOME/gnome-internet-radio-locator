@@ -1,4 +1,28 @@
 =============
+Version 3.9.1
+=============
+
+Stations
+
+	* src/gnome-internet-radio-locator.c: Shift center (Brooklyn, New York)
+	* src/gnome-internet-radio-locator-markers.c: Radio Adelaide (Adelaide, Australia)
+	* src/gnome-internet-radio-locator-markers.c: 95bFM (Auckland, New Zealand)
+	* src/gnome-internet-radio-locator-markers.c: KVRX (Austin, Texas)
+	* src/gnome-internet-radio-locator-markers.c: Radio R (Brno, Czech Republic)
+	* src/gnome-internet-radio-locator-markers.c: WFUV (Bronx, New York)
+	* src/gnome-internet-radio-locator-markers.c: Radio Free Brooklyn (Brooklyn, New York)
+	* src/gnome-internet-radio-locator-markers.c: EPER (Budapest, Hungary)
+	* src/gnome-internet-radio-locator-markers.c: BlurFM (Buenos Aires, Argentina)
+	* src/gnome-internet-radio-locator.xml: Update 2NURFM (Newcastle, Australia)
+	* src/gnome-internet-radio-locator.xml: Update BlurFM (Buenos Aires, Argentina)
+	* src/gnome-internet-radio-locator.xml: Update EPER (Budapest, Hungary)
+	* src/gnome-internet-radio-locator.xml: Update Radio Adelaide (Adelaide, Australia)
+
+Translations
+
+	* Jordi Mas (ca)
+
+=============
 Version 3.9.0
 =============
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-0.1.dtd">
-<gnome_internet_radio_locator version="3.9.0">
+<gnome_internet_radio_locator version="3.9.1">
   <station band="105.5FM" id="bygderadiovest" lang="en" name="Bygderadio Vest" rank="1.0" type="org">
     <location>Volda, Norway</location>
     <description lang="no">Volda og Ørsta Bygderadio AS starta sendingar i februar 1989.  I starten dekte radioen berre bygdene Volda og Ørsta.  I 2000 vart radioen slått saman med Radio Vest AS i Herøy.   Namnet vart då endra til Bygderadio Vest AS.  Alt arbeidet ved radioen vert gjort på dugnad.   Bygderadio Vest AS dekkjer no 7 kommuner; Volda, Ørsta, Hareid, Herøy, Ulstein, Sande og Vannylven.  Det bur omlag 46.700 menneske i desse kommunane.    Frå 2008 har Bygderadio Vest AS konsesjon som almennradio med konsesjon for å sende 240 minutt lokalprodusert stoff i tidsrommet 06-18. Konsesjonen gjeld fram til 31.12.2026.</description>
@@ -331,6 +331,7 @@
     <stream mime="audio/mpeg" uri="http://khpr-ice.streamguys1.com:80/khpr2" codec="MPEG-1 Layer 3 (MP3)" samplerate="24000 Hz" channels="Mono" bitrate="24 kbps" />
     <uri>http://www.hawaiipublicradio.org/</uri>
   </station>
+  <!-- Appears to be down as of 2021/02/15
   <station band="Online" id="burstradio" lang="en" name="Burst Radio" rank="1.0" type="edu">
     <frequency uri="http://www.burstradio.org.uk/"></frequency>
     <location>Bristol, United Kingdom</location>
@@ -342,6 +343,7 @@
     <stream mime="audio/mpeg" uri="http://s.burstradio.org.uk:8000/;" codec="MPEG ADTS, layer III, v1" samplerate="44100 Hz" channels="JntStereo" bitrate="128 kbps" />
     <uri>http://www.burstradio.org.uk/</uri>
   </station>
+  -->
   <station band="90.7FM" id="wfuv" lang="en" name="WFUV" rank="1.0" type="edu">
     <frequency uri="http://www.wfuv.org/">Bronx, New York</frequency>
     <location>Bronx, New York</location>
@@ -372,6 +374,7 @@
     <stream mime="audio/aac" uri="http://rfcmedia2.streamguys1.com/thirdrock.aac" codec="MPEG-4 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="96 kbps" />
     <uri>https://www.nasa.gov/feature/third-rock-radio</uri>
   </station>
+  <!-- Appears to be down as of 2021/02/15
   <station band="89.9FM" id="ktsw" lang="en" name="KTSW" rank="1.0" type="edu">
     <frequency uri="http://ktsw.txstate.edu/">89.9FM in Austin, Texas</frequency>
     <location>San Marcos, Texas</location>
@@ -388,6 +391,7 @@
     <stream mime="audio/mpeg" uri="http://ktswlive.txstate.edu:8002/listen" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="95 kbps" />
     <uri>http://ktsw.txstate.edu/</uri>
   </station>
+  -->
   <station band="91.3FM" id="kced" lang="en" name="KCED - Centralia College's Radio" rank="1.0" type="edu">
     <frequency uri="http://www.centralia.edu/kced/">91.3FM in Centralia, District of Columbia</frequency>
     <location>Centralia, District of Columbia</location>
@@ -482,9 +486,7 @@ In fact we even split our adverts, and many of our local news and travel bulleti
     <description>
       Blur FM is an online radio station that works without advertising and with the sole purpose of promoting the artists that are broadcasted.  Music files are downloaded legally-free, or under consent of the artists, from online sources, which aim to promote independent/emerging artists.
     </description>
-    <stream mime="audio/mpeg" uri="http://64.34.175.149:8000/blurfm01" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <stream mime="audio/mpeg" uri="http://198.199.70.248:8000/blurfm02" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="64 kbps" />
-    <stream mime="audio/aacp" uri="http://91.109.241.253:8170" codec="MPEG-2 AAC (AAC+)" samplerate="44100 Hz" channels="Stereo" bitrate="32 kbps" />
+    <stream mime="audio/mpeg" uri="https://live.radiovague.com:8443/blurfm01" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://www.blurfm.com/</uri>
   </station>
   <station band="105.3FM" id="urgentfm" lang="be" name="Urgent.fm" rank="1.0" type="edu">
@@ -977,9 +979,9 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <frequency uri="http://eper.elte.hu/"></frequency>
     <location>Budapest, Hungary</location>
     <description lang="en">EPER is a non-profit small power community station in downtown Budapest. We broadcast from the buildings of the Eötvös Loránd University. Our staff is students and teachers of the University or of other institutions of higher education.</description>
-    <stream mime="audio/mpeg" uri="http://radio.elte.hu:8000/live24" codec="MPEG-2 AAC" samplerate="32000 Hz" channels="Stereo" bitrate="24 kbps" />
-    <stream mime="audio/mpeg" uri="http://radio.elte.hu:8000/eper2" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Mono" bitrate="64 kbps" />
-    <stream mime="audio/mpeg" uri="http://radio.elte.hu:8000/eper24" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="22050 Hz" channels="Mono" bitrate="24 kbps" />
+    <stream mime="audio/mpeg" uri="http://radio.elte.hu:8000/eper97" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44000 Hz" channels="Mono" bitrate="63 kbps" />
+    <stream mime="audio/mpeg" uri="http://radio.elte.hu:8000/eper2" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44000 Hz" channels="Mono" bitrate="63 kbps" />
+    <stream mime="audio/mpeg" uri="http://radio.elte.hu:8000/eper" codec="MPEG-2 AAC" samplerate="44000 Hz" channels="Mono" bitrate="63 kbps" />
     <uri>http://eper.elte.hu/</uri>
   </station>
   <station band="Online" id="fusefm" lang="en" name="Fuse FM" rank="1.0" type="edu">
@@ -1058,16 +1060,15 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <frequency uri="http://www.newcastle.edu.au/community-and-alumni/arts-and-culture/2nurfm">103.7 FM in Newcastle, Australia</frequency>
     <location>Newcastle, Australia</location>
     <description lang="en">Newcastle's leading 'easy listening' radio station.</description>
-    <stream mime="audio/aacp" uri="http://broadcaster1.newcastle.edu.au:8000/2NURFM-aacPlus" codec="MPEG-2 AAC (AAC+)" samplerate="44100 Hz" channels="Stereo" bitrate="29 kbps" />
-    <uri>http://www.newcastle.edu.au/community-and-alumni/arts-and-culture/2nurfm</uri>
+    <stream mime="audio/aacp" uri="https://broadcaster1.newcastle.edu.au:8443/aacplus2" codec="MPEG-2 AAC (AAC+)" samplerate="44100 Hz" channels="Stereo" bitrate="62 kbps" />
+    <uri>https://www.2nurfm.com.au/</uri>
   </station>
   <station band="101.5FM" id="radioadelaide" lang="en" name="Radio Adelaide" rank="1.0" type="edu">
-    <frequency uri="https://radio.adelaide.edu.au/">101.5 FM in Adelaide, Australia</frequency>
+    <frequency uri="https://radioadelaide.org.au/">101.5 FM in Adelaide, Australia</frequency>
     <location>Adelaide, Australia</location>
     <description lang="en">Radio Adelaide is a real radio alternative for people curious about ideas, issues and music. We are as diverse as the city we live in, with programs ranging from Jazz and Classical to World Music, arts, current affairs and more, with many shows presented by local community groups in their own languages.</description>
-    <stream mime="audio/aac" uri="http://stream.radio.adelaide.edu.au:8000/radadl-128.aac" codec="MPEG-4 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <stream mime="audio/mpeg" uri="http://stream.radio.adelaide.edu.au:8000/radadl-128.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <uri>https://radio.adelaide.edu.au/</uri>
+    <stream mime="audio/aac" uri="https://cast-1.nucleusstreaming.com:4443/5uv_live_128.aacp" codec="MPEG-2 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="126 kbps" />
+    <uri>https://radioadelaide.org.au/</uri>
   </station>
   <station band="Online" id="radior" lang="cs" name="Radio R" rank="1.0" type="edu">
     <frequency uri="http://radior.cz">Internet</frequency>

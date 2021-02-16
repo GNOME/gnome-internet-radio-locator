@@ -2,7 +2,7 @@
  *
  * GNOME Internet Radio Locator
  *
- * Copyright (C) 2014-2019  Aamot Software
+ * Copyright (C) 2014-2021  Aamot Software
  *
  * Author: Ole Aamot <ole@gnome.org>
  *
@@ -876,7 +876,7 @@ main (int argc,
 
 	g_object_set (G_OBJECT (view),
 		      "kinetic-mode", TRUE,
-		      "zoom-level", 2,
+		      "zoom-level", 0,
 		      NULL);
 
 	g_object_set_data (G_OBJECT (view), "window", window);
@@ -895,8 +895,8 @@ main (int argc,
 
 	license_actor = champlain_view_get_license_actor (view);
 	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
-	/* FIXME: Boston, Massachusetts */
-	champlain_view_center_on (CHAMPLAIN_VIEW (view), 42.3617430, -71.0839082);
+	/* FIXME: Brooklyn, New York */
+	champlain_view_center_on (CHAMPLAIN_VIEW (view), 40.8466508, -73.8785937);
 	/* location = gclue_simple_get_location (simple); */
 	/* champlain_view_center_on (CHAMPLAIN_VIEW (view), */
 	/*  			  gclue_location_get_latitude (location), */
