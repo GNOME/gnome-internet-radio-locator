@@ -195,7 +195,7 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 	GeocodeReverse *reverse_city, *reverse_country;
 	ClutterColor city_color = { 0x9a, 0x9b, 0x9c, 0x9d };
 	ClutterColor text_color = { 0xff, 0xff, 0xff, 0xff };
-
+	gdouble lat_s, lon_s;
 	const char *name, *name_city, *name_country;
 	/* GeocodeForward *fwd; */
 	/* GList *list; */
@@ -225,7 +225,9 @@ mouse_click_cb (ClutterActor *actor, ClutterButtonEvent *event, ChamplainView *v
 		gtk_entry_set_text(GTK_ENTRY(input),(gchar *)name);
 		g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), NULL);
 	}
-	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("Mouse click at: %f %f (%s)\n", lat, lon, name);
+	lat_s = champlain_location_get_latitude (CHAMPLAIN_LOCATION (marker));
+	lon_s = champlain_location_get_longitude (CHAMPLAIN_LOCATION (marker));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("Mouse click at: %f %f (%s)\n", lat_s, lon_s, name);
 	return TRUE;
 }
 
