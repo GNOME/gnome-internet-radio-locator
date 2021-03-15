@@ -243,17 +243,6 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
 	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
 	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-	station = g_strdup("Berlin, Germany\n<span size=\"small\">Radio Eins</span>");
-	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
-	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
-	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_e_color);
-	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 52.5170365, 13.3888599);
-	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
-	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
-	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
-	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
-	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
 	station = g_strdup("Bern, Switzerland\n<span size=\"small\">Radio NRJ Bern</span>");
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
 	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);

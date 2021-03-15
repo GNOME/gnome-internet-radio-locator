@@ -151,13 +151,6 @@
     <stream mime="audio/mpeg" uri="https://s2.radio.co/sd9da54aa0/listen" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="127 kbps" />
     <uri>http://www.barcelonacityfm.com/</uri>
   </station>
-  <station band="Online" id="radioeins" lang="de" name="Radio Eins" rank="1.0" type="gov">
-    <frequency uri="http://www.radioeins.de/">Online in Berlin, Germany</frequency>
-    <location>Berlin, Germany</location>
-    <description lang="de">Radio Eins (Schreibweise in Publikationen des Senders: radioeins; RDS: radio1 vom rbb) ist ein in Berlin und Brandenburg verbreitetes Radioprogramm des Rundfunk Berlin-Brandenburg (RBB).</description>
-    <stream mime="audio/mpeg" uri="http://rbb-radioeins-live.cast.addradio.de/rbb/radioeins/live/mp3/128/stream.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <uri>http://www.radioeins.de/</uri>
-  </station>
   <station band="90.7FM" id="radiobrume" lang="fr" name="Radio Brume" rank="1.0" type="edu">
     <frequency uri="http://www.radiobrume.fr/">FM 90.7 in Lyon, France</frequency>
     <location>Lyon, France</location>
