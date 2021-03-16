@@ -12,15 +12,9 @@ PKG_NAME="gnome-internet-radio-locator"
     exit 1
 }
 
-which gnome-autogen.sh || {
-    echo "You need to install gnome-common from GNOME Git"
-    echo "https://gitlab.gnome.org/GNOME/gnome-common.git"
-    exit 1
-}
-
 REQUIRED_AUTOCONF_VERSION=2.59
 REQUIRED_AUTOMAKE_VERSION=1.14
 REQUIRED_INTLTOOL_VERSION=0.40.0
 REQUIRED_PKG_CONFIG_VERSION=0.16.0
 REQUIRED_GTK_DOC_VERSION=1.9
-USE_GNOME2_MACROS=1 . gnome-autogen.sh
+USE_GNOME2_MACROS=1 . $srcdir/gnome-autogen.sh
