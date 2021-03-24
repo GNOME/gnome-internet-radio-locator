@@ -1,4 +1,22 @@
 =============
+Version 4.0.0
+=============
+
+Build
+
+	* configure.in: Require GTK+ 4.0
+	* data/gnome-internet-radio-locator.appdata.xml.in: GNOME 40
+	* gnome-internet-radio-locator.spec: Require GTK+ 4.0
+
+GUI
+
+	* src/gnome-internet-radio-locator-station.c: Fix stream->uri XML issue
+
+XML
+
+	* src/gnome-internet-radio-locator-4.0.dtd: Add 4.0 Data Type Definition
+
+=============
 Version 3.9.2
 =============
 

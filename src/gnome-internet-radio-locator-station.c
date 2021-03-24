@@ -2,7 +2,7 @@
  *
  * GNOME Internet Radio Locator
  *
- * Copyright (C) 2014-2019  Aamot Software
+ * Copyright (C) 2014-2021  Aamot Software
  *
  * Author: Ole Aamot <ole@gnome.org>
  *
@@ -478,6 +478,11 @@ gnome_internet_radio_locator_station_parser(GNOMEInternetRadioLocatorStationInfo
 
 			GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("station->stream->samplerate = %li\n",
 			    station->stream->samplerate);
+
+			if (xmlGetProp(sub, (const xmlChar *)"uri") != NULL) {
+			        station->stream->uri = (char *)xmlGetProp(sub, (const xmlChar *)"uri");
+			}
+
 			station->stream->uri = (gchar *)xmlGetProp(sub, (const xmlChar *)"uri");
 			GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("station->stream->uri = %s\n",
 			    station->stream->uri);
@@ -626,7 +631,7 @@ gint gnome_internet_radio_locator_station_update (GNOMEInternetRadioLocatorStati
 	new_station->stream->uri = g_strdup(station_uri);
 	new_station->uri = g_strdup(station_website);
 	fp = g_fopen(stations, "w+");
-	g_fprintf(fp, "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE gnome_internet_radio_locator SYSTEM 'gnome_internet_radio_locator-0.1.dtd'>\n<gnome_internet_radio_locator version='%s'>\n", VERSION);
+	g_fprintf(fp, "<?xml version='1.0' encoding='UTF-8'?>\n<!DOCTYPE gnome_internet_radio_locator SYSTEM 'gnome_internet_radio_locator-4.0.dtd'>\n<gnome_internet_radio_locator version='%s'>\n", VERSION);
 	// stationinfo-> = l->data;
 	while (stationinfo != NULL) {
 		local_station_uri = g_strdup(stationinfo->stream->uri);

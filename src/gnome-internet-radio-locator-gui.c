@@ -213,15 +213,11 @@ save_cb (GtkWidget *widget, gpointer data) {
 	urientry = g_object_get_data(G_OBJECT(widget), "station_uri");
 	websiteentry = g_object_get_data(G_OBJECT(widget), "station_website");
 	descriptionentry = g_object_get_data(G_OBJECT(widget), "station_description");
-	player = gst_player_new (NULL, gst_player_g_main_context_signal_dispatcher_new(NULL));
-	gnome_internet_radio_locator_player_new(GST_PLAYER(player), urientry);
 	context_id = gtk_statusbar_get_context_id (GTK_STATUSBAR (statusbar), "Station Name");
 	/* Translators: first %s is station name and second %s is station location */
 	statusmsg = g_strdup_printf(_("Added %s in %s"), nameentry, locationentry);
 	gtk_statusbar_push (GTK_STATUSBAR (statusbar), GPOINTER_TO_INT (context_id), statusmsg);
 	g_free(statusmsg);
-	gst_player_stop(player);
-	gst_player_play(player);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", nameentry);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", locationentry);
 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("%s\n", urientry);
@@ -336,10 +332,8 @@ GtkWidget *create_new_station_selector(gchar *location) {
 			  (gchar *) gtk_entry_get_text(GTK_ENTRY(bandentry)));
 	g_object_set_data(G_OBJECT(station_selector), "station_location",
 			  (gchar *) gtk_entry_get_text(GTK_ENTRY(locationentry)));
-	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("LOCATIONENTRY: %s\n", (gchar *) gtk_entry_get_text(GTK_ENTRY(locationentry)));
 	g_object_set_data(G_OBJECT(station_selector), "station_uri",
 			  (gchar *) gtk_entry_get_text(GTK_ENTRY(urientry)));
-	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG("URIENTRY: %s\n", (gchar *) gtk_entry_get_text(GTK_ENTRY(urientry)));
 	g_object_set_data(G_OBJECT(station_selector), "station_description",
 			  (gchar *) gtk_entry_get_text(GTK_ENTRY(descriptionentry)));
 	g_object_set_data(G_OBJECT(station_selector), "station_website",
