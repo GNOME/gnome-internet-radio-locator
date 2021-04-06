@@ -857,6 +857,7 @@ main (int argc,
 	textdomain (GETTEXT_PACKAGE);
 	if (gtk_clutter_init (&argc, &argv) != CLUTTER_INIT_SUCCESS)
 		return 1;
+	gtk_init (&argc, &argv);
 	window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
 	/* give the window a 10px wide border */
 	gtk_container_set_border_width (GTK_CONTAINER (window), 10);
