@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-4.0.dtd">
-<gnome_internet_radio_locator version="4.0.1">
+<gnome_internet_radio_locator version="4.0.2">
   <station band="105.5FM" id="bygderadiovest" lang="en" name="Bygderadio Vest" rank="1.0" type="org">
     <location>Volda, Norway</location>
     <description lang="no">Volda og Ørsta Bygderadio AS starta sendingar i februar 1989.  I starten dekte radioen berre bygdene Volda og Ørsta.  I 2000 vart radioen slått saman med Radio Vest AS i Herøy.   Namnet vart då endra til Bygderadio Vest AS.  Alt arbeidet ved radioen vert gjort på dugnad.   Bygderadio Vest AS dekkjer no 7 kommuner; Volda, Ørsta, Hareid, Herøy, Ulstein, Sande og Vannylven.  Det bur omlag 46.700 menneske i desse kommunane.    Frå 2008 har Bygderadio Vest AS konsesjon som almennradio med konsesjon for å sende 240 minutt lokalprodusert stoff i tidsrommet 06-18. Konsesjonen gjeld fram til 31.12.2026.</description>
