@@ -44,7 +44,7 @@ typedef struct _Position {
 	float lon;
 } Position;
 
-int
+void
 gnome_internet_radio_locator_radius (float latitude, float longitude, int radius)
 {
 	int values[] = {0,1,2};
