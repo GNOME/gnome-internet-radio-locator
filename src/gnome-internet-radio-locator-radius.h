@@ -24,6 +24,6 @@
 #ifndef GNOME_INTERNET_RADIO_LOCATOR_RADIUS_H
 #define GNOME_INTERNET_RADIO_LOCATOR_RADIUS_H
 
-int gnome_internet_radio_locator_radius (float latitude, float longitude, int radius);
+void gnome_internet_radio_locator_radius (float latitude, float longitude, int radius);
 
 #endif /* GNOME_INTERNET_RADIO_LOCATOR_RADIUS_H */
