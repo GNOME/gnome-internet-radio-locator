@@ -1,7 +1,329 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
-<!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-4.0.dtd">
-<gnome_internet_radio_locator version="4.0.3">
+<!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-5.0.dtd">
+<gnome_internet_radio_locator version="5.0.0">
+  <station band="Online" id="bbcradio1" name="BBC - Radio 1" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_one" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio2" name="BBC - Radio 2" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_two" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio3" name="BBC - Radio 3" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_three" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio4" name="BBC - Radio 4" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourfm" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio4lwukonly" name="BBC - Radio 4 LW (UK only)" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourlw" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio4lwnonuk" name="BBC - Radio 4 LW (non-UK)" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_fourlw_online_nonuk" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio5liveukonly" name="BBC - Radio 5 live (UK only)" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_five_live" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio5livenonuk" name="BBC - Radio 5 live (non-UK)" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_five_live_online_nonuk" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio6music" name="BBC - Radio 6 Music" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_6music" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio1xtra" name="BBC - Radio 1Xtra" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_1xtra" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio4extra" name="BBC - Radio 4 Extra" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_four_extra" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradio5livesportsextraukonly" name="BBC - Radio 5 Live sports extra (UK only)" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_five_live_sports_extra" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradioasiannetwork" name="BBC - Radio Asian Network" rank="1.0" type="gov">
+    <location>United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_asian_network" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiocoventrywarwickshire" name="BBC - BBC CWR" rank="1.0" type="gov">
+    <location>Coventry Warwickshire, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_coventry_warwickshire" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcessex" name="BBC - BBC Essex" rank="1.0" type="gov">
+    <location>Essex, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_essex" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcherefordworcester" name="BBC - BBC Hereford Worcester" rank="1.0" type="gov">
+    <location>Herford Worcester, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_hereford_worcester" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcberkshire" name="BBC - Radio Berkshire" rank="1.0" type="gov">
+    <location>Berkshire, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_berkshire" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiobristol" name="BBC - Radio Bristol" rank="1.0" type="gov">
+    <location>Bristol, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_bristol" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiocambridge" name="BBC - Radio Cambridge" rank="1.0" type="gov">
+    <location>Cambridge, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_cambridge" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiocornwall" name="BBC - Radio Cornwall" rank="1.0" type="gov">
+    <location>Cornwall, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_cornwall" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiocumbria" name="BBC - Radio Cumbria" rank="1.0" type="gov">
+    <location>Cumbria, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_cumbria" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiocymru" name="BBC - Radio Cymru" rank="1.0" type="gov">
+    <location>Cymru, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_cymru" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiocymru2" name="BBC - Radio Cymru 2" rank="1.0" type="gov">
+    <location>Cymru, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_cymru_2" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradioderby" name="BBC - Radio Derby" rank="1.0" type="gov">
+    <location>Derby, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_derby" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiodevon" name="BBC - Radio Devon" rank="1.0" type="gov">
+    <location>Devon, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_devon" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiofoyle" name="BBC - Radio Foyle" rank="1.0" type="gov">
+    <location>Foyle, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_foyle" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiogloucestershire" name="BBC - Radio Gloucestershire" rank="1.0" type="gov">
+    <location>Gloucestershire, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_gloucestershire" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradioguernsey" name="BBC - Radio Guernsey" rank="1.0" type="gov">
+    <location>Guernsey, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_guernsey" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiohumberside" name="BBC - Radio Humberside" rank="1.0" type="gov">
+    <location>Humberside, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_humberside" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiojersey" name="BBC - Radio Jersey" rank="1.0" type="gov">
+    <location>Jersey, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_jersey" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiokent" name="BBC - Radio Kent" rank="1.0" type="gov">
+    <location>Kent, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_kent" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiolancashire" name="BBC - Radio Lancashire" rank="1.0" type="gov">
+    <location>Lancashire, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_lancashire" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradioleeds" name="BBC - Radio Leeds" rank="1.0" type="gov">
+    <location>Leeds, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_leeds" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradioleicester" name="BBC - Radio Leicester" rank="1.0" type="gov">
+    <location>Leicester, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_leicester" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbclincolnshire" name="BBC - Radio Lincolnshire" rank="1.0" type="gov">
+    <location>Lincolnshire, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_lincolnshire" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiolondon" name="BBC - Radio London" rank="1.0" type="gov">
+    <location>London, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_london" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiomanchester" name="BBC - Radio Manchester" rank="1.0" type="gov">
+    <location>Manchester, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_manchester" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiomerseyside" name="BBC - Radio Merseyside" rank="1.0" type="gov">
+    <location>Merseyside, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_merseyside" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradionangaidheal" name="BBC - Radio nan Gaidheal" rank="1.0" type="gov">
+    <location>Gaidheal, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_nan_gaidheal" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradionewcastle" name="BBC - Radio Newcastle" rank="1.0" type="gov">
+    <location>Newcastle, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_newcastle" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradionorfolk" name="BBC - Radio Norfolk" rank="1.0" type="gov">
+    <location>Norfolk, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_norfolk" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradionorthampton" name="BBC - Radio Northampton" rank="1.0" type="gov">
+    <location>Northampton, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_northampton" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradionothingham" name="BBC - Radio Nottingham" rank="1.0" type="gov">
+    <location>Nottingham, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_nottingham" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiorkney" name="BBC - Radio Orkney" rank="1.0" type="gov">
+    <location>Orkney, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_orkney" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiooxford" name="BBC - Radio Oxford" rank="1.0" type="gov">
+    <location>Oxford, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_oxford" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradioscotlandfm" name="BBC - Radio Scotland FM" rank="1.0" type="gov">
+    <location>Scotland, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_scotland_fm" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradioscotlandmw" name="BBC - Radio Scotland MW" rank="1.0" type="gov">
+    <location>Scotland, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_scotland_mw" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiosheffield" name="BBC - Radio Sheffield" rank="1.0" type="gov">
+    <location>Sheffield, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_sheffield" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradioshropshire" name="BBC - Radio Shropshire" rank="1.0" type="gov">
+    <location>Shropshire, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_shropshire" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiosolent" name="BBC - Radio Solent" rank="1.0" type="gov">
+    <location>Solent, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_solent" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiosolentwestdorset" name="BBC - Radio Solent West Dorset" rank="1.0" type="gov">
+    <location>West Dorset, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_solent_west_dorset" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiosomersetsound" name="BBC - Radio Somerset Sound" rank="1.0" type="gov">
+    <location>Somerset, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_somerset_sound" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiostoke" name="BBC - Radio Stoke" rank="1.0" type="gov">
+    <location>Stoke, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_stoke" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiosuffolk" name="BBC - Radio Suffolk" rank="1.0" type="gov">
+    <location>Suffolk, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_suffolk" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiosurrey" name="BBC - Radio Surrey" rank="1.0" type="gov">
+    <location>Surrey, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_surrey" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiosussex" name="BBC - Radio Sussex" rank="1.0" type="gov">
+    <location>Sussex, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_sussex" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiotees" name="BBC - Radio Tees" rank="1.0" type="gov">
+    <location>Tees, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_tees" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradioulster" name="BBC - Radio Ulster" rank="1.0" type="gov">
+    <location>Ulster, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_ulster" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiowales" name="BBC - Radio Wales" rank="1.0" type="gov">
+    <location>Wales, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_wales_fm" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiowiltshire" name="BBC - Radio Wiltshire" rank="1.0" type="gov">
+    <location>Wiltshire, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_wiltshire" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradiowm" name="BBC - Radio WM" rank="1.0" type="gov">
+    <location>WM, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_wm" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcradioyork" name="BBC - Radio York" rank="1.0" type="gov">
+    <location>York, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_york" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="Online" id="bbcthreecountiesradio" name="BBC - Three Counties Radio" rank="1.0" type="gov">
+    <location>Three Counties, United Kingdom</location>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_three_counties_radio" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/</uri>
+  </station>
+  <station band="93.20FM" id="bbcworldservice" lang="en" name="BBC - BBC World Service" rank="1.0" type="gov">
+    <frequency uri="http://www.bbc.co.uk/worldservice/schedules/frequencies/">Internet</frequency>
+    <location>London, United Kingdom</location>
+    <description lang="en">BBC World Service is an international news service available on radio, television and online. It provides impartial news reports and analysis in English and 27 other languages.  BBC World Service aims to inspire and illuminate the lives of its audience by bringing the world together, making connections and helping listeners to make sense of the world.</description>
+    <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_world_service" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
+    <uri>http://www.bbc.co.uk/worldserviceradio</uri>
+  </station>
   <station band="105.5FM" id="bygderadiovest" lang="en" name="Bygderadio Vest" rank="1.0" type="org">
     <location>Volda, Norway</location>
     <description lang="no">Volda og Ørsta Bygderadio AS starta sendingar i februar 1989.  I starten dekte radioen berre bygdene Volda og Ørsta.  I 2000 vart radioen slått saman med Radio Vest AS i Herøy.   Namnet vart då endra til Bygderadio Vest AS.  Alt arbeidet ved radioen vert gjort på dugnad.   Bygderadio Vest AS dekkjer no 7 kommuner; Volda, Ørsta, Hareid, Herøy, Ulstein, Sande og Vannylven.  Det bur omlag 46.700 menneske i desse kommunane.    Frå 2008 har Bygderadio Vest AS konsesjon som almennradio med konsesjon for å sende 240 minutt lokalprodusert stoff i tidsrommet 06-18. Konsesjonen gjeld fram til 31.12.2026.</description>
@@ -1104,15 +1426,15 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.kclradio.co.uk/</uri>
   </station>
   -->
+  <!-- Appears to be down as of 2021/05/03
   <station band="Online" id="icradio" lang="en" name="Imperial College Radio" rank="1.0" type="edu">
     <frequency uri="http://icradio.com/">1134 AM in Wye, Kent, United Kingdom</frequency>
     <location>London, United Kingdom</location>
-    <description lang="en">IC Radio is among the oldest student radio stations in the country. Started in 1976, broadcasting on a home built AM transmitter around halls, we now broadcast all over the globe from icradio.com.<!-- Absolutely anyone is welcome to try their hand at presenting or producing a show; whatever your music taste. We also love a good speech based program, so anyone will feel at home in IC Radio. As well as being able to broadcast, we are lucky enough to have a brand new, fully equipped recording studio which we use to record bands and musicians.-->
-<!--
-Behind the scenes we rely on our fantastic technical, musical and promotional teams. Are you interested in web design? Want to record professional band and artists? Maybe you fancy running our IT system? Or perhaps you want to talk to industry insiders to get your hands on new music weeks before any of your friends? There's a place for you here and we'd love for you to join us!--></description>
+    <description lang="en">IC Radio is among the oldest student radio stations in the country. Started in 1976, broadcasting on a home built AM transmitter around halls, we now broadcast all over the globe from icradio.com.</description>
     <stream mime="audio/mpeg" uri="http://icecast.icradio.com:8000/live-mp3-high" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="192 kbps" />
     <uri>http://icradio.com/</uri>
   </station>
+  -->
   <station band="107.9FM" id="ruc" lang="pt" name="Coimbra University Radio" rank="1.0" type="edu">
     <frequency uri="http://www.ruc.pt/">107.9 FM in Coimbra, Portugal</frequency>
     <location>Coimbra, Portugal</location>
@@ -1270,13 +1592,6 @@ Behind the scenes we rely on our fantastic technical, musical and promotional te
     <description lang="en">KTRU Houston is Rice University's student-run radio station.</description>
     <stream mime="audio/mpeg" uri="http://128.42.128.26:80/live" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://ktru.org/</uri>
-  </station>
-  <station band="93.20FM" id="bbcworldservice" lang="en" name="BBC World Service" rank="1.0" type="gov">
-    <frequency uri="http://www.bbc.co.uk/worldservice/schedules/frequencies/">Internet</frequency>
-    <location>London, United Kingdom</location>
-    <description lang="en">BBC World Service is an international news service available on radio, television and online. It provides impartial news reports and analysis in English and 27 other languages.  BBC World Service aims to inspire and illuminate the lives of its audience by bringing the world together, making connections and helping listeners to make sense of the world.</description>
-    <stream mime="audio/mpeg" uri="http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-eieuk" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="48 kbps" />
-    <uri>http://www.bbc.co.uk/worldserviceradio</uri>
   </station>
   <station band="93.0FM" id="nrkradioalltidnyheter" lang="nb" name="NRK Radio Alltid Nyheter" rank="1.0" type="gov">
     <frequency>93.0 FM in Oslo, Norway</frequency>

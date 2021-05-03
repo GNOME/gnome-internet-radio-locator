@@ -1,4 +1,82 @@
 =============
+Version 5.0.0
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Add BBC - Radio Cambridge (Cambridge, United Kingdom)
+	* src/gnome-internet-radio-locator-markers.c: Add BBC - Radio London (London, United Kingdom)
+	* src/gnome-internet-radio-locator-markers.c: Add BBC - Radio Manchester (Manchester, United Kingdom)
+	* src/gnome-internet-radio-locator-markers.c: Add BBC - Radio Oxford (Oxford, United Kingdom)
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 1
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 2
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 3
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 4
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 4 LW (UK only)
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 4 LW (non-UK)
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 5 live (UK only)
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 5 live (non-UK)
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 6 Music
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 1Xtra
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 4 Extra
+	* src/gnome-internet-radio-locator.xml: BBC - Radio 5 Live sports extra (UK only)
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Asian Network
+	* src/gnome-internet-radio-locator.xml: BBC - BBC CWR
+	* src/gnome-internet-radio-locator.xml: BBC - BBC Essex
+	* src/gnome-internet-radio-locator.xml: BBC - BBC Hereford Worcester
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Berkshire
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Bristol
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Cambridge
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Cornwall
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Cumbria
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Cymru
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Cymru 2
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Derby
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Devon
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Foyle
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Gloucestershire
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Guernsey
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Humberside
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Jersey
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Kent
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Lancashire
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Leeds
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Leicester
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Lincolnshire
+	* src/gnome-internet-radio-locator.xml: BBC - Radio London
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Manchester
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Merseyside
+	* src/gnome-internet-radio-locator.xml: BBC - Radio nan Gaidheal
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Newcastle
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Norfolk
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Northampton
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Nottingham
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Orkney
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Oxford
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Scotland FM
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Scotland MW
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Sheffield
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Shropshire
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Solent
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Solent West Dorset
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Somerset Sound
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Stoke
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Suffolk
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Surrey
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Sussex
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Tees
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Ulster
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Wales
+	* src/gnome-internet-radio-locator.xml: BBC - Radio Wiltshire
+	* src/gnome-internet-radio-locator.xml: BBC - Radio WM
+	* src/gnome-internet-radio-locator.xml: BBC - Radio York
+	* src/gnome-internet-radio-locator.xml: BBC - Three Counties Radio
+	* src/gnome-internet-radio-locator.xml: BBC - BBC World Service (London, United Kingdom)
+
+=============
 Version 4.0.2
 =============
 

@@ -2,7 +2,7 @@
  *
  * GNOME Internet Radio Locator
  *
- * Copyright (C) 2019, 2020  Aamot Software
+ * Copyright (C) 2019, 2020, 2021  Aamot Software
  *
  * Author: Ole Aamot <ole@gnome.org>
  *
@@ -386,7 +386,7 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
 	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
 	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-	station = g_strdup("Cambridge, United Kingdom\n<span size=\"small\">Cam FM</span>");
+	station = g_strdup("Cambridge, United Kingdom\n<span size=\"small\">BBC Radio Cambridge</span>");
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
 	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
 	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_f_color);
@@ -550,13 +550,13 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
 	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
-        marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-	station = g_strdup("London, United Kingdom\n<span size=\"small\">Imperial College Radio</span>");
+	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+	station = g_strdup("London, United Kingdom\n<span size=\"small\">BBC Radio London</span>");
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
 	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
-	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_c_color);
+	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_f_color);
 	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
-	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 51.5073219, -0.1276474);
+	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 51.51928975, -0.1427129368108396);
 	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
 	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -579,6 +579,17 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_e_color);
 	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
 	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 45.7544734, 4.8122242);
+	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+	station = g_strdup("Manchester, United Kingdom\n<span size=\"small\">BBC Radio Manchester</span>");
+	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_f_color);
+	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 53.471726700000005, -2.299171452519963);
 	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
 	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
@@ -705,10 +716,10 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
 	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
 	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
-	station = g_strdup("Oxford, United Kingdom\n<span size=\"small\">Oxide Radio</span>");
+	station = g_strdup("Oxford, United Kingdom\n<span size=\"small\">BBC Radio Oxford</span>");
 	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
 	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
-	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_e_color);
+	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_f_color);
 	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
 	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 51.7520131, -1.2578499);
 	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
