@@ -25,11 +25,11 @@ Requires:       geocode-glib >= 3.20.1
 Requires:       gtk3 >= 3.24.28
 
 %description
-GNOME Internet Radio Locator 4 is a Free Software program that allows
+GNOME Internet Radio Locator is a Free Software program that allows
 you to easily locate and listen to Free Internet Radio stations by
 broadcasters on the Internet with the help of map and text search.
 
-GNOME Internet Radio Locator 4 is developed on the GNOME 40 desktop
+GNOME Internet Radio Locator is developed on the GNOME 40 desktop
 platform and it requires GTK+ 3.0 and GStreamer 1.0 for playback.
 
 Enjoy Free Internet Radio.
@@ -58,6 +58,9 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Mon May 10 2021 Ole Aamot <ole@gnome.org> - 5.0.1-1
+- gnome-internet-radio-locator 5.0.1 build on Fedora Linux 34
+
 * Fri Apr 30 2021 Ole Aamot <ole@gnome.org> - 4.0.2-1
 - gnome-internet-radio-locator 4.0.2 build on Fedora Linux 34
 
