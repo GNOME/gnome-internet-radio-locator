@@ -1,4 +1,4 @@
-SUBDIRS = data help man src po
+SUBDIRS = data doc help man src po
 
 datadir = @datadir@
 

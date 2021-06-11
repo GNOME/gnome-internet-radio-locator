@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.59)
-AC_INIT(gnome-internet-radio-locator,5.0.2)
+AC_INIT(gnome-internet-radio-locator,5.0.3)
 AM_INIT_AUTOMAKE([-Wno-portability 1.11 no-dist-gzip dist-xz tar-ustar subdir-objects])
 AM_MAINTAINER_MODE
 AC_CONFIG_SRCDIR([src/gnome-internet-radio-locator.c])
@@ -148,6 +148,7 @@ data/icons/48x48/Makefile
 data/icons/256x256/Makefile
 data/icons/512x512/Makefile
 data/icons/1024x1024/Makefile
+doc/Makefile
 help/Makefile
 help/C/version.xml
 man/Makefile
