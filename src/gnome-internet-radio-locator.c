@@ -879,7 +879,7 @@ main (int argc,
 
 	g_object_set (G_OBJECT (view),
 		      "kinetic-mode", TRUE,
-		      "zoom-level", 0,
+		      "zoom-level", 6,
 		      NULL);
 
 	g_object_set_data (G_OBJECT (view), "window", window);
@@ -898,8 +898,8 @@ main (int argc,
 
 	license_actor = champlain_view_get_license_actor (view);
 	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
-	/* FIXME: Brooklyn, New York */
-	champlain_view_center_on (CHAMPLAIN_VIEW (view), 40.8466508, -73.8785937);
+	/* FIXME: New Haven, Connecticut */
+	champlain_view_center_on (CHAMPLAIN_VIEW (view), 41.298434349999994,-72.93102342707913);
 	/* location = gclue_simple_get_location (simple); */
 	/* champlain_view_center_on (CHAMPLAIN_VIEW (view), */
 	/*  			  gclue_location_get_latitude (location), */

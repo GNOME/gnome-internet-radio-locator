@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.59)
-AC_INIT(gnome-internet-radio-locator,5.0.3)
+AC_INIT(gnome-internet-radio-locator,10.0.1)
 AM_INIT_AUTOMAKE([-Wno-portability 1.11 no-dist-gzip dist-xz tar-ustar subdir-objects])
 AM_MAINTAINER_MODE
 AC_CONFIG_SRCDIR([src/gnome-internet-radio-locator.c])
