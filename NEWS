@@ -1,4 +1,12 @@
 =============
+Version 11.10
+=============
+
+GUI
+
+	* src/gnome-internet-radio-locator.c: Use Geoclue to locate view.
+
+=============
 Version 5.0.3
 =============
 

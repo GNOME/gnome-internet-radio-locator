@@ -127,6 +127,58 @@ GClueSimple *simple = NULL;
 GClueClient *client = NULL;
 GMainLoop *main_loop;
 
+static void
+print_location (GClueSimple *simple)
+{
+        GClueLocation *location;
+        gdouble altitude, speed, heading;
+        GVariant *timestamp;
+        GTimeVal tv = { 0 };
+        const char *desc;
+
+        location = gclue_simple_get_location (simple);
+        g_print ("\nNew location:\n");
+        g_print ("Latitude:    %f°\nLongitude:   %f°\nAccuracy:    %f meters\n",
+                 gclue_location_get_latitude (location),
+                 gclue_location_get_longitude (location),
+                 gclue_location_get_accuracy (location));
+
+	champlain_view_center_on (CHAMPLAIN_VIEW (view),
+				  gclue_location_get_latitude (location),
+				  gclue_location_get_longitude (location));
+	
+        altitude = gclue_location_get_altitude (location);
+        if (altitude != -G_MAXDOUBLE)
+                g_print ("Altitude:    %f meters\n", altitude);
+        speed = gclue_location_get_speed (location);
+        if (speed >= 0)
+                g_print ("Speed:       %f meters/second\n", speed);
+        heading = gclue_location_get_heading (location);
+        if (heading >= 0)
+                g_print ("Heading:     %f°\n", heading);
+
+        desc = gclue_location_get_description (location);
+        if (strlen (desc) > 0)
+                g_print ("Description: %s\n", desc);
+
+        timestamp = gclue_location_get_timestamp (location);
+        if (timestamp) {
+                GDateTime *date_time;
+                gchar *str;
+
+                g_variant_get (timestamp, "(tt)", &tv.tv_sec, &tv.tv_usec);
+
+                date_time = g_date_time_new_from_timeval_local (&tv);
+                str = g_date_time_format
+                      (date_time,
+                       "%c (%s seconds since the Epoch)");
+                g_date_time_unref (date_time);
+
+                g_print ("Timestamp:   %s\n", str);
+                g_free (str);
+        }
+}
+
 static gboolean
 on_location_timeout (gpointer user_data)
 {
@@ -835,6 +887,51 @@ on_search_matches(GtkEntryCompletion *widget,
 	return FALSE;
 }
 
+
+static void
+on_client_active_notify (GClueClient *client,
+                         GParamSpec *pspec,
+                         gpointer    user_data)
+{
+        if (gclue_client_get_active (client))
+                return;
+
+        g_print ("Geolocation disabled. Quitting..\n");
+        on_location_timeout (NULL);
+}
+
+static void
+on_simple_ready (GObject      *source_object,
+                 GAsyncResult *res,
+                 gpointer      user_data)
+{
+        GError *error = NULL;
+
+        simple = gclue_simple_new_finish (res, &error);
+        if (error != NULL) {
+            g_critical ("Failed to connect to GeoClue2 service: %s", error->message);
+
+            exit (-1);
+        }
+        client = gclue_simple_get_client (simple);
+        if (client) {
+                g_object_ref (client);
+                g_print ("Client object: %s\n",
+                         g_dbus_proxy_get_object_path (G_DBUS_PROXY (client)));
+
+                g_signal_connect (client,
+                                  "notify::active",
+                                  G_CALLBACK (on_client_active_notify),
+                                  NULL);
+        }
+        print_location (simple);
+
+        g_signal_connect (simple,
+                          "notify::location",
+                          G_CALLBACK (print_location),
+                          user_data);
+}
+
 int
 main (int argc,
       char **argv)
@@ -879,7 +976,7 @@ main (int argc,
 
 	g_object_set (G_OBJECT (view),
 		      "kinetic-mode", TRUE,
-		      "zoom-level", 6,
+		      "zoom-level", 3,
 		      NULL);
 
 	g_object_set_data (G_OBJECT (view), "window", window);
@@ -899,11 +996,15 @@ main (int argc,
 	license_actor = champlain_view_get_license_actor (view);
 	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
 	/* FIXME: New Haven, Connecticut */
-	champlain_view_center_on (CHAMPLAIN_VIEW (view), 41.298434349999994,-72.93102342707913);
-	/* location = gclue_simple_get_location (simple); */
-	/* champlain_view_center_on (CHAMPLAIN_VIEW (view), */
-	/*  			  gclue_location_get_latitude (location), */
-	/*  			  gclue_location_get_longitude (location)); */
+	// champlain_view_center_on (CHAMPLAIN_VIEW (view), 41.298434349999994,-72.93102342707913);
+	gclue_simple_new ("gnome-internet-radio-locator",
+			  accuracy_level,
+			  time_threshold,
+			  on_simple_ready,
+			  CHAMPLAIN_VIEW (view));
+	
+	// location = gclue_simple_get_location (simple);
+	
 	layer = create_marker_layer (view, &path);
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (path));
 	champlain_view_add_layer (view, CHAMPLAIN_LAYER (layer));

@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.59)
-AC_INIT(gnome-internet-radio-locator,10.0.1)
+AC_INIT(gnome-internet-radio-locator,11.10)
 AM_INIT_AUTOMAKE([-Wno-portability 1.11 no-dist-gzip dist-xz tar-ustar subdir-objects])
 AM_MAINTAINER_MODE
 AC_CONFIG_SRCDIR([src/gnome-internet-radio-locator.c])
@@ -97,11 +97,12 @@ PKG_CHECK_MODULES(GNOME_INTERNET_RADIO_LOCATOR,
 		  gstreamer-plugins-bad-1.0 \
 		  gstreamer-plugins-base-1.0 \
 		  gtk+-3.0 >= 3.24.28 \
-		  libgeoclue-2.0 >= 0.29.1 \
+		  geoclue-2.0 >= 2.5.7 \
+		  libgeoclue-2.0 >= 2.5.7 \
 		  libxml-2.0 >= 2.0 \
 		  pangoft2 >= 0.28)
 
-GNOME_INTERNET_RADIO_LOCATOR_PKG_DEPS="champlain-gtk-0.12 geocode-glib-1.0 glib-2.0 gobject-2.0 gstreamer-1.0 gstreamer-player-1.0 gstreamer-plugins-bad-1.0 gstreamer-plugins-base-1.0 gstreamer-plugins-good-1.0 gstreamer-video-1.0 gtk+-3.0 libgeoclue-2.0 libxml-2.0 pangoft2"
+GNOME_INTERNET_RADIO_LOCATOR_PKG_DEPS="champlain-gtk-0.12 geocode-glib-1.0 glib-2.0 gobject-2.0 gstreamer-1.0 gstreamer-player-1.0 gstreamer-plugins-bad-1.0 gstreamer-plugins-base-1.0 gstreamer-plugins-good-1.0 gstreamer-video-1.0 gtk+-3.0 geoclue-2.0 libgeoclue-2.0 libxml-2.0 pangoft2"
 
 GTK_DOC_CHECK([1.16], [--flavour no-tmpl])
 
