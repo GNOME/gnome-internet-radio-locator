@@ -1,4 +1,19 @@
 =============
+Version 11.12
+=============
+
+Build
+
+	* help/C/C.css: Remove unused files (Close: Issue #21)
+	* help/C/fdl-appendix.xml: Remove unused files (Close: Issue #21)
+	* help/C/jquery.js: Remove unused files (Close: Issue #21)
+	* help/C/jquery.syntax.js: Remove unused files (Close: Issue #21)
+	* help/C/yelp.js: Remove unused files (Close: Issue #21)
+	* help/C/gnome-help.sct: Remove unused files (Close: Issue #21)
+	* help/C/jquery.syntax.core.js: Remove unused files (Close: Issue #21)
+	* help/C/jquery.syntax.layout.yelp.js: Remove unused files (Close: Issue #21)
+
+=============
 Version 11.10
 =============
 
