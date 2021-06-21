@@ -15,6 +15,7 @@ BuildRequires:  intltool
 BuildRequires:  itstool
 BuildRequires:  libappstream-glib
 BuildRequires:  desktop-file-utils
+BuildRequires:  geoclue2-devel
 BuildRequires:  geocode-glib-devel
 BuildRequires:  gstreamer1-devel
 BuildRequires:  gstreamer1-plugins-bad-free-devel
@@ -59,6 +60,9 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Mon Jun 21 2021 Ole Aamot <ole@gnome.org> - 11.11-1
+- gnome-internet-radio-locator 11.11 build on Fedora Linux 34
+
 * Thu Jun 17 2021 Ole Aamot <ole@gnome.org> - 11.10-1
 - gnome-internet-radio-locator 11.10 build on Fedora Linux 34
 

@@ -137,8 +137,8 @@ print_location (GClueSimple *simple)
         const char *desc;
 
         location = gclue_simple_get_location (simple);
-        g_print ("\nNew location:\n");
-        g_print ("Latitude:    %f°\nLongitude:   %f°\nAccuracy:    %f meters\n",
+        GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("\nNew location:\n");
+        GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Latitude:    %f°\nLongitude:   %f°\nAccuracy:    %f meters\n",
                  gclue_location_get_latitude (location),
                  gclue_location_get_longitude (location),
                  gclue_location_get_accuracy (location));
@@ -149,17 +149,17 @@ print_location (GClueSimple *simple)
 	
         altitude = gclue_location_get_altitude (location);
         if (altitude != -G_MAXDOUBLE)
-                g_print ("Altitude:    %f meters\n", altitude);
+                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Altitude:    %f meters\n", altitude);
         speed = gclue_location_get_speed (location);
         if (speed >= 0)
-                g_print ("Speed:       %f meters/second\n", speed);
+                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Speed:       %f meters/second\n", speed);
         heading = gclue_location_get_heading (location);
         if (heading >= 0)
-                g_print ("Heading:     %f°\n", heading);
+                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Heading:     %f°\n", heading);
 
         desc = gclue_location_get_description (location);
         if (strlen (desc) > 0)
-                g_print ("Description: %s\n", desc);
+                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Description: %s\n", desc);
 
         timestamp = gclue_location_get_timestamp (location);
         if (timestamp) {
@@ -174,7 +174,7 @@ print_location (GClueSimple *simple)
                        "%c (%s seconds since the Epoch)");
                 g_date_time_unref (date_time);
 
-                g_print ("Timestamp:   %s\n", str);
+                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Timestamp:   %s\n", str);
                 g_free (str);
         }
 }
@@ -491,13 +491,13 @@ add_clicked (GtkButton     *button,
 
 static void
 new_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
-	g_print(_("New Internet Radio Station\n"));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG(_("New Internet Radio Station\n"));
   return;
 }
 
 static void
 search_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
-	g_print(_("Search Internet Radio Station\n"));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG(_("Search Internet Radio Station\n"));
   return;
 }
 
@@ -536,7 +536,7 @@ pause_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
 
 static void
 prev_station(GSimpleAction *simple, GVariant *parameter, gpointer user_data) {
-	g_print(_("Previous Internet Radio Station\n"));
+	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG(_("Previous Internet Radio Station\n"));
 	return;
 }
 
@@ -768,7 +768,7 @@ void on_new_station_clicked(GtkWidget *a,
 		gnome_internet_radio_locator_station_update (stationinfo, selected_station_band, selected_station_description, selected_station_name, selected_station_location, selected_station_uri, selected_station_website);
 		break;
 	default:
-		g_print (_("Nothing\n\n"));
+		GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG (_("Nothing\n\n"));
 		break;
 	}
 	gtk_widget_destroy(station);
@@ -826,7 +826,7 @@ on_search_matches(GtkEntryCompletion *widget,
 	gtk_tree_model_get_value(model, iter, STATION_LOCATION, &city);
 	gtk_tree_model_get_value(model, iter, STATION_URI, &value);
 	gtk_tree_model_get_value(model, iter, STATION_NAME, &station_name);
-/* 	g_print ("on_search_matches: %s\n", (gchar *)g_value_get_string(&city)); */
+/* 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("on_search_matches: %s\n", (gchar *)g_value_get_string(&city)); */
 /* 	location = (gchar *)g_value_get_string(&city); */
 /* 	town = strtok(location, ", "); */
 /* 	country = strtok(NULL, " "); */
@@ -836,27 +836,27 @@ on_search_matches(GtkEntryCompletion *widget,
 /* *\/ */
 /* 	place = geocode_place_new((gchar *)g_value_get_string(&station_name), GEOCODE_PLACE_TYPE_MISCELLANEOUS); */
 
-/* 	g_print ("geocode_place_new:town: %s\n", geocode_place_get_town(place)); */
-/* 	g_print ("geocode_place_new:country: %s\n", geocode_place_get_country(place)); */
+/* 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("geocode_place_new:town: %s\n", geocode_place_get_town(place)); */
+/* 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("geocode_place_new:country: %s\n", geocode_place_get_country(place)); */
 
 /* 	geocode_place_set_town (place, town); */
 /* 	geocode_place_set_country(place, country); */
 
 /* 	geocode_nominatim = geocode_nominatim_new ("https://nominatim.gnome.org/", "ole@gnome.org"); */
 
-/* 	g_print ("geocode_place_get_town: %s\n", geocode_place_get_town(place)); */
-/* 	g_print ("geocode_place_get_country: %s\n", geocode_place_get_country(place)); */
-/* 	/\* g_print ("%s\n", geocode_nominatim_get_city(geocode_nominatim)); *\/ */
+/* 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("geocode_place_get_town: %s\n", geocode_place_get_town(place)); */
+/* 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("geocode_place_get_country: %s\n", geocode_place_get_country(place)); */
+/* 	/\* GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("%s\n", geocode_nominatim_get_city(geocode_nominatim)); *\/ */
 
 /* 	reverse_city = geocode_reverse_new_for_location(geocode_location); */
 /* 	place = geocode_reverse_resolve(reverse_city, err); */
 
 /* 	geocode_location = geocode_place_get_location(place); */
-/* 	g_print ("%f7.3\n", geocode_location_get_latitude(geocode_location)); */
+/* 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("%f7.3\n", geocode_location_get_latitude(geocode_location)); */
 /* 	lat = geocode_location_get_latitude(geocode_location); */
 /* 	lon = geocode_location_get_longitude(geocode_location); */
-/* 	g_print ("lat: %ld\n", lat); */
-/* 	g_print ("lon: %ld\n", lon); */
+/* 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("lat: %ld\n", lat); */
+/* 	GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("lon: %ld\n", lon); */
 
 /*
 	location_city = geocode_location_new (lat, lon, GEOCODE_LOCATION_ACCURACY_CITY);
@@ -896,7 +896,7 @@ on_client_active_notify (GClueClient *client,
         if (gclue_client_get_active (client))
                 return;
 
-        g_print ("Geolocation disabled. Quitting..\n");
+        GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Geolocation disabled. Quitting..\n");
         on_location_timeout (NULL);
 }
 
@@ -916,7 +916,7 @@ on_simple_ready (GObject      *source_object,
         client = gclue_simple_get_client (simple);
         if (client) {
                 g_object_ref (client);
-                g_print ("Client object: %s\n",
+                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Client object: %s\n",
                          g_dbus_proxy_get_object_path (G_DBUS_PROXY (client)));
 
                 g_signal_connect (client,
