@@ -12,6 +12,7 @@ EXTRA_DIST = m4/ChangeLog  \
 	GNU \
 	FEDORA \
 	HACKING \
+	GEOLOCATION \
 	Makefile \
 	NEWS \
 	README \

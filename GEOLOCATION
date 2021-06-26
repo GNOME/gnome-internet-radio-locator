@@ -1,0 +1,9 @@
+You must enable Location Services to run GNOME Internet Radio Locator.
+
+To enable Location Services in GNOME 40, navigate to the Settings app
+and choose Privacy/Location Services and make sure Location Services
+is checked.
+
+Alternatively, run the following command in a GNOME Terminal Console:
+
+    gsettings set org.gnome.system.location enabled true
