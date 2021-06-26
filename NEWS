@@ -6,7 +6,7 @@ Build
 
 	* configure.ac: Version 12.0.0
 	* src/Makefile.am: Add gnome-internet-radio-locator-location.c
-	* src/gnome-internet-radio-locator.c: Deactivate GeoClue code
+	* src/gnome-internet-radio-locator.c: (Close: Issue #27)
 	* src/gnome-internet-radio-locator-location.c: Add GeoClue code
 	* src/gnome-internet-radio-locator-location.h: Add GeoClue code
 
