@@ -60,6 +60,9 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{name}.desktop
 %{_mandir}/man1/%{name}.1*
 
 %changelog
+* Sat Jun 26 2021 Ole Aamot <ole@gnome.org> - 12.0.0-1
+- gnome-internet-radio-locator 12.0.0 build on Fedora Linux 34
+
 * Sat Jun 26 2021 Ole Aamot <ole@gnome.org> - 11.12-1
 - gnome-internet-radio-locator 11.12 build on Fedora Linux 34
 
