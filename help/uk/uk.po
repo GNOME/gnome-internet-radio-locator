@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
-"POT-Creation-Date: 2021-06-26 09:12+0000\n"
-"PO-Revision-Date: 2021-06-26 15:54+0300\n"
+"POT-Creation-Date: 2021-06-26 17:15+0000\n"
+"PO-Revision-Date: 2021-06-26 20:34+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -24,24 +24,31 @@ msgstr "Юрій Чорноіван <yurchor@ukr.net>, 2020"
 
 #. (itstool) path: info/title
 #: C/index.page:8
+#| msgctxt "link"
+#| msgid "GNOME Internet Radio Locator for GNOME 3"
 msgctxt "link"
-msgid "GNOME Internet Radio Locator for GNOME 3"
-msgstr "Визначник інтернет-радіо для GNOME 3"
+msgid "GNOME Internet Radio Locator 12 for GNOME 41"
+msgstr "Визначник інтернет-радіо 12 для GNOME 41"
 
 #. (itstool) path: info/title
 #: C/index.page:9
+#| msgctxt "text"
+#| msgid "GNOME Internet Radio Locator for GNOME 3"
 msgctxt "text"
-msgid "GNOME Internet Radio Locator for GNOME 3"
-msgstr "Визначник інтернет-радіо для GNOME 3"
+msgid "GNOME Internet Radio Locator 12 for GNOME 41"
+msgstr "Визначник інтернет-радіо 12 для GNOME 41"
 
 #. (itstool) path: info/desc
 #: C/index.page:10 C/intro.page:15 C/new.page:11 C/stop.page:14
-#: C/search.page:14 C/exit.page:14
+#: C/search.page:14
+#| msgid ""
+#| "GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio "
+#| "stations around the world."
 msgid ""
-"GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio "
+"GNOME Internet Radio Locator 12 for GNOME 41 lets you locate Internet radio "
 "stations around the world."
 msgstr ""
-"Визначник інтернет-радіо для GNOME 3 надає вам змогу знаходити інтернет-"
+"Визначник інтернет-радіо 12 для GNOME 41 надає вам змогу знаходити інтернет-"
 "радіостанції зі всього світу."
 
 #. (itstool) path: credit/name
@@ -52,37 +59,48 @@ msgstr "Ole Aamot"
 
 #. (itstool) path: credit/years
 #: C/index.page:15
-msgid "2017"
-msgstr "2017"
+msgid "2021"
+msgstr ""
+"2021"
 
 #. (itstool) path: page/title
 #: C/index.page:22
-msgid "<_:media-1/> GNOME Internet Radio Locator for GNOME 3"
-msgstr "<_:media-1/> Визначник інтернет-радіо для GNOME 3"
+#| msgid "<_:media-1/> GNOME Internet Radio Locator for GNOME 3"
+msgid "<_:media-1/> GNOME Internet Radio Locator 12 for GNOME 41"
+msgstr "<_:media-1/> Визначник інтернет-радіо для GNOME 41"
 
 #. (itstool) path: page/p
 #: C/index.page:27
+#| msgid ""
+#| "Welcome to the <app>GNOME Internet Radio Locator for GNOME 3</app> help "
+#| "guide. For a quick introduction into the features of the <app>GNOME "
+#| "Internet Radio Locator for GNOME 3</app>, visit the <link xref=\"intro"
+#| "\">Introduction</link> page."
 msgid ""
-"Welcome to the <app>GNOME Internet Radio Locator for GNOME 3</app> help "
+"Welcome to the <app>GNOME Internet Radio Locator 12 for GNOME 41</app> help "
 "guide. For a quick introduction into the features of the <app>GNOME Internet "
-"Radio Locator for GNOME 3</app>, visit the <link xref=\"intro"
+"Radio Locator 12 for GNOME 41</app>, visit the <link xref=\"intro"
 "\">Introduction</link> page."
 msgstr ""
-"Вітаємо у довіднику з програми <app>Визначник інтернет-радіо для GNOME 3</"
+"Вітаємо у довіднику з програми <app>Визначник інтернет-радіо 12 для GNOME 41</"
 "app>. Щоб ознайомитися із можливостями програми <app>Визначник інтернет-"
-"радіо для GNOME 3</app>, перейдіть до сторінки <link xref=\"intro\">Вступ</"
+"радіо 12 для GNOME 41</app>, перейдіть до сторінки <link xref=\"intro\">Вступ</"
 "link>."
 
 #. (itstool) path: page/p
 #: C/index.page:32
+#| msgid ""
+#| "Other help topics are grouped together into sections below. Enjoy "
+#| "locating free, non-profit, independent Internet radio stations with the "
+#| "<app>GNOME Internet Radio Locator for GNOME 3</app>!"
 msgid ""
 "Other help topics are grouped together into sections below. Enjoy locating "
 "free, non-profit, independent Internet radio stations with the <app>GNOME "
-"Internet Radio Locator for GNOME 3</app>!"
+"Internet Radio Locator 12 for GNOME 41</app>!"
 msgstr ""
 "Інші теми довідки згруповані у розділи нижче. Приємного пошуку вільних, "
 "неприбуткових, незалежних інтернет-радіостанцій за допомогою програми "
-"<app>Визначник інтернет-радіо для GNOME 3</app>!"
+"<app>Визначник інтернет-радіо 12 для GNOME 41</app>!"
 
 #. (itstool) path: section/title
 #. (itstool) path: page/title
@@ -150,12 +168,16 @@ msgstr "Вступ"
 
 #. (itstool) path: page/p
 #: C/intro.page:21
+#| msgid ""
+#| "<app>GNOME Internet Radio Locator for GNOME 3</app> is a free program for "
+#| "listening to free, independent, non-profit radio stations from around the "
+#| "world by streaming over the Internet."
 msgid ""
-"<app>GNOME Internet Radio Locator for GNOME 3</app> is a free program for "
-"listening to free, independent, non-profit radio stations from around the "
-"world by streaming over the Internet."
+"<app>GNOME Internet Radio Locator 12 for GNOME 41</app> is a free program "
+"for listening to free, independent, non-profit radio stations from around "
+"the world by streaming over the Internet."
 msgstr ""
-"<app>Визначник інтернет-радіо для GNOME 3</app> — вільна програма для "
+"<app>Визначник інтернет-радіо 12 для GNOME 41</app> — вільна програма для "
 "прослуховування вільних, незалежних, неприбуткових радіостанцій з усього "
 "світу, які транслюють дані у інтернет."
 
@@ -165,27 +187,36 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/intro.page:25
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='media/gnome-internet-radio-locator-main.png' "
+#| "md5='f4890cee67ffed7cdf717123f50298a4'"
 msgctxt "_"
 msgid ""
 "external ref='media/gnome-internet-radio-locator-main.png' "
-"md5='f4890cee67ffed7cdf717123f50298a4'"
+"md5='95e10105049db57d150ccab244b26a50'"
 msgstr ""
 "external ref='media/gnome-internet-radio-locator-main.png' "
-"md5='f4890cee67ffed7cdf717123f50298a4'"
+"md5='95e10105049db57d150ccab244b26a50'"
 
 #. (itstool) path: page/p
 #: C/intro.page:27
 msgid "You must enable Location Services to run GNOME Internet Radio Locator."
 msgstr ""
-"Щоб мати змогу користуватися  «Визначником інтернет-радіо GNOME», вам слід увімкнути служби визначення місця розташування."
+"Щоб мати змогу користуватися  «Визначником інтернет-радіо GNOME», вам слід "
+"увімкнути служби визначення місця розташування."
 
 #. (itstool) path: page/p
 #: C/intro.page:29
+#| msgid ""
+#| "To enable Location Services in GNOME 40, navigate to the Settings app and "
+#| "choose Privacy/Location Services and make sure Location Services is "
+#| "checked."
 msgid ""
-"To enable Location Services in GNOME 40, navigate to the Settings app and "
+"To enable Location Services in GNOME 41, navigate to the Settings app and "
 "choose Privacy/Location Services and make sure Location Services is checked."
 msgstr ""
-"Щоб увімкнути служби визначення місця розташування у GNOME 40, запустіть програму «Параметри», виберіть «Конфіденційність/Служби розташування» і переконайтеся, що позначено пункт «Служби розташування»."
+"Щоб увімкнути служби визначення місця розташування у GNOME 41, запустіть програму «Параметри», виберіть «Конфіденційність/Служби розташування» і переконайтеся, що позначено пункт «Служби розташування»."
 
 #. (itstool) path: page/p
 #: C/intro.page:33
@@ -197,16 +228,18 @@ msgstr ""
 #: C/intro.page:35
 #, no-wrap
 msgid "gsettings set org.gnome.system.location enabled true"
-msgstr ""
-"gsettings set org.gnome.system.location enabled true"
+msgstr "gsettings set org.gnome.system.location enabled true"
 
 #. (itstool) path: page/p
 #: C/new.page:14
+#| msgid ""
+#| "It is possible to add new, personal Internet radio stations in <app>GNOME "
+#| "Internet Radio Locator for GNOME 3</app> with the \"New\" button."
 msgid ""
 "It is possible to add new, personal Internet radio stations in <app>GNOME "
-"Internet Radio Locator for GNOME 3</app> with the \"New\" button."
+"Internet Radio Locator 12 for GNOME 41</app> with the \"New\" button."
 msgstr ""
-"У програмі <app>Визначник інтернет-радіо для GNOME 3</app> можна додавати "
+"У програмі <app>Визначник інтернет-радіо 12 для GNOME 41</app> можна додавати "
 "нові особисті інтернет-радіостанції за допомогою натискання кнопки "
 "«Створити»."
 
@@ -286,11 +319,15 @@ msgstr "Пошук за місцем"
 
 #. (itstool) path: page/p
 #: C/search.page:19
+#| msgid ""
+#| "It is possible to search for supported radio stations based on the "
+#| "location of the station in <app>GNOME Internet Radio Locator for GNOME 3</"
+#| "app>."
 msgid ""
 "It is possible to search for supported radio stations based on the location "
-"of the station in <app>GNOME Internet Radio Locator for GNOME 3</app>."
+"of the station in <app>GNOME Internet Radio Locator 12 for GNOME 41</app>."
 msgstr ""
-"У програмі <app>Визначник інтернет-радіо для GNOME 3</app> передбачено "
+"У програмі <app>Визначник інтернет-радіо 12 для GNOME 41</app> передбачено "
 "можливість пошуку підтримуваних радіостанцій на основі розташування станції."
 
 #. (itstool) path: page/p
@@ -706,13 +743,28 @@ msgstr ""
 "external ref='media/gnome-internet-radio-locator-search.png' "
 "md5='938f6db389ea4b220c4f690e2e6a7b54'"
 
+#. (itstool) path: info/desc
+#: C/exit.page:14
+#| msgid ""
+#| "GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio "
+#| "stations around the world."
+msgid ""
+"GNOME Internet Radio Locator 12 for GNOME 41 lets you locate and listen to "
+"Internet radio stations from around the world."
+msgstr ""
+"Визначник інтернет-радіо 12 для GNOME 41 надає вам змогу знаходити і слухати інтернет-"
+"радіостанції зі всього світу."
+
 #. (itstool) path: page/p
 #: C/exit.page:19
+#| msgid ""
+#| "It is possible to exit the <app>GNOME Internet Radio Locator for GNOME 3</"
+#| "app> with the \"Exit\" button."
 msgid ""
-"It is possible to exit the <app>GNOME Internet Radio Locator for GNOME 3</"
-"app> with the \"Exit\" button."
+"It is possible to exit the <app>GNOME Internet Radio Locator 12 for GNOME "
+"41</app> with the \"Exit\" button."
 msgstr ""
-"Вийти з програми <app>Визначник інтернет-радіо для GNOME 3</app> можна за "
+"Вийти з програми <app>Визначник інтернет-радіо 12 для GNOME 41</app> можна за "
 "допомогою натискання кнопки «Вийти»."
 
 #. (itstool) path: page/media
@@ -728,3 +780,6 @@ msgid ""
 msgstr ""
 "external ref='media/gnome-internet-radio-locator-exit.png' "
 "md5='6764a256ab4ca47f3d11f3d065ffa603'"
+
+#~ msgid "2017"
+#~ msgstr "2017"
