@@ -34,6 +34,7 @@
 
 #include "gnome-internet-radio-locator.h"
 #include "gnome-internet-radio-locator-gui.h"
+#include "gnome-internet-radio-locator-location.h"
 #include "gnome-internet-radio-locator-markers.h"
 #include "gnome-internet-radio-locator-player.h"
 
@@ -85,109 +86,6 @@ extern struct GNOMEInternetRadioLocatorMedia *media;
 GStatBuf stats;
 
 ChamplainView *view;
-
-/* Commandline options */
-static gint timeout = 30; /* seconds */
-static GClueAccuracyLevel accuracy_level = GCLUE_ACCURACY_LEVEL_EXACT;
-static gint time_threshold;
-
-static GOptionEntry entries[] =
-{
-        { "timeout",
-          't',
-          0,
-          G_OPTION_ARG_INT,
-          &timeout,
-          N_("Exit after T seconds. Default: 30"),
-          "T" },
-        { "time-threshold",
-          'i',
-          0,
-          G_OPTION_ARG_INT,
-          &time_threshold,
-          N_("Only report location update after T seconds. "
-             "Default: 0 (report new location without any delay)"),
-          "T" },
-        { "accuracy-level",
-          'a',
-          0,
-          G_OPTION_ARG_INT,
-          &accuracy_level,
-          N_("Request accuracy level A. "
-             "Country = 1, "
-             "City = 4, "
-             "Neighborhood = 5, "
-             "Street = 6, "
-             "Exact = 8."),
-          "A" },
-        { NULL }
-};
-
-GClueSimple *simple = NULL;
-GClueClient *client = NULL;
-GMainLoop *main_loop;
-
-static void
-print_location (GClueSimple *simple)
-{
-        GClueLocation *location;
-        gdouble altitude, speed, heading;
-        GVariant *timestamp;
-        GTimeVal tv = { 0 };
-        const char *desc;
-
-        location = gclue_simple_get_location (simple);
-        GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("\nNew location:\n");
-        GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Latitude:    %f°\nLongitude:   %f°\nAccuracy:    %f meters\n",
-                 gclue_location_get_latitude (location),
-                 gclue_location_get_longitude (location),
-                 gclue_location_get_accuracy (location));
-
-	champlain_view_center_on (CHAMPLAIN_VIEW (view),
-				  gclue_location_get_latitude (location),
-				  gclue_location_get_longitude (location));
-	
-        altitude = gclue_location_get_altitude (location);
-        if (altitude != -G_MAXDOUBLE)
-                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Altitude:    %f meters\n", altitude);
-        speed = gclue_location_get_speed (location);
-        if (speed >= 0)
-                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Speed:       %f meters/second\n", speed);
-        heading = gclue_location_get_heading (location);
-        if (heading >= 0)
-                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Heading:     %f°\n", heading);
-
-        desc = gclue_location_get_description (location);
-        if (strlen (desc) > 0)
-                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Description: %s\n", desc);
-
-        timestamp = gclue_location_get_timestamp (location);
-        if (timestamp) {
-                GDateTime *date_time;
-                gchar *str;
-
-                g_variant_get (timestamp, "(tt)", &tv.tv_sec, &tv.tv_usec);
-
-                date_time = g_date_time_new_from_timeval_local (&tv);
-                str = g_date_time_format
-                      (date_time,
-                       "%c (%s seconds since the Epoch)");
-                g_date_time_unref (date_time);
-
-                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Timestamp:   %s\n", str);
-                g_free (str);
-        }
-}
-
-static gboolean
-on_location_timeout (gpointer user_data)
-{
-        g_clear_object (&client);
-        g_clear_object (&simple);
-        g_main_loop_quit (main_loop);
-
-        return FALSE;
-}
 
 gchar *
 str_channels (GNOMEInternetRadioLocatorChannels type) {
@@ -888,49 +786,6 @@ on_search_matches(GtkEntryCompletion *widget,
 }
 
 
-static void
-on_client_active_notify (GClueClient *client,
-                         GParamSpec *pspec,
-                         gpointer    user_data)
-{
-        if (gclue_client_get_active (client))
-                return;
-
-        GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Geolocation disabled. Quitting..\n");
-        on_location_timeout (NULL);
-}
-
-static void
-on_simple_ready (GObject      *source_object,
-                 GAsyncResult *res,
-                 gpointer      user_data)
-{
-        GError *error = NULL;
-
-        simple = gclue_simple_new_finish (res, &error);
-        if (error != NULL) {
-            g_critical ("Failed to connect to GeoClue2 service: %s", error->message);
-
-            exit (-1);
-        }
-        client = gclue_simple_get_client (simple);
-        if (client) {
-                g_object_ref (client);
-                GNOME_INTERNET_RADIO_LOCATOR_DEBUG_MSG ("Client object: %s\n",
-                         g_dbus_proxy_get_object_path (G_DBUS_PROXY (client)));
-
-                g_signal_connect (client,
-                                  "notify::active",
-                                  G_CALLBACK (on_client_active_notify),
-                                  NULL);
-        }
-        print_location (simple);
-
-        g_signal_connect (simple,
-                          "notify::location",
-                          G_CALLBACK (print_location),
-                          user_data);
-}
 
 int
 main (int argc,
@@ -944,8 +799,6 @@ main (int argc,
 	GtkTreeIter iter;
 	GNOMEInternetRadioLocatorStationInfo *stationinfo, *localstation;
 	guint context_id;
-	GClueLocation *location;
-        gdouble altitude, speed, heading;
         GVariant *timestamp;
         GTimeVal tv = { 0 };
         const char *desc;
@@ -996,12 +849,7 @@ main (int argc,
 	license_actor = champlain_view_get_license_actor (view);
 	champlain_license_set_extra_text (license_actor, "Free Internet Radio");
 	/* FIXME: New Haven, Connecticut */
-	// champlain_view_center_on (CHAMPLAIN_VIEW (view), 41.298434349999994,-72.93102342707913);
-	gclue_simple_new ("gnome-internet-radio-locator",
-			  accuracy_level,
-			  time_threshold,
-			  on_simple_ready,
-			  CHAMPLAIN_VIEW (view));
+	champlain_view_center_on (CHAMPLAIN_VIEW (view), 41.298434349999994,-72.93102342707913);
 	
 	// location = gclue_simple_get_location (simple);
 	
@@ -1033,6 +881,15 @@ main (int argc,
 	g_signal_connect(button, "clicked", G_CALLBACK (on_new_station_clicked), view);
 	gtk_container_add (GTK_CONTAINER (bbox), button);
 
+#if 0 /* FIXME: GeoClue2 Location Services */
+	button = gtk_button_new();
+	image = gtk_image_new_from_icon_name("media-playback-start", GTK_ICON_SIZE_BUTTON);
+	gtk_button_set_image (GTK_BUTTON (button), image);
+
+	gtk_button_set_label (GTK_BUTTON (button), _("Discover Location"));
+	g_signal_connect(button, "clicked", G_CALLBACK (location_main), CHAMPLAIN_VIEW (view));
+	gtk_container_add (GTK_CONTAINER (bbox), button);
+#endif
 	memset(&stats, 0, sizeof(stats));
 
 	input = gtk_entry_new();
