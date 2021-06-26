@@ -2,21 +2,20 @@
 # Copyright (C) 2020 gnome-internet-radio-locator's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
-"POT-Creation-Date: 2020-07-21 15:34+0000\n"
-"PO-Revision-Date: 2020-07-27 19:33+0300\n"
+"POT-Creation-Date: 2021-06-26 09:12+0000\n"
+"PO-Revision-Date: 2021-06-26 15:54+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 20.07.70\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.12.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -42,8 +41,8 @@ msgid ""
 "GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio "
 "stations around the world."
 msgstr ""
-"Визначник інтернет-радіо для GNOME 3 надає вам змогу знаходити"
-" інтернет-радіостанції зі всього світу."
+"Визначник інтернет-радіо для GNOME 3 надає вам змогу знаходити інтернет-"
+"радіостанції зі всього світу."
 
 #. (itstool) path: credit/name
 #: C/index.page:13 C/intro.page:9 C/new.page:7 C/stop.page:9 C/zoom.page:9
@@ -69,9 +68,10 @@ msgid ""
 "Radio Locator for GNOME 3</app>, visit the <link xref=\"intro"
 "\">Introduction</link> page."
 msgstr ""
-"Вітаємо у довіднику з програми <app>Визначник інтернет-радіо для GNOME 3</app"
-">. Щоб ознайомитися із можливостями програми <app>Визначник інтернет-радіо"
-" для GNOME 3</app>, перейдіть до сторінки <link xref=\"intro\">Вступ</link>."
+"Вітаємо у довіднику з програми <app>Визначник інтернет-радіо для GNOME 3</"
+"app>. Щоб ознайомитися із можливостями програми <app>Визначник інтернет-"
+"радіо для GNOME 3</app>, перейдіть до сторінки <link xref=\"intro\">Вступ</"
+"link>."
 
 #. (itstool) path: page/p
 #: C/index.page:32
@@ -80,9 +80,9 @@ msgid ""
 "free, non-profit, independent Internet radio stations with the <app>GNOME "
 "Internet Radio Locator for GNOME 3</app>!"
 msgstr ""
-"Інші теми довідки згруповані у розділи нижче. Приємного пошуку вільних,"
-" неприбуткових, незалежних інтернет-радіостанцій за допомогою програми <app"
-">Визначник інтернет-радіо для GNOME 3</app>!"
+"Інші теми довідки згруповані у розділи нижче. Приємного пошуку вільних, "
+"неприбуткових, незалежних інтернет-радіостанцій за допомогою програми "
+"<app>Визначник інтернет-радіо для GNOME 3</app>!"
 
 #. (itstool) path: section/title
 #. (itstool) path: page/title
@@ -106,8 +106,8 @@ msgid ""
 "<link xref=\"search\">Search</link> for free, non-profit, independent radio "
 "stations by location."
 msgstr ""
-"<link xref=\"search\">Пошук</link> вільних, неприбуткових, незалежних"
-" інтернет-радіостанцій за місцем."
+"<link xref=\"search\">Пошук</link> вільних, неприбуткових, незалежних "
+"інтернет-радіостанцій за місцем."
 
 #. (itstool) path: section/title
 #: C/index.page:48
@@ -118,8 +118,8 @@ msgstr "Збільшення і зменшення масштабу мапи і�
 #: C/index.page:49
 msgid "<link xref=\"zoom\">Zoom In/Out</link> of the free radio station map."
 msgstr ""
-"<link xref=\"zoom\">Збільшення і зменшення масштабу</link> мапи вільних"
-" радіостанцій."
+"<link xref=\"zoom\">Збільшення і зменшення масштабу</link> мапи вільних "
+"радіостанцій."
 
 #. (itstool) path: section/title
 #: C/index.page:53
@@ -155,9 +155,9 @@ msgid ""
 "listening to free, independent, non-profit radio stations from around the "
 "world by streaming over the Internet."
 msgstr ""
-"<app>Визначник інтернет-радіо для GNOME 3</app> — вільна програма для"
-" прослуховування вільних, незалежних, неприбуткових радіостанцій з усього"
-" світу, які транслюють дані у інтернет."
+"<app>Визначник інтернет-радіо для GNOME 3</app> — вільна програма для "
+"прослуховування вільних, незалежних, неприбуткових радіостанцій з усього "
+"світу, які транслюють дані у інтернет."
 
 #. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
@@ -174,14 +174,41 @@ msgstr ""
 "md5='f4890cee67ffed7cdf717123f50298a4'"
 
 #. (itstool) path: page/p
+#: C/intro.page:27
+msgid "You must enable Location Services to run GNOME Internet Radio Locator."
+msgstr ""
+"Щоб мати змогу користуватися  «Визначником інтернет-радіо GNOME», вам слід увімкнути служби визначення місця розташування."
+
+#. (itstool) path: page/p
+#: C/intro.page:29
+msgid ""
+"To enable Location Services in GNOME 40, navigate to the Settings app and "
+"choose Privacy/Location Services and make sure Location Services is checked."
+msgstr ""
+"Щоб увімкнути служби визначення місця розташування у GNOME 40, запустіть програму «Параметри», виберіть «Конфіденційність/Служби розташування» і переконайтеся, що позначено пункт «Служби розташування»."
+
+#. (itstool) path: page/p
+#: C/intro.page:33
+msgid "Alternatively, run the following command in a GNOME Terminal console:"
+msgstr ""
+"Крім того, ви можете скористатися такою командою у консолі «Термінала GNOME»:"
+
+#. (itstool) path: page/code
+#: C/intro.page:35
+#, no-wrap
+msgid "gsettings set org.gnome.system.location enabled true"
+msgstr ""
+"gsettings set org.gnome.system.location enabled true"
+
+#. (itstool) path: page/p
 #: C/new.page:14
 msgid ""
 "It is possible to add new, personal Internet radio stations in <app>GNOME "
 "Internet Radio Locator for GNOME 3</app> with the \"New\" button."
 msgstr ""
-"У програмі <app>Визначник інтернет-радіо для GNOME 3</app> можна додавати"
-" нові особисті інтернет-радіостанції за"
-" допомогою натискання кнопки «Створити»."
+"У програмі <app>Визначник інтернет-радіо для GNOME 3</app> можна додавати "
+"нові особисті інтернет-радіостанції за допомогою натискання кнопки "
+"«Створити»."
 
 #. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
@@ -263,8 +290,8 @@ msgid ""
 "It is possible to search for supported radio stations based on the location "
 "of the station in <app>GNOME Internet Radio Locator for GNOME 3</app>."
 msgstr ""
-"У програмі <app>Визначник інтернет-радіо для GNOME 3</app> передбачено"
-" можливість пошуку підтримуваних радіостанцій на основі розташування станції."
+"У програмі <app>Визначник інтернет-радіо для GNOME 3</app> передбачено "
+"можливість пошуку підтримуваних радіостанцій на основі розташування станції."
 
 #. (itstool) path: page/p
 #: C/search.page:21
@@ -272,8 +299,8 @@ msgid ""
 "Type a city name for a supported Free Radio station in a query field and hit "
 "<key>ENTER</key>."
 msgstr ""
-"Введіть назву міста для підтримуваних вільних радіостанцій у поле запиту і"
-" натисніть клавішу <key>Enter</key>."
+"Введіть назву міста для підтримуваних вільних радіостанцій у поле запиту і "
+"натисніть клавішу <key>Enter</key>."
 
 #. (itstool) path: page/p
 #: C/search.page:24
@@ -685,8 +712,8 @@ msgid ""
 "It is possible to exit the <app>GNOME Internet Radio Locator for GNOME 3</"
 "app> with the \"Exit\" button."
 msgstr ""
-"Вийти з програми <app>Визначник інтернет-радіо для GNOME 3</app> можна за"
-" допомогою натискання кнопки «Вийти»."
+"Вийти з програми <app>Визначник інтернет-радіо для GNOME 3</app> можна за "
+"допомогою натискання кнопки «Вийти»."
 
 #. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
