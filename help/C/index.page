@@ -5,14 +5,14 @@
       id="index">
 
   <info>
-    <title type="link">GNOME Internet Radio Locator for GNOME 3</title>
-    <title type="text">GNOME Internet Radio Locator for GNOME 3</title>
-    <desc>GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio stations around the world.</desc>
-    <revision pkgversion="0.7" date="2017-07-30" status="candidate"/>
+    <title type="link">GNOME Internet Radio Locator 12 for GNOME 41</title>
+    <title type="text">GNOME Internet Radio Locator 12 for GNOME 41</title>
+    <desc>GNOME Internet Radio Locator 12 for GNOME 41 lets you locate Internet radio stations around the world.</desc>
+    <revision pkgversion="0.11" date="2021-06-26" status="candidate"/>
     <credit type="author copyright">
       <name>Ole Aamot</name>
       <email>ole@src.gnome.org</email>
-      <years>2017</years>
+      <years>2021</years>
     </credit>
 
    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude" /> 
@@ -21,17 +21,17 @@
 
    <title>
     <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-icon.png" its:translate="no" />
-    GNOME Internet Radio Locator for GNOME 3
+    GNOME Internet Radio Locator 12 for GNOME 41
   </title>
 
-  <p>Welcome to the <app>GNOME Internet Radio Locator for GNOME
-  3</app> help guide.  For a quick introduction into the features of
-  the <app>GNOME Internet Radio Locator for GNOME 3</app>, visit the
+  <p>Welcome to the <app>GNOME Internet Radio Locator 12 for GNOME
+  41</app> help guide.  For a quick introduction into the features of
+  the <app>GNOME Internet Radio Locator 12 for GNOME 41</app>, visit the
   <link xref="intro">Introduction</link> page.</p>
 
   <p>Other help topics are grouped together into sections below.
   Enjoy locating free, non-profit, independent Internet radio stations
-  with the <app>GNOME Internet Radio Locator for GNOME 3</app>!</p>
+  with the <app>GNOME Internet Radio Locator 12 for GNOME 41</app>!</p>
 
   <section id="new" style="2column">
     <title>New</title>

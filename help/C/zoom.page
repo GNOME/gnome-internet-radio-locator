@@ -4,7 +4,7 @@
 
   <info>
     <link type="guide" xref="index" group="#first"/>
-    <revision pkgversion="0.7" date="2017-07-30" status="candidate"/>
+    <revision pkgversion="0.11" date="2021-06-26" status="candidate"/>
     <credit type="author copyright">
       <name>Ole Aamot</name>
       <email>ole@src.gnome.org</email>

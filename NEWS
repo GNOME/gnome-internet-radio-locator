@@ -1,3 +1,26 @@
+==============
+Version 12.0.0
+==============
+
+Build
+
+	* configure.ac: Version 12.0.0
+
+Documentation
+
+	* help/C/exit.page: Bump version
+	* help/C/index.page: Bump version
+	* help/C/intro.page: Bump version
+	* help/C/media/gnome-internet-radio-locator-main.png: Bump version
+	* help/C/new.page: Bump version
+	* help/C/search.page: Bump version
+	* help/C/stop.page: Bump version
+	* help/C/zoom.page: Bump version
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Bump version
+
 =============
 Version 11.12
 =============

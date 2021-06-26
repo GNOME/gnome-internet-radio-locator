@@ -4,14 +4,14 @@
 
   <info>
     <link type="guide" xref="index" group="#first"/>
-    <revision pkgversion="0.7" date="2017-07-30" status="candidate"/>
+    <revision pkgversion="0.11" date="2021-06-26" status="candidate"/>
     <credit type="author copyright">
       <name>Ole Aamot</name>
       <email>ole@src.gnome.org</email>
     </credit>
     
     <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>    
-    <desc>GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio stations around the world.</desc>
+    <desc>GNOME Internet Radio Locator 12 for GNOME 41 lets you locate Internet radio stations around the world.</desc>
   </info>
 
   <title>Stop playback of Internet Radio Station</title>
