@@ -2,10 +2,12 @@
 Version 11.12
 =============
 
-Build
+Documentation
 
+	* GEOLOCATION (Close: Issue #27)
 	* help/C/C.css: Remove unused files (Close: Issue #21)
 	* help/C/fdl-appendix.xml: Remove unused files (Close: Issue #21)
+	* help/C/intro.page (Close: Issue #27)
 	* help/C/jquery.js: Remove unused files (Close: Issue #21)
 	* help/C/jquery.syntax.js: Remove unused files (Close: Issue #21)
 	* help/C/yelp.js: Remove unused files (Close: Issue #21)

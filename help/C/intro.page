@@ -23,5 +23,15 @@
   stations from around the world by streaming over the Internet.</p>
 
   <media type="image" mime="image/png" src="media/gnome-internet-radio-locator-main.png" />
-  
+
+  <p>You must enable Location Services to run GNOME Internet Radio Locator.</p>
+
+  <p>To enable Location Services in GNOME 40, navigate to the Settings app
+  and choose Privacy/Location Services and make sure Location Services
+  is checked.</p>
+
+  <p>Alternatively, run the following command in a GNOME Terminal console:</p>
+
+  <code>gsettings set org.gnome.system.location enabled true</code>
+
 </page>
