@@ -1,13 +1,14 @@
 # Swedish translation for gnome-internet-radio-locator.
-# Copyright © 2018 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# Copyright © 2018-2021 gnome-internet-radio-locator's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-internet-radio-locator package.
 # Isak Östlund <translate@catnip.nu>, 2018.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2020, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
-"POT-Creation-Date: 2020-07-12 11:33+0000\n"
-"PO-Revision-Date: 2020-12-08 22:29+0100\n"
+"POT-Creation-Date: 2021-06-26 17:15+0000\n"
+"PO-Revision-Date: 2021-06-28 12:13+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -29,24 +30,24 @@ msgstr ""
 #. (itstool) path: info/title
 #: C/index.page:8
 msgctxt "link"
-msgid "GNOME Internet Radio Locator for GNOME 3"
-msgstr "GNOME:s internetradioletare för GNOME 3"
+msgid "GNOME Internet Radio Locator 12 for GNOME 41"
+msgstr "GNOME:s internetradioletare 12 för GNOME 41"
 
 #. (itstool) path: info/title
 #: C/index.page:9
 msgctxt "text"
-msgid "GNOME Internet Radio Locator for GNOME 3"
-msgstr "GNOME:s internetradioletare för GNOME 3"
+msgid "GNOME Internet Radio Locator 12 for GNOME 41"
+msgstr "GNOME:s internetradioletare 12 för GNOME 41"
 
 #. (itstool) path: info/desc
 #: C/index.page:10 C/intro.page:15 C/new.page:11 C/stop.page:14
-#: C/search.page:14 C/exit.page:14
+#: C/search.page:14
 msgid ""
-"GNOME Internet Radio Locator for GNOME 3 lets you locate Internet radio "
+"GNOME Internet Radio Locator 12 for GNOME 41 lets you locate Internet radio "
 "stations around the world."
 msgstr ""
-"Med GNOME:s internetradioletare för GNOME 3 hittar du internetradiostationer "
-"från hela världen."
+"Med GNOME:s internetradioletare 12 för GNOME 41 hittar du "
+"internetradiostationer från hela världen."
 
 #. (itstool) path: credit/name
 #: C/index.page:13 C/intro.page:9 C/new.page:7 C/stop.page:9 C/zoom.page:9
@@ -56,36 +57,36 @@ msgstr "Ole Aamot"
 
 #. (itstool) path: credit/years
 #: C/index.page:15
-msgid "2017"
-msgstr "2017"
+msgid "2021"
+msgstr "2021"
 
 #. (itstool) path: page/title
 #: C/index.page:22
-msgid "<_:media-1/> GNOME Internet Radio Locator for GNOME 3"
-msgstr "<_:media-1/> GNOME:s internetradioletare för GNOME 3"
+msgid "<_:media-1/> GNOME Internet Radio Locator 12 for GNOME 41"
+msgstr "<_:media-1/> GNOME:s internetradioletare 12 för GNOME 41"
 
 #. (itstool) path: page/p
 #: C/index.page:27
 msgid ""
-"Welcome to the <app>GNOME Internet Radio Locator for GNOME 3</app> help "
+"Welcome to the <app>GNOME Internet Radio Locator 12 for GNOME 41</app> help "
 "guide. For a quick introduction into the features of the <app>GNOME Internet "
-"Radio Locator for GNOME 3</app>, visit the <link xref=\"intro"
+"Radio Locator 12 for GNOME 41</app>, visit the <link xref=\"intro"
 "\">Introduction</link> page."
 msgstr ""
-"Välkommen till hjälpguiden för <app>GNOME:s internetradioletare för GNOME 3</"
-"app>. För en snabbintroduktion av programmets funktioner, besök <link xref="
-"\"intro\">introduktionssidan</link>."
+"Välkommen till hjälpguiden för <app>GNOME:s internetradioletare 12 för GNOME "
+"41</app>. För en snabbintroduktion av programmets funktioner, besök <link "
+"xref=\"intro\">introduktionssidan</link>."
 
 #. (itstool) path: page/p
 #: C/index.page:32
 msgid ""
 "Other help topics are grouped together into sections below. Enjoy locating "
 "free, non-profit, independent Internet radio stations with the <app>GNOME "
-"Internet Radio Locator for GNOME 3</app>!"
+"Internet Radio Locator 12 for GNOME 41</app>!"
 msgstr ""
 "Andra hjälpämnen har grupperats in i sektioner nedan. Hitta gratis, ideella, "
-"oberoende internetradiostationer med <app>GNOME:s internetradioletare för "
-"GNOME 3</app>!"
+"oberoende internetradiostationer med <app>GNOME:s internetradioletare 12 för "
+"GNOME 41</app>!"
 
 #. (itstool) path: section/title
 #. (itstool) path: page/title
@@ -152,13 +153,13 @@ msgstr "Intro"
 #. (itstool) path: page/p
 #: C/intro.page:21
 msgid ""
-"<app>GNOME Internet Radio Locator for GNOME 3</app> is a free program for "
-"listening to free, independent, non-profit radio stations from around the "
-"world by streaming over the Internet."
+"<app>GNOME Internet Radio Locator 12 for GNOME 41</app> is a free program "
+"for listening to free, independent, non-profit radio stations from around "
+"the world by streaming over the Internet."
 msgstr ""
-"<app>GNOME:s internetradioletare för GNOME 3</app> är ett fritt program för "
-"att lyssna på gratis, oberoende, ideella radiostationer från hela världen "
-"över nätet."
+"<app>GNOME:s internetradioletare 12 för GNOME 41</app> är ett fritt program "
+"för att lyssna på gratis, oberoende, ideella radiostationer från hela "
+"världen över nätet."
 
 #. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
@@ -166,20 +167,53 @@ msgstr ""
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/intro.page:25
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='media/gnome-internet-radio-locator-main.png' "
+#| "md5='f4890cee67ffed7cdf717123f50298a4'"
 msgctxt "_"
 msgid ""
 "external ref='media/gnome-internet-radio-locator-main.png' "
-"md5='f4890cee67ffed7cdf717123f50298a4'"
-msgstr "1"
+"md5='95e10105049db57d150ccab244b26a50'"
+msgstr ""
+"external ref='media/gnome-internet-radio-locator-main.png' "
+"md5='95e10105049db57d150ccab244b26a50'"
+
+#. (itstool) path: page/p
+#: C/intro.page:27
+msgid "You must enable Location Services to run GNOME Internet Radio Locator."
+msgstr ""
+"Du måste aktivera platstjänster för att köra GNOME:s internetradioletare."
+
+#. (itstool) path: page/p
+#: C/intro.page:29
+msgid ""
+"To enable Location Services in GNOME 41, navigate to the Settings app and "
+"choose Privacy/Location Services and make sure Location Services is checked."
+msgstr ""
+"För att aktivera platstjänster i GNOME 41, navigera till programmet "
+"Inställningar och välj Sekretess/Platstjänster och säkerställ att "
+"Platstjänster är ikryssat."
+
+#. (itstool) path: page/p
+#: C/intro.page:33
+msgid "Alternatively, run the following command in a GNOME Terminal console:"
+msgstr "Alternativt kan du köra följande kommando i en GNOME-terminalkonsol:"
+
+#. (itstool) path: page/code
+#: C/intro.page:35
+#, no-wrap
+msgid "gsettings set org.gnome.system.location enabled true"
+msgstr "gsettings set org.gnome.system.location enabled true"
 
 #. (itstool) path: page/p
 #: C/new.page:14
 msgid ""
 "It is possible to add new, personal Internet radio stations in <app>GNOME "
-"Internet Radio Locator for GNOME 3</app> with the \"New\" button."
+"Internet Radio Locator 12 for GNOME 41</app> with the \"New\" button."
 msgstr ""
 "Det är möjligt att lägga till nya, personliga internetradiostationer i "
-"programmet genom knappen ”Ny”."
+"<app>GNOME:s internetradioletare 12 för GNOME 41</app> genom knappen ”Ny”."
 
 #. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
@@ -252,10 +286,10 @@ msgstr "Sök efter plats"
 #: C/search.page:19
 msgid ""
 "It is possible to search for supported radio stations based on the location "
-"of the station in <app>GNOME Internet Radio Locator for GNOME 3</app>."
+"of the station in <app>GNOME Internet Radio Locator 12 for GNOME 41</app>."
 msgstr ""
 "Det går att söka efter radiostationer som stöds via stationens plats i "
-"<app>GNOME:s internetradioletare för GNOME 3</app>."
+"<app>GNOME:s internetradioletare 12 för GNOME 41</app>."
 
 #. (itstool) path: page/p
 #: C/search.page:21
@@ -668,14 +702,23 @@ msgid ""
 "md5='938f6db389ea4b220c4f690e2e6a7b54'"
 msgstr "1"
 
+#. (itstool) path: info/desc
+#: C/exit.page:14
+msgid ""
+"GNOME Internet Radio Locator 12 for GNOME 41 lets you locate and listen to "
+"Internet radio stations from around the world."
+msgstr ""
+"Med GNOME:s internetradioletare 12 för GNOME 41 hittar du "
+"internetradiostationer från hela världen."
+
 #. (itstool) path: page/p
 #: C/exit.page:19
 msgid ""
-"It is possible to exit the <app>GNOME Internet Radio Locator for GNOME 3</"
-"app> with the \"Exit\" button."
+"It is possible to exit the <app>GNOME Internet Radio Locator 12 for GNOME "
+"41</app> with the \"Exit\" button."
 msgstr ""
-"Det går att avsluta <app>GNOME:s internetradioletare för GNOME 3</app> med "
-"knappen ”Avsluta”."
+"Det går att avsluta<app>GNOME:s internetradioletare 12 för GNOME 41</app> "
+"med knappen ”Avsluta”."
 
 #. (itstool) path: page/media
 #. This is a reference to an external file such as an image or video. When
