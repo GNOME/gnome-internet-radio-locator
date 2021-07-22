@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-5.0.dtd">
-<gnome_internet_radio_locator version="12.0.0">
+<gnome_internet_radio_locator version="12.0.1">
   <station band="Online" id="bbcradio1" name="BBC - Radio 1" rank="1.0" type="gov">
     <location>United Kingdom</location>
     <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_radio_one" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />

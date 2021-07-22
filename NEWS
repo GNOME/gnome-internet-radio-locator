@@ -1,4 +1,20 @@
 ==============
+Version 12.0.1
+==============
+
+Build
+
+	* gnome-internet-radio-locator.doap (Close: GNOME/gnome-internet-radio-locator!7)
+	* gnome-internet-radio-locator.spec.in (Close: bugzilla.redhat.com/1517451)
+	* src/gnome-internet-radio-locator-5.0.dtd (@Yasumoto Tweaks to more closely match the DTD)
+	* src/gnome-internet-radio-locator.xml (@Yasumoto Add a few more stations from SomaFM)
+
+Documentation
+
+	* AUTHORS: Add Joe Smith (SomaFM and DTD fixes)
+	* THANKS: Add Joe Smith (SomaFM and DTD fixes)
+
+==============
 Version 12.0.0
 ==============
 
