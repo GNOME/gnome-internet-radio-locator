@@ -816,7 +816,7 @@ In fact we even split our adverts, and many of our local news and travel bulleti
   <station band="99.6FM" id="uradio" lang="el-CY" name="U Radio" rank="1.0" type="edu">
     <frequency uri="http://www.uradio.com.cy/">99.6 FM in Nicosia, Cyprus</frequency>
     <location>Nicosia, Cyprus</location>
-    <description>
+    <description lang="en">
       Nicosia's best Rock and Alternative music station
     </description>
     <stream mime="audio/mpeg" uri="http://shout.kalsedia.com:9996/uradio996_64" codec="MPEG-1 Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="64 kbps" />
@@ -825,7 +825,7 @@ In fact we even split our adverts, and many of our local news and travel bulleti
   <station band="102.5FM" id="radiouchile" lang="es" name="Radio Uchile" rank="1.0" type="edu">
     <frequency uri="http://radio.uchile.cl/">102.5 FM in Santiago, Chile</frequency>
     <location>Santiago, Chile</location>
-    <description lang="en">
+    <description lang="es">
       La Radio Universidad de Chile es una estación de radio ubicada en el 102.5 MHz del dial FM en Santiago de Chile.
     </description>
     <stream mime="audio/mpeg" uri="http://stream3.rbm.cl:8010/playerweb.aac" codec="MPEG-2 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="78 kbps" />
@@ -940,7 +940,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   <station band="87.7FM" id="uwsradio" lang="en" name="UWSRadio" rank="1.0" type="edu">
     <frequency uri="http://www.uwsradio.scot/">87.7 FM in Ayr, Scotland</frequency>
     <location>Ayr, Scotland</location>
-    <description>
+    <description lang="en">
       UWS Radio (formally UCA) is the student radio station on the Ayr campus of The University of the West of Scotland.
     </description>
     <stream mime="audio/mpeg" uri="http://icecast.commedia.org.uk:8000/ucaradio.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
@@ -1594,7 +1594,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://ktru.org/</uri>
   </station>
   <station band="93.0FM" id="nrkradioalltidnyheter" lang="nb" name="NRK Radio Alltid Nyheter" rank="1.0" type="gov">
-    <frequency>93.0 FM in Oslo, Norway</frequency>
+    <frequency uri="https://radio.nrk.no/" >93.0 FM in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
     <description lang="en">The Norwegian Broadcasting Corporation (NRK) offers the Norwegian public a wide range of content with three national TV-channels, 13 national radio-channels and the website nrk.no.</description>
     <stream mime="audio/aac" uri="http://lyd.nrk.no/nrk_radio_alltid_nyheter_aac_h" codec="AAC, v4 LC" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
@@ -1653,14 +1653,50 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://echo.msk.ru/</uri>
   </station>
   <station band="Online" id="somafmdefcon" lang="en" name="SomaFM DEF CON" rank="1.0" type="com">
-    <frequency uri="http://www.somafm.com/">Online in San Francisco, California</frequency>
+    <frequency uri="https://somafm.com/defcon/index.html">Online in San Francisco, California</frequency>
     <location>San Francisco, California</location>
     <description lang="en">
       Music for Hacking. The DEF CON Year-Round Channel.
     </description>
-    <stream mime="audio/aac" uri="http://ice1.somafm.com/defcon-128-aac" codec="MPEG-2 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
-    <stream mime="audio/aac" uri="http://ice1.somafm.com/defcon-64-aac" codec="MPEG-2 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="64 kbps" />
-    <stream mime="audio/aac" uri="http://ice1.somafm.com/defcon-32-aac" codec="MPEG-2 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="32 kbps" />
-    <uri>http://somafm.com/</uri>
+    <stream mime="audio/aac" uri="http://ice2.somafm.com/defcon-128-aac" codec="MPEG-2 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/mpeg" uri="http://ice2.somafm.com/defcon-256-mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
+    <uri>https://somafm.com/defcon</uri>
+  </station>
+  <station band="Online" id="somafmdubstepbeyond" lang="en" name="SomaFM Dub Step Beyond" rank="1.0" type="com">
+    <frequency uri="https://somafm.com/dubstep/">Online in San Francisco, California</frequency>
+    <location>San Francisco, California</location>
+    <description lang="en">
+      SomaFM: Dub Step Beyond (#1): Dubstep, Dub and Deep Bass. May damage
+      speakers at high volume.
+
+      Dub Step Beyond is more than just Dubstep. Focusing on &quot;Bass Music&quot;,
+      but trying to play more than just Skrillex-style music. You'll hear music
+      by artists like Bassnectar, Tipper, JaFU, Phutureprimitive, Opiuo and Flux
+      Pavilion. And take that warning about speaker damage seriously, we blew
+      some expensive headphones listening to this channel!
+    </description>
+    <stream mime="audio/aac" uri="http://ice6.somafm.com/dubstep-128-aac" codec="MPEG-2 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/mpeg" uri="http://ice6.somafm.com/dubstep-256-mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
+    <uri>https://somafm.com/dubstep/</uri>
+  </station>
+  <station band="Online" id="somafmthetrip" lang="en" name="SomaFM The Trip" rank="1.0" type="com">
+    <frequency uri="http://www.somafm.com/thetrip">Online in San Francisco, California</frequency>
+    <location>San Francisco, California</location>
+    <description lang="en">
+        Dedicated to the purest form of Trance popularized by Paul Van Dyk and Hardfloor, as well as cutting edge Progressive tracks from artists like Voyager, Deepsky, G Pal, Jondi and Spesh, and Naveen G. (Formerly known as Tag's Trance Trip.)
+    </description>
+    <stream mime="audio/aac" uri="http://ice6.somafm.com/thetrip-128-aac" codec="MPEG-2 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/mpeg" uri="http://ice6.somafm.com/thetrip-128-mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>https://somafm.com/thetrip</uri>
+  </station>
+  <station band="Online" id="somafmgroovesalad" lang="en" name="SomaFM Groove Salad" rank="1.0" type="com">
+    <frequency uri="https://somafm.com/groovesalad/">Online in San Francisco, California</frequency>
+    <location>San Francisco, California</location>
+    <description lang="en">
+      Downtempo and chillout electronica featuring artists such as Kruder &amp; Dorfmeister, Fila Brazillia, dZihan and Kamien, Afterlife, Zero Seven, Nightmares On Wax, Shantel, Groove Armada and artists on Pork Recordings, Waveform Records and Cafe del Mar recordings.
+    </description>
+    <stream mime="audio/aac" uri="http://ice6.somafm.com/groovesalad-128-aac" codec="MPEG-2 AAC" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <stream mime="audio/mpeg" uri="http://ice6.somafm.com/groovesalad-256-mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
+    <uri>https://somafm.com/groovesalad</uri>
   </station>
 </gnome_internet_radio_locator>
