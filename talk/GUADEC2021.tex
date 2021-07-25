@@ -1,0 +1,151 @@
+\documentclass[aspectratio=43]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\title[GNOME Radio 12]{GNOME Radio 12}
+\author{Ole Aamot \texttt{ole@gnome.org}}
+\date{July 25th, 2021}
+
+\usetheme{guadec}
+
+\AtBeginSection{\frame{\sectionpage}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{GNOME Radio 12 on GNOME 41}
+
+\begin{frame}[containsverbatim]
+\frametitle{GNOME Internet Radio Locator 12}
+\framesubtitle{British Broadcasting Corporation (BBC) broadcasts for GNOME 41}
+
+GNOME Internet Radio Locator 12 is available with 62 British Broadcasting
+Corporation (BBC) live audio broadcasts for the upcoming GNOME 41.  The latest GNOME
+Internet Radio Locator 12.0.1 release during GUADEC 2021 (between July
+22-25, 2021) features 188 international radio stations and 110 city
+map markers around the world, including 62 BBC radio stations
+broadcasting live from United Kingdom and 4 SomaFM radio stations
+broadcasting live from San Francisco, California.
+
+GNOME Internet Radio Locator 12 for GNOME 41 is a Free Software
+program that allows you to easily locate Free Internet Radio stations
+by broadcasters on the Internet with the help of map and text search.
+GNOME Internet Radio Locator 12 for GNOME 41 is developed on the GNOME
+40 desktop platform with GNOME Maps, GeoClue, libchamplain and
+geocode-lib and it requires at least GTK+ 3.0 and GStreamer 1.0 for
+audio playback.
+
+\end{frame}
+
+\begin{frame}[containsverbatim]
+\frametitle{GNOME Radio 3 for GNOME 41}
+\framesubtitle{National Public Radio (NPR) broadcasts on GNOME 41}
+
+GNOME Radio 3 for GNOME 41 is available with National Public Radio
+(NPR) live audio broadcasts.
+
+GNOME Radio 3 will be the successor to GNOME Internet Radio Locator
+built for GNOME 41 with Cairo, Clutter, Champlain, Maps, GStreamer,
+and GTK+ 4.0.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Packaging}
+
+Fedora Core 34 software installation packages of GNOME Internet Radio
+Locator 12.0.1 for the computer hardware architecture x86\_64 and
+Source are now available for download and installation with the
+package management and network installation system tools rpm and dhf.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Fedora Core 34 x86\_64 RPM installation}
+
+    \begin{itemize}
+        \item sudo dnf install \url{http://people.gnome.org/~ole/fedora/RPMS/x86\_64/gnome-internet-radio-locator-12.0.1-1.fc34.x86\_64.rpm}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Fedora Core 34 Source RPM Installation}
+
+\begin{itemize}
+        \item sudo dnf install gnome-common
+        \item sudo dnf install intltool libtool gtk-doc geoclue2-devel yelp-tools
+        \item sudo dnf install gstreamer1-plugins-bad-free-devel geocode-glib-devel
+        \item sudo dnf install libchamplain-devel libchamplain-gtk libchamplain geoclue2
+        \item sudo rpm -Uvh \url{http://people.gnome.org/~ole/fedora/SRPMS/gnome-internet-radio-locator-12.0.1-1.fc34.src.rpm}
+        \item sudo rpmbuild -ba /root/rpmbuild/SPECS/gnome-internet-radio-locator.spec
+        \item sudo rpm -Uvh /root/rpmbuild/RPMS/*/gnome-internet-radio-locator-12.0.1*.rpm
+\end{itemize}
+    
+\end{frame}
+
+
+\section{Compiling from Source}
+
+\begin{frame}
+\frametitle{Compiling GNOME Internet Radio Locator 12 on GNOME}
+\framesubtitle{gnome-internet-radio-locator 12.0.1}
+
+    \texttt{git clone https://gitlab.gnome.org/GNOME/gnome-internet-radio-locator\\
+cd gnome-internet-radio-locator\\
+./autogen.sh\\
+./configure\\
+make\\
+sudo make install\\
+gnome-internet-radio-locator}
+\end{frame}
+
+\begin{frame}
+\frametitle{Running GNOME Internet Radio Locator 12 on GNOME}
+\framesubtitle{gnome-internet-radio-locator 12.0.1 is available}
+
+Three options for running GNOME Internet Radio Locator 12 on GNOME 41 from GNOME Shell and GNOME Terminal:
+
+1. Click on Activities and select the GNOME Radio icon.
+
+2. Search for ``gnome-internet-radio-locator'' in the search box.
+
+3. Type ``\texttt{gnome-internet-radio-locator}'' and hit Enter in GNOME Terminal if you are unable to find the icon in GNOME 41 and GNOME Shell.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Compiling GNOME Radio 3 on GNOME}
+\framesubtitle{gnome-radio 0.2.0}
+
+\begin{itemize}
+        \item git clone https://gitlab.gnome.org/ole/gnome-radio
+        \item cd gnome-radio
+        \item ./autogen.sh
+        \item autoreconf
+        \item ./configure
+        \item make
+        \item sudo make install
+        \item gnome-radio
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Running GNOME Radio 3 on GNOME}
+\framesubtitle{gnome-radio 0.2.0 is available}
+
+Three options for running GNOME Radio 3 on GNOME 41 from GNOME Shell and GNOME Terminal:
+
+1. Click on Activities and select the GNOME Radio icon.
+
+2. Search for ``gnome-radio'' in the search box.
+
+3. Type ``\texttt{gnome-radio}'' and hit Enter in GNOME Terminal if you are unable to find the Radio icon in GNOME 41 and GNOME Shell.
+
+\end{frame}
+
+\end{document}
