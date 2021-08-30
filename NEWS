@@ -1,4 +1,16 @@
 ==============
+Version 12.0.2
+==============
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: New RadiOrakel (FM 99.3) stream
+
+Translations
+
+	* Rodrigo Lledó (es)
+
+==============
 Version 12.0.1
 ==============
 
