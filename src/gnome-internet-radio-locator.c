@@ -566,7 +566,7 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 	widget = gtk_champlain_embed_new();
 	toolbar = gtk_toolbar_new();
 	input = gtk_entry_new();
-
+	gtk_entry_set_placeholder_text(GTK_ENTRY(input), "Search by city...");
 #if 0
 	search = gtk_tool_button_new(gtk_image_new_from_icon_name(NULL, GTK_ICON_SIZE_BUTTON), _("Search"));
 	gtk_tool_item_set_is_important(GTK_TOOL_ITEM(search), TRUE);
@@ -893,11 +893,11 @@ main (int argc,
 	memset(&stats, 0, sizeof(stats));
 
 	input = gtk_entry_new();
-
 	completion = gtk_entry_completion_new();
 	gtk_entry_completion_set_text_column(completion, STATION_NAME);
 	gtk_entry_completion_set_text_column(completion, STATION_LOCATION);
 	gtk_entry_set_completion(GTK_ENTRY(input), completion);
+	gtk_entry_set_placeholder_text(GTK_ENTRY(input), "Search by city...");
 	g_signal_connect(G_OBJECT(completion), "match-selected",
 			 G_CALLBACK(on_search_matches), NULL);
 	model = gtk_list_store_new(11, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING);
