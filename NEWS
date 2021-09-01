@@ -1,4 +1,16 @@
 ==============
+Version 12.0.3
+==============
+
+Build
+
+	* gnome-internet-radio-locator.spec.in: Build on Fedora Core 34
+
+GUI
+
+	* src/gnome-internet-radio-locator.c: Add Search placeholder text
+
+==============
 Version 12.0.2
 ==============
 
