@@ -1147,10 +1147,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
   <station band="99.3FM" id="radiorakel" lang="en" name="radiOrakel" rank="1.0" type="edu">
     <frequency uri="http://radiorakel.no/">99.3 FM in Oslo, Norway</frequency>
     <location>Oslo, Norway</location>
-    <description lang="en">RadiOrakel was started in 1982 when the government allowed local radio operations in Norway. At a women's cultural festival a group of women collected funds to start up the world's first women's radio station. On 16th of October 1982, RadiOrakel was founded.
-    RadiOrakel is located at the Blitz House on Pilestredet 30E in Oslo. They broadcast daily from 1:00 p.m. to 7:00 p.m., and on Friday’s and Saturday’s from 9:00 a.m. to 7:00 p.m. on FM 99.3 in Oslo and surrounding areas.
-<!--    Since 1982 RadiOrakel has produced experimental journalism with the aim of educating women in radio-journalism and audio engineering. RadiOrakel has a minimum of 2 / 3 female members. RadiOrakel actively prioritizes and promotes women as both interviewers and interviewees, and also has a profile with at least 50% of all music being performed by female performers / musicians. RadiOrakel also seeks to combat discrimination based on gender, race, religion and sexual orientation.-->
-<!--      Broadcasts are streamed over the Internet.--></description>
+    <description lang="en">radiOrakel is the worlds oldest female run, feminist radio. Founded in 1982, radiOrakel has produced experimental radio-journalism, innovative comedy, and serious radio dramas for almost 40 years. Broadcasting on FM 99,3 in Norway, radiOrakel prides themselvs on having a queer agenda and standing up for inclusive feminism, making them a unique radio-experience for all types of listeners. Their music-profile covers anything and everything, from fringe punk to hardhitting country, and vibing techno-beats, with focus on female and queer artists.</description>
     <stream mime="audio/mpeg" uri="https://stream.radiorakel.no/fm993.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
     <uri>http://radiorakel.no/</uri>
   </station>
