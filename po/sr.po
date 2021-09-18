@@ -5,10 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/"
-"gnome-internet-radio-locator/issues\n"
-"POT-Creation-Date: 2020-10-31 16:08+0000\n"
-"PO-Revision-Date: 2021-01-19 21:42+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
+"locator/issues\n"
+"POT-Creation-Date: 2021-06-26 18:47+0000\n"
+"PO-Revision-Date: 2021-09-18 08:56+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: српски <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
@@ -20,52 +20,53 @@ msgstr ""
 "X-Project-Style: gnome\n"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
-#| msgid "GNOME Internet Radio Locator"
-msgid "GNOME Internet Radio Locator for GNOME 3"
-msgstr "Гномов проналазач интернет радиа за Гном 3"
+#: ../src/gnome-internet-radio-locator.c:624
+#| msgid "GNOME Internet Radio Locator for GNOME 3"
+msgid "GNOME Internet Radio Locator 4 for GNOME 40"
+msgstr "Гномов проналазач интернет радиа 4 за Гном 40"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
-#| msgid "Locate Internet Radio Stations"
 msgid "Locate and listen to Free Internet Radio stations"
 msgstr "Пронађите и слушајте слободне радио станице на интернету"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
 #| msgid ""
-#| "GNOME Internet Radio Locator allows users to easily find and listen to "
-#| "live radio programs on radio broadcasters on the Internet."
+#| "GNOME Internet Radio Locator for GNOME 3 is a Free Software program that "
+#| "allows you to easily locate and listen to Free Internet Radio stations by "
+#| "broadcasters on the Internet with the help of a map."
 msgid ""
-"GNOME Internet Radio Locator for GNOME 3 is a Free Software program that "
+"GNOME Internet Radio Locator 4 for GNOME 40 is a Free Software program that "
 "allows you to easily locate and listen to Free Internet Radio stations by "
 "broadcasters on the Internet with the help of a map."
 msgstr ""
-"Гномов проналазач интернет радиа за Гном 3 је програм слободног софтвера "
+"Гномов проналазач интернет радиа 4 за Гном 40 је програм слободног софтвера "
 "који вам омогућава да с лакоћом нађете и слушате слободне Интернет радио "
 "станице емитера на Интернету уз помоћ карте."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
 #| msgid ""
-#| "GNOME Internet Radio Locator is developed for the GNOME desktop and "
-#| "requires gstreamer 1.0 to be installed for playback of supported radio "
-#| "stations."
+#| "GNOME Internet Radio Locator for GNOME 3 is developed for the GNOME 3 "
+#| "desktop and requires gstreamer 1.0 to be installed for listening to Free "
+#| "Internet Radio stations."
 msgid ""
-"GNOME Internet Radio Locator for GNOME 3 is developed for the GNOME 3 "
+"GNOME Internet Radio Locator 4 for GNOME 40 is developed for the GNOME 3 "
 "desktop and requires gstreamer 1.0 to be installed for listening to Free "
 "Internet Radio stations."
 msgstr ""
-"Гномов проналазач интернет радиа за Гном 3 је направљен за радну површ Гнома "
-"3 и захтева да је инсталиран „gstreamer“ 1.0 за слушање слободних Интернет "
-"радио станица."
+"Гномов проналазач интернет радиа 4 за Гном 40 је направљен за радну површ "
+"Гнома 3 и захтева да је инсталиран „gstreamer“ 1.0 за слушање слободних "
+"Интернет радио станица."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:5
 #| msgid ""
-#| "Enjoy listening to and recording from supported Internet Radio stations "
-#| "in GNOME Internet Radio Locator."
+#| "Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
+#| "Locator for GNOME 3."
 msgid ""
 "Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
-"Locator for GNOME 3."
+"Locator 4 for GNOME 40."
 msgstr ""
 "Уживајте слушајући слободне Интернет радио станице у Гномовом проналазачу "
-"интернет радиа за Гном 3."
+"интернет радиа 4 за Гном 40."
 
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
 msgid "Internet Radio Locator"
@@ -83,76 +84,74 @@ msgstr ""
 
 #: ../src/gnome-internet-radio-locator-gui.c:92
 #: ../src/gnome-internet-radio-locator-gui.c:104
-#: ../src/gnome-internet-radio-locator-gui.c:314
-#: ../src/gnome-internet-radio-locator.c:962
+#: ../src/gnome-internet-radio-locator-gui.c:310
+#: ../src/gnome-internet-radio-locator.c:923
 #, c-format
-#| msgid "Failed to run %s (%i)\n"
 msgid "Failed to open %s\n"
 msgstr "Нисам успео да отворим „%s“\n"
 
 #. Translators: first %s is station name and second %s is station location
-#: ../src/gnome-internet-radio-locator-gui.c:220
+#: ../src/gnome-internet-radio-locator-gui.c:218
 #, c-format
 msgid "Added %s in %s"
 msgstr "Додадох „%s“ у „%s“"
 
 #. The Stations dialog
-#: ../src/gnome-internet-radio-locator-gui.c:258
-#| msgid "Locate Internet Radio Stations"
+#: ../src/gnome-internet-radio-locator-gui.c:254
 msgid "New Internet Radio Station"
 msgstr "Нова Интернет радио станица"
 
-#: ../src/gnome-internet-radio-locator-gui.c:261
+#: ../src/gnome-internet-radio-locator-gui.c:257
 msgid "_Save"
 msgstr "_Сачувај"
 
-#: ../src/gnome-internet-radio-locator-gui.c:283
+#: ../src/gnome-internet-radio-locator-gui.c:279
 msgid "Station name"
 msgstr "Назив станице"
 
-#: ../src/gnome-internet-radio-locator-gui.c:284
+#: ../src/gnome-internet-radio-locator-gui.c:280
 msgid "Bandwidth"
 msgstr "Опсег"
 
-#: ../src/gnome-internet-radio-locator-gui.c:286
+#: ../src/gnome-internet-radio-locator-gui.c:282
 msgid "City name"
 msgstr "Име града"
 
-#: ../src/gnome-internet-radio-locator-gui.c:290
+#: ../src/gnome-internet-radio-locator-gui.c:286
 msgid "http://uri-to-stream/"
 msgstr "http://uri-to-stream/"
 
-#: ../src/gnome-internet-radio-locator-gui.c:291
+#: ../src/gnome-internet-radio-locator-gui.c:287
 msgid "Description"
 msgstr "Опис"
 
-#: ../src/gnome-internet-radio-locator-gui.c:292
+#: ../src/gnome-internet-radio-locator-gui.c:288
 msgid "http://uri-to-website/"
 msgstr "http://uri-to-website/"
 
-#: ../src/gnome-internet-radio-locator-gui.c:303
+#: ../src/gnome-internet-radio-locator-gui.c:299
 #, c-format
 msgid "Failed to open %s.  Please install it.\n"
 msgstr "Нисам успео да отворим „%s“.  Инсталирајте га.\n"
 
-#: ../src/gnome-internet-radio-locator-gui.c:436
-#: ../src/gnome-internet-radio-locator.c:456
+#: ../src/gnome-internet-radio-locator-gui.c:430
+#: ../src/gnome-internet-radio-locator.c:408
 msgid "http://fm939.wnyc.org/wnycfm"
 msgstr "http://fm939.wnyc.org/wnycfm"
 
-#: ../src/gnome-internet-radio-locator-gui.c:439
+#: ../src/gnome-internet-radio-locator-gui.c:433
 msgid "WNYC"
 msgstr "WNYC"
 
-#: ../src/gnome-internet-radio-locator-gui.c:442
+#: ../src/gnome-internet-radio-locator-gui.c:436
 msgid "New York City, NY"
 msgstr "Град Њујорк, NY"
 
-#: ../src/gnome-internet-radio-locator-gui.c:445
+#: ../src/gnome-internet-radio-locator-gui.c:439
 msgid "Online"
 msgstr "На мрежи"
 
-#: ../src/gnome-internet-radio-locator-gui.c:448
+#: ../src/gnome-internet-radio-locator-gui.c:442
 msgid ""
 "WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, "
 "broadcasting the finest programs from NPR, American Public Media, Public "
@@ -163,6 +162,26 @@ msgstr ""
 "најбоље програме са NPR-а, америчких јавних медија, јавног међународног "
 "радиа и услуге „BBC World“-а, као и широк спектар награђиваних локалних "
 "програма."
+
+#: ../src/gnome-internet-radio-locator-location.c:54
+msgid "Exit after T seconds. Default: 30"
+msgstr "Излази након T секунде. Основно је: 30"
+
+#: ../src/gnome-internet-radio-locator-location.c:61
+msgid ""
+"Only report location update after T seconds. Default: 0 (report new location "
+"without any delay)"
+msgstr ""
+"Само пријављује освежење места након T секунде. Основно је: 0 (пријављује "
+"ново место без икаквог застоја)"
+
+#: ../src/gnome-internet-radio-locator-location.c:69
+msgid ""
+"Request accuracy level A. Country = 1, City = 4, Neighborhood = 5, Street = "
+"6, Exact = 8."
+msgstr ""
+"Захтева ниво тачности A. Држава = 1, Град = 4, Околина = 5, Улица = 6, Тачно "
+"= 8."
 
 #. printf("Archiving program at %s\n", archive);
 #: ../src/gnome-internet-radio-locator-station.c:129
@@ -218,40 +237,16 @@ msgstr ""
 "Нисам успео да отворим адрсеу: '%s'\n"
 "Појединости: %s"
 
-#: ../src/gnome-internet-radio-locator.c:101
-msgid "Exit after T seconds. Default: 30"
-msgstr "Излази након T секунде. Основно је: 30"
-
-#: ../src/gnome-internet-radio-locator.c:108
-msgid ""
-"Only report location update after T seconds. Default: 0 (report new location "
-"without any delay)"
-msgstr ""
-"Само пријављује освежење места након T секунде. Основно је: 0 (пријављује "
-"ново место без икаквог застоја)"
-
-#: ../src/gnome-internet-radio-locator.c:116
-msgid ""
-"Request accuracy level A. Country = 1, City = 4, Neighborhood = 5, Street = "
-"6, Exact = 8."
-msgstr ""
-"Захтева ниво тачности A. Држава = 1, Град = 4, Околина = 5, Улица = 6, Тачно "
-"= 8."
-
-#: ../src/gnome-internet-radio-locator.c:440
-#, c-format
-#| msgid "Locate Internet Radio Stations"
+#: ../src/gnome-internet-radio-locator.c:392
 msgid "New Internet Radio Station\n"
 msgstr "Нова интернет радио станица\n"
 
-#: ../src/gnome-internet-radio-locator.c:446
-#, c-format
-#| msgid "Locate Internet Radio Stations"
+#: ../src/gnome-internet-radio-locator.c:398
 msgid "Search Internet Radio Station\n"
 msgstr "Тражите радио станице на интернету\n"
 
-#: ../src/gnome-internet-radio-locator.c:470
-#: ../src/gnome-internet-radio-locator.c:1083
+#: ../src/gnome-internet-radio-locator.c:422
+#: ../src/gnome-internet-radio-locator.c:1044
 msgid ""
 "Search by city or drag/click on the zoomable map to listen to a radio "
 "broadcast"
@@ -259,62 +254,50 @@ msgstr ""
 "Тражите према граду или превуците/кликните на увеличавајућу карту да слушате "
 "радио емитовање"
 
-#: ../src/gnome-internet-radio-locator.c:485
-#, c-format
-#| msgid "Locate Internet Radio Stations"
+#: ../src/gnome-internet-radio-locator.c:437
 msgid "Previous Internet Radio Station\n"
 msgstr "Претходна Интернет радио станица\n"
 
-#: ../src/gnome-internet-radio-locator.c:619
+#: ../src/gnome-internet-radio-locator.c:571
 msgid "Search"
 msgstr "Тражи"
 
-#: ../src/gnome-internet-radio-locator.c:623
-#| msgid "Locate Internet Radio Stations"
+#: ../src/gnome-internet-radio-locator.c:575
 msgid "Search Internet Radio Station"
 msgstr "Тражите радио станице на интернету"
 
-#: ../src/gnome-internet-radio-locator.c:628
+#: ../src/gnome-internet-radio-locator.c:580
 msgid "Prev"
 msgstr "Прет"
 
-#: ../src/gnome-internet-radio-locator.c:632
-#| msgid "Locate Internet Radio Stations"
+#: ../src/gnome-internet-radio-locator.c:584
 msgid "Prev Internet Radio Station"
 msgstr "Претходна Интернет радио станица"
 
-#: ../src/gnome-internet-radio-locator.c:635
-#: ../src/gnome-internet-radio-locator.c:639
+#: ../src/gnome-internet-radio-locator.c:587
+#: ../src/gnome-internet-radio-locator.c:591
 msgid "Stations"
 msgstr "Станице"
 
-#: ../src/gnome-internet-radio-locator.c:642
+#: ../src/gnome-internet-radio-locator.c:594
 msgid "Next"
 msgstr "След"
 
-#: ../src/gnome-internet-radio-locator.c:646
-#| msgid "Locate Internet Radio Stations"
+#: ../src/gnome-internet-radio-locator.c:598
 msgid "Next Internet Radio Station"
 msgstr "Следећа Интернет радио станица"
 
-#: ../src/gnome-internet-radio-locator.c:649
-#: ../src/gnome-internet-radio-locator.c:653
+#: ../src/gnome-internet-radio-locator.c:601
+#: ../src/gnome-internet-radio-locator.c:605
 msgid "About Station"
 msgstr "О станици"
 
-#: ../src/gnome-internet-radio-locator.c:656
-#: ../src/gnome-internet-radio-locator.c:660
+#: ../src/gnome-internet-radio-locator.c:608
+#: ../src/gnome-internet-radio-locator.c:612
 msgid "About Program"
 msgstr "О пограму"
 
-#. give it the title
-#: ../src/gnome-internet-radio-locator.c:672
-#: ../src/gnome-internet-radio-locator.c:862
-msgid "GNOME Internet Radio Locator"
-msgstr "Гномов проналазач интернет радиа"
-
-#: ../src/gnome-internet-radio-locator.c:717
-#, c-format
+#: ../src/gnome-internet-radio-locator.c:669
 msgid ""
 "Nothing\n"
 "\n"
@@ -322,27 +305,36 @@ msgstr ""
 "Ништа\n"
 "\n"
 
-#: ../src/gnome-internet-radio-locator.c:928
+#. give it the title
+#: ../src/gnome-internet-radio-locator.c:815
+msgid "GNOME Internet Radio Locator"
+msgstr "Гномов проналазач интернет радиа"
+
+#: ../src/gnome-internet-radio-locator.c:880
 msgid "New"
 msgstr "Нова"
 
-#: ../src/gnome-internet-radio-locator.c:1021
+#: ../src/gnome-internet-radio-locator.c:889
+msgid "Discover Location"
+msgstr "Откриј локацију"
+
+#: ../src/gnome-internet-radio-locator.c:982
 msgid "Stop"
 msgstr "Заустави"
 
-#: ../src/gnome-internet-radio-locator.c:1027
+#: ../src/gnome-internet-radio-locator.c:988
 msgid "Zoom In"
 msgstr "Увећај"
 
-#: ../src/gnome-internet-radio-locator.c:1041
+#: ../src/gnome-internet-radio-locator.c:1002
 msgid "Zoom Out"
 msgstr "Умањи"
 
-#: ../src/gnome-internet-radio-locator.c:1046
+#: ../src/gnome-internet-radio-locator.c:1007
 msgid "Markers"
 msgstr "Обилеживачи"
 
-#: ../src/gnome-internet-radio-locator.c:1068
+#: ../src/gnome-internet-radio-locator.c:1029
 msgid "Exit"
 msgstr "Изађи"
 
