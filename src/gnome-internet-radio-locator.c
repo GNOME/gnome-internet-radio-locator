@@ -621,7 +621,7 @@ gnome_internet_radio_locator_window_cb (GtkApplication *app,
 	gtk_container_add (GTK_CONTAINER(window), GTK_WIDGET(grid));
 	g_signal_connect (window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 #endif
-	gtk_window_set_title (GTK_WINDOW(window), _("GNOME Internet Radio Locator 4 for GNOME 40"));
+	gtk_window_set_title (GTK_WINDOW(window), _("GNOME Internet Radio Locator 12 for GNOME 42"));
 	gtk_window_set_default_size (GTK_WINDOW(window), 740, 580);
 	gtk_window_maximize (GTK_WINDOW (window));
 	gnome_internet_radio_locator_app = create_gnome_internet_radio_locator_app();
