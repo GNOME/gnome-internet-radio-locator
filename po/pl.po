@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-27 11:02+0200\n"
+"POT-Creation-Date: 2021-10-02 12:45+0200\n"
 "PO-Revision-Date: 2021-06-27 11:03+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
 #: ../src/gnome-internet-radio-locator.c:624
-msgid "GNOME Internet Radio Locator 4 for GNOME 40"
+msgid "GNOME Internet Radio Locator 12 for GNOME 42"
 msgstr "Wyszukiwanie internetowych stacji radiowych w GNOME"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
@@ -30,7 +30,7 @@ msgstr "Wyszukiwanie i słuchanie wolnych internetowych stacji radiowych"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
 msgid ""
-"GNOME Internet Radio Locator 4 for GNOME 40 is a Free Software program that "
+"GNOME Internet Radio Locator 12 for GNOME 42 is a Free Software program that "
 "allows you to easily locate and listen to Free Internet Radio stations by "
 "broadcasters on the Internet with the help of a map."
 msgstr ""
@@ -40,8 +40,8 @@ msgstr ""
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
 msgid ""
-"GNOME Internet Radio Locator 4 for GNOME 40 is developed for the GNOME 3 "
-"desktop and requires gstreamer 1.0 to be installed for listening to Free "
+"GNOME Internet Radio Locator 12 for GNOME 42 is developed for the GNOME 42 "
+"desktop and requires gstreamer 1.0 to be installed for streaming the Free "
 "Internet Radio stations."
 msgstr ""
 "Program GNOME Internet Radio Locator został zaprojektowany dla środowiska "
@@ -51,7 +51,7 @@ msgstr ""
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:5
 msgid ""
 "Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
-"Locator 4 for GNOME 40."
+"Locator 12 for GNOME 42."
 msgstr ""
 "Ciesz się wolnymi internetowymi stacjami radiowymi w programie GNOME "
 "Internet Radio Locator dla GNOME."
