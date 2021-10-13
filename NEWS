@@ -1,4 +1,21 @@
 ==============
+Version 12.0.5
+==============
+
+GUI
+
+	* src/gnome-internet-radio-locator-markers.c: Rotate marker colors
+
+Translations
+
+	* Anders Jonsson (sv)
+	* Yuri Chornoivan (uk)
+	* Marek Černocký (cs)
+	* Enrico Nicoletto (pt_BR)
+	* Goran Vidović (hr)
+	* Piotr Drąg (pl)
+
+==============
 Version 12.0.4
 ==============
 
