@@ -1,0 +1,328 @@
+# Icelandic translation for gnome-internet-radio-locator.
+# Copyright (C) 2021 gnome-internet-radio-locator's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-internet-radio-locator package.
+#
+# Sveinn í Felli <sv1@fellsnet.is>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-internet-radio-locator master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-loca"
+"tor/issues\n"
+"POT-Creation-Date: 2021-10-13 15:14+0000\n"
+"PO-Revision-Date: 2021-12-09 11:48+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
+#: ../src/gnome-internet-radio-locator.c:624
+msgid "GNOME Internet Radio Locator 12 for GNOME 42"
+msgstr "GNOME Internet Radio Locator 12 fyrir GNOME 42"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
+msgid "Locate and listen to Free Internet Radio stations"
+msgstr "Finndu og hlustaðu á frjálsar netútvarpsstöðvar"
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
+msgid ""
+"GNOME Internet Radio Locator 12 for GNOME 42 is a Free Software program that "
+"allows you to easily locate and listen to Free Internet Radio stations by "
+"broadcasters on the Internet with the help of a map."
+msgstr ""
+"GNOME Internet Radio Locator 12 fyrir GNOME 42 er Frjáls hugbúnaður sem gerir"
+" kleift að finna frjálsar netútvarpsstöðvar með aðstoð landakorts og hlusta á"
+" þær af internetinu."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
+msgid ""
+"GNOME Internet Radio Locator 12 for GNOME 42 is developed for the GNOME 42 "
+"desktop and requires gstreamer 1.0 to be installed for streaming the Free "
+"Internet Radio stations."
+msgstr ""
+"GNOME Internet Radio Locator 12 fyrir GNOME 42 er hannað fyrir GNOME 42"
+" skjáborðsumhverfið og krefst þess að gstreamer 1.0 sé uppsett svo hægt sé að"
+" streyma frjálsu netútvarpsstöðvunum."
+
+#: ../data/gnome-internet-radio-locator.appdata.xml.in.h:5
+msgid ""
+"Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
+"Locator 12 for GNOME 42."
+msgstr ""
+"Njóttu þess að hlusta á frjálsar netútvarpsstöðvar í  GNOME Internet Radio"
+" Locator 12 fyrir GNOME 42."
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
+msgid "Internet Radio Locator"
+msgstr "Staðsetning netútvarpsstöðva"
+
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:2
+msgid "Locate Internet Radio Stations"
+msgstr "Finndu netútvarpsstöðvar"
+
+#. Extra keywords that can be used to search for gnome-internet-radio-locator in GNOME Shell and Unity
+#: ../data/gnome-internet-radio-locator.desktop.in.in.h:4
+msgid "Live;Radio;Program;Station;Locator;"
+msgstr "Í beinni;Útvarp;Dagskrá;Útvarpsstöð;Leitarvél;"
+
+#: ../src/gnome-internet-radio-locator-gui.c:92
+#: ../src/gnome-internet-radio-locator-gui.c:104
+#: ../src/gnome-internet-radio-locator-gui.c:310
+#: ../src/gnome-internet-radio-locator.c:923
+#, c-format
+msgid "Failed to open %s\n"
+msgstr "Mistókst að opna %s\n"
+
+#. Translators: first %s is station name and second %s is station location
+#: ../src/gnome-internet-radio-locator-gui.c:218
+#, c-format
+msgid "Added %s in %s"
+msgstr "Bætti við %s í %s"
+
+#. The Stations dialog
+#: ../src/gnome-internet-radio-locator-gui.c:254
+msgid "New Internet Radio Station"
+msgstr "Ný netútvarpsstöð"
+
+#: ../src/gnome-internet-radio-locator-gui.c:257
+msgid "_Save"
+msgstr "Vi_sta"
+
+#: ../src/gnome-internet-radio-locator-gui.c:279
+msgid "Station name"
+msgstr "Heiti útvarpsstöðvar"
+
+#: ../src/gnome-internet-radio-locator-gui.c:280
+msgid "Bandwidth"
+msgstr "Bandbreidd"
+
+#: ../src/gnome-internet-radio-locator-gui.c:282
+msgid "City name"
+msgstr "Heiti borgar/staðar"
+
+#: ../src/gnome-internet-radio-locator-gui.c:286
+msgid "http://uri-to-stream/"
+msgstr "http://uri-í-streymi/"
+
+#: ../src/gnome-internet-radio-locator-gui.c:287
+msgid "Description"
+msgstr "Lýsing"
+
+#: ../src/gnome-internet-radio-locator-gui.c:288
+msgid "http://uri-to-website/"
+msgstr "http://uri-í-vefsvæði/"
+
+#: ../src/gnome-internet-radio-locator-gui.c:299
+#, c-format
+msgid "Failed to open %s.  Please install it.\n"
+msgstr "Mistókst að opna %s.  Settu það inn.\n"
+
+#: ../src/gnome-internet-radio-locator-gui.c:430
+#: ../src/gnome-internet-radio-locator.c:408
+msgid "http://fm939.wnyc.org/wnycfm"
+msgstr "http://fm939.wnyc.org/wnycfm"
+
+#: ../src/gnome-internet-radio-locator-gui.c:433
+msgid "WNYC"
+msgstr "WNYC"
+
+#: ../src/gnome-internet-radio-locator-gui.c:436
+msgid "New York City, NY"
+msgstr "New York City, NY"
+
+#: ../src/gnome-internet-radio-locator-gui.c:439
+msgid "Online"
+msgstr "Nettengt"
+
+#: ../src/gnome-internet-radio-locator-gui.c:442
+msgid ""
+"WNYC 93.9 FM and AM 820 are New York's flagship public radio stations, "
+"broadcasting the finest programs from NPR, American Public Media, Public "
+"Radio International and the BBC World Service, as well as a wide range of "
+"award-winning local programming."
+msgstr ""
+"WNYC 93.9 FM og AM 820 eru helstu flaggskip almenningsútvarps í New York, sem"
+" senda út úrvalsefni frá NPR, American Public Media, Public Radio"
+" International og frá BBC World Service, ásamt margvíslegu margverðlaunuðu"
+" efni úr nánasta umhverfi."
+
+#: ../src/gnome-internet-radio-locator-location.c:54
+msgid "Exit after T seconds. Default: 30"
+msgstr "Hætti eftir T sekúndur. Sjálfgefið: 30"
+
+#: ../src/gnome-internet-radio-locator-location.c:61
+msgid ""
+"Only report location update after T seconds. Default: 0 (report new location "
+"without any delay)"
+msgstr ""
+"Aðeins tilkynna uppfærða staðsetningu eftir T sekúndur. Sjálfgefið: 0"
+" (tilkynna nýja staðsetningu án tafar)"
+
+#: ../src/gnome-internet-radio-locator-location.c:69
+msgid ""
+"Request accuracy level A. Country = 1, City = 4, Neighborhood = 5, Street = "
+"6, Exact = 8."
+msgstr ""
+"Beðið um stig nákvæni A. Land = 1, Borg = 4, Hverfi = 5, Gata = "
+"6, Nákvæmt = 8."
+
+#. printf("Archiving program at %s\n", archive);
+#: ../src/gnome-internet-radio-locator-station.c:129
+#, c-format
+msgid "Recording from %s in %s to %s"
+msgstr "Tek upp frá útvarpsstöðinni %s í %s: %s "
+
+#: ../src/gnome-internet-radio-locator-station.c:147
+#, c-format
+msgid ""
+"An error happened trying to play %s\n"
+"Either the file doesn't exist, or you don't have a player for it."
+msgstr ""
+"Villa kom upp við að reyna að spila %s\n"
+"Annað hvort er skráin ekki til eða að þú ert ekki með neinn spilara sem ræður"
+" við hana."
+
+#: ../src/gnome-internet-radio-locator-station.c:153
+#, c-format
+msgid ""
+"An error happened trying to record %s\n"
+"Either the file doesn't exist, or you don't have a recorder for it."
+msgstr ""
+"Villa kom upp við að reyna að taka upp %s\n"
+"Annað hvort er skráin ekki til eða að þú ert ekki með neitt upptökuforrit sem"
+" ræður við hana."
+
+#: ../src/gnome-internet-radio-locator-station.c:184
+#: ../src/gnome-internet-radio-locator-station.c:204
+#: ../src/gnome-internet-radio-locator-station.c:321
+#: ../src/gnome-internet-radio-locator-station.c:344
+#, c-format
+msgid "Failed to run %s (%i)\n"
+msgstr "Mistókst að keyra %s (%i)\n"
+
+#: ../src/gnome-internet-radio-locator-station.c:231
+#: ../src/gnome-internet-radio-locator-station.c:368
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Status code: %i\n"
+"Details: %s"
+msgstr ""
+"Mistókst að opna URL-slóð: '%s'\n"
+"Stöðukóði: %i\n"
+"Nánar: %s"
+
+#: ../src/gnome-internet-radio-locator-station.c:249
+#: ../src/gnome-internet-radio-locator-station.c:263
+#, c-format
+msgid ""
+"Failed to open URL: '%s'\n"
+"Details: %s"
+msgstr ""
+"Mistókst að opna URL-slóð: '%s'\n"
+"Nánar: %s"
+
+#: ../src/gnome-internet-radio-locator.c:392
+msgid "New Internet Radio Station\n"
+msgstr "Ný netútvarpsstöð\n"
+
+#: ../src/gnome-internet-radio-locator.c:398
+msgid "Search Internet Radio Station\n"
+msgstr "Leita að netútvarpsstöð\n"
+
+#: ../src/gnome-internet-radio-locator.c:422
+#: ../src/gnome-internet-radio-locator.c:1044
+msgid ""
+"Search by city or drag/click on the zoomable map to listen to a radio "
+"broadcast"
+msgstr ""
+"Leitaðu eftir borg/héraði eða dragðu/smelltu á aðdraganlega landakortið til"
+" að hlusta á útvarpsútsendingu"
+
+#: ../src/gnome-internet-radio-locator.c:437
+msgid "Previous Internet Radio Station\n"
+msgstr "Fyrri netútvarpsstöð\n"
+
+#: ../src/gnome-internet-radio-locator.c:571
+msgid "Search"
+msgstr "Leita"
+
+#: ../src/gnome-internet-radio-locator.c:575
+msgid "Search Internet Radio Station"
+msgstr "Leita að netútvarpsstöð"
+
+#: ../src/gnome-internet-radio-locator.c:580
+msgid "Prev"
+msgstr "Fyrri"
+
+#: ../src/gnome-internet-radio-locator.c:584
+msgid "Prev Internet Radio Station"
+msgstr "Fyrri netútvarpsstöð"
+
+#: ../src/gnome-internet-radio-locator.c:587
+#: ../src/gnome-internet-radio-locator.c:591
+msgid "Stations"
+msgstr "Útvarpsstöðvar"
+
+#: ../src/gnome-internet-radio-locator.c:594
+msgid "Next"
+msgstr "Næsta"
+
+#: ../src/gnome-internet-radio-locator.c:598
+msgid "Next Internet Radio Station"
+msgstr "Næsta netútvarpsstöð"
+
+#: ../src/gnome-internet-radio-locator.c:601
+#: ../src/gnome-internet-radio-locator.c:605
+msgid "About Station"
+msgstr "Um útvarpsstöðina"
+
+#: ../src/gnome-internet-radio-locator.c:608
+#: ../src/gnome-internet-radio-locator.c:612
+msgid "About Program"
+msgstr "Upplýsingar um forritið"
+
+#: ../src/gnome-internet-radio-locator.c:669
+msgid ""
+"Nothing\n"
+"\n"
+msgstr ""
+"Ekkert\n"
+"\n"
+
+#. give it the title
+#: ../src/gnome-internet-radio-locator.c:815
+msgid "GNOME Internet Radio Locator"
+msgstr "GNOME Internet Radio Locator netútvarpsleit"
+
+#: ../src/gnome-internet-radio-locator.c:880
+msgid "New"
+msgstr "Nýtt"
+
+#: ../src/gnome-internet-radio-locator.c:889
+msgid "Discover Location"
+msgstr "Finna staðsetningu"
+
+#: ../src/gnome-internet-radio-locator.c:982
+msgid "Stop"
+msgstr "Stöðva"
+
+#: ../src/gnome-internet-radio-locator.c:988
+msgid "Zoom In"
+msgstr "Renna að"
+
+#: ../src/gnome-internet-radio-locator.c:1002
+msgid "Zoom Out"
+msgstr "Renna frá"
+
+#: ../src/gnome-internet-radio-locator.c:1007
+msgid "Markers"
+msgstr "Merki"
+
+#: ../src/gnome-internet-radio-locator.c:1029
+msgid "Exit"
+msgstr "Hætta"
