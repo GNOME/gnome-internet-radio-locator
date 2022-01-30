@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.59)
-AC_INIT(gnome-internet-radio-locator,12.0.5)
+AC_INIT(gnome-internet-radio-locator,12.0.6)
 AM_INIT_AUTOMAKE([-Wno-portability 1.11 no-dist-gzip dist-xz tar-ustar subdir-objects])
 AM_MAINTAINER_MODE
 AC_CONFIG_SRCDIR([src/gnome-internet-radio-locator.c])
@@ -96,9 +96,9 @@ PKG_CHECK_MODULES(GNOME_INTERNET_RADIO_LOCATOR,
 		  gstreamer-video-1.0 \
 		  gstreamer-plugins-bad-1.0 \
 		  gstreamer-plugins-base-1.0 \
-		  gtk+-3.0 >= 3.24.28 \
-		  geoclue-2.0 >= 2.5.7 \
-		  libgeoclue-2.0 >= 2.5.7 \
+		  gtk+-3.0 >= 3.22.30 \
+		  geoclue-2.0 >= 2.4.7 \
+		  libgeoclue-2.0 >= 2.4.7 \
 		  libxml-2.0 >= 2.0 \
 		  pangoft2 >= 0.28)
 
