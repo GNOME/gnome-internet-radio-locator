@@ -2,15 +2,15 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Rodrigo <rodhos92@gmail.com>, 2018, 2019.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2015-2021.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2015-2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-internet-radio-locator master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gnome-internet-radio-"
 "locator/issues\n"
-"POT-Creation-Date: 2021-06-26 18:47+0000\n"
-"PO-Revision-Date: 2021-08-26 18:12+0200\n"
+"POT-Creation-Date: 2021-09-30 07:44+0000\n"
+"PO-Revision-Date: 2022-02-07 09:43+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -18,45 +18,57 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Gtranslator 41.0\n"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:1
 #: ../src/gnome-internet-radio-locator.c:624
-msgid "GNOME Internet Radio Locator 4 for GNOME 40"
-msgstr "Buscador de emisoras de radio en Internet de GNOME para GNOME 40"
+#| msgid "GNOME Internet Radio Locator 4 for GNOME 40"
+msgid "GNOME Internet Radio Locator 12 for GNOME 42"
+msgstr "Buscador de emisoras de radio en Internet 12 de GNOME para GNOME 42"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:2
 msgid "Locate and listen to Free Internet Radio stations"
 msgstr "Busque y escuche emisoras de radio en Internet de forma gratuita"
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:3
+#| msgid ""
+#| "GNOME Internet Radio Locator 4 for GNOME 40 is a Free Software program "
+#| "that allows you to easily locate and listen to Free Internet Radio "
+#| "stations by broadcasters on the Internet with the help of a map."
 msgid ""
-"GNOME Internet Radio Locator 4 for GNOME 40 is a Free Software program that "
+"GNOME Internet Radio Locator 12 for GNOME 42 is a Free Software program that "
 "allows you to easily locate and listen to Free Internet Radio stations by "
 "broadcasters on the Internet with the help of a map."
 msgstr ""
-"El buscador de emisoras de radio en Internet de GNOME para GNOME 40 es un "
+"El buscador de emisoras de radio en Internet 12 de GNOME para GNOME 42 es un "
 "programa de software libre que permite a los usuarios buscar y escuchar "
 "emisoras de radio en Internet fácilmente y de forma gratuita con la ayuda de "
 "un mapa."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:4
+#| msgid ""
+#| "GNOME Internet Radio Locator 4 for GNOME 40 is developed for the GNOME 3 "
+#| "desktop and requires gstreamer 1.0 to be installed for listening to Free "
+#| "Internet Radio stations."
 msgid ""
-"GNOME Internet Radio Locator 4 for GNOME 40 is developed for the GNOME 3 "
-"desktop and requires gstreamer 1.0 to be installed for listening to Free "
+"GNOME Internet Radio Locator 12 for GNOME 42 is developed for the GNOME 42 "
+"desktop and requires gstreamer 1.0 to be installed for streaming the Free "
 "Internet Radio stations."
 msgstr ""
-"El buscador de emisoras de radio en Internet de GNOME para GNOME 40 está "
-"desarrollado para el escritorio GNOME 3 y se requiere tener instalado "
+"El buscador de emisoras de radio en Internet 12 de GNOME para GNOME 42 está "
+"desarrollado para el escritorio GNOME 42 y se requiere tener instalado "
 "gstreamer 1.0 para poder escuchar las emisoras de radio."
 
 #: ../data/gnome-internet-radio-locator.appdata.xml.in.h:5
+#| msgid ""
+#| "Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
+#| "Locator 4 for GNOME 40."
 msgid ""
 "Enjoy listening to Free Internet Radio stations in GNOME Internet Radio "
-"Locator 4 for GNOME 40."
+"Locator 12 for GNOME 42."
 msgstr ""
 "Disfrute escuchando emisoras de radio en Internet gratuitas en el buscador "
-"de emisoras de radio en Internet de GNOME para GNOME 40."
+"de emisoras de radio en Internet 12 de GNOME para GNOME 42."
 
 #: ../data/gnome-internet-radio-locator.desktop.in.in.h:1
 msgid "Internet Radio Locator"
