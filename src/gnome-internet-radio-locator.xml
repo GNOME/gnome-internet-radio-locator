@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-5.0.dtd">
-<gnome_internet_radio_locator version="12.0.7">
+<gnome_internet_radio_locator version="12.0.8">
   <station band="102.9FM" id="radiojazzcopenhagen" name="Radio Jazz Copenhagen" rank="1.0" type="com">
     <location>Copenhagen, Denmark</location>
     <description lang="dk">Radio Jazz sender på nettet hele døgnet.  På FM 102,9 Mhz samsender vi mandag til fredag fra 21.00 - 00.00 samt lørdag og søndag i tidsrummet 12.00 - 16.00.  Radio Jazz Copenhagen is broadcasting 24/7 on the web.</description>
