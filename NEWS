@@ -1,4 +1,18 @@
 ==============
+Version 12.0.7
+==============
+
+Stations
+
+	* src/gnome-internet-radio-locator.xml: Radio Jazz (Copenhagen, Denmark)
+	* src/gnome-internet-radio-locator.xml: Description of Danish Radio Jazz
+
+Translations
+
+	* Daniel Mustieles (es)
+	* Luming Zh (zh_CN)
+
+==============
 Version 12.0.6
 ==============
 
