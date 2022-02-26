@@ -1,12 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-5.0.dtd">
-<gnome_internet_radio_locator version="12.0.8">
+<gnome_internet_radio_locator version="12.0.9">
   <station band="102.9FM" id="radiojazzcopenhagen" name="Radio Jazz Copenhagen" rank="1.0" type="com">
     <location>Copenhagen, Denmark</location>
     <description lang="dk">Radio Jazz sender på nettet hele døgnet.  På FM 102,9 Mhz samsender vi mandag til fredag fra 21.00 - 00.00 samt lørdag og søndag i tidsrummet 12.00 - 16.00.  Radio Jazz Copenhagen is broadcasting 24/7 on the web.</description>
     <stream mime="audio/mpeg" uri="http://asima.out.airtime.pro:8000/radiojazzcopenhagen_a" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="JntStereo" bitrate="192 kbps" />
     <uri>http://www.radiojazz.dk/</uri>
+  </station>
+  <station band="Online" id="Українське радіо" name="Українське радіо" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Голос_Києва" name="Українське радіо Голос Києва" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-kyiv-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Крим" name="Українське радіо Крим" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-cr-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Вінниця" name="Українське радіо Вінниця" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-vn-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Дніпро" name="Українське радіо Дніпро" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-dp-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Дніпро (Кривий Ріг)" name="Українське радіо Дніпро (Кривий Ріг)" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-krr-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Житомирська хвиля" name="Українське радіо Житомирська хвиля" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-zt-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Радіо_Житомирська_хвиля" name="Радіо Житомирська хвиля" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/zwave-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Запоріжжя" name="Українське радіо Запоріжжя" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-zp-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Карпати" name="Українське радіо Карпати" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-if-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Одеса" name="Українське радіо Одеса" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-od-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Кропивницький" name="Українське радіо Кропивницький" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-kr-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Поділля-Центр" name="Українське радіо Поділля-Центр" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-km-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Луганщина" name="Українське радіо Луганщина" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Пульс" name="Українське радіо Пульс" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-te-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Голос Донбасу" name="Українське радіо Голос Донбасу" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/golosdonbasu-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Львів" name="Українське радіо Львів" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-lv-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Луцьк" name="Українське радіо Луцьк" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-vo-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Лтава" name="Українське радіо Лтава" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-pl-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Миколаїв" name="Українське радіо Миколаїв" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-mk-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Рівне" name="Українське радіо Рівне" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-rv-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Суми" name="Українське радіо Суми" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Тернопіль" name="Українське радіо Тернопіль" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-te-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Харків" name="Українське радіо Харків" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-kh-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Херсон" name="Українське радіо Херсон" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-ks-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Чернівці" name="Українське радіо Чернівці" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-cv-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Чернігівська хвиля" name="Українське радіо Чернігівська хвиля" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-cn-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українськe_радіо_Рось" name="Українськe радіо Рось" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-ck-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Українське_радіо_Ужгород" name="Українське радіо Ужгород" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-uz-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Тиса-FM" name="Тиса-FM" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/tysafm-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Радіо Промінь" name="Радіо Промінь" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur2-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Радіо Культура" name="Радіо Культура" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur3-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="Всесвітня служба радіо" name="Всесвітня служба радіо" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.ukr.radio:8000/ur4-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="UA: Казки" name="UA: Казки" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <stream mime="audio/mpeg" uri="http://radio.ukr.radio:8000/kazka-mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
+  </station>
+  <station band="Online" id="ukrainianradio" name="Ukrainian Radio" rank="1.0" type="gov">
+    <location>Kyiv, Ukraine</location>
+    <description lang="en">Ukrainian State Broadcaster</description>
+    <stream mime="audio/mpeg" uri="http://radio.nrcu.gov.ua:8000/ur1-te-mp3-m" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="48000 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://radio.nrcu.gov.ua/</uri>
   </station>
   <station band="Online" id="bbcradio1" name="BBC - Radio 1" rank="1.0" type="gov">
     <location>United Kingdom</location>
