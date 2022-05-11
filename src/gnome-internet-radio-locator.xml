@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-5.0.dtd">
-<gnome_internet_radio_locator version="12.3.0">
+<gnome_internet_radio_locator version="12.4.0">
+  <station band="107.2FM" id="nordfjordnærradio" name="Nordfjord Nærradio" rank="1.0" type="org">
+    <location>Nordfjord, Norge</location>
+    <description lang="nn">Nordfjord Nærradio var stifta i 1987 og var lokaliset på Fjordane Folkehøgskule på Eid. Det var i starten elevar og lærarar på skulen som var drivkrafta bak radioen. Vi hadde fleire studio på skulen før vi flytta ut derifrå. Totalt har vi hatt 6 studio kringom på Eid. Hestnesbygget, Øyane der låsbutikken ligg i dag, og dagens studio Trivselshjørnet i det gamle vegvesen bygget.
+
+    Opp igjennom tida sidan 1987, har det vore mange innom NNR. Vi har hatt fast ansatt redaktør i full stilling på 90 talet, men det synte seg vanskelig å få god økonomi i dette. Så på slutten av 90 talet kom Jon Roar inn som redaktør, noko han er den dag i dag. Rasmus Torvik var og ein av mange primus motorar hos oss. Han har digitalisert det aller meste av våre gamle program før han gjekk bort, og har difor hovedæra for at vi har eit rikhaldig arkiv med program omtrent heilt frå starten av.
+
+    Vi har medarbeidarar frå både Gloppen og Stad kommune, og det var ein lang periode 2 hovudstudio. Eit på Sandane og det andre på Eid. Etter at studioet på Sandane måtte flytte ut frå lokalet vi hadde der, vart det dessverre ikkje funne nokon ny god plass der. Sidan har vi fokusert på å utvikle dagens studio på Eid.
+
+    Radioen gjekk gjennom nokre veldig tunge år etter tusenårsskiftet, og vi var nær med å legge inn årane . Dette klarte vi heldigvis å snu med god innsats og løysingar fra alle involverte i desse tunge åra. I dag kan vi seie at vi driv godt og sunt, takka vere radiobingoen vår
+
+    Radiobingoen har vore og er hovudinntektskjelda til radioen. Og den er populær i heile dekningsområdet vårt. Vi slepp difor å selje reklame for å overleve i dagens radiomarknad.
+
+    I desse dagar (haust 21 og vår 22) har vi oppgradert radioen til og å sende på nett. Dette gjer at vi kan nå lyttarar over heile verda (om vi vil) som har lyst å høyre kjente stemmer frå heimkommunane sine. Samt at vi når stadar som har dårleg dekning på dagens FM sendarar. Vi sender direkte kvar onsdag med radiobingo og kvar fredag med Fredagskveld frå Trivselshjørnet. I tillegg har vi sendingar torsdagar når det er kommunestyremøte i Stad kommune.
+
+    I dag sender vi altså på nett via linken til Radioplayer på framsida vår.
+
+    På FM nettet, har vi 1 hovudsendar på studioet på Eid som sender på 107,2 mhz. I tillegg har vi omformarar på Sandane 104,3 mhz, Hunvikfjellet 106,2 mhz og Davikneset 105,8 mhz. Desse har blitt og vil bli oppgraderte utover i 2022.</description>
+    <stream mime="audio/mpeg" uri="https://lyd.nnr1987.no/nnr_hq" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="JntStereo" bitrate="192 kbps" />
+    <uri>https://nnr1987.no/</uri>
+  </station>
   <station band="102.9FM" id="radiojazzcopenhagen" name="Radio Jazz Copenhagen" rank="1.0" type="com">
     <location>Copenhagen, Denmark</location>
     <description lang="dk">Radio Jazz sender på nettet hele døgnet.  På FM 102,9 Mhz samsender vi mandag til fredag fra 21.00 - 00.00 samt lørdag og søndag i tidsrummet 12.00 - 16.00.  Radio Jazz Copenhagen is broadcasting 24/7 on the web.</description>

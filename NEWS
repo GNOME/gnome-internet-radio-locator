@@ -1,4 +1,25 @@
 ==============
+Version 12.4.0
+==============
+
+Build
+
+	* configure.ac: 12.4.0
+	* gnome-internet-radio-locator.spec.in: 12.4.0
+
+Documentation
+
+	* AUTHORS: Add Alan Mortensen (Danish translation)
+	* AUTHORS: Add Asier Sarasua Garmendia (Basque translation)
+	* THANKS: Add Alan Mortensen (Danish translation)
+	* THANKS: Add Asier Sarasua Garmendia (Basque translation)
+
+GUI
+
+	* src/gnome-internet-radio-locator.xml: Add Nordfjord Nærradio
+	* src/gnome-internet-radio-locator-markers.c: Update marker palette
+
+==============
 Version 12.3.0
 ==============
 

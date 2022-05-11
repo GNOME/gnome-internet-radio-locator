@@ -2,7 +2,7 @@
  *
  * GNOME Internet Radio Locator
  *
- * Copyright (C) 2019, 2020, 2021  Aamot Software
+ * Copyright (C) 2019, 2020, 2021, 2022  Aamot Software
  *
  * Author: Ole Aamot <ole@gnome.org>
  *
@@ -111,11 +111,11 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	ClutterActor *marker;
 	ClutterActor *layer_actor;
 	ClutterColor city_color = { 0x10, 0x10, 0x10, 0xbb };
-	ClutterColor city_a_color = { 0x1c, 0x5e, 0xb4, 0xbb };
-	ClutterColor city_b_color = { 0x25, 0xa0, 0x67, 0xbb };
-	ClutterColor city_c_color = { 0xe4, 0xa3, 0x09, 0xbb };
-	ClutterColor city_d_color = { 0xc6, 0x45, 0x01, 0xbb };
-	ClutterColor city_e_color = { 0xa5, 0x1b, 0x2b, 0xbb };
+	ClutterColor city_a_color = { 0x35, 0x84, 0xe4, 0xbb };
+	ClutterColor city_b_color = { 0xc0, 0x1c, 0x28, 0xbb };
+	ClutterColor city_c_color = { 0x26, 0xa2, 0x69, 0xbb };
+	ClutterColor city_d_color = { 0xcd, 0x93, 0x09, 0xbb };
+	ClutterColor city_e_color = { 0xc0, 0x1c, 0x28, 0xbb };
 	ClutterColor city_f_color = { 0x61, 0x35, 0x84, 0xbb };
 	ClutterColor text_color = { 0xff, 0xff, 0xff, 0xff };
 	LocationCallbackData callback_data;
@@ -656,6 +656,17 @@ create_marker_layer (G_GNUC_UNUSED ChamplainView *view, ChamplainPathLayer **pat
 	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_e_color);
 	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
 	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 40.7306458, -73.9866136);
+	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
+	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
+	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
+	g_signal_connect(CHAMPLAIN_LOCATION(marker), "button-press", G_CALLBACK(marker_function), station);
+	marker = champlain_label_new_from_file ("icons/emblem-generic.png", NULL);
+	station = g_strdup("Nordfjord, Norge\n<span size=\"small\">Nordfjord Radio</span>");
+	champlain_label_set_text (CHAMPLAIN_LABEL (marker), station);
+	champlain_label_set_use_markup (CHAMPLAIN_LABEL (marker), TRUE);
+	champlain_label_set_color (CHAMPLAIN_LABEL (marker), &city_e_color);
+	champlain_label_set_text_color (CHAMPLAIN_LABEL (marker), &text_color);
+	champlain_location_set_location (CHAMPLAIN_LOCATION (marker), 61.9025035, 5.9973065);
 	champlain_marker_layer_add_marker (layer, CHAMPLAIN_MARKER (marker));
 	champlain_marker_animate_in(CHAMPLAIN_MARKER (marker));
 	/* champlain_path_layer_add_node (*path, CHAMPLAIN_LOCATION (marker)); */
