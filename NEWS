@@ -1,4 +1,26 @@
 ==============
+Version 12.5.0
+==============
+
+Build
+
+	* configure.ac: 12.5.0
+	* gnome-internet-radio-locator.spec.in: 12.5.0
+
+Documentation
+
+	* AUTHORS: Add Sabri Ünal (Turkish translation)
+	* THANKS: Add Sabri Ünal (Turkish translation)
+
+GUI
+
+	* src/gnome-internet-radio-locator.xml: Add NRK Folkemusikk (Oslo, Norway)
+	* src/gnome-internet-radio-locator.xml: Add NRK P1+ (Oslo, Norway)
+	* src/gnome-internet-radio-locator.xml: Add NRK P3X (Oslo, Norway)
+	* src/gnome-internet-radio-locator.xml: Add NRK Super (Oslo, Norway)
+	* src/gnome-internet-radio-locator.xml: Update Nordfjord Nærradio
+
+==============
 Version 12.4.0
 ==============
 

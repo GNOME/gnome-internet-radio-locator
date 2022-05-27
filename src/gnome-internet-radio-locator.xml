@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-5.0.dtd">
-<gnome_internet_radio_locator version="12.4.0">
+<gnome_internet_radio_locator version="12.5.0">
+  <station band="Online" id="nrkp1pluss" name="NRK P1+" rank="1.0" type="gov">
+    <location>Oslo, Norway</location>
+    <description lang="nb">NRK P1+ er en av NRKs radiokanaler, som sendes på DAB og som nettradiokanal. NRK P1+ startet sine sendinger 2. oktober 2013 som en del av NRKs heldigitale radiotilbud og radiokanelen erstattet NRK Gull. Av de første programlederne har vært Viggo Valle, Kari Sørbø, Hanne Hoftun, Erik Forfod og Hans-Petter Jacobsen.</description>
+    <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p1pluss_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/informasjon/nrk-p1_-pa-lufta-1.11253656</uri>
+  </station>
+  <station band="Online" id="nrkp3x" name="NRK P3X" rank="1.0" type="gov">
+    <location>Oslo, Norway</location>
+    <description lang="nb">NRK P3X er en radiokanal fra NRK, som utelukkende spiller musikk, hovedsakelig hiphop, norsk rap og RnB. Den ble etablert 28. februar 2019. Kanalen ble opprettet med det formål at musikkmiksen skal følges opp mye tettere og oppdateres ukentlig og ved behov, og i større grad løfte frem den norske musikkscenen.</description>
+    <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p3x_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/presse/programomtaler/nrk-p3-styrker-hiphop-tilbudet-1.14450672</uri>
+  </station>
+  <station band="Online" id="nrksuper" name="NRK Super" rank="1.0" type="gov">
+    <location>Oslo, Norway</location>
+    <description lang="nb">NRK Super er NRKs tilbud for barn fra 2 til 12 år. Tilbudet består av en TV-kanal som sender fra 06.30 til 19.30, på samme sendefrekvens som NRK3, Norges største nettsted for barn; nrksuper.no, samt en radiokanal som sender på DAB hver dag fra 06 til 21, og døgnkontinuerlig på nettradio i tillegg til en egen app med programarkiv.</description>
+    <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p3x_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://nrksuper.no/</uri>
+  </station>
+  <station band="Online" id="nrkfolkemusikk" name="NRK Folkemusikk" rank="1.0" type="gov">
+    <location>Oslo, Norway</location>
+    <description lang="nb">NRK Folkemusikk er NRKs tiende radiokanal, og var den første norske radiokanalen som bare sendte digitalt via DAB og Internett. Kanalen sender bare musikk, uten programleder. Musikken på kanalen består av både ny og gammel norsk folkemusikk i tillegg til noe verdensmusikk.</description>
+    <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_folkemusikk_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <uri>https://www.nrk.no/skole/musikkparken/folkemusikken-og-nrk-1.13175858</uri>
+  </station>
   <station band="107.2FM" id="nordfjordnærradio" name="Nordfjord Nærradio" rank="1.0" type="org">
-    <location>Nordfjord, Norge</location>
+    <location>Nordfjord, Norway</location>
     <description lang="nn">Nordfjord Nærradio var stifta i 1987 og var lokaliset på Fjordane Folkehøgskule på Eid. Det var i starten elevar og lærarar på skulen som var drivkrafta bak radioen. Vi hadde fleire studio på skulen før vi flytta ut derifrå. Totalt har vi hatt 6 studio kringom på Eid. Hestnesbygget, Øyane der låsbutikken ligg i dag, og dagens studio Trivselshjørnet i det gamle vegvesen bygget.
 
     Opp igjennom tida sidan 1987, har det vore mange innom NNR. Vi har hatt fast ansatt redaktør i full stilling på 90 talet, men det synte seg vanskelig å få god økonomi i dette. Så på slutten av 90 talet kom Jon Roar inn som redaktør, noko han er den dag i dag. Rasmus Torvik var og ein av mange primus motorar hos oss. Han har digitalisert det aller meste av våre gamle program før han gjekk bort, og har difor hovedæra for at vi har eit rikhaldig arkiv med program omtrent heilt frå starten av.
