@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
 <!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-5.0.dtd">
-<gnome_internet_radio_locator version="12.5.0">
+<gnome_internet_radio_locator version="12.6.0">
   <station band="Online" id="nrkp1pluss" name="NRK P1+" rank="1.0" type="gov">
     <location>Oslo, Norway</location>
     <description lang="nb">NRK P1+ er en av NRKs radiokanaler, som sendes på DAB og som nettradiokanal. NRK P1+ startet sine sendinger 2. oktober 2013 som en del av NRKs heldigitale radiotilbud og radiokanelen erstattet NRK Gull. Av de første programlederne har vært Viggo Valle, Kari Sørbø, Hanne Hoftun, Erik Forfod og Hans-Petter Jacobsen.</description>
@@ -1689,15 +1689,31 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.wnyc.org/</uri>
   </station>
   <station band="Online" id="echo" lang="ru" name="Эхо Москвы" rank="1.0" type="com">
-    <frequency uri="http://echo.msk.ru/">Online in Moscow, Russia</frequency>
+    <frequency uri="">Offline in Moscow, Russia</frequency>
     <location>Moscow, Russia</location>
     <description lang="en">
-      Echo of Moscow is a Russian radio station based in Moscow,
+      Echo of Moscow was a Russian radio station based in Moscow,
+      closed by Putin after he declared war against Ukraina and began
+      military invasion on February 24th, 2022.  Echo of Moscow was
       broadcasting in many Russian cities, some of the former-Soviet
       republics, and via the Internet.  It is owned by Gazprom-Media.
     </description>
-    <stream mime="audio/mpeg" uri="http://ice912.echo.msk.ru:9120/24.aac" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="22 kbps" />
-    <uri>http://echo.msk.ru/</uri>
+    <description lang="ru">
+      Эхо Москвы — российская радиостанция, базирующаяся в Москве.
+      закрыт Путиным после того, как он объявил войну Украине и начал
+      военного вторжения 24 февраля 2022 года. Эхо Москвы было
+      вещание во многих городах России, некоторых из бывших советских
+      республик, так и через Интернет. Он принадлежит «Газпром-медиа».
+    </description>
+    <description lang="uk">
+      «Ехо Москви» — російська радіостанція в Москві.
+       закритий Путіним після того, як він оголосив війну Україні і почав
+       військове вторгнення 24 лютого 2022 р. Ехо Москви було
+       мовлення в багатьох містах Росії, деяких пострадянських
+       республік, а через Інтернет. Належить «Газпром-Медіа».
+    </description>
+    <stream mime="audio/mpeg" uri="https://ia902205.us.archive.org/15/items/echomskru-4min/2010-04-18-4min-1406.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="31 kbps" />
+    <uri>https://archive.org/details/echomskru-4min</uri>
   </station>
   <station band="Online" id="somafmdefcon" lang="en" name="SomaFM DEF CON" rank="1.0" type="com">
     <frequency uri="https://somafm.com/defcon/index.html">Online in San Francisco, California</frequency>
