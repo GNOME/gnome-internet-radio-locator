@@ -1,5 +1,4 @@
-gnome-internet-radio-locator
-============================
+# gnome-internet-radio-locator
 
 GNOME Internet Radio Locator is a Free Software program that allows
 you to easily locate and listen to Free Internet Radio stations by
@@ -16,11 +15,11 @@ or click on one of the city marker in the map to listen to a station.
 
 To launch the program, you can click on Activities in GNOME and enter
 
-   gnome-internet-radio-locator
+   `gnome-internet-radio-locator`
 
 in the Search field or launch
 
-   gnome-internet-radio-locator
+   `gnome-internet-radio-locator`
 
 from gnome-terminal.
 
