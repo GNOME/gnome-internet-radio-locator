@@ -1391,7 +1391,7 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <frequency uri="http://www.c-span.org/">90.1 FM in Supreme Court, United States of America</frequency>
     <location>Supreme Court, United States of America</location>
     <description lang="en">C-SPAN Radio 90.1 WCSP-FM in Washington, DC offers commercial-free public affairs programming 24 hours a day. You’ll hear live coverage from Washington of important congressional hearings and key speeches from national leaders.</description>
-    <stream mime="audio/mpeg" uri="https://18123.live.streamtheworld.com/CSPANRADIO.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="22050 Hz" channels="Stereo" bitrate="39 kbps" />
+    <stream mime="audio/mpeg" uri="https://playerservices.streamtheworld.com/api/livestream-redirect/CSPANRADIO.mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="22050 Hz" channels="JntStereo" bitrate="40 kbps" />
     <uri>http://www.c-span.org/</uri>
   </station>
   <!-- Appears to be down as of 2016/07/07
