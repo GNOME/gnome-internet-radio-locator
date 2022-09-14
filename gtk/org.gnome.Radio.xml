@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://www.gnomeradio.org/~ole/gnome-internet-radio-locator/gnome-internet-radio-locator.xsl" ?>
-<!DOCTYPE gnome_internet_radio_locator SYSTEM "gnome-internet-radio-locator-5.0.dtd">
-<gnome_internet_radio_locator version="12.7.0">
+<?xml-stylesheet type="text/xsl" href="https://people.gnome.org/~ole/gnome-radio/gnome-radio.xsl" ?>
+<!DOCTYPE radio SYSTEM "org.gnome.Radio.dtd">
+<radio version="44.1">
   <station band="Online" id="nrkp1pluss" name="NRK P1+" rank="1.0" type="gov">
     <location>Oslo, Norway</location>
     <description lang="nb">NRK P1+ er en av NRKs radiokanaler, som sendes på DAB og som nettradiokanal. NRK P1+ startet sine sendinger 2. oktober 2013 som en del av NRKs heldigitale radiotilbud og radiokanelen erstattet NRK Gull. Av de første programlederne har vært Viggo Valle, Kari Sørbø, Hanne Hoftun, Erik Forfod og Hans-Petter Jacobsen.</description>
@@ -17,7 +17,7 @@
   <station band="Online" id="nrksuper" name="NRK Super" rank="1.0" type="gov">
     <location>Oslo, Norway</location>
     <description lang="nb">NRK Super er NRKs tilbud for barn fra 2 til 12 år. Tilbudet består av en TV-kanal som sender fra 06.30 til 19.30, på samme sendefrekvens som NRK3, Norges største nettsted for barn; nrksuper.no, samt en radiokanal som sender på DAB hver dag fra 06 til 21, og døgnkontinuerlig på nettradio i tillegg til en egen app med programarkiv.</description>
-    <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_p3x_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
+    <stream mime="audio/mpeg" uri="http://lyd.nrk.no/nrk_radio_super_aac_h" codec="MPEG-4 AAC" samplerate="48000 Hz" bitrate="125 kbps" />
     <uri>https://nrksuper.no/</uri>
   </station>
   <station band="Online" id="nrkfolkemusikk" name="NRK Folkemusikk" rank="1.0" type="gov">
@@ -51,6 +51,12 @@
     <description lang="dk">Radio Jazz sender på nettet hele døgnet.  På FM 102,9 Mhz samsender vi mandag til fredag fra 21.00 - 00.00 samt lørdag og søndag i tidsrummet 12.00 - 16.00.  Radio Jazz Copenhagen is broadcasting 24/7 on the web.</description>
     <stream mime="audio/mpeg" uri="http://asima.out.airtime.pro:8000/radiojazzcopenhagen_a" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="JntStereo" bitrate="192 kbps" />
     <uri>http://www.radiojazz.dk/</uri>
+  </station>
+  <station band="Online" id="nporadio1" name="NPO Radio 1" rank="1.0" type="gov">
+    <location>Netherlands</location>
+    <description>NPO Radio 1 is a public-service radio channel in the Netherlands, broadcasting mainly news and sport.  It is part of the Netherlands Public Broadcasting system, NPO. It can be compared with BBC Radio 5 Live.</description>
+    <stream mime="audio/mpeg" uri="http://icecast.omroep.nl/radio1-bb-mp3" codec="MPEG ADTS, layer III" samplerate="48000 Hz" channels="JntStereo" bitrate="192 kbps" />
+    <uri>https://www.nporadio1.nl/</uri>
   </station>
   <station band="Online" id="bbcradio1" name="BBC - Radio 1" rank="1.0" type="gov">
     <location>United Kingdom</location>
@@ -374,6 +380,12 @@
     <stream mime="audio/mpeg" uri="http://stream.live.vc.bbcmedia.co.uk/bbc_world_service" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="24000 Hz" channels="Stereo" bitrate="56 kbps" />
     <uri>http://www.bbc.co.uk/worldserviceradio</uri>
   </station>
+  <station band="101.3FM" id="retrofm" name="Retro FM" rank="1.0" type="edu">
+    <location>Kyiv, Ukraine</location>
+    <description>Provereno vremenem, odobreno millionami</description>
+    <stream mime="audio/mpeg" uri="http://cast.radiogroup.com.ua:8000/retro" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="128 kbps" />
+    <uri>http://retro.ua/</uri>
+  </station>
   <station band="105.5FM" id="bygderadiovest" lang="en" name="Bygderadio Vest" rank="1.0" type="org">
     <location>Volda, Norway</location>
     <description lang="no">Volda og Ørsta Bygderadio AS starta sendingar i februar 1989.  I starten dekte radioen berre bygdene Volda og Ørsta.  I 2000 vart radioen slått saman med Radio Vest AS i Herøy.   Namnet vart då endra til Bygderadio Vest AS.  Alt arbeidet ved radioen vert gjort på dugnad.   Bygderadio Vest AS dekkjer no 7 kommuner; Volda, Ørsta, Hareid, Herøy, Ulstein, Sande og Vannylven.  Det bur omlag 46.700 menneske i desse kommunane.    Frå 2008 har Bygderadio Vest AS konsesjon som almennradio med konsesjon for å sende 240 minutt lokalprodusert stoff i tidsrommet 06-18. Konsesjonen gjeld fram til 31.12.2026.</description>
@@ -436,7 +448,7 @@
   <station band="Online" id="radioålesund" lang="no" name="Radio Ålesund" rank="1.0" type="com">
     <location>Ålesund, Norway</location>
     <description lang="no">Radio Ålesund</description>
-    <stream mime="audio/aac" uri="http://stream.jaerradiogruppen.no:8008/;" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" bitrate="191 kbps" />
+    <stream mime="audio/aac" uri="https://audio.radioaalesund.no/aalesund_mq" codec="MPEG-2 AAC" samplerate="44100 Hz" bitrate="125 kbps" />
     <uri>https://www.radioaalesund.no/</uri>
   </station>
   <station band="Online" id="p1_hordaland" lang="no" name="NRK P1 Hordaland" rank="1.0" type="gov">
@@ -1689,31 +1701,15 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <uri>http://www.wnyc.org/</uri>
   </station>
   <station band="Online" id="echo" lang="ru" name="Эхо Москвы" rank="1.0" type="com">
-    <frequency uri="">Offline in Moscow, Russia</frequency>
+    <frequency uri="http://echo.msk.ru/">Online in Moscow, Russia</frequency>
     <location>Moscow, Russia</location>
     <description lang="en">
-      Echo of Moscow was a Russian radio station based in Moscow,
-      closed by Putin after he declared war against Ukraina and began
-      military invasion on February 24th, 2022.  Echo of Moscow was
+      Echo of Moscow is a Russian radio station based in Moscow,
       broadcasting in many Russian cities, some of the former-Soviet
       republics, and via the Internet.  It is owned by Gazprom-Media.
     </description>
-    <description lang="ru">
-      Эхо Москвы — российская радиостанция, базирующаяся в Москве.
-      закрыт Путиным после того, как он объявил войну Украине и начал
-      военного вторжения 24 февраля 2022 года. Эхо Москвы было
-      вещание во многих городах России, некоторых из бывших советских
-      республик, так и через Интернет. Он принадлежит «Газпром-медиа».
-    </description>
-    <description lang="uk">
-      «Ехо Москви» — російська радіостанція в Москві.
-       закритий Путіним після того, як він оголосив війну Україні і почав
-       військове вторгнення 24 лютого 2022 р. Ехо Москви було
-       мовлення в багатьох містах Росії, деяких пострадянських
-       республік, а через Інтернет. Належить «Газпром-Медіа».
-    </description>
-    <stream mime="audio/mpeg" uri="https://ia902205.us.archive.org/15/items/echomskru-4min/2010-04-18-4min-1406.mp3" codec="MPEG-1 Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="31 kbps" />
-    <uri>https://archive.org/details/echomskru-4min</uri>
+    <stream mime="audio/mpeg" uri="http://ice912.echo.msk.ru:9120/24.aac" codec="MPEG-4 AAC" samplerate="48000 Hz" channels="Stereo" bitrate="22 kbps" />
+    <uri>http://echo.msk.ru/</uri>
   </station>
   <station band="Online" id="somafmdefcon" lang="en" name="SomaFM DEF CON" rank="1.0" type="com">
     <frequency uri="https://somafm.com/defcon/index.html">Online in San Francisco, California</frequency>
@@ -1762,4 +1758,4 @@ WUMR has been the University of Memphis broadcasting outlet since 1979, when Sou
     <stream mime="audio/mpeg" uri="http://ice6.somafm.com/groovesalad-256-mp3" codec="MPEG 1 Audio, Layer 3 (MP3)" samplerate="44100 Hz" channels="Stereo" bitrate="256 kbps" />
     <uri>https://somafm.com/groovesalad</uri>
   </station>
-</gnome_internet_radio_locator>
+</radio>

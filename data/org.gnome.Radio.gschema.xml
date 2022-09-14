@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-radio">
+	<schema id="org.gnome.Radio" path="/org/gnome/Radio/">
+	</schema>
+</schemalist>

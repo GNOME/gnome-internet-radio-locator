@@ -1,0 +1,24 @@
+<!ATTLIST frequency uri CDATA #REQUIRED >
+<!ELEMENT description ( #PCDATA ) >
+<!ATTLIST description lang CDATA #REQUIRED >
+<!ELEMENT frequency ( #PCDATA ) >
+<!ELEMENT email ( #PCDATA ) >
+<!ELEMENT location ( #PCDATA ) >
+<!ELEMENT radio ( station+ ) >
+<!ATTLIST radio version NMTOKEN #REQUIRED >
+<!ELEMENT station ( frequency | location | description | stream | uri )* >
+<!ATTLIST station band CDATA #REQUIRED >
+<!ATTLIST station icon CDATA #IMPLIED >
+<!ATTLIST station id NMTOKEN #REQUIRED >
+<!ATTLIST station lang CDATA #IMPLIED >
+<!ATTLIST station name CDATA #REQUIRED >
+<!ATTLIST station rank CDATA #REQUIRED >
+<!ATTLIST station type CDATA #REQUIRED >
+<!ELEMENT uri ( #PCDATA ) >
+<!ELEMENT stream EMPTY >
+<!ATTLIST stream bitrate CDATA #REQUIRED >
+<!ATTLIST stream channels NMTOKEN #IMPLIED >
+<!ATTLIST stream codec CDATA #REQUIRED >
+<!ATTLIST stream mime CDATA #REQUIRED >
+<!ATTLIST stream samplerate CDATA #REQUIRED >
+<!ATTLIST stream uri CDATA #REQUIRED >

@@ -1,4 +1,28 @@
 ==============
+Version 12.7.0
+==============
+
+Build
+
+	* configure.ac: 12.7.0
+	* gnome-internet-radio-locator.spec.in: 12.7.0
+	* Makefile.am: Build gtk/org.gnome.Radio
+	* gtk/Makefile.am: Build gtk/org.gnome.Radio
+
+Documentation
+
+	* AUTHORS: Add Jürgen Benvenuti (German translation)
+	* THANKS: Add Jürgen Benvenuti (German translation)
+
+GUI
+
+	* gtk/meson.build: Galeonen GTK4 port
+	* gtk/org.gnome.Radio.c: Galeonen GTK4 port
+	* gtk/org.gnome.Radio.dtd: Galeonen GTK4 port
+	* gtk/org.gnome.Radio.xml: Galeonen GTK4 port
+	* gtk/org.gnome.Radio.xsl: Galeonen GTK4 port
+
+==============
 Version 12.5.0
 ==============
 

@@ -1,10 +1,19 @@
-Internet Radio Locator for GTK+ 4.0 is a current app in progress.
+GNOME Radio for GTK 4 is the latest Radio app in development.
 
 ==========
-2018-05-29
+2022-07-21
 ==========
 
-You can download the latest GTK+ release from gitlab.gnome.org and
-https://www.gnome.org/~ole/gtk-internet-radio-locator
+You can download the latest GTK release from gitlab.gnome.org
+and https://download.gnome.org/sources/gtk/
 
-git clone https://gitlab.gnome.org/GNOME/gtk-internet-radio-locator
+You can download the latest application and build it from the
+gtk/ directory with meson or GNU automake.
+
+To build it from scratch, you should check out the code with
+
+   git clone https://gitlab.gnome.org/ole/gnome-radio.git
+   cd gnome-radio/
+   meson build .
+   cd build/
+   ninja
